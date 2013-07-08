@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; margin:0; border:0;}
+.dajiang-wrap{ background:url(/rchlw/function/images/activity/zj-bg.jpg) no-repeat center top; margin:0 auto; width:690px; height:1250px; padding:150px 130px 0;}
+.dajiang-wrap h2{ font-size:18px; padding-left:50px; font-weight:bold; margin:10px 0;}
+.dajiang-wrap h3{ font-size:16px; padding:0 0 20px 68px; font-weight:bold;}
+.dajiang-wrap h3 span{ color:#de0201;}
+.dajiang-wrap p{ line-height:25px; text-indent:2em; padding:0 45px 20px; font-size:14px;}
+.dajiang-wrap p span{ color:blue;}
+.dajiang-wrap p span.big-font{ padding-left:20px; display:inline-block; }
+.dajiang-wrap p.dj-cont{position:relative; text-indent:0; padding-left:0;margin-left:145px;}
+.dajiang-wrap p.dj-cont strong{position:absolute;left:-98px;*top:-5px;_top:-5px; font-size:14px;font-weight:normal;display:block}
+.dajiang-wrap p a{ color:#de0201; text-decoration:none; font-weight:bold;}
+.dajiang-wrap p a:hover{ text-decoration:underline;}
+.dajiang-wrap p.dj-cont strong a{ color:#de0201; text-decoration:none; font-weight:normal;}
+.dajiang-wrap p.dj-cont strong a:hover{ text-decoration:underline;}
+
+
+
+
+
+
+
+
+
+
+

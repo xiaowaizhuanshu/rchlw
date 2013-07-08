@@ -1,0 +1,168 @@
+@charset "utf-8";
+/*单页*/
+#zhanghu{ overflow:hidden;}
+#headerdanye { width:950px; height:auto;margin:0 auto; padding:0; }
+/*单页头部*/
+.danyehead { width:950px; height:97px; background: url(/rchlw/function/images/danyehead.jpg) no-repeat; }
+.dylogo { float:left; width:175px; padding-left: 15px; }
+.fhsy{ float:right; width:735px; text-align:right; padding-right:25px; padding-top:65px;}
+.fhsy a:hover {color:#00529c;}
+.charupic {display:block;}
+
+/*单页底部*/
+.dyfooter {text-align:center; border-top:solid 1px #e3e3e3; color:#666666; line-height:24px; padding-top:15px; margin-top:10px;}
+
+
+/*单页-左侧样式*/
+.main_left{ width:190px; height:auto; float:left;}
+.bt{ width:190px; height:29px;}/*左边标题样式*/
+#nav {
+ width:188px;  
+ list-style-type: none;
+    /*定义整个ul菜单的行高和背景色*/
+}
+
+/*==================一级目录===================*/
+#nav a { 
+ width: 120px; 
+ display: block; 
+ font:13px "宋体"; 
+ font-weight:bold; 
+ line-height: 28px; 
+ padding-left: 68px; color:#666666 
+}/*Width(一定要)，否则下面的Li会变形*/
+
+#nav li { 
+ background:url(/rchlw/function/images/danyeonebg.gif) no-repeat; 
+ float:left;
+ }/*一级目录的背景色*/  /*float：left,本不应该设置，但由于在Firefox不能正常显示
+ 继承Nav的width,限制宽度，li自动向下延伸*/ 
+#nav a:link  {
+ text-decoration:none;
+}
+#nav a:visited  {
+ text-decoration:none;
+}
+#nav a:hover  {
+ color:#00529c;
+ text-decoration:none;
+}
+/*==================二级目录===================*/
+#nav li ul { 
+ text-align:center; 
+}
+#nav li ul li{ 
+ background: url(/rchlw/function/images/danyeicon.gif) no-repeat 80px; 
+}/*二级目录的背景色*/  
+#nav li ul a{ 
+ width:98px; 
+ text-align:left; 
+ font:12px "宋体"; 
+ line-height:28px; 
+ padding-left:90px; 
+ }/* padding-left二级目录中文字向右移动，但Width必须重新设置=(总宽度-padding-left)*/
+ 
+/*下面是二级目录的链接样式*/
+#nav li ul a:link  {
+ text-decoration:none;
+}
+#nav li ul a:visited  {
+ text-decoration:none; 
+}
+#nav li ul a:hover  {
+ color:#00529c;
+ text-decoration:none;
+}
+.mousehover{
+ width:188px;
+ text-align:center;
+ font:12px "宋体"; 
+ color:#00529c; 
+ line-height:28px;
+}
+
+/*==============================*/
+#nav li:hover ul {
+ left: auto;
+}
+#nav li.sfhover ul {
+ left: auto;
+}
+#content {
+ clear: left; 
+}
+#nav ul.collapsed {
+ display: none;
+}
+-->
+#PARENT{
+ width:188px;
+ height:auto;
+ border:1px solid #e2ebf4;
+ background:#fbfbfb;
+ overflow:hidden;
+ padding-bottom:15px;
+}
+
+
+/*单页-右侧样式*/
+.userright{ width:750px; height:auto; float:right;}
+.zh_rightbg {width: 748px;}
+.zh_rt{ height:25px; padding-left:10px; font-size:14px; color:#0682c8; font-weight:bold; line-height:25px; border-bottom:solid 1px #e3e3e3;}
+.right_01{width: 718px;_width: 708px; padding:15px 20px; line-height:25px; color:#777777;}
+.right_01 p{line-height:20px;}
+.right_01 strong{ font-weight:bold;}
+.right_02{width: 748px;_width: 708px; padding:10px 20px; line-height:22px;}
+
+/*公司简介*/
+.gsjjpic{float:left; margin-right:10px; height:150px; padding:1px; border:1px solid #CCCCCC;}
+.gsjjdl{ text-indent: 2em; margin:0 0 1em 0;}
+.bluezi{ color:#0682c8;}
+.gsImg{ padding-left:27px; padding-top:20px; overflow:hidden;}
+.gsImg p{ border:1px solid #e8e8e8; padding:8px; width:251px; height:185px; float:left; margin-right:55px; margin-bottom:33px;}
+
+.gsImg2{ padding-left:27px; padding-top:20px; overflow:hidden; clear:both;}
+.gsImg2 p{  width:266px; height:359px; float:left; margin-right:55px; margin-bottom:33px;}
+/*公司愿景*/
+.dyxiaobiao {background:url(/rchlw/function/images/dyxiaobiaobg.gif) no-repeat; width:544px; height:20px; padding-left:5px; color:#0682c8; line-height:20px; margin-bottom:10px;margin-top:10px;} 
+.gsyjdl{  margin:0 0 1em 0; text-indent:24px;}
+.ywjanghu {margin:0px; padding:0px;}
+.ywianghu li { background: url(/rchlw/function/images/dyicon2.gif) no-repeat left; margin: 0px; padding: 0px 0px 0px 10px; line-height:23px; color:#777777;}
+
+/*经营理念*/
+.biaoge {border:solid 1px #d7d7d7;}
+.dyg1 {border-bottom:solid 1px #d7d7d7; border-right:solid 1px #d7d7d7; text-align:center}
+.biaoge td{color:#777777;}
+.jylnbt{background:#f0f0f0;}
+.bggd {height:25px;}
+.dyg2 {border-bottom:solid 1px #d7d7d7; text-align:center}
+.dyg3 {border-right:solid 1px #d7d7d7; text-align:center}
+
+/*我们的优势*/
+.wmdyslbwz {margin:0px; padding:0px;}
+.wmdyslbwz li{ color:#777777; line-height:23px;}
+
+/*联系我们*/
+.lxwmyc{ margin:50 0 5px 0;}
+.choose{  font-weight:bold; padding-left:10px;}
+.nochoose{ font-weight:bold; padding-left:10px;}
+
+/*网站地图*/
+.maphead{ height:80px; background:#fff; overflow:hidden; }
+.maplogo{ padding-top:15px;  padding-left:15px; float:left;}
+.mapfanhui{ float:right; width:535px; text-align:right; padding-right:25px; padding-top:55px;}
+.mapfanhui a{color:#00529c;}
+.mapfanhui a:hover {color:#de0201; text-decoration:underline;}
+.maptitle{ width:937px; height:30px; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x; line-height:30px; font-weight:bold; font-size:14px; padding-left:13px; }
+.mapcontent{ width:950px; height:auto; margin:0 auto;border:1px solid #dbdbdb; }
+.mapcon{ padding:15px 13px  25px; overflow:hidden; }
+.mapcon h1{ line-height:30px; color:#1f376d; padding-top:10px; clear:both;}
+.mapcon h1 a{ margin-right:30px;  color:#1f376d;}
+.mapcon h1 a:hover{ color:#de0201; text-decoration:underline;}
+.mapcon p{line-height:30px; }
+.mapcon p a{ margin-right:30px;  color:#1f376d;}
+.mapcon p a:hover{ color:#de0201; text-decoration:underline;}
+.mapcon span{ width:460px; float:left; line-height:30px;}
+.mapcon span font{ width:50px; display:inline-table;}
+.mapcon span a{ margin-right:30px;  color:#1f376d;}
+.mapcon span a:hover{ color:#de0201; text-decoration:underline;}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans   
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+            http://www.springframework.org/schema/context  
+            http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+            http://www.springframework.org/schema/aop  
+            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd  
+            http://www.springframework.org/schema/tx  
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="phoneInfoService" class="com.ruyicai.web.service.impl.PhoneInfoServiceImpl">
+		<property name="phoneInfoDAO" ref="phoneInfoDAO"></property>
+	</bean>
+	<bean id="customService" class="com.ruyicai.web.service.impl.CustomServiceImpl">
+		<property name="customdao" ref="customdao"></property>
+	</bean>
+ <bean id="newsService" class="com.ruyicai.web.service.impl.NewsServiceImpl">
+		<property name="newsDAO" ref="newsDAO"></property>
+		<property name="newsChannelDAO" ref="newsChannelDAO"></property>
+		<property name="newsCategoryDAO" ref="newsCategoryDAO"></property>
+	</bean>
+	<bean id="newsCategoryService" class="com.ruyicai.web.service.impl.NewsCategoryServiceImpl">
+		<property name="newsCategoryDAO" ref="newsCategoryDAO"></property>
+		<property name="channel_TemplateService" ref="channel_TemplateService"></property>
+		<property name="newsDAO" ref="newsDAO"></property>
+	</bean>
+ <bean id="channel_TemplateService" class="com.ruyicai.web.service.impl.Channel_TemplateServiceImpl">
+		<property name="channel_TemplateDAO" ref="channel_TemplateDAO"></property>
+	</bean>
+	<bean id="newsChannelService" class="com.ruyicai.web.service.impl.NewsChannelServiceImpl">
+		<property name="newsChannelDAO" ref="newsChannelDAO"></property>
+		<property name="channel_TemplateService" ref="channel_TemplateService"></property>
+	</bean>
+	<bean id="newsInfoService" class="com.ruyicai.web.service.impl.NewsInfoServiceImpl" scope="prototype">
+		<property name="newsInfoDAO" ref="newsInfoDAO"></property>
+	</bean>
+	<bean id="newsTemplateService" class="com.ruyicai.web.service.impl.NewsTemplateServiceImpl">
+		<property name="newsTemplateDAO" ref="newsTemplateDAO"></property>
+	</bean>
+	<bean id="phraseLibraryService"
+		class="com.ruyicai.web.service.impl.PhraseLibraryServiceImpl">
+		<property name="phrase" ref="phraseLibraryDAO"></property>
+	</bean>
+	<!-- #######对外接口######END -->
+</beans>

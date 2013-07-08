@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+/* 公共样式*/
+body {font-family: Arial, Helvetica, sans-serif, "宋体";	font-size: 12px;line-height: 18px;color: #333;}
+body,div,ul,ol,li{ margin:0; padding:0;}
+ul,ol,li{ list-style-type:none;}
+img {border:none;}
+img a {border:none;}
+img a:hover {border:none}
+a{color:#333; text-decoration:none;}
+.red{ color:red;}
+.red1 { color:#B70505;}
+.red2 { color:#c40001;}
+#body{ height:auto; margin:0 auto; padding:0 auto; border:0;}
+.blue{ color:#01529d;}
+.blue1{ color:#01529d; text-decoration:underline;}
+.huizi{ color:#666;}
+/* 头部样式(登录前 登陆后 右侧快速链接) */
+.HeadTopLogin{ height:30px; line-height:30px; background:url(/rchlw/function/images/HeadTopLoginBG.gif);}
+.HeadTopLogin .box{ width:950px; margin:auto; height:30px; line-height:30px;}
+.HeadTopLogin dl{ float:left; height:30px; line-height:30px;}
+.HeadTopLogin dt{ float:left; height:12px; padding:9px 0px; color:#999;}
+.HeadTopLogin dd{ float:left; height:20px; padding:5px 0px;}
+.LoginLater{ float:left; height:30px; line-height:30px;}
+.QuickLink{ float:right; height:12px; line-height:normal; padding:9px 0px; text-align:right; color:#999;}
+
+/* 头部上的基础样式 */
+.HeadTopLogin i{ color:#DE0201;}
+.HeadTopLogin em{ line-height:normal; color:#666;}
+.HeadTopLogin input.text{ float:left; display:inline; height:18px; line-height:18px; width:100px; padding:0px; border:solid 1px #999; margin:0px 6px 0px 6px;}
+.HeadTopLogin input.button{ float:left; width:40px; height:20px; margin:0px 6px 0px 6px;}
+.HeadTopLogin a{ display:inline-block; height:12px; line-height:normal; color:#1F376D; padding:0px 0px 0px 1px;}
+.HeadTopLogin a:hover{ text-decoration:underline;}
+.HeadTopLogin font{ line-height:normal; color:#000;}
+	/* 登录前 选择去向下拉菜单 */
+.HeadTopLogin .SelectAspect{ height:14px; line-height:14px; font-size:12px; padding:3px 10px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:80px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectedAddress{ font-size:12px; line-height:normal; color:#1F376D;}
+.HeadTopLogin .SelectedAddressInput{ margin:0px; padding:0px; overflow:hidden; display:none;}
+.HeadTopLogin .SelectAspect span.SelectTriangle{ position:absolute; top:7px; right:7px; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAspect span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectAspect dl{ float:none; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; width:80px; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectAspect dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectAspect dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectAspect a{ display:block; height:12px; line-height:normal; vertical-align:middle; margin:0px; padding:6px 10px; text-align:left; background:#F9F9F9; color:#1F376D;}
+.HeadTopLogin .SelectAspect a.over{ text-decoration:none; color:#DE0201;}
+	/* 登录前联合登录下拉菜单 */
+.HeadTopLogin .SelectLogin{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D;}
+.HeadTopLogin .SelectLogin span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin dl{ float:none; width:75px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectLogin dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectLogin a{ display:block; height:16px; line-height:16px; padding:4px 10px; text-align:left; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin a:hover{ color:#DE0201; text-decoration:underline;}
+.HeadTopLogin .SelectLogin img{ vertical-align:text-bottom; margin:0px 5px 0px 0px;}
+	/* 登录后 我的账户下拉菜单 */
+.HeadTopLogin .SelectAccount{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectAccount span.SelectTriangle{ display:inline-block;  vertical-align:middle; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAccount span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectAccount dl{ float:none; width:160px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectAccount dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectAccount dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectAccount em{ display:block; height:12px; line-height:normal; vertical-align:middle; margin:0px; padding:6px 10px; text-align:left; background:#F9F9F9;}
+	/* 所有头部下拉框 鼠标悬浮时候里面的样式白线和下拉菜单的现实样式 */
+.HeadTopLogin .over span.line{ display:block;}
+.HeadTopLogin .over dl{ display:block;}
+
+/* 头部中 logo和客服电话与QQ */
+.HeadMiddleLogo{ width:950px; margin:auto; overflow:hidden; background:url(/rchlw/function/images/HomeLogoBG.gif) no-repeat top left;}
+.HomeLogo{ float:left;}
+.HomeActivityBanner{ float:left;}
+.HomeServiceTel{ float:right; margin:23px 10px 0px 0px;}
+.HomeServiceQQ{ float:right; margin:20px 10px 0px 0px;}
+
+/* 头部下 menu */
+.HeadBottomMenu{ height:40px; line-height:40px; background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px 0px;}
+.HeadBottomMenu .box{ width:950px; margin:auto; height:40px; line-height:40px; position:relative; z-index:100;}
+.HeadBottomMenu .SelectLotteryBox{ float:left; width:210px;}
+
+	/* 彩种选择菜单 */
+.HeadBottomMenu .SelectLotteryButton{ width:182px; height:29px; cursor:pointer; margin:6px 0px 0px 0px; background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px 0px; position:relative; z-index:100;}
+.HeadBottomMenu .SelectLotteryButton .SelectLottery{ position:absolute; top:29px; z-index:1000;}
+.HeadBottomMenu .SelectLotteryButton .PannelBody{border:solid 1px #F0B080;}
+.HeadBottomMenu .SelectLotteryButton table{ width:210px;}
+.HeadBottomMenu .SelectLottery{ display:none; width:210px;}
+.HeadBottomMenu .over{ background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px -29px;}
+.HeadBottomMenu .over .SelectLottery{ display:block;}
+
+	/* 主menu */
+.HeadBottomMenu ul{ float:left; height:40px; line-height:40px; border-left:solid 1px #C81919; border-right:solid 1px #E32A29;}
+.HeadBottomMenu li{ width:100px; float:left; height:40px; line-height:40px; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
+.HeadBottomMenu .relative{position:relative; z-index:100;}
+.HeadBottomMenu li a{ display:block; width:98px; height:40px; line-height:40px; border-left:solid 1px #E32A29; border-right:solid 1px #C81919; cursor:pointer; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
+.HeadBottomMenu li a:hover{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.selected a{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -80px;}
+
+	/* 足彩下拉菜单 */
+.HeadBottomMenu li dl{ width:100px; height:auto; display:none; position:absolute; top:40px; left:0px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #AD0000; border-top:none; background:#FAFAFA;}
+.HeadBottomMenu li dt{ height:12px; line-height:normal; padding:9px 0px; overflow:hidden;}
+.HeadBottomMenu li dd{ height:12px; line-height:normal; padding:9px 0px; overflow:hidden; border-top:solid 1px #F2B080;}
+.HeadBottomMenu dl a{ display:block; height:12px; line-height:normal; background:none; border:none; font-size:12px; font-weight:normal; color:#993300;}
+.HeadBottomMenu dl img{ vertical-align:text-top;}
+.HeadBottomMenu li.over{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.over a:hover{ background:none; text-decoration:underline;}
+.HeadBottomMenu .over dl{ display:block;}

@@ -1,0 +1,88 @@
+﻿@charset "utf-8";
+/*公共样式 */
+.body{ width:950px; height:auto; margin:0 auto;}
+.competing{ margin:0; padding:0;}
+div.selected,ul.selected,li.selected,dl.selected,dt.selected,dd.selected{ display:block;}
+table.selected{ display:table;}
+.none{ display:none;}
+/*header样式 */
+.competingtop{ overflow:hidden; height:84px;}
+.competingtopLeft{ float:left; width:5px; height:64px; padding-top:20px; background:url(../images/competing_bg.gif) no-repeat 0 -51px;}
+.competingtopCon{float:left; width:942px; height:64px;  padding-top:20px; background:url(../images/competing_bg.gif) repeat-x 0 -138px;}
+.competingtopRight{float:left; width:3px; height:64px;  padding-top:20px; background:url(../images/competing_bg.gif) no-repeat -5px -51px;}
+.competingtopConLogo{  padding-left:62px;  }
+.jclqLogo{ width:856px;height:64px; background:url(../images/JclqLogo.gif) no-repeat 8px 0px;}
+.competingtopConZi{  padding-left:89px; line-height:20px;}
+.jclqZi{width:776px; height:19px; background:url(../images/JclqZi.gif) no-repeat 8px 0px;}
+.competingtopConLogo .strong{ font-weight:bold;}
+.competingtopConLogo dl{ width:860px; padding-top:17px;_padding-top:16px; padding-left:8px; overflow:hidden;}
+.competingtopConLogo dd{ float:left; margin-left:5px;}
+.holdup{ width:60px; height:28px; color:#FFF; font-weight:bold; background:url(../images/competing_bg.gif) no-repeat 0px 0px; line-height:28px; text-align:center; cursor:pointer;}
+.holdout{ width:60px; height:28px; color:#DE0201; background:url(../images/competing_bg.gif) no-repeat -63px 0px; line-height:28px; text-align:center; cursor:pointer;}
+.competingtopConLogo dt{ float:right; line-height:28px;}
+.competingtopConLogo dt a:hover{ text-decoration:underline; color:#de0201;}
+
+.competingChange{ height:38px; width:948px; background:url(../images/competing_bg.gif) repeat-x 0px -222px; border-left:1px solid #fcae58; border-right:1px solid #fcae58; }
+.competingChange ul{ margin:0; padding:0; padding-left:12px; padding-top:9px;}
+.competingChange ul li{ width:79px; line-height:29px; text-align:center; float:left;}
+.competingChange ul .selected{  background:url(../images/AlertOver.gif) no-repeat; color:#DE0201;}
+.ChannelBuyPannelBody .CastBtn{ background:url(../images/goucaiBtn.gif) no-repeat; width:100px; height:32px; border:0;font-weight:bold; color:#fff; font-size:14px; cursor:pointer; margin-right:10px;margin-top:7px;}
+/*赛事样式 */
+.competingEvent{ overflow:hidden;}
+.competingEventLeft{ width:698px; height:auto; float:left; border:1px solid #fcae58; border-top:none;}
+.competingEventLeft p{overflow:hidden; padding:10px 12px; height:22px;}
+.competingEventLeft span{ line-height:20px; }
+.Eventselect{ display:block; width:63px; height:22px; padding-left:7px;  background:url(../images/competing_bg.gif) repeat-x 0px -263px; color:#de0201; float:left;}
+.EventJzh{ float:left; margin-left:85px;}
+.EventJzh font{ padding-left:5px; padding-right:5px; color:#DE0201;}
+.input{ position:relative; top:2px;}
+.EventQuery{ float:right;}
+.competingEventTable{ width:100%; border:none; border-collapse:collapse;}
+.competingEventTable thead td{ height:23px; border:1px solid #f2f2f2; background:#f8f8f8; text-align:center; font-weight:bold;}
+.competingEventTable tbody .week{ border:1px solid #f2f2f2; width:690px; text-align:center; font-weight:bold; }
+.competingEventTable tbody .week font{ color:#1f376d; line-height:33px; }
+.competingEventTable tbody td{text-align:center;line-height:33px; border-top:1px solid #fff; border-left:1px solid #f2f2f2; }
+.competingEventTable tbody td font{ color:#1f376d;}
+.competingEventTable tbody th{ width:46px; border-top:1px solid #fff;border-left:1px solid #f2f2f2; text-align:center;}
+.competingEventTable tbody .gray{ background:#f9f9f9;}
+.competingEventTable tbody .red{ background:red; color:#FFF;}
+.competingEventTable tbody .ff9933{ background:#ff9933; color:#FFF;}
+.competingEventTable tbody .zise{ background:#663399; color:#FFF;}
+.competingEventTable tbody .result_1 {background: url(../images/result_bgYellow.gif) no-repeat center center;color: #FFFFFF;cursor: pointer;display: block;font-size: 12px;font-weight: bold;height: 28px;line-height:28px;}
+.competingEventTable tbody .result_3 {background: url(../images/result_bgGrey.gif) no-repeat center center;color: #555555;cursor: pointer;display: block;font-size: 12px;font-weight: bold;height: 28px;line-height: 28px;}
+.competingEventRight{ width:240px; float:right;}
+/*竞彩篮球投注提示样式 */
+.competingPrompt{ width:920px; border:1px solid #dbdbdb; padding:15px; margin-top:10px;}
+.competingPrompt h1{ font-weight:bold; line-height:20px;}
+.competingPrompt p{line-height:20px;}
+
+
+/* 彩果样式*/
+.account_left{ width:158px; margin-right:10px; border:1px solid #E7E7E7;  background:url(../images/myAccount_title.gif) repeat-x;  float:left;}
+.account_title{ padding:20px 0 7px 20px;}
+.account_secondTitle{ height:36px; line-height:36px; margin:0 12px; border-bottom: 1px solid #E7E7E7; padding-left:12px; color:#666666;}
+.account_left dd{ height:30px; line-height:30px; margin:0 12px 0 32px; border-bottom: 1px solid #E7E7E7; color:#333333; cursor:pointer;}
+.account_left span{ width:2px; height:2px; line-height:2px; background:url(../images/myAccount_con.gif) no-repeat; margin:14px 10px 0 0; display:block; float:left; overflow: hidden; } 
+.account_left dd font{ height:30px; line-height:30px;}
+.account_left dd.over font{ color:#DE0201;}
+.account_left dd.selected{ position:relative;}
+.account_left dd.selected font{ width:135px; height:32px; line-height:32px; padding:0 12px 0 32px; display:block; position:absolute; left:-32px; top:-1px; background:url(../images/myAccount_pointer.gif) no-repeat; color:#DE0201; font-weight:bold;}
+.lotteryAnnouncement{ width:780px; height:auto; float:right; overflow:hidden;}
+.lotteryAnnouncement h2{ height:35px; line-height:35px; background:url(../images/ziXun_Arrow.gif) no-repeat 0 15px; padding: 0 10px 0 15px; font-size:14px; color:#333333; font-weight:bold; border-bottom:1px solid #E7E7E7;}
+.announcement_border{ width:752px; border:1px solid #E7E7E7; overflow:hidden; padding:0 12px 18px 14px;}
+.announcement_time{ overflow:hidden; padding:13px 0 16px 0;}
+.announcement_time select{ margin-right:27px;} 
+.announcement_time span{ padding:0 2px;}
+.shiShi_table{ height:auto; overflow:hidden;}
+.shiShi_table i{ color:#DE0201; }
+.shiShi_bgGrey td,.shiShi_bgGrey th{ background:#F9F9F9;}
+.account_recharge{ width:764px; height:39px; line-height:39px; overflow:hidden; background:url(../images/myAccount_tabTopBg.gif) repeat-x; padding-left:14px;}
+.account_recharge li{ width:100px; height:30px; line-height:30px; float:left; text-align:center; background: url(../images/myAccount_tab.gif) no-repeat; cursor:pointer; display:block; font-size:12px; margin:0px 6px 0px 0px; color:#1F376D; margin-top:9px;}
+.account_recharge li.over{ width:100px; height:30px; line-height:30px; float:left;  text-align:center; background: url(../images/myAccount_tabHover.gif) no-repeat; cursor:pointer; font-size:12px; color:#1F376D;  margin-top:9px;}
+.account_recharge li.selected{width:100px; height:30px; line-height:30px; float:left;  text-align:center; background: url(../images/myAccount_tabClick.gif) no-repeat; cursor:pointer; font-size:12px; color:#DE0201;  margin-top:9px;}
+.account_recharge .account_TabText{color:#DE0201; line-height:48px;}
+.account_day{ width:750px; margin-top:10px; border-collapse:separate; border:1px solid #E7E7E7;}
+.account_day th{ height:36px; line-height:36px; padding:0 6px; text-align:center;  background:#F8F8F8; color:#666666; border-bottom:1px solid #E7E7E7;}
+.accountDay_whiteBg td{ height:30px; line-height:30px; padding:0 6px; text-align:center; border-bottom:1px solid #E7E7E7; border-top:1px solid #E7E7E7;}
+.accountDay_greyBg td{ height:30px; line-height:30px; padding:0 6px; text-align:center; background:#F9F9F9; border-bottom:1px solid #FFFFFF; border-top:1px solid #FFFFFF;}
+

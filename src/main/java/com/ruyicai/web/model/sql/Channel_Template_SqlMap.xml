@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Channel_Template">
+  <resultMap class="com.ruyicai.web.pojo.Channel_Template" id="ibatorgenerated_BaseResultMap">
+    <!--新闻频道和分类与模板关联  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="channel_id" jdbcType="BIGINT" property="channel_id" />
+    <result column="category_code" jdbcType="BIGINT" property="category_code" />
+    <result column="template_id" jdbcType="BIGINT" property="template_id" />
+  </resultMap>
+  <select id="ibatorgenerated_selectByPrimaryKey" parameterClass="com.ruyicai.web.pojo.Channel_Template" resultMap="ibatorgenerated_BaseResultMap">
+    <!--按id查询 新闻频道和分类与模板关联对象-->
+    select * 
+    from Channel_Template
+    where id = #id:BIGINT# 
+  </select>
+  <select id="ibatorgenerated_selectByExample" resultMap="ibatorgenerated_BaseResultMap"  
+        parameterClass="com.ruyicai.web.pojo.Channel_Template"> 
+        <!--查询新闻集合 分页--> 
+        select *   
+        from Channel_Template 
+        <dynamic prepend="WHERE">
+			<isNotEmpty prepend="AND" property="channel_id">
+			(channel_id=#channel_id#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="category_code">
+			(category_code=#category_code#)
+			</isNotEmpty>
+		</dynamic>
+  </select>
+  <!--添加新闻频道和分类与模板关联-->
+<insert id="insertChannel_Template" parameterClass="com.ruyicai.web.pojo.Channel_Template">
+		insert into Channel_Template(
+			<dynamic>
+			id
+			<isNotNull prepend="," property="channel_id">channel_id</isNotNull>
+			<isNotNull prepend="," property="category_code">category_code</isNotNull>
+			<isNotNull prepend="," property="template_id">template_id</isNotNull>
+		</dynamic>
+			)
+		values(
+		<dynamic>
+			#id#
+			<isNotNull prepend="," property="channel_id">#channel_id#</isNotNull>
+			<isNotNull prepend="," property="category_code">#category_code#</isNotNull>
+			<isNotNull prepend="," property="template_id">#template_id#</isNotNull>
+		</dynamic>
+		)
+		<selectKey resultClass="java.lang.Long">
+			select max(id) from Channel_Template
+		</selectKey>
+	</insert>
+	 <!--更新新闻频道和分类与模板关联-->
+ <update id="updateChannel_Template" parameterClass="com.ruyicai.web.pojo.Channel_Template">
+		UPDATE Channel_Template SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="channel_id">channel_id=#channel_id#</isNotNull>
+			<isNotNull prepend="," property="category_code">category_code=#category_code#</isNotNull>
+			<isNotNull prepend="," property="template_id">template_id=#template_id#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	<delete id="deleteChannel_Template" parameterClass="com.ruyicai.web.pojo.Channel_Template">
+		DELETE FROM channel_template WHERE 1=1
+		<isGreaterThan prepend=" AND " property="channel_id" compareValue="0" >channel_id=#channel_id#</isGreaterThan>
+		<isGreaterThan prepend=" AND " property="category_code"  compareValue="0" >category_code=#category_code#</isGreaterThan>
+	</delete>
+</sqlMap>

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+*{ padding:0; list-style:none; border:none; margin:0; font-size:14px;}
+.first-Wrap{ height:897px; background:url(/rchlw/function/images/first-onebg.png) no-repeat;margin:0 auto; width:630px; padding:303px 160px 0;font-size:14px;}
+.first-pro{ line-height:25px; text-indent:2em; padding-bottom:26px}
+.first-pro .jiedu{font-weight:bold}
+.first-pro .jiangjin{ color:red}
+.first-pro a{ text-decoration:none; color:#122BBC; font-weight:bold; font-size:18px}
+.first-pro a:hover{ text-decoration:none; color:#FD725D}
+.first-Wrap .caiFang{ text-indent:0; padding-bottom:2px; line-height:24px}
+.first-pro span.xiaobian{ color:#3F7C1F}
+.first-pro span.xingyuner{ color:#E08B38}
+.first-head{ padding:10px 0;}
+.first-head span{ font-weight:bold}
+.first-foot{ text-align:center;}
+.first-foot a{ padding:0 20px; text-decoration:none; color:#122BBC;}
+.first-foot a:hover{text-decoration:none; color:#FD725D;}

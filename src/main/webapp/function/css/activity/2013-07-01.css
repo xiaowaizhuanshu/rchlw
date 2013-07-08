@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap7-1{ width:950px; margin:0 auto; height:2300px}
+.top{ height:370px; background:url(/rchlw/function/images/activity/7-1-top.jpg) no-repeat}
+.wrap7-1-top{text-indent:2em; line-height:25px; color:#655500; font-weight:bold; font-size:12px;letter-spacing:1px;}
+.con-center{ width:950px; overflow:hidden;}
+.con-center .left{ width:100px; float:left; height:1930px; background:url(/rchlw/function/images/activity/con-left.jpg) no-repeat;}
+.con-center .right{ width:100px; float:left; height:1930px; background:url(/rchlw/function/images/activity/cont-right.jpg) no-repeat}
+.con-center .center{ width:750px; float:left; height:1930px;}
+
+.con-center .center .bot{ height:83px; background:url(/rchlw/function/images/activity/7-1-bot.jpg) no-repeat}
+
+.wrap7-1 h2{ margin:20px 0; height:20px;}
+.wrap7-1 h2.title-one{ background:url(/rchlw/function/images/activity/yi.jpg) no-repeat;}
+.wrap7-1 h2.title-two{ background:url(/rchlw/function/images/activity/er.jpg) no-repeat;}
+.wrap7-1 h2.title-three{ background:url(/rchlw/function/images/activity/san.jpg) no-repeat;}
+.wrap7-1 h2.title-four{ background:url(/rchlw/function/images/activity/si.jpg) no-repeat;}
+.wrap7-1 h3{ margin:10px 0; font-size:14px; color:#21A9E3}
+.wrap7-1 .green-line{ height:2px; margin-top:10px; background:url(/rchlw/function/images/activity/green-line.jpg) no-repeat}
+
+.wrap7-1 table{border-collapse:collapse; margin:10px 0;}
+.wrap7-1 table tr td{ border:1px solid #51882D; border-collapse:collapse; text-align:center; height:20px; font-size:12px; font-weight:bold;color:#14200B;}
+.wrap7-1 table tr td span,.wrap7-1 p span{ color:#FB6E04;}
+
+.wrap7-1 p{ line-height:22px; _line-height:21px;color:#000; font-weight:bold; text-indent:2em}
+
+.wrap7-1 p a{ text-decoration:none; color:#FB6E04}
+.wrap7-1 p.zhushi{ text-indent:0;}
+.wrap7-1 .lianjie{ padding:10px 0 10px 100px;}
+.wrap7-1 .lianjie a{ display:inline-block; padding-top:7px; padding-right:30px; color:#21A9E3; text-decoration:none; font-size:14px; font-weight:bold}
+.wrap7-1 .lianjie a:hover,.wrap7-1 p a:hover{ text-decoration:underline;color:#FB6E04;}

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>竞彩单式上传格式</title>
+<style type="text/css">
+*{ margin:0; padding:0;}
+.geshi-wrap{ width:810px; margin:0 auto; padding:0 70px; margin-bottom:40px; font-size:12px;back;background-color:#A6FFFF}
+.geshi-wrap h2{ font-size:16px; font-weight:bold; height:40px; line-height:40px; margin-bottom:10px; color:#A00002; border-bottom:1px solid #dbdbdb;}
+.geshi-wrap h3{ font-size:14px; font-weight:bold; padding:0 0 0 10px; background:url(/rchlw/function/images/t-square2.jpg) no-repeat left center; margin-left:10px; margin-bottom:10px;}
+.geshi-wrap h4{ font-size:12px; font-weight:bold; padding-left:10px; color:#0F6FBD; background:url(/rchlw/function/images/t-square1.jpg) no-repeat left center; margin:10px 0 10px 20px;}
+
+.geshi-wrap p{ line-height:22px; padding-left:20px; color:#171717; margin-bottom:30px;}
+.geshi-wrap p span{ color:#de0201; font-size:12px;}
+</style>
+</head>
+
+<body>
+
+<div class="geshi-wrap">
+<h2>胜平负单式标准格式介绍</h2>
+<h3>标准格式要求： </h3>
+<p>1、只接受后缀名为".txt"的记事本文本文档。<br />
+
+2、一行一注。<br />
+
+3、支持逗号、空格进行分隔，不投的场次用*占位（仅支持*）。 <br />
+
+4、逗号、空格均为半角格式下。 <br />
+
+5、支持两种（冒号、箭头）带场次编号的格式。</p>
+
+<h3>标准格式如下： </h3>
+&nbsp;&nbsp;&nbsp;（3代表胜，1代表平，0代表负） 
+
+<h4>不带场次</h4>
+<p style="padding-left:40px;">3,3,1,0,3,1<br />
+331303<br />
+3,3,1,*,0,3,*,*,1,*,*<br /> 
+331*03**1**</p>
+
+<h4>带场次</h4>
+<p style="padding-left:40px;">1001:[3]/1002:[3]/1003:[1]/1004:[0]/1005:[3]/1006:[1]<br />
+1001→3,1002→3,1003→1,1004→0,1005→3,1006→1 <br />
+<span>（说明：1001代表场次编号周一001，2001代表场次编号周二001，依次类推…） </span></p>
+
+
+<h2 style=" margin-top:25px;">具体实例说明：</h2>
+<h3>1、普通过关</h3>
+<p>例如：选择6场比赛（场次编号为周一001、周一002、周一003、周一004、周一005、周一006），选择6串1的过关方式，用户可以上传以下几种格式：<br /> 
+格式一、<br />  
+3,3,1,0,3,1<br /> 
+331031<br /> <br /> 
+格式二、<br /> 
+1001:[3]/1002:[3]/ 1003:[1]/ 1004:[0]/ 1005:[3]/ 1006:[1] <br /> 
+1001→3, 1002→3, 1003→1, 1004→0, 1005→3, 1006→1 <br /> 
+<span>（说明：冒号或箭头前面的数字表示场次编号，后面中括号里面的数字表示投注选项） </span><br />
+以上文本格式方案对应为：<br />  
+1001→3，1002→3，1003→1，1004→0，1005→3，1006→1 </p>
+
+<h3>2、组合过关</h3> 
+<p>选择6场比赛（场次编号为周一001、周一002、周一003、周一004、周一005、周一006），选择3串1的过关方式，用户可以上传以下几种格式：<br />  
+格式一、 <br /> 
+3,1,*,0,*,*<br />
+<br/>
+格式二、 <br />
+31*0**<br /> 
+以上文本格式方案对应为： <br /> 
+1001→3，1002→1，1004→0<br /> 
+<span>（说明： *为占位符，选择6场比赛必须且只能上传6个字符<含占位符>；选择3串1，310的个数必须且只能是3个，310的位数将对应场次位数）</span></p>
+</div>
+</body>
+</html>

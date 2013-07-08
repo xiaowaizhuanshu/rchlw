@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN" "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">  
+  <taglib>  
+      <tlib-version>2.2.3</tlib-version>  
+      <jsp-version>1.2</jsp-version>  
+      <short-name>pageTang</short-name>  
+      <uri>/pageTang</uri>  
+      <display-name>"Tangs Tags"</display-name>  
+          <tag>  
+              <name>pages</name>  
+              <tag-class>com.tangs.PageTag</tag-class>
+              <body-content>empty</body-content>  
+              <description>分页的标签</description>
+			<attribute>
+                  <name>cpage</name>
+                  <required>true</required>
+                  <rtexprvalue>true</rtexprvalue>
+                  <description>当前页 页数</description>
+              </attribute>  
+              <attribute>  
+                  <name>total</name>  
+                  <required>true</required>  
+                  <rtexprvalue>true</rtexprvalue> 
+                  <description>总页数</description> 
+              </attribute>  
+              <attribute>  
+                  <name>url</name>  
+                  <required>true</required>  
+                  <rtexprvalue>true</rtexprvalue> 
+                  <description>链接 地址</description> 
+              </attribute> 
+              <attribute>
+		      <name>web_id</name>
+		      <required>false</required>
+		      <rtexprvalue>false</rtexprvalue>
+		      <description>传入的站点id 必须的属性</description>
+		    </attribute>
+		     <attribute>
+		      <name>num</name>
+		      <required>false</required>
+		      <rtexprvalue>false</rtexprvalue>
+		      <description>显示条数</description>
+		    </attribute>
+		    <attribute>
+		      <name>categoryCn</name>
+		      <required>false</required>
+		      <rtexprvalue>false</rtexprvalue>
+		      <description>查询分类的中文名</description>
+		    </attribute>
+		    <attribute>
+		      <name>channelCn</name>
+		      <required>false</required>
+		      <rtexprvalue>false</rtexprvalue>
+		      <description>查询分类新闻的频道中文名</description>
+		    </attribute> 
+		    <attribute>
+		      <name>categoryId</name>
+		      <required>false</required>
+		      <rtexprvalue>false</rtexprvalue>
+		      <description>查询分类新闻的频道id</description>
+		    </attribute> 
+          </tag>
+  </taglib>  

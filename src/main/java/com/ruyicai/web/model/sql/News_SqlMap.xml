@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="News">
+  <resultMap class="com.ruyicai.web.pojo.News" id="News">
+    <!--新闻  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="categoryCode" />
+    <result column="channel_id" jdbcType="BIGINT" property="channelId" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="wap_state" jdbcType="INTEGER" property="wapState" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wapTitle" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="compile" jdbcType="VARCHAR" property="compile" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="keyword" jdbcType="VARCHAR" property="keyword" />
+    <result column="top_news" jdbcType="INTEGER" property="topNews"/>
+    <result column="pic_name" jdbcType="VARCHAR" property="picName" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="call_url" jdbcType="VARCHAR" property="callUrl" />
+    <result column="wap_url" jdbcType="VARCHAR" property="wapUrl" />
+    <result column="audit_type" jdbcType="INTEGER" property="auditType" />
+    <result column="admin_id" jdbcType="BIGINT" property="adminId" />
+    <result column="compile_id" jdbcType="BIGINT" property="compileId" />
+    <result column="template_id" jdbcType="BIGINT" property="templateId" />
+    <result column="numero" jdbcType="BIGINT" property="numero" />
+     <result column="clickCount" jdbcType="BIGINT" property="clickCount" />
+     <result column="title_as" jdbcType="VARCHAR" property="title_as" />
+     <result column="title_color" jdbcType="VARCHAR" property="title_color" />
+    
+  </resultMap>
+  <resultMap class="com.ruyicai.web.model.NewsMD" id="NewsMD">
+    <!--新闻  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="categoryCode" />
+    <result column="channel_id" jdbcType="BIGINT" property="channelId" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wapTitle" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="top_news" jdbcType="INTEGER" property="topNews"/>
+    <result column="audit_type" jdbcType="INTEGER" property="auditType" />
+    <result column="compile_id" jdbcType="BIGINT" property="compileId" />
+    <result column="template_id" jdbcType="BIGINT" property="templateId" />
+    <result column="numero" jdbcType="BIGINT" property="numero" />
+    <result column="channel_name_cn" jdbcType="VARCHAR" property="channelNameCn" />
+    <result column="category_name_cn" jdbcType="VARCHAR" property="categoryNameCn" />
+    
+  </resultMap>
+  
+  <resultMap class="com.ruyicai.web.model.NewsMD" id="reNewsMD">
+    <!--新闻外部使用的MODEL映射-->
+      <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="categoryCode" />
+    <result column="channel_id" jdbcType="BIGINT" property="channelId" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="wap_state" jdbcType="INTEGER" property="wapState" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wapTitle" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="compile" jdbcType="VARCHAR" property="compile" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="keyword" jdbcType="VARCHAR" property="keyword" />
+    <result column="top_news" jdbcType="INTEGER" property="topNews"/>
+    <result column="pic_name" jdbcType="VARCHAR" property="picName" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="call_url" jdbcType="VARCHAR" property="callUrl" />
+    <result column="wap_url" jdbcType="VARCHAR" property="wapUrl" />
+    <result column="audit_type" jdbcType="INTEGER" property="auditType" />
+    <result column="admin_id" jdbcType="BIGINT" property="adminId" />
+    <result column="compile_id" jdbcType="BIGINT" property="compileId" />
+    <result column="template_id" jdbcType="BIGINT" property="templateId" />
+    <result column="numero" jdbcType="BIGINT" property="numero" />
+    <result column="category_name_zh" jdbcType="BIGINT" property="categoryNameZh" />
+  </resultMap>
+  <!-- 根据查询图片地址 
+  <select id="selectNewsPicName" resultMap="News" parameterClass="java.lang.Long">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1  AND ns.website_id=#websiteId#  
+	   	  AND <![CDATA[(ns.pic_name  <> '')]]>
+		ORDER BY ns.clickCount  DESC , ns.top_news DESC , ns.sequence DESC , ns.createtime DESC
+	</select>-->
+  <!-- 根据分类ID和新闻ID查询当前新闻所属分类下的非当前新闻的新闻 -->
+  <select id="selectNewsByCategoryIdandNotnowId" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1  AND ns.website_id=#websiteId# AND nt.code = #categoryId# 
+	   	  AND ns.id!= #newsId#
+		ORDER BY ns.clickCount  DESC , ns.top_news DESC , ns.sequence DESC , ns.updatetime DESC,ns.createtime DESC
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+  
+  <!-- 根据分类查询新闻列表 -->
+  <select id="selectNewsInCategoryNameCnsByChannelIdForList" resultMap="reNewsMD" parameterClass="java.util.Map">
+		SELECT	ns.*,nt.name_zh AS category_name_zh
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0)
+	   	 AND ns.audit_type=1  AND ns.website_id=#websiteId# AND nt.name_cn in ($categoryNameCns$)
+	   	<dynamic>
+	   		<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+		</dynamic>
+		ORDER BY ns.top_news DESC , ns.sequence DESC , ns.updatetime DESC,ns.createtime DESC
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+  
+  <!-- 查询新闻点击数 -->
+  <select id="selectNewsClickCount" resultClass="java.lang.Long" parameterClass="java.lang.Long">
+		SELECT	ns.clickCount FROM	newsinfo AS ns   WHERE 	ns.id=#id#
+	</select>
+  
+  <!-- 更新新闻的点击数 -->
+  <update id="updateNewsClickCount"  parameterClass="java.lang.Long">
+		UPDATE NewsInfo SET  clickCount=clickCount+1 WHERE id=#id#
+	</update>
+  <!-- 查询新闻的总数 -->
+	<select id="selectNewsCount" resultClass="java.lang.Integer" parameterClass="java.util.Map">
+		SELECT	count(1)
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 
+	   AND ns.website_id=#websiteId# 
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelNameCn">nc.name_cn = #channelNameCn#</isNotNull>
+			<isNotNull prepend="AND " property="categoryNameCn">nt.name_cn = #categoryNameCn#</isNotNull>
+		</dynamic>
+	</select>
+	<!-- 查询新闻的总数 -->
+	<select id="selectNewsCountById" resultClass="java.lang.Integer" parameterClass="java.util.Map">
+		SELECT	count(1)
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 
+	   AND ns.website_id=#websiteId#  AND (nt.code IN( SELECT nm.code FROM newscategory nm WHERE nm.pcode = #categoryId# ) 
+	   OR nt.code=#categoryId#)
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+		</dynamic>
+	</select>
+	<!-- 查询新闻列表 -->
+	<select id="selectNewsListByCn" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1
+	   AND ns.website_id=#websiteId# 
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelNameCn">nc.name_cn = #channelNameCn#</isNotNull>
+			<isNotNull prepend="AND " property="categoryNameCn">nt.name_cn = #categoryNameCn#</isNotNull>
+		</dynamic>
+		ORDER BY ns.sequence DESC, ns.updatetime DESC,ns.createtime DESC
+	    LIMIT 	#nowPage#,#limitCount#  
+	</select>
+	
+	<!-- 查询新闻列表  按分类CODE 查询该分类下的新闻和所有子类下的新闻-->
+	<select id="selectNewsListByCodeAll" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1
+	   AND ns.website_id=#websiteId# 
+	   AND (nt.code IN( SELECT nm.code FROM newscategory nm WHERE nm.pcode = #categoryId# ) 
+	   OR nt.code=#categoryId#)
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelNameCn">nc.name_cn = #channelNameCn#</isNotNull>		
+		</dynamic>
+		ORDER BY ns.sequence DESC, ns.updatetime DESC,ns.createtime DESC
+	     LIMIT 	0,#limitCount#    
+	</select>
+	<!-- 根据频道Id 查询新闻列表 -->
+	<select id="selectNewsListByCnAndId" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1
+	   AND ns.website_id=#websiteId# 
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelId">nc.id = #channelId#</isNotNull>
+			<isNotNull prepend="AND " property="categoryNameCn">nt.name_cn = #categoryNameCn#</isNotNull>
+		</dynamic>
+		ORDER BY ns.sequence DESC, ns.updatetime DESC,ns.createtime DESC
+	    LIMIT 	0,#limitCount#  
+	</select>
+	<!-- 查询新闻列表 -->
+	<select id="selectNewsListById" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1
+	   AND ns.website_id=#websiteId# 
+	   AND (nt.code IN( SELECT nm.code FROM newscategory nm WHERE nm.pcode = #categoryId# ) 
+	   OR nt.code=#categoryId#)
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+		</dynamic>
+		ORDER BY ns.sequence DESC, ns.updatetime DESC,ns.createtime DESC
+	    LIMIT 	#nowPage#,#limitCount#  
+	</select>
+	<!-- 查询非当前分类的新闻列表 -->
+	<select id="selectNewsListByNotNowId" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1
+	   AND ns.website_id=#websiteId# 
+	   AND nt.code IN( SELECT nm.code FROM newscategory nm WHERE nm.pcode =#pcodeId#  AND nm.code !=#categoryId#) 
+	   
+	   <dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+			<isNotNull prepend="AND " property="topNews">ns.top_news = #topNews#</isNotNull>
+		</dynamic>
+		ORDER BY ns.sequence DESC, ns.updatetime DESC,ns.createtime DESC
+	    LIMIT 	0,#limitCount#  
+	</select>
+	
+	
+  	<select id="selectNewsByIdForObject" resultMap="News" parameterClass="java.lang.Long">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.id=#id# 	
+	</select>
+	
+	<select id="selectNewsByIdForObjectAll" resultMap="NewsMD" parameterClass="java.lang.Long">
+		SELECT	ns.*,nc.name_cn AS channel_name_cn,nt.name_cn AS category_name_cn
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0)  AND ns.id=#id#  AND ns.audit_type=1 	
+	</select>
+	<select id="selectNewsByIdForPicName" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# 
+	   			AND ns.top_news=1 ORDER BY ns.sequence DESC,ns.createtime DESC
+	</select>
+	<!-- 查询中间新闻页面得图片  -->
+	<select id="selectNewsByIdForPicNameList" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# AND nt.name_zh = #categoryNameZh#
+	   			AND ns.top_news=1 ORDER BY ns.sequence DESC,ns.createtime DESC
+	</select>
+	<select id="selectNewsInIdForList" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# AND ns.category_code = #categoryId#
+	   	<dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+			<isNotNull prepend="AND " property="topNews">ns.top_news = #topNews#</isNotNull>
+		</dynamic>
+		ORDER BY ns.top_news DESC , ns.sequence DESC , ns.createtime DESC 
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+	<select id="selectNewsInNameZhForList" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status=0 OR ns.channel_id=0) AND nt.state=0 AND nc.state=0 AND ns.audit_type=1 AND ns.website_id=#websiteId# AND nt.name_zh = #categoryNameZh#
+	   	<dynamic>
+	   		<isNotNull prepend="AND " property="channelNameZh">nc.name_zh = #channelNameZh#</isNotNull>
+			<isNotNull prepend="AND " property="topNews"> ns.top_news = #topNews# </isNotNull>
+		</dynamic>
+		ORDER BY ns.top_news DESC , ns.sequence DESC , ns.createtime DESC
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+	
+	<!-- 根据分类的中文，频道的中文名查询新闻列表 -->
+	<select id="selectNewsByCnForList" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 	
+	    	WHERE  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1  AND ns.website_id=#websiteId#  
+	   	<dynamic>
+	   	<isNotNull prepend="AND " property="categoryNameCn">nt.name_cn = #categoryNameCn#</isNotNull>
+	   		<isNotNull prepend="AND " property="channelNameCn">nc.name_cn = #channelNameCn#</isNotNull>
+			<isNotNull prepend="AND " property="topNews"> ns.top_news = #topNews# </isNotNull>
+		</dynamic>
+		ORDER BY ns.top_news DESC , ns.sequence DESC , ns.createtime DESC
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+  	<select id="selectNewsInCategoryNameZhsByChannelIdForList" resultMap="reNewsMD" parameterClass="java.util.Map">
+		SELECT	ns.*,nt.name_zh AS category_name_zh
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1  AND ns.website_id=#websiteId# AND nt.name_zh in ($categoryNameZhs$)
+	   	<dynamic>
+	   		<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+		</dynamic>
+		ORDER BY ns.top_news DESC , ns.sequence DESC , ns.createtime DESC
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="maxNum">0,$maxNum$</isNotNull>
+		</dynamic>
+	</select>
+  
+  
+<!--///////////////////////////////后台语句标签//////////////////////////////////////////////////////////////// -->
+<!--查询所有上线新闻 -->
+	<select id="selectNewsListByOnline" resultMap="News" parameterClass="java.lang.Long">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	(ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# 
+	   			AND ns.audit_type=1 
+	</select>
+
+<select id="selectForIntThisPage" resultClass="java.lang.Integer" parameterClass="com.ruyicai.web.model.NewsMD">
+		<!--查询所有新闻条数 -->
+	SELECT	count(1)
+    FROM	newsinfo AS ns 
+    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+   	WHERE   (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0)  AND ns.website_id=#websiteId#
+   	<dynamic>
+   		<isGreaterThan prepend="AND" property="auditType" compareValue="-1">(ns.audit_type=#auditType#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="categoryCode" compareValue="-1">(ns.category_code=#categoryCode#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="channelId" compareValue="0">(ns.channel_id=#channelId#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="type" compareValue="-1">(ns.type=#type#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="topNews" compareValue="-1">(ns.top_news=#topNews#)</isGreaterThan>
+		<isNotEmpty prepend="AND" property="sartTime"><![CDATA[(ns.createtime >= #sartTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="AND" property="endTime"><![CDATA[(ns.createtime <= #endTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="AND" property="title">(ns.title like '%$title$%')</isNotEmpty>
+			
+	</dynamic>
+</select>
+  
+  <select id="select" resultMap="NewsMD" parameterClass="com.ruyicai.web.model.NewsMD">
+	SELECT 	ns.id,				ns.category_code,	ns.channel_id,	ns.type,ns.content,	ns.title,		ns.createtime,	ns.updatetime,
+         	ns.category_code,	ns.sequence,		ns.wap_title,	ns.compile_id,		ns.audit_type,	ns.wap_state,	ns.template_id,
+         	ns.top_news,		ns.status,			ns.numero,      nc.name_cn AS channel_name_cn,		nt.name_cn AS category_name_cn
+         	
+    FROM 	newsinfo AS ns 
+    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id
+    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+    		
+	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0)  AND ns.website_id=#websiteId#
+   	 <dynamic>
+   		<isGreaterThan prepend="AND" property="auditType" compareValue="-1">(ns.audit_type=#auditType#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="categoryCode" compareValue="-1">(ns.category_code=#categoryCode#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="channelId" compareValue="0">(ns.channel_id=#channelId#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="type" compareValue="-1">(ns.type=#type#)</isGreaterThan>
+   		<isGreaterThan prepend="AND" property="topNews" compareValue="-1">(ns.top_news=#topNews#)</isGreaterThan>
+		<isNotEmpty prepend="AND" property="sartTime"> <![CDATA[(ns.createtime >= #sartTime#)]]> </isNotEmpty>
+		<isNotEmpty prepend="AND" property="endTime"> <![CDATA[(ns.createtime <= #endTime#)]]> </isNotEmpty>
+		<isNotEmpty prepend="AND" property="title">(ns.title like '%$title$%')</isNotEmpty>
+	</dynamic>
+	ORDER BY ns.sequence DESC,ns.createtime DESC
+	LIMIT 	#nowPage#,#limitCount#  
+	
+	</select>
+  
+	<update id="delete" parameterClass="java.lang.String">
+		UPDATE newsinfo SET `status`=1 WHERE id in ($ids$)
+	</update>
+	<insert id="insert" parameterClass="com.ruyicai.web.pojo.News">
+		INSERT INTO newsinfo(
+			<dynamic>
+			category_code,updatetime,status
+			<isNotNull prepend="," property="channelId">channel_id</isNotNull>
+			<isNotNull prepend="," property="type">type</isNotNull>
+			<isNotNull prepend="," property="wapState">wap_state</isNotNull>
+			<isNotNull prepend="," property="title">title</isNotNull>
+			<isNotNull prepend="," property="wapTitle">wap_title</isNotNull>
+			<isNotNull prepend="," property="content">content</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence</isNotNull>
+			<isNotNull prepend="," property="compile">compile</isNotNull>
+			<isNotNull prepend="," property="status">status</isNotNull>
+			<isNotNull prepend="," property="author">author</isNotNull>
+			<isNotNull prepend="," property="keyword">keyword</isNotNull>
+			<isNotNull prepend="," property="topNews">top_news</isNotNull>
+			<isNotNull prepend="," property="picName">pic_name</isNotNull>
+			<isNotNull prepend="," property="url">url</isNotNull>
+			<isNotNull prepend="," property="wapUrl">wap_url</isNotNull>
+			<isNotNull prepend="," property="callUrl">call_url</isNotNull>
+			<isNotNull prepend="," property="auditType">audit_type</isNotNull>
+			<isNotNull prepend="," property="adminId">admin_id</isNotNull>
+			<isNotNull prepend="," property="compileId">compile_id</isNotNull>
+			<isNotNull prepend="," property="templateId">template_id</isNotNull>
+			<isNotNull prepend="," property="websiteId">website_id</isNotNull>
+			<isNotNull prepend="," property="numero">numero</isNotNull>
+			<isNotNull prepend="," property="clickCount">clickCount</isNotNull>
+			<isNotNull prepend="," property="title_as">title_as</isNotNull>
+			<isNotNull prepend="," property="title_color">title_color</isNotNull>
+		</dynamic>
+			)
+		VALUES(
+		<dynamic>
+		#categoryCode#,now(),0
+			<isNotNull prepend="," property="channelId">#channelId#</isNotNull>
+			<isNotNull prepend="," property="type">#type#</isNotNull>
+			<isNotNull prepend="," property="wapState">#wapState#</isNotNull>
+			<isNotNull prepend="," property="title">#title#</isNotNull>
+			<isNotNull prepend="," property="wapTitle">#wapTitle#</isNotNull>
+			<isNotNull prepend="," property="content">#content#</isNotNull>
+			<isNotNull prepend="," property="sequence">#sequence#</isNotNull>
+			<isNotNull prepend="," property="compile">#compile#</isNotNull>
+			<isNotNull prepend="," property="author">#author#</isNotNull>
+			<isNotNull prepend="," property="keyword">#keyword#</isNotNull>
+			<isNotNull prepend="," property="topNews">#topNews#</isNotNull>
+			<isNotNull prepend="," property="picName">#picName#</isNotNull>
+			<isNotNull prepend="," property="url">#url#</isNotNull>
+			<isNotNull prepend="," property="wapUrl">#wapUrl#</isNotNull>
+			<isNotNull prepend="," property="callUrl">#callUrl#</isNotNull>
+			<isNotNull prepend="," property="auditType">#auditType#</isNotNull>
+			<isNotNull prepend="," property="adminId">#adminId#</isNotNull>
+			<isNotNull prepend="," property="compileId">#compileId#</isNotNull>
+			<isNotNull prepend="," property="templateId">#templateId#</isNotNull>
+			<isNotNull prepend="," property="websiteId">#websiteId#</isNotNull>
+			<isNotNull prepend="," property="numero">#numero#</isNotNull>
+			<isNotNull prepend="," property="clickCount">#clickCount#</isNotNull>
+			<isNotNull prepend="," property="title_as">#title_as#</isNotNull>
+			<isNotNull prepend="," property="title_color">#title_color#</isNotNull>
+		</dynamic>
+		)
+	</insert>
+  
+  	<update id="updateAuditType" parameterClass="java.util.Map">
+		UPDATE newsinfo SET audit_type=#auditType# WHERE id=#id#
+	</update>
+
+
+	<update id="updateNews" parameterClass="com.ruyicai.web.pojo.News">
+		UPDATE NewsInfo SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="categoryCode">category_code=#categoryCode#</isNotNull>
+			<isNotNull prepend="," property="channelId">channel_id=#channelId#</isNotNull>
+			<isNotNull prepend="," property="type">type=#type#</isNotNull>
+			<isNotNull prepend="," property="wapState">wap_state=#wapState#</isNotNull>
+			<isNotNull prepend="," property="title">title=#title#</isNotNull>
+			<isNotNull prepend="," property="wapTitle">wap_title=#wapTitle#</isNotNull>
+			<isNotNull prepend="," property="content">content=#content#</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence=#sequence#</isNotNull>
+			<isNotNull prepend="," property="updatetime">updatetime=#updatetime#</isNotNull>
+			<isNotNull prepend="," property="compile">compile=#compile#</isNotNull>
+			<isNotNull prepend="," property="status">status=#status#</isNotNull>
+			<isNotNull prepend="," property="author">author=#author#</isNotNull>
+			<isNotNull prepend="," property="keyword">keyword=#keyword#</isNotNull>
+			<isNotNull prepend="," property="topNews">top_news=#topNews#</isNotNull>
+			<isNotNull prepend="," property="picName">pic_name=#picName#</isNotNull>
+			<isNotNull prepend="," property="url">url=#url#</isNotNull>
+			<isNotNull prepend="," property="callUrl">call_url=#callUrl#</isNotNull>
+			<isNotNull prepend="," property="wapUrl">wap_url=#wapUrl#</isNotNull>
+			<isNotNull prepend="," property="auditType">audit_type=#auditType#</isNotNull>
+			<isNotNull prepend="," property="adminId">admin_id=#adminId#</isNotNull>
+			<isNotNull prepend="," property="compileId">compile_id=#compileId#</isNotNull>
+			<isNotNull prepend="," property="templateId">template_id=#templateId#</isNotNull>
+			<isNotNull prepend="," property="numero">numero=#numero#</isNotNull>
+			<isNotNull prepend="," property="clickCount">clickCount=#clickCount#</isNotNull>
+			<isNotNull prepend="," property="title_as">title_as=#title_as#</isNotNull>
+			<isNotNull prepend="," property="title_color">title_color=#title_color#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	
+	<!-- 根据分类Id期号查询新闻信息 -->
+	<select id="selectnumeroByName_zh" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# AND ns.category_code = #categoryId#
+	   	<dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+			
+		</dynamic>
+		ORDER BY ns.numero DESC , ns.sequence DESC , ns.createtime DESC 
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="limitCount">0,$limitCount$</isNotNull>
+		</dynamic>
+	</select>
+	
+	<select id="selectBynumero" resultMap="News" parameterClass="java.util.Map">
+		SELECT	ns.*
+	    FROM	newsinfo AS ns 
+	    		LEFT JOIN  newschannel AS nc ON ns.channel_id=nc.id 
+	    		LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+	   	WHERE 	  (ns.status =0 OR (ns.status =0 AND ns.channel_id=0)) AND nt.state=0 AND (nc.state=0 OR ns.channel_id=0) AND ns.audit_type=1 AND ns.website_id=#websiteId# AND nt.name_zh = #namezh# and ns.numero is not null
+	   	<dynamic>
+			<isNotNull prepend="AND " property="channelId">ns.channel_id = #channelId#</isNotNull>
+			
+		</dynamic>
+		ORDER BY ns.numero DESC , ns.sequence DESC , ns.createtime DESC 
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="limitCount">0,#limitCount#</isNotNull>
+		</dynamic>
+	</select>
+  
+  </sqlMap>

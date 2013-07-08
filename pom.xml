@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ruyicai</groupId>
+	<artifactId>rchlw</artifactId>
+	<packaging>war</packaging>
+	<version>1.0.0-BUILD-SNAPSHOT</version>
+	<properties>
+		<java-version>1.6</java-version>
+		<org.springframework-version>3.1.0.RELEASE</org.springframework-version>
+		<org.aspectj-version>1.6.9</org.aspectj-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<repositories>
+		<repository>
+			<id>ruyicai</id>
+			<name>Ruyicai Repository</name>
+			<url>http://202.43.152.168/nexus/content/repositories/public/</url>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>ruyicai</id>
+			<name>Ruyicai Repository</name>
+			<url>http://202.43.152.168/nexus/content/repositories/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	<dependencies>
+		<dependency>
+		    <groupId>org.apache.struts</groupId>
+		    <artifactId>struts2-spring-plugin</artifactId>
+		    <version>2.3.1.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.19</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.milyn</groupId>
+		    <artifactId>milyn-scribe-ibatis</artifactId>
+		    <version>1.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>3.1.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>2.5.6.SEC03</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+		<dependency>
+		  <groupId>opensymphony</groupId>
+		  <artifactId>quartz</artifactId>
+		  <version>1.6.3</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+		</dependency>
+			<dependency>
+			  <groupId>c3p0</groupId>
+			  <artifactId>c3p0</artifactId>
+			  <version>0.9.1.1</version>
+			</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+		<dependency>
+		   <groupId>net.sf.ezmorph</groupId>
+  		   <artifactId>ezmorph</artifactId>
+   		   <version>1.0.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-core</artifactId>
+			<version>2.3.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-json-plugin</artifactId>
+			<version>2.3.1.2</version>
+		</dependency>
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- Test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.7</version>
+			<scope>test</scope>
+		</dependency>
+	<dependency>
+		<groupId>dom4j</groupId>
+		<artifactId>dom4j</artifactId>
+		<version>1.6.1</version>
+	</dependency>
+	<dependency>
+		<groupId>javax.mail</groupId>
+		<artifactId>mail</artifactId>
+		<version>1.4</version>
+	</dependency>
+	</dependencies>
+	
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+				<include>**/*.xml</include>
+				</includes>
+			</resource>
+
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>rchlw</warName>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>install</id>
+						<phase>install</phase>
+						<goals>
+							<goal>sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.7</version>
+				<!-- Note 2.8 does not work with AspectJ aspect path -->
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<downloadJavadocs>false</downloadJavadocs>
+					<wtpversion>2.0</wtpversion>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<profiles>
+		<profile>
+			<id>local</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+			    <deploy.host>127.0.0.1</deploy.host>
+				<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
+				<mysql.url>jdbc:mysql://192.168.0.182:3306/webCMS?characterEncoding=utf-8</mysql.url>
+				<mysql.username>root1</mysql.username>
+				<mysql.password>testroot</mysql.password>
+				<presentationMoney>300</presentationMoney>
+				<memCacheServerUrl>192.168.0.92:12000</memCacheServerUrl>
+				<!-- 后台链接的地址 -->
+				<baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl>
+				<!-- 新接口的链接地址 -->
+				<linkURL>http://192.168.0.42:8080/lottery</linkURL>
+				<agencyUrl>http://192.168.0.118:8000/agencycenter</agencyUrl>
+				<!-- 短信设置地址 -->
+				<linkSMGUrl>http://192.168.0.118:8000/msgcenter/</linkSMGUrl>
+				<!-- 赠彩接口地址 -->
+				<linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl>
+				<!-- 积分地址 -->
+				<linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl>
+				<!-- 留言接口地址 -->
+				<linkMessage>http://192.168.0.118:8000/msgcenter/msg</linkMessage>
+				<!-- 中奖排行接口地址 -->
+				<linkRank>http://192.168.0.118:8000/ranking</linkRank>
+				<!-- 新遗漏值链接地址（测试地址） -->
+				<OmitURL>http://192.168.0.42:80/prizeData</OmitURL>
+				<!-- 新投注比例链接地址（测试地址） -->
+				<analyzeURL>http://192.168.0.42/analyze</analyzeURL>
+				<!-- 足彩数据的连接地址 -->
+				<datacenterURL>http://192.168.0.42:80/datacenter/</datacenterURL>
+				<!-- 双色球全年追号套餐（测试地址） -->
+				<actioncenterURL>http://192.168.0.118:8000/actioncenter</actioncenterURL>
+				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
+				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
+				<lotnos>F47104,F47107,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
+				<!-- 身份证初始号码 -->
+				<cardId>111111111111111111</cardId>
+				<!-- 返回页面 -->
+				<login>http://users.ruyicai.com/login.jsp</login>
+				<!-- 找回密码链接 -->
+				<ryc_findpwd><![CDATA[http\://test.ruyicai.com:8080/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
+				<!-- ########合买(hemai)############## -->
+				<!-- 合买结束标记 -->
+				<hemai_end>00|</hemai_end>
+				<!-- 方案名称 -->
+				<heimai_name>rychm</heimai_name>
+				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_findMsg>
+				<!-- 如意彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
+				<!-- 如意彩手机绑定发送短信内容 -->
+				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
+				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<rycemailUrl><![CDATA[http://test.ruyicai.com:8080/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
+				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<rycemailRegisterUrl><![CDATA[http://test.ruyicai.com:8080/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
+				<!-- #################充值返回地址####################### -->
+				<retUrlCharge>test.ruyicai.com:8080/rchlw/-http://test.ruyicai.com:8080/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
+				<!-- chanelID -->
+				<agencyno>test.ruyicai.com:8080/rchlw/-B00001</agencyno>
+				<channel>test.ruyicai.com:8080/rchlw/-2</channel>
+				<!-- ####支付宝快捷登录所需内容############ -->
+				<!-- partner -->
+				<alipay_id>2088301685770478</alipay_id>
+				<!-- key -->
+				<alipay_key>j1dqlcaus9lq334j3kh7cgq2bkk8h0nd</alipay_key>
+				<!-- 请求支付的地址 -->
+				<alipay_url>https://mapi.alipay.com/gateway.do?</alipay_url>
+				<!-- 支付宝登录返回页面 -->
+				<alipayLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!alipayUnitedLogin</alipayLoginUrl>
+				<!-- 支付宝的大客户号 -->
+				<alipay_channel>638</alipay_channel>
+				<alipay_type>000001</alipay_type>
+				<alipay_subchannel>00000069</alipay_subchannel>
+				<!-- 投注、追号默认的subchannel -->
+				<defalut_subchannel>00092493</defalut_subchannel>
+				<!--
+				##前台单式上传多个文件之间的分隔符###
+				-->
+				<uploadSign>#</uploadSign>
+				<uploadCodes>flag</uploadCodes>
+				<!-- 图片上传的地址 -->
+				<picture_upload>E\://ruyicai//imageupload//</picture_upload>
+				<!-- 文件传输地址 -->
+				<file_upload>E\://ruyicai//</file_upload>
+				<!-- 民生银行充值地址 -->
+				<msbankUrl>http://192.168.0.118:8090/ChargeCenter</msbankUrl>
+				<!-- ########QQ登录配置############# -->
+				<qq_app_id>www.ruyicai.com-100224583,jcbao.ruyicai.com-100231303</qq_app_id>
+				<qq_app_key>www.ruyicai.com-ce6616a8b117a588075f78e0550145f5,jcbao.ruyicai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
+				<qq_channel>645</qq_channel>
+				<qq_type>000003</qq_type>
+				<!-- 获取Authorization Code 的地址 -->
+				<qq_Authorization_Code_url>https://graph.qq.com/oauth2.0/authorize</qq_Authorization_Code_url>
+				<!-- 获取Access Token 的地址 -->
+				<qq_Access_Token_url>https://graph.qq.com/oauth2.0/token</qq_Access_Token_url>
+				<!-- 获取 openId (QQ用户唯一标识)的地址 -->
+				<qq_getUserId_url>https://graph.qq.com/oauth2.0/me</qq_getUserId_url>
+				<!-- 调用get_user_info接口 -->
+				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
+				<!-- QQ 登录返回地址 -->
+				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
+				<!-- 如意彩用户登录获取地址 -->
+				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+			<deploy.host>192.168.0.118:8000</deploy.host>
+			<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
+				<mysql.url>jdbc:mysql://192.168.0.182:3306/webCMS?characterEncoding=utf-8</mysql.url>
+				<mysql.username>root1</mysql.username>
+				<mysql.password>testroot</mysql.password>
+				<memCacheServerUrl>192.168.0.92:12000</memCacheServerUrl>
+				<!-- 绑定手机号成功赠送彩金金额 分 -->
+				<presentationMoney>300</presentationMoney>
+				<!-- 后台链接的地址 -->
+				<baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl>
+				<!-- 新接口的链接地址 -->
+				<linkURL>http://192.168.0.42:8080/lottery</linkURL>
+				<!-- 短信设置地址 -->
+				<linkSMGUrl>http://192.168.0.118:8000/msgcenter/</linkSMGUrl>
+				<!-- 赠彩接口地址 -->
+				<linkPRESENTUrl>http\://192.168.0.118:8000/presentcenter</linkPRESENTUrl>
+				<!-- 积分地址 -->
+				<linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl>
+				<!-- 留言接口地址 -->
+				<linkMessage>http://192.168.0.118:8000/msgcenter/msg</linkMessage>
+				<!-- 中奖排行接口地址 -->
+				<linkRank>http://192.168.0.118:8000/ranking</linkRank>
+				<!-- 新遗漏值链接地址（测试地址） -->
+				<OmitURL>http://192.168.0.42:80/prizeData</OmitURL>
+				<agencyUrl>http://192.168.0.118:8000/agencycenter</agencyUrl>
+				<!-- 新投注比例链接地址（测试地址） -->
+				<analyzeURL>http://192.168.0.42/analyze</analyzeURL>
+				<!-- 双色球全年追号套餐（测试地址） -->
+				<actioncenterURL>http://192.168.0.118:8000/actioncenter</actioncenterURL>
+			    <datacenterURL>http://192.168.0.42:80/datacenter/</datacenterURL>
+				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
+				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
+				<lotnos>F47104,F47107,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
+				<!-- 身份证初始号码 -->
+				<cardId>111111111111111111</cardId>
+				<!-- 返回页面 -->
+				<login>http://users.ruyicai.com/login.jsp</login>
+				<!-- 找回密码链接 -->
+				<ryc_findpwd><![CDATA[http\://tchlw.ruyicai.com:8090/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
+				<!-- ########合买(hemai)############## -->
+				<!-- 合买结束标记 -->
+				<hemai_end>00|</hemai_end>
+				<!-- 方案名称 -->
+				<heimai_name>rychm</heimai_name>
+				<!-- 找回密码手机发送短信内容 -->
+				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_findMsg>
+				<!-- 如意彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
+				<!-- 如意彩手机绑定发送短信内容 -->
+				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
+				
+				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<rycemailUrl><![CDATA[http://tchlw.ruyicai.com:8090/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
+				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<rycemailRegisterUrl><![CDATA[http://tchlw.ruyicai.com:8090/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
+				<!-- #################充值返回地址####################### -->
+				<retUrlCharge>tchlw.ruyicai.com:8090/-http://tchlw.ruyicai.com:8090/function/rules/chargeSuccess.jsp</retUrlCharge>
+				<!-- chanelID -->
+				<agencyno>tchlw.ruyicai.com:8090/-B00001</agencyno>
+				<channel>tchlw.ruyicai.com:8090/-2</channel>
+				<!-- ####支付宝快捷登录所需内容############ -->
+				<!-- partner -->
+				<alipay_id>2088301685770478</alipay_id>
+				<!-- key -->
+				<alipay_key>j1dqlcaus9lq334j3kh7cgq2bkk8h0nd</alipay_key>
+				<!-- 请求支付的地址 -->
+				<alipay_url>https://mapi.alipay.com/gateway.do?</alipay_url>
+				<!-- 支付宝登录返回页面 -->
+				<alipayLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!alipayUnitedLogin</alipayLoginUrl>
+				<!-- 支付宝的大客户号 -->
+				<alipay_channel>638</alipay_channel>
+				<alipay_type>000001</alipay_type>
+				<alipay_subchannel>00000069</alipay_subchannel>
+				<!-- 投注、追号默认的subchannel -->
+				<defalut_subchannel>00092493</defalut_subchannel>
+				<!--
+				##前台单式上传多个文件之间的分隔符###
+				-->
+				<uploadSign>#</uploadSign>
+				<uploadCodes>flag</uploadCodes>
+				<!-- 118测试图片上传的地址 -->
+				<picture_upload>/home/appusr/WEB/imageupload</picture_upload>
+				<!-- 118测试文件传输地址 -->
+				<file_upload>/home/appusr/WEB/ruyicai/</file_upload>
+				<!-- 民生银行充值地址 -->
+				<msbankUrl>http://192.168.0.118:8090/ChargeCenter</msbankUrl>
+				<!-- ########QQ登录配置############# -->
+				<qq_app_id>www.ruyicai.com-100224583,jcbao.ruyicai.com-100231303</qq_app_id>
+				<qq_app_key>www.ruyicai.com-ce6616a8b117a588075f78e0550145f5,jcbao.ruyicai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
+				<qq_channel>645</qq_channel>
+				<qq_type>000003</qq_type>
+				<!-- 获取Authorization Code 的地址 -->
+				<qq_Authorization_Code_url>https://graph.qq.com/oauth2.0/authorize</qq_Authorization_Code_url>
+				<!-- 获取Access Token 的地址 -->
+				<qq_Access_Token_url>https://graph.qq.com/oauth2.0/token</qq_Access_Token_url>
+				<!-- 获取 openId (QQ用户唯一标识)的地址 -->
+				<qq_getUserId_url>https://graph.qq.com/oauth2.0/me</qq_getUserId_url>
+				<!-- 调用get_user_info接口 -->
+				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
+				<!-- QQ 登录返回地址 -->
+				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
+				<!-- 如意彩用户登录获取地址 -->
+				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
+			</properties>
+		</profile>
+		<profile>
+			<id>upline</id>
+			<properties>
+			    <mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
+				<mysql.url>jdbc:mysql://192.168.99.120:3306/webCMS?characterEncoding=utf-8</mysql.url>
+				<mysql.username>jrtConsole</mysql.username>
+				<mysql.password>jrtConsole</mysql.password>
+				<!-- 绑定手机号成功赠送彩金金额 分 -->
+				<presentationMoney>300</presentationMoney>
+				<memCacheServerUrl>192.168.0.92:12000</memCacheServerUrl>
+				<!-- 后台链接的地址 -->
+				<baseUrl>http://192.168.99.9:9080/jrtLot/</baseUrl>
+				<!-- 新接口的链接地址 -->
+				<linkURL>http://192.168.99.6/lottery</linkURL>
+				<!-- 短信设置地址 -->
+				<linkSMGUrl>http://192.168.99.6/msgcenter/</linkSMGUrl>
+				<!-- 赠彩接口地址 -->
+				<linkPRESENTUrl>http://192.168.99.6/presentcenter</linkPRESENTUrl>
+				<agencyUrl>http://192.168.99.6/agencycenter</agencyUrl>
+				<!-- 积分地址 -->
+				<linkSCOREUrl>http://192.168.99.6/scorecenter</linkSCOREUrl>
+				<!-- 留言接口地址 -->
+				<linkMessage>http://192.168.99.6/msgcenter/msg</linkMessage>
+				<!-- 中奖排行接口地址 -->
+				<linkRank>http://192.168.99.6/ranking</linkRank>
+				<!-- 新遗漏值链接地址 -->
+				<OmitURL>http://192.168.99.2:9080/prizeData</OmitURL>
+				<!-- 新投注比例链接地址 -->
+				<analyzeURL>http://192.168.99.2:9080/analyze</analyzeURL>
+				<datacenterURL>http://192.168.99.9:9080/datacenter/</datacenterURL>
+				<!-- 双色球全年追号套餐 -->
+				<actioncenterURL>http://192.168.99.6/actioncenter</actioncenterURL>
+				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
+				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
+				<lotnos>F47104,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
+				<!-- 身份证初始号码 -->
+				<cardId>111111111111111111</cardId>
+				<!-- 返回页面 -->
+				<login>http://users.ruyicai.com/login.jsp</login>
+				<!-- 找回密码链接 -->
+				<ryc_findpwd><![CDATA[http\://www.ruyicai.com/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
+				<!-- ########合买(hemai)############## -->
+				<!-- 合买结束标记 -->
+				<hemai_end>00|</hemai_end>
+				<!-- 方案名称 -->
+				<heimai_name>rychm</heimai_name>
+				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_findMsg>
+				<!-- 如意彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
+				<!-- 如意彩手机绑定发送短信内容 -->
+				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
+				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<rycemailUrl><![CDATA[http://www.ruyicai.com/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
+				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<rycemailRegisterUrl><![CDATA[http://www.ruyicai.com/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
+				<!-- #################充值返回地址####################### -->
+				<retUrlCharge>www.ruyicai.com-www.ruyicai.com/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
+				<!-- chanelID -->
+				<agencyno>www.ruyicai.com-B00001</agencyno>
+				<channel>www.ruyicai.com-2</channel>
+				<!-- ####支付宝快捷登录所需内容############ -->
+				<!-- partner -->
+				<alipay_id>2088301685770478</alipay_id>
+				<!-- key -->
+				<alipay_key>j1dqlcaus9lq334j3kh7cgq2bkk8h0nd</alipay_key>
+				<!-- 请求支付的地址 -->
+				<alipay_url>https://mapi.alipay.com/gateway.do?</alipay_url>
+				<!-- 支付宝登录返回页面 -->
+				<alipayLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!alipayUnitedLogin</alipayLoginUrl>
+				<!-- 支付宝的大客户号 -->
+				<alipay_channel>638</alipay_channel>
+				<alipay_type>000001</alipay_type>
+				<alipay_subchannel>00000069</alipay_subchannel>
+				<!-- 投注、追号默认的subchannel -->
+				<defalut_subchannel>00092493</defalut_subchannel>
+				<!--
+				##前台单式上传多个文件之间的分隔符###
+				-->
+				<uploadSign>#</uploadSign>
+				<uploadCodes>flag</uploadCodes>
+			
+				<!-- 图片上传的地址  新闻发布地址imageupload下目录为bbs , ruyicai ,bbsinclude-->
+				<picture_upload>/usr/local/WEB/imageupload/</picture_upload>
+				<!-- 文件传输地址  ruyicai目录下有、upload  , downLoad,activity 等-->
+				<file_upload>/usr/local/WEB/ruyicai/</file_upload>
+				<!-- 民生银行充值地址 -->
+				<msbankUrl>http://192.168.99.122/ChargeCenter</msbankUrl>
+				<!-- ########QQ登录配置############# -->
+				<qq_app_id>www.ruyicai.com-100224583,jcbao.ruyicai.com-100231303</qq_app_id>
+				<qq_app_key>www.ruyicai.com-ce6616a8b117a588075f78e0550145f5,jcbao.ruyicai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
+				<qq_channel>645</qq_channel>
+				<qq_type>000003</qq_type>
+				<!-- 获取Authorization Code 的地址 -->
+				<qq_Authorization_Code_url>https://graph.qq.com/oauth2.0/authorize</qq_Authorization_Code_url>
+				<!-- 获取Access Token 的地址 -->
+				<qq_Access_Token_url>https://graph.qq.com/oauth2.0/token</qq_Access_Token_url>
+				<!-- 获取 openId (QQ用户唯一标识)的地址 -->
+				<qq_getUserId_url>https://graph.qq.com/oauth2.0/me</qq_getUserId_url>
+				<!-- 调用get_user_info接口 -->
+				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
+				<!-- QQ 登录返回地址 -->
+				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
+				<!-- 如意彩用户登录获取地址 -->
+				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
+			</properties>
+		</profile>
+	</profiles>
+</project>

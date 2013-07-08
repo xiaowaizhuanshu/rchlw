@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap4-5{ width:950px; margin:0 auto; background:url(/rchlw/function/images/activity/2013-04-05.jpg) no-repeat; height:2000px;}
+.wrap4-5-top{ padding:300px 50px 0 180px; text-indent:2em; line-height:25px; color:#fff; font-weight:bold; font-size:14px;letter-spacing:1px}
+.wrap4-5-protit{ font-size:16px; font-weight:bold; color:#95d5fc;letter-spacing:1px; padding-bottom:5px; margin-left:180px; margin-top:32px; background:url(/rchlw/function/images/activity/xuline.png) left bottom no-repeat;}
+.wrap4-5-protit span{  background:url(/rchlw/function/images/activity/ball.png) left center no-repeat;padding-bottom:10px; display:block; padding-left:40px;}
+.wrap4-5-pro p{ padding:0 30px 0 180px;color:#F6ECC8;font-size:14px; line-height:25px; font-weight:bold; text-indent:2em}
+.wrap4-5-pro p span{ color:#E9DE6B;}
+.wrap4-5-pro p a{color:#21a2dc; text-decoration:none; font-size:14px;}
+.wrap4-5-pro p a:hover{text-decoration:underline;}
+.wrap4-5 h3{ font-weight:bold; font-size:16px;padding:32px 50px 0 180px;letter-spacing:1px; padding-bottom:5px; color:#95d5fc; }
+.wrap4-5 h4{ font-weight:bold; font-size:14px;padding:32px 50px 0 180px;letter-spacing:1px; padding-bottom:5px; color:#95d5fc; }
+.wrap4-5 .p-foot{ text-indent:2em;line-height:25px; color:#fff; font-weight:bold; font-size:14px;letter-spacing:1px; padding:50px 50px 0 180px; }
+.buy-ball{ text-align:center; padding-top:40px;}
+.buy-ball a{ padding:0 20px; text-decoration:none;color:#21a2dc; font-size:16px; font-weight:bold;}
+.buy-ball a:hover{ text-decoration:underline;}
+

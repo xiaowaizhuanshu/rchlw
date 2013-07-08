@@ -1,0 +1,36 @@
+<!-- 首页右上角活动卷角js start -->
+<style>
+.RollAngle{ position:absolute; z-index:800; right:0px; top:0px; width:200px; height:200px; overflow:hidden;}
+</style>
+<div class="RollAngle" style="display:none;">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="200" height="200">
+  <param name="movie" value="/rchlw/function/images/ActivityRollAngle_ydjj.swf" />
+  <param name="quality" value="high" />
+  <param name="wmode" value="transparent" />
+  <embed src="/rchlw/function/images/ActivityRollAngle_ydjj.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="200" height="200"></embed>
+</object>  
+</div>
+<script>
+function StopRollAngleMove(){
+	if (window.innerWidth) {
+		winWidth = window.innerWidth;
+	} else if ((document.body) && (document.body.clientWidth)) {
+		winWidth = document.body.clientWidth;
+	};
+
+	if (document.documentElement && document.documentElement.clientWidth) {
+		winWidth = document.documentElement.clientWidth;
+	};
+
+	if(winWidth < 1260){
+		$(".RollAngle").css({display:"none"})
+	}else{
+		$(".RollAngle").css({display:""})
+	}
+}
+$(function(){
+	StopRollAngleMove();
+})
+$(window).resize( function(){ StopRollAngleMove(); } );
+</script>
+<!-- 首页右上角活动卷角js end -->

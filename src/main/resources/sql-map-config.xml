@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//ibatis.apache.org//DTD SQL Map Config 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-config-2.dtd">
+<sqlMapConfig>
+ <properties resource="jdbc.properties" />
+ <settings
+		cacheModelsEnabled="true"      
+	    enhancementEnabled="true"      
+	    lazyLoadingEnabled="true"      
+	    errorTracingEnabled="true"        
+	    useStatementNamespaces="true"
+    />
+ <!--   存放sql语句的xml -->
+  <sqlMap resource="com/ruyicai/web/model/sql/PhoneInfo_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/Custom_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/News_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/Channel_Template_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/NewsTemplate_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/NewsInfo_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/Phraselibrary_sqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/NewsCategory_SqlMap.xml"/>
+  <sqlMap resource="com/ruyicai/web/model/sql/NewsChannel_SqlMap.xml"/>
+</sqlMapConfig>

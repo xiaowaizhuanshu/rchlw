@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; border:0; color:#000;}
+.christmas{ background:url(/rchlw/function/images/chris-bg.png) no-repeat; width:950px; height:2300px; margin:0 auto;}
+.chris-head{ padding:380px 210px 0 65px;font-size:13px; line-height:20px; text-indent:2em}
+.pro-one,.pro-two,.pro-three,.pro-four,.pro-five,.pro-six{padding:5px 210px 13px 65px; line-height:23px; font-size:13px; text-indent:2em}
+.christmas P .Red{ color:#a30302; font-size:13px; font-weight:bold}
+.pro-three{padding:5px 20px 13px 336px;}
+
+.pro-three a{ color:blue; text-decoration:none;}
+.pro-three a:hover{ color:#066; text-decoration:underline}
+.pro-six{ padding-right:270px}
+.pro-one span{ color:#a30302; font-size:14px; font-weight:bold}
+.title-one,.title-two,.title-three,.title-four,.title-five,.title-six{ height:37px; width:442px; margin-left:33px;line-height:37px; padding-left:42px; font-size:16px; color:#a30302; font-weight:bold; margin-bottom:7px;}
+.title-three,.title-four,.title-five,.title-six{ margin-top:15px}
+.title-three{margin-left:345px;}
+.title-one,.title-two,.title-three,.title-four,.title-five,.title-six{background:url(/rchlw/function/images/t-one.gif) no-repeat;}
+.title-two-fu{height:28px; width:442px; margin-left:33px;line-height:28px; padding-left:42px; font-size:13px; color:#a30302; font-weight:bold}
+.christmas table{ margin:10px 0 10px 75px; border-collapse:collapse}
+.christmas table tr td{ border:1px solid #a30302; text-align:center; border-collapse:collapse; font-size:13px; height:20px;}
+
+.christmas table tr.table-head{ font-weight:bold; background:#933; height:25px}
+.christmas table tr.table-head td{ color:#fff; font-size:14px}
+.chris-foot{ margin:20px 310px 0 170px; color:#BE0A09; font-weight:bold; font-size:14px; line-height:25px;}
+
+.chrie-href a{ display:inline-block; height:25px; line-height:25px; padding:0 20px; color:#0072c1
+; text-decoration:none; font-size:13px; font-weight:bold;}
+.chrie-href a:hover{ text-decoration:underline; color:#0072c1}
+
+
+
+
+
+
+
+ 

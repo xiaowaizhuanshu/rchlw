@@ -1,0 +1,26 @@
+@charset "utf-8";
+.onShow
+{
+	background:url(/rchlw/function/images/reg1.gif) no-repeat left center;
+	width:260px; float:left;padding-left:25px;padding-top:2px;height:24px; font:12px "宋体"; color:#777; vertical-align:middle; line-height:24px; margin-left: 4px;
+}
+.onFocus
+{
+	background:#E9F0FF url(/rchlw/function/images/reg2.gif) no-repeat left center; 
+	float:left;padding-left:25px;padding-top:2px;height:24px; font:12px "宋体"; color:#777; vertical-align:middle; line-height:24px;margin-left: 4px;
+}
+.onError
+{
+	background:#FFF2E9 url(/rchlw/function/images/reg3.gif) no-repeat left center;
+	float:left;padding-left:25px;padding-top:2px;height:24px; font:12px "宋体"; color:#777; vertical-align:middle; line-height:24px;margin-left: 4px;
+}
+.onSuccess
+{
+	background:#E9FFEB url(/rchlw/function/images/reg4.gif) no-repeat left center;
+	float:left;padding-left:25px;padding-top:2px;height:24px; font:12px "宋体"; color:#777; vertical-align:middle; line-height:24px;margin-left: 4px;
+}
+.onLoad
+{
+	background:#E9FFEB url(/rchlw/function/images/loading.gif) no-repeat left center;
+	width:260px; float:left;padding-left:25px;padding-top:2px;height:24px; font:12px "宋体"; color:#777; vertical-align:middle; line-height:24px;margin-left: 4px;
+} 

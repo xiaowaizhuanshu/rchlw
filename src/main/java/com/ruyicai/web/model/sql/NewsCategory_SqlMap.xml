@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="NewsCategory">
+  <resultMap class="com.ruyicai.web.pojo.NewsCategory" id="ibatorgenerated_BaseResultMap">
+   <!--新闻分类  映射-->
+    <result column="code" jdbcType="BIGINT" property="code" />
+    <result column="pcode" jdbcType="BIGINT" property="pcode" />
+    <result column="name_zh" jdbcType="VARCHAR" property="name_zh" />
+    <result column="name_cn" jdbcType="VARCHAR" property="name_cn" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="showflag" jdbcType="INTEGER" property="showflag" />
+    <result column="leaf" jdbcType="INTEGER" property="leaf" />
+    <result column="website_id" jdbcType="BIGINT" property="website_id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="state" jdbcType="INT" property="state" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+  </resultMap>
+  <resultMap class="com.ruyicai.web.model.NewsCategoryMD" id="newsCategoryMD_BaseResultMap">
+   <!--新闻分类MD  映射-->
+    <result column="code" jdbcType="BIGINT" property="code" />
+    <result column="pcode" jdbcType="BIGINT" property="pcode" />
+    <result column="name_zh" jdbcType="VARCHAR" property="name_zh" />
+    <result column="name_cn" jdbcType="VARCHAR" property="name_cn" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="showflag" jdbcType="INTEGER" property="showflag" />
+    <result column="leaf" jdbcType="INTEGER" property="leaf" />
+    <result column="website_id" jdbcType="BIGINT" property="website_id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="state" jdbcType="INT" property="state" />
+    <result column="template_id" jdbcType="INTEGER" property="template_id" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+  </resultMap>
+  
+  <select id="selectByNameCn" parameterClass="java.util.HashMap" resultMap="ibatorgenerated_BaseResultMap">
+  		 SELECT nc.code, nc.pcode, nc.name_zh, nc.name_cn,nc.sequence,nc.showflag,nc.leaf,nc.website_id,nc.url,nc.state,nc.description
+    FROM   NewsCategory AS nc  
+    WHERE  nc.website_id = #website_id:BIGINT# AND nc.state=0 AND 
+           nc.name_cn= #categoryCn#
+  	</select>
+  	<select id="selectByNameZh" parameterClass="java.util.HashMap" resultMap="ibatorgenerated_BaseResultMap">
+  		 SELECT nc.code, nc.pcode, nc.name_zh, nc.name_cn,nc.sequence,nc.showflag,nc.leaf,nc.website_id,nc.url,nc.state,nc.description
+    FROM   NewsCategory AS nc  
+    WHERE  nc.website_id = #website_id:BIGINT# AND nc.state=0 AND 
+           nc.name_zh= #name_zh#
+  	</select>
+   <select id="selectByName" parameterClass="java.util.Map" resultMap="ibatorgenerated_BaseResultMap">
+    SELECT nc.code, nc.pcode, nc.name_zh, nc.name_cn,nc.sequence,nc.showflag,nc.leaf,nc.website_id,nc.url,nc.state,nc.description
+    FROM   NewsCategory AS nc  
+    WHERE  nc.website_id = #website_id:BIGINT# AND nc.state=0 AND 
+           nc.pcode in (SELECT nv.code FROM NewsCategory AS nv WHERE nv.name_zh=#name_zh:VARCHAR#)
+   </select>
+    <!--按中文名查询分类列表-->
+   <select id="selectByCn" parameterClass="java.util.Map" resultMap="ibatorgenerated_BaseResultMap">
+    SELECT nc.code, nc.pcode, nc.name_zh, nc.name_cn,nc.sequence,nc.showflag,nc.leaf,nc.website_id,nc.url,nc.state,nc.description
+    FROM   NewsCategory AS nc  
+    WHERE  nc.website_id = #website_id:BIGINT# AND nc.state=0 AND 
+           nc.pcode in (SELECT nv.code FROM NewsCategory AS nv WHERE nv.name_cn=#name_cn:VARCHAR#)
+           ORDER BY nc.sequence DESC
+   </select>
+  <select id="selectByPrimaryKey" parameterClass="java.lang.Long" resultMap="ibatorgenerated_BaseResultMap">
+    <!--按编号查询新闻分类对象-->
+    select code, pcode, name_zh, name_cn,sequence,showflag,leaf,website_id,url,state,description 
+    from   NewsCategory
+    where  code = #code:BIGINT# AND state=0 
+  </select>
+  <select id="selectByPcode" parameterClass="com.ruyicai.web.pojo.NewsCategory" resultMap="newsCategoryMD_BaseResultMap">
+    <!--按父编号查询新闻分类对象 关联查询出所用的模板Id 如果中间表不存在，则newsTemplateId 的null值替换成0-->
+    SELECT  n.code AS CODE, n.pcode AS pcode, n.name_zh AS name_zh, n.description as description,
+    		n.name_cn AS name_cn,n.sequence AS sequence,
+   		 	n.showflag AS showflag,n.leaf AS leaf,n.website_id AS website_id,n.url AS url,
+    		n.state AS state,IFNULL(c.id ,0)AS template_id  
+    FROM 	NewsCategory AS n LEFT JOIN Channel_Template AS c ON n.code = c.category_code
+    WHERE 	n.state=#state:INT# AND n.pcode = #pcode:BIGINT# AND n.website_id = #website_id:BIGINT#
+    ORDER BY n.sequence DESC
+  </select>
+  <select id="selectAll" parameterClass="java.lang.Long" resultMap="newsCategoryMD_BaseResultMap">
+    <!--查询所有新闻分类-->
+    select nc.code, nc.pcode, nc.name_zh, nc.name_cn,nc.sequence,nc.showflag,nc.leaf,nc.website_id,nc.url,nc.state,nc.description ,IFNULL(ct.template_id,0) AS template_id
+    from NewsCategory AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.category_code=nc.code where website_id = #nc.website_id:BIGINT# and nc.state=0 order by nc.sequence desc
+  </select>
+  <select id="selectAllInit" resultMap="ibatorgenerated_BaseResultMap">
+    <!--查询所有新闻分类-->
+    select code, pcode, name_zh, name_cn,sequence,showflag,leaf,website_id,url,state ,description
+    from NewsCategory  
+    where state=0
+  </select>
+	<select id="selectNewsCategoryName_zhCount" parameterClass="com.ruyicai.web.model.NewsCategoryMD" resultClass="java.lang.Integer">
+    <!--查询当前分类的英文名字是否已经存在。-->
+    	SELECT COUNT(code) AS countCategory FROM NewsCategory WHERE name_zh=#name_zh# AND website_id=#website_id#;
+  	</select>
+  <insert id="insert" parameterClass="com.ruyicai.web.model.NewsCategoryMD" >
+		<!--添加新闻分类-->
+		insert into NewsCategory (pcode, name_zh, name_cn,sequence,showflag,leaf,website_id,url,state,description)
+   		 values (#pcode:BIGINT#, #name_zh:VARCHAR#, #name_cn:VARCHAR#, #sequence:INTEGER#, #showflag:INTEGER#, #leaf:INTEGER#,#website_id:BIGINT#,#url:VARCHAR#,#state:INTEGER#,#description:VARCHAR#)
+		<selectKey resultClass="java.lang.Long" keyProperty="code">  
+        	<![CDATA[SELECT LAST_INSERT_ID() AS code ]]>    
+    	</selectKey> 
+	</insert>
+  <insert id="insertByCopy" parameterClass="com.ruyicai.web.pojo.NewsCategory" >
+		<!--添加拷贝新闻分类-->
+		insert into NewsCategory (pcode, name_zh, name_cn,sequence,showflag,leaf,website_id,url,state,description)
+   		 values (#pcode:BIGINT#, #name_zh:VARCHAR#, #name_cn:VARCHAR#, #sequence:INTEGER#, #showflag:INTEGER#, #leaf:INTEGER#,#website_id:BIGINT#,#url:VARCHAR#,#state:INTEGER#,#description:VARCHAR#)
+		<selectKey resultClass="java.lang.Long" keyProperty="code">  
+        	<![CDATA[SELECT LAST_INSERT_ID() AS code ]]>    
+    	</selectKey> 
+	</insert>
+<update id="update" parameterClass="com.ruyicai.web.model.NewsCategoryMD">
+		UPDATE NewsCategory SET
+		code = code
+		<dynamic>
+			<isNotNull prepend="," property="name_zh">name_zh=#name_zh#</isNotNull>
+			<isNotNull prepend="," property="name_cn">name_cn=#name_cn#</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence=#sequence#</isNotNull>
+			<isNotNull prepend="," property="description">description=#description#</isNotNull>
+		</dynamic>
+			WHERE code=#code#
+	</update>
+<update id="updateByCopy" parameterClass="com.ruyicai.web.pojo.NewsCategory">
+		UPDATE NewsCategory SET
+		code = code
+		<dynamic>
+			<isNotNull prepend="," property="pcode">pcode=#pcode#</isNotNull>
+		</dynamic>
+			WHERE code=#code#
+	</update>
+	
+	<delete id="deleteById" parameterClass="java.lang.Long">
+		UPDATE NewsCategory SET state=1 WHERE code=#code#
+	</delete>
+	<select id="selectName_zhCount" parameterClass="com.ruyicai.web.model.NewsCategoryMD" resultClass="java.lang.Integer">
+    <!--查询当前频道的英文名字是否已经存在。-->
+    	SELECT COUNT(code) AS countCategory FROM NewsCategory WHERE name_zh=#name_zh# AND website_id=#website_id# AND state=0 ;
+  	</select>
+  <select id="selectName_cnCount" parameterClass="com.ruyicai.web.model.NewsCategoryMD" resultClass="java.lang.Integer">
+    <!--查询当前频道的英文名字是否已经存在。-->
+    	SELECT COUNT(code) AS countCategory FROM NewsCategory WHERE name_cn=#name_cn# AND website_id=#website_id# AND state=0;
+  	</select>
+  	<select id="selectName_cn" parameterClass="com.ruyicai.web.model.NewsCategoryMD" resultClass="java.lang.Integer">
+    <!--查询当前频道的中文名字是否已经存在不包括本id-->
+    	SELECT COUNT(code) AS countCategory FROM NewsCategory WHERE name_cn=#name_cn# AND website_id=#website_id# AND code!=#code# AND state=0;
+  	</select>
+  	
+	
+</sqlMap>

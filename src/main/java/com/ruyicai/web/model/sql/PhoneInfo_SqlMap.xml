@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="PhoneInfo">
+	<resultMap class="com.ruyicai.web.pojo.PhoneInfo" id="PhoneInfo">
+	<!--手机信息 映射 -->
+		<result column="id" jdbcType="BIGINT" property="id" />
+		<result column="phoneCode" jdbcType="BIGINT" property="phoneCode" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="rules" jdbcType="INTEGER" property="rules" />
+		<result column="acceptTime" jdbcType="TIMESTAMP" property="acceptTime" />
+		<result column="remark" jdbcType="VARCHAR" property="remark" />
+	</resultMap>
+	<!-- 插入手机发送请求信息 -->
+	<insert id="insertPhoneInfo" parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		insert into PhoneInfo
+		(phoneCode,email,rules,acceptTime,remark,checked)
+		values(#phoneCode#,#email#,#rules#,#acceptTime#,#remark#,#checked#)
+	</insert>
+	<!-- 根据时间手机号查询该手机号发送的次数 -->
+	<select id="selectPhoneInfoCount" resultClass="java.lang.Integer"  parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		select count(1) from PhoneInfo
+		where acceptTime = #acceptTime# AND phoneCode=#phoneCode# AND rules=#rules#
+	</select>
+	<!-- 根据时间邮箱查询该邮箱号发送的次数 -->
+	<select id="selectPhoneInfoCountByEmail" resultClass="java.lang.Integer"  parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		select count(1) from PhoneInfo
+		where acceptTime = #acceptTime# AND email=#email# AND rules=#rules#
+	</select>
+	<!-- 根据时间邮箱查询该邮箱号发送的次数(注册完善用户信息获取积分使用) -->
+	<select id="selectinfoByEmail" resultClass="java.lang.Integer"  parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		select count(1) from PhoneInfo
+		where email=#email# AND rules=#rules#
+	</select>
+	<select id="selectPhoneInfoCountByCheck" resultClass="java.lang.Integer"  parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		select count(1) from PhoneInfo
+		where  checked=#checked# AND rules=#rules#
+	</select>
+	<!-- 查询链接是否被点击过 -->
+	<select id="selectPhoneInfoCountByRemark" resultClass="java.lang.Integer"  parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		select count(1) from PhoneInfo
+		where  checked=#checked# AND rules=#rules# and remark=#remark#
+	</select>
+	<!-- 点击链接后更改标志位 -->
+	<update id="updateBychecked" parameterClass="com.ruyicai.web.pojo.PhoneInfo">
+		update phoneinfo set remark="1" where checked=#checked#
+	</update>
+</sqlMap>

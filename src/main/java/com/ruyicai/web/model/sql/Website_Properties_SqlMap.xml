@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Website_Properties">
+  <resultMap class="com.ruyicai.web.pojo.Website_Properties" id="ibatorgenerated_BaseResultMap">
+    <!--站点属性  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name_cn" jdbcType="VARCHAR" property="name_cn" />
+    <result column="name_zh" jdbcType="VARCHAR" property="name_zh" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="pictures_address" jdbcType="VARCHAR" property="pictures_address" />
+    <result column="thumbnail_address" jdbcType="VARCHAR" property="thumbnail_address" />
+    <result column="watermark_address" jdbcType="VARCHAR" property="watermark_address" />
+    <result column="website_url" jdbcType="VARCHAR" property="website_url" />
+    <result column="category_default_vm" jdbcType="BIGINT" property="category_default_vm" />
+    <result column="channel_default_vm" jdbcType="BIGINT" property="channel_default_vm" />
+    <result column="news_default_vm" jdbcType="BIGINT" property="news_default_vm" />
+    <result column="script_text" jdbcType="TEXT" property="script_text" />
+	<result column="timer" jdbcType="VARCHAR" property="timer" />
+  </resultMap>
+  <select id="selectInId" parameterClass="java.lang.Long" resultMap="ibatorgenerated_BaseResultMap">
+    <!--按id查询 站点属性对象-->
+    select * 
+    from Website_Properties
+    where id = #id:BIGINT# 
+  </select>
+  <select id="select"  resultMap="ibatorgenerated_BaseResultMap">
+    <!--按id查询 站点属性对象-->
+    select * from Website_Properties
+  </select>
+  <!--按中文name_cn查询 站点属性对象-->
+  <select id="selectWebsiteByName_cn" parameterClass="java.lang.String"
+		resultMap="ibatorgenerated_BaseResultMap">
+		select *
+		from Website_Properties
+		where name_cn = #name_cn# 
+  </select>
+   <!--按英文name_zh查询 站点属性对象-->
+  <select id="selectWebsiteByName_zh" parameterClass="java.lang.String"
+		resultMap="ibatorgenerated_BaseResultMap">
+		select *
+		from Website_Properties
+		where name_zh = #name_zh# 
+  </select>
+   <!--查询除本身id的并且中文名一致的 站点属性对象-->
+  <select id="selectWebsiteById" parameterClass="java.util.HashMap"
+		resultClass="java.lang.Integer">
+		select count(*)
+		from Website_Properties
+		where name_cn = #name_cn# and id!=#id# 
+  </select>
+  <!--查询除本身id的并且英文名一致的 站点属性对象-->
+  <select id="selectWebsiteByZhId" parameterClass="java.util.HashMap"
+		resultClass="java.lang.Integer">
+		select count(*)
+		from Website_Properties
+		where name_zh = #name_zh# and id!=#id# 
+  </select>
+<update id="update" parameterClass="com.ruyicai.web.pojo.Website_Properties">
+		UPDATE Website_Properties SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="name_cn">name_cn=#name_cn#</isNotNull>
+			<isNotNull prepend="," property="name_zh">name_zh=#name_zh#</isNotNull>
+			<isNotNull prepend="," property="logo">logo=#logo#</isNotNull>
+			<isNotNull prepend="," property="pictures_address">pictures_address=#pictures_address#</isNotNull>
+			<isNotNull prepend="," property="thumbnail_address">thumbnail_address=#thumbnail_address#</isNotNull>
+			<isNotNull prepend="," property="watermark_address">watermark_address=#watermark_address#</isNotNull>
+			<isNotNull prepend="," property="website_url">website_url=#website_url#</isNotNull>
+			<isNotNull prepend="," property="category_default_vm">category_default_vm=#category_default_vm#</isNotNull>
+			<isNotNull prepend="," property="channel_default_vm">channel_default_vm=#channel_default_vm#</isNotNull>
+			<isNotNull prepend="," property="news_default_vm">news_default_vm=#news_default_vm#</isNotNull>
+			<isNotNull prepend="," property="script_text">script_text=#script_text#</isNotNull>
+			<isNotNull prepend="," property="timer">timer=#timer#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+</update>
+<insert id="insert" parameterClass="com.ruyicai.web.pojo.Website_Properties" >
+  INSERT INTO Website_Properties
+	(name_cn, name_zh, logo, pictures_address, thumbnail_address, 
+	watermark_address, 	website_url, category_default_vm, channel_default_vm, 
+	news_default_vm, script_text, timer	)
+	VALUES
+	( #name_cn#, #name_zh#, #logo#, #pictures_address#, #thumbnail_address#, 
+	#watermark_address#,#website_url#,#category_default_vm#,#channel_default_vm#, 
+	#news_default_vm#,#script_text#,#timer#)
+	<selectKey resultClass="java.lang.Long" keyProperty="id">  
+        	<![CDATA[SELECT LAST_INSERT_ID() AS id]]>    
+    	</selectKey> 
+</insert>
+</sqlMap>

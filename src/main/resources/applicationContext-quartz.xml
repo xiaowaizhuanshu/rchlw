@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans   
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd  
+            http://www.springframework.org/schema/context  
+            http://www.springframework.org/schema/context/spring-context-2.5.xsd  
+            http://www.springframework.org/schema/aop  
+            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd  
+            http://www.springframework.org/schema/tx  
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+            
+ 	<bean id="memcacheIndex" class="com.ruyicai.util.quartz.IndexLottery_quartz"></bean>
+	
+	<bean id="memcachetask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">            
+		  <property name="targetObject"><ref bean="memcacheIndex"/></property>            
+	      <property name="targetMethod"><value>IndexLotteryInfo</value></property>  
+	  </bean> 
+	 
+	<bean id="memcachetaskRank" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">            
+		  <property name="targetObject"><ref bean="memcacheIndex"/></property>            
+	      <property name="targetMethod"><value>IndexRankInfo</value></property>  
+	  </bean> 
+	<bean id="memcachetaskjiangchi" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">            
+		  <property name="targetObject"><ref bean="memcacheIndex"/></property>            
+	      <property name="targetMethod"><value>lotteryProgressiveByLotno</value></property>  
+	  </bean> 
+	 <!--  每天的下午20点至20：55和21点至21点55分两个时间段内每5分钟一次触发 -->
+	  <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerBean">      
+		   <property name="jobDetail"><ref bean="memcachetask"/></property>  
+	       <property name="cronExpression" value="0 0/5 20,21 * * ?"></property>
+	  </bean> 
+      <!-- 每天的下午20点21点每5分钟一次触发-->
+	  <bean id="doTimejiangchi" class="org.springframework.scheduling.quartz.CronTriggerBean">      
+		   <property name="jobDetail"><ref bean="memcachetaskjiangchi"/></property>  
+	       <property name="cronExpression" value="0 0/5 22-23 * * ?"></property>
+	  </bean> 
+	  
+	  <!-- Fire at 24pm  every day 每天的凌晨23点执行-->
+	  <bean id="doTimeRank" class="org.springframework.scheduling.quartz.CronTriggerBean">      
+		   <property name="jobDetail"><ref bean="memcachetaskRank"/></property>  
+	       <property name="cronExpression" value="0 0 23 * * ?"></property>
+	       
+	  </bean> 
+	  <bean lazy-init="false" autowire="no" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	               <property name="triggers">        
+			           <list>                 
+			              	 <ref bean="doTime"/> 
+			              	 <ref bean="doTimeRank"/> 
+			              	 <ref bean="doTimejiangchi"/> 
+			           </list>            
+	               </property>         
+	  </bean>
+<!-- ===================================自动生成HTML定时器 结束========================================== -->
+</beans>

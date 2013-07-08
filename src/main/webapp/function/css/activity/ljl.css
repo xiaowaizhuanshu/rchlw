@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{ margin:0; padding:0; list-style:none; border:0;}
+body{font-size:12px;font-family:"宋体",Arial, Helvetica, sans-serif;}
+.all-wrap{ margin:0 auto; width:950px; background:url(/rchlw/function/images/activity/ljl-zj.jpg) no-repeat; height:1230px; padding-top:170px}
+.all-wrap p{ line-height:32px; padding:0 135px; text-indent:2em;}
+.all-wrap p.p-bot{ padding-right:220px;}
+.all-wrap p span.red-ball{ color:red;}
+.all-wrap p span.blue-ball{ color:blue;}
+.all-wrap h2{height:30px; line-height:30px; padding:12px 0 12px 135px; font-weight:bold; font-size:18px;}
+.all-wrap h3{ text-align:center;}
+.all-wrap h3 a{ color:red; text-decoration:none; font-size:14px; font-weight:bold;}
+.all-wrap h3 a:hover{ color:blue; text-decoration:underline;}

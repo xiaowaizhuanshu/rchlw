@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; font-size:12px; border:none; list-style:none;color:#FF5800}
+
+
+.jqWrap{ width:736px; margin:0 auto; background:url(/rchlw/function/images/jq-bg.jpg) no-repeat left top; padding:233px 100px 0 114px;;}
+.yinyan{ padding-right:282px; line-height:25px; color:#ce942a; font-weight:bold;}
+.jqWrap h2{font-size:16px; padding:15px 0; margin-top:15px; line-height:25px; font-weight:bold; color:#551E00;}
+.jqWrap h3{ font-size:14px; font-weight:normal; margin-top:5px; font-weight:bold; margin-bottom:10px;color:#B95F04;}
+.jqWrap h4{ font-weight:bold; font-size:12px; padding:8px 0;color:#B95F04;}
+.cont-jq{ line-height:25px; color:#ff5800;}
+.jqWrap table{margin:10px auto 0;border-collapse:collapse; text-align:center;}
+.jqWrap table,tr,td{ border:1px solid #FF5800;}
+.jqWrap table tr td{ color:#ff5800;}
+.jqWrap table .first td{ color:#fff;}
+.jqWrap em{ font-style:normal; color:#C0504D; line-height:29px;}
+.jqWrap a{ text-decoration:none; font-size:12px; color:#de0201; font-weight:bold;display:inline-block; margin:0 20px;}
+.jqWrap a:hover{ text-decoration:underline; }
+.jqWrap span{color:#00C;}
+.jqWrap strong{ font-weight:normal; color:#A64D04; font-weight:bold;}
+.jqWrap strong span{ font-weight:normal;}
+.jqWrap .jq-footer{ text-align:center; line-height:25px; color:#551E00;}

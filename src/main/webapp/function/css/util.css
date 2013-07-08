@@ -1,0 +1,1574 @@
+﻿@charset "utf-8";
+/* 公共样式 */
+body {font-family:"宋体",Arial, Helvetica, sans-serif; font-size: 12px;line-height: 14px; background:#FFF; color: #333;}
+body,div,ul,ol,li,dl,dt,dd,table,th,td{ margin:0; padding:0;}
+form,ol,ul,li,i,dl,dt,dd,table,tr,td,th,h1,h2,h3,h4,h5,p,b,i,font,em,strong{ margin:0px; padding:0px; font-size:12px; line-height:14px; list-style:none; color:#333; font-weight:normal; font-style:normal;}
+img {border:none;} 
+a img {border:none;}
+a:hover img {border:none}
+.blue{ color:#01529D;} 
+a{color:#333333; text-decoration:none;}
+a.over{color:#DE0201; text-decoration:underline;}
+input.logininput{width:150px; border:solid 1px #999; height:22px; line-height:22px;}
+input.registerinput{ width:190px; border:solid 1px #999; height:22px; line-height:22px;}
+input.authinput{width:100px; border:solid 1px #999; height:18px; line-height:18px;}
+.hand{ cursor:pointer;}
+.septal_line{ border-bottom: dashed 1px #D2D2D2; height:10px; line-height:10px;}
+.septalLine_spacing{ border-bottom: dashed 1px #D2D2D2; height:10px; line-height:10px; margin:0px 36px 0px 16px;}
+
+/* 全版本兼容的自制复选框 改动需十分谨慎 */
+.CheckBox,.CheckBox dt,.CheckBox dd{ display:inline-block; margin:0px; padding:0px; overflow:hidden; }
+.CheckBox dt,.CheckBox dd{ float:left;}
+.CheckBox dt{width:13px; height:13px; line-height:13px; margin:0px 0px 1px 0px; overflow:hidden; background-image:url(/rchlw/function/images/CheckBox_jc.jpg); background-repeat:no-repeat; background-position:0px 0px; cursor:pointer;}
+.CheckBox.DisabledNormal dt{background-position:0px -65px;}
+.CheckBox.DisabledSelected dt{background-position:0px -52px;}
+.CheckBox dt.DisabledNormal{background-position:0px -65px;}
+.CheckBox dt.DisabledSelected{background-position:0px -52px;}
+.CheckBox.over dt{background-position:0px -13px;}
+.CheckBox.Switch dt{background-position:0px -26px;}
+.CheckBox dt.over{background-position:0px -13px;}
+.CheckBox dt.Switch{background-position:0px -26px;}
+.CheckBox dd{ height:14px; line-height:14px; padding:0px 0px 0px 2px;}
+
+/* 常用pannel的框架样式 */
+.Pannel{ border:solid 1px #DBDBDB;}
+.PannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.PannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; float:left;}
+.PannelBody{ overflow:hidden;}
+
+/* 常用tab功能的dl形式 适用于在pannel标题内靠右表现的n型tab ___|￣￣|__________ */
+.TabN{ width:auto; float:right; height:27px; line-height:27px; padding:3px 10px 0px 0px; overflow:hidden;}
+.TabN dt{ color:#1F376D; float:right; height:27px; line-height:27px; padding:0px 10px; cursor:pointer;}
+.TabN dt.over{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
+.TabN dt.selected{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
+
+/* 常用tab功能的table形式 适用于整个tab宽度100%而且tab彼此之间有竖线分割的tab |￣￣￣￣|￣￣￣￣| */
+.TabM{ border-collapse:collapse; width:100%; height:30px; line-height:30px;}
+.TabM th{ border-right:solid 1px #DBDBDB;}
+.TabM td{ border-left:solid 1px #DBDBDB;}
+.TabM th,.TabM td{ padding:0px 10px; text-align:center; cursor:pointer; line-height:20px;}
+.TabM th.over,.TabM td.over{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px;}
+.TabM th.selected,.TabM td.selected{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px;}
+
+/* 全版本兼容的自制RadioButton 改动需十分谨慎 */
+.RadioButton,.RadioButton dt,.RadioButton dd{ display:inline-block; margin:0px; padding:0px; overflow:hidden; }
+.RadioButton dt,.RadioButton dd{ float:left;}
+.RadioButton dt{width:13px; height:13px; line-height:13px; margin:0px 0px 1px 0px; overflow:hidden; background-image:url(/rchlw/function/images/RadioButton.gif); background-repeat:no-repeat; background-position:0px 0px; cursor:pointer;}
+.RadioButton dt.over{background-position:0px -13px;}
+.RadioButton dt.selected{background-position:0px -26px;}
+.RadioButton dd{ height:14px; line-height:14px; padding:0px 0px 0px 2px;}
+
+/* 全版本兼容的自制RadioButton 改动需十分谨慎 */
+.RadioButton,.RadioButton dt,.RadioButton dd{ display:inline-block; margin:0px; padding:0px; overflow:hidden; }
+.RadioButton dt,.RadioButton dd{ float:left;}
+.RadioButton dt{width:13px; height:13px; line-height:13px; margin:0px 0px 1px 0px; overflow:hidden; background-image:url(/rchlw/function/images/RadioButton_jc.gif); background-repeat:no-repeat; background-position:0px 0px; cursor:pointer;}
+.RadioButton.over dt{background-position:0px -13px;}
+.RadioButton.selected dt{background-position:0px -26px;}
+.RadioButton dt.over{background-position:0px -13px;}
+.RadioButton dt.selected{background-position:0px -26px;}
+.RadioButton.DisabledNormal dt{background-position:0px -39px;}
+.RadioButton dt.DisabledNormal{background-position:0px -39px;}
+.RadioButton dd{ height:14px; line-height:14px; padding:0px 0px 0px 2px;}
+
+.CursorText{ cursor:text;}
+.red{ color:red;}
+.red1 { color:#de0201;}
+.red1 a{ color:#de0201;}
+.red1 a:hover{text-decoration:underline;}
+.red2 { color:#c40001;}
+.red2 a{ color:#c40001;}
+.red2 a:hover{text-decoration:underline;}
+.red3{ color:#de0201; text-decoration:underline; cursor:pointer;}
+.red3 a{ color:#de0201; text-decoration:underline; cursor:pointer;}
+.red_big{color:#de0201;font-weight:bold;}
+.orange_big{color:#ff9000;font-weight:bold;}
+#body{ height:auto; margin:0 auto; padding:0 auto; border:0;}
+.lanSe{color: #1F376D;}
+.blue{ color:#01529d;}
+.blue a{ color:#01529d;}
+.blue a:hover{text-decoration:underline;}
+.blue1{ color:#01529d; text-decoration:underline; cursor:pointer;}
+.blue1 a{ color:#01529d; text-decoration:underline; cursor:pointer;}
+.blue_big{ color:#0069CB;letter-spacing:1px;  font-weight:bold;}
+.blue1_big{color:#01529d;font-weight:bold;}
+.huizi{ color:#666;}
+
+ul.loading{ margin:0px auto 0px auto; padding:50px 0px 0px 0px; list-style:none; width:300px; height:250px;}
+ul.loading li{ margin:0px; padding:0px; list-style:none; overflow:hidden; display:block; text-align:center; font-size:14px; font-weight:bold; color:#333333; padding-top:30px;}
+ul.loading li a{ text-decoration:none; color:#309;}
+ul.loading li a:hover{ text-decoration:underline; color:#00F;}
+
+.HomePageBGBox{ background-image:url(/rchlw/function/images/AllHomePageIcon.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+.ZouShiTuBiaoBGBox{ background-image:url(/rchlw/function/images/AllZouShiTuBiao.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+.SiteInfoLegalBGBox{ background-image:url(/rchlw/function/images/AllSiteInfoLegal.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+/*头部样式*/
+#header{margin:0; padding:0; background:url(/rchlw/function/images/topbg.gif) repeat-x top center;}
+.maintop{ width:950px; margin:0 auto;height:27px; line-height:27px;overflow:hidden;}
+.top0{ height:27px; float:left;}
+.top0 ul{ display:block; overflow:hidden;}
+.top0 li{ width:80px; float:left; ovflow:hidden;}
+
+.setindex span,.setindex a{float:left;}
+.addfor span,.addfor a{float:left;}
+.setindex span,.addfor span{width:12px; height:12px; margin:8px 4px 0px 8px;}
+.setindex span{background-position:0px 0px;}
+.addfor span{background-position:-50px 0px;}
+
+.top0 a{ color:#333; line-height:27px;}
+.top0 a:hover{ color:#f97a2d; line-height:27px;}
+
+.top1{  margin-left:180px; display:inline; float:left; }
+.top1 a{color:#01529d; margin:0px 10px; text-decoration:none;}
+.top1 a:hover{color:#01529d; text-decoration:none;}
+.head1{ width:210px; margin-left:20px; float:left; }
+.head2{ width:210px; margin-left:20px; float:left; }
+.bluetext{ color:#01529d; margin-left:10px;}
+.top2{ height:27px; float:right;}
+.top2 .HelpCenter{ margin:0px; padding:0px; float:right; list-style:none;}
+.top2 .HelpCenter li{ margin:0px; padding:0px 6px; height:27px; line-height:27px; float:right; list-style:none; width:auto;}
+.top2 a{ color:#333; line-height:27px;}
+.top2 a:hover{color:#DE0201;}
+.top3{ width:300px; height:27px; float:right;}
+.top3 ul{ display:block;}
+.top3 li{ width:40px; text-align:center; float:left;}
+.top3 a{ color:#333; line-height:27px;}
+.top4{width:530px; margin-left:20px; text-align:center; float:left;}
+.top4 a{ color:#01529d;}
+.top4 a:hover{color:#01529d; text-decoration:none;}
+
+.title{ width:950px; height:auto; margin:0 auto; padding:0; z-index:10; }
+.title_zixun{ width:950px; height:auto; margin:0 auto; padding:0;  overflow:hidden; }
+.logo{ position:absolute; top:12px; left:10px;}
+.logo a{overflow:hidden;}
+.logo img{  height:51px;}
+
+.logotu{ margin-top:23px; float:left;}
+.hotline{ height:45px;  margin-top:13px; float:right;}
+.hotline_img1{  width:128px; height:29px; margin-right:10px; float:left;}
+.hotline_img2{  width:109px; height:29px;margin-right:10px; float:left;}
+.footballNav,.footballNav li{margin:0px; padding:0px; list-style:none;}
+.footballNav{padding:0px 0px 0px 560px;}
+.footballNav li{float:left; padding:0px 0px 0px 15px;}
+.footballNav li a{color:#FFF; line-height:38px; text-decoration:none;}
+.footballNav li a:hover{color:#FFF; text-decoration:underline;}
+/*头部导航条样式*/
+.navright{ width:190px; position:absolute; right:0px; top:8px;}
+.TopQQNumber{width:84px; height:25px; float:right; margin:0px; background-position:-100px -250px;}
+.TopPhoneNumber{width:93px; height:19px; float:right; margin:2px 0px 0px 10px; background-position:0px -250px;}
+.tnav{ width:950px; height:70px; margin:auto; z-index:50; position:relative;} 
+.nav{ width:510px; height:29px; position:absolute; z-index:60; left:280px; bottom:0px;}
+.navred a{ width:84px; height:28px; margin-right:3px; float:left; background:url(/rchlw/function/images/navbjred.gif) no-repeat; text-align:center;line-height:29px;  font-size:14px; color:#fff; font-weight:bold; }
+.navbjleft{ width:3px; height:29px; background:url(/rchlw/function/images/navbjleft.gif) no-repeat; float:left;}
+.navbjcenter{ position:relative; width:600px; height:29px; float:left; z-index:70;}
+.navbjcenter span{float:left;width:84px;  text-align:center;font-size:14px;  font-weight:bold; height:28px;line-height:28px; cursor:pointer;}
+.navbjcenter a { color:#993300; display:block;}
+.navbjhover{ width:84px; height:29px; color:#fff; background:url(/rchlw/function/images/Allnewsbtn.gif)  no-repeat  0px -250px;}
+.navbjcenter a:hover{ color:#c40001; }
+.line{  background:#fbfaff; border-top:1px solid #ead8aa; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -100px -200px; }
+.noline{ background:url(/rchlw/function/images/onlinebg.gif) no-repeat; }
+.noline1{ background:url(/rchlw/function/images/AllIndex.gif) no-repeat -100px -100px; height:30px;}
+.navbjcenter span.noline1{ height:29px;}
+.noline1 span{ height:29px;}
+.football_hover{position: relative; top:2px;}
+.footballmenu{
+	position:absolute;
+	background:#fff;
+	width:120px;
+	height:120px;
+	left: 0px;
+	top: 22px;
+	color:#993300;
+	border:1px solid #f0b080;
+	border-top:none;
+	margin:0;padding:0;
+}
+.footballmenu ul{ display:block; margin:0; padding:0; overflow:hidden;}
+.footballmenu a { text-align:left; height:22px; padding:4px;_padding-top:8px; display:block; line-height:22px; }
+.footballline{ background:url(/rchlw/function/images/footballline.gif) no-repeat 10px bottom;}
+
+.footballList{ float:left; margin:0px; height:29px; overflow:hidden; z-index:80;}
+.footballList li{ margin:0px; padding:0px; height:29px; overflow:hidden; z-index:90;}
+.footballList li a{ margin:0px; padding:0px; height:29px; line-height:29px;}
+.footballList li a.footballListTab{width:84px; background:url(/rchlw/function/images/AllIndex.gif) no-repeat 0px -100px; font-size:14px; font-weight:bold; text-align:center;}
+.footballList li.over ul{ display:block;}
+.footballList li.over ul{ display:block;}
+.footballList li.over a.footballListTab{background:url(/rchlw/function/images/onlinebg_light.gif) no-repeat top; color:#C40001;}
+.footballList ul{ position:absolute; display:none; border-left:solid 1px #F2B080; border-right:solid 1px #F2B080; width:100px; margin:0px; padding:0px; top:24px; z-index:120;}
+.footballList ul img{ padding:0px 4px 0px 0px;}
+.footballList li li{ border-bottom:solid 1px #F2B080; background:#FFF; margin:0px; padding:0px; height:26px; line-height:26px;}
+.footballList li li a{ padding:5px 0px 0px 7px; font-size:12px; height:20px; line-height:18px;}
+.footballList li li a.over{ background:#FDEFDB; text-decoration:none;}
+.ListFootball     {width:14px; height:14px; float:left; margin:2px 8px 0px 0px; background-position:0px -50px;}
+.ListFootballpeilv{width:14px; height:14px; float:left; margin:2px 8px 0px 0px; background-position:-50px -50px;}
+.ListFootballnews {width:14px; height:14px; float:left; margin:2px 8px 0px 0px; background-position:-100px -50px;}
+.ListFootzhuanjia {width:14px; height:14px; float:left; margin:2px 8px 0px 0px; background-position:-150px -50px;}
+
+.footballList span{position:absolute; right:0px; top:0px; margin:0px; padding:0px; border-top:solid 1px #F2B080; height:0px; overflow:hidden; width:18px; line-height:0px;}
+
+
+/*滚动*/
+.gundong{ height:38px; width:950px; display:block; z-index:10; margin:auto;}
+.gundongleft{  width:3px; height:38px; background:url(/rchlw/function/images/gundongleft.gif) no-repeat; float:left;}
+.gundongcenter{ width:944px;height:38px; background:url(/rchlw/function/images/gundongbj.gif) repeat-x;float:left;}
+.gundongcenter ul{ display:block; margin-left:40px; margin-right:40px;}
+.gundongcenter li { float:left; line-height:38px; margin-right:17px; padding-left:10px; background:url(/rchlw/function/images/gundongwhite.gif) no-repeat 2px 17px;  }
+.gundongcenter a{color:#fff;}
+.gundongright{ float:left;width:3px; height:38px; background:url(/rchlw/function/images/gundongright.gif) no-repeat;}
+.gundongzhong{width:944px;height:38px; background:url(/rchlw/function/images/gundongbj.gif) repeat-x;float:left; z-index:10;}
+
+.gundongcon{ width:700px; float:right;}
+.gundongcon ul{ display:block;}
+.gundongcon li{float:left; line-height:38px; margin-right:17px; padding-left:10px; background:url(/rchlw/function/images/gundongwhite.gif) no-repeat 2px 17px; margin-left:17px;}
+.gundongcon a{color:#fff;}
+/*滚动结束*/
+/*  首页顶部滑动新闻模块 start  */
+.rollingNews{ width:950px; height:38px; overflow:hidden; z-index:40;}
+.rollingNewsLeft{ width:3px; height:38px; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -200px -150px; float:left;}
+.rollingNewsMiddle{ width:944px; height:38px; background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -400px; float:left; z-index:30;}
+.rollingNewsRight{ width:3px; height:38px; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -100px -150px; float:left;}
+.rollingNewsSlide{ width:900px; height:38px; overflow:hidden; margin:auto;}
+.rollingNewsSlide a{ display:block; width:300px; line-height:38px; color:#FFF;}
+.rollingNewsSlide a:hover{ color:#FFF; text-decoration:underline;}
+/*  首页顶部滑动新闻模块 end  */
+.nav a span{ display:block;} 
+.navhover{ background:url(/rchlw/function/images/toptu.jpg) 0px -46px; color:#c40001;}
+.nohover{color:#fff;}
+.daohang{width:785px; height:42px;  background:url(/rchlw/function/images/nawtiaobg.jpg) repeat-x; float:left;}
+.nav2{ width:540px; height:42px; float:right; }
+.nav2 ul{ display:block; float:left;}
+.nav2 li{ width:107px; float:left; text-align:center; background:url(/rchlw/function/images/fenjiexian.gif) no-repeat  right;}
+.nav2 a{ font:14px "宋体";  font-weight:bold; line-height:42px; display:block; }
+.nav2 a:hover{ width:107px; color:#fff; height:42px; background:url(/rchlw/function/images/toptu.jpg) 0px 0px;}
+.nav2 a span{ display:block;} 
+
+.xialacon{ position:relative; margin-left:30px; z-index:10;}
+.xiala{ width:182px; height:29px;float:left; margin-top:5px; }
+.xuanze{
+	width:208px;
+	height:auto;
+	border:1px solid #f2b080;
+	z-index:999;
+	background:#fff;
+	position:absolute;
+	z-index:10000;
+	left:0px;
+	_left:-182px;
+	top:34px;
+	line-height:20px; 
+}
+.goucai_con{ width:208px; height:auto; overflow:hidden; padding-top:8px; padding-bottom:8px; background:url(/rchlw/function/images/hongbian.gif) no-repeat bottom;}
+.goucai_con1{ width:208px; height:auto; overflow:hidden; padding-top:5px; padding-bottom:5px;}
+.goucai_con2{ width:208px; height:auto; overflow:hidden; padding-top:5px; padding-bottom:5px;background:url(/rchlw/function/images/hongbian.gif) no-repeat bottom; }
+.gc_con{ width:40px; height:auto; margin-left:15px; display:inline; margin-top:10px;float:left; }
+.gc_con1{ width:40px; height:auto; margin-left:15px; display:inline;  float:left; }
+.gc_con2{ width:40px; height:auto; margin-left:15px; display:inline; margin-top:20px;float:left; }
+.gc_list{ width:150px; height:auto; padding-top:5px;float:left;}
+.gc_list ul{ display:block; overflow:hidden; }
+.gc_list li{ width:75px;float:left;  line-height:19px;color:#666; overflow:hidden;} 
+.gc_list font{ float:left; line-height:19px; font-size:12px; }
+.gc_list a{color:#993300;}
+.gc_list a:hover{ color:#c40001; text-decoration:underline;}
+.ListAddClass{display:inline-block; width:30px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/jiajiang.gif) no-repeat;}
+.ListHotClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/hot.gif) no-repeat;}
+.ListNewClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/new.gif) no-repeat;}
+.ListAwardClass{display:inline-block; width:32px; height:22px; line-height:22px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/award.gif) no-repeat;}
+
+/*中部样式*/
+#main{ width:950px; height:auto; margin:0 auto; padding:0; margin-top:10px; overflow:hidden;}
+
+/*底部*/
+
+#footer{ width:950px; height:auto; margin:0 auto;  margin-top:10px; padding:0;  } 
+.partner{width:948px; height:auto; border:1px solid #dcdcdc;}
+.parttitle{ width:935px; height:30px; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x; line-height:30px; font-weight:bold; font-size:14px; padding-left:13px; color:#de0201; }
+.partcontent{ width:928px;padding:10px; *line-height:3px;}
+.partcontent a{ margin-left:3px; margin-right:4px;color:#333333; line-height:25px; }
+.partcontent a:hover{color:#DE0201; text-decoration:underline;}
+.about{ width:948px; height:29px; text-align:center;color:#666; line-height:29px; border-top:1px solid #e7e7e7;}
+.about a{ margin-left:3px; margin-right:3px;color:#666;}
+.about a:hover{ color:#DE0201; text-decoration:underline;}
+.map{ width:948px; height:29px; text-align:center; line-height:29px;color:#666; }
+.map a{ margin-left:5px; margin-right:5px; color:#666; }
+.map a:hover{color:#DE0201; text-decoration:underline;}
+.copyright{width:950px; font-family:Arial,Helvetica,sans-serif; color:#666; text-align:center; line-height:20px; margin-top:7px;}
+.lianxi{width:950px;color:#666; text-align:center;line-height:20px;margin-top:5px;}
+.lianxi a{ color:#00529C;}
+.lianxi a:hover{ color:#00529C; text-decoration:underline;}
+.siteinfoLegal{ width:950px; height:70px;margin-top:5px;}
+.siteinfoLegal ul{width:560px; height:45px;  display:block; margin:10px auto; }
+.siteinfoLegal li{ width:118px; height:45px; margin-right:20px; float:left;}
+
+.siteinfoLegal .police1{ width:118px; height:45px; background-position:0px 0px;}
+.siteinfoLegal .police2{ width:118px; height:45px; background-position:0px -50px;}
+.siteinfoLegal .police3{ width:118px; height:45px; background-position:0px -100px;}
+.siteinfoLegal .police4{ width:118px; height:45px; background-position:0px -150px;}
+
+
+/* 登录弹窗样式 */
+#login_pop{ width:auto; height:auto; z-index:99999; position:absolute;}
+
+/* 余额不足提示弹窗样式*/ 
+.prompt{ width:400px; height:auto; border:1px solid #88c1ff;background:#FFF; z-index:99999; margin:25px 300px; position:absolute;}
+.prompt_header{width:400px;height:29px; background:url(/rchlw/function/images/tankbg.gif) repeat-x; }
+.prompt_header_zi{width:300px; font-weight:bold; line-height:29px; margin-left:15px; float:left;}
+.prompt_header_btn{width:11px; height:11px; margin-top:9px; margin-right:15px; float:right;cursor: pointer; }
+.prompt_content{width:400px; height:auto;}
+.prompt_left{ margin-left:55px; margin-top:30px; float:left; display:inline;}
+.prompt_con{ margin-top:20px; margin-left:15px; width:260px; float:left; line-height:25px;}
+.prompt_con ul{ display:block;}
+.prompt_con li{ width:260px; float:left;}
+.prompt_con1{margin-top:40px; margin-left:15px; margin-bottom:15px; width:260px; float:left;  line-height:30px; font-size:16px;}
+.prompt_btn{ width:400px; height:63px; }
+.qixiaobtn{ width:74px; height:23px; background:url(/rchlw/function/images/quxiao.gif) no-repeat; border:0; margin-left:100px;margin-top:20px; margin-bottom:20px; float:left;cursor: pointer; }
+.prompt_btn span{ margin-left:50px; margin-top:25px;float:left;}
+
+.quedingbtn{width:84px; height:30px; background:url(/rchlw/function/images/queding.gif) no-repeat; border:0; margin-left:150px;margin-top:20px; margin-bottom:20px; float:left;cursor: pointer;}
+/* 合买方案提示弹窗样式 */ 
+.scheme{ width:590px; height:auto; border:1px solid #88c1ff;background:#FFF; z-index:99999; margin:25px 300px; position:absolute;}
+.scheme_header{width:588px; height:29px ;  background:url(/rchlw/function/images/tankbg.gif) repeat-x; overflow:hidden; }
+.scheme_header_zi{width:350px; font-weight:bold; line-height:29px; margin-left:15px; float:left;}
+.scheme_header_btn{width:11px; height:11px; margin-top:9px; margin-right:15px; float:right;cursor: pointer; }
+.scheme_content{width:588px; height:auto; margin:0; overflow:hidden;}
+.scheme_con{ width:588px; height:auto; text-align:center; line-height:45px; }
+.sch_title{ width:80px; height:auto;  float:left;}
+.sch_title ul{ display:block;}
+.sch_title li{ width:80px; float:left;text-align:center;border-right:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;}
+.sch_con{width:508px; _width:507px; height:auto; float:left; overflow:hidden;}
+.sch_con ul{ display:block;}
+.sch_con li{width:500px; float:left; margin:0;}
+.scht1{ line-height:61px;}
+.scht2{ line-height:110px;}
+.scht3{  line-height:50px;}
+.schc1{ width:508px; height:auto;  }
+.schc1 ul{ display:block;}
+.schc1 li{ width:126px; height:30px; float:left; line-height:30px; }
+.schc1_list{border-bottom:1px solid #e9e9e9;border-right:1px solid #e9e9e9;}
+.schc1_list1{border-bottom:1px solid #e9e9e9;}
+.schc2{ width:508px; height:110px; float:left;border-bottom:1px solid #e9e9e9;}
+.schc2 ul{ display:block;}
+.schc2 li{ width:490px; height:25px; text-align:left; line-height:25px;}
+.schc3{ width:508px; height:50px; float:left;text-align:left;border-bottom:1px solid #e9e9e9; }
+.scheme_btn{ width:588px;  height:63px; overflow:hidden;}
+.scheme_btn a{  cursor:pointer;}
+.queding_btn1{ width:74px; height:23px; background:url(/rchlw/function/images/qdtzh_btn.gif) no-repeat; border:0; cursor:pointer; margin-left:200px; margin-top:20px; margin-bottom:20px;float:left;}
+.touzhuzhong{ width:74px; height:23px; background:url(/rchlw/function/images/touzhuzhong.gif) no-repeat; border:0; cursor:pointer; margin-left:200px; margin-top:20px; margin-bottom:20px;float:left;}
+.scheme_btn span{ margin-left:50px;margin-top:25px;float:left;}
+
+/*限号管理*/
+.xianhao_content{ width:325px; height:auto;z-index:99999; margin:25px 300px; position:absolute;}
+.xianhao{  padding:10px; color:#666; border:1px solid #cecece; background:#f2f2f2; line-height:20px;}
+.xianhao_top{ font-weight:bold; padding-left:20px; padding-bottom:10px;background:url(/rchlw/function/images/wenhao.gif) no-repeat;}
+.xianhao_con{ text-indent:24px;}
+.smalljt{ position:relative; top:-1px; margin-left:30px;}
+.smalljt1{ position:relative; top:1px; margin:0px; padding:0px;}
+.sanjiao{height:11px; line-height:11px; overflow:hidden;padding:0px 0px 0px 30px;}
+.yangben_content{
+	width:235px;
+	height:auto;
+	z-index:99999;
+	margin:0px;
+	position:absolute;
+	left:0px;
+	top:20px;
+}
+.yangben{ padding:10px; border:1px solid #cecece; background:#f2f2f2; line-height:20px;}
+.yangben table td{ color:#00529C;}
+.upload_text font{line-height:23px; height:23px; font-size:12px; color:#01529d;}
+/*充值、投注成功页*/
+.chzhsuc_main{ width:948px; height:auto; margin:0 auto; margin-top:2px; border:1px solid #dbdbdb;  background:#f9f9f9;}
+.chzhsuc_top{ width:645px; margin-left:300px; margin-top:50px;  overflow:hidden; }
+.chzhsuc_img{width:42px; height:48px; float:left;}
+.chzhsuc_zi{ font:22px "宋体"; font-weight:bold; margin-left:10px; float:left;line-height:48px;}
+.chzhsuc_other{margin-left:350px; margin-top:10px;font:14px "宋体";line-height:30px;  }
+.chzhsuc_other a{color:#01529d; }
+.chzhsuc_con{margin-left:300px; width:435px; height:auto; margin-bottom:20px; overflow:hidden;}
+.chzhsuc_list{ margin-right:10px; margin-top:10px;width:205px; height:63px; background:#f6f6f6; border:1px solid #dcdcdc; float:left;}
+.caizh_img{ margin-top:10px; margin-left:10px;float:left;}
+.caizh_zi{ margin-top:25px; margin-left:10px;float:left;}
+.caizh_gm{ margin-top:20px;  margin-right:10px;color:#c40000; line-height:25px; cursor:pointer;float:right;}
+.caizh_gm a{color:#c40000; }
+.caizh_gm a:hover{color:#c40000; text-decoration:underline; }
+.caizh_img_zucai{ margin-top:10px; margin-left:10px;}
+.caizh_zi_zucai{ margin-top:20px;  margin-left:25px;}
+.caizh_gm_zucai{ width:90px; margin-top:10px;  margin-left:25px;color:#c40000; line-height:25px; cursor:pointer;}
+/*投注弹出框*/
+.touzhutk{
+	width:311px;
+	height:auto;
+	z-index:99999;
+	margin:2px 5px;
+	position:absolute;
+	overflow:hidden;
+	left: 10px;
+	top: 3px;
+}
+.touzhutk_con{ display:block;}
+.touzhutk_left{ width:311px; height:4px;background:url(/rchlw/function/images/tan_top.gif) no-repeat;overflow:hidden;}
+.touzhutk_nr{width:311px;padding:7px 10px; height:auto;background:url(/rchlw/function/images/tan_mid.gif) repeat-y; line-height:22px;}
+.touzhutk_nr span{ width:300px;  display:block; word-wrap:break-word; }
+.touzhutk_nr font{ margin-right:5px;font:12px "宋体"; line-height:22px;  }
+.tuolist{ overflow:hidden; display:block;}
+.red2tuo{float:left; color:#c40001;}
+.tuoma{float:left; width:225px; }
+.touzhutk_right{width:311px; height:6px; background:url(/rchlw/function/images/tan_di.gif) no-repeat;}
+.touzhutk_jian{ width:16px; height:13px;position:relative; top:-4px; margin-left:160px; clear:both;}
+.touzhutk_jian1{width:8px; height:8px;position:relative; top:1px; margin-left:26px; clear:both;}
+
+.indexset{  color:#ff0000; text-decoration:underline;}
+
+/*足彩投注确认弹出框*/
+.zucai_win{ width:698px; height:auto;border:1px solid #88c1ff;background:#FFF; z-index:99999; margin:25px 300px; position:absolute;}
+.zucaiwin_header{width:698px; height:29px ;  background:url(/rchlw/function/images/tankbg.gif) repeat-x; overflow:hidden; }
+.zucaiwin_header_zi{width:650px;font-weight:bold; line-height:29px; margin-left:15px; text-align:center; float:left;}
+.zucaiwin_header_btn{width:11px; height:11px; margin-top:9px; margin-right:15px; _margin-right:5px; float:right;cursor: pointer; }
+.zucaiwin_content{width:698px;  height:auto; margin:0;}
+.zucaiwin_zucai ul{ display:block;overflow:hidden;}
+.zucaiwin_zucai li{ float:left; }
+.zucaiwin_left_zucai{ width:80px; height:247px; text-align:center;background:#f5f5f5; border-right:1px solid #d5d5d5;float:left; line-height:234px;}
+.zucaiwin_right{width:505px;  height:247px;padding-left:10px; float:left;}
+.zucaiwin_danshi{height:auto; text-align:left;}
+.zucaiwin_xuanhao{ line-height:30px;}
+.zucaiwin_duizhen{ width:580px;  border:1px solid #d5d5d5;}
+.zucaiwin_duizhen tr{text-align:center;}
+.zucaiwin_tr1{width:55px; border-right:1px solid #d5d5d5; background:#f5f5f5;}
+.zucaiwin_tr2{border-top:1px solid #d5d5d5; border-right:1px solid #d5d5d5;}
+.zucaiwin_tr3{border-top:1px solid #d5d5d5; }
+.zucaiwin_tr4{ width:12px; padding:10px 15px;line-height:14px;  border-top:1px solid #d5d5d5; border-right:1px solid #d5d5d5; }
+.zucaiwin_tr5{ width:12px; padding:10px 9px;line-height:14px;  border-top:1px solid #d5d5d5; border-right:1px solid #d5d5d5; overflow:hidden; }
+.zucaiwin_tr6{border-right:1px solid #d5d5d5; background:#f5f5f5;}
+.zucaiwin_tr7{width:12px; padding:10px 8px;line-height:14px;  border-top:1px solid #d5d5d5; border-right:1px solid #d5d5d5;}
+.zucaiwin_tr8{background:#f5f5f5;}
+.zucaiwin_zhank{  float:left;height:105px; line-height:15px;}
+.zucaiwin2_zucai{height:50px; border-top:1px solid #d5d5d5; overflow:hidden;   }
+.zucaiwin2_zucai ul{ display:block;}
+.zucaiwin2_zucai li{ float:left; }
+.zucaiwin2_zucai_left{ width:80px;text-align:center;   background:#f5f5f5;float:left; line-height:50px;  border-right:1px solid #d5d5d5;}
+.zucaiwin2_zucai_right{ width:510px;padding-left:10px;line-height:50px;  float:left;}
+.zucaiwin_btn { width:698px;  height:63px; overflow:hidden; border-top:1px solid #d5d5d5;}
+.zucaiwin_btn a{  cursor:pointer;}
+.queding_btn1{ width:74px; height:23px; background:url(/rchlw/function/images/qdtzh_btn.gif) no-repeat; border:0; cursor:pointer; margin-left:200px; margin-top:20px; margin-bottom:20px;float:left;}
+.zucaiwin_btn span{ margin-left:50px;margin-top:25px;float:left;}
+/*失败页*/
+#mainfail{ width:950px; height:auto; margin:0 auto; padding:0 auto; border:0;}
+.failmain{ width:950px; height:600px; background:url(/rchlw/function/images/bg-cwym.gif) repeat-x;}
+.fail_left{ width:350px; float:left; margin-top:155px; text-align:center;}
+.fail_left_tu{ margin-top:55px;}
+.fail_right{ width:590px; float:right; margin-top:60px; }
+.fail_right_zi{ text-align:center;}
+.fail_right_tu{margin-top:20px; margin-left:15px; }
+.fail_top{ width:560px; height:26px; background:url(/rchlw/function/images/fail_bgsh.gif) no-repeat;}
+.fail_mid{width:560px; height:350px; background:url(/rchlw/function/images/fail-bgm.gif) repeat-y;}
+.fail_footer{width:560px; height:26px; background:url(/rchlw/function/images/fail_bgx.gif) ;}
+.fail_title{ width:500px; height:34px; margin-left:30px;}
+.wzmap{ float:left;}
+.fanhui{ float:right; margin-top:5px;}
+.fail_content{ width:310px; float:left; margin-left:30px; _margin-left:15px;font:12px "宋体"; margin-top:25px;}
+.fail_content ul{ display:block;}
+.fail_content li{ float:left; width:310px; line-height:18px;}
+.fail_map{ width:65px; float:left;}
+.return{ float:left; }
+.return a{color:#0052be; text-decoration:underline;}
+.fail_con1{ width:235px; float:right; color:#0052be; margin-top:25px; line-height:25px;}
+.lookelse{ float:right; width:180px; margin-right:30px; text-align:center;}
+.lookelse_zi{ height:50px; margin-top:45px;}
+.lookelse_tu{ height:175px; margin-top:35px;}
+/* ---------------------来自ChannelBuy.css -------author：张士鹏-----------*/
+/* CSS Document */
+
+
+/* 投注频道的框架样式 */
+.ChannelBuyBody{width:950px; margin:auto; overflow:hidden;}
+.ChannelBuyHandle{width:700px; float:left;}
+.ChannelBuyHandleZC{width:730px; float:right;}
+.ChannelBuyHandleBorder{ border:solid 1px #DBDBDB; overflow:hidden;}
+.ChannelBuyInfo{width:240px; float:right;}
+
+/* 投注频道Banner样式 */
+.ChannelBuyBanner{background:#FEFBEC; border:solid 1px #FCAE58; border-bottom:none; position:relative;}
+.ChannelBuyBanner ol{padding:15px 10px 0px 85px;}
+.ChannelBuyBanner ol li{ height:30px; line-height:30px; position:relative;}
+.ChannelBuyBanner ol img{float:left; margin:5px 5px 0px 0px;}
+.ChannelBuyBanner ol i{ float:left; font-size:12px; line-height:14px; height:14px; font-weight:normal; margin:10px 0px 0px 0px; font-style:normal; color:#333;}
+.ChannelBuyBanner ol strong{ color:#F00; padding:0px 2px;}
+.ChannelBuyBanner ol em{margin-left:20px; font-style:normal;}
+.ChannelBuyBanner em font{padding:0px 1px; color:#FF0000;}
+.ChannelBuyBanner b{ font-weight:bold;line-height:30px;}
+.ChannelBuyBanner li a{ color:#1f376d;}
+.ChannelBuyBanner li a:hover{ color:#de0201; text-decoration:underline;}
+
+/* 定义一些基础常用样式 比如红蓝球和10px的间距 */
+span.SmallRedBall,span.SmallBlueBall{ display:block; float:left; width:23px; height:23px; line-height:23px; font-size:12px; color:#FFF; font-weight:bold; text-align:center;}
+span.SmallRedBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -50px -50px;}
+span.SmallBlueBall{ background:url(/rchlw/function/images/AllBalls.gif) no-repeat -100px -50px;; }
+span.MiniRedBall,span.MiniBlueBall{display:block; float:left; width:9px; height:9px; line-height:9px; font-size:8px; color:#FFF; text-align:center;}
+span.MiniRedBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -50px 0px;;}
+span.MiniBlueBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -100px 0px;;}
+div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
+div.space15{line-height:15px; font-size:15px; height:15px; overflow:hidden;}
+div.space20{line-height:20px; font-size:20px; height:20px; overflow:hidden;}
+div.space20l{float:left; line-height:20px; font-size:20px; height:20px; width:20px; overflow:hidden;}
+.Disablelight{color:#999;}
+.none{ display:none;}
+.selected{ display:block;}
+td.over{ background:#F5F5F5;}
+
+/* 投注频道Tab页样式 */
+.ChannelBuyHandleMainTab{ height:26px; overflow:hidden; border-bottom:solid 2px #F98137; padding-left:15px;}
+.ChannelBuyHandleMainTab dt{ float:left; background:url(/rchlw/function/images/ChannelBuyTabNormal.gif) no-repeat left top; width:80px; height:26px; line-height:26px; text-align:center; font-size:13px; color:#C50505; cursor:pointer; margin:0px 5px 0px 0px;}
+.ChannelBuyHandleMainTab dt.over{background:url(/rchlw/function/images/ChannelBuyTabLight.gif) no-repeat left top;}
+.ChannelBuyHandleMainTab dt.selected{background:url(/rchlw/function/images/ChannelBuyTabSelected.gif) no-repeat left top; color:#FFF; font-weight:bold;}
+.ChannelBuyHandleMainTab dd{ float:right; height:26px; line-height:26px;}
+.ChannelBuyHandleMainTab dd a{ float:right; color:#00529d; line-height:14px; padding:0px 1px 0px 0px; border-left:solid 1px #00529d; text-decoration:none; margin:8px 0px 0px 0px; width:68px; text-align:center;}
+.ChannelBuyHandleMainTab dd a:hover{ text-decoration:underline;}
+.ChannelBuyTab .selected a{ color:#FFFFFF;}
+.ChannelBuyHandleSecondTab{background:url(/rchlw/function/images/HighFrequencySecondTabBG.gif); border:none; height:29px; padding:9px 0px 0px 0px; overflow:hidden;}
+.ChannelBuyHandleSecondTab dl{ overflow:hidden; padding:0px 0px 0px 15px;}
+.ChannelBuyHandleSecondTab dl.selected{ display:block;}
+.ChannelBuyHandleSecondTab dt{ float:left; width:80px; height:29px; line-height:29px; text-align:center; margin:0px 2px 0px 0px; font-size:12px; color:#333333; cursor:pointer;}
+.ChannelBuyHandleSecondTab dt.over{color:#de0201; background:url(/rchlw/function/images/HighFrequencySecondTabHover.gif);}
+.ChannelBuyHandleSecondTab dt.selected{color:#de0201; background:url(/rchlw/function/images/HighFrequencySecondTabSelected.gif);}
+.ChannelBuyHandleSecondTab a{width:80px; height:26px; line-height:26px; color:#C50505;}
+.ChannelBuyHandleTabContent { padding:0px; border:solid 1px #FCAE58; border-bottom:solid 1px #DBDBDB; border-top:none; overflow:hidden;width:698px;}
+.ChannelBuyHandleTabContent .selected{ display:block;}
+.tableytRdg-fa p span {float: right;}
+.tableytRdg-fa p a {color: #1F376D;font-weight: normal;text-decoration: underline;}
+.tableytRdg-fa p a:hover{ text-decoration:underline; color:#de0201;}
+.tableytRdg-fa p {margin: 10px 0;width: 580px;}
+/* 高频彩剩余投注时间倒计时(同上) */
+.ChannelCountDown{background:url(/rchlw/function/images/ChannelCountDown.gif); width:195px; height:32px; position:absolute; right:-5px; top:5px;}
+.ChannelCountDown em{display:block; margin:4px 0px 0px 120px; color:#DE0201; height:28px; line-height:28px; color:#DE0201; font-size:18px; font-weight:bold;}
+.ChannelCountDown i{ color:#DE0201; font-size:18px; font-weight:bold; line-height:28px;}
+
+
+
+
+
+/* 投注频道常用pannel的主要样式 */
+.ChannelBuyPannel{ border:solid 1px #DBDBDB;}
+.ChannelBuyPannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.ChannelBuyPannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; color:#D10000; float:left;}
+.ChannelBuyPannelHead a{line-height:30px; height:30px; font-size:12px; padding:0px 10px;  float:right; text-decoration:none; color:#000;}
+.ChannelBuyPannelHead a:hover{ color:#DE0201; text-decoration:underline;}
+.ChannelBuyPannelBody{ padding:10px; overflow:hidden;}
+
+/* 投注频道开奖公告样式 */
+.ChannelBuyBulletin ol li{ height:30px; line-height:30px; position:relative; z-index:2;}
+.ChannelBuyBulletin ol a{ position:absolute; line-height:30px; height:30px; right:0px; color:#000; text-decoration:none;}
+.ChannelBuyBulletin ol a:hover{ color:#01529D; text-decoration:underline;}
+.ChannelBuyBulletin .ChannelBuyPannelBody{overflow:visible;}
+.ChannelBuyBulletin ol i{display:block; float:left; line-height:30px; height:30px; font-style:normal;}
+
+/* 投注频道开奖点评样式 */
+.ChannelBuyReview ol li{ line-height:20px;}
+.ChannelBuyReview ol p{ line-height:20px;}
+
+/* 投注频道号码分析样式 */
+.ChannelBuyAnalyse dl{ width:100%; height:25px; line-height:25px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.ChannelBuyAnalyse dt.over{ background:url(/rchlw/function/images/ChannelBuyPannelHeaderLight.png) repeat-x left top;}
+.ChannelBuyAnalyse dt.selected{ background:#FFF;}
+.ChannelBuyAnalyse dt span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+.ChannelBuyAnalyse dd{ float:left; height:25px; line-height:25px; width:79px; text-align:center; cursor:text; position:relative; z-index:auto;}
+.ChannelBuyAnalyse dd span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+.ChannelBuyAnalyse dt {
+float: left;
+height: 25px;
+line-height: 25px;
+width: 78px;
+text-align: center;
+cursor: pointer;
+border-right: 1px solid #CCC;
+}
+.ChannelBuyAnalyse div.TableBox{ display:none;}
+.ChannelBuyAnalyse table{ border-collapse:collapse;}
+.ChannelBuyAnalyse div.selected{ display:block;}
+.ChannelBuyAnalyse th{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; background:#F5F5F5; font-weight:normal;}
+.ChannelBuyAnalyse td{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; text-align:center;}
+
+
+/* 投注频道奖金对照样式 */
+.ChannelBuyCollate table{ border-collapse:collapse; border:solid 1px #DBDBDB; width:100%;}
+.ChannelBuyCollate th{ padding:3px 0px 2px 0px; border:solid 1px #DBDBDB; background:#F5F5F5; font-weight:normal;}
+.ChannelBuyCollate td{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; text-align:center;}
+
+/* 投注频道走势图表样式 */
+.ChannelBuyCurrent ul{ border:0px; width:100%;}
+.ChannelBuyCurrent li{ float:left; width:90px; border-left:solid 1px #000; padding:0px 0px 0px 15px; margin:4px 0px 4px 0px;}
+.ChannelBuyCurrent li a{ color:#333; text-decoration:none;}
+.ChannelBuyCurrent li a:hover{ text-decoration:underline; color:#DE0201;}
+
+/* 文件上传 */
+.InputFile{width:200px; height:23px; overflow:hidden;}
+.ChannelBuyUpload ul{ margin:0px; padding:0px; height:30px;}
+.ChannelBuyUpload li{ margin:0px; padding:0px; float:left; height:25px; line-height:25px; padding:0px 10px 0px 0px;}
+.ChannelBuyUpload dl{ margin:20px 0px 0px 0px; padding:0px; overflow:hidden;}
+.ChannelBuyUpload dt{ height:25px; line-height:25px; color:#c50505; font-weight:bold; font-size:14px;}
+.ChannelBuyUpload dd{ height:25px; line-height:25px; padding:0px 0px 0px 25px;}
+.UploadFileBG{position:absolute; left:0px; top:0px; z-index:2;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;opacity:0.0!important; cursor:pointer;}
+.UploadFileInput{position:absolute; left:1px; top:0px; z-index:3; width:140px; height:21px; border:0px; padding:0px; margin:0px; line-height:21px; border:solid 1px #999;}
+.UploadFileButton{position:absolute; left:155px; top:0px; z-index:1; width:44px; height:23px; border:0px; padding:0px; margin:0px; line-height:23px;background-image:url(/rchlw/function/images/InoutFile.gif);  background-repeat:no-repeat; background-position:top right; cursor:pointer;}
+.InputFile input.over{ background-position:bottom right;}
+
+/* 投注模块的红蓝外框 */
+.ChannelBuyBox{width:auto; height:35px; position:relative; background-repeat:no-repeat; overflow:hidden; z-index:auto; text-align:center;}
+.ChannelBuyBox i{padding:0px 5px; margin:0px auto 0px auto; font-size:12px; color:#c50505; line-height:17px; background:#FFF; font-style:normal; text-align:center; overflow:hidden;}
+.ChannelBuyBoxBottomRed i,.ChannelBuyBoxBottomBlue i,.ChannelBuyBoxBottomYellow i{margin:0px auto 0px auto; font-size:12px; color:#000; line-height:30px; }
+.ChannelBuyBox b{font-size:14px; line-height:17px; font-weight:bold; color:#c50505;}
+.ChannelBuyBox span{display:block; width:10px; height:35px; line-height:35px; position:absolute; top:0px; right:0px; background-repeat:no-repeat; z-index:auto;}
+.ChannelBuyBoxTopRed{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:0px 10px; width:520px}
+.ChannelBuyBoxTopBlue{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:0px 10px;}
+.ChannelBuyBoxTopBlue i,.ChannelBuyBoxTopBlue b{ color:#0F3F94;}
+.ChannelBuyBoxTopYellow{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:0px 10px;}
+.ChannelBuyBoxBottomRed{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxBottomBlue{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxBottomYellow{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxTopRed span{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxTopBlue span{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxTopYellow span{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxBottomRed span{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomBlue span{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomYellow span{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomRed a,.ChannelBuyBoxBottomBlue a,.ChannelBuyBoxBottomYellow a{ text-decoration:none; color:#666; font-weight:normal; cursor:pointer;}
+.ChannelBuyBoxBottomRed a.over,.ChannelBuyBoxBottomBlue a.over,.ChannelBuyBoxBottomYellow a.over{ text-decoration:underline;}
+
+/* 投注页的添加和机选两个按钮 */
+.ChannelBuyAddButton{width:130px; height:33px; float:left; overflow:hidden; cursor:pointer;}
+.ChannelBuySelectButton{width:130px; height:33px; float:left; background:url(/rchlw/function/images/addbtn_blue.gif) no-repeat left top;}
+.ChannelBuySelectButton select{ display:block; float:left; margin:7px 0px 0px 5px; font-size:14px; line-height:14px; width:43px; padding:0px;}
+.ChannelBuySelectButton span{ display:block; float:right; width:54px; height:22px; margin:6px 5px 0px 0px; overflow:hidden; cursor:pointer; background:url(/rchlw/function/images/addbtn_blue.gif) left bottom;}
+*html .ChannelBuySelectButton select,*html .ChannelBuySelectButton span{ margin:5px 3px 0px 3px;}
+.ChannelBuySelectButton .over{ background:url(/rchlw/function/images/addbtn_blue.gif) right bottom;}
+.ChannelBuyAddBasket{ width:100%; height:auto; overflow:hidden; float:left; margin:0px;}
+.ChannelBuyAddBasket .AddBasketCenter{ width:280px; height:auto; overflow:hidden; margin:0px auto 0px auto;}
+
+.ChannelBuyAddTable{ border-collapse:collapse; width:630px; margin:15px auto;}
+.ChannelBuyAddTable th{ width:200px;}
+.ChannelBuyAddTable td{ width:200px; text-align:right;}
+.ChannelBuyAddTable img{ cursor:pointer;}
+.ChannelBuyAddTable .jxbtn{ width:43px; height:23px; border:none; cursor:pointer; background:url(/rchlw/function/images/jxbtn.gif) no-repeat;}
+.ChannelBuyAddTable .ddjxbtn{ width:74px; height:23px; border:none; cursor:pointer; background:url(/rchlw/function/images/ddjxbtn.gif) no-repeat;}
+.ClearRedBall{ width:70px; height:22px; border:none; background:url(/rchlw/function/images/ClearRedBall.gif) no-repeat;}
+.ClearBlueBall{ width:70px; height:22px; border:none; background:url(/rchlw/function/images/ClearBlueBall.gif) no-repeat;}
+
+/* 投注页的增加倍数按钮 */
+dl.ChannelBuyRedouble{ width:592px; padding:10px 0px 10px 72px; height:auto; overflow:hidden;}
+.ChannelBuyRedouble dt{ float:left; width:60%; height:24px; overflow:hidden; text-align:left; font-weight:normal;}
+.ChannelBuyRedouble dd{ float:left; width:20%; height:24px; overflow:hidden; text-align:right; font-weight:normal;}
+.ChannelBuyRedouble dt i{ float:left; display:block; font-style:normal; height:24px; line-height:24px;}
+.ChannelBuyRedouble dt span{ float:left; display:block; width:14px; height:14px; line-height:14px; font-size:12px; margin:3px; border:solid 1px #A9BFEB; text-align:center; cursor:pointer;}
+.ChannelBuyRedouble dt span.over{ background:#DBDBDB; border:solid 1px #979797;}
+.ChannelBuyRedouble dt input{ float:left; width:50px; height:18px; line-height:16px; font-size:14px; text-align:center; border:solid 1px #DBDBDB;}
+.ChannelBuyRedouble dd i{ display:block; font-style:normal; height:24px; line-height:24px; text-align:center;}
+.ChannelBuyRedouble dd b{font-weight:normal; color:#F00; height:24px; line-height:24px;}
+.ChannelBuyRedouble dd img{ cursor:pointer;}
+
+/* 投注页的玩法提示 */
+.ChannelBuyTip{ background:url(/rchlw/function/images/tanhao_small.png) no-repeat left center; margin:10px 15px 10px 15px; padding:0px 0px 0px 20px; height:16px; line-height:16px; color:#666;}
+
+/* 投注页的选号信息和清空选号区 */
+.ChannelBuyAddInfo{ float:left; width:100%; text-align:center; height:20px; line-height:20px; margin:10px;}
+.ChannelBuyAddInfo b{ color:#F00;}
+.ChannelBuyAddInfo a{ text-decoration:none; color:#666; font-weight:normal; cursor:pointer;}
+.ChannelBuyAddInfo a:hover{ text-decoration:underline; color:#666;}
+.ChannelBuyAddInfo a.over{ text-decoration:underline; color:#666;}
+
+/* 投注页的第三层RadioButton的tab页 */
+.ChoiceOneTab{ height:26px; overflow:hidden; border-bottom:dashed 1px #DBDBDB; margin:0px 0px 10px 0px;}
+.ChoiceOneTab dt{ float:left;  height:26px; line-height:26px; text-align:left; font-size:12px; cursor:pointer; margin:0px 15px 0px 0px; position:relative; padding:0px 0px 0px 15px;}
+.ChoiceOneTab dd{ float:left;  height:26px; line-height:26px; text-align:left; font-size:12px; margin:0px 5px 0px 15px; font-weight:bold;}
+.ChoiceOneTab dt.over{}
+.ChoiceOneTab dt.selected{}
+.ChoiceOneTab dt span{position:absolute; left:0px; top:7px; display:block; width:13px; height:13px; font-size:13px; line-height:13px; overflow:hidden; background-image:url(/rchlw/function/images/ChannelBuyRadioButton.png); background-position:left top; }
+.ChoiceOneTab dt.over span{ background-position:left center;}
+.ChoiceOneTab dt.selected span{ background-position:left bottom;}
+.ChoiceOneContent { padding:0px 0px 0px 0px; }
+.ChoiceOneContent .selected{ display:block;}
+
+/* DlList是通用样式 下面是个性化设置 不同地方请自行命名 不设置宽度会在ie6下产生严重bug!!!!!!!! */
+.DlList{ float:right; height:20px; overflow:visible; margin:0px; padding:0px; position:relative; z-index:10;}
+.DlList dt,.DlList dd{ margin:0px; padding:0px; font-size:12px; line-height:inherit; overflow:hidden;}
+.DlList dt{ cursor:pointer; overflow:none;}
+.DlList dd{ display:none; position:absolute; left:-150px; top:20px; z-index:10;}
+dl.over dd{ display:block;}
+.DlList .triangle{ width:200px; padding:0px 6px; height:8px; line-height:8px; font-size:8px; overflow:hidden; background:url(/rchlw/function/images/popup_triangle.gif) no-repeat bottom center;}
+.DlList .DlLsitContent{ width:200px; background:#F1F1F1; border:solid 1px #CECECE; border-top:0px; padding:5px 5px 5px 5px;}
+/* 玩法介绍下拉 */
+.PlanIntroMore{ width:70px; height:22px; line-height:22px;}
+.PlanIntroMore h3{ font-size:12px; font-weight:bold; line-height:25px; margin:0px; padding:0px;}
+.PlanIntroMore p{ font-size:12px; line-height:20px; margin:0px; padding:0px; text-indent:2em; color:#333333;}
+/* 开奖公告更多 */
+.WinIntroMore{ width:70px; height:30px; line-height:30px;}
+.WinIntroMore dd{top:30px;}
+.WinIntroMore table{ border-collapse:collapse; border:solid 1px #D5D5D5; width:100%;}
+.WinIntroMore th{ border-collapse:collapse; border:solid 1px #D5D5D5; background:#E5E5E5; line-height:25px;}
+.WinIntroMore td{ border-collapse:collapse; border:solid 1px #D5D5D5; background:#FFFFFF; line-height:25px; text-align:center;}
+
+/* 最新开奖三列样式 */
+.NewWinList,.NewWinList ul,.NewWinList li{ list-style:none;}
+.NewWinList table{width:100%; border-collapse:collapse;}
+.NewWinList table th{ text-align:left;  font-weight:normal; line-height:20px;}
+.NewWinList table td{ text-align:right; line-height:20px;}
+
+/* 资讯页面头部福导航的字体行高 */
+.zixuntopnav ul li{line-height:38px;}
+
+/* 各个彩种下拉菜单小图标*/
+.List_FuCai{width:25px; height:25px; background-position:0px -150px;}
+.List_TiCai{width:25px; height:25px; background-position:-50px -150px;}
+.List_GaoPinCai{width:25px; height:25px; background-position:-100px -150px;}
+.List_ChuanTongZuCai{width:25px; height:25px; background-position:-150px -150px;}
+.List_DanChangZuCai{width:25px; height:25px; background-position:-200px -150px;}
+.List_JingCai{width:25px; height:25px; background-position:-250px -150px;}
+
+/* 投注页所有购买方式的样式（购买方式、收益设置、支付方式、追号设置、确认购买） */
+.FollowNub{width:700px;}
+.FollowNubFootball{width:730px; float:right; clear:right;}
+.FollowNubTab{ height:40px; overflow:hidden; border:solid 1px #FCAE58; border-bottom:solid 1px #DBDBDB; border-top:0px; margin:0px 0px 0px 0px; background:#F6F6F6;}
+.FollowNubTab dt{ float:left;  height:40px; line-height:40px; text-align:left; font-size:12px; cursor:pointer; margin:0px 15px 0px 0px; position:relative; padding:0px 0px 0px 20px;}
+.FollowNubTab dd{ float:left;  height:40px; line-height:40px; text-align:left; font-size:12px; margin:0px 15px 0px 0px; padding:0px; width:80px; text-align:center;}
+.FollowNubTab dd.TabEm{float:right; width:auto; text-align:right; color:#999;}
+.FollowNubTab dt.over{}
+.FollowNubTab dt.selected{}
+.FollowNubTab dt span{display:block; width:13px; height:13px; line-height:13px; background-image:url(/rchlw/function/images/ChannelBuyRadioButton.png); background-repeat:no-repeat; overflow:hidden; background-position:left top; position:absolute; left:0px; top:14px;}
+.FollowNubTab dt.over span{ background-position:left center;}
+.FollowNubTab dt.selected span{ background-position:left bottom;}
+.FollowNubTabContent { padding:0px 0px 0px 0px; }
+.FollowNubTabContent .selected{ display:block;}
+.FollowNubTable{ width:100%; border-collapse:collapse; border:solid 1px #DBDBDB; border-left:solid 1px #FCAE58; border-right:solid 1px #FCAE58; border-top:0px;}
+.FollowNubTable th{ width:80px; font-weight:normal; background:#F6F6F6;}
+.FollowNubTable td{ background:#FFF;}
+.IncomeSetting td{ padding:15px;}
+.ComputeFashion{ border:dashed 1px #DBDBDB; width:100%;}
+.ComputeFashion th{ background:#FFF; font-weight:normal; width:10px; padding:5px 3px 5px 9px;}
+.ComputeFashion td{ padding:5px 9px 5px 0px;}
+.ComputeFashion select{ margin:0px 5px; font-size:12px;}
+.ComputeFashion input.text{ width:60px; height:16px; margin:0px 5px; padding:0px; line-height:15px; border:solid 1px #DBDBDB; text-align:center; font-size:12px;}
+.ComputeFashion .ComputeBtn{ background:url(/rchlw/function/images/Compute.gif); display:block; width:46px; height:22px; margin:0px auto; border:0px; padding:0px; line-height:22px; text-align:center; cursor:pointer;}
+.ComputeResultBox{ height:316px; border:solid 1px #DBDBDB; overflow:hidden; width:598px;}
+.ComputeResultBox_zhuihao{ height:160px; border:solid 1px #DBDBDB; overflow-y:scroll; overflow-x:hidden; width:578px; padding-top:5px; padding-left:20px;}
+table.chasenumtable td{ padding:5px 0; line-height:14px; }
+.chasenumber{color:#666666; display:inline-block; width:16px; text-align:right;}
+.chasenuminput{ width:40px; height:18px; line-height:18px; border:solid 1px #DBDBDB; margin:0px 3px; text-align:center; font-weight:bold; color:#FF0000; }
+.chasenuminput1{ width:80px; height:18px; line-height:18px; border:solid 1px #DBDBDB; margin:0px 3px; text-align:center; }
+.zhuihao_wenhao{width:16px; height:16px; padding-right:16px; margin-left:5px; background:url(/rchlw/function/images/wenhao_small.png) no-repeat; }
+.chasenumcheckbox{ margin:0px 4px;}
+.ComputeResult{ width:100%; border-collapse:collapse;}
+.ComputeResult th{ background:#FFF; font-weight:normal; padding:4px 0px 4px 0px;}
+.ComputeResult td{ padding:4px 0px 4px 0px; height:14px; line-height:14px; font-size:12px; border-top:dashed 1px #DBDBDB; text-align:center;}
+*html .ComputeResult td{ padding:4px 0px 2px 0px; height:14px; line-height:14px; font-size:12px; border-top:dashed 1px #DBDBDB; text-align:center;}
+.ComputeResult td span{padding:0px 9px;}
+.ComputeResult input{width:25px; height:16px; margin:0px 1px 0px 0px; padding:0px; line-height:15px; border:solid 1px #DBDBDB; text-align:center; font-size:12px;}
+.ComputeResult .over td{ background:#F6F6F6;}
+.Setting td{ padding:15px;}
+.Setting ul,.Setting li{ margin:0px; padding:0px; list-style:none;}
+.Setting li{ height:30px; line-height:30px;}
+.FollowNubSubmit table{ width:100%; border-collapse:collapse; border:solid 1px #FCAE58; border-top:solid 1px #DBDBDB; border-top:0px;}
+.FollowNubSubmit th{ width:80px; background:#F6F6F6; font-weight:normal;}
+.FollowNubSubmit td{ background:#FFFFFF; padding:15px;}
+.FollowNubSubmit td ul,.FollowNubSubmit td li{ margin:0px auto0px; list-style:none;}
+.FollowNubSubmit td li{height:30px; line-height:30px;}
+.FollowNubSubmit td b{ font-weight:bold; color:#FF0000;}
+.FollowNubSubmit td a{ font-weight:normal; color:#02549D; text-decoration:none;}
+.FollowNubSubmit td a.over{ cursor:pointer; color:#DE0201; text-decoration:underline;}
+.FollowNubSubmit .FollowNubSubmitBtn{display:block; width:116px; height:33px; line-height:33px; overflow:hidden; font-weight:bold; background:url(/rchlw/function/images/ljgcbtn.gif) no-repeat center center;}
+
+
+.ChannelBuyTable{ width:100%; border-collapse:collapse;}
+.ChannelBuyTable th{ border-left:solid 1px #FCAE58; border-bottom:solid 1px #DBDBDB; background:#F5F5F5; width:80px; font-weight:normal;}
+.ChannelBuyTable td{ border-right:solid 1px #FCAE58; border-bottom:solid 1px #DBDBDB; border-left:none; background:#FFFFFF; padding:15px;}
+.ChannelBuyTable td a{ color:#006699; text-decoration:none;}
+.ChannelBuyTable td a.over{ color:#DE0201; text-decoration:underline;}
+.ChannelBuyTable ul{ display:block; overflow:hidden;}
+.ChannelBuyTable ul li{ height:22px; line-height:22px; padding:4px 0px;}
+.ChannelBuyTable select{ font-size:12px;}
+.ChannelBuyTable i{ color:#DE0201; font-style:normal;}
+.TextInputM{ width:66px;}
+
+/* 赠彩样式 */
+.GiftTarget .TextInput{ color:#666; font-size:12px;}
+.GiftTarget .ButtonInput{ width:80px; font-size:12px;}
+.GiftList table{ border-collapse:collapse; width:100%;}
+.GiftList th,.GiftList td{ border:none; background:none; padding:6px 1px; width:auto;}
+.GiftList thead th,.GiftList thead td{ font-weight:bold; color:#000;}
+.GiftList thead em{ font-weight:normal; color:#666;}
+.GiftList .TextInput{ width:170px; font-size:12px; color:#333;}
+.GiftList .TextInputMini{ width:24px; margin:0px 3px;}
+.GiftList span{ color:#1f376D; cursor:pointer;}
+.GiftList span.over{ text-decoration:underline;}
+.GiftContent .TextInputMini{ width:24px; margin:0px 3px;}
+
+.FollowNubSaveBtn{display:block; width:116px; height:33px; line-height:33px; overflow:hidden; font-weight:bold; background:url(/rchlw/function/images/baocunfangan.gif) no-repeat center center;}
+.FollowNubTogetherBtn{display:block; width:116px; height:33px; line-height:33px; overflow:hidden; font-weight:bold; background:url(/rchlw/function/images/ljgcbtn.gif) no-repeat center center;}
+
+/* AlertWindow 
+.AlertWindow{ width:300px; font-family:Arial, Helvetica, sans-serif; color:#333;}
+.AlertWindow table,.AlertWindow th,.AlertWindow td,.AlertWindow dl,.AlertWindow dt,.AlertWindow dd,.AlertWindow ul,.AlertWindow ol,.AlertWindow li,.AlertWindow h1,.AlertWindow h2,.AlertWindow h3,.AlertWindow h4,.AlertWindow h5,.AlertWindow p{ margin:0px; padding:0px;}
+.AlertWindow table{ width:100%; border-collapse:collapse;}
+.AlertWindow th.ConnerLeft,.AlertWindow th.WindowTittle,.AlertWindow th.ConnerRight,.AlertWindow .BaseBtn,.AlertWindow .BaseBtn,.InsideBorder{ background-image:url(/rchlw/function/images/AlertWindowBG.gif); background-repeat:repeat-x;}
+.AlertWindow th.ConnerLeft   { background-position:0px 0px; width:5px; height:25px;}
+.AlertWindow th.WindowTittle{ background-position:0px -25px; height:25px; line-height:25px;}
+.AlertWindow th.ConnerRight  { background-position:-75px 0px; width:5px; height:25px;}
+.WindowTittle h3{ float:left; height:25px; line-height:25px; left:25px; color:#FFF; font-size:13px;}
+.WindowTittle span.BaseBtn{ background-position:0px -50px; display:block; width:16px; height:16px; overflow:hidden; float:right; margin:5px 3px 0px 0px; cursor:pointer;}
+.WindowTittle span.BtnOver{ background-position:-20px -50px;}
+.WindowTittle span.BtnDown{ background-position:-40px -50px;}
+.OutsideBorder{ border:solid 1px #31699C; padding:0px 1px 1px 1px; background:#94d7ff; border-top:none; overflow:hidden;}
+.InsideBorder{ border:solid 1px #31699C; padding:1px; background-position:0px -190px; border-top:none; background-color:#FFFFFF; overflow:hidden;}
+.AlertWindow input{width:150px; border:solid 1px #999;}
+.AlertWindow input.BaseBtn{background:url(/rchlw/function/images/AlertWindowBG.gif); background-position:0px -70px; width:80px; height:21px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px;}
+.AlertWindow input.BtnOver{ background-position:0px -100px;}
+.AlertWindow input.BtnDown{ background-position:0px -130px;}
+.AlertWindow input.BtnDisable{ background-position:0px -160px;}
+.AlertWindow a.BaseBtn{background:url(/rchlw/function/images/AlertWindowBG.gif); background-position:0px -70px; width:80px; height:21px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px; display:inline-block; color:#000; text-decoration:none;}
+.AlertWindow a.BtnOver{ background-position:0px -100px;}
+.AlertWindow a.BtnDown{ background-position:0px -130px;}
+.AlertWindow a.BtnDisable{ background-position:0px -160px;}
+.AscertainBuy span{ color:#DE0201; text-decoration:none; cursor:pointer;}
+.AscertainBuy span.over{ text-decoration:underline;}
+.Alipay_login{ border-top:1px solid #E3E3E3; color:#666666; text-align:center;}*/
+
+.space10{ height:10px; line-height:10px; overflow:hidden;}
+/* 弹窗外框 */
+.AlertWindow{ width:300px; font-family:Arial, Helvetica, sans-serif; color:#333;}
+.AlertWindow table,.AlertWindow th,.AlertWindow td,.AlertWindow dl,.AlertWindow dt,.AlertWindow dd,.AlertWindow ul,.AlertWindow ol,.AlertWindow li,.AlertWindow h1,.AlertWindow h2,.AlertWindow h3,.AlertWindow h4,.AlertWindow h5,.AlertWindow p{ margin:0px; padding:0px;}
+
+.WindowTittle{ background:url(/rchlw/function/images/Alert_bg.gif) repeat-x; height:33px;  border:1px solid #fcae58; border-bottom:1px solid #ffd6a9; overflow:hidden;}
+.WindowTittle h3{ float:left; line-height:33px; padding-left:12px; font-size:13px; font-weight:bold;}
+.WindowTittle .Alertclose{ background:url(/rchlw/function/images/Alertclose.gif) no-repeat; width:15px; height:15px; float:right; margin:10px 10px 0px 0px; cursor:pointer;}
+.InsideBorder{ border:solid 1px #fcae58; border-top:none;  background-color:#FFFFFF;}
+.AscertainBuy{ overflow:hidden;}
+.BtnDisable{ background:url(/rchlw/function/images/Alert_buy.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:0; float:left;  margin-left:250px;}
+.BtnDisableNew{ background:url(/rchlw/function/images/Alert_buy_new.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:0; float:left;  margin-left:250px;}
+.AscertainBuy span a{ color:#1f376d;  text-decoration:none; cursor:pointer; margin-left:20px; margin-top:7px;float:left; }
+.AscertainBuy span a:hover{  text-decoration:underline; color:#DE0201;}
+.BaseBtn{background:url(/rchlw/function/images/login_inpuBtn.gif) no-repeat; width:80px; height:32px; line-height:32px; cursor:pointer; border:0; font-size:12px;color:#FFFFFF;}
+.InsideBorder .BaseBtn {
+background: url(/rchlw/function/images/login_inpuBtn.gif) no-repeat;width:80px; height:25px; line-height:21px; cursor:pointer; margin-right:10px; border:0; font-size:12px; display:inline-block; color:#FFFFFF; text-decoration:none;}
+
+/* 确认购买 */
+div.PlanBuyWindow{ width:600px;}
+table.PlanContent thead th{ border-right:solid 1px #DBDBDB;  border-bottom:solid 1px #DBDBDB;font-weight:normal; padding:6px 9px;}
+table.PlanContent tbody th{background:#fafafa; border-right:solid 1px #DBDBDB;  border-bottom:solid 1px #DBDBDB;font-weight:normal; padding:6px 9px;}
+table.PlanContent thead td{font-weight:normal; border-bottom:solid 1px #DBDBDB; text-align:center; padding:6px 9px; }
+table.PlanContent tbody td{font-weight:normal; padding:6px 9px;border-bottom:solid 1px #DBDBDB;}
+table.PlanContent tfoot td{font-weight:normal; text-align:center; padding:10px;}
+table.PlanContent b{ color:#DE0201; font-weight:bold; padding:0px 1px;}
+table.PlanContent ul{list-style-type:none;}
+table.PlanContent ul li{ line-height:22px;}
+/* 登录弹窗 */
+div.SignInWindow{ width:450px;}
+table.SignInTable{ width:280px; margin:0px auto;}
+.SignInTable th{ font-weight:normal; height:30px; line-height:30px;}
+.SignInTable td{ height:30px; line-height:30px;}
+.Alert_input{  width:153px;}
+.ErrorTittle{ display:block; width:235px; padding:2px 5px 2px 25px; border:solid 1px #FF8080; line-height:16px; text-align:left; background:url(/rchlw/function/images/ErrorIcon.gif) no-repeat 4px 2px; margin:auto;}
+.SignInWindow a{ color:#01529d; text-decoration:none;}
+.SignInWindow a:hover{ color:#DE0201; text-decoration:underline;}
+
+/* 余额不足 */
+div.BalanceWindow{ width:450px;}
+div.BalanceWindow .InsideBorder{ padding:40px 0px 20px 0px;}
+.BalanceTable{ width:100%;}
+.BalanceTable th,.BalanceTable td{ font-weight:normal; line-height:25px;}
+.BalanceTable thead th{ text-align:right;}
+.BalanceTable b{ color:#DE0201; padding:0px 1px;}
+.BalanceTable a{ color: #0F3F94; text-decoration:none;}
+.BalanceTable a:hover{ text-decoration:underline;}
+
+/* 足彩方案 */
+table.PlanCon tbody th{   border-bottom:solid 1px #DBDBDB;font-weight:normal; padding:6px 9px;}
+table.PlanCon tbody td{font-weight:normal; border-bottom:solid 1px #DBDBDB; text-align:center;background:#fafafa; }
+table.PlanCon tfoot td{font-weight:normal; text-align:center; padding:10px;}
+.PlanCon b{ color:#DE0201; font-weight:bold; padding:0px 1px;}
+div.FootblaaPlanWindow{ width:700px;}
+table.PlanContentTable{ width:100%; border:1px solid #DBDBDB; border-bottom:none; }
+table.PlanContentTable thead td{ border-bottom:1px solid #DBDBDB; background:#fff; padding:6px 9px; text-align:left;}
+table.PlanContentTable tbody th{ padding:0px; padding:5px 0px; background:#f5f5f5;border-right:1px solid #DBDBDB;}
+table.PlanContentTable tbody td{ padding:0px; padding:5px 6px; text-align:center; background:#f5f5f5;border-bottom:1px solid #DBDBDB;}
+table.PlanContentTable tfoot th{ padding:0px; padding:5px 6px; text-align:center;border-right:none; }
+table.PlanContentTable tfoot td{ padding:0px; padding:5px 6px; text-align:center; border-right:1px solid #DBDBDB;background:#fff;}
+table.PlanContentTable tfoot span{ display:block; width:22px; margin:auto;}
+/*联合登录 */
+table.FindUserName{ width:447px;}
+table.FindUserName thead td{ line-height:60px; font-size:14px; padding-left:10px;}
+table.FindUserName tbody td{ line-height:20px; font-size:12px; font-weight:bold; padding-left:10px;}
+table.FindUserName tfoot td{ height:30px; font-size:12px; font-weight:bold; padding:10px 10px 25px;}
+table.FindUserName tfoot img{ border:none;}
+
+/* 余额不足 
+div.BalanceWindow{ width:450px;}
+div.BalanceWindow .InsideBorder{ padding:40px 0px 20px 0px;}
+.BalanceTable{ width:100%; background:url(/rchlw/function/images/ErrorIcon_i.gif) no-repeat 20px 0px;}
+.BalanceTable th,.BalanceTable td{font-weight:normal; line-height:25px;}
+.BalanceTable thead th{ text-align:right;}
+.BalanceTable b{ color:#DE0201; padding:0px 1px;}
+.BalanceTable a{ color:#DE0201; text-decoration:none;}
+.BalanceTable a:hover{ text-decoration:underline;}*/
+
+
+/* 定胆杀号机选操作提示弹窗 */
+div.KillNumberAlert{ width:450px;}
+div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
+.KillNumberAlertTable{ width:100%; background:url(/rchlw/function/images/ErrorIcon_i.gif) no-repeat 20px 0px;}
+.KillNumberAlertTable th{ height:20px; line-height:20px;}
+.KillNumberAlertTable td{ height:20px; line-height:20px;}
+.KillNumberAlertTable td i{ color:#DE0201;}
+
+/* 足彩方案 
+div.FootballPlanWindow{ width:700px;}
+.PlanContentTittle{padding:0px 0px 15px 0px;}
+table.PlanContentTable{ width:100%; border:solid 1px #DBDBDB;}
+table.PlanContentTable thead td{ border:none;}
+table.PlanContentTable tbody th{ padding:0px; padding:5px 0px; background:#F5F5F5; text-align:center;}
+table.PlanContentTable tbody td{ padding:0px; padding:5px 0px; text-align:center;}
+table.PlanContentTable tbody span{ display:block; width:22px; margin:auto;}*/
+/* 合买方案详情 基础样式 图标 按钮 */
+.AllTogetherBuyBox{ background-image:url(/rchlw/function/images/AllTogetherBuy.gif); background-repeat: no-repeat; display:inline-block; overflow:hidden;}
+.LevelCrown{ width:16px; height:20px; float:left; cursor:pointer; background-position:0px -293px;}
+.LevelCrownGray{ width:16px; height:20px; float:left; cursor:pointer; background-position:0px -313px;}
+.LevelCup{ width:16px; height:20px; float:left; cursor:pointer; background-position:-20px -293px;}
+.LevelCupGray{ width:16px; height:20px; float:left; cursor:pointer; background-position:-20px -313px;}
+.LevelDiamond{ width:16px; height:20px; float:left; cursor:pointer; background-position:-40px -293px;}
+.LevelDiamondGray{ width:16px; height:20px; float:left; cursor:pointer; background-position:-40px -313px;}
+.LevelStar{ width:16px; height:20px; float:left; cursor:pointer; background-position:-60px -293px;}
+.LevelStarGray{ width:16px; height:20px; float:left; cursor:pointer; background-position:-60px -313px;}
+.LevelBoxLine1{ width:128px; height:20px; overflow:hidden;}
+.UrlCopyBtn input.BaseBtn{ width:100px; float:right; margin:0px 20px 0px 0px; height:22px; font-size:12px; line-height:22px; color:#CC6543; border:0; cursor:pointer; background-position:-100px -225px;}
+.UrlCopyBtn input.BtnOver{ background-position:-100px -250px;}
+.UrlCopyBtn input.BtnDown{ background-position:-100px -275px;}
+.CancelBtn input.BaseBtn{ width:42px; height:22px; font-size:12px; line-height:22px; color:#CC6543; border:0; cursor:pointer; background-position:-150px -150px;}
+.CancelBtn input.BtnOver{ background-position:-150px -175px;}
+.CancelBtn input.BtnDown{ background-position:-150px -200px;}
+.BuyNowButton input.BaseBtn{ width:126px; height:40px; line-height:40px; border:0; cursor:pointer; margin:0px; background-position:0px -30px;}
+.BuyNowButton input.BtnOver{ background-position:0px -70px;}
+.BuyNowButton input.BtnDown{  background-position:0px -110px;}
+.SearchBtn input.BaseBtn{ width:42px; height:22px; font-size:12px; line-height:22px; color:#FFF; border:0; cursor:pointer; background-position:-100px -150px;}
+.SearchBtn input.BtnOver{ background-position:-100px -175px;}
+.SearchBtn input.BtnDown{  background-position:-100px -200px;}
+.LaunchBtn input.BaseBtn{ width:80px; height:22px; font-size:12px; line-height:22px; color:#DE0201; border:0; cursor:pointer; background-position:0px -275px;}
+.LaunchBtn input.BtnOver{ background-position:0px -275px;}
+.LaunchBtn input.BtnDown{  background-position:0px -275px;}
+
+/* 合买方案详情 基础样式 外框table */
+.TogetherPlanContentBody{ width:950px; margin:auto;}
+.TogetherPlanTable{ width:100%; border-collapse:collapse; border:solid 1px #fcae58;}
+.TogetherPlanTable thead th{ height:29px; line-height:29px; border-bottom:solid 1px #DBDBDB; background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0 -300px;}
+.TogetherPlanTable thead td{ height:22px; line-height:22px; padding:5px; background:#F5F5F5; border-bottom:solid 1px #DBDBDB; text-align:center;}
+.TogetherListTable thead .color_blue{color:#006699;}
+.TogetherPlanTable tbody th{ padding:10px; text-align:center; background:#F5F5F5; border:solid 1px #DBDBDB; color:#666;}
+.TogetherPlanTable tbody td{ padding:10px 20px; background:#FFFFFF; border:solid 1px #DBDBDB;}
+
+/* 合买方案详情 基础样式 文字颜色 粗细 */
+.TogetherPlanTable a{ color:#005599; cursor:pointer; text-decoration:none;}
+.TogetherPlanTable a.over{ color:#DE0201; text-decoration:underline;}
+.TogetherPlanTable b{ color:#DE0201; font-weight:bold; padding:0px 2px;}
+.TogetherPlanTable i{ color:#DE0201; padding:0px;}
+.TogetherPlanTable strong{ font-weight:bold; padding:0px 2px;}
+.TogetherPlanTable input.BaseBtn{ display:inline;}
+.TogetherPlanTable span.Switch{ display:inline;}
+
+/* 合买方案详情 头部信息 */
+.TopInfo table{ width:100%; border-collapse:collapse; }
+.TopInfo table td{ padding:0px; text-align:center; background:#F5F5F5; border:none; color:#666;}
+
+/* 合买方案详情 发起人信息 */
+.CreatorInfo dl{ overflow:hidden; width:100%;}
+.CreatorInfo dt{ float:left; line-height:24px; margin:0px 10px 0px 0px;}
+.CreatorInfo dd{ float:right; line-height:16px; margin:0px 0px 0px 10px;}
+.CreatorInfo p{ margin:5px 0px 0px 0px; line-height:16px;float: left;}
+
+/* 合买方案详情 方案详情 */
+.PlanInfo table{ border-collapse:collapse; float:left;}
+.PlanInfo table th{ padding:8px 10px 6px; text-align:center;}
+.PlanInfo table td{ text-align:center; padding:5px 10px;}
+
+/* 合买方案详情 数字彩 方案内容*/
+.TogetherPlanTable2 tbody .PlanContent_Number table{ border:none; border-collapse:collapse;}
+.TogetherPlanTable2 tbody .PlanContent_Number table th{ border:none; background:none; padding:5px 15px 5px 0px; text-align:left;}
+.TogetherPlanTable2 tbody .PlanContent_Number table td{ border:none; background:none; padding:5px 15px 5px 0px; text-align:right;}
+.TogetherPlanTable2 tbody .PlanContent_Number table th span{color:#1f376d; cursor:pointer;}
+.TogetherPlanTable2 tbody .PlanContent_Number table th span:hover{ color:#DE0201; text-decoration:underline;}
+/* 合买方案详情 数字彩 中奖详情 */
+.PlanWinInfo dl{ overflow:hidden; height:35px; width:596px;}
+.PlanWinInfo dt{ float:left; line-height:25px; margin-right:5px;}
+.PlanWinInfo dd{ float:right; line-height:25px;}
+.PlanWinInfo ol{ overflow:hidden; padding-top:10px;}
+.PlanWinInfo ol li{ height:15px; line-height:15px;}
+.PlanWinInfo table{ border-collapse:collapse;}
+.PlanWinInfo table th{ height:24px; padding:0px 18px;}
+.PlanWinInfo table td{ padding:0px; text-align:center;height:24px;}
+.PlanWinInfo table table{border:none;}
+.PlanWinInfo table table td{ height:20px;}
+
+/* 合买方案详情 足彩表格内的基础样式 */
+.TogetherPlanContentBody i{ font-style:normal; color:#DE0201;}
+.TogetherPlanContentBody b{ font-size: 14px;font-weight: bold;padding-right: 30px;}
+.TogetherPlanContentBody em{ font-style:normal;}
+dd.CheckBox{ padding:2px 5px 0px 0px;}
+dd.CheckBox span{ display:inline-block; width:13px; height:13px; line-height:13px; cursor:pointer; background-position:-80px -300px;}
+dd.CheckBox span.over{ background-position:-80px -320px;}
+dd.CheckBox span.Switch{ display:inline-block; background-position:-80px -340px;}
+.PlanContent_Football dl{ width:580px; overflow:hidden;}
+.PlanContent_Football dl dt{  float:left; height:25px; line-height:25px;} 
+.PlanContent_Football dl dd{ float:right; height:25px; line-height:25px;}
+
+/* 合买方案详情 足彩 四场 */
+.PlanContent_Football .PlanContent_FootballSiChang{ border-collapse:collapse; width:600px;}
+.PlanContent_Football .PlanContent_FootballSiChang th{ background:#F5F5F5; padding:0px; padding:5px 10px; border:1px solid #DBDBDB;}
+.PlanContent_Football .PlanContent_FootballSiChang td{ padding:8px; text-align:center;}
+.PlanContent_Football .PlanContent_FootballSiChang em{ display:inline-block; width:12px; overflow:hidden;}
+.PlanContent_FootballSiChang tr.Switch{display:none;}
+.PlanContent_FootballSiChang .noborder_bottom{ border-bottom:none;}
+.PlanContent_FootballSiChang .noborder_top{ border-top:none;}
+
+/* 合买方案详情 足彩 六场 */
+.PlanContent_Football .PlanContent_FootballLiuChang{ border-collapse:collapse; width:600px;}
+.PlanContent_Football .PlanContent_FootballLiuChang th{ background:#F5F5F5; padding:0px; padding:5px 10px;border:1px solid #DBDBDB;}
+.PlanContent_Football .PlanContent_FootballLiuChang td{ padding:8px; text-align:center;}
+.PlanContent_Football .PlanContent_FootballLiuChang em{ display:inline-block; width:12px; overflow:hidden;}
+.PlanContent_FootballLiuChang tr.Switch{ display:none;}
+.PlanContent_FootballLiuChang .noborder_bottom{ border-bottom:none;}
+.PlanContent_FootballLiuChang .noborder_top{ border-top:none;}
+
+/* 合买方案详情 足彩 九场 */
+.PlanContent_Football .PlanContent_FootballJiuChang{ border-collapse:collapse; width:600px;}
+.PlanContent_Football .PlanContent_FootballJiuChang th{ background:#F5F5F5; padding:0px; padding:5px 2px;border:1px solid #DBDBDB;}
+.PlanContent_Football .PlanContent_FootballJiuChang td{ padding:8px; text-align:center;}
+.PlanContent_Football .PlanContent_FootballJiuChang em{ display:inline-block; width:12px; overflow:hidden;}
+.PlanContent_FootballJiuChang tr.Switch{ display:none;}
+.PlanContent_FootballJiuChang .noborder_bottom{ border-bottom:none;}
+.PlanContent_FootballJiuChang .noborder_top{ border-top:none;}
+
+/* 合买方案详情 足彩 胜负 */
+.PlanContent_Football .PlanContent_FootballShengFu{ border-collapse:collapse; width:600px;}
+.PlanContent_Football .PlanContent_FootballShengFu th{ background:#F5F5F5; padding:0px; padding:5px 2px; border:1px solid #DBDBDB;}
+.PlanContent_Football .PlanContent_FootballShengFu td{ padding:8px; text-align:center;}
+.PlanContent_Football .PlanContent_FootballShengFu em{ display:inline-block; overflow:hidden;}
+.PlanContent_FootballShengFu tr.Switch{display:none;}
+.PlanContent_FootballShengFu .noborder_bottom{ border-bottom:none;}
+.PlanContent_FootballShengFu .noborder_top{ border-top:none;}
+
+/* 合买方案详情 足彩 竞彩 */
+.PlanContent_Football .PlanContent_FootballJingCai{ border-collapse:collapse; width:600px;}
+.PlanContent_Football .PlanContent_FootballJingCai th{ background:#F5F5F5; padding:0px; padding:5px 2px; border:1px solid #DBDBDB;}
+.PlanContent_Football .PlanContent_FootballJingCai td{ padding:8px; text-align:center;}
+.PlanContent_Football .PlanContent_FootballJingCai em{ display:inline-block; overflow:hidden;}
+.PlanContent_Football .PlanContent_FootballJingCai i{ display:inline-block; overflow:hidden;}
+
+/* 合买方案详情 足彩 中奖详情 */
+.PlanWinInfo_Football dl{ width:596px; overflow:hidden;}
+.PlanWinInfo_Football dl dt{  float:left; height:16px; line-height:16px;} 
+.PlanWinInfo_Football dl dd{ float:right; height:16px; line-height:16px;}
+.PlanWinInfo_Football .PlanWinInfo_FootballTable{ border-collapse:collapse; width:596px;}
+.PlanWinInfo_Football .PlanWinInfo_FootballTable th{ background:#F5F5F5; padding:0px; padding:5px 2px; border:1px solid #DBDBDB;}
+.PlanWinInfo_Football .PlanWinInfo_FootballTable td{ padding:8px; text-align:center;}
+.PlanWinInfo_Football .PlanWinInfo_FootballTable em{ display:inline-block; width:12px; overflow:hidden;}
+
+/* 合买方案详情 认购方案 */
+.TogetherPlanTable2 tbody .PlanBuyInfo table{ border-collapse:collapse;}
+.TogetherPlanTable2 tbody .PlanBuyInfo table td{ height:30px; line-height:30px; padding:0px; border:none; width:466px;}
+.TogetherPlanTable2 tbody .PlanBuyInfo table th{ padding:0px; border:none; background:none; text-align:right;}
+.TogetherPlanTable2 tbody .PlanBuyInfo table input{ margin:0px 5px;}
+.TogetherPlanTable2 tbody .PlanBuyInfo table input.MoneyInput{ width:40px;}
+.TogetherPlanTable2 tbody .PlanBuyInfo .Ensure{ display:none;}
+.TogetherPlanTable2 tbody .PlanBuyCon table tbody{ text-align:center;}
+
+/* 合买方案详情 认购详情 */
+.PlanBuyContent ol{ overflow:hidden;}
+.PlanBuyContent ol li{ line-height:30px;}
+.PlanBuyContent ol li a{ color:#1f376d;}
+.PlanBuyContent ol li a:hover{ color:#DE0201; text-decoration:underline;}
+.PlanBuyContent ol li span{ color:#1f376d; cursor:pointer;}
+.PlanBuyContent ol li span:hover{ color:#DE0201; text-decoration:underline;}
+/* 合买方案详情 方案宣传 */
+.PlanDrumbeating p{ line-height:25px; text-indent:2em; color:#666;}
+
+/* 合买列表基础样式 */
+.TogetherListBody{ width:950px; margin:auto; overflow:hidden;}
+.TogetherListBody a{ color:#006699; cursor:pointer; text-decoration:none;}
+.TogetherListBody a.over{ color:#DE0201; text-decoration:underline;}
+.TogetherListBody b{ color:#DE0201; font-weight:bold; padding:0px 2px;}
+.TogetherListBody i{ color:#DE0201; padding:0px 2px;}
+.TogetherListBody strong{ font-weight:bold; padding:0px 2px;}
+
+/* 合买列表发起合买按钮 */
+.ChannelBuyHandleMainTab dt.LaunchCase{background:none; color:#1f376d;}
+.ChannelBuyHandleMainTab dt.LaunchCase a{ color:#1F376D; text-decoration:none;}
+.ChannelBuyHandleMainTab dt.LaunchCase a.over{ color:#DE0201; text-decoration:underline; cursor:pointer;}
+ul li.LaunchCase{ background:none; color:#1f376d;}
+ul li.LaunchCase a{ background:none; color:#1F376D; text-decoration:none;}
+ul li.LaunchCase a.over{ color:#DE0201; text-decoration:underline; cursor:pointer;}
+
+/* 合买列表筛选条 */
+.TogetherListSearch{ display:block; overflow:hidden; height:30px; border-left:solid 1px #FCAE58; border-right:solid 1px #FCAE58; background:url(/rchlw/function/images/SearchBg.gif) repeat-x; padding:4px 0;}
+.TogetherListSearch dt{ float:left; height:24px; line-height:24px; padding:4px 0px 2px 15px; width:600px; overflow:hidden;}
+.TogetherListSearch dt div{ float:right; height:24px; line-height:24px; width:300px; overflow:hidden;}
+.TogetherListSearch .SearchText{ width:150px; height:18px; line-height:18px; margin:0px 5px 0px 5px; border:solid 1px #DBDBDB;}
+.TogetherListSearch dt strong{ height:24px; line-height:24px; padding:0px 0px 0px 10px;}
+.TogetherListSearch dt a{ height:24px; line-height:24px; margin:0px 5px 0px 0px ;}
+.TogetherListSearch dd{ float:right; height:24px; line-height:24px; padding:4px 10px 2px 0px; width:300px; overflow:hidden; text-align:right;}
+.TogetherListSearch dd select{ font-size:12px;}
+
+/* 合买列表表格 */
+.TogetherListTable{ width:776px; border-collapse:collapse; border:solid 1px #dedede; border-top:none;}
+.TogetherListTable thead th{ background:#f8f8f8; border-top:solid 1px #e7e7e7;  border-bottom:solid 1px #f2f2f2; height:30px; line-height:30px; color:#666;}
+.TogetherListTable tbody th{ background:#FFFFFF; border:none; height:32px; line-height:30px; padding:0 6px;}
+.TogetherListTable tbody td{ background:#FFFFFF; border:none; height:32px; line-height:30px; padding:0px 15px 0 6px; text-align:right;}
+.TogetherListTable .LevelBox{ width:64px;overflow:hidden; margin:auto;}
+.TogetherListTable .BuyText{ width:42px; height:16px; font-size:12px;}
+.TogetherListTable .TrbgYellow th,.TogetherListTable .TrbgYellow td{ background:#FFF8DD; border-bottom:solid 1px #FFEABC;}
+.TogetherListTable .TrbgGrey th,.TogetherListTable .TrbgGrey td{ background:#F5F5F5; border-top:solid 1px #fff;border-bottom:solid 1px #fff;}
+.TogetherListTable .TrbgWhite th,.TogetherListTable .TrbgWhite td{ background:#FFFFFF; border-top:solid 1px #fff;border-bottom:solid 1px #fff;}
+.TogetherListTable .TrbgBlue th,.TogetherListTable .TrbgBlue td{ background:#D1EEFC;border-top:solid 1px #fff;border-bottom:solid 1px #ffe5bb;}
+.TogetherListTable .orange th,.TogetherListTable .orange td{ background:#fffae3; border-top:solid 1px #fff;border-bottom:solid 1px #ffe5bb;}
+/* 合买彩种列表表格 */
+.TogetherListTable1{ width:948px; border-collapse:collapse; border:solid 1px #FCAE58; border-top:none;}
+.TogetherListTable1 thead th { background:#f8f8f8; border-bottom:solid 1px #f2f2f2; height:30px; line-height:30px; color:#666;}
+
+.TogetherListTable1 tbody th{ background:#FFFFFF; border:none; height:32px; line-height:30px; padding:0 6px;}
+.TogetherListTable1 tbody td{ background:#FFFFFF; border:none; height:32px; line-height:30px; padding:0px 15px 0 6px; text-align:right;}
+.TogetherListTable1 .PageContent td{ }
+.TogetherListTable1 .LevelBox{ width:64px; height:32px; overflow:hidden; margin:auto;}
+.TogetherListTable1 .BuyText{ width:42px; height:16px; font-size:12px;}
+.TogetherListTable1 .TrbgYellow th,.TogetherListTable1 .TrbgYellow td{ background:#FFF8DD; border-bottom:solid 1px #FFEABC;}
+.TogetherListTable1 .TrbgGrey th,.TogetherListTable1 .TrbgGrey td{ background:#F5F5F5; border-top:solid 1px #fff;border-bottom:solid 1px #fff;}
+.TogetherListTable1 .TrbgWhite th,.TogetherListTable1.TrbgWhite td{ background:#FFFFFF; border-top:solid 1px #fff;border-bottom:solid 1px #fff;}
+.TogetherListTable1 .TrbgBlue th,.TogetherListTable1 .TrbgBlue td{ background:#D1EEFC;border-top:solid 1px #fff;border-bottom:solid 1px #ffe5bb;}
+.TogetherListTable1 .orange th,.TogetherListTable1 .orange td{ background:#fffae3; border-top:solid 1px #fff;border-bottom:solid 1px #ffe5bb;}
+.TogetherListTable1 .SortUp{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:0px -340px;}
+.TogetherListTable1 .SortDown{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:-20px -340px;}
+.TogetherListTable1 .SortDisabled{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:-60px -340px;}
+/* 合买彩种详情表格 */
+.TogetherPlanTable2{ width:100%; border-collapse:collapse; border:solid 1px #fcae58;}
+.TogetherPlanTable2 thead th{  height:22px; padding:7px 10px; border-bottom:solid 1px #DBDBDB; background:#f8f8f8;}
+.TogetherPlanTable2 thead td{ height:22px; line-height:22px; padding:7px 10px;  border-bottom:solid 1px #DBDBDB; text-align:center;}
+.TogetherPlanTable2 tbody th{ padding:7px 10px; text-align:center; background:#f8f8f8; border-left:solid 1px #fcae58; border-bottom:solid 1px #DBDBDB;}
+.TogetherPlanTable2 tbody td{ padding:7px 10px;  border-bottom:solid 1px #DBDBDB;}
+.TogetherPlanTable2 tfoot th{padding:10px; text-align:center; background:#f8f8f8;border-left:solid 1px #fcae58; border-bottom:solid 1px #fcae58; }
+.TogetherPlanTable2 tfoot td{padding:7px 10px;  border-bottom:solid 1px #fcae58;border-right:solid 1px #fcae58; }
+.TogetherPlanTable2 tbody table thead th{ background:#f9f9f9;padding:7px 10px; border:solid 1px #DBDBDB;}
+.TogetherPlanTable2 tbody table tbody td{ border:solid 1px #DBDBDB;}
+.TogetherPlanTable2 tbody table tbody table tbody td{padding:7px 0px; border:solid 1px #DBDBDB;}
+.TogetherPlanTable2 tbody table tfoot td{ text-align:center; border:solid 1px #DBDBDB; }
+.TogetherPlanTable2 tbody table{ border-collapse:collapse;}
+/* 合买列表页码 */
+.TogetherListPageNumber{ overflow:hidden; padding:10px 0px;}
+.TogetherListPageNumber dt{ text-align:right;}
+.TogetherListPageNumber dd{ text-align:center;}
+
+/* 合买列表图例 */
+.TogetherLegend{width:928px; margin:auto; border:solid 1px #FCAE58; background:#fffdfa; padding:10px;}
+.TogetherLegend table{ border-collapse:collapse; width:100%; }
+.TogetherLegend th{ text-align:right; line-height:16px; padding:4px 0px 3px 0px;}
+.TogetherLegend td{ line-height:16px; padding:4px 0px 3px 0px;}
+.TogetherLegend p{padding:0 10px;line-height:22px;}
+/* 合买列表 pannel基础样式
+.TogetherBuyPannel{ border:solid 1px #FFEABC;}
+.TogetherBuyPannelHead{ height:30px; line-height:30px; overflow:hidden; background-position:0px -370px; background-repeat:repeat-x; display:block;}
+.TogetherBuyPannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; color:#DE0201; float:left;}
+.TogetherBuyPannelHead a{line-height:30px; height:30px; font-size:12px; padding:0px 10px;  float:right; text-decoration:none; color: #1F376D;}
+.TogetherBuyPannelHead a:hover{ color:#DE0201; text-decoration:underline;}
+.TogetherBuyPannelHead a.over{ color:#DE0201; text-decoration:underline;}
+.TogetherBuyPannelBody{ overflow:hidden;}*/
+/* 合买列表 pannel基础样式 */
+.TogetherBuyPannel{ border:solid 1px #dbdbdb;  border-bottom:none;}
+.TogetherBuyPannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x; display:block;}
+.TogetherBuyPannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; color:#DE0201; float:left;}
+.TogetherBuyPannelHead font{ float:right; color:#1f376d;line-height:30px; padding-right:10px;width: 450px;}
+.TogetherBuyPannelHead a{line-height:30px; height:30px; font-size:12px; padding:0px 10px;  float:right; text-decoration:none; color: #1F376D; }
+.TogetherBuyPannelHead a:hover{ color:#DE0201; text-decoration:underline;}
+.TogetherBuyPannelHead a.over{ color:#DE0201; text-decoration:underline;}
+
+/* 合买列表 排序箭头 */
+.TogetherListTable .SortUp{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:0px -340px;}
+.TogetherListTable .SortDown{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:-20px -340px;}
+.TogetherListTable .SortDisabled{ display:inline-block; width:8px; height:10px; margin:0px 2px 0px 2px; background-position:-60px -340px;}
+
+/* 合买中心 (基础样式继承合买列表) */
+.TogetherCenterLeft{ float:left; width:190px;}
+.TogetherCenterRight{ float:right; width:778px;}
+
+/* 合买中心标题和推荐类别 */
+.TogetherListTittle{ background-position:0px 0px; width:190px; height:29px;}
+.TogetherCommend .ChannelBuyPannelHead{ display:block;}
+.TogetherCommend ol li{ margin-bottom:5px;}
+.TogetherCommend a{ display:block; margin:auto; width:90px; height:22px; background-position:0px -225px; line-height:22px; text-align:center; color:#333333;}
+.TogetherCommend .selected a{background-position:0px -250px; color:#006699;}
+
+/* 合买中心彩种分类 */
+.TogetherLotteryTypy .ChannelBuyPannelHead{ display:block;}
+.TogetherLotteryTypy ol li{ margin-bottom:5px;}
+.TogetherLotteryTypy a{ display:block; margin:auto; width:90px; height:22px; line-height:22px; text-align:left; color:#333333;}
+.TogetherLotteryTypy a.over{ color:#DE0201; text-decoration:underline;}
+.TogetherLotteryTypy .selected a{ color:#006699;}
+
+/* 合买中心公告 */
+.TogetherBulletin{ overflow:hidden; border:solid 1px #DBDBDB;}
+.TogetherBulletin ol{ overflow:hidden; width:720px; background:url(gonggao.gif) no-repeat 8px 8px; padding:0px 0px 0px 20px;}
+.TogetherBulletin ol li{ float:left; width:210px; margin-left:20px; height:30px; line-height:30px; overflow:hidden;}
+.TogetherBulletin ol li.Special{ color:#DE0201;}
+
+/* 合买中心名人 
+.TogetherCeleb{ overflow:hidden;}
+.TogetherCeleb .TogetherCelebContent{ overflow:hidden; padding:10px 20px 10px 30px; width:690px;}
+.TogetherCeleb a{ display:block; float:left; width:115px; height:30px; line-height:30px; overflow:hidden;}
+.TogetherCeleb a.Special{ color:#DE0201;}*/
+/* 合买中心名人*/
+.TogetherBuyPannelBody{}
+.TogetherBuyPannelBody dl{ overflow:hidden; }
+.TogetherBuyPannelBody dl dt{ float:left; padding:10px 10px 0 10px ; height:30px; line-height:30px; overflow:hidden;}
+.TogetherBuyPannelBody dl dd{ float:left;padding:10px 20px 0px 0px; color:#1f376d;  height:30px; line-height:30px; overflow:hidden; position:relative;}
+.TogetherBuyPannelBody dl dd.Special{ color:#DE0201;}
+.TogetherBuyPannelInput{ padding:10px; height:20px;  position:relative; z-index:10; }
+.TogetherBuyPannelInput .Select{ height:22px; line-height:22px; font-size:14px;}
+.TogetherBuyPannelInput dl dd{ float:left; padding-right:10px;}
+.TogetherBuyPannelInput dl dt{ float:right;}
+.Initiator{ width:80px; height:19px; line-height:19px; padding-left:10px; padding-right:10px; border:1px solid #cecece;}
+.InitiatorBtn{ width:42px; height:22px; background:url(/rchlw/function/images/InitiatorBtn.jpg) no-repeat; border:none; cursor:pointer;}
+.InitiatorHM{ width:178px; height:auto; border:1px solid #f2b080; background:#fffcef; position:absolute; right:9px;top:32px;display:none; z-index:10;}  
+.over .InitiatorHM{display:block; }
+.InitiatorHM ul{ overflow:hidden; clear:both;}
+.InitiatorHM ul li{ width:49px; float:left; text-align:left; line-height:24px; padding-left:10px;}
+.select_txt_content{ position:relative;}
+.select_txt_content1{ position:relative;}
+.select_txt_top{width:80px; height:18px; border:#abadb3 solid 1px; border-right:none; line-height:18px; float:left; color:#999999; cursor:default;}
+.select_but_top{width:18px;background:url(/rchlw/function/images/hemaicenter_03.gif) no-repeat;}
+.select_txt_con{width:98px;*width:100px; height:auto;border:#999999 solid 1px;border-top:0px; position:absolute;display:block; overflow:hidden; top:22px;  *left:0px;background:#fff; }
+.select_txt_con1{width:98px;*width:100px; height:auto;border:#999999 solid 1px;border-top:0px; position:absolute;display:block; overflow:hidden; top:22px;  *left:0px;background:#fff; }
+.select_txt_center{ line-height:18px;  color:#000000;cursor:pointer; border:0;}
+.select_txt_bottom{border-bottom:#999999 solid 1px;}
+.centerbg{background-color:#996633;}
+
+/* 合买推荐的补充样式 */
+.TogetherCenterList .TogetherListTable{ border:none; border-bottom:solid 1px #FFEABC}
+.TogetherCenterList .TogetherListTable th{ border:none;}
+.TogetherCenterList .TogetherListTable td{ border:none;}
+
+/* 合买无法归类的补充样式 */
+.qihaoSelectBox{display:block; position:absolute; right:0px; top:0px; width:150px; height:28px; line-height:28px; text-align:right;}
+.qihaoSelectBox select{width:75px;}
+
+/*合买中心左侧*/
+.TogetherCenterLeft_left{ width:158px; margin-right:10px; border:1px solid #E7E7E7;  background:url(/rchlw/function/images/myAccount_title.gif) repeat-x;  float:left;}
+.TogetherCenterLeft_title{ padding:20px 0 7px 20px;}
+.TogetherCenterLeft_secondTitle{ height:36px; line-height:36px; margin:0 12px; border-bottom: 1px solid #E7E7E7; padding-left:12px; color:#666666;}
+.TogetherCenterLeft_left dd{ height:30px; line-height:30px; margin:0 12px 0 32px; border-bottom: 1px solid #E7E7E7; color:#333333; cursor:pointer;}
+.TogetherCenterLeft_left span{ width:2px; height:2px; line-height:2px; background:url(/rchlw/function/images/myAccount_con.gif) no-repeat; margin:14px 10px 0 0; display:block; float:left; overflow: hidden; } 
+.TogetherCenterLeft_left dd font{ height:30px; line-height:30px;}
+.TogetherCenterLeft_left dd.over font{ color:#DE0201;}
+.TogetherCenterLeft_left dd.selected{ position:relative;}
+.TogetherCenterLeft_left dd.selected font{ width:135px; height:32px; line-height:32px; padding:0 12px 0 32px; display:block; position:absolute; left:-32px; top:-1px; background:url(/rchlw/function/images/myAccount_pointer.gif) no-repeat; color:#DE0201; font-weight:bold;}
+/*合买中心左侧end*/
+	
+/* 足彩投注记录查看超级玩家 */
+ div.ViewDetailsWindow{ width:554px;}
+.ViewDetails{margin:7px; border:#dbdbdb 1px solid; overflow:hidden;}
+       /* 一级Tab切换页 */
+.ViewDetails ul{height:28px; background: url(/rchlw/function/images/BettingWindow.gif) 0px -150px repeat-x ; border-bottom:#f2ab78 solid 1px; margin:0px auto; padding-left:31px; overflow:hidden;}
+.ViewDetails ul li{ width:68px; height:23px; text-align:center; margin:6px 8px 0px 0px; line-height:23px;float:left; list-style:none; background: url(/rchlw/function/images/BettingWindow.gif) no-repeat; background-position:0px 0px; cursor:pointer; color:#DE0201;}
+.V_Slide li.over{ background-position:0px -25px; color:#FFFFFF;}
+.V_Slide li.selected{ background-position:0px -50px; color:#FFFFFF;}
+.Slidecontent{ padding:0px 5px 5px 5px; overflow:hidden;}
+		/* 二级Tab切换页 */
+.Erjinav{ overflow:hidden; width:100%;}
+.Erjinav dd{ float:left; height:13px; line-height:13px;list-style:none; padding-top:10px; padding-bottom:10px; padding-right:15px; cursor:pointer;}
+.FootballLottery span,.Competes span,.NorthSingle span,.FuCai span,.TiCai span,.JingCai span, .HighFrequency span{ width:15px; height:13px; line-height:13px; background: url(/rchlw/function/images/ChannelBuyRadioButton.png) no-repeat; background-position:left top;display:block; font-size:12px; float:left; cursor:pointer; overflow:hidden;}
+.FootballLottery .over span,.Competes .over span,.NorthSingle .over span,.JingCai .over span,.FuCai .over span,.TiCai .over span,.HighFrequency .over span{ background-position:0px -13px;}
+.FootballLottery .selected span,.Competes .selected span,.JingCai .selected span,.NorthSingle .selected span,.FuCai .selected span,.TiCai .selected span,.HighFrequency .selected span{ background-position:0px -26px;}
+
+.Erji_box{ border:#dbdbdb 1px solid;}
+.Erji_box th{ text-align:center; line-height:26px; background:#F4F4F4; font-weight:normal;}
+.Erji_box td{ text-align:center; line-height:24px;}
+.Tdbg_grey{ background:#F6F6F6;}
+		/* 按钮*/
+.F_btn input.BaseBtn{ width:100px; height:22px; line-height:22px; background: url(/rchlw/function/images/BettingWindow.gif) no-repeat; background-position: 0px -75px; display:block; border:none; margin-right:10px; float:left; text-align:center; color:#cd6324; font-size:12px; cursor:pointer;}
+.F_btn input.BtnOver{background-position: 0px -100px; }
+.F_btn input.BtnDown{ background-position: 0px -125px; color:#FFFFFF;}
+
+.FootballLottery.selected,.Competes.selected,.NorthSingle.selected,.FuCai.selected,.JingCai.selected,.TiCai.selected,.HighFrequency.selected,.Ren_9.selected,.Win_14.selected,.Chang_4.selected,.Chang_6.selected{ display:block;}
+/* 盈利战绩查看
+div.ProfitRecord{ width:560px;}
+.Record{ padding:0px 18px; overflow:hidden;}
+.F_btnposition{ margin:0px 18px; overflow:hidden; }
+.RecordTable td{height:23px; line-height:23px; text-align:left; }
+.RecordTable b{ color:#DE0201; font-weight:bold; line-height:23px; padding:0px 2px; font-size:14px;}
+.RecordTable i{ color:#DE0201; padding:0px 2px; font-size:12px; font-style:normal;} */
+/*盈利战绩查看—— 新 */
+.navigation{ height:38px;}
+.navigation ul{ padding-left:20px; padding-top:9px; overflow:hidden; list-style:none;}
+.navigation li { width:79px;line-height:29px; text-align:center; display:block; text-decoration:none; color:#333;float:left; cursor:pointer; }
+.navigation .selected{ color:#DE0201; font-weight:bold;}
+.ChangeOver{ display:block;padding:0 20px;}
+.ChangeOver div{ display:none; }
+.ChangeOver .selected{display:block;}
+.ChangeInput{ line-height:35px; overflow:hidden;}
+.ChangeInput dt{ float:left; padding:10px; cursor:pointer;}
+.ChangeInput dd{ float:right; padding:10px;cursor:pointer;}
+.ChangeTable { border:1px solid #dbdbdb;}
+.ChangeTable tr{height:25px; text-align:center;}
+.ChangeTable thead td{background:#f9f9f9;color:#666;}
+.ChangeTable thead th{background:#f9f9f9; color:#666;border-left:1px solid #dbdbdb; }
+.ChangeTable tbody td{border-left:1px solid #dbdbdb; border-top:1px solid #dbdbdb;}
+.ChangeTable tbody th{border-top:1px solid #dbdbdb;}
+.ChangeTablecon p{text-align:center;padding-top:10px; padding-bottom:10px; }
+.ChangeTablecon{ padding:0 20px; height:auto;}
+
+.gain{ font-weight:bold; color:#DE0201; line-height:32px;  padding:0px 20px;}
+.gainlottery{ line-height:32px;  padding:0px 20px; overflow:hidden;}
+.gainlottery span{ float:left;}
+.gainlotteryshow{  padding:10px 0px;}
+.gainlotteryshow input.BaseBtn {
+    background: url("/rchlw/function/images/BettingWindow.gif") no-repeat scroll 0 -75px transparent;
+    border: medium none;
+    color: #CD6324;
+    cursor: pointer;
+    display: block;
+    float: left;
+    font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 10px;
+    text-align: center;
+    width: 100px;
+}
+.gainlotteryshow input.BtnOver {
+    background-position: 0 -100px;
+}
+.gainlotteryshow input.BtnDown {
+    background-position: 0 -125px;
+    color: #FFFFFF;
+}
+/* 高频彩最新中奖模块(同上) */
+.HighFrequencyReview th{color:#666666;}
+
+/* 高频彩频道页最新开奖公告模块 */
+.HighFrequencyBulletin{ overflow:hidden; height:auto;}
+.HighFrequencyBulletin .ChannelBuyPannelBody{padding:0px;}
+.HighFrequencySoundOn{ display:inline-block; margin:8px 8px 8px 0px; float:right; cursor:pointer; width:14px; height:14px; line-height:14px; overflow:hidden; background:url(/rchlw/function/images/HighFrequencySoundOn.gif)}
+.HighFrequencySoundOff{display:inline-block; margin:8px 8px 8px 0px; float:right; cursor:pointer; width:14px; height:14px; line-height:14px; overflow:hidden; background:url(/rchlw/function/images/HighFrequencySoundOff.gif)}
+.HighFrequencyDownload{display:inline-block; margin:8px 8px 8px 0px; float:right; cursor:pointer; width:14px; height:14px; line-height:14px; overflow:hidden; background:url(/rchlw/function/images/HighFrequencyDownload.gif)}
+.HighFrequencyBulletin table{ border-collapse:collapse;}
+.HighFrequencyBulletin thead th{ padding:7px 3px 6px 3px; background:#FFFFF; font-weight:normal; text-align:center;}
+.HighFrequencyBulletin tbody th{ padding:7px 0px 6px 0px; text-align:center; font-weight:normal; color:#000000;}
+.HighFrequencyBulletin tbody td{ padding:7px 3px 6px 3px; text-align:center; color:#666666;}
+.HighFrequencyBulletin tbody td i{ color:#DE0201; }
+.HighFrequencyBulletin tfoot td em{ display:inline-block; cursor:pointer; color:#123456; margin:6px 6px 6px 0px; }
+.HighFrequencyBulletin tfoot td em.over{ color:#DE0201; }
+.HighFrequencyBulletin tr.Gray th,.HighFrequencyBulletin tr.Gray td{background:#F5F5F5;}
+.HighFrequencyBulletin tr.White th,.HighFrequencyBulletin tr.White td{background:#FFFFFF;}
+.HighFrequencyBulletin tr.Special th,.HighFrequencyBulletin tr.Special td{background:#E6F0FA; padding:17px 3px 16px 3px; color:#8A0182;}
+
+/* 高频彩频道页当前遗漏模块 */
+.HighFrequencyOmit{ overflow:hidden; height:220px;}
+.HighFrequencyOmit .ChannelBuyPannelBody{padding:0px;}
+.HighFrequencyOmit dl{ width:100%; height:25px; line-height:25px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.HighFrequencyOmit dt{ float:left; height:25px; line-height:25px; width:59px; text-align:center; cursor:pointer; position:relative; z-index:auto;}
+.HighFrequencyOmit dt.over{ background:url(/rchlw/function/images/ChannelBuyPannelHeaderLight.png) repeat-x left top;}
+.HighFrequencyOmit dt.selected{ background:#FFF;}
+.HighFrequencyOmit dt span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+.HighFrequencyOmit dd{ float:left; height:25px; line-height:25px; width:79px; text-align:center; cursor:text; position:relative; z-index:auto;}
+.HighFrequencyOmit dd span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+.HighFrequencyOmit div.TableBox{ display:none;}
+.HighFrequencyOmit table{ border-collapse:collapse;}
+.HighFrequencyOmit div.selected{ display:block;}
+.HighFrequencyOmit thead th{ padding:7px 3px 6px 3px; background:#F5F5F5; font-weight:normal; text-align:center;}
+.HighFrequencyOmit tbody th{ padding:7px 3px 6px 3px; text-align:center; font-weight:normal; color:#123456;}
+.HighFrequencyOmit tbody td{ padding:7px 3px 6px 3px; text-align:center; color:#666666;}
+.HighFrequencyOmit tr.Gray th,.HighFrequencyOmit tr.Gray td{background:#F5F5F5;}
+.HighFrequencyOmit tr.White th,.HighFrequencyOmit tr.White td{background:#FFFFFF;}
+
+/* 高频彩频道页最新中奖 */
+.HighFrequencyReview{ overflow:hidden; height:300px;}
+.HighFrequencyReview .NewWinList li{line-height:20px;}
+
+/*.HighFrequencyReview{ overflow:hidden; height:250px;}
+.HighFrequencyReview .NewWinList li{ height:20px; line-height:20px;}*/
+/* 合买宣传页 */
+
+#header_public{margin:0; padding:0; background:url(/rchlw/function/images/hmcx_bg.gif) repeat-x top center;}
+.maintop_public{ width:950px; margin:0 auto;height:36px; line-height:36px;overflow:hidden;}
+.top_public{ float:left; padding-top:3px;}
+.top2_public{ float:right;margin:0; padding:0; width:415px; overflow:hidden;}
+.top2_public a{ color:#1f376d; padding-left:10px; padding-right:10px; border-right:1px solid #bdbdbd;}
+.top2_public a:hover{ text-decoration:underline;}
+#header_public p{ width:950px; height:auto; margin:0 auto; padding:0;}
+.top2_public1{ float:left; overflow:hidden;}
+.top2_public1 span{  line-height:36px;}
+.top2_public a{ color:#1f376d; padding-left:10px; padding-right:10px; border-right:1px solid #bdbdbd;}
+.top2_public2{float:right;overflow:hidden;}
+.top2_public2 span{ line-height:36px;}
+.top2_public a{ color:#1f376d; padding-left:10px; padding-right:10px; border-right:1px solid #bdbdbd;}
+
+
+/* 头部外框样式 */
+#common{ display:block; height:135px;}
+
+.Button_L3_Y{ background:url(/rchlw/function/images/Button_L3_Y.gif) no-repeat center center; border:none; width:40px; height:20px; line-height:20px; color:#1F376D; font-size:12px; cursor:pointer; color:#FFF;}
+
+/* 头部样式(登录前 登陆后 右侧快速链接) */
+.HeadTopLogin{ height:30px; line-height:30px; background:url(/rchlw/function/images/HeadTopLoginBG.gif);}
+.HeadTopLogin .box{ width:950px; margin:auto; height:30px; line-height:30px;}
+.HeadTopLogin dl{ float:left; height:30px; line-height:30px;}
+.HeadTopLogin dt{ float:left; height:12px; padding:9px 0px; color:#999;}
+.HeadTopLogin dd{ float:left; height:20px; padding:5px 0px;}
+.LoginLater{ float:left; height:30px; line-height:30px;}
+.QuickLink{ float:right; height:12px; line-height:normal; padding:9px 0px; text-align:right; color:#999; margin-left: 295px;}
+
+/* 头部上的基础样式 */
+.HeadTopLogin i{ color:#DE0201;}
+.HeadTopLogin em{ line-height:normal; color:#666;}
+.HeadTopLogin input.text{ float:left; display:inline; height:18px; line-height:18px; width:90px; padding:0px; border:solid 1px #999; margin:0px 6px 0px 6px;}
+.HeadTopLogin input.button{ float:left; width:40px; height:20px; margin:0px 6px 0px 6px;}
+.HeadTopLogin a{ display:inline-block; height:12px; line-height:normal; color:#1F376D; padding:0px 3px 0px 4px;}
+.HeadTopLogin a:hover{ text-decoration:underline;}
+.HeadTopLogin font{ line-height:normal; color:#000;}
+	/* 登录前 选择去向下拉菜单 */
+.HeadTopLogin .SelectAspect{ height:14px; line-height:14px; font-size:12px; padding:3px 10px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:80px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectedAddress{ font-size:12px; line-height:normal; color:#1F376D;}
+.HeadTopLogin .SelectedAddressInput{ margin:0px; padding:0px; overflow:hidden; display:none;}
+.HeadTopLogin .SelectAspect span.SelectTriangle{ position:absolute; top:7px; right:7px; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAspect span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectAspect dl{ float:none; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; width:80px; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectAspect dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectAspect dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectAspect a{ display:block; height:12px; line-height:normal; vertical-align:middle; margin:0px; padding:6px 10px; text-align:left; background:#F9F9F9; color:#1F376D;}
+.HeadTopLogin .SelectAspect a.over{ text-decoration:none; color:#DE0201;}
+	/* 登录前联合登录下拉菜单 */
+.HeadTopLogin .SelectLogin{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 8px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D;}
+.HeadTopLogin .SelectLogin span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin dl{ float:none; width:75px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectLogin dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectLogin a{ display:block; height:16px; line-height:16px; padding:4px 10px; text-align:left; background:#F9F9F9;}
+.HeadTopLogin .SelectLogin a:hover{ color:#DE0201; text-decoration:underline;}
+.HeadTopLogin .SelectLogin img{ vertical-align:text-bottom; margin:0px 5px 0px 0px;}
+	/* 登录后 我的账户下拉菜单 */
+.HeadTopLogin .SelectAccount{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectAccount span.SelectTriangle{ display:inline-block;  vertical-align:middle; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAccount span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
+.HeadTopLogin .SelectAccount dl{ float:none; width:160px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
+.HeadTopLogin .SelectAccount dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
+.HeadTopLogin .SelectAccount dd{ float:none; display:block; height:24px; padding:1px 0px 0px 0px; overflow:hidden; border-top:solid 1px #E7E7E7; background:#FFF;}
+.HeadTopLogin .SelectAccount em{ display:block; height:12px; line-height:normal; vertical-align:middle; margin:0px; padding:6px 10px; text-align:left; background:#F9F9F9;}
+	/* 所有头部下拉框 鼠标悬浮时候里面的样式白线和下拉菜单的现实样式 */
+.HeadTopLogin .over span.line{ display:block;}
+.HeadTopLogin .over dl{ display:block;}
+
+/* 头部中 logo和客服电话与QQ */
+.HeadMiddleLogo{ width:950px; margin:auto; overflow:hidden; background:url(/rchlw/function/images/HomeLogoBG.gif) no-repeat top left;}
+.HomeLogo{ float:left;}
+.HomeActivityBanner{ float:left;}
+.HomeServiceTel{ float:right; margin:23px 10px 0px 0px;}
+.HomeServiceQQ{ float:right; margin:20px 10px 0px 0px;}
+
+/* 头部下 menu */
+.HeadBottomMenu{ height:40px; line-height:40px; background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px 0px;}
+.HeadBottomMenu .box{ width:950px; margin:auto; height:40px; line-height:40px; position:relative; z-index:100;}
+.HeadBottomMenu .SelectLotteryBox{ float:left; width:210px;}
+
+	/* 彩种选择菜单 */
+.HeadBottomMenu .SelectLotteryButton{ width:182px; height:29px; cursor:pointer; margin:6px 0px 0px 0px; background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px 0px; position:relative; z-index:100;}
+.HeadBottomMenu .SelectLotteryButton .SelectLottery{ position:absolute; top:29px; z-index:1000;}
+.HeadBottomMenu .SelectLotteryButton .PannelBody{border:solid 1px #F0B080;}
+.HeadBottomMenu .SelectLotteryButton table{ width:210px;}
+.HeadBottomMenu .SelectLottery{ display:none;}
+.HeadBottomMenu .over{ background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px -29px;}
+.HeadBottomMenu .over .SelectLottery{ display:block;}
+
+	/* 主menu */
+.HeadBottomMenu ul{ float:left; height:40px; line-height:40px; border-left:solid 1px #C81919; border-right:solid 1px #E32A29;}
+.HeadBottomMenu li{ width:100px; float:left; height:40px; line-height:40px; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
+.HeadBottomMenu .relative{ position:relative; z-index:100;}
+.HeadBottomMenu li a{ display:block; width:98px; height:40px; line-height:40px; border-left:solid 1px #E32A29; border-right:solid 1px #C81919; cursor:pointer; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
+.HeadBottomMenu li a:hover{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.selected a{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -80px;}
+
+	/* 足彩下拉菜单 */
+.HeadBottomMenu li dl{ width:100px; height:auto; display:none; position:absolute; top:40px; left:0px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #AD0000; border-top:none; background:#FAFAFA;}
+.HeadBottomMenu li dt{ height:12px; line-height:normal; padding:9px 0px; overflow:hidden;}
+.HeadBottomMenu li dd{ height:12px; line-height:normal; padding:9px 0px; overflow:hidden; border-top:solid 1px #F2B080;}
+.HeadBottomMenu dl a{ display:block; height:12px; line-height:normal; background:none; border:none; font-size:12px; font-weight:normal; color:#993300;}
+.HeadBottomMenu dl img{ vertical-align:text-top;}
+.HeadBottomMenu li.over{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.over a:hover{ background:none; text-decoration:underline;}
+.HeadBottomMenu .over dl{ display:block;}
+
+/* 第一屏 左 选择采种 */
+.SelectLottery{ border:none; width:210px;}
+.SelectLottery .PannelHead{ border:none; background:url(/rchlw/function/images/AllIndex.gif) no-repeat top left;}
+.SelectLottery .PannelHead h3{ color:#FFF;}
+.SelectLottery .PannelBody{ position:relative; border:solid 1px #F0B080; border-top:none; background:#FFF9EB; color:#DE0201; height:349px; overflow:hidden;}
+.SelectLottery table{ border-collapse:collapse; width:100%; height:349px;}
+.SelectLottery th{ width:40px; padding:0px 0px 0px 14px; text-align:left;}
+.SelectLottery td{ text-align:left; font-weight:normal;}
+.SelectLottery td a{ color:#000000; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -240px -195px; display:block; height:14px; line-height:14px; padding:0px 0px 0px 8px;}
+.SelectLottery td a:hover{ text-decoration:underline;}
+.SelectLottery td a.disabled{ color:#666; cursor:text;}
+.SelectLottery td a.disabled:hover{ text-decoration:none;}
+.SelectLottery .line{ border:none; background:none;}
+.SelectLottery .line td{ width:auto; height:10px; line-height:10px; overflow:hidden; background:none;}
+.SelectLottery .line th{ width:auto; height:15px; line-height:15px; overflow:hidden; background:url(/rchlw/function/images/hongbian.gif) no-repeat center center;}
+/*往期活动主题*/
+.huoDong{ height:36px; line-height:36px; background: url(/rchlw/function/images/huoDong_topBg.gif) repeat-x; margin:0; padding:0;}
+.huoDong_top{ width:950px; height:auto; overflow:hidden; margin:0 auto;}
+.huoDong_text{ float:right; color:#333333; line-height:36px; padding:0 2px; }
+.huoDong_text span a{ color:#1F376D; text-decoration:none;}
+.huoDong_text span a:hover{ color:#DE0201; text-decoration: underline;}
+.huoDong_logo{ float:left; width:102px; height:34px; margin-left:10px;}
+
+.huoDong_center{ width:950px; height:auto; overflow:hidden; margin:0 auto;}
+.huoDong_center table{ border:none;}
+
+.huoDong_specialCenter{ width:100%; height:782px; background:url(/rchlw/function/images/surprise_bg.jpg) repeat-x;}
+/*留言回馈*/
+.FeedbackNote{ width:948px; border:1px solid #dbdbdb; height:auto;}
+.FeedbackNote h1{ font-size:14px; line-height:30px; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x; padding-left:13px; font-weight:bold;}
+.FeedbackContent{ padding:50px 60px;}
+.FeedbackContent span{ line-height:30px; font-size:14px;}
+.FeedbackTable table th{ width:60px; text-align:right; line-height:56px;}
+.FeedbackTable table td .text{ border:1px solid #dbdbdb; height:24px; width:195px;}
+.FeedbackTable table td .textfield{ width:475px; height:123px; overflow-x:hidden; overflow-y:scroll;}
+.FeedbackBtn{background:url(/rchlw/function/images/login_inpuBtnPress.gif) no-repeat;cursor:pointer; width:80px;height:32px;line-height:32px; font-size:14px; color:#fff; font-weight:bold ; border:none;}
+.FeedbackBtn1{background:url(/rchlw/function/images/login_inpuBtnhui.gif) no-repeat;cursor:pointer; width:80px;height:32px;line-height:32px; font-size:14px; font-weight:bold; border:none;}
+.Feedbackmessage{ border-top:1px dashed #dbdbdb; padding:10px 10px 15px 10px;}
+.Feedbackmessage h2{ line-height:30px; padding-left:10px;}
+.Feedbackmessage p{border:1px solid #f3f3f3;line-height:36px; padding-left:10px; background:#fcfcfc;}
+.Feedbackpage{ padding:10px; text-align:center;}
+
+
+/*竞彩足球 合买样式*/
+.closebutton .OPenhemai{ background:url(/rchlw/function/images/hemai.gif) no-repeat;cursor: pointer;display: inline-block;height: 33px; line-height: 33px;margin: 10px 0 5px 5px; width: 88px;overflow: hidden;}
+.ChannelBuyPannelHead-wrap{ display:none}
+.Addhema{ padding-right:5px}
+.Addhemai p{ padding-bottom:3px;}
+.Addhemai p .Wenben{width:57px; height:19px;border:1px solid #7E9EB7; margin-right:3px;}
+.Addhemai p span{padding-left:3px}
+.Addhemai p .fuxuan-h{vertical-align:middle}
+.Addhemai p .set-low{width:32px; height:19px; border:1px solid #7E9EB7; margin-left:3px; margin-right:5px;}
+.Addhemai ul .UL-left{width:61px; float:left; padding-top:5px}
+.Addhemai ul .UL-right{ width:157px;float:right;}
+.Addhemai ul li.UL-right dl dt{width:78px;float:left; overflow:hidden;}
+.Addhemai ul li.UL-right dl dt input{ vertical-align:-3px;}
+.Addhemai .SubmitBtn-he{background:url(/rchlw/function/images/ljgmbtnh.gif) no-repeat;cursor: pointer;display: inline-block;height: 33px; line-height: 33px;margin: 10px 0 5px;overflow: hidden; width: 100px;}
+.Addhemai .fangan-xuanchuan{clear:both; padding-top:8px;}
+.Addhemai p .xuanchuan{width:215px; height:43px; margin-top:8px; border:1px solid #7E9EB7; overflow:hidden; line-height:18px;}
+.Addhemai .quxiao-hemai{cursor: pointer;display: inline-block;height: 33px; line-height: 33px;margin: 10px 0 5px;overflow: hidden; width: 100px; margin-left:9px; background:url(/rchlw/function/images/quxiao-hemai.gif) no-repeat;}
+
+/*竞彩开奖详情样式*/
+.announcement_border h2{ position:relative}
+.Saishi-chaxun{ font-weight:normal; font-size:12px; color:#000; display:inline-block; height:21px; line-height:21px;padding-left:560px; margin-bottom:5px; margin-top:5px}
+.Saishi-chaxun input{ width:95px; height:19px; line-height:19px; border:1px solid #999; vertical-align:middle}
+/*.announcement_border h2 .new-find{ margin-left:5px;font-weight:normal; font-size:12px; color:#000;display:inline-block; width:45px; height:21px; position:absolute;top:7px;_top:9px; left:678px;}*/
+.shiShi_table .new-pro-tit{ padding-left:13px; height:26px; border-bottom:2px solid #F98137}
+.shiShi_table .new-pro-tit a{ display:inline-block; width:80px; height:26px; text-align:center; line-height:26px; color:#c50505; margin-right:2px; background:url(/rchlw/function/images/new-pro-cur.gif) no-repeat; font-size:14px;}
+.shiShi_table .new-pro-tit a:hover{ background:url(/rchlw/function/images/new-pro-hov.gif) no-repeat;}
+.shiShi_table .new-pro-tit a.new-selected{ background:url(/rchlw/function/images/new-pro-select.gif) no-repeat; color:#fff; font-weight:bold;}
+.shiShi_table .new-pro-tit a.new-selected:hover{ background:url(/rchlw/function/images/new-pro-select.gif) no-repeat; color:#fff; font-weight:bold;}
+.new-pro-table{ border:1px solid #E7E7E7; border-top:none; border-bottom:none}
+.new-pro-table table tr td{ border-bottom:1px solid #E7E7E7; line-height:36px; text-align:center }
+.new-pro-table table tr td.shuju a{ color:#013BFE;}
+.new-pro-table table tr td.shuju a:hover{ color:#c50505}
+.new-pro-table table tr td.bas-pep{ width:130px}
+.new-pro-table table tr td.new-red-one,.new-pro-table table tr td.new-red-two,.new-pro-table table tr td.new-red-three{ color:#FB0102}
+.new-pro-table table tr td.Peilv{ color:#FB0102}
+.new-pro-table table tr.PageContent td{ border-bottom:none}
+.new-pro-table table tr.pro-gray-tr{ background:#f8f8f8}

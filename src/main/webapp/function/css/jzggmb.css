@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"宋体",Arial, Helvetica, sans-serif;}
+a{color:#0082CB;text-decoration:none; color:#333;}
+html body div a:hover{ text-decoration:underline; color:#de0201;}
+.clear{height:0; overflow:hidden; clear:both;}
+.jzdqwz{ width:100%; height:20px; line-height:30px; background:url(../images/jcdqwzbg.png) repeat-x; margin-bottom:1px;}
+.jzdqwz p{ width:940px; margin:0 auto; padding-left:10px;}
+.jzdqcur{ width:950px; margin:0 auto;}
+.jzdqcurtop{ width:950px; hieght:82px;}
+.jzdqcurtopL{ width:3px; height:82px; background:url(../images/jcnrcul.png) no-repeat; float:left;}
+.jzdqcurtopC{ width:932px; height:82px; padding-left:12px; background:url(../images/jcnrcurc.png) repeat-x; float:left;}
+.jzdqcurtopCn{width:862px; height:82px; padding-left:70px; background:url(../images/jclogo.png) no-repeat left center;}
+.jzdqcurtopCn p{ padding-top:19px; height:37px; background:url(../images/jczqz.png) no-repeat left; padding-left:95px;}
+.jzdqcurtopCn p strong{ font-weight:bold; font-size:14px; padding-right:30px;}
+
+.jzdqcurtopCb a{height:26px;line-height:26px;display:inline-block;color:#de0201;padding-left:12px;margin-right:5px;background:url(../images/jingcai.png) no-repeat 0 0;}
+.jzdqcurtopCb a span{height:26px;line-height:26px;display:inline-block;padding-right:12px;background:url(../images/jingcai.png) no-repeat right 0;}
+.jzdqcurtopCb a:hover,.jzdqcurtopCb a.current{background:url(../images/jingcai.png) no-repeat 0 -100px; text-decoration:none}
+.jzdqcurtopCb a:hover span,.jzdqcurtopCb a.current span{color:#fff;background:url(../images/jingcai.png) no-repeat right -100px;}
+.jzdqcurtopCb em{ font-style:normal;display:inline-block; float:right;}
+.jzdqcurtopCb em a{ background:none; color:#1F376D;}
+.jzdqcurtopCb em a:hover{ background:none; text-decoration:underline;}
+.jzdqcurtopR{ width:3px; height:82px; background:url(../images/jcnrcur.png) no-repeat; float:left;}
+.jzdqcurmid{ width:950px; border-top:2px solid #FCAE59;}
+.jzdqcurmidtop{ width:948px; border:1px solid #FCAE59; border-top:none; height:28px;_overflow:hidden;padding-top:9px;background:url(../images/jcnbbbg.png) repeat-x;}
+.jzdqcurmidtop a{ padding:0 17px;height:29px; line-height:29px; display:inline-block;position:relative;}
+.jzdqcurmidtop a:hover{ text-decoration:none;}
+.jzdqcurmidtop .xsqhsca{ margin-left:83px;}
+.jzdqcurmidtop a.xsqhsca:hover{ text-decoration:underline;}
+.jzdqcurmidtop .lianjiecur{ background:url(../images/ggtdssx.jpg) no-repeat center top;}
+.jzdqcurmidbotL{ width:698px;border:1px solid #FCAE59;float:left; border-top:none; padding-bottom:3px}
+.jzdqcurmidbotL .race_con{}
+.jzdqcurmidbotL .race_con select{ margin-right:85px;}
+.jzdqcurmidbotL .race_con span{ padding-right:16px; padding-left:5px;}
+.jzdqcurmidbotL .race_con em{color:#de0201; font-style:normal; padding:0 4px;}
+.jzdqcurmidbotL .race_con a{color:#1F376D;}
+.jzdqcurmidbotL table tr td{ border:1px solid #f2f2f2; text-align:center;}
+.jzdqcurmidbotL table{border-collapse:collapse;}
+/**.jzdqcurmidbotL table tr{ height:27px;}*/
+.jzdqcurmidbotL table .jcggbt{height:42px; background-color:#F8F8F8; border-top:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb; font-weight:bold;}
+
+.curtimetz{ font-weight:bold;}
+.curtimetz a{ text-decoration:underline; color:#1F376D; font-weight:normal;}
+
+
+span.curbifencj{ background:url(../images/bifenbgdqhs_03.jpg) no-repeat center center; width:40px; height:26px; display:inline-block; line-height:26px; padding:0 2px; text-align:center; font-weight:bold; color:#666;}
+span.b-selected{ background:url(../images/bifenbgdq_03.jpg) no-repeat center center; width:40px; height:26px; display:inline-block; line-height:26px; padding:0 2px; text-align:center; font-weight:bold; color:#fff;}
+.tzcursx{ background:url(../images/syplbg_03.jpg) no-repeat center center; width:35px;}
+.zjqNo{ background:url(../images/syplbg_03.jpg) no-repeat center center; width:26px; }
+.jzdqcurmidbotR{ width:238px;border:1px solid #dbdbdb; border-top:none; float:right; margin-top:10px; padding-bottom:15px;}
+.jzdqcurmidbotR input{ vertical-align:middle;}
+.jzdqcurmidbotRc{ padding-bottom:3px}
+.jzdqcurmidbotRc table tr td{ text-align:center; height:30px; line-height:30px;}
+h2{ height:29px; line-height:29px; border-top:1px solid #dbdbdb; padding-left:10px; background:url(../images/h2bg.png) repeat-x; font-size:14px;color:#de0201; font-weight:bold;}
+.jzdqcurmidbotRc .spsfpp{ padding-left:5px;}
+.jzdqcurmidbotRc .spsfpp a{ background:url(../images/pingpingbg_03.jpg) no-repeat;width:34px; height:19px; line-height:19px; display:inline-block; text-align:center; padding:0 2px 6px;}
+.jzdqcurmidbotRc ul{width:210px; padding:7px 16px 0 12px; overflow:hidden;}
+.jzdqcurmidbotRc ul li{width:70px; float:left; padding-bottom:14px;}
+.jzdqcurmidbotRc ul li a{color:#1F376D;}
+.jzdqcurmidbotRc p{ padding:12px 0 0 10px; line-height:20px;}
+.jzdqcurmidbotRc p input{width:39px; height:19px; border:1px solid #dbdbdb; text-align:center; line-height:19px;margin::0 4px;}
+.jzdqcurmidbotRc p span{ color:#de0201; padding:0 2px;}
+.jzdqcurmidbotRc p a{color:#1F376D;}
+.jzdqcurmidbotRc p a.jz-SubmitBtn{background:url(../images/ljgmgbtn.jpg) no-repeat scroll 0 0 transparent;cursor: pointer;display: inline-block;height: 33px;line-height: 33px;margin: 10px 0 5px;overflow: hidden;width: 116px;}
+.jzdqcurmidbotRc p a.jz-OPenhemai{background:url(../images/nw-hemai.gif) no-repeat scroll 0 0 transparent; cursor: pointer;display: inline-block;height: 33px; line-height: 33px; margin: 10px 0 5px 5px;overflow: hidden; width: 88px;}
+
+
+.Addhemai{ padding:10px}
+.Addhemai p{ padding-bottom:5px;}
+.Addhemai p .Wenben{width:57px; height:19px;border:1px solid #7E9EB7; margin-right:3px;}
+.Addhemai p span{padding-left:3px}
+.Addhemai p .fuxuan-h{vertical-align:middle}
+.Addhemai p .set-low{width:32px; height:19px; border:1px solid #7E9EB7; margin-left:3px; margin-right:5px;}
+.Addhemai ul .UL-left{width:61px; float:left; padding-top:5px}
+.Addhemai ul .UL-right{ width:157px;float:right;}
+.Addhemai ul li.UL-right dl dt{width:78px;float:left; overflow:hidden; padding-bottom:4px}
+.Addhemai ul li.UL-right dl dt input{ vertical-align:-3px;}
+.Addhemai .SubmitBtn-he{background:url(../images/ljgmbtnh.gif) no-repeat;cursor: pointer;display: inline-block;height: 33px; line-height: 33px;margin: 10px 0 5px;overflow: hidden; width: 100px;}
+.Addhemai .fangan-xuanchuan{clear:both; padding-top:8px;}
+.Addhemai p .xuanchuan{width:215px; height:43px; margin-top:8px; border:1px solid #7E9EB7; overflow:hidden; line-height:18px;}
+.Addhemai .quxiao-hemai{cursor: pointer;display: inline-block;height: 33px; line-height: 33px;margin: 10px 0 5px;overflow: hidden; width: 100px; margin-left:9px; background:url(../images/quxiao-hemai.gif) no-repeat;}
+
+
+
+
+.jzdqfoot{ width:948px;border:1px solid #dbdbdb;border-bottom:1px solid #dbdbdb; margin:10px auto;}
+.jzdqfoot h3{ padding-left:10px; height:36px; line-height:36px; font-weight:bold; font-size:14px;}
+.jzdqfoot p{ padding:0 30px 10px 20px; line-height:25px;}
+/*竞彩足球-比分-过关投注*/
+.jzdqcurmidbotL table .bf-none{}
+.jzdqcurmidbotL .bf-none table{ border:2px solid #FFBA53; }
+.jzdqcurmidbotL .bf-none table tr,.jzdqcurmidbotL .bf-none table td{ border:1px solid #F2F2F2;}
+.jzdqcurmidbotL .bf-none table td input{ margin-top:5px;}
+
+.hide_show{height:29px;line-height:29px;display:inline-block;padding-right:15px;background:url(../images/hidefocus.png) no-repeat 29px 12px;}
+.hide_show_hide{background:url(../images/hidefocus.png) no-repeat 29px -98px;}
+
+.hideselect{height:29px;line-height:29px;display:inline-block;padding:0 25px 0 15px;background:url(../images/bg_yellow.png) no-repeat center 3px;color:#fff;cursor:pointer}
+.hideselectOpen{background:url(../images/bg.png) no-repeat center 3px;color:#223a6e;}
+
+.race_con{height:32px;line-height:32px;padding-top:10px; padding-bottom:5px;}
+.race_con a.liansai{height:22px;line-height:22px;display:block}
+.race_select{float:left;width:70px;margin:7px 80px 0 10px;_margin:1px 80px 0 10px;display:inline;position:relative; z-index:99}
+.race_select_cont{position:absolute;width:214px;border:1px solid #f2b080;background:#fffcef;display:none;}
+.race_select_cont ul li{padding-left:10px;width:97px;height:24px;line-height:24px;float:left;}
+.race_select_cont ul li input{vertical-align:middle;}
+
+.for_select{padding:10px;padding-bottom:0;}
+.for_select a{width:50px;height:22px;margin-left:20px;display:inline-block;background:url(../images/select_all.png) no-repeat left center;}
+.for_select a{width:50px;height:22px;margin-left:20px;display:inline-block;background:url(../images/select_all.png) no-repeat left center;}
+.for_select a.for_select_no{background:url(../images/select_all.png) no-repeat right center;}
+
+/*竞彩足球-胜平负-单关投注*/
+.jzdqcurmidbotRc div{ padding:10px 0 10px 12px;}
+span.spfdgbg{ background:url(../images/spfdgbg_03.jpg) no-repeat center center; width:46px; height:26px; display:inline-block; line-height:26px; padding:0 3px; font-weight:bold; color:#666;}
+
+.spfdgbgYellow{ background:url(../images/bifenbgdq_03.jpg) no-repeat center center;color:#fff;font-weight:bold}
+.jzdqcurmidbotRc table td .spfdgy{ background:url(../images/spgggybg_03.jpg) no-repeat center center; width:18px; height:19px; line-height:19px; padding:0 2px; display:inline-block;}
+
+/*竞彩足球-胜平负-过关投注*/
+
+/*竞彩足球-胜平负-发起预投*/
+.jzdqcurmidbot-c{ width:948px; border:1px solid #FCAE58; border-top:none;}
+.jzdqcurmidbot-c .tableyt{ text-align:center;}
+.tableyt,.tableyt tr,.tableyt td{ border-bottom:1px solid #DBDBDB;}
+.tableyt .ljyhxy,.tableyt .ljyhxy td{ border-bottom:none;}
+.tableyt .ljyhxy td{ padding-left:110px; text-align:left;}
+.tableyt .ljyhxy .submitBtn{display:block; width:116px; height:33px; line-height:33px; overflow:hidden; font-weight:bold; background:url(/rchlw/function/images/ljgcbtn.gif) no-repeat;}
+.tableytR{ padding-left:20px; text-align:left;}
+.tableytR p{ line-height:30px;}
+.tableytR p em{ font-style:normal; color:#de0201;}
+.tableytR p span{color:#DE0201;}
+.tableytR p strong{ font-weight:bold;}
+.tableytR ul{width:800px; overflow:hidden;}
+.tableytR ul li{ float:left; width:330px; padding-bottom:5px;}
+.tableyt textarea{width:470px; height:50px; line-height:18px; border:1px solid #dbdbdb; overflow:hidden;}
+.tableytR input.text{ border:1px solid #dbdbdb; width:56px; height:20px; line-height:20px; text-align:center; background-color:#FAFBFB;margin-right:5px}
+.fuxuank{width:15px; height:15px; vertical-align:middle;}
+
+
+/*竞彩足球-总进球数-过关投注*/
+span.zjqbgh{ background:url(../images/bifenbgdqhs_03.jpg) no-repeat center center; display:inline-block; width:40px; height:26px; line-height:26px; padding:0 2px; font-weight:bold; color:#666;}
+span.z-selected{ background:url(../images/bifenbgdq_03.jpg) no-repeat center center; display:inline-block; width:40px; height:26px; line-height:26px; padding:0 2px; color:#fff; font-weight:bold;}
+.zjqybg{ width:18px; height:19px; line-height:19px; background:url(../images/spgggybg_03.jpg) no-repeat center center; display:inline-block; text-align:center; padding:0 2px;}
+.jzdqcurmidbotRc .zjqybfxq{ text-align:left; padding-left:15px;}
+
+/*竞彩足球-胜平负-文件上传*/
+.wjsctop{ padding:0 13px;}
+.wjsctop .race_select{ margin-right:15px;}
+.wjsctop .wj-race-conl{ float:left; height:40px; line-height:40px; padding-top:10px;}
+.wjsctop .race_con{ float:right;}
+.wjsctop .race_con span{ padding:0 16px 0 5px;}
+.wjsctop .race_con em{ color:#de0201; padding:0 4px; font-style:normal;}
+.head-input{ vertical-align:middle;}
+
+.wjsctopOne{ width:948px;background:url(../images/wjsconebg.png) repeat-x center top; margin-bottom:10px;}
+.wjsctopOnea{ width:948px;background:url(../images/wjsconebg.png) repeat-x center top;}
+.wjsctopOne h3{ height:34px;line-height:34px;font-weight:bold; padding:0 14px 0 12px;}
+.wjsctopOnea h3{ height:34px;line-height:34px;font-weight:bold; padding:0 14px 0 12px;}
+.wjsctopOne .title{ text-align:center; height:33px; line-height:33px; font-weight:bold; background-color:#f8f8f8; border-bottom:1px solid #F2F2F2;}
+.wjsctopOne .titonebot ul{ width:922px; border-bottom:1px solid #f2f2f2;padding:0 14px 0 12px;}
+.wjsctopOne .titonebot .titonecur{ background-color:#FEF6D2;}
+.wjsctopOne .titonebot ul li{ float:left; width:230px; height:33px; line-height:33px;}
+.wjsctopOne .titonebot ul li em{ color:#de0201; font-style:normal;}
+.wjsctopOne .titonebot ul li strong{ font-weight:normal; padding:0 5px;}
+.wjsctopOne .titonebot ul li input{ vertical-align:middle;}
+.wjsctopOne span{ float:right; font-weight:normal;}
+.wjsctopOnea span{ float:right; font-weight:normal;}
+.wjsctopTwo{width:948px;}
+.wjsctopTwoL{ width:462px;float:left;padding-left:12px; background:url(../images/wjsconebg.png) repeat-x center top;}
+.wjsctopTwoL li{ width:92px; float:left; margin-bottom:17px}
+.wjsctopTwoL li input{ padding-right:6px; vertical-align:middle;}
+.wjsctopTwoR{ width:461px; float:left;padding-left:12px; background:url(../images/wjsconebg.png) repeat-x center top; border-left:1px solid #dbdbdb;}
+.wjsctopTwoR p{ margin-bottom:10px;}
+.wjsctopTwoR p a{ padding-left:20px; color:#1F376D;}
+/*modify start 20121204*/
+.select-file{width:206px; height:26px;float:left;background:url(../images/file.png) no-repeat;position:relative; z-index:2 }
+.wjsctopTwoR p span input.xzwj-btns{ width:186px; height:24px;background:none;border:none;opacity:0.03;filter:alpha(opacity=3);position:absolute;}
+.wjsctopTwoR p span img{position:absolute;}
+.wjsctopTwoR p .xzwjsc-btns{ border:0; background:url(../images/wjsczs-btn.jpg) no-repeat center center; width:42px; height:22px; line-height:22px; display:inline-block; text-align:center; margin-left:-12px; margin-top:1px}
+.wjsctopTwoR p .biaozhun{ height:22px; line-height:22px;}
+/*modify end 20121204*/
+.wjsctopTwoR p input{width:50px; height:20px; border:1px solid #dbdbdb; background-color:#fff;cursor:pointer}
+.wjsctopTwoR p .bssrk{ width:50px; height;20px; text-align:center; line-height:20px;border:1px solid #dbdbdb; background-color:#fff; margin:0 5px;}
+.wjsctopTwoR p span{ color:#DE0201;}
+.wjsctopTwoR .ljgm{ margin:20px 0 32px 0;}
+.wjsctopTwoR p .bsljgm{ padding-left:0;}
+.wj-listcur{ width:240px; height:83px; overflow:hidden; border:1px solid #dbdbdb; padding:10px 0 0 15px; line-height:20px; float:left; margin-bottom:10px;}
+.wj-listcur a{ padding:0 15px; color:#1F376D;}
+.clear-btns{ float:right; margin-left:10px;}
+.clear-btns input{ border:0; background:url(../images/wj-clear-btn_03.jpg)  no-repeat left top; display:inline-block; width:64px; height:22px; line-height:22px; text-align:center; margin-top:120px;margin-right:15px}
+
+.wjsctopTwoL h3,.wjsctopTwoR h3{ height:34px;line-height:34px;font-weight:bold; margin-bottom:14px;}
+
+
+
+/*竞彩足球-代购方案详情*/
+.jzdqcurtopCb .dgfaxqt a{ color:#1F376D; background:none; text-decoration:none;}
+.jzdqcurtopCb .dgfaxqt a:hover{ text-decoration:underline; color:#de0201; background:none;}
+.tableytRdg{ text-align:left; padding-left:20px;}
+.tableytRdg table,.tableytRdg table tr,.tableytRdg table td{ border:1px solid #dbdbdb; border-collapse:collapse;}
+.tableytRdg table td{ height:26px; line-height:26px; text-align:center;}
+.tableytRdg table span{ color:#DE0201;}
+.tableytRdg-fa{ text-align:left; padding-left:20px;}
+.tableytRdg-fa table,.tableytRdg-fa table tr,.tableytRdg-fa table td{ border:1px solid #dbdbdb; border-collapse:collapse;}
+.tableytRdg-fa table td{ height:33px; line-height:33px; text-align:center;}
+.tableytRdg-fa table span{ color:#DE0201;}
+.tableytRdg-fa p{width:580px; margin:10px 0; line-height:25px;}
+.tableytRdg-fa p span{ float:right;}
+.tableytRdg-fa p strong{ font-weight:normal;color:#DE0201;}
+.tableytRdg-fa p a{ color:#1F376D;}
+.tableytRdg-fa p .jx-btns{ border:1px solid #dbdbdb; background:url(../images/hn-jx-btn.jpg) no-repeat center center; width:54px; height:22px; text-align:center; line-height:22px; display:inline-block; color:#1f376d;}
+.fachedan{ background:url(../images/chedanbg_03.jpg) no-repeat center center; width:54px; height:22px;border:0; text-align:center; line-height:20px;cursor:pointer;margin:-23px 186px 0 0;position:relative;float:right;display:inline;}
+.fachedana{ background:url(../images/chedanbg_03.jpg) no-repeat center center; width:54px; height:22px;border:0; text-align:center; line-height:20px;cursor:pointer;margin:-23px 16px 0 0;position:relative;float:right;display:inline;}
+
+
+/*竞彩足球-合买方案详情*/
+.hmrgfaul{ width:580px;}
+.hmrgfaul .hmrgznr{ float:left; width:380px;overflow:hidden}
+.hmrgfaul .hmrgznr p input.text{ border:1px solid #dbdbdb; width:58px; height:20px;line-height:20px; text-align:center; background-color:#FAFBFB;}
+.hmrgfaul .hmrgylj{ float:left; width:126px; padding-top:42px;vertical-align:top}
+
+
+
+
+
+.hmfaxcc{ line-height:18px; padding-right:15px;}
+
+
+/*竞彩足球-方案拆分详情*/
+.jzfacf{width:696px;overflow:hidden;border:1px solid #FCAE58;display:none}
+.jzfacf h2{ height:34px; line-height:34px; background:url(../images/cfbga.png) repeat-x; padding-left:10px; color:#000; font-size:14px; font-weight:bold;}
+.jzfacf h2 a.close{width:15px;height:15px;display:block;background:url(../images/close.gif);float:right;margin:9px 10px 0 0;_margin-right:5px}
+.jzfacf .one{ height:38px; line-height:38px; padding-left:600px;}
+.jzfacf .two{ padding-left:25px; line-height:25px;}
+.jzfacf .two strong{ font-weight:bold; color:#de0201;}
+.jzfacf .two em{ font-style:normal; color:#de0201;}
+.jzfacf table{ margin:0 0 15px 25px;}
+.jzfacf table,.jzfacf table tr,.jzfacf table td{ border:1px solid #dbdbdb; border-collapse:collapse; text-align:center;}
+.jzfacf table tr{height:24px; line-height:24px;}
+
+.jiezhi-time{ padding-left:10px; font-weight:normal; font-size:12px; height:28px; line-height:28px;}
+.jiezhi-time span{ color:#de0201}
+
+.ChannelBuyHandleZC{ width:702px; float:left;}
+.FollowNubFootball{ width:700px; float:left; clear:left;}
+.zucaitable{ width:700px; margin:0px;}
+.zucaitable table{ width:700px;}
+.result_1 { height:35px; width:46px; display:inline-block; color:#FFFFFF; font-size:12px; font-weight:bold; background: url(/rchlw/function/images/result_bgYellow.gif) no-repeat center center;   line-height:35px;cursor: pointer;}
+.result_3 {  height:35px; width:46px; display:inline-block; color:#555555; font-size:12px; font-weight:bold; background:url(/rchlw/function/images/result_bgGrey.gif) no-repeat center center; 
+	line-height:35px; cursor: pointer;}
+.zucaitable_borderBottom td{ border-bottom:1px solid #D5D5D5;}
+.result_0 { height:35px; width:38px; display:inline-block; color:#FFFFFF; font-size:12px; font-weight:bold; background: url(/rchlw/function/images/btn_yellow.gif) no-repeat center center; line-height:35px;cursor: pointer;margin:0 3px;text-align:center;}
+.result_2 {  height:35px; width:38px; display:inline-block; color:#555555; font-size:12px; font-weight:bold; background:url(/rchlw/function/images/btn_grey.gif) no-repeat center center; line-height:35px; cursor: pointer;margin:0 3px;text-align:center;}
+.addOrReduce{padding-left:4px;padding-right:4px;width:14px; height:14px; line-height:14px; font-size:12px;border:solid 1px #A9BFEB; text-align:center; cursor:pointer;}
+.light1{cursor:pointer}

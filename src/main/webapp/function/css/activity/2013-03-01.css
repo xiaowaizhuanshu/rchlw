@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap3-1{ width:950px; margin:0 auto; background:url(/rchlw/function/images/activity/sanyue.png) no-repeat; height:1900px;}
+.wrap3-1-top{ padding:360px 32px 0 42px; text-indent:2em; line-height:25px; color:#31451d; font-weight:bold; font-size:14px;letter-spacing:1px}
+.wrap3-1-protit{ font-size:16px; font-weight:bold; color:#0d7512; padding:32px 0 0 57px;letter-spacing:1px; padding-bottom:5px;}
+.wrap3-1-pro p{ padding:0 32px 0 70px;color:#31451d;font-size:14px; line-height:25px; font-weight:bold;}
+.wrap3-1-pro .pro-zhushi{ padding-left:42px; text-indent:2em;}
+.wrap3-1-pro .pro-zhushi span{ color:#FF4F1B; font-size:14px;}
+
+.wrap3-1-pro .lianjie a{ display:inline-block; padding-top:7px; padding-right:30px; color:#079eb4; text-decoration:none; font-size:14px;}
+.wrap3-1-pro .lianjie a:hover{ text-decoration:underline;}
+
+.wrap3-1-pro table{border-collapse:collapse; margin-left:127px; margin-top:5px;}
+.wrap3-1-pro table tr td{ border:1px solid #998042; border-collapse:collapse; text-align:center; height:22px; font-size:12px; font-weight:bold;color:#31451d;}
+
+.wrap3-1-pro h3{ font-size:14px; font-weight:bold; margin-left:290px;}
+.wrap3-1-pro p a{color:#079eb4; text-decoration:none; font-size:14px;}
+.wrap3-1-pro p a:hover{text-decoration:underline;}
+.wrap3-1-pro em{ color:#FF4F1B; font-style:normal; font-size:14px;}
+

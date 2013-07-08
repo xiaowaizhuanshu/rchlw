@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:13px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap6-1{ width:950px; margin:0 auto; }
+.wrap6-1 p{ line-height:25px; font-weight:bold;font-size:14px;}
+.wrap6-1 p span{ color:#06FFAE}
+.wrap6-1 .header{ background:url(/rchlw/function/images/activity/top1.jpg) no-repeat; height:281px;}
+.wrap6-1 .one,.wrap6-1 .two,.wrap6-1 .three,.wrap6-1 .four,.wrap6-1 .five{ padding:50px 40px;}
+.wrap6-1 .one{ background:url(/rchlw/function/images/activity/one-green.jpg) repeat-y;}
+.wrap6-1 .two{ background:url(/rchlw/function/images/activity/one-blue.jpg) repeat-y;}
+.wrap6-1 .three{ background:url(/rchlw/function/images/activity/one-purple.jpg) repeat-y;color:#fff}
+.wrap6-1 .four{ background:url(/rchlw/function/images/activity/one-red.jpg) repeat-y;color:#FFFFCC}
+.wrap6-1 .five{ background:url(/rchlw/function/images/activity/one-orange.jpg) repeat-y;color:#fff}
+
+
+.wrap6-1 h2{ height:31px; margin-bottom:30px;}
+.wrap6-1 h4{ font-weight:bold; font-size:16px; padding:15px 0;}
+.wrap6-1 h5{font-weight:bold; font-size:14px; padding-bottom:10px;}
+.wrap6-1 p.yinyan{ text-indent:2em}
+.wrap6-1 p.lianjie{ text-align:center;}
+.wrap6-1 p.lianjie a{ display:inline-block; padding:20px 40px 0 20px; font-size:16px;}
+.wrap6-1 .one a,.wrap6-1 .two a{ color:#de0201; text-decoration:none;}
+.wrap6-1 .four a,.wrap6-1 .three a,.wrap6-1 .five a{color:#06FFAE; text-decoration:none;}
+.wrap6-1 p a:hover{ text-decoration:underline}
+.wrap6-1 .one h2{ background:url(/rchlw/function/images/activity/one-tit.png) no-repeat;}
+.wrap6-1 .two h2{ background:url(/rchlw/function/images/activity/two-tit.png) no-repeat;}
+.wrap6-1 .three h2{ background:url(/rchlw/function/images/activity/three-tit.png) no-repeat;}
+.wrap6-1 .four h2{ background:url(/rchlw/function/images/activity/four-tit.png) no-repeat;}
+.wrap6-1 .five h2{ background:url(/rchlw/function/images/activity/five-tit.png) no-repeat;}
+.wrap6-1 table{ border-collapse:collapse; margin:10px 0 10px 105px;}
+.wrap6-1 table tr td{ border:1px solid #fff; border-collapse:collapse; text-align:center; height:30px; font-size:13px; font-weight:bold;color:#BD0000;}
+.wrap6-1 .three table tr td{ color:#06FFAE; border:1px solid #fff;}
+
+.yinying{ height:26px;}
+.blue-bg{ background:url(/rchlw/function/images/activity/blue_yz.jpg) no-repeat}
+.zi-bg{ background:url(/rchlw/function/images/activity/zi-yz.jpg) repeat-x}
+.hong-bg{ background:url(/rchlw/function/images/activity/hong_yz.jpg) no-repeat}
+.huang-bg{ background:url(/rchlw/function/images/activity/huang-yz.jpg) no-repeat}
+
+
+
+
+

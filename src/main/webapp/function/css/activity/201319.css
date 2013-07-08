@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"宋体",Arial, Helvetica, sans-serif;}
+.wrap1-9{ width:950px; margin:0 auto; position:relative}
+.top1-9{background:url(/rchlw/function/images/activity/topbg.jpg) no-repeat; width:950px; height:494px;}
+.pro1-9{ position:absolute; top:494px; left:0; z-index:100}
+.pro1-9-left,.pro1-9-center,.pro1-9-right{ float:left}
+.pro1-9-left{ background:url(/rchlw/function/images/activity/leftbg.jpg) no-repeat; width:86px; height:727px;}
+.pro1-9-right{ background:url(/rchlw/function/images/activity/rightbg.jpg) no-repeat; width:86px; height:727px;}
+.pro1-9-center{ background:url(/rchlw/function/images/activity/centerbg.jpg) repeat-x; width:778px; height:727px}
+.pro1-9-center h1{ color:#8502DC; font-size:14px; font-weight:bold; padding:10px 0;}
+.pro1-9-center h2{ color:#8502DC; font-size:14px; font-weight:bold; background:url(/rchlw/function/images/activity/xingbg.png) no-repeat left center; padding:15px 0 15px 45px; margin-left:20px;}
+
+.pro1-9-center p span.time{ color:#DD4961; font-weight:bold}
+.pro1-9-center p{ text-indent:2em; line-height:19px;}
+.pro1-9-center p.lianjie{ padding:10px 0 10px 100px;}
+.pro1-9-center p.lianjie a{ display:inline-block; padding:0 20px; text-align:center; text-decoration:none; color:#000099; font-weight:bold}
+.pro1-9-center p.lianjie a:hover{ color:#8502DC;}
+.pro1-9-center table{ margin-left:30px; border-collapse:collapse}
+.pro1-9-center table tr td{ border:1px solid #DD59BE; border-collapse:collapse; text-align:center; height:25px;}
+.pro1-9-center .pro-bot{ color:red; padding-top:10px;}
+.pro1-9-center .zhushi{ color:#993366; text-indent:0; padding-left:10px;}
+
+
+
+
+.clear1-9{ height:0; overflow:hidden; clear:both;}
+.bot1-9{ width:950px; height:579px; background:url(/rchlw/function/images/activity/botbg.jpg) no-repeat; position:absolute; top:1221px; left:0; }

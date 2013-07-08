@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Custom">
+	<resultMap class="com.ruyicai.web.pojo.Custom" id="Custom">
+		<!--客户信息 映射 -->
+		<result column="id" jdbcType="BIGINT" property="customId" />
+		<result column="type" jdbcType="INTEGER" property="type" />
+		<result column="questionType" jdbcType="VARCHAR" property="questionType" />
+		<result column="content" jdbcType="VARCHAR" property="content" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="mobile" jdbcType="VARCHAR" property="mobile" />
+		<result column="auditing" jdbcType="INTEGER" property="auditing" />
+		<result column="createtime" jdbcType="TIMESTAMP" property="time" />
+		<result column="ip" jdbcType="VARCHAR" property="ip" />
+	</resultMap>
+	
+	<!-- 客户信息分页映射 -->
+	<resultMap class="com.ruyicai.web.model.CustomMD" id="CustomMD">
+		<result column="id" jdbcType="BIGINT" property="customId" />
+		<result column="questionType" jdbcType="VARCHAR" property="questionType" />
+		<result column="content" jdbcType="VARCHAR" property="content" />
+		<result column="email" jdbcType="VARCHAR" property="email" />
+		<result column="mobile" jdbcType="VARCHAR" property="mobile" />
+		<result column="auditing" jdbcType="INTEGER" property="auditing" />
+		<result column="createtime" jdbcType="TIMESTAMP" property="time" />
+		<result column="ip" jdbcType="VARCHAR" property="ip" />
+	</resultMap>
+
+	<insert id="insertCustom" parameterClass="com.ruyicai.web.pojo.Custom">
+		insert into custommessage
+		(id,type,questionType,content,email,mobile,auditing,createtime,ip)
+		values(#customId#,#type#,#questionType#,#content#,#email#,#mobile#,#auditing#,#time#,#ip#)
+	</insert>
+	
+	<!--根据用户名查询留言信息 -->
+	<select id="selectCustomListByUserName" resultMap="Custom" parameterClass="java.lang.String">
+		SELECT	id,questionType,content,email,mobile,auditing,createtime,ip
+	    FROM	custommessage  
+	   	WHERE 	
+	   	<dynamic>	
+	   	<isNotEmpty prepend="AND" property="email">email=#email#</isNotEmpty>
+		<isNotEmpty prepend="OR" property="mobile">mobile=#mobile#</isNotEmpty>
+		</dynamic>
+	</select>
+	
+	<!--根据留言发表时间查询留言信息 -->
+	<select id="selectCustomListByCreateTime" resultMap="Custom" parameterClass="java.lang.String">
+		SELECT	id,questionType,content,email,mobile,auditing,createtime,ip
+	    FROM	custommessage  
+	   	WHERE 
+	   	<dynamic>	
+	   	<isNotEmpty prepend="AND" property="sartTime"><![CDATA[(createtime >= #sartTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="AND" property="endTime"><![CDATA[(createtime <= #endTime#)]]></isNotEmpty>
+		</dynamic>
+	</select>
+	
+	<!--根据id查询留言信息 -->
+	<select id="selectCustomByIdForObject" resultMap="CustomMD" parameterClass="java.lang.Long">
+		SELECT	id,questionType,content,email,mobile,auditing,createtime,ip
+	    FROM	custommessage  
+	   	WHERE id=#customId#
+	</select>
+	
+	<select id="selectForIntThisPage" resultClass="java.lang.Integer" parameterClass="com.ruyicai.web.model.CustomMD">
+		<!--查询所有留言条数 -->
+		SELECT	count(1)
+	    FROM	custommessage 
+   		<dynamic prepend="WHERE">	
+	   	<isNotEmpty prepend="AND " property="email">email=#email#</isNotEmpty>
+		<isNotEmpty prepend="AND " property="mobile">mobile=#mobile#</isNotEmpty>	
+	   	<isNotEmpty prepend="AND " property="sartTime"><![CDATA[(createtime >= #sartTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="AND " property="endTime"><![CDATA[(createtime <= #endTime#)]]></isNotEmpty>
+		</dynamic>
+	</select>
+	
+	<!--查询所有留言信息 -->
+	  <select id="select" resultMap="CustomMD" parameterClass="com.ruyicai.web.model.CustomMD">
+		SELECT	id,questionType,content,email,mobile,auditing,createtime,ip
+		FROM	custommessage  
+	   	<dynamic prepend="WHERE">	
+	   	<isNotEmpty prepend="AND " property="customId">id=#customId#</isNotEmpty>
+	   	<isNotEmpty prepend="AND " property="email">email=#email#</isNotEmpty>
+		<isNotEmpty prepend="AND " property="mobile">mobile=#mobile#</isNotEmpty>	
+	   	<isNotEmpty prepend="AND " property="sartTime"><![CDATA[(createtime >= #sartTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="AND " property="endTime"><![CDATA[(createtime <= #endTime#)]]></isNotEmpty>
+		</dynamic>
+		ORDER BY createtime DESC
+		LIMIT 	#nowPage#,#limitCount#  
+	
+	 </select>
+	 <!--根据留言发表时间或用户名查询留言信息 -->
+	 <select id="selectByUsernameAndCreatetime" resultMap="Custom" parameterClass="java.util.Map">
+		SELECT	id,questionType,content,email,mobile,auditing,createtime,ip
+	    FROM	custommessage  
+	   	WHERE 
+	   	<dynamic>
+	   	<isNotEmpty prepend="OR " property="email">email=#email#</isNotEmpty>
+		<isNotEmpty prepend="OR " property="mobile">mobile=#mobile#</isNotEmpty>	
+	   	<isNotEmpty prepend="OR " property="sartTime"><![CDATA[(createtime >= #sartTime#)]]></isNotEmpty>
+		<isNotEmpty prepend="OR " property="endTime"><![CDATA[(createtime <= #endTime#)]]></isNotEmpty>
+		</dynamic>
+		ORDER BY createtime DESC 
+		<dynamic>
+			<isNotNull prepend="LIMIT " property="limitCount">0,#limitCount#</isNotNull>
+		</dynamic>
+	</select>
+	
+	<!--删除该客户留言信息 -->
+	<update id="delete" parameterClass="java.lang.String">
+		UPDATE custommessage SET `auditing`=2 WHERE id in ($ids$)
+	</update>
+	
+	<!--修改审核客户留言信息 -->
+	<update id="updateAuditing" parameterClass="java.util.Map">
+		UPDATE custommessage SET `auditing`=1 WHERE id in ($ids$)
+	</update>
+	
+	<update id="updateCustom" parameterClass="com.ruyicai.web.pojo.Custom">
+		UPDATE custommessage SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="type">type=#type#</isNotNull>
+			<isNotNull prepend="," property="questionType">questionType=#questionType#</isNotNull>
+			<isNotNull prepend="," property="content">content=#content#</isNotNull>
+			<isNotNull prepend="," property="email">email=#email#</isNotNull>
+			<isNotNull prepend="," property="mobile">mobile=#mobile#</isNotNull>
+			<isNotNull prepend="," property="auditing">auditing=#auditing#</isNotNull>
+			<isNotNull prepend="," property="ip">ip=#ip#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	
+</sqlMap>

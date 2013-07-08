@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+/*html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); }*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { vertical-align: baseline; font-family: inherit; font-weight: inherit; font-style: inherit; outline: 0; padding: 0; margin: 0; border: 0; }
+ol, ul, li { list-style: none; }
+.clear { content: "."; height:0px; line-height:0px; overflow:hidden; display:none; visibility:hidden; clear:both }
+/*CSS-REST*/
+.jg_30 { clear:both; height:30px; overflow:hidden }
+.jg_10 { clear:both; height:10px; overflow:hidden }
+.jg_50 { clear:both; height:50px; overflow:hidden }
+
+body { background:#fff; font-size:12px; overflow-y:scroll}
+a { text-decoration:none; color:#333 }
+a:hover { text-decoration:underline; color:#C30 }
+
+.download_repeat_bg{background:url(/rchlw/function/images/repeat-x.png) repeat-x; height:597px}
+.download_contant{width:950px; margin:0 auto; height:597px}
+.download_menu{height:64px}
+	.download_menu ul{overflow:hidden}
+	.download_menu li{float:left; margin-right:17px}
+
+.dl_android{background:url(/rchlw/function/images/Android_bg.jpg) no-repeat; height:533px; position:relative; z-index:10}
+	.dl_android_flash{position:absolute; z-index:99; width: 166px; height: 300px; left: 760px; top: 120px; overflow:hidden}
+
+.dl_apple{background:url(/rchlw/function/images/apple_bg.jpg) no-repeat; height:533px; position:relative; z-index:10}
+	.dl_apple_flash{ position:absolute; z-index:99; width: 188px; height: 282px; left: 726px; top: 122px; overflow:hidden }
+	
+.dl_symbian{background:url(/rchlw/function/images/symbian_bg.jpg) no-repeat; height:533px; position:relative; z-index:10}
+	.dl_symbian_flash{ position:absolute; z-index:99; width: 176px; height: 306px; left: 740px; top: 92px; overflow:hidden }
+	
+.dl_kjava{background:url(/rchlw/function/images/kjava_bg.jpg) no-repeat; height:533px; position:relative; z-index:10}
+	.dl_kjava_flash{position:absolute; z-index:99; width: 166px; height: 300px; left: 760px; top: 120px; overflow:hidden}
+
+.dl_wp8{background:url(/rchlw/function/images/wp8_bg.jpg) no-repeat; height:533px; position:relative; z-index:10}
+	.dl_wp8_flash{position:absolute; z-index:99; width: 166px; height: 300px; left: 760px; top: 120px; overflow:hidden}
+
+
+.download_ff2{width:950px; margin:0 auto; overflow:hidden}
+	.download_ff2 h1{font-size:16px; font-weight:bold; color:#C00; font-family:"微软雅黑", "黑体"; line-height:36px}
+	.download_ff2 p{line-height:25px; font-size:12px; width:700px}
+	.download_ff2 strong{font-weight:bold}
+
+.dl_downbtn1{position:absolute; z-index:99; width: 263px; height: 77px; left: 2px; top: 226px;}
+.dl_versiontxt{position:absolute; z-index:99; width: 263px; height: 130px; left: 2px; top: 320px; line-height:20px; font-size:12px; font-family:Verdana, Geneva, sans-serif}
+
+.jg10{height:10px; overflow:hidden}
+/*头部*/
+.header_box { height:75px; width:950px; margin:0 auto; border-bottom:2px solid #999 }
+.header_logo { float:left; margin-top:15px }
+.header_txt { float:right; line-height:20px; width:300px; text-align:right; margin-top:40px }
+.header_txt a { padding-left:20px }
+.bottom_link { padding:5px 10px; background:#f5f5f5; border:1px solid #f1f1f1 }
+.bottom_link a { color:#666; text-decoration:none }
+.bottom_link a:hover { color:#c30 }
+.bottom_info { width:950px; margin:0 auto; overflow:hidden; line-height:20px; text-align:center; padding-bottom:30px; color:#666 }

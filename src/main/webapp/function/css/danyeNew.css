@@ -1,0 +1,138 @@
+@charset "gb2312";
+/* CSS Document */
+/*html { filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); }*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, dl, dt, dd, ol, ul, li, fieldset, form, label, legend { vertical-align: baseline; font-family: inherit; font-weight: inherit; font-style: inherit; outline: 0; padding: 0; margin: 0; border: 0; }
+ol, ul, li { list-style: none; }
+.clear { content: "."; height:0px; line-height:0px; overflow:hidden; display:none; visibility:hidden; clear:both }
+/*CSS-REST*/
+.jg_30 { clear:both; height:30px; overflow:hidden }
+.jg_10 { clear:both; height:10px; overflow:hidden }
+.jg_50 { clear:both; height:50px; overflow:hidden }
+body { background:#fff; font-size:12px; overflow-y:scroll}
+a { text-decoration:none; color:#333 }
+a:hover { text-decoration:underline; color:#C30 }
+/*头部*/
+.header_box { height:75px; width:950px; margin:0 auto }
+.header_logo { float:left; margin-top:15px }
+.header_txt { float:right; line-height:20px; width:300px; text-align:right; margin-top:40px }
+.header_txt a { padding-left:20px }
+/*主菜单*/
+.menu_contain { height:39px; background:url(/rchlw/function/images/danye/repeat-x.png) repeat-x }
+.menu { width:950px; margin:0 auto; line-height:39px }
+ul.menu_list {font-size:14px }
+ul.menu_list li { float:left; display:block; position:relative; z-index:99 }
+ul.menu_list a { color:#FFF; display:block; width:102px; background:url(/rchlw/function/images/danye/menu_line.png) no-repeat right center; text-align:center }
+ul.menu_list a:hover { text-decoration:none; color:#333; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 -50px }
+ul.menu_list .click { font-weight:bold; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 0; color:#333 }
+ul.menu_listdown { position:absolute; width: 142px; border:1px solid #900; top:38px; left:0px; display:none }
+ul.menu_listdown li { float:left; display:inline; width:142px }
+ul.menu_listdown a { line-height:30px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat; background-position:0px -100px; display:block; padding-left:20px; text-align:left; width:120px; color:#333 }
+ul.menu_listdown a:hover { background-position:0px -140px; text-decoration:none }
+/*头图*/
+.head_imgbg { height:107px; padding-bottom:6px; background:url(/rchlw/function/images/danye/repeat-x.png) repeat-x 0px -100px }
+.head_imgbox { width:950px; margin:0 auto }
+/*主体*/
+.main_contain { width:950px; margin:0 auto; overflow:hidden }
+.main_left { float:left; width:190px; background:#FFF }
+.main_left h1 { margin-top:5px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0px -228px; padding-left:25px; line-height:30px; font-size:18px; font-family:'微软雅黑', '黑体'; color:#666; border-bottom:1px solid #ccc; padding-bottom:5px }
+ul#left_menu { font-size:12px; padding-top:8px }
+ul#left_menu li { padding-bottom:8px }
+ul#left_menu li a { display:block; line-height:30px; text-align:left; padding-left:50px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 -350px; color:#333; text-decoration:none }
+ul#left_menu li a:hover { color:#600; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 -400px }
+ul#left_menu li a.click { background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 -300px; font-weight:bold; color:#FFF }
+.left_kefu { border:1px solid #ccc; background:#f5f5f5; padding:10px; width:168px }
+.left_kefu h2 { line-height:25px; background:#900; color:#FFF; font-weight:normal }
+.left_kefu font { background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 20px -450px; padding-left:30px; font-size:12px }
+.left_kefu p { line-height:20px; padding:5px 0 0 5px; color:#333 }
+.left_kefu a { color:#900 }
+.main_right { float:right; width:750px; background:url(/rchlw/function/images/danye/right_bg.png) repeat-y; padding-bottom:50px; min-height:440px; _height:440px }
+	.main_right h1 { font-size:14px; font-weight:bold; color:#007abf; line-height:30px; padding-top:10px; margin-left:20px; padding-left:15px; background:url(/rchlw/function/images/danye/biao.png) no-repeat 0px 12px; border-bottom:1px solid #e3e3e3 }
+	.main_right h2{font-size:12px; font-weight:normal; color:#007abf; padding-left:10px; margin-left:20px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0 -650px; margin-top:20px; line-height:20px}
+.job_contain { padding:20px 0 20px 30px; margin-left:20px; border-bottom:1px solid #e3e3e3 }
+.job_contain strong { font-size:14px; color:#c30; font-weight:bold; line-height:30px }
+.job_contain ul { line-height:25px }
+.job_contain div { font-weight:bold; line-height:30px; color:#666; }
+.job_contain span { float:right }
+.job_contain span a { display:block; width:65px; line-height:20px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0px -500px; text-decoration:none; text-align:center; color:#09F }
+.job_contain span a:hover { background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0px -520px; color:#C30 }
+.job_contain span a:active { background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0px -540px }
+.bottom_link { padding:5px 10px; background:#f5f5f5; border:1px solid #f1f1f1 }
+.bottom_link a { color:#666; text-decoration:none }
+.bottom_link a:hover { color:#c30 }
+.bottom_info { width:950px; margin:0 auto; overflow:hidden; line-height:20px; text-align:center; padding-bottom:30px; color:#666 }
+/*焦点图*/
+
+.banner { width:950px; height:298px; position:relative; z-index:0 }
+.banner_tab { height:43px; position:absolute; right: 5px; bottom: 5px; }
+.banner_tab ul { cursor:pointer; }
+.banner_tab li { float: left; list-style-type: none; text-align: center; }
+.banner_tab a { width:80px; height:43px; display:block; margin-right:2px; }
+.banner_tab img { border:1px solid #659ab6; }
+.hidecontent { display:none; }
+.on { background-position:0px -100px; }
+.on img { border:1px solid #0099ff; }
+.out { }
+.clear { clear:both; }
+.content { margin:0 auto; background:url(/rchlw/function/images/danye/content_bg.png) repeat-x top; border-left:1px solid #bad1de; border-right:1px solid #bad1de; }
+.tab_img { width:72px; height:35px; margin-top:3px; border:1px solid #fff; }
+.help { margin-top:10px; width:670px; }
+
+.help_ul li { float:left; width:310px; height:28px; line-height:28px; position:relative; }
+.help_ul .img_hot { top:8px; position:absolute; }
+a.k:link, a.k:visited { color:#228ada; text-decoration:none; }
+a.k:active, a.k:hover { color:#000; text-decoration:underline; }
+
+
+.index_flash_bg{height:298px; overflow:hidden; background:url(/rchlw/function/images/danye/repeat-x.png) repeat-x 0px -255px}
+	.index_flash{width:950px; height:298px; margin:0 auto}
+.index_news_title{height:38px; background:url(/rchlw/function/images/danye/repeat-x.png) repeat-x 0 -600px}
+.index_news_title_contain{width:950px; margin:0 auto; height:38px}
+	.index_gsjj_title{float:left; width:438px; border-left:1px solid #CCC; border-right:1px solid #CCC; height:38px; background:url(/rchlw/function/images/danye/repeat-x.png) 0px -640px}
+	.index_h1_title{font-size:14px; font-weight:bold; border-left:1px solid #FFF; border-right:1px solid #FFF; line-height:36px; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 5px -572px; padding-left:20px; color:#666}
+	.index_h1_title font{font-size:12px; color:#999; font-weight:normal}
+	.index_center_title{float:left; width:280px; border-right:1px solid #CCC; height:38px; background:url(/rchlw/function/images/danye/repeat-x.png) 0px -640px}
+	.index_right_title{float:left; width:228px; border-right:1px solid #CCC; height:38px; background:url(/rchlw/function/images/danye/repeat-x.png) 0px -640px}
+
+.gsjj_contain{border:1px solid #CCC; border-top-width:0; float:left; width:418px; padding:10px; line-height:19px; height:220px}
+	.gsjj_contain p{padding:0 0 6px 0; text-indent:2em}
+
+.center_contain{border:1px solid #CCC; border-top-width:0; border-left-width:0; float:left; width:260px; padding:10px; height:220px;}
+	.center_contain dl{padding-bottom:15px; overflow:hidden; display:block; width:260px}
+	.center_contain dt{float:left; width:55px; height:50px; position:relative}
+	.center_contain dd{float:right;  width:190px; left:18px; color:#999}
+	.center_contain dd a{font-size:14px; line-height:20px; color:#069}
+	.center_contain dt img{position:absolute; top:50%; margin-top:-18px}
+
+.right_contain{border:1px solid #CCC; border-top-width:0; border-left-width:0; float:left; width:208px; padding:10px; height:220px}
+	.right_contain ul{}
+	.right_contain li{padding-bottom:5px}
+	.right_contain span{}
+	.right_contain li a{font-size:14px; color:#069; display:block; line-height:20px}
+	.right_contain li a:hover{color:#C30}
+	.right_contain span a{font-size:12px; color:#777; display:inline;}
+	.right_contain span a:hover{color:#000}
+
+.hz_title{border-bottom:1px solid #ccc; background:url(/rchlw/function/images/danye/index_bg.png) no-repeat 0px -576px; line-height:30px; padding-left:15px; font-size:14px; font-weight:bold}
+	.hz_list{padding-top:15px}
+	.hz_list a{margin-right:10px; float:left; padding-bottom:10px}
+
+/*公司简介*/
+.company_contain { padding:20px 20px 20px 0px; margin-left:20px; overflow:hidden}
+	.company_contain img{float:left; margin-right:20px}
+	.company_contain p{line-height:25px; text-indent:2em}
+.main_right_txt{line-height:24px; padding:10px 20px; color:#333; overflow:hidden}
+	.main_right_txt p{ text-indent:2em}
+	.main_right_txt ul{}
+	.main_right_txt li{padding-left:35px; background:url(/rchlw/function/images/danye/biao.png) no-repeat 26px -56px; line-height:30px; color:#333}
+	.main_right_txt li strong{font-weight:bold; color:#000}
+
+.main_right_img {padding:20px 0px 20px 0px; margin-left:20px; overflow:hidden; width:728px}
+	.main_right_img dl{float:left; width:220px; display:block; margin-right:20px; padding-bottom:20px;}
+	.main_right_img dt{}
+	.main_right_img dd{line-height:30px; text-align:center}
+	.main_right_img img{display:block; border:1px solid #ccc; background:#FFF; padding:3px; width:210px}
+	
+.main_right_img2 {padding:20px 0px 20px 0px; margin-left:20px; overflow:hidden; width:728px}
+	.main_right_img2 a{float:left; display:inline; margin-right:16px; padding-bottom:20px; width:225px; overflow:hidden}
+
+.main_line{height:0px; line-height:0; overflow:hidden; border-bottom:1px solid #CCC; clear:both}

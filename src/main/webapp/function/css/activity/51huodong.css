@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap5-1{ width:950px; margin:0 auto; background:url(/rchlw/function/images/activity/51huodong.png) no-repeat; height:2300px;}
+.wrap5-1-top{ padding:285px 105px 0 122px; text-indent:2em; line-height:25px; color:#655500; font-weight:bold; font-size:14px;letter-spacing:1px}
+.wrap5-1-protit{ font-size:16px; font-weight:bold;color:#990000; letter-spacing:1px; padding:20px 105px 10px 155px;}
+.wrap5-1 h3{ font-size:14px; font-weight:bold; color:#990000;letter-spacing:1px; padding:10px 105px 10px 155px;}
+.wrap5-1-pro p{ padding:0 122px 0 126px;color:#655500;font-size:14px; line-height:26px; font-weight:bold; text-indent:2em}
+
+.wrap5-1-pro p span{ color:red;}
+.wrap5-1-pro p a{color:#006600; text-decoration:none; font-size:14px;}
+.wrap5-1-pro p a:hover{text-decoration:underline;}
+.wrap5-1-pro .go-buy{ text-align:center; padding-top:10px;}
+.wrap5-1-pro .go-buy a{ padding:0 10px;}
+.table-2{border-collapse:collapse;margin:10px 0 10px 270px;}
+.table-2 tr td{ border:1px solid #998042; border-collapse:collapse; text-align:center; height:22px; font-size:12px; font-weight:bold;color:#31451d;}
+
+
+
+
+

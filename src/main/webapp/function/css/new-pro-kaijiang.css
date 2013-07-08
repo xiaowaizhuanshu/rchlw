@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+.announcement_border h2{ position:relative}
+.Saishi-chaxun{ font-weight:normal; font-size:12px; color:#000; display:inline-block; height:21px; line-height:21px;padding-left:560px; margin-bottom:5px; margin-top:5px}
+.Saishi-chaxun input{ width:95px; height:19px; line-height:19px; border:1px solid #999; vertical-align:middle}
+.announcement_border h2 .ZX-KJxq{ position:absolute; right:20px; top:6px; font-weight:normal; font-size:12px; color:#000; display:inline-block; height:21px; line-height:21px;}
+.announcement_border h2 .ZX-KJxq input{ width:95px; height:19px; line-height:19px; border:1px solid #999; vertical-align:middle}
+/*.announcement_border h2 .new-find{ margin-left:5px;font-weight:normal; font-size:12px; color:#000;display:inline-block; width:45px; height:21px; position:absolute;top:7px;_top:9px; left:678px;}*/
+.shiShi_table .new-pro-tit{ padding-left:13px; height:26px; border-bottom:2px solid #F98137}
+.shiShi_table .new-pro-tit a{ display:inline-block; width:80px; height:26px; text-align:center; line-height:26px; color:#c50505; margin-right:2px; background:url(../images/new-pro-cur.gif) no-repeat; font-size:14px;}
+.shiShi_table .new-pro-tit a:hover{ background:url(../images/new-pro-hov.gif) no-repeat;}
+.shiShi_table .new-pro-tit a.new-selected{ background:url(../images/new-pro-select.gif) no-repeat; color:#fff; font-weight:bold;}
+.shiShi_table .new-pro-tit a.new-selected:hover{ background:url(../images/new-pro-select.gif) no-repeat; color:#fff; font-weight:bold;}
+.new-pro-table{ border:1px solid #E7E7E7; border-top:none; border-bottom:none}
+.new-pro-table table tr td{ border-bottom:1px solid #E7E7E7; line-height:36px; text-align:center; border-right:1px solid #fff }
+.new-pro-table table tr td.shuju a{ color:#013BFE;}
+.new-pro-table table tr td.shuju a:hover{ color:#c50505}
+.new-pro-table table tr td.bas-pep{ width:130px}
+.new-pro-table table tr td.bas-pep-one{ width:188px}
+.new-pro-table table tr td.new-red-one,.new-pro-table table tr td.new-red-two,.new-pro-table table tr td.new-red-three{ color:#FB0102}
+.new-pro-table table tr td.Peilv{ color:#FB0102}
+.new-pro-table table tr.PageContent td{ border-bottom:none}
+.new-pro-table table tr.pro-gray-tr{ background:#f8f8f8}
+
+/*.new-pro-table table tr.pro-white-tr td,.new-pro-table table tr.pro-gray-tr td{ border-right:1px solid #E7E7E7;}*/
+.new-pro-table table tr.pro-white-tr .NONEbg,.new-pro-table table tr.pro-gray-tr .NONEbg{ border-right:none}
+.new-pro-table .zc-one tr td{border-right:1px solid #E7E7E7;}
+.new-pro-table .zc-two tr td{border-right:1px solid #E7E7E7;}
+.new-pro-table .zc-three tr td{border-right:1px solid #E7E7E7;}
+.new-pro-table .zc-four tr td{border-right:1px solid #E7E7E7;}
+
+
+/*足彩开奖详情*/
+
+
+
+
+
+
+
+
+
+
+

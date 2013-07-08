@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="NewsInfo">
+  <resultMap class="com.ruyicai.web.pojo.NewsInfo" id="ibatorgenerated_BaseResultMap">
+    <!--新闻  映射--> 
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="category_code" />
+    <result column="channel_id" jdbcType="BIGINT" property="channel_id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="wap_state" jdbcType="INTEGER" property="wap_state" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wap_title" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="compile" jdbcType="VARCHAR" property="compile" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="author" jdbcType="VARCHAR" property="author" />
+    <result column="keyword" jdbcType="VARCHAR" property="keyword" />
+    <result column="top_news" jdbcType="INTEGER" property="top_news"/>
+    <result column="pic_name" jdbcType="VARCHAR" property="pic_name" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="call_url" jdbcType="VARCHAR" property="call_url" />
+    <result column="wap_url" jdbcType="VARCHAR" property="wap_url" />
+    <result column="audit_type" jdbcType="INTEGER" property="audit_type" />
+    <result column="admin_id" jdbcType="BIGINT" property="admin_id" />
+    <result column="compile_id" jdbcType="BIGINT" property="compile_id" />
+    <result column="template_id" jdbcType="BIGINT" property="template_id" />
+    
+  </resultMap>
+  <resultMap class="com.ruyicai.web.model.NewsInfoMD" id="ibatorgeneratedMD_BaseResultMap">
+    <!--新闻  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="category_code" />
+    <result column="channel_id" jdbcType="BIGINT" property="channel_id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="wap_state" jdbcType="INTEGER" property="wap_state" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wap_title" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="top_news" jdbcType="INTEGER" property="top_news"/>
+    <result column="compile_id" jdbcType="BIGINT" property="compile_id" />
+    <result column="template_id" jdbcType="BIGINT" property="template_id" />
+    <result column="audit_type" jdbcType="INTEGER" property="audit_type" />
+    <result column="nowPage" jdbcType="INTEGER" property="nowPage" />
+    <result column="limitCount" jdbcType="INTEGER" property="limitCount" />
+    <result column="sartTime" jdbcType="VARCHAR" property="sartTime" />
+    <result column="endTime" jdbcType="VARCHAR" property="endTime" />
+    <result column="channel_name_cn" jdbcType="VARCHAR" property="channel_name_cn" />
+    <result column="category_name_cn" jdbcType="VARCHAR" property="category_name_cn" />
+     
+  </resultMap>
+  <resultMap class="com.ruyicai.web.model.NewsInfoMD" id="NewsInfoMD">
+    <!--新闻  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="category_code" jdbcType="BIGINT" property="category_code" />
+    <result column="channel_id" jdbcType="BIGINT" property="channel_id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="wap_title" jdbcType="VARCHAR" property="wap_title" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="createtime" jdbcType="TIMESTAMP" property="createtime" />
+    <result column="updatetime" jdbcType="TIMESTAMP" property="updatetime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="top_news" jdbcType="INTEGER" property="top_news"/>
+    <result column="compile_id" jdbcType="BIGINT" property="compile_id" />
+    <result column="template_id" jdbcType="BIGINT" property="template_id" />
+    <result column="channel_name_cn" jdbcType="VARCHAR" property="channel_name_cn" />
+    <result column="category_name_cn" jdbcType="VARCHAR" property="category_name_cn" />
+  </resultMap>
+  
+  <select id="ibatorgenerated_selectByPrimaryKey" parameterClass="java.lang.Long" resultMap="ibatorgenerated_BaseResultMap" >
+    <!--按id查询新闻对象-->
+    select * 
+    from NewsInfo
+    where id = #id:BIGINT# and  status=0 
+  </select>
+ <select id="selectNewsInfoList" resultMap="ibatorgenerated_BaseResultMap" parameterClass="java.lang.Integer">
+ 	<!-- 根据站点id查询所在新闻的集合 -->
+ 	select * 
+    from NewsInfo where status=0 and website_id=#website_id#
+ 
+ </select>
+  
+	<select id="ibatorgenerated_selectAllNewsInfoCount" resultClass="java.lang.Integer" parameterClass="com.ruyicai.web.model.NewsInfoMD">
+		<!--查询所有新闻条数 -->
+		SELECT count(1)
+    FROM newsinfo AS ns LEFT JOIN  newschannel AS nc ON 
+   	ns.channel_id=nc.id LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+   	where ns.status=0 and nt.state=0 and nc.state=0
+   	<dynamic>
+			<isNotEmpty prepend="AND" property="audit_type">
+			(ns.audit_type=#audit_type#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="wap_state">
+			(ns.wap_state=#wap_state#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="category_code">
+			(ns.category_code=#category_code#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="channel_id">
+			(ns.channel_id=#channel_id#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="type">
+			(ns.type=#type#)
+			</isNotEmpty>
+			<isNotNull prepend="AND" property="sartTime">
+			<![CDATA[
+			(ns.createtime >= #sartTime#)
+			 ]]>
+			</isNotNull>
+			<isNotNull prepend="AND" property="endTime">
+			<![CDATA[
+			(ns.createtime <= #endTime#)
+			 ]]> 
+			</isNotNull>
+			<isNotEmpty prepend="AND" property="top_news">
+			(ns.top_news=#top_news#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="title">
+			(ns.title like '%$title$%')
+			</isNotEmpty>
+			
+		</dynamic>
+	</select>
+
+  <select id="ibatorgenerated_selectByExample" resultMap="NewsInfoMD"  
+        parameterClass="com.ruyicai.web.model.NewsInfoMD"> 
+        <!--查询新闻集合 分页--> 
+        
+         SELECT ns.id,ns.category_code,ns.channel_id,ns.type,
+         ns.content,ns.title,ns.createtime,ns.updatetime,ns.website_id,
+         ns.category_code,ns.sequence,ns.wap_title,
+    ns.compile_id,ns.audit_type,ns.wap_state,ns.template_id,ns.top_news,ns.status,nc.name_cn AS channel_name_cn,nt.name_cn AS category_name_cn,1 AS sartTime,1 AS endTime,1 AS nowPage,1 AS limitCount
+    FROM newsinfo AS ns LEFT JOIN  newschannel AS nc ON 
+   	ns.channel_id=nc.id LEFT JOIN newscategory AS nt ON ns.category_code=nt.code LEFT JOIN  website_properties AS wp ON wp.id=ns.website_id 
+   	WHERE ns.status=0 AND nt.state=0 AND nc.state=0 AND ns.website_id =#website_id#
+   	 <dynamic>
+			<isNotEmpty prepend="AND" property="audit_type">
+			(ns.audit_type=#audit_type#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="wap_state">
+			(ns.wap_state=#wap_state#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="category_code">
+			(ns.category_code=#category_code#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="channel_id">
+			(ns.channel_id=#channel_id#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="type">
+			(ns.type=#type#)
+			</isNotEmpty>
+			<isNotNull prepend="AND" property="sartTime">
+			<![CDATA[
+			(ns.createtime >= #sartTime#)
+			 ]]>
+			</isNotNull>
+			<isNotNull prepend="AND" property="endTime">
+			<![CDATA[
+			(ns.createtime <= #endTime#)
+			 ]]> 
+			</isNotNull>
+			<isNotEmpty prepend="AND" property="top_news">
+			(ns.top_news=#top_news#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="title">
+			(ns.title like '%$title$%')
+			</isNotEmpty>
+			
+		</dynamic>
+		order by ns.sequence desc,ns.createtime desc
+   	limit #limitCount#  
+       
+  </select>
+  <insert id="insertNewsInfo" parameterClass="com.ruyicai.web.pojo.NewsInfo">
+		insert into NewsInfo(
+			<dynamic>
+			id
+			<isNotNull prepend="," property="category_code">category_code</isNotNull>
+			<isNotNull prepend="," property="channel_id">channel_id</isNotNull>
+			<isNotNull prepend="," property="type">type</isNotNull>
+			<isNotNull prepend="," property="wap_state">wap_state</isNotNull>
+			<isNotNull prepend="," property="title">title</isNotNull>
+			<isNotNull prepend="," property="wap_title">wap_title</isNotNull>
+			<isNotNull prepend="," property="content">content</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence</isNotNull>
+			<isNotNull prepend="," property="createtime">createtime</isNotNull>
+			<isNotNull prepend="," property="updatetime">updatetime</isNotNull>
+			<isNotNull prepend="," property="compile">compile</isNotNull>
+			<isNotNull prepend="," property="status">status</isNotNull>
+			<isNotNull prepend="," property="author">author</isNotNull>
+			<isNotNull prepend="," property="keyword">keyword</isNotNull>
+			<isNotNull prepend="," property="top_news">top_news</isNotNull>
+			<isNotNull prepend="," property="pic_name">pic_name</isNotNull>
+			<isNotNull prepend="," property="url">url</isNotNull>
+			<isNotNull prepend="," property="wap_url">wap_url</isNotNull>
+			<isNotNull prepend="," property="audit_type">audit_type</isNotNull>
+			<isNotNull prepend="," property="admin_id">admin_id</isNotNull>
+			<isNotNull prepend="," property="compile_id">compile_id</isNotNull>
+			<isNotNull prepend="," property="template_id">template_id</isNotNull>
+		</dynamic>
+			)
+		values(
+		<dynamic>
+			#id#
+			<isNotNull prepend="," property="category_code">#category_code#</isNotNull>
+			<isNotNull prepend="," property="channel_id">#channel_id#</isNotNull>
+			<isNotNull prepend="," property="type">#type#</isNotNull>
+			<isNotNull prepend="," property="wap_state">#wap_state#</isNotNull>
+			<isNotNull prepend="," property="title">#title#</isNotNull>
+			<isNotNull prepend="," property="wap_title">#wap_title#</isNotNull>
+			<isNotNull prepend="," property="content">#content#</isNotNull>
+			<isNotNull prepend="," property="sequence">#sequence#</isNotNull>
+			<isNotNull prepend="," property="createtime">#createtime#</isNotNull>
+			<isNotNull prepend="," property="updatetime">#updatetime#</isNotNull>
+			<isNotNull prepend="," property="compile">#compile#</isNotNull>
+			<isNotNull prepend="," property="status">#status#</isNotNull>
+			<isNotNull prepend="," property="author">#author#</isNotNull>
+			<isNotNull prepend="," property="keyword">#keyword#</isNotNull>
+			<isNotNull prepend="," property="top_news">#top_news#</isNotNull>
+			<isNotNull prepend="," property="pic_name">#pic_name#</isNotNull>
+			<isNotNull prepend="," property="url">#url#</isNotNull>
+			<isNotNull prepend="," property="wap_url">#wap_url#</isNotNull>
+			<isNotNull prepend="," property="audit_type">#audit_type#</isNotNull>
+			<isNotNull prepend="," property="admin_id">#admin_id#</isNotNull>
+			<isNotNull prepend="," property="compile_id">#compile_id#</isNotNull>
+			<isNotNull prepend="," property="template_id">#template_id#</isNotNull>
+		</dynamic>
+		)
+		<selectKey resultClass="java.lang.Long">
+			select max(id) from NewsInfo
+		</selectKey>
+	</insert>
+  <insert id="ibatorgenerated_insertNewsInfo" parameterClass="com.ruyicai.web.pojo.NewsInfo">
+		<!--添加新闻-->
+		insert into NewsInfo (category_code, channel_id, type,wap_state,title,wap_title,
+		content,sequence,createtime,updatetime,compile,status,author,keyword,top_news,
+		pic_name,url,call_url,wap_url,audit_type,admin_id,compile_id,template_id)
+    values (#category_code:BIGINT#, #channel_id:BIGINT#, #type:INTEGER#, #wap_state:INTEGER#, #title:VARCHAR#, 
+    #wap_title:VARCHAR#,#content:LONGVARCHAR#,#sequence:INTEGER#,#createtime:DATETIME#,#updatetime:DATETIME#,#compile:VARCHAR#,#status:INTEGER#,#author:VARCHAR#
+    ,#keyword:VARCHAR#,#top_news:INTEGER#,#pic_name:VARCHAR#,#url:VARCHAR#,#call_url:VARCHAR#,#wap_url:VARCHAR#,#audit_type:INTEGER#,#admin_id:BIGINT#,#template_id:BIGINT#
+    ,#compile_id:BIGINT#)
+		<selectKey resultClass="java.lang.Long">
+			select max(id) from NewsInfo
+		</selectKey>
+	</insert>
+<update id="updateNewsInfo" parameterClass="com.ruyicai.web.pojo.NewsInfo">
+		UPDATE NewsInfo SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="category_code">category_code=#category_code#</isNotNull>
+			<isNotNull prepend="," property="channel_id">channel_id=#channel_id#</isNotNull>
+			<isNotNull prepend="," property="type">type=#type#</isNotNull>
+			<isNotNull prepend="," property="wap_state">wap_state=#wap_state#</isNotNull>
+			<isNotNull prepend="," property="title">title=#title#</isNotNull>
+			<isNotNull prepend="," property="wap_title">wap_title=#wap_title#</isNotNull>
+			<isNotNull prepend="," property="content">content=#content#</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence=#sequence#</isNotNull>
+			<isNotNull prepend="," property="updatetime">updatetime=#updatetime#</isNotNull>
+			<isNotNull prepend="," property="compile">compile=#compile#</isNotNull>
+			<isNotNull prepend="," property="status">status=#status#</isNotNull>
+			<isNotNull prepend="," property="author">author=#author#</isNotNull>
+			<isNotNull prepend="," property="keyword">keyword=#keyword#</isNotNull>
+			<isNotNull prepend="," property="top_news">top_news=#top_news#</isNotNull>
+			<isNotNull prepend="," property="pic_name">pic_name=#pic_name#</isNotNull>
+			<isNotNull prepend="," property="url">url=#url#</isNotNull>
+			<isNotNull prepend="," property="call_url">call_url=#call_url#</isNotNull>
+			<isNotNull prepend="," property="wap_url">wap_url=#wap_url#</isNotNull>
+			<isNotNull prepend="," property="audit_type">audit_type=#audit_type#</isNotNull>
+			<isNotNull prepend="," property="admin_id">admin_id=#admin_id#</isNotNull>
+			<isNotNull prepend="," property="compile_id">compile_id=#compile_id#</isNotNull>
+			<isNotNull prepend="," property="template_id">template_id=#template_id#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	<select id="selectNewsInfoOnPage" resultMap="ibatorgeneratedMD_BaseResultMap" parameterClass="com.ruyicai.web.model.NewsInfoMD">
+		SELECT ns.id,ns.category_code,ns.channel_id,ns.type,
+         ns.content,ns.title,ns.createtime,ns.updatetime,
+         ns.category_code,ns.sequence,ns.wap_title,
+    ns.compile_id,ns.audit_type,ns.wap_state,ns.template_id,ns.top_news,ns.status,nc.name_cn AS channel_name_cn,nt.name_cn AS category_name_cn,1 AS sartTime,1 AS endTime,1 AS nowPage,1 AS limitCount
+    FROM newsinfo AS ns LEFT JOIN  newschannel AS nc ON 
+   	ns.channel_id=nc.id LEFT JOIN newscategory AS nt ON ns.category_code=nt.code 
+   	where ns.status=0 and nt.state=0 and nc.state=0 and website_id=#website_id#
+   	 <dynamic>
+			<isNotEmpty prepend="AND" property="audit_type">
+			(ns.audit_type=#audit_type#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="wap_state">
+			(ns.wap_state=#wap_state#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="category_code">
+			(ns.category_code=#category_code#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="channel_id">
+			(ns.channel_id=#channel_id#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="type">
+			(ns.type=#type#)
+			</isNotEmpty>
+			<isNotNull prepend="AND" property="sartTime">
+			<![CDATA[
+			(ns.createtime >= #sartTime#)
+			 ]]>
+			</isNotNull>
+			<isNotNull prepend="AND" property="endTime">
+			<![CDATA[
+			(ns.createtime <= #endTime#)
+			 ]]> 
+			</isNotNull>
+			<isNotEmpty prepend="AND" property="top_news">
+			(ns.top_news=#top_news#)
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="title">
+			(ns.title like '%$title$%')
+			</isNotEmpty>
+			
+		</dynamic>
+		order by ns.sequence desc,ns.createtime desc
+   	limit #nowPage#,#limitCount#  
+	
+	</select>
+	
+</sqlMap>

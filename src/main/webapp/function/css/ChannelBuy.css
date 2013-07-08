@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0px; padding:0px; background:#FFF; font-family:Arial, Helvetica, sans-serif; font-size:12px; line-height:14px;}
+form,ol,ul,li,i,dl,dt,dd,table,tr,td,th,h1,h2,h3,h4,h5,p,b,i,font,em{ margin:0px; padding:0px;font-size:12px; line-height:14px; list-style:none; color:#333;}
+
+/* 投注频道的框架样式 */
+.ChannelBuyBody{width:950px; margin:auto; overflow:hidden;}
+.ChannelBuyHandle{width:700px; float:left;}
+.ChannelBuyHandleBorder{ border:solid 1px #DBDBDB; overflow:hidden;}
+.ChannelBuyInfo{width:240px; float:right;}
+
+/* 投注频道Banner样式 */
+.ChannelBuyBanner{background:url(/rchlw/function/images/ChannelBuyBanner.png) repeat-x left top; border:solid 1px #DBDBDB;}
+.ChannelBuyBanner ol{padding:15px 10px 0px 85px;}
+.ChannelBuyBanner ol li{ line-height:24px;}
+.ChannelBuyBanner ol li.LotteryName{ height:30px;}
+.ChannelBuyBanner ol b{ float:left; font-size:20px; line-height:24px; height:24px; font-weight:bold; color:#C50505; padding:0px 15px 0px 0px;}
+.ChannelBuyBanner ol i{ float:left;	 font-size:12px; line-height:14px; height:14px; font-weight:normal; margin:10px 0px 0px 0px; font-style:normal;}
+.ChannelBuyBanner ol strong{ color:#F00; padding:0px 2px;}
+.ChannelBuyBanner ol em{margin-left:20px; font-style:normal;}
+.ChannelBuyBanner em font{padding:0px 1px; color:#FF0000;}
+.ChannelBuyBanner ol a{ float:right; color:#00529d; line-height:14px; padding:0px 1px 0px 0px; border-left:solid 1px #00529d; text-decoration:none; margin:8px 0px 0px 0px;  width:68px; text-align:center;}
+.ChannelBuyBanner ol a:hover{ text-decoration:underline;}
+
+/* 定义一些基础常用样式 比如红蓝球和10px的间距 */
+span.SmallRedBall,span.SmallBlueBall{ display:block; float:left; width:23px; height:23px; line-height:23px; font-size:12px; color:#FFF; font-weight:bold; text-align:center;}
+span.SmallRedBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -50px -50px;}
+span.SmallBlueBall{ background:url(/rchlw/function/images/AllBalls.gif) no-repeat -100px -50px;; }
+span.MiniRedBall,span.MiniBlueBall{display:block; float:left; width:9px; height:9px; line-height:9px; font-size:8px; color:#FFF; text-align:center;}
+span.MiniRedBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -50px 0px;;}
+span.MiniBlueBall{background:url(/rchlw/function/images/AllBalls.gif) no-repeat -100px 0px;;}
+div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
+div.space15{line-height:15px; font-size:15px; height:15px; overflow:hidden;}
+div.space20l{float:left; line-height:20px; font-size:20px; height:20px; width:20px; overflow:hidden;}
+.Disablelight{color:#999;}
+.none{ display:none;}
+td.over{ background:#F6F6F6;}
+
+/* 投注频道Tab页样式 */
+.ChannelBuyHandleMainTab{ height:26px; overflow:hidden; border-bottom:solid 2px #F98137; padding-left:15px;}
+.ChannelBuyHandleMainTab dt{ float:left; background:url(/rchlw/function/images/ChannelBuyTabNormal.gif) no-repeat left top; width:80px; height:26px; line-height:26px; text-align:center; font-size:13px; color:#C50505; cursor:pointer; margin:0px 5px 0px 0px;}
+.ChannelBuyHandleMainTab dt.over{background:url(/rchlw/function/images/ChannelBuyTabLight.gif) no-repeat left top;}
+.ChannelBuyHandleMainTab dt.selected{background:url(/rchlw/function/images/ChannelBuyTabSelected.gif) no-repeat left top; color:#FFF; font-weight:bold;}
+.ChannelBuyTab dt a{ color:#C50505; }
+.ChannelBuyTab dt a:hover{ color:#C50505; }
+.ChannelBuyTab .selected a{ color:#FFFFFF;}
+.ChannelBuyHandleSecondTab{ height:26px; padding:10px 1px 5px 15px; overflow:hidden;}
+.ChannelBuyHandleSecondTab dl.selected{ display:block;}
+.ChannelBuyHandleSecondTab dt{ float:left; width:80px; height:26px; line-height:22px; text-align:center; font-size:12px; color:#333333; cursor:pointer; margin:0px 5px 0px 0px;}
+.ChannelBuyHandleSecondTab dt.over{color:#de0201; background:url(/rchlw/function/images/ChannelBuyTabSmallLight.gif) no-repeat left top;}
+.ChannelBuyHandleSecondTab dt.selected{color:#de0201; background:url(/rchlw/function/images/ChannelBuyTabSmallSelected.gif) no-repeat left top;}
+.ChannelBuyHandleSecondTab a{width:80px; height:26px; line-height:26px; color:#C50505;}
+.ChannelBuyHandleTabContent { padding:0px; border:solid 1px #DBDBDB; overflow:hidden;}
+.ChannelBuyHandleTabContent .selected{ display:block;}
+
+/* 投注频道常用pannel的主要样式 */
+.ChannelBuyPannel{ border:solid 1px #DBDBDB;}
+.ChannelBuyPannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.ChannelBuyPannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; color:#D10000; float:left;}
+.ChannelBuyPannelHead a{line-height:30px; height:30px; font-size:12px; padding:0px 10px;  float:right; text-decoration:none; color:#000;}
+.ChannelBuyPannelHead a:hover{ text-decoration:underline;}
+.ChannelBuyPannelBody{ padding:10px; overflow:hidden;}
+
+/* 投注频道开奖公告样式 */
+.ChannelBuyBulletin ol li{ height:30px; line-height:30px; position:relative; z-index:0;}
+.ChannelBuyBulletin ol a{ position:absolute; line-height:30px; height:30px; right:0px; color:#000; text-decoration:none;}
+.ChannelBuyBulletin ol a:hover{ color:#309; text-decoration:underline;}
+.ChannelBuyBulletin .ChannelBuyPannelBody{overflow:visible;}
+.ChannelBuyBulletin ol i{display:block; float:left; line-height:30px; height:30px; font-style:normal;}
+
+/* 投注频道开奖点评样式 */
+.ChannelBuyReview ol li{ line-height:20px;}
+.ChannelBuyReview ol p{ line-height:20px;}
+
+/* 投注频道号码分析样式 */
+.ChannelBuyAnalyse dl{ width:100%; height:25px; line-height:25px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.ChannelBuyAnalyse dt{ float:left; height:25px; line-height:25px; width:79px; text-align:center; cursor:pointer; position:relative; z-index:auto;}
+.ChannelBuyAnalyse dt.over{ background:url(/rchlw/function/images/ChannelBuyPannelHeaderLight.png) repeat-x left top;}
+.ChannelBuyAnalyse dt.selected{ background:#FFF;}
+.ChannelBuyAnalyse dt span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+.ChannelBuyAnalyse dd{ float:left; height:25px; line-height:25px; width:79px; text-align:center; cursor:text; position:relative; z-index:auto;}
+.ChannelBuyAnalyse dd span{ display:block; height:25px; line-height:25px; width:0px; position:absolute; left:0px; top:0px; overflow:hidden; border-left:solid 1px #DBDBDB; z-index:auto;}
+
+.ChannelBuyAnalyse div.TableBox{ display:none;}
+.ChannelBuyAnalyse table{ border-collapse:collapse;}
+.ChannelBuyAnalyse div.selected{ display:block;}
+.ChannelBuyAnalyse th{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; background:#F5F5F5; font-weight:normal;}
+.ChannelBuyAnalyse td{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; text-align:center;}
+
+
+/* 投注频道奖金对照样式 */
+.ChannelBuyCollate table{ border-collapse:collapse; border:solid 1px #DBDBDB; width:100%;}
+.ChannelBuyCollate th{ padding:3px 0px 2px 0px; border:solid 1px #DBDBDB; background:#F5F5F5; font-weight:normal;}
+.ChannelBuyCollate td{ padding:3px 3px 2px 3px; border:solid 1px #DBDBDB; text-align:center;}
+
+/* 投注频道走势图表样式 */
+.ChannelBuyCurrent ul{ border:0px; width:100%;}
+.ChannelBuyCurrent li{ float:left; width:90px; border-left:solid 1px #000; padding:0px 0px 0px 15px; margin:4px 0px 4px 0px;}
+.ChannelBuyCurrent li a{ color:#000; text-decoration:none;}
+.ChannelBuyCurrent li a:hover{ text-decoration:underline; color:#DE0201;}
+
+/* 文件上传 */
+.InputFile{width:200px; height:23px; overflow:hidden;}
+.ChannelBuyUpload ul{ margin:0px; padding:0px; height:30px;}
+.ChannelBuyUpload li{ margin:0px; padding:0px; float:left; height:25px; line-height:25px; padding:0px 10px 0px 0px;}
+.ChannelBuyUpload dl{ margin:20px 0px 0px 0px; padding:0px; overflow:hidden;}
+.ChannelBuyUpload dt{ height:25px; line-height:25px; color:#c50505; font-weight:bold; font-size:14px;}
+.ChannelBuyUpload dd{ height:25px; line-height:25px; padding:0px 0px 0px 25px;}
+.UploadFileBG{position:absolute; left:0px; top:0px; z-index:2;filter:alpha(opacity=0);-moz-opacity:0;opacity:0;opacity:0.0!important; cursor:pointer;}
+.UploadFileInput{position:absolute; left:1px; top:0px; z-index:3; width:140px; height:21px; border:0px; padding:0px; margin:0px; line-height:21px; border:solid 1px #999;}
+.UploadFileButton{position:absolute; left:155px; top:0px; z-index:1; width:44px; height:23px; border:0px; padding:0px; margin:0px; line-height:23px;background-image:url(/rchlw/function/images/InoutFile.gif);  background-repeat:no-repeat; background-position:top right; cursor:pointer;}
+.InputFile input.over{ background-position:bottom right;}
+
+/* 投注模块的红蓝外框 */
+.ChannelBuyBox{width:auto; height:35px; position:relative; background-repeat:no-repeat; overflow:hidden; z-index:auto; text-align:center;}
+.ChannelBuyBox i{padding:0px 5px; margin:0px auto 0px auto; font-size:12px; color:#c50505; line-height:17px; background:#FFF; font-style:normal; text-align:center; overflow:hidden;}
+.ChannelBuyBoxBottomRed i,.ChannelBuyBoxBottomBlue i,.ChannelBuyBoxBottomYellow i{margin:0px auto 0px auto; font-size:12px; color:#000; line-height:30px; }
+.ChannelBuyBox b{font-size:14px; line-height:17px; font-weight:bold; color:#c50505;}
+.ChannelBuyBox span{display:block; width:10px; height:35px; line-height:35px; position:absolute; top:0px; right:0px; background-repeat:no-repeat; z-index:auto;}
+.ChannelBuyBoxTopRed{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:0px 10px;}
+.ChannelBuyBoxTopBlue{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:0px 10px;}
+.ChannelBuyBoxTopBlue i,.ChannelBuyBoxTopBlue b{ color:#0F3F94;}
+.ChannelBuyBoxTopYellow{ margin:10px 0px 0px 0px; background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:0px 10px;}
+.ChannelBuyBoxBottomRed{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxBottomBlue{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxBottomYellow{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:0px -30px; height:30px;}
+.ChannelBuyBoxTopRed span{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxTopBlue span{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxTopYellow span{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:-690px 10px;}
+.ChannelBuyBoxBottomRed span{ background-image:url(/rchlw/function/images/ChannelBuyRedBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomBlue span{ background-image:url(/rchlw/function/images/ChannelBuyBlueBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomYellow span{ background-image:url(/rchlw/function/images/ChannelBuyYellowBG.png); background-position:-690px -30px; height:30px;}
+.ChannelBuyBoxBottomRed a,.ChannelBuyBoxBottomBlue a,.ChannelBuyBoxBottomYellow a{ text-decoration:none; color:#666; font-weight:normal; cursor:pointer;}
+.ChannelBuyBoxBottomRed a.over,.ChannelBuyBoxBottomBlue a.over,.ChannelBuyBoxBottomYellow a.over{ text-decoration:underline;}
+
+/* 投注页的添加和机选两个按钮 */
+.ChannelBuyAddButton{width:130px; height:33px; float:left; overflow:hidden; cursor:pointer;}
+.ChannelBuySelectButton{width:130px; height:33px; float:left; background:url(/rchlw/function/images/addbtn_blue.gif) no-repeat left top;}
+.ChannelBuySelectButton select{ display:block; float:left; margin:7px 0px 0px 5px; font-size:14px; line-height:14px; width:43px; padding:0px;}
+.ChannelBuySelectButton span{ display:block; float:right; width:54px; height:22px; margin:6px 5px 0px 0px; overflow:hidden; cursor:pointer; background:url(/rchlw/function/images/addbtn_blue.gif) left bottom;}
+*html .ChannelBuySelectButton select,*html .ChannelBuySelectButton span{ margin:5px 3px 0px 3px;}
+.ChannelBuySelectButton .over{ background:url(/rchlw/function/images/addbtn_blue.gif) right bottom;}
+.ChannelBuyAddBasket{ width:100%; height:auto; overflow:hidden; float:left; margin:20px 0px 10px 0px;}
+.ChannelBuyAddBasket .AddBasketCenter{ width:280px; height:auto; overflow:hidden; margin:0px auto 0px auto;}
+
+/* 投注页的增加倍数按钮 */
+dl.ChannelBuyRedouble{ float:left; width:592px; margin:10px 0px 10px 72px; height:auto; overflow:hidden; display:inline;}
+.ChannelBuyRedouble dt{ float:left; width:60%; height:24px; overflow:hidden; text-align:left; font-weight:normal;}
+.ChannelBuyRedouble dd{ float:left; width:20%; height:24px; overflow:hidden; text-align:right; font-weight:normal;}
+.ChannelBuyRedouble dt i{ float:left; display:block; font-style:normal; height:24px; line-height:24px;}
+.ChannelBuyRedouble dt span{ float:left; display:block; width:14px; height:14px; line-height:14px; font-size:12px; margin:3px; border:solid 1px #A9BFEB; text-align:center; cursor:pointer;}
+.ChannelBuyRedouble dt span.over{ background:#DBDBDB; border:solid 1px #979797;}
+.ChannelBuyRedouble dt input{ float:left; width:50px; height:18px; line-height:16px; font-size:14px; text-align:center; border:solid 1px #DBDBDB;}
+.ChannelBuyRedouble dd i{ display:block; font-style:normal; height:24px; line-height:24px; text-align:center;}
+.ChannelBuyRedouble dd b{font-weight:normal; color:#F00; height:24px; line-height:24px;}
+.ChannelBuyRedouble dd img{ cursor:pointer;}
+
+/* 投注页的玩法提示 */
+.ChannelBuyTip{ background:url(/rchlw/function/images/tanhao_small.png) no-repeat left center; margin:10px 15px 10px 15px; padding:0px 0px 0px 20px; height:16px; line-height:16px;}
+
+/* 投注页的选号信息和清空选号区 */
+.ChannelBuyAddInfo{ float:left; width:100%; text-align:center; height:20px; line-height:20px; margin:10px 0px 0px 0px;}
+.ChannelBuyAddInfo b{ color:#F00;}
+.ChannelBuyAddInfo a{ text-decoration:none; color:#666; font-weight:normal; cursor:pointer;}
+.ChannelBuyAddInfo a:hover{ text-decoration:underline; color:#666;}
+.ChannelBuyAddInfo a.over{ text-decoration:underline; color:#666;}
+
+/* 投注页的第三层RadioButton的tab页 */
+.ChoiceOneTab{ height:26px; overflow:hidden; border-bottom:dashed 1px #DBDBDB; margin:0px 0px 10px 0px;}
+.ChoiceOneTab dt{ float:left;  height:26px; line-height:26px; text-align:left; font-size:12px; cursor:pointer; margin:0px 15px 0px 0px; position:relative; padding:0px 0px 0px 15px;}
+.ChoiceOneTab dd{ float:left;  height:26px; line-height:26px; text-align:left; font-size:12px; margin:0px 5px 0px 15px; font-weight:bold;}
+.ChoiceOneTab dt.over{}
+.ChoiceOneTab dt.selected{}
+.ChoiceOneTab dt span{position:absolute; left:0px; top:7px; display:block; width:13px; height:13px; font-size:13px; line-height:13px; overflow:hidden; background-image:url(/rchlw/function/images/ChannelBuyRadioButton.png); background-position:left top; }
+.ChoiceOneTab dt.over span{ background-position:left center;}
+.ChoiceOneTab dt.selected span{ background-position:left bottom;}
+.ChoiceOneContent { padding:0px 0px 0px 0px; }
+.ChoiceOneContent .selected{ display:block;}
+
+/* DlList是通用样式 下面是个性化设置 不同地方请自行命名 不设置宽度会在ie6下产生严重bug!!!!!!!! */
+.DlList{ float:right; height:20px; overflow:visible; margin:0px; padding:0px; position:relative; z-index:10;}
+.DlList dt,.DlList dd{ margin:0px; padding:0px; font-size:12px; line-height:inherit; overflow:hidden;}
+.DlList dt{ cursor:pointer; overflow:none;}
+.DlList dd{ display:none; position:absolute; left:-150px; top:20px; z-index:10;}
+dl.over dd{ display:block;}
+.DlList .triangle{ width:200px; padding:0px 6px; height:8px; line-height:8px; font-size:8px; overflow:hidden; background:url(/rchlw/function/images/popup_triangle.gif) no-repeat bottom center;}
+.DlList .DlLsitContent{ width:200px; background:#F1F1F1; border:solid 1px #CECECE; border-top:0px; padding:5px 5px 5px 5px;}
+/* 玩法介绍下拉 */
+.PlanIntroMore{ width:70px; height:22px; line-height:22px;}
+.PlanIntroMore h3{ font-size:12px; font-weight:bold; line-height:25px; margin:0px; padding:0px;}
+.PlanIntroMore p{ font-size:12px; line-height:20px; margin:0px; padding:0px; text-indent:2em; color:#333333;}
+/* 开奖公告更多 */
+.WinIntroMore{ width:70px; height:30px; line-height:30px;}
+.WinIntroMore dd{top:30px;}
+.WinIntroMore table{ border-collapse:collapse; border:solid 1px #D5D5D5; width:100%;}
+.WinIntroMore th{ border-collapse:collapse; border:solid 1px #D5D5D5; background:#E5E5E5; line-height:25px;}
+.WinIntroMore td{ border-collapse:collapse; border:solid 1px #D5D5D5; background:#FFFFFF; line-height:25px; text-align:center;}
+
+/* 最新开奖三列样式 */
+.NewWinList,.NewWinList ul,.NewWinList li{ list-style:none;}
+.NewWinList table{width:100%; border-collapse:collapse;}
+.NewWinList table th{width:33%; text-align:left;  font-weight:normal; line-height:20px;}
+.NewWinList table td{width:33%; text-align:right; line-height:20px;}
+
+/* 资讯页面头部福导航的字体行高 */
+.zixuntopnav ul li{line-height:38px;}
+
+/* 各个彩种下拉菜单小图标*/
+.List_FuCai{width:25px; height:25px; background-position:0px -150px;}
+.List_TiCai{width:25px; height:25px; background-position:-50px -150px;}
+.List_GaoPinCai{width:25px; height:25px; background-position:-100px -150px;}
+.List_ChuanTongZuCai{width:25px; height:25px; background-position:-150px -150px;}
+.List_DanChangZuCai{width:25px; height:25px; background-position:-200px -150px;}
+.List_JingCai{width:25px; height:25px; background-position:-250px -150px;}
+
+/* 投注页所有购买方式的样式（购买方式、收益设置、支付方式、追号设置、确认购买） */
+.FollowNub{width:700px;}
+.FollowNubTab{ height:40px; overflow:hidden; border:solid 1px #DBDBDB; border-top:0px; margin:0px 0px 0px 0px; background:#F6F6F6;}
+.FollowNubTab dt{ float:left;  height:40px; line-height:40px; text-align:left; font-size:12px; cursor:pointer; margin:0px 15px 0px 0px; position:relative; padding:0px 0px 0px 20px;}
+.FollowNubTab dd{ float:left;  height:40px; line-height:40px; text-align:left; font-size:12px; margin:0px 15px 0px 0px; padding:0px; width:80px; text-align:center;}
+.FollowNubTab dt.over{}
+.FollowNubTab dt.selected{}
+.FollowNubTab dt span{display:block; width:13px; height:13px; line-height:13px; background-image:url(/rchlw/function/images/ChannelBuyRadioButton.png); background-repeat:no-repeat; overflow:hidden; background-position:left top; position:absolute; left:0px; top:14px;}
+.FollowNubTab dt.over span{ background-position:left center;}
+.FollowNubTab dt.selected span{ background-position:left bottom;}
+.FollowNubTabContent { padding:0px 0px 0px 0px; }
+.FollowNubTabContent .selected{ display:block;}
+.FollowNubTable{ width:100%; border-collapse:collapse; border:solid 1px #DBDBDB; border-top:0px;}
+.FollowNubTable th{ width:80px; font-weight:normal; background:#F6F6F6;}
+.FollowNubTable td{ background:#FFF;}
+.IncomeSetting td{ padding:15px;}
+.ComputeFashion{ border:dashed 1px #DBDBDB; width:100%;}
+.ComputeFashion th{ background:#FFF; font-weight:normal; width:10px; padding:5px 3px 5px 9px;}
+.ComputeFashion td{ padding:5px 9px 5px 0px;}
+.ComputeFashion select{ margin:0px 5px; font-size:12px;}
+.ComputeFashion input.text{ width:60px; height:16px; margin:0px 5px; padding:0px; line-height:15px; border:solid 1px #DBDBDB; text-align:center; font-size:12px;}
+.ComputeFashion .ComputeBtn{ background:url(/rchlw/function/images/Compute.gif); display:block; width:46px; height:22px; margin:0px auto; border:0px; padding:0px; line-height:22px; text-align:center; cursor:pointer;}
+.ComputeResultBox{ height:316px; border:solid 1px #DBDBDB; overflow:auto; width:598px;}
+.ComputeResult{ width:100%; border-collapse:collapse;}
+.ComputeResult th{ background:#FFF; font-weight:normal; padding:4px 0px 4px 0px;}
+.ComputeResult td{ padding:4px 0px 4px 0px; height:14px; line-height:14px; font-size:12px; border-top:dashed 1px #DBDBDB; text-align:center;}
+*html .ComputeResult td{ padding:4px 0px 2px 0px; height:14px; line-height:14px; font-size:12px; border-top:dashed 1px #DBDBDB; text-align:center;}
+.ComputeResult td span{padding:0px 9px;}
+.ComputeResult input{width:25px; height:16px; margin:0px 1px 0px 0px; padding:0px; line-height:15px; border:solid 1px #DBDBDB; text-align:center; font-size:12px;}
+.ComputeResult .over td{ background:#F6F6F6;}
+.Setting td{ padding:15px;}
+.Setting ul,.Setting li{ margin:0px; padding:0px; list-style:none;}
+.Setting li{ height:20px; line-height:20px;}
+.FollowNubSubmit table{ width:100%; border-collapse:collapse; border:solid 1px #DBDBDB; border-top:0px;}
+.FollowNubSubmit th{ width:80px; background:#F6F6F6; font-weight:normal;}
+.FollowNubSubmit td{ background:#FFFFFF; padding:15px;}
+.FollowNubSubmit td ul,.FollowNubSubmit td li{ margin:0px auto0px; list-style:none;}
+.FollowNubSubmit td li{height:30px; line-height:30px;}
+.FollowNubSubmit td b{ font-weight:bold; color:#FF0000;}
+.FollowNubSubmit td a{ font-weight:normal; color:#02549D; text-decoration:none;}
+.FollowNubSubmit td a.over{ cursor:pointer; color:#DE0201; text-decoration:underline;}
+.FollowNubSubmit .FollowNubSubmitBtn{display:block; width:116px; height:33px; line-height:33px; overflow:hidden; font-weight:bold; background:url(/rchlw/function/images/ljgcbtn.gif) no-repeat center center;}
+

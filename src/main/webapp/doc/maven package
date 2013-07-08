@@ -1,0 +1,3 @@
+打包上线命令
+运行  测试打包命令  mvn -Ptest package -Dmaven.test.skip=true 
+运行  正式打包命令  mvn -Pupline package -Dmaven.test.skip=true 

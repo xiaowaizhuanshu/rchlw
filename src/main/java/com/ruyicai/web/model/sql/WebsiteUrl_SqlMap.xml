@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="WebsiteUrl">
+  <resultMap class="com.ruyicai.web.pojo.WebsiteUrl" id="ibatorgenerated_BaseResultMap">
+    <!--站点url 映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+  </resultMap>
+  <select id="ibatorgenerated_selectByPrimaryKey" parameterClass="com.ruyicai.web.pojo.WebsiteUrl" resultMap="ibatorgenerated_BaseResultMap">
+    <!--按id查询 站点url-->
+    select url 
+    from WebsiteUrl
+    where id = #id:BIGINT# 
+  </select>
+<update id="updateWebsiteUrl" parameterClass="com.ruyicai.web.pojo.WebsiteUrl">
+		UPDATE WebsiteUrl SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="url">url=#url#</isNotNull>
+			<isNotNull prepend="," property="description">description=#description#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+  
+</sqlMap>

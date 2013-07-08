@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="NewsTemplate">
+  <resultMap class="com.ruyicai.web.pojo.NewsTemplate" id="ibatorgenerated_BaseResultMap">
+   	<!--新闻模板  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="adderss" jdbcType="VARCHAR" property="adderss" />
+    <result column="showflag" jdbcType="INTEGER" property="showflag" />
+    <result column="uploadtime" jdbcType="DATETIME" property="uploadtime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="websiteurl_id" jdbcType="BIGINT" property="websiteurl_id" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+  <select id="ibatorgenerated_selectByPrimaryKey" parameterClass="com.ruyicai.web.pojo.NewsTemplate" resultMap="ibatorgenerated_BaseResultMap">
+   <!--按id查询 新闻模板对象-->
+    select * 
+    from NewsTemplate
+    where id=#id:BIGINT#
+  </select>
+  <select id="selectByName" parameterClass="java.lang.String" resultMap="ibatorgenerated_BaseResultMap">
+   <!--按id查询 新闻模板对象-->
+    select * 
+    from NewsTemplate
+    where name=#name:VARCHAR#
+  </select>
+ <insert id="ibatorgenerated_insertNewsTemplate" parameterClass="com.ruyicai.web.pojo.NewsTemplate">
+		<!--添加 新闻模板-->
+		insert into NewsTemplate (code, name, adderss,showflag,uploadtime,status,websiteurl_id,type)
+    values (#code:VARCHAR#, #name:VARCHAR#,#adderss:VARCHAR#,#showflag:INTEGER#,#uploadtime:DATETIME#,#status:INTEGER#,#websiteurl_id:BIGINT#,#type:INTEGER#)
+		<selectKey resultClass="java.lang.Long">
+			select max(id) from NewsTemplate
+		</selectKey>
+</insert>
+  <update id="updateNewsTemplate" parameterClass="com.ruyicai.web.pojo.NewsTemplate">
+		UPDATE NewsTemplate SET
+		id = id
+		<dynamic>
+			<isNotNull prepend="," property="code">code=#code#</isNotNull>
+			<isNotNull prepend="," property="name">name=#name#</isNotNull>
+			<isNotNull prepend="," property="adderss">adderss=#adderss#</isNotNull>
+			<isNotNull prepend="," property="showflag">showflag=#showflag#</isNotNull>
+			<isNotNull prepend="," property="uploadtime">uploadtime=#uploadtime#</isNotNull>
+			<isNotNull prepend="," property="status">status=#status#</isNotNull>
+			<isNotNull prepend="," property="websiteurl_id">websiteurl_id=#websiteurl_id#</isNotNull>
+			<isNotNull prepend="," property="type">type=#type#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	<delete id="deleteNewsTemplate" parameterClass="java.util.HashMap">
+		DELETE FROM NewsTemplate WHERE name like '$name$%'
+	</delete>
+	<delete id="deleteNewsTemplateById" parameterClass="java.lang.Long">
+		DELETE FROM NewsTemplate WHERE id=#id#
+	</delete>
+	<select id="selcetNewsTemplatesByType" parameterClass="com.ruyicai.web.pojo.NewsTemplate"
+	resultMap="ibatorgenerated_BaseResultMap">
+	<!--按type查询 新闻模板对象 -->
+	select *
+	from NewsTemplate where showflag = #showflag:INTEGER# and type=#type# and websiteurl_id=#websiteurl_id#
+  </select>
+</sqlMap>

@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="/rchlw/function/css/util.css"/>
+<script type="text/javascript" src="/rchlw/function/js/jqueryJS/jquery-1.5.min.js" ></script>
+<script type="text/javascript" src="/rchlw/function/js/util.js" ></script>
+</head>
+
+<body>
+<style>
+.JumpPage{ width:500px; border:2px solid #E7E7E7; overflow:hidden; margin:150px auto;}
+.JumpPage b{ color:#DE0201; font-size:14px; font-weight:bold;}
+.JumpPage p{ padding:18px 0 20px 20px;}
+.JumpPage dt{ font-size:14px; font-weight:bold; height:35px; line-height:35px; text-align:center;}
+.JumpPage dd{ height:35px; line-height:35px; text-align:center; color:#666666;}
+.JumpPage dd a{ color:#DE0201;}
+.JumpPage dd a:hover{ color:#DE0201; text-decoration:underline;}
+.JumpPage i{ color:#1F376D;}
+.JumpPage_down{ text-align:center; padding:20px 0 47px 0;}
+</style>
+
+<div class="JumpPage">
+	<p><a href="/rchlw/index.jsp"><img src="/rchlw/function/images/HomeLogo.gif" width="138" height="64" /></a></p>
+	<dl>
+		<dt>如意彩正在带您去<b id="name">中国银联</b>，请稍等</dt>
+		<dd>如果您的浏览器没有自动跳转，请<a href="http://cn.unionpay.com/" title="点击这里" id="jump">点击这里</a></dd>
+		<dd><i>正在转入链接网站，请稍等…<i></dd>
+	</dl>
+	<div class="JumpPage_down"><img src="/rchlw/function/images/JumpPage_down.gif" width="192" height="12"  id="img"/></div>
+</div>
+<script type="text/javascript">
+var view = GetQueryString("id");
+var url;
+if(view=="1"){//银联
+	url="http://cn.unionpay.com/";
+	document.title="如意彩正在带您去中国银联";
+	$("#name").html("中国银联");
+}else if(view=="2"){//牛仔网
+	url="http://s.9666.cn/";
+	document.title="如意彩正在带您去牛仔网";
+	$("#name").html("牛仔网");
+}else if(view=="3"){//理想在线
+	url="http://www.55188.com/lottery.php";
+	document.title="如意彩正在带您去理想在线";
+	$("#name").html("理想在线");
+}else if(view=="4"){//腾讯
+	url="http://www.qq.com";
+	document.title="如意彩正在带您去腾讯";
+	$("#name").html("腾讯");
+}else if(view=="5"){//支付宝
+	url="https://www.alipay.com/";
+	document.title="如意彩正在带您去支付宝";
+	$("#name").html("支付宝");
+}else if(view=="6"){//百度
+	url="http://www.baidu.com/";
+	document.title="如意彩正在带您去baidu";
+	$("#name").html("百度");
+}
+$("#jump").attr("href",url);
+window.onload=function(){
+	setTimeout(function(){
+	$("#img").hide();
+	window.location.href=url;
+	},4000)
+}
+	</script>
+</body>
+</html>

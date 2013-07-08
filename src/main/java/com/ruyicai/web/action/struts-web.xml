@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ <struts>  
+ <package name="news" namespace="/news" extends="struts-default" >
+ 	<action name="newsInfoList" class="com.ruyicai.web.action.NewsAction">
+ 		<result name="newsList">/news/ruyicai_channel_xwzx.jsp</result>
+ 		<result name="newsList_zjzj">/news/category_zjdxList.jsp</result>
+ 		<result name="newsList_rdxw">/news/category_redianList.jsp</result>
+ 	</action>
+ </package>
+ 
+ <!--begin 登录之后才能访问的action -->
+   <package name="user" namespace="/user" extends="struts-default" >
+   <!-- struts2.0的全局跳转    -->
+		<global-results>
+			<result name="login_error" >/function/user/toLogin.jsp</result>
+			<result name="error">/backResult/error.jsp</result> 
+			<result name="formError">/backResult/formError.jsp</result> 
+		</global-results> 
+        <!-- 用户中心的跳转 -->
+		<action name="tuserinfoAction" class="com.ruyicai.web.action.TuserinfoAction">
+			<result name="changePasswordSuccess" >/function/user/updatePassword.jsp</result>
+			<result name="cash" >/function/user/cash.jsp</result>
+			<result name="withdrawals">/function/user/withdrawals.jsp</result>
+			
+			<!-- 新增加提现订单详细信息页面 -->
+			<result name="dingdanxinxi">/function/user/dingdanxinxi.jsp</result>
+			
+            <result name="changeTuserinfo" >/function/user/personalMessage.jsp</result>
+			<result name="index">/page/ruyicai/ssq/ruyicai_channel_ssq.jsp</result>
+			
+			<!-- 手机服务 -->
+			<result name="phoneBand" >/function/user/phoneBand.jsp</result>
+			<result name="phoneBandRand" >/function/user/phoneBandRand.jsp</result>
+			<result name="phoneBandSuccess" >/function/user/phoneServes.jsp</result>
+
+			<!-- 邮箱服务 -->
+			<result name="emailBandCheck" >/function/user/emailCheck.jsp</result>
+			<result name="emailBandSuccess" >/function/user/emailBandSuccessByEmail.jsp</result>
+			<result name="emailBand" >/function/user/emailBand.jsp</result>
+			<result name="updateEmailBand" >/function/user/updateEmailBand.jsp</result>
+			
+			<result name="accountDetail" >/function/user/accountDetail1.jsp</result>
+			<result name="chargeIndex">/function/user/chargeIndex.jsp</result>
+			<result name="certidBand" >/function/user/certidBand.jsp</result>
+			<result name="certidBandSuccess" >/function/user/certidBandSuccess.jsp</result>
+			<!-- 追号记录和详情 -->
+			<result name="cancelTrackingNumberInfo">/function/user/cancelTrackSelect.jsp</result>
+			<result name="trackingNumberInfo">/function/user/trackNumberInfo.jsp</result>
+			<result name="trackingNumberInfoByDipin">/function/user/cancelTrackSelectByDipin.jsp</result>
+			<result name="trackingNumberSelectAll">/function/user/trackNumberSelect.jsp</result>
+			<result name="userScoreList">/function/user/UserScoreList.jsp</result>
+		</action>
+		
+	<!-- 用户查询跳转 -->	
+	<action name="selectAll" class="com.ruyicai.web.action.SelectAllAction"> 
+		    <result name="personMsg" >/function/user/personalMessage.jsp</result>
+			<result name="giftSelect" >/function/query/giftSelect.jsp</result>
+			<result name="giftedSelect" >/function/query/giftedSelect.jsp</result>
+			<result name="betSelect" >/function/user/betSelectAll.jsp</result>
+			<result name="betSelectCount">/function/user/loginUserIndex_betSelect.jsp</result>
+			<result name="getOneBetInfo">/function/user/oneBetInfo.jsp</result>
+			<result name="giftBetInfo">/function/user/giftedInfo.jsp</result>
+			<result name="getMoreBetInfo">/function/user/MoreBetInfo.jsp</result>
+		</action> 
+	<!-- 投注的功能 -->	
+		<action name="bet" class="com.ruyicai.web.action.BettingAction">
+		    <result name="betBack">/backResult/betBack.jsp</result>
+		    <result name="codeAll">/backResult/codeAll.jsp</result>
+		</action>
+		 <!-- 超级用户推广下线 -->
+		<action name="tuiguan" class="com.ruyicai.web.action.TuiGuangAction" >
+		    <result name="toagencylink" >/function/tuiguang/agencyCenter.jsp</result>
+		    <result name="toagencyPerformance" >/function/tuiguang/agencyPerformance.jsp</result>
+		    <result name="agencyprizebili" >/function/tuiguang/agencyBili.jsp</result>
+		    <result name="toagencyPrizeBili" >/function/tuiguang/setAgencyBili.jsp</result>
+		    <result name="toagencyJiaoyi" >/function/tuiguang/agencyJiaoyiDetail.jsp</result>
+		    <result name="toagencyJiaoyidetail" >/function/tuiguang/yongjinDetail.jsp</result>
+		</action>
+   </package>
+   <package name="ajax" namespace="/ajax" extends="json-default">
+       <!-- ajax账户金额查询-->
+       <action name="selectAll" class="com.ruyicai.web.action.SelectAllAction">
+           <result type="json" name="ruyicai_channel_ssq">/page/ruyicai/ssq/ruyicai_channel_ssq.jsp</result>
+           <result type="json" name="ruyicai_channel_qlc">/page/ruyicai/qlc/ruyicai_channel_qlc.jsp</result>
+           <result type="json" name="ruyicai_channel_3D">/page/ruyicai/3D/ruyicai_channel_3D.jsp</result>
+           <result type="json" name="ruyicai_channel_pls">/page/ruyicai/pls/ruyicai_channel_pls.jsp</result>
+           <result type="json" name="ruyicai_channel_dlt">/page/ruyicai/dlt/ruyicai_channel_dlt.jsp</result>
+           <result type="json" name="findBalance">/function/user/loginUserIndex.jsp</result>
+       </action>    
+    </package>  
+<!-- end 登录之后才能访问的action -->
+   
+	<package name="function" namespace="/function" extends="struts-default">
+  <!-- struts2.0的全局跳转    -->
+		<global-results>
+			<result name="login_error" type="redirect">http://users.ruyicai.com/login.jsp</result>
+			<result name="error">/backResult/error.jsp</result> 
+			<result name="formError">/backResult/formError.jsp</result> 
+		</global-results>
+    <!-- 全局异常 -->   
+    <!-- 客户留言的功能 -->	
+		<action name="custom" class="com.ruyicai.web.action.cooperation.CustomMessageAction">
+		    <result name="customMessageSuccess">/function/rules/customMessageSuccess.jsp</result>
+		    <result name="msgList">/function/query/MessageList.jsp</result>
+			<result name="formError">/backResult/formError.jsp</result> 
+		</action>
+  	<action name="zucai" class="com.ruyicai.web.action.ZcAction">
+		<result name="shengfucai">/function/query/zc/shengfucai_standrad.jsp</result>
+		<result name="shouye_shengfu">/function/query/zc/shengfucai_standrad_shouye.jsp</result>
+		<result name="shouye_shengfu_error">/function/query/zc/shengfucai_fail_shouye.jsp</result>
+		<result name="renjiuchang">/function/query/zc/renjiuchang_standrad.jsp</result>
+		<result name="jinqiucai">/function/query/zc/sichang_standrad.jsp</result>
+		<result name="liuchangban">/function/query/zc/liuchangban_standrad.jsp</result>
+		
+		<result name="v_shengfucai">/function/query/zc/shengfucai_review.jsp</result>
+		<result name="v_renjiuchang">/function/query/zc/renjiuchang_review.jsp</result>
+		<result name="v_jinqiucai">/function/query/zc/sichang_review.jsp</result>
+		<result name="v_liuchangban">/function/query/zc/liuchangban_review.jsp</result>
+		
+		<result name="f_shengfucai">/function/query/zc/shengfucai_fail.jsp</result>
+		<result name="f_renjiuchang">/function/query/zc/renjiuchang_fail.jsp</result>
+		<result name="f_jinqiucai">/function/query/zc/sichang_fail.jsp</result>
+		<result name="f_liuchangban">/function/query/zc/liuchangban_fail.jsp</result>
+	</action>
+		
+	<!-- struts2.0的局部跳转 -->
+	 <!-- 找回密码的跳转 -->
+	<action name="findtuser2" class="com.ruyicai.web.action.FindPwdAction">
+		<result name="successEmail"> /function/user/findPassword_resetPasswordByEmail_new.jsp</result>
+		<result name="faliEmail"> /function/user/findPassword_sendMessageByEmail_new.jsp</result>
+	</action>    
+		<!-- 开奖跳转 -->
+		 <action name="selectAll" class="com.ruyicai.web.action.SelectAllAction">
+		 
+			 <!-- 1、如意彩首页左侧开奖-->
+			 <result name="drawalotteryIndex">/function/query/ruyicai_drawalotteryleft.jsp</result> 
+			 <!-- 2 、首页左侧时时开奖公告-->
+			 <result name="sslotteryIndex">/function/query/ruyicai_sslotteryleft.jsp</result> 
+			 <!-- 3、如意彩频道页右侧开奖详情 -->
+			 <result name="drawalotteryDetail">/function/query/betting_right_drawalottery.jsp</result>
+			 <!-- 4、如意彩足彩频道页左侧开奖详情 -->
+			 <result name="drawalotteryDetail_zc">/function/query/betting_right_drawalottery.jsp</result>
+			 <!-- 5、如意彩首页中奖排行 -->
+			 <result name="rankList">/function/query/ruyicai_WinningRanking.jsp</result>
+                          
+		 	<!-- 右侧开奖 -->
+			<result name="drawalotterySelectAll">/function/query/drawalotterySelect.jsp</result>
+			<!-- 中间开奖 -->
+			<result name="caseCenterAll">/function/query/case/caseCenter.jsp</result>
+			<result name="recentlottery">/function/query/recentLottery.jsp</result>
+			<!-- 定时生成今日开奖页面 -->
+			<result name="selectTime">/function/query/ruyicai_jinrikaijiang.jsp</result>
+			<!-- 定时生成今日截止页面 -->
+			<result name="ruyicai_jinrijiezhi">/function/query/ruyicai_jinrijiezhi.jsp</result>
+			<result name="user_jinribest">/function/user/lotNoCountdown.jsp</result>
+			<!-- 合买中心 ajax -->
+			<result name="ajaxCaseCenter">/function/query/case/ajaxCaseCenter.jsp</result>
+			<!-- 合买成功页面下方的合买列表 -->
+			<result name="success_hemai_list">/function/query/case/success_hemai_list.jsp</result>
+			<!-- 合买方案详情页 -->
+			<result name="caseInfo">/function/query/case/caseInfo.jsp</result>
+			<!-- 指定用户参与或发起的合买方案列表页（弹窗） -->
+			<result name="fangan_list">/function/query/case/ajaxFanganList.jsp</result>
+			<!-- 指定用户的战绩列表查询（弹窗） -->
+			<result name="yingli_list">/function/query/case/ajaxYingliList.jsp</result>
+			<!-- 参与合买 -->
+			<result name="canyu_list">/function/query/case/ajaxCanyuList.jsp</result>
+			<result name="getMoreBetInfo">/function/user/MoreBetInfo.jsp</result>
+		</action>
+		<!-- =====合买中心====== -->
+		<action name="hemaiCenter" class="com.ruyicai.web.action.SelectAllAction">
+			<!-- 合买中心 -->
+			<result name="caseCenterAll">/function/query/case/hemaiCenter.jsp</result>
+			<!-- 合买中心 ajax -->
+			<result name="ajaxCaseCenter">/function/query/case/ajaxHemaiCenter.jsp</result>
+			<!-- 合买名人列表 ajax -->
+			<result name="celebrity_list">/function/query/case/ajaxCelebrityList.jsp</result>
+			<!-- 首页合买推荐ajax -->
+			<result name="shouyeCase">/function/query/case/ajaxCaseshouye.jsp</result>
+		</action>
+
+		<action name="ryc_selectAll" class="com.ruyicai.web.action.SelectAllAction">
+			<!-- 3、如意彩频道页右侧开奖详情点击更多 -->
+			<result name="drawalotteryIndex">/function/query/lotteryInfo.jsp</result>
+			<!-- 4、如意彩频道页江西11选5开奖公告 -->
+			<result name="drawalotteryDetail">/function/query/ruyicai_drawalottery11X5.jsp</result>
+			<!-- 如意彩开奖公告左侧页面 -->
+			<result name="selectTime">/function/query/ruyicai_jinrikaijiangLeft.jsp</result>
+		</action>
+		
+		<action name="ryc_selectAll_recentdrawa" class="com.ruyicai.web.action.SelectAllAction">
+			<!-- 5、如意彩频道页高频彩最新开奖 -->
+			<result name="drawalotteryDetail">/function/query/ruyicai_recentlydrawalottery.jsp</result>
+			<!-- 6、如意彩频道页高频彩右侧遗漏信息-->
+			<result name="gaopinomit">/function/query/gaopinomit.jsp</result>
+		</action>
+		
+		<action name="ryc_select_newkj" class="com.ruyicai.web.action.SelectAllAction">
+			<!-- 7、开奖公告页面及开奖详细页面 -->
+			<result name="drawalotteryIndex">/function/query/kaijianggonggao.jsp</result>
+			<!-- 8、福彩体彩开奖详细页面 -->
+			<result name="fucaiTicai">/function/query/kaijianggonggaoInfo.jsp</result>
+			<!-- 7、高频彩开奖详细页面 -->
+			<result name="gaopingcai">/function/query/kaijianggonggaoGP.jsp</result>
+			<!-- 8、竞彩开奖详细页面 -->
+			<result name="jckaijianginfos">/function/query/kaijianggonggaoJc.jsp</result>
+			<!-- 9、足彩开奖详细页面 -->
+		    <result name="zckaijianginfos">/function/query/kaijianggonggaoZc.jsp</result>
+		</action>
+		
+		<!-- 用户中心的跳转 -->
+		<action name="tuserinfoAction" class="com.ruyicai.web.action.TuserinfoAction">
+	   </action>
+	   
+	   <!-- 合买功能 -->
+	   <action name="betAndHemai" class="com.ruyicai.web.action.BettingAction">
+	      <result name="hemai">/page/ruyicai/ssq/ruyicai_channel_ssq_hemai.jsp</result>
+	   </action>
+	   
+	 	<!-- 单式上传 -->
+       <action name="upload" class="com.ruyicai.web.action.UploadAction"> </action> 
+		<!-- 竞彩信息 -->
+		<action name="jc" class="com.ruyicai.web.action.JcAction">
+			<result name="jcrspfduizhen">/function/ruyicai_jc/jingcai_rangqiu_spf_duizhen.jsp</result>
+			<result name="jc-rangqiu-wenjian-duizhen">/function/ruyicai_jc/jc_rangqiu_wenjian_duizhen.jsp</result>
+			<result name="jc-spf-wenjian-duizhen">/function/ruyicai_jc/jc_spf_wenjian_duizhen.jsp</result>
+			<result name="jc-zjq-wenjian-duizhen">/function/ruyicai_jc/jc_zjq_wenjian_duizhen.jsp</result>
+			<result name="jc-bf-wenjian-duizhen">/function/ruyicai_jc/jc_bf_wenjian_duizhen.jsp</result>
+			<result name="jcspfduizhen">/function/ruyicai_jc/jingcai_spf_duizhen.jsp</result>
+			<result name="zjqduizhen">/function/ruyicai_jc/jingcai_zjq_duizhen.jsp</result>
+			<result name="bfduizhen">/function/ruyicai_jc/jingcai_bf_duizhen.jsp</result>
+			<result name="bqcduizhen">/function/ruyicai_jc/jingcai_bqc_duizhen.jsp</result>
+			<result name="hemai">/function/ruyicai_jc/jc_hemaidating.jsp</result>
+			<result name="rangqiu-guoguan">/function/ruyicai_jc/jc_rangqiu_guoguan_touzhu.jsp</result>
+			<result name="rangqiu-danguan">/function/ruyicai_jc/jc_rangqiu_danguan_touzhu.jsp</result>
+			<result name="spf-guoguan">/function/ruyicai_jc/jc_spf_guoguan_touzhu.jsp</result>
+			<result name="spf-danguan">/function/ruyicai_jc/jc_spf_danguan_touzhu.jsp</result>
+			<result name="zjq-guoguan">/function/ruyicai_jc/jc_zjq_guoguan_touzhu.jsp</result>
+			<result name="zjq-danguan">/function/ruyicai_jc/jc_zjq_danguan_touzhu.jsp</result>
+			<result name="bf-guoguan">/function/ruyicai_jc/jc_bf_guoguan_touzhu.jsp</result>
+			<result name="bqc-guoguan">/function/ruyicai_jc/jc_bqc_guoguan_touzhu.jsp</result>
+			<result name="bqc-danguan">/function/ruyicai_jc/jc_bqc_danguan_touzhu.jsp</result>
+			<result name="rangqiu-upload">/function/ruyicai_jc/jc_rangqiu_wenjian_upload.jsp</result>
+			<result name="spf-upload">/function/ruyicai_jc/jc_spf_wenjian_upload.jsp</result>
+			<result name="zjq-upload">/function/ruyicai_jc/jc_zjq_wenjian_upload.jsp</result>
+			<result name="bf-upload">/function/ruyicai_jc/jc_bf_wenjian_upload.jsp</result>
+			<result name="liansai">/function/ruyicai_jc/jc_liansai.jsp</result>
+		</action>
+		<action name="memcache" class="com.ruyicai.web.action.QuartzAction">
+            <result name="quartzStartsucc">/mem.jsp</result>   
+		</action>
+	 </package> 
+</struts>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="NewsChannel" >
+  <resultMap class="com.ruyicai.web.pojo.NewsChannel" id="NewsChannelResult">
+    <!-- 新闻频道  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name_zh" jdbcType="VARCHAR" property="name_zh" />
+    <result column="name_cn" jdbcType="VARCHAR" property="name_cn" />
+    <result column="showflag" jdbcType="INTEGER" property="showflag" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="website_id" jdbcType="BIGINT" property="website_id" />
+    <result column="mark" jdbcType="VARCHAR" property="mark" />
+    <result column="channelType" jdbcType="VARCHAR" property="channelType" />
+  </resultMap>
+  <resultMap class="com.ruyicai.web.model.NewsChannelMD" id="NewsChannelMD">
+    <!-- 新闻频道  映射-->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="name_zh" jdbcType="VARCHAR" property="name_zh" />
+    <result column="name_cn" jdbcType="VARCHAR" property="name_cn" />
+    <result column="showflag" jdbcType="INTEGER" property="showflag" />
+    <result column="sequence" jdbcType="INTEGER" property="sequence" />
+    <result column="template_id" jdbcType="BIGINT" property="template_id" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="website_id" jdbcType="BIGINT" property="website_id" />
+    <result column="mark" jdbcType="VARCHAR" property="mark" />
+    <result column="channelType" jdbcType="VARCHAR" property="channelType" />
+  </resultMap>
+  <select id="selectByPrimaryKey" parameterClass="com.ruyicai.web.pojo.NewsChannel" resultMap="NewsChannelMD">
+    <!--按id查询 新闻频道对象-->
+    SELECT nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id  WHERE nc.id = #id:BIGINT# 
+  </select>
+  <select id="selectBychannelCn" parameterClass="com.ruyicai.web.pojo.NewsChannel" resultMap="NewsChannelMD" >
+    <!--按中文名查询 新闻频道对象-->
+    SELECT nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id  WHERE nc.website_id=#website_id# AND nc.name_cn = #name_cn# 
+  </select>
+  <select id="selectBychannelZh" parameterClass="com.ruyicai.web.pojo.NewsChannel" resultMap="NewsChannelMD">
+    <!--按英文名查询 新闻频道对象-->
+    SELECT nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id  WHERE nc.website_id=#website_id# AND nc.name_zh = #name_zh# 
+  </select>
+   <select id="selectBychannelId" parameterClass="com.ruyicai.web.pojo.NewsChannel" resultMap="NewsChannelMD">
+    <!--按id查询 新闻频道对象-->
+    SELECT nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id  WHERE nc.website_id=#website_id# AND nc.id = #id# 
+  </select>
+  <select id="selectAll" parameterClass="java.lang.Long"  resultMap="NewsChannelMD" >
+    <!--查询所有 新闻频道对象-->
+    SELECT nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id  WHERE nc.website_id=#webSiteID:BIGINT# AND  nc.state=0 ORDER BY nc.sequence DESC,id ASC
+    
+  </select>
+    <select id="selectAllInit" resultMap="NewsChannelMD">
+    <!--查询所有新闻频道-->
+    select nc.id,nc.name_cn,nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    from NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   	ct.channel_id=nc.id where  nc.state=0 order by nc.sequence desc
+  </select>
+  <select id="selectNewsChannelForList" parameterClass="java.lang.Long"  resultMap="NewsChannelMD" >
+    <!--查询所有 新闻频道对象-->
+    SELECT  nc.name_cn,nc.id, nc.name_zh,nc.showflag,nc.sequence,nc.url,nc.website_id,nc.mark,nc.channelType,IFNULL(ct.template_id,0) AS template_id
+    FROM 	NewsChannel AS nc LEFT JOIN channel_template AS ct ON 
+   			ct.channel_id=nc.id 
+   	WHERE 	nc.website_id=#websiteId# AND  nc.state=0
+  </select>
+	<select id="selectName_zhCount" parameterClass="com.ruyicai.web.model.NewsChannelMD" resultClass="java.lang.Integer">
+    <!--查询当前频道的英文名字是否已经存在。-->
+    	SELECT COUNT(id) AS countChannel FROM NewsChannel WHERE name_zh=#name_zh# AND website_id=#website_id# AND state=0;
+  	</select>
+  	<select id="selectName_cnCount" parameterClass="com.ruyicai.web.model.NewsChannelMD" resultClass="java.lang.Integer">
+    <!--查询当前频道的中文名字是否已经存在。-->
+    	SELECT COUNT(id) AS countChannel FROM NewsChannel WHERE id!=#id# and name_cn=#name_cn# AND website_id=#website_id# AND state=0;
+  	</select>
+  <insert id="insert" parameterClass="com.ruyicai.web.model.NewsChannelMD" >
+		INSERT INTO NewsChannel(
+			<dynamic>
+			name_zh
+			<isNotNull prepend="," property="name_cn">name_cn</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence</isNotNull>
+			<isNotNull prepend="," property="showflag">showflag</isNotNull>
+			<isNotNull prepend="," property="url">url</isNotNull>
+			<isNotNull prepend="," property="website_id">website_id</isNotNull>
+			<isNotNull prepend="," property="mark">mark</isNotNull>
+			<isNotNull prepend="," property="channelType">channelType</isNotNull>
+		</dynamic>
+			)
+		VALUES(
+		<dynamic>
+			#name_zh#
+			<isNotNull prepend="," property="name_cn">#name_cn#</isNotNull>
+			<isNotNull prepend="," property="sequence">#sequence#</isNotNull>
+			<isNotNull prepend="," property="showflag">#showflag#</isNotNull>
+			<isNotNull prepend="," property="url">#url#</isNotNull>
+			<isNotNull prepend="," property="website_id">#website_id#</isNotNull>
+			<isNotNull prepend="," property="mark">#mark#</isNotNull>
+			<isNotNull prepend="," property="channelType">#channelType#</isNotNull>
+		</dynamic>
+		)
+		<selectKey resultClass="java.lang.Long">
+			SELECT MAX(id) FROM NewsChannel
+		</selectKey>
+	</insert>
+  <insert id="insertByCopy" parameterClass="com.ruyicai.web.pojo.NewsChannel" >
+		INSERT INTO NewsChannel(
+			<dynamic>
+			name_zh
+			<isNotNull prepend="," property="name_cn">name_cn</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence</isNotNull>
+			<isNotNull prepend="," property="showflag">showflag</isNotNull>
+			<isNotNull prepend="," property="url">url</isNotNull>
+			<isNotNull prepend="," property="website_id">website_id</isNotNull>
+			<isNotNull prepend="," property="mark">mark</isNotNull>
+			<isNotNull prepend="," property="channelType">channelType</isNotNull>
+		</dynamic>
+			)
+		VALUES(
+		<dynamic>
+			#name_zh#
+			<isNotNull prepend="," property="name_cn">#name_cn#</isNotNull>
+			<isNotNull prepend="," property="sequence">#sequence#</isNotNull>
+			<isNotNull prepend="," property="showflag">#showflag#</isNotNull>
+			<isNotNull prepend="," property="url">#url#</isNotNull>
+			<isNotNull prepend="," property="website_id">#website_id#</isNotNull>
+			<isNotNull prepend="," property="mark">#mark#</isNotNull>
+			<isNotNull prepend="," property="channelType">#channelType#</isNotNull>
+		</dynamic>
+		)
+		<selectKey resultClass="java.lang.Long">
+			SELECT MAX(id) FROM NewsChannel
+		</selectKey>
+	</insert>
+  <update id="updateInId" parameterClass="com.ruyicai.web.model.NewsChannelMD">
+		UPDATE NewsChannel SET
+		id=id
+		<dynamic>
+			<isNotNull prepend="," property="name_cn">name_cn=#name_cn#</isNotNull>
+			<isNotNull prepend="," property="name_zh">name_zh=#name_zh#</isNotNull>
+			<isNotNull prepend="," property="showflag">showflag=#showflag#</isNotNull>
+			<isNotNull prepend="," property="sequence">sequence=#sequence#</isNotNull>
+			<isNotNull prepend="," property="mark">mark=#mark#</isNotNull>
+			<isNotNull prepend="," property="channelType">channelType=#channelType#</isNotNull>
+		</dynamic>
+			WHERE id=#id#
+	</update>
+	<update id="deleteInId" parameterClass="java.lang.Long">
+		UPDATE NewsChannel SET state=1	WHERE id=#id#
+	</update>
+</sqlMap>

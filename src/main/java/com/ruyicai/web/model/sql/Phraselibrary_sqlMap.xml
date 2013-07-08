@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="PhraseLibrary">
+	<resultMap class="com.ruyicai.web.pojo.PhraseLibrary" id="phraseLibrary">
+	<!-- 词组库的映射 -->
+	  <result column="id" jdbcType="BIGINT" property="id" />
+	  <result column="phrase" jdbcType="VARCHAR" property="phrase" />
+	  <result column="phraseUrl" jdbcType="VARCHAR" property="phraseUrl" />
+	   <result column="state" jdbcType="INTEGER" property="state" />
+	</resultMap>
+	<resultMap class="com.ruyicai.web.model.PhraseLibraryMD" id="phraseLibraryMD">
+	<!-- 词组库的映射 -->
+	  <result column="id" jdbcType="BIGINT" property="id" />
+	  <result column="phrase" jdbcType="VARCHAR" property="phrase" />
+	  <result column="phraseUrl" jdbcType="VARCHAR" property="phraseUrl" />
+	   <result column="state" jdbcType="INTEGER" property="state" />
+	</resultMap>
+	<!-- 添加词组以及所对应的带链接的词组 -->
+	<insert id="add"  parameterClass="com.ruyicai.web.pojo.PhraseLibrary">
+		INSERT INTO phraselibrary (phrase,phraseUrl,state)
+		VALUES(
+		#phrase#,#phraseUrl#,#state#
+		)
+	</insert>
+	<!-- 修改词组信息 -->
+	<update id="update" parameterClass="com.ruyicai.web.pojo.PhraseLibrary">
+	UPDATE phraselibrary SET id=id 
+		<dynamic>
+			<isNotNull prepend="," property="phrase">phrase=#phrase#</isNotNull>
+			<isNotNull prepend="," property="phraseUrl">phraseUrl=#phraseUrl#</isNotNull>
+			<isNotNull prepend="," property="state">state=#state#</isNotNull>
+		</dynamic>
+		WHERE id=#id#
+	</update>
+	<!-- 查询所有的词组 -->
+	<select id="selectAll" resultMap="phraseLibrary">
+	SELECT * FROM phraselibrary  WHERE state=1
+	</select>
+	<!-- 分页查询 -->
+	<select id="select" resultMap="phraseLibraryMD" parameterClass="java.util.Map">
+	SELECT * FROM phraselibrary WHERE state=#state# limit #nowPage#,#limitCount#
+	</select>
+	<!-- 删除词组 -->
+	<update id="delete" parameterClass="com.ruyicai.web.pojo.PhraseLibrary">
+	UPDATE phraselibrary SET state=2 WHERE id=#id#
+	</update>
+
+</sqlMap>

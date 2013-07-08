@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:13px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap5-16{ width:706px; margin:0 auto; background:url(/rchlw/function/images/activity/2013-05-16.png) no-repeat; height:945px; padding:255px 122px 0;}
+
+.wrap5-16 h2{ margin:0 0 30px;text-align:center; font-size:18px; font-weight:bold; color:#6B4320;}
+.wrap5-16 h3{text-align:center; font-size:16px; font-weight:bold; color:#CB4E22; padding-bottom:20px;}
+.wrap5-16 .text{ text-indent:2em; line-height:27px; padding:0 30px 0 60px;font-weight:bold; color:#6B4320; font-size:13px;}
+.wrap5-16 table,.wrap5-16_2 table{border-collapse:collapse;margin:0 auto;}
+
+.wrap5-16 table tr td,.wrap5-16_2 table tr td{ border:1px solid #46C6A7; border-collapse:collapse; text-align:center; height:30px; font-size:13px; font-weight:bold;color:#752C13;}
+.wrap5-16 .zhushi,.wrap5-16_2 .zhushi{ line-height:25px; padding:15px 35px 20px;font-weight:bold; color:#6B4320; font-size:13px;}
+.wrap5-16 .zhushi a{ font-size:13px; padding:0;}
+.wrap5-16 .zhushi span{color:red}
+.wrap5-16 .tel,.wrap5-16_2 .tel{ text-align:center; padding:20px;color:#752C13; font-weight:bold;}
+.wrap5-16 .lianjie,.wrap5-16_2 .lianjie{ text-align:center; padding-top:10px;}
+
+.wrap5-16 a,.wrap5-16_2 a{ padding:0 15px; text-decoration:none; font-weight:bold; font-size:16px; color:#35660D;}
+.wrap5-16 a:hover,.wrap5-16_2 a:hover{color:#752C13}
+
+
+
+/*11选5*/
+.wrap5-16_2{ width:690px; margin:0 auto; background:url(/rchlw/function/images/activity/2013-05-16_2.png) no-repeat; height:550px; padding:250px 130px 0;}
+.wrap5-16_2 h3{text-align:center; font-size:16px; font-weight:bold; color:#CB4E22; padding-bottom:30px; }
+
+.wrap5-16_2 .text{ text-indent:2em; line-height:27px; padding:0 30px 0 60px;font-weight:bold; color:#6B4320; font-size:13px;}
+.wrap5-16_2 .text span{ color:red;}
+.wrap5-16_2 a{ color:#0698D3}
+
+
+
+
+

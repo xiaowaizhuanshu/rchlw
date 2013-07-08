@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"宋体",Arial, Helvetica, sans-serif;}
+.wrap2-1{ width:950px; height:2300px; margin:0 auto; background:url(/rchlw/function/images/activity/yuanxiao-bg.png) no-repeat;}
+.wrap2-1-top{ padding:208px 165px 0 98px;}
+.wrap2-1-top p{ font-size:14px; color:#f9f0d8; font-weight:bold}
+.wrap2-1-top p.pro{ padding-top:30px; text-indent:2em; line-height:27px;}
+.wrap2-1 h1{ color:#998042; font-size:16px; font-weight:bold; padding-bottom:10px;}
+.wrap2-1 h3{ color:#998042; font-size:14px; font-weight:bold; padding-bottom:10px}
+.wrap2-1 h3 span{ color:#8e0593;}
+.wrap2-1-one{ padding:90px 290px 0 118px; }
+.wrap2-1 .cur-pro{color:#998042; font-size:14px; line-height:22px; text-indent:2em;}
+.wrap2-1 .cur-pro span{ color:#ea448c; font-weight:bold;}
+.wrap2-1 .cur-pro a{ text-decoration:none;color:#1175e5;}
+.wrap2-1 .cur-pro a:hover{color:#8e0593; text-decoration:underline}
+.wrap2-1 .cur-pro strong{ font-weight:bold; color:#EA448C}
+.wrap2-1 .lianjie a{ display:inline-block; padding-top:11px; padding-right:30px; color:#1175e5; text-decoration:none; font-size:14px;}
+.wrap2-1 .lianjie a:hover{color:#8e0593; text-decoration:underline}
+.wrap2-1-one .lianjie{ padding-left:95px;}
+.wrap2-1-two .lianjie{ padding-left:40px;}
+.wrap2-1-three .lianjie{ padding-left:115px;}
+.wrap2-1-four .lianjie{ padding-left:250px;}
+
+.wrap2-1 .zhushi{ text-indent:2em; color:#993333; line-height:23px;}
+.wrap2-1-two{ padding:25px 112px 0 272px;}
+.wrap2-1-three{ padding:114px 200px 0 125px;}
+
+.wrap2-1 .table-one{margin-left:30px; border-collapse:collapse}
+.wrap2-1 .table-one tr td{ border:1px solid #998042; border-collapse:collapse; text-align:center; height:19px;}
+
+.wrap2-1-four{ padding:35px 114px 0 193px;}
+.wrap2-1-five{ padding:132px 204px 0 127px;}
+
+
+
+
+
+
+
+

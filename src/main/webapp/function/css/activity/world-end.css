@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0; list-style:none; border:0; color:#fff;}
+.world-endwrap{ width:815px; height:545px; margin:0 auto; background:url(/rchlw/function/images/world-end.png) no-repeat; padding:355px 80px 0 55px}
+.world-pro{ font-size:14px; line-height:30px; text-indent:2em ;color: white;}
+.world-twopro{ padding:10px 0 47px 25px; line-height:32px}
+.world-twopro span.one{ padding-right:130px}
+.world-twopro span.two{ padding-right:180px}
+.world-twopro span.yellow{ color:#F0F004}

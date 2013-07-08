@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.clearfix{*zoom:1;}
+.clearfix:after{content:'\0020';display:block;height:0;font-size:0;visibility:hidden;clear:both;}
+.sichuan{width:950px; margin:0 auto; height:3200px;}
+.sichuan .top{ height:333px; background:url(/rchlw/function/images/activity/top-bgsichuan.jpg) no-repeat; }
+.sichuan .left{ height:2630px; width:82px; float:left; background:url(/rchlw/function/images/activity/si-left.jpg) no-repeat;}
+.sichuan .right{ height:2630px; width:82px; float:left; background:url(/rchlw/function/images/activity/si-right.jpg) no-repeat;}
+.sichuan .center{ background:url(/rchlw/function/images/activity/si-center.jpg) repeat-y; float:left; color:#000; width:756px; height:2630px; padding:0 15px; overflow:hidden}
+.sichuan .center h4{ height:30px; line-height:30px; font-size:16px; padding-bottom:10px;font-weight:bold;}
+.sichuan .center p{ text-indent:2em; padding-bottom:16px; line-height:20px;}
+.sichuan .center p span{ font-weight:bold; background:url(/rchlw/function/images/activity/news-bg.jpg) no-repeat left center; padding-left:12px;}
+.sichuan .center h2{ background:url(/rchlw/function/images/activity/yel-ball.jpg) no-repeat left center; color:#0C67DA; font-weight:bold; font-size:14px; padding-left:26px; height:43px; line-height:43px;}
+.sichuan .bot{ height:237px; background:url(/rchlw/function/images/activity/bot_bgsichuan.jpg) no-repeat; width:950px;}
+.dise-wenzi{ background:#fff; padding:10px; margin-bottom:15px;}
+.dise-wenzi p{ background:#d0ecfc; padding:10px}

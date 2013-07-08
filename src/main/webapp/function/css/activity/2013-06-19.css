@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+html,body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,iframe,form,cite,input,textarea,em,i,ins{margin:0;padding:0;font-style:normal;font-size:12px}
+ul,ol,dl,dt,dd{list-style:none}
+img{border:none;vertical-align:middle}
+body{font-size:12px; color:#333;font-family:"微软雅黑","宋体",Arial, Helvetica, sans-serif;}
+.wrap6-19{ width:950px; height:1300px; margin:0 auto; background:url(/rchlw/function/images/activity/2013-06-19.jpg) no-repeat; }
+.wrap6-19 .one-wrap{padding:220px 170px 0 200px;}
+.wrap6-19 h1{ text-align:center;font-size:20px; font-weight:bold; padding-bottom:20px; color:#000080}
+.wrap6-19 h2{ font-size:18px; font-weight:bold; padding-bottom:15px; color:#CF0E07}
+.wrap6-19 h3{ font-size:14px; font-weight:bold; padding-bottom:10px; line-height:30px; color:#0F6FBD; padding-left:28px;}
+.wrap6-19 p{ line-height:22px; font-weight:bold; text-indent:2em; font-size:14px;}
+.wrap6-19 p a{color:#000080; text-decoration:none;}
+.wrap6-19 table{border-collapse:collapse; margin:10px 0;}
+.wrap6-19 table tr td{ border:1px solid #998042; border-collapse:collapse; text-align:center; height:22px; font-size:12px; font-weight:bold;color:#31451d;}
+.wrap6-19 table tr td span{ color:#de0201;}
+.wrap6-19 .lianjie{ padding:10px 0 30px 77px;}
+.wrap6-19 .lianjie a{ display:inline-block; padding-top:7px; padding-right:30px; color:#000080; text-decoration:none; font-size:14px;}
+.wrap6-19 .lianjie a:hover,.wrap6-19 p a:hover{ text-decoration:underline;}

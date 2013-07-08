@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+            http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-2.5.xsd
+            http://www.springframework.org/schema/aop
+            http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+            http://www.springframework.org/schema/tx
+            http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+  <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="locations">
+      <list>
+        <value>classpath:jdbc.properties</value>
+      </list>
+    </property>
+  </bean>
+
+   <bean id="dataSource"
+    class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource" ref="proxoolDataSource" />
+   </bean>
+   <!-- proxoolDataSource配置 -->
+    <bean id="proxoolDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+   <property name="driverClass" value="${jdbc.driverClass}" />
+   <property name="jdbcUrl" value="${jdbc.jdbcUrl}" />
+   <property name="user" value="${jdbc.user}" />
+   <property name="password" value="${jdbc.password}" />
+   <property name="minPoolSize" value="${jdbc.miniPoolSize}" />
+   <property name="maxPoolSize" value="${jdbc.maxPoolSize}"/>  
+   <property name="initialPoolSize" value="${jdbc.initialPoolSize}"/>
+   <property name="maxIdleTime" value="${jdbc.maxIdleTime}"/>
+   <property name="acquireIncrement" value="${jdbc.acquireIncrement}"/>
+  
+   <property name="acquireRetryAttempts" value="${jdbc.acquireRetryAttempts}"/>
+   <property name="acquireRetryDelay" value="${jdbc.acquireRetryDelay}"/>
+   <property name="testConnectionOnCheckin" value="${jdbc.testConnectionOnCheckin}"/>
+   <property name="idleConnectionTestPeriod" value="${jdbc.idleConnectionTestPeriod}"/>
+   <property name="checkoutTimeout" value="${jdbc.checkoutTimeout}"/>
+
+</bean>
+	<bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean">
+    <property name="configLocation">
+  		 <value>classpath:sql-map-config.xml</value>
+    </property>
+    <property name="dataSource">
+      <ref local="proxoolDataSource"/>
+    </property>
+    </bean>
+
+  <bean id="sqlMapClientTemplate" class="org.springframework.orm.ibatis.SqlMapClientTemplate">
+    <property name="sqlMapClient">
+      <ref local="sqlMapClient"/>
+    </property>
+  </bean>
+
+  <!--=====================================事务管理=====================================-->
+  <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+    <property name="dataSource">
+      <ref bean="proxoolDataSource"/>
+    </property>
+  </bean>
+
+  <bean id="transactionInterceptor" class="org.springframework.transaction.interceptor.TransactionInterceptor">
+    <property name="transactionManager" ref="transactionManager"/>
+    <property name="transactionAttributes">
+      <props>
+        <prop key="add*">PROPAGATION_REQUIRED</prop>
+        <prop key="sub*">PROPAGATION_REQUIRED</prop>
+        <prop key="zhuan*">PROPAGATION_REQUIRED,-Exception</prop>
+        <prop key="delete*">PROPAGATION_REQUIRED</prop>
+        <prop key="insert*">PROPAGATION_REQUIRED</prop>
+        <prop key="update*">PROPAGATION_REQUIRED</prop>
+        <prop key="transfer*">PROPAGATION_REQUIRED</prop>
+        <prop key="import*">PROPAGATION_REQUIRED</prop>
+        <prop key="increase*">PROPAGATION_REQUIRED</prop>
+        <prop key="synchron*">PROPAGATION_REQUIRED</prop>
+      </props>
+    </property>
+  </bean>
+
+  <bean id="autoProxyCreator" class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+    <property name="interceptorNames">
+      <list>
+        <value>transactionInterceptor</value>
+      </list>
+    </property>
+    <property name="beanNames">
+      <value>*Service</value>
+    </property>
+  </bean>
+
+  <bean class="org.springframework.transaction.interceptor.TransactionAttributeSourceAdvisor">
+    <property name="transactionInterceptor">
+      <ref bean="transactionInterceptor"/>
+    </property>
+  </bean>
+
+</beans>
