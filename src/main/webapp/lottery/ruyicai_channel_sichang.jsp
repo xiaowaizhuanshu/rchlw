@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <title>如意彩4场进球投注、开奖公告、赛事前瞻、预测汇总</title>

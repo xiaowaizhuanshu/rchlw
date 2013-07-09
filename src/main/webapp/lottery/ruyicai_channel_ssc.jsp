@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
- <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <title>如意彩时时彩投注、最新开奖、当前部分玩法的遗漏、最新中奖</title>
 <meta http-equiv="keywords" content="时时彩投注，最新开奖，当前部分玩法的遗漏，最新中奖"/>
