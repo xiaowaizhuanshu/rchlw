@@ -698,7 +698,7 @@ function passStrength(){
 			dataType: 'text',
 			success:function(data){
 				openAlert(decodeURI(EncodeUtf8(data)));
-				getUserScore("scores");
+				//getUserScore("scores");
 				$("#"+divid).val("");
 			}
 			});

@@ -225,44 +225,50 @@
 			</activation>
 			<properties>
 			    <deploy.host>127.0.0.1</deploy.host>
+			    <!-- 数据源配置信息 -->
 				<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
-				<mysql.url>jdbc:mysql://192.168.0.182:3306/webCMS?characterEncoding=utf-8</mysql.url>
-				<mysql.username>root1</mysql.username>
-				<mysql.password>testroot</mysql.password>
+				<mysql.url>jdbc:mysql://localhost:3306/webCMS?characterEncoding=utf-8</mysql.url>
+				<mysql.username>root</mysql.username>
+				<mysql.password>root</mysql.password>
+				<!-- 绑定手机号成功赠送彩金金额 分 -->
 				<presentationMoney>300</presentationMoney>
-				<memCacheServerUrl>192.168.0.92:12000</memCacheServerUrl>
+				<!-- memcache 服务器地址 -->
+				<memCacheServerUrl>192.168.15.15:12000</memCacheServerUrl>
+				<!-- 新接口的链接地址 -->
+				<linkURL>http://192.168.15.15:8888/lottery</linkURL>
+				<!-- 代理用户 -->				
+				<agencyUrl>http://192.168.15.15:9988/agencycenter</agencyUrl>
+				<!-- 短信设置地址 -->
+				<linkSMGUrl>http://192.168.15.15:7777/msgcenter/</linkSMGUrl>
+				<!-- 留言接口地址 -->
+				<linkMessage>http://192.168.15.15:7777/msgcenter/msg</linkMessage>
+				<!-- 中奖排行接口地址 -->
+				<linkRank>http://192.168.15.15:7777/ranking</linkRank>
+				<!-- 新遗漏值链接地址（测试地址） -->
+				<OmitURL>http://192.168.15.15:7777/prizeData</OmitURL>
+				<!-- 足彩数据的连接地址 -->
+				<datacenterURL>http://192.168.15.15:8888/datacenter/</datacenterURL>
+				<!-- 双色球全年追号套餐（测试地址） -->
+				<actioncenterURL>http://192.168.15.15:9999/actioncenter</actioncenterURL>
+				
 				<!-- 后台链接的地址 -->
 				<baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl>
-				<!-- 新接口的链接地址 -->
-				<linkURL>http://192.168.0.42:8080/lottery</linkURL>
-				<agencyUrl>http://192.168.0.118:8000/agencycenter</agencyUrl>
-				<!-- 短信设置地址 -->
-				<linkSMGUrl>http://192.168.0.118:8000/msgcenter/</linkSMGUrl>
 				<!-- 赠彩接口地址 -->
 				<linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl>
 				<!-- 积分地址 -->
 				<linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl>
-				<!-- 留言接口地址 -->
-				<linkMessage>http://192.168.0.118:8000/msgcenter/msg</linkMessage>
-				<!-- 中奖排行接口地址 -->
-				<linkRank>http://192.168.0.118:8000/ranking</linkRank>
-				<!-- 新遗漏值链接地址（测试地址） -->
-				<OmitURL>http://192.168.0.42:80/prizeData</OmitURL>
 				<!-- 新投注比例链接地址（测试地址） -->
 				<analyzeURL>http://192.168.0.42/analyze</analyzeURL>
-				<!-- 足彩数据的连接地址 -->
-				<datacenterURL>http://192.168.0.42:80/datacenter/</datacenterURL>
-				<!-- 双色球全年追号套餐（测试地址） -->
-				<actioncenterURL>http://192.168.0.118:8000/actioncenter</actioncenterURL>
+				
 				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
 				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
 				<lotnos>F47104,F47107,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
 				<!-- 身份证初始号码 -->
 				<cardId>111111111111111111</cardId>
 				<!-- 返回页面 -->
-				<login>http://users.ruyicai.com/login.jsp</login>
+				<login>http://test.com/login.jsp</login>
 				<!-- 找回密码链接 -->
-				<ryc_findpwd><![CDATA[http\://test.ruyicai.com:8080/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
+				<ryc_findpwd><![CDATA[http\://test.com:8080/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
 				<!-- ########合买(hemai)############## -->
 				<!-- 合买结束标记 -->
 				<hemai_end>00|</hemai_end>
@@ -274,14 +280,14 @@
 				<!-- 如意彩手机绑定发送短信内容 -->
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
 				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
-				<rycemailUrl><![CDATA[http://test.ruyicai.com:8080/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
+				<rycemailUrl><![CDATA[http://test.com/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
 				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
-				<rycemailRegisterUrl><![CDATA[http://test.ruyicai.com:8080/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
+				<rycemailRegisterUrl><![CDATA[http://test.com/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
-				<retUrlCharge>test.ruyicai.com:8080/rchlw/-http://test.ruyicai.com:8080/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
+				<retUrlCharge>test.com/rchlw/-http://test.com/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
 				<!-- chanelID -->
-				<agencyno>test.ruyicai.com:8080/rchlw/-B00001</agencyno>
-				<channel>test.ruyicai.com:8080/rchlw/-2</channel>
+				<agencyno>test.com/rchlw/-B00001</agencyno>
+				<channel>test.com/rchlw/-2</channel>
 				<!-- ####支付宝快捷登录所需内容############ -->
 				<!-- partner -->
 				<alipay_id>2088301685770478</alipay_id>
@@ -290,7 +296,7 @@
 				<!-- 请求支付的地址 -->
 				<alipay_url>https://mapi.alipay.com/gateway.do?</alipay_url>
 				<!-- 支付宝登录返回页面 -->
-				<alipayLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!alipayUnitedLogin</alipayLoginUrl>
+				<alipayLoginUrl>www.boyacai.com-http://test.com/rchlw/function/unitedLogin!alipayUnitedLogin</alipayLoginUrl>
 				<!-- 支付宝的大客户号 -->
 				<alipay_channel>638</alipay_channel>
 				<alipay_type>000001</alipay_type>
@@ -303,14 +309,14 @@
 				<uploadSign>#</uploadSign>
 				<uploadCodes>flag</uploadCodes>
 				<!-- 图片上传的地址 -->
-				<picture_upload>E\://ruyicai//imageupload//</picture_upload>
+				<picture_upload>E\://boyacai//imageupload//</picture_upload>
 				<!-- 文件传输地址 -->
-				<file_upload>E\://ruyicai//</file_upload>
+				<file_upload>E\://boyacai//</file_upload>
 				<!-- 民生银行充值地址 -->
-				<msbankUrl>http://192.168.0.118:8090/ChargeCenter</msbankUrl>
+				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
 				<!-- ########QQ登录配置############# -->
-				<qq_app_id>www.ruyicai.com-100224583,jcbao.ruyicai.com-100231303</qq_app_id>
-				<qq_app_key>www.ruyicai.com-ce6616a8b117a588075f78e0550145f5,jcbao.ruyicai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
+				<qq_app_id>www.boyacai.com-100224583,jcbao.boyacai.com-100231303</qq_app_id>
+				<qq_app_key>www.boyacai.com-ce6616a8b117a588075f78e0550145f5,jcbao.boyacai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
 				<qq_channel>645</qq_channel>
 				<qq_type>000003</qq_type>
 				<!-- 获取Authorization Code 的地址 -->
@@ -322,9 +328,12 @@
 				<!-- 调用get_user_info接口 -->
 				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
 				<!-- QQ 登录返回地址 -->
-				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
+				<qqLoginUrl>www.boyacai.com-http://test.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.boyacai.com-http://test.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
 				<!-- 如意彩用户登录获取地址 -->
-				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
+				<usersCenterUrl>http://test.com/</usersCenterUrl>
+				
+				<!-- 应用地址 -->
+				<appAddress>http://test.com</appAddress>
 			</properties>
 		</profile>
 		<profile>

@@ -205,7 +205,7 @@ div.My_account h2 {
 		</form>
 	</div>
 	<script>
-		getUserScore("scores");
+		//getUserScore("scores");
 	</script>
 	<div class="user_Drawing none">
 		<p class="userDrawing_p">

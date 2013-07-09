@@ -4,6 +4,7 @@
 <%
 	JSONObject user = JSONReslutUtil.getUserInfo(request);
 %>
+<script type="text/javascript" src="/rchlw/function/js/byc.properties.js"></script>
 <script type="text/javascript">
 	//增加获取当前地址并登录成功后跳转到这个地址
 	$(function() {
@@ -15,13 +16,12 @@
 	function loginRequrl() {
 		if ($(".ButtonChannelBuy").hasClass("selected")) {
 			loginShow();
-			var str = "<form action='http://users.ruyicai.com/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
+			var str = "<form action='"+byc.address.users+"/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
 			$("body").append(str);
 			$("#topjump").submit();
 			$("body").remove(str);
 		} else {
-			window.location.href = "http://users.ruyicai.com/login.jsp?reqUrl="
-					+ $("#reqUrl").val();
+			window.location.href = byc.address.users+"/login.jsp?reqUrl=" + $("#reqUrl").val();
 		}
 	}
 </script>
