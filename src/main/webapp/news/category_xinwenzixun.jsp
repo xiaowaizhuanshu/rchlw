@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
- <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>  
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="tangs" uri="/WEB-INF/byc.tld"%>  
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <meta name="keywords" content="彩票预测,中国足彩网,中国竞彩网,中国竞猜网,彩民新闻" />
 <title>彩票资讯 – 如意彩 – 彩票资讯|购彩资讯|彩民新闻|专家推荐|媒体预测</title>
@@ -16,10 +17,10 @@
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/luck/luck_stake_main.js"></script>
 </head>
 <body>
-   <div id="body">
-  <script>$(function(){toplogo('common',"ButtonHotInfo");});</script>
- <span id="common"></span>
-   <div id="main">
+<div id="body">
+	<script>$(function(){toplogo('common',"ButtonHotInfo");});</script>
+ 	<span id="common"></span>
+   	<div id="main">
    	<div class="zixun_left">
 		<!--  ImageSlide  start  -->
 		<style>
@@ -36,72 +37,77 @@
 				<a href="javaScript:;" class="5 b5"><span class="HomePageBGBox s5">&nbsp;</span></a> 
 			</div>
 			<ul>
-			<tangs:ryc_newslist web_id="2" value="3" istopNews="1"  categoryCn="资讯轮换" num="5" >
+				<%-- <tangs:ryc_newslist web_id="2" value="3" istopNews="1"  categoryCn="资讯轮换" num="5" >
 		    	<li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&categoryId=${categoryCode}&title=${title}"><img src="${picName}"></a></li>
-				</tangs:ryc_newslist>
+				</tangs:ryc_newslist> --%>
 			</ul>
 		</div>
 		<!--  ImageSlide  end  -->	
 		<div class="zixun_hotnews">
 		<h4>热点新闻</h4>
-		<tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="2" status="s1" num="1" value="3">
-		<div class="zixun_t"><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
-		newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-		&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" 
-		title="${title}"  target="_blank"  >${title}</a></div>
-		</tangs:ryc_newslist>
+			<%-- <tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="2" status="s1" num="1" value="3">
+			<div class="zixun_t"><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
+			newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+			&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" 
+			title="${title}"  target="_blank"  >${title}</a></div>
+			</tangs:ryc_newslist> --%>
 		<div class="zixun_list1">
-			<ul><tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="2" status="s1" num="5" value="3" begin="1" end="4">
+			<ul>
+				<%-- <tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="2" status="s1" num="5" value="3" begin="1" end="4">
 				<li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
 				&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
 				&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				</tangs:ryc_newslist> --%>
 			</ul>
 		</div>
 		</div>
 		<div class="zixun_gonggong">
-			<div class="zixun_ggtop"><span class="zixun_zi">双色球</span>
-			<span class="zixun_kuozhan">
-			<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=165&channel_name_cn=ssq" title="推荐">推荐</a>
-			&nbsp;&nbsp;|&nbsp;&nbsp;
-			 <a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=166&channel_name_cn=ssq" title="技巧">技巧</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=167&channel_name_cn=ssq" title="新闻">新闻</a></span></div>
+			<div class="zixun_ggtop">
+				<span class="zixun_zi">双色球</span>
+				<span class="zixun_kuozhan">
+					<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=165&channel_name_cn=ssq" title="推荐">推荐</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=166&channel_name_cn=ssq" title="技巧">技巧</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+					<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=167&channel_name_cn=ssq" title="新闻">新闻</a>
+				</span>
+			</div>
 			<div class="zixun_list2">
 			<ul>
-			<tangs:ryc_newslist categoryCn="福彩资讯" channelCn="双色球" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span>
-				<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}
-				&callUrl=&channelId=${channelId}&categoryId=${categoryCode}&title=${title}&channelCn=${channelCn}&categoryNameCn=${categoryCn }"	title="${title}" target="_blank" >[${title_as}]  ${title}</a>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="F47104" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
 				</li>
-				</tangs:ryc_newslist>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
 		<div class="zixun_gonggong1">
 			<div class="zixun_ggtop"><span class="zixun_zi">足彩</span><span class="zixun_kuozhan">
-			<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=193&channel_name_cn=zucai" title="更多">更多&gt;&gt;</a></span></div>
+			<a href="${ctx}/news/news!list.action?ncc=zucai&nt=4" title="更多">更多&gt;&gt;</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="足彩" web_id="2" 
-				value="16" num="6">
-				<li><span class="index_landian"></span>
-				<a href="<%=request.getContextPath() %>/news/ruyicai_news_zucai.jsp?
-				newsId=${id}&website_Properties_id=${websiteId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-				&channelId=${channelId}&categoryId=${categoryCode}&title=${title}&callUrl=" title="${title}"  target="_blank">[${title_as}]  ${title}</a></a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="F47104" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 		  </div>
 		</div>
 		<div class="zixun_gonggong">
 			<div class="zixun_ggtop"><span class="zixun_zi">大乐透</span><span class="zixun_kuozhan">
-			<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=162&channel_name_cn=daletou" title="推荐">推荐</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-			   <a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=163&channel_name_cn=daletou" title="技巧">技巧</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-			   <a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=161&channel_name_cn=daletou" title="新闻">新闻</a></span></div>
+				<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=162&channel_name_cn=daletou" title="推荐">推荐</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			   	<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=163&channel_name_cn=daletou" title="技巧">技巧</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			   	<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=161&channel_name_cn=daletou" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="体彩资讯" channelCn="大乐透" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-				&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="T01001" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
@@ -110,13 +116,13 @@
 			<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=188&channel_name_cn=jiaodiansaishi" title="推荐">更多&gt;&gt;</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="焦点赛事" web_id="2" value="3" num="6">
+				<%-- <tangs:ryc_newslist categoryCn="焦点赛事" web_id="2" value="3" num="6">
 				<li><span class="index_landian"></span>
 				<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
 				newsId=${id}&website_Properties_id=${websiteId}&
 				callUrl=&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&
 				categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank" >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				</tangs:ryc_newslist> --%>
 			</ul>
 			</div>
 		</div>
@@ -127,9 +133,12 @@
 			  <a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=167&channel_name_cn=3D" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="福彩资讯" channelCn="福彩3D" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="F47103" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
@@ -140,9 +149,12 @@
 			    &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=161&channel_name_cn=pailie3" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="体彩资讯" channelCn="排列3" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath()%>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&categoryId=${categoryCode}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="T01002" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
@@ -153,9 +165,12 @@
 			   &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=161&channel_name_cn=qixingcai" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="体彩资讯" channelCn="七星彩" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&callUrl=${callUrl}&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="T01009" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div><div class="zixun_gonggong1">
@@ -164,9 +179,12 @@
 			  &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=167&channel_name_cn=qilecai" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="福彩资讯" channelCn="七乐彩" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="F47102" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
@@ -175,9 +193,12 @@
 			 &nbsp;&nbsp;|&nbsp;&nbsp;<a href="<%=request.getContextPath()%>/news/newsInfoList!queryNewsInfoList?categoryCode=161&channel_name_cn=pailie5" title="新闻">新闻</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-				<tangs:ryc_newslist categoryCn="体彩资讯" channelCn="排列5" web_id="2" value="16" num="6">
-				<li><span class="index_landian"></span><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank"    >[${title_as}]  ${title}</a></li>
-				</tangs:ryc_newslist>
+				<tangs:newsList newsType="4" pageNo="1" pageSize="5" lotNo="T01011" var="n">
+				<li>
+					<span class="index_landian"></span>
+					<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+				</li>
+				</tangs:newsList>
 			</ul>
 			</div>
 		</div>
@@ -200,9 +221,9 @@
 		<div class="zixun_noticetop"><span class="webgg_title">网站公告</span></div>
 	    <div class="zixun_noticecon">
 			<ul>
-			  <tangs:ryc_newslist categoryCn="网站公告" web_id="2" num="5" value="3">
+			  <%-- <tangs:ryc_newslist categoryCn="网站公告" web_id="2" num="5" value="3">
                   <li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }&categoryId=${categoryCode}&title=${title}" title="${title}" target="_blank" >  ${title}</a></li>
-                 </tangs:ryc_newslist>
+                 </tangs:ryc_newslist> --%>
 			</ul>
 		</div></div>
 		<jsp:include page="/function/rules/index_xingyunxuanhao.jsp" ></jsp:include>

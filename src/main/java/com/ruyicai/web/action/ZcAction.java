@@ -15,9 +15,10 @@ import java.util.ResourceBundle;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
-import com.jrt.invokeLot.util.IHttp;
+import com.jrt.invokeLot.util.JSONReslutUtil;
 import com.jrt.invokeLot.util.LotErrorCode;
 import com.ruyicai.util.BaseAction;
 import com.ruyicai.util.ResourceBundleUtil;
@@ -25,7 +26,7 @@ import com.ruyicai.util.ResourceBundleUtil;
 public class ZcAction extends BaseAction {
 	private static final Logger logger = Logger.getLogger(ZcAction.class);
 	private static ResourceBundle rb = ResourceBundle.getBundle("ruyicai");
-	private static String baseUrl = rb.getString("baseUrl");
+	private static String baseUrl = rb.getString("datacenterURL");
 	private static String lottery = rb.getString("linkURL");
 	/**
 	 * 发送http请求的方法
@@ -40,13 +41,14 @@ public class ZcAction extends BaseAction {
 	 *            sessionId
 	 * @return 请求得到的结果
 	 */
-	private static JSONObject sendToJrtLot(String action,
-			String method, JSONObject reqJson, String jsessionid) {
+	private static JSONObject sendToJrtLot(String lotNo, String batchCode) {
 		try {
-			String re = new IHttp().getViaHttpConnection(baseUrl + action + ";jsessionid="
-					+ jsessionid + "?method=" + method + "&jsonString=" + URLEncoder.encode(reqJson.toString(),"UTF-8"));
-			logger.info(baseUrl + action + ";jsessionid="
-					+ jsessionid + "?method=" + method + "&jsonString=" + URLEncoder.encode(reqJson.toString(),"UTF-8")+"足彩请求对阵re:~~" + re + "^^");
+			StringBuffer params = new StringBuffer();
+			params.append("lotno=").append(URLEncoder.encode(lotNo, "UTF-8")); //彩种编号
+			params.append("&batchcode=").append(URLEncoder.encode(batchCode, "UTF-8")); //期号
+			
+			String re = JSONReslutUtil.getResultMessage(baseUrl+"selectZc/getDuiZhen?", params.toString(), "POST");
+			logger.info(baseUrl+"/selectZc/getDuiZhen?"+params.toString()+"足彩请求对阵re:~~" + re + "^^");
 			if (re == null) {
 				return null;
 			}
@@ -265,8 +267,8 @@ public class ZcAction extends BaseAction {
 			JSONObject score1Json = sendToLottery(ResourceBundleUtil.ANALYZEURL+"/select/betpartition?lotno="+lotno+"&batchcode="+batchCode, null);
 			JSONObject	scoreJson = JSONObject.fromObject(score1Json.getString("value"));
 			//发送请求，获取对阵数据
-			JSONObject respJson = sendToJrtLot("zcAction.do", "getFlData", reqJson, "");
-			if(LotErrorCode.NEW_OK.equals(score1Json.getString("errorCode")) && respJson != null && LotErrorCode.OK.equals(respJson.getString("error_code"))) {
+			JSONObject respJson = sendToJrtLot(lotno, batchCode);
+			if(respJson != null && LotErrorCode.NEW_OK.equals(score1Json.getString("errorCode"))) {
 				JSONArray list = (JSONArray) respJson.get("value");
 				JSONArray scorelist = (JSONArray) scoreJson.getJSONArray("list");
 				//拆分对阵、比例数据
@@ -316,7 +318,7 @@ public class ZcAction extends BaseAction {
 			//发送请求获取比例的数据
 			JSONObject score1Json = sendToLottery(ResourceBundleUtil.ANALYZEURL+"/select/betpartition?lotno="+lotno+"&batchcode="+batchCode, null);
 			//发送请求，得到返回结果
-			JSONObject respJson = sendToJrtLot("zcAction.do", "getFlData", reqJson, "");
+			JSONObject respJson = sendToJrtLot(lotno, batchCode);
 			
 			if(LotErrorCode.NEW_OK.equals(score1Json.getString("errorCode")) && respJson != null && LotErrorCode.OK.equals(respJson.getString("error_code"))) {
 				JSONObject scoreJson = JSONObject.fromObject(score1Json.getString("value"));
@@ -401,7 +403,7 @@ public class ZcAction extends BaseAction {
 			JSONObject reqJson = new JSONObject();
 			reqJson.put("lotno", lotno);
 			reqJson.put("batchCode", batchCode);
-			JSONObject respJson = sendToJrtLot("zcAction.do", "getFlData", reqJson, "");
+			JSONObject respJson = sendToJrtLot(lotno, batchCode);
 			//发送请求获取比例的数据
 			JSONObject score1Json = sendToLottery(ResourceBundleUtil.ANALYZEURL+"/select/betpartition?lotno="+lotno+"&batchcode="+batchCode, null);
 			JSONObject scoreJson = JSONObject.fromObject(score1Json.getString("value"));
@@ -464,10 +466,10 @@ public class ZcAction extends BaseAction {
 			for(int i = 0;i < list.size();i++) {
 				JSONObject js = (JSONObject) list.get(i);
 				//截取时间
-				if(js.getString("date")!=null&&!"".equals(js.getString("date"))) {
-					date = js.getString("date").substring(5);
-					js.remove("date");
-					js.put("date", date);
+				if(js.getString("matchTime")!=null&&!"".equals(js.getString("matchTime"))) {
+					date = js.getString("matchTime").substring(5);
+					js.remove("matchTime");
+					js.put("matchTime", date);
 				}
 				//添加开奖号码
 				if(wincode!=null) {
@@ -483,29 +485,13 @@ public class ZcAction extends BaseAction {
 				}
 				//添加排名和胜平负
 				if(!"T01005".equals(lotno)) {
-					leagueRank = js.getString("leagueRank");
-					if(leagueRank != null && !"".equals(leagueRank.trim())) {
-						league = leagueRank.split("\\|");
-						league[0] = league[0] + " ";
-						league[1] = league[1] + " ";
-						js.put("HRank", league[0].substring(2, league[0].length()).trim());
-						js.put("TRank", league[1].substring(2, league[1].length()).trim());
-					}else{
-						js.put("HRank", "");
-						js.put("TRank", "");
-					}
+					// TODO：不知道是什么及用途
+					js.put("HRank", "");
+					js.put("TRank", "");
 					
-					avgOdds = js.getString("avgOdds");
-					if(!avgOdds.equals("||") && avgOdds != null && !"".equals(avgOdds.trim())) {
-						avgOdd = avgOdds.split("\\|");
-						js.put("S", avgOdd[0].substring(1));
-						js.put("P", avgOdd[1].substring(1));
-						js.put("F", avgOdd[2].substring(1));
-					}else {
-						js.put("S", "");
-						js.put("P", "");
-						js.put("F", "");
-					}
+					js.put("S", StringUtils.isNotBlank(js.getString("homeWinAverageOuPei")) ? js.getString("homeWinAverageOuPei") : "");
+					js.put("P", StringUtils.isNotBlank(js.getString("standoffAverageOuPei")) ? js.getString("standoffAverageOuPei") : "");
+					js.put("F", StringUtils.isNotBlank(js.getString("guestWinAverageOuPei")) ? js.getString("guestWinAverageOuPei") : "");
 				}	
 				listFlDate.add(js);
 			}

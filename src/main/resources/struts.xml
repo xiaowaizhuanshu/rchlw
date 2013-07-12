@@ -5,4 +5,5 @@
 
 <struts>
  	<include file="com/ruyicai/web/action/struts-web.xml"></include>
+ 	<include file="com/boyacai/news/action/struts-news.xml"></include>
 </struts>

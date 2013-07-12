@@ -114,7 +114,6 @@
 			<rtexprvalue>false</rtexprvalue>
 			<description>查询的新闻是否是头条</description>
 		</attribute>
-
 		<attribute>
 			<name>newsId</name>
 			<required>false</required>

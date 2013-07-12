@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>byc</short-name>
+	<uri>/byc</uri>
+	<display-name>"the TagLib by www.boyacai.com"</display-name>
+	<!-- 新闻 -->
+	<tag>
+		<name>news</name>
+		<tag-class>com.boyacai.news.tag.NewsTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<attribute>
+			<name>newsId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>新闻ID</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+	<!-- 新闻列表 -->
+	<tag>
+		<name>newsList</name>
+		<tag-class>com.boyacai.news.tag.NewsListTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<attribute>
+			<name>newsType</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>类别[0：TOP新闻|1：新闻标题｜2：新闻内容｜3：活动标题｜4：活动内容|5：帮助中心标题|6：帮助中心内容]
+			</description>
+		</attribute>
+		<attribute>
+			<name>lotNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>彩种</description>
+		</attribute>
+		<attribute>
+			<name>pageNo</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>页码</description>
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>每页记录数</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+</taglib>  

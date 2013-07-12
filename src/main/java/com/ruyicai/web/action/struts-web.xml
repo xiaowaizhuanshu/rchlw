@@ -3,7 +3,7 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
  <struts>  
- <package name="news" namespace="/news" extends="struts-default" >
+ <package name="newsold" namespace="/newsold" extends="struts-default" >
  	<action name="newsInfoList" class="com.ruyicai.web.action.NewsAction">
  		<result name="newsList">/news/ruyicai_channel_xwzx.jsp</result>
  		<result name="newsList_zjzj">/news/category_zjdxList.jsp</result>
