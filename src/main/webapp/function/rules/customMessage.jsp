@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <title>客户留言</title>
 <meta http-equiv="keywords" content="如意彩，客户留言"/>
@@ -54,8 +53,10 @@
 		      </tr>
 			  <tr>
 				<th>&nbsp;</th>
-				<td><input name="" class="FeedbackBtn" type="button" value="提交"  
-				onclick="CustomMessage();"/>     	<input name="" class="FeedbackBtn1" type="reset" value="重填" /></td>
+				<td>
+					<input name="" class="FeedbackBtn" type="button" value="提交" onclick="CustomMessage();"/>     	
+					<input name="" class="FeedbackBtn1" type="reset" value="重填" />
+				</td>
 			  </tr>
 			</table>
 		</div>
