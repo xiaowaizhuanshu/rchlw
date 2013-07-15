@@ -55,9 +55,14 @@
 		<%//----图片轮换开始 ------- %>
 		<div id="slidebox">
 			<ul>
-				<tangs:ryc_newslist web_id="%{#parameters.website_Properties_id[0]}" value="3" istopNews="1" categoryCn="轮换广告" num="5" >
+				<%-- <tangs:ryc_newslist web_id="%{#parameters.website_Properties_id[0]}" value="3" istopNews="1" categoryCn="轮换广告" num="5" >
 		    	<li><a href="${content}" target="_blank"><img src="${picName}" width="450px" height="159px" /></a></li>
-				</tangs:ryc_newslist>
+				</tangs:ryc_newslist> --%>
+				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
 			</ul>
 			<div class="thumbs">
 				<a class="1 b1 thumbActive"><span class="HomePageBGBox s1">&nbsp;</span></a> 
