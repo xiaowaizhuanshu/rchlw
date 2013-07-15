@@ -3,9 +3,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<title>如意彩会员找回密码，可通过手机号或邮箱找回密码</title>
-<meta http-equiv="keywords" content="如意彩会员，找回密码，手机号找回密码，邮箱找回密码"/>
-<meta http-equiv="description" content="如意彩会员找回密码功能让您不再为丢失密码而烦恼！"/>
+<title>博雅彩会员找回密码，可通过手机号或邮箱找回密码</title>
+<meta http-equiv="keywords" content="博雅彩会员，找回密码，手机号找回密码，邮箱找回密码"/>
+<meta http-equiv="description" content="博雅彩会员找回密码功能让您不再为丢失密码而烦恼！"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/ruserAll.css" />

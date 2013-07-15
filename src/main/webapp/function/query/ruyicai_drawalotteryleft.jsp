@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
-<!-- 如意彩首页开奖公告 -->
+<!-- 博雅彩首页开奖公告 -->
 <div class="PannelHead"><h3>开奖号码</h3></div>
 	<div class="PannelBody NumberShowSlide">
 		<ul >

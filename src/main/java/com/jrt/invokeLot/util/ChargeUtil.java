@@ -24,11 +24,11 @@ public class ChargeUtil {
 	 * @Description: 调用jrtLot充值的方法
 	 * @param: map 要传递的参数
 	 * mobile_code -- 手机号码
-	 * bankId -- 充值方式-民生(msy001)、支付宝(zfb001)、DNA(dna001)、易宝(y00003)、19pay(gyj001)、如意彩点卡(ryc001)
+	 * bankId -- 充值方式-民生(msy001)、支付宝(zfb001)、DNA(dna001)、易宝(y00003)、19pay(gyj001)、博雅彩点卡(ryc001)
 	 * accesstype -- 渠道 -web(B)、wap(W)、客户端(C)
 	 * cardType -- 民生、易宝、支付宝银行卡(01)、支付宝(03)支付宝语音(04)、
 	 *             点卡充值(JUNNET-0201,SNDACARD-0202,ZHENGTU-0204,SZX-0203,UNICOM-0206,DXJFK-0221)、
-	 *             如意彩点卡(0300)
+	 *             博雅彩点卡(0300)
 	 * transaction_money -- 交易金额
 	 * card_no -- dna银行卡号或点卡卡号
 	 * card_pwd -- 点卡密码

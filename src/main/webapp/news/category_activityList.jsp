@@ -7,7 +7,7 @@
 <title>历史活动回顾</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta http-equiv="keywords" content="节日专题活动，双色球专题活动，大乐透专题活动，七乐彩专题活动 3D专题活动，七星彩专题活动，足彩专题活动，竞彩专题活动">
-<meta http-equiv="description" content="如意彩喜迎2012年推出节日专题活动，双色球专题活动，大乐透专题活动，七乐彩专题活动 3D专题活动，七星彩专题活动，足彩专题活动，竞彩专题活动等优惠活动让您购彩更快乐！">
+<meta http-equiv="description" content="博雅彩喜迎2012年推出节日专题活动，双色球专题活动，大乐透专题活动，七乐彩专题活动 3D专题活动，七星彩专题活动，足彩专题活动，竞彩专题活动等优惠活动让您购彩更快乐！">
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css">
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>
@@ -52,7 +52,7 @@
 		<div class="share_img"><a href="/rchlw/function/rules/customMessage.jsp"><img src="<%=request.getContextPath() %>/function/images/share_pic.gif" width="270" height="120" /></a></div>
 		<div class="space10">&#160;</div>
 		<div class="specialActivities_news">
-		<iframe width="268" height="504" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=268&height=504&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1734676075&verifier=eb816cbb&dpc=1"></iframe>
+		<iframe width="268" height="504" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=268&height=504&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=3263070532&verifier=3d333e24&dpc=1"></iframe>
 		</div>
 		
 </div>

@@ -17,7 +17,6 @@ import java.util.Iterator;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import com.boyacai.common.AppConstant;
 import com.boyacai.news.service.NewsService;
 import com.boyacai.news.vo.NewsPage;
 
@@ -25,7 +24,8 @@ public class NewsListTag extends SimpleTagSupport {
 
 	private String var;
 
-	private String newsType;
+	private String category;
+	private String channel;
 	private String lotNo;
 	private String pageNo;
 	private String pageSize;
@@ -34,12 +34,20 @@ public class NewsListTag extends SimpleTagSupport {
 		super();
 	}
 
-	public String getNewsType() {
-		return newsType;
+	public String getCategory() {
+		return category;
 	}
 
-	public void setNewsType(String newsType) {
-		this.newsType = newsType;
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public String getChannel() {
+		return channel;
+	}
+
+	public void setChannel(String channel) {
+		this.channel = channel;
 	}
 
 	public String getLotNo() {
@@ -87,7 +95,7 @@ public class NewsListTag extends SimpleTagSupport {
 		//			throw new RuntimeException("不能转换");
 		//		}
 
-		NewsPage pager = NewsService.getNewsPage(newsType, lotNo, pageNo, pageSize);
+		NewsPage pager = NewsService.getNewsPage(category, channel, lotNo, pageNo, pageSize);
 		Iterator ite = pager.getNews().iterator();
 
 		// 进行迭代

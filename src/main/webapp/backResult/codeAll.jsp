@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>如意彩-注码</title>
+<title>博雅彩-注码</title>
 </head>
 <body>
 

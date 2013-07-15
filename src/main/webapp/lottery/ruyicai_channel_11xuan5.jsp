@@ -2,9 +2,9 @@
 	pageEncoding="UTF-8"%>
 	<%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩11选5投注、最新开奖、当前部分玩法的遗漏、最新中奖</title>
+<title>博雅彩11选5投注、最新开奖、当前部分玩法的遗漏、最新中奖</title>
 <meta http-equiv="keywords" content="11选5投注，最新开奖，当前部分玩法的遗漏，最新中奖"/>
-<meta http-equiv="description" content="如意彩11选5集投注、最新开奖、当前部分玩法的遗漏、最新中奖为一体是11选5一站式服务平台。"/>
+<meta http-equiv="description" content="博雅彩11选5集投注、最新开奖、当前部分玩法的遗漏、最新中奖为一体是11选5一站式服务平台。"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 

@@ -2,9 +2,9 @@
     pageEncoding="UTF-8"%>
     <%@ taglib uri="/WEB-INF/tangs.tld" prefix="tangs"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩福彩3d投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表</title>
+<title>博雅彩福彩3d投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表</title>
 <meta http-equiv="keywords" content="福彩3d投注，福彩3d开奖公告，福彩3d开奖点评，福彩3d冷热号分析，福彩3d奖金对照表，福彩3d走势图表"/>
-<meta http-equiv="description" content="如意彩福彩3d集投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表为一体是福彩3d一站式服务平台。"/>
+<meta http-equiv="description" content="博雅彩福彩3d集投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表为一体是福彩3d一站式服务平台。"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js" ></script>

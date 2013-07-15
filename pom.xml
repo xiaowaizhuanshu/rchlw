@@ -294,13 +294,13 @@
 				<!-- 方案名称 -->
 				<heimai_name>rychm</heimai_name>
 				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_findMsg>
-				<!-- 如意彩注册手机发送短信内容 -->
-				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
-				<!-- 如意彩手机绑定发送短信内容 -->
+				<!-- 博雅彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册博雅彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[博雅彩]</ryc_sendMsg>
+				<!-- 博雅彩手机绑定发送短信内容 -->
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
-				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<!-- 博雅彩 邮箱绑定发送到邮箱的地址连接 -->
 				<rycemailUrl><![CDATA[http://test.com/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
-				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<!-- 博雅彩  邮箱注册发送到邮箱的地址连接 -->
 				<rycemailRegisterUrl><![CDATA[http://test.com/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
 				<retUrlCharge>test.com/rchlw/-http://test.com/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
@@ -348,7 +348,7 @@
 				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
 				<!-- QQ 登录返回地址 -->
 				<qqLoginUrl>www.boyacai.com-http://test.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.boyacai.com-http://test.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
-				<!-- 如意彩用户登录获取地址 -->
+				<!-- 博雅彩用户登录获取地址 -->
 				<usersCenterUrl>http://test.com/</usersCenterUrl>
 				
 				<!-- 应用地址 -->
@@ -404,14 +404,14 @@
 				<heimai_name>rychm</heimai_name>
 				<!-- 找回密码手机发送短信内容 -->
 				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_findMsg>
-				<!-- 如意彩注册手机发送短信内容 -->
-				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
-				<!-- 如意彩手机绑定发送短信内容 -->
+				<!-- 博雅彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册博雅彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[博雅彩]</ryc_sendMsg>
+				<!-- 博雅彩手机绑定发送短信内容 -->
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
 				
-				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<!-- 博雅彩 邮箱绑定发送到邮箱的地址连接 -->
 				<rycemailUrl><![CDATA[http://tchlw.ruyicai.com:8090/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
-				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<!-- 博雅彩  邮箱注册发送到邮箱的地址连接 -->
 				<rycemailRegisterUrl><![CDATA[http://tchlw.ruyicai.com:8090/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
 				<retUrlCharge>tchlw.ruyicai.com:8090/-http://tchlw.ruyicai.com:8090/function/rules/chargeSuccess.jsp</retUrlCharge>
@@ -459,7 +459,7 @@
 				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
 				<!-- QQ 登录返回地址 -->
 				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
-				<!-- 如意彩用户登录获取地址 -->
+				<!-- 博雅彩用户登录获取地址 -->
 				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
 			</properties>
 		</profile>
@@ -509,14 +509,14 @@
 				<hemai_end>00|</hemai_end>
 				<!-- 方案名称 -->
 				<heimai_name>rychm</heimai_name>
-				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_findMsg>
-				<!-- 如意彩注册手机发送短信内容 -->
-				<ryc_sendMsg>尊敬的用户，您本次注册如意彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[如意彩]</ryc_sendMsg>
-				<!-- 如意彩手机绑定发送短信内容 -->
+				<ryc_findMsg>尊敬的用户，您本次修改密码所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[博雅彩]</ryc_findMsg>
+				<!-- 博雅彩注册手机发送短信内容 -->
+				<ryc_sendMsg>尊敬的用户，您本次注册博雅彩所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费[博雅彩]</ryc_sendMsg>
+				<!-- 博雅彩手机绑定发送短信内容 -->
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
-				<!-- 如意彩 邮箱绑定发送到邮箱的地址连接 -->
+				<!-- 博雅彩 邮箱绑定发送到邮箱的地址连接 -->
 				<rycemailUrl><![CDATA[http://www.ruyicai.com/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
-				<!-- 如意彩  邮箱注册发送到邮箱的地址连接 -->
+				<!-- 博雅彩  邮箱注册发送到邮箱的地址连接 -->
 				<rycemailRegisterUrl><![CDATA[http://www.ruyicai.com/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
 				<retUrlCharge>www.ruyicai.com-www.ruyicai.com/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
@@ -565,7 +565,7 @@
 				<qq_getUserInfo_url>https://graph.qq.com/user/get_user_info</qq_getUserInfo_url>
 				<!-- QQ 登录返回地址 -->
 				<qqLoginUrl>www.ruyicai.com-http://www.ruyicai.com/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.ruyicai.com-http://jcbao.ruyicai.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
-				<!-- 如意彩用户登录获取地址 -->
+				<!-- 博雅彩用户登录获取地址 -->
 				<usersCenterUrl>http://users.ruyicai.com/</usersCenterUrl>
 			</properties>
 		</profile>

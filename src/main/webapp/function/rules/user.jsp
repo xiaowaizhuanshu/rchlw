@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩账户中心</title>
+<title>博雅彩账户中心</title>
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="cache-control" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>    
 <meta http-equiv="keywords" content="账户明细，充值，提现，投注记录，追号记录的查询，基本资料，安全资料、修改密码，身份证绑定，手机服务，邮箱服务"/>
-<meta http-equiv="description" content="如意彩用户账户中心让您购彩更明白！"/>
+<meta http-equiv="description" content="博雅彩用户账户中心让您购彩更明白！"/>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css"/>
 <link href="<%=request.getContextPath() %>/function/css/tuserAll.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>

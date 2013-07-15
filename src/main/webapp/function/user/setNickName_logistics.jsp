@@ -29,7 +29,7 @@
 	</div>
 	<div class="ZhuCe_body" >
 		<div class="ZhuCe_titleBg">
-			<span class="ZhuCe_titleLeft">创建或绑定如意彩账户</span>
+			<span class="ZhuCe_titleLeft">创建或绑定博雅彩账户</span>
 		</div>
 		<s:if test='#session.message!=null'>
 			<div style="height:18px; line-height:18px; padding:0px 0px 0px 65px;">
@@ -37,7 +37,7 @@
 				<font style="color:#DE0201; display:inline-block; float:left; padding:0px 0px 0px 5px; height:18px; line-height:18px;"><s:property value="#session.message"/></font>
 			</div>
 		</s:if>
-		<div class="union_radio"><span><input name="Register" type="radio" value=""  checked="checked" id="radioNumone" onclick="showUserOld();"/>我还没有如意彩账户</span><span><input name="Register" type="radio" value=""  id="radioNumtwo" onclick="showUserNew()" />我已有如意彩账户</span></div>
+		<div class="union_radio"><span><input name="Register" type="radio" value=""  checked="checked" id="radioNumone" onclick="showUserOld();"/>我还没有博雅彩账户</span><span><input name="Register" type="radio" value=""  id="radioNumtwo" onclick="showUserNew()" />我已有博雅彩账户</span></div>
 		 <form action="#" id="userRegisterForm">	
 		<table border="0" cellspacing="0" cellpadding="0" class="ZhuCe_table table_space1" id="logistics_table1" style="display: block;">
 			<thead>
@@ -88,7 +88,7 @@
 			<tr class="ZhuCe_password">
 				<th><b>*</b>登录密码：</th>
 				<th colspan="2"><input id="reg_password" name="reg_password" onblur="checkPassword('username','reg_password')" type="password" class="ZhuCe_input"/></th>
-				<td><span id="reg_passwordImage"></span><span id="reg_passwordTip">如意彩登录密码</span></td>
+				<td><span id="reg_passwordImage"></span><span id="reg_passwordTip">博雅彩登录密码</span></td>
 			</tr>
 			<tr>
 				<th>&#160;</th>

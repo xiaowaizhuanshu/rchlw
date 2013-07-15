@@ -4,9 +4,9 @@
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="cache-control" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>    
-<meta http-equiv="keywords" content="如意彩、彩票投注管理、账户管理、彩票赠送管理"/>
+<meta http-equiv="keywords" content="博雅彩、彩票投注管理、账户管理、彩票赠送管理"/>
 <meta http-equiv="description" content="彩票投注管理、账户管理、彩票赠送管理"/>
-<title>如意彩彩票网-充值成功</title>
+<title>博雅彩彩票网-充值成功</title>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css"/>
 <link href="<%=request.getContextPath() %>/function/css/tuserAll.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 

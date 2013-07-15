@@ -1,13 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
+<%@ taglib prefix="byc" uri="/WEB-INF/byc.tld"%>  
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="如意彩,彩票购买,彩票投注,福彩投注,体彩购买,竞彩足球,高频彩,购彩大厅,开奖公告,彩票走势图,彩票资讯,合买中心" />
-<title>如意彩 -在线彩票购彩交易平台</title>
-<meta name="description" content="如意彩为彩民提供, 彩票投注,彩票购买, 福彩投注, 体彩投注,将互联网电子彩票进行投注购买,走势,预测,兑奖等一体化服务相结合【彩民推荐的购买投注网站】!"/>
+<meta name="keywords" content="博雅彩,彩票购买,彩票投注,福彩投注,体彩购买,竞彩足球,高频彩,购彩大厅,开奖公告,彩票走势图,彩票资讯,合买中心" />
+<title>博雅彩 -在线彩票购彩交易平台</title>
+<meta name="description" content="博雅彩为彩民提供, 彩票投注,彩票购买, 福彩投注, 体彩投注,将互联网电子彩票进行投注购买,走势,预测,兑奖等一体化服务相结合【彩民推荐的购买投注网站】!"/>
 <meta name="baidu-site-verification" content="wWYQuoP5DG2qzXxk" />
 <script type="text/javascript" src="/rchlw/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="/rchlw/function/js/jcarousellite_1.0.1c5.js"></script>
@@ -163,11 +166,11 @@
 			</div>
 			<div class="PannelBody">
 				<ul class="WebBulletin none ">
-					<tangs:ryc_newslist categoryCn="网站公告" web_id="%{#parameters.website_Properties_id[0]}" num="6" value="3">
-					<li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-				&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-				&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></li>
-					</tangs:ryc_newslist>
+					<byc:newsList category="1" channel="4" pageNo="1" pageSize="6" var="n">
+					<li>
+						<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+					</li>
+					</byc:newsList>
 				</ul>
 				<div class="BuyHelp none selected" style="border-bottom: 1px solid rgb(204, 204, 204);">
 			   <div style="padding:4px 10px 0px 10px; border-bottom:1px solid #ccc; line-height:30px; background:url(/rchlw/function/images/indexphonebg-2.jpg) no-repeat 10px 10px">        
@@ -218,18 +221,30 @@
 						<thead>
 							<tr>
 								<tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="%{#parameters.website_Properties_id[0]}" status="s1" num="1" value="3">
-								<th colspan="3"><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></th>
+								<th colspan="3">
+								<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
+									&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+									&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a>
+								</th>
 								</tangs:ryc_newslist>
+								
+								<byc:newsList category="0" channel="5" pageNo="1" pageSize="3" var="n">
+								<th colspan="3">
+									<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+								</th>
+								</byc:newsList>
 							</tr>
 						</thead>
 						<tbody>
-							<tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="%{#parameters.website_Properties_id[0]}" status="s1" num="3" value="3" begin="1" end="2">
-							<tr><th width="40" >[${title_as}]</th><td><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></td><th width="80">[${createtimeFm}]</th></tr>
-							</tangs:ryc_newslist>
+							<byc:newsList category="1" channel="5" pageNo="1" pageSize="3" var="n">
+							<tr>
+								<th width="40" ><%-- [${title_as}] --%></th>
+								<td>
+									<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a>
+								</td>
+								<th width="80"><%-- [${createtimeFm}] --%></th>
+							</tr>
+							</byc:newsList>
 						</tbody>
 					</table>
 					<div class="space10"></div>
@@ -239,16 +254,16 @@
 								<th>福彩</th>
 								<tangs:ryc_newslist categoryCn="福彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="1" value="13">
 								<td colspan="2"><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></td>
+									&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+									&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></td>
 								</tangs:ryc_newslist>
 							</tr>
 						</thead>
 						<tbody>
 							<tangs:ryc_newslist categoryCn="福彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="6" value="13" begin="1" end="5">
 							<tr><th width="40">[${title_as}]</th><td><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></td><th width="80">[${createtimeFm}]</th></tr>
+									&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+									&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></td><th width="80">[${createtimeFm}]</th></tr>
 							</tangs:ryc_newslist>
 						</tbody>
 					</table>
@@ -259,16 +274,16 @@
 								<th>体彩</th>
 								<tangs:ryc_newslist categoryCn="体彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="1" value="13">
 								<td colspan="2"><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a></td>
+										&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+										&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a></td>
 								</tangs:ryc_newslist>
 							</tr>
 						</thead>
 						<tbody>
 							<tangs:ryc_newslist categoryCn="体彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="6" value="13" begin="1" end="5">
 								<tr><th width="40">[${title_as}]</th><td><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-					&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-					&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a></td><th width="80">[${createtimeFm}]</th></tr>
+										&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+										&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a></td><th width="80">[${createtimeFm}]</th></tr>
 							</tangs:ryc_newslist>
 						</tbody>
 					</table>
@@ -277,14 +292,14 @@
 		</div>
 		<div class="SecondScreenRight">
 			<div class="specialActivities_news" style="border: 1px solid #ccc;">
-			<iframe width="268" height="475" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=268&height=475fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=1734676075&verifier=eb816cbb&dpc=1"></iframe>
+			<iframe width="268" height="475" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=268&height=475&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=0&isWeibo=1&isFans=0&uid=3263070532&verifier=3d333e24&dpc=1"></iframe>
 			</div>
 		</div>
 	</div>
 	<div class="space10"></div>
 	<div class="Streamer">
 		<tangs:ryc_newslist web_id="%{#parameters.website_Properties_id[0]}" value="3" istopNews="1"  categoryCn="首页横幅" num="1" >
-			<a href="${content}"><img src="${picName}" alt="如意彩"  height="60px" width="950px"/></a>
+			<a href="${content}"><img src="${picName}" alt="博雅彩"  height="60px" width="950px"/></a>
 		</tangs:ryc_newslist>
 	</div>
 	<div class="space10"></div>

@@ -26,7 +26,7 @@ window.location.href="/rchlw/function/cooperation/coop_inputUserInfo.jsp ";
 </script>
 </s:if>
 <s:else> <%//3.用户没有登陆  也不是彩多多的用户则 跳回首页  %>
-<span>您好，欢迎来到如意彩！</span>
+<span>您好，欢迎来到博雅彩！</span>
 <span><a href="javaScript:loginRequrl();" title="请登录">请登录</a></span>
 <span><a href="http://users.ruyicai.com/register/register_new.jsp" title="免费注册">免费注册</a></span>
 

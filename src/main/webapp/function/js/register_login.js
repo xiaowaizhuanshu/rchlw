@@ -131,7 +131,7 @@ if(!regValid){
 	return;
 }
 	
-	//验证如意彩点卡信息
+	//验证博雅彩点卡信息
 	/**if($("#checkCard").hasClass("Switch")){
 		//得到页面上点卡的信息
 		 var params = "cardid="+$("#cardid").val()+"&cardpwd="+$("#cardpwd").val();
@@ -146,7 +146,7 @@ if(!regValid){
 					if(json =="2"){
 						//用户注册协议
 						if ($("#registerXieyi").attr("checked") != true && $("#registerXieyi").attr("checked") != "checked") {	
-							openAlert(decodeURI(EncodeUtf8('您没有同意《如意彩服务协议》！')));
+							openAlert(decodeURI(EncodeUtf8('您没有同意《博雅彩服务协议》！')));
 							 return;
 					    }
 						
@@ -206,7 +206,7 @@ if(!regValid){
 	
 	//用户注册协议
 	if ($("#registerXieyi").attr("checked") != true && $("#registerXieyi").attr("checked") != "checked") {	
-		openAlert('您没有同意《如意彩服务协议》！');
+		openAlert('您没有同意《博雅彩服务协议》！');
 		 return;
     }
 	var params='';
@@ -255,7 +255,7 @@ if(!regValid){
 var sendCount=0;
 var pageFlashNum=0;
 
-//如意彩注册时向用户发送手机短信
+//博雅彩注册时向用户发送手机短信
 function getSend(){
 	if(pageFlashNum==0){
 		pageFlashNum++;
@@ -276,7 +276,7 @@ function getSend(){
 	}
 }
 
-//如意彩注册时向用户发送邮箱验证
+//博雅彩注册时向用户发送邮箱验证
 function getEmailSend(){
 	if(pageFlashNum==0){
 		pageFlashNum++;

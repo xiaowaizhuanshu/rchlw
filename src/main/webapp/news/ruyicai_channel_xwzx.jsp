@@ -5,7 +5,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>${title_head }资讯|${title_head }加奖|${title_head }开奖查询|${title_head }推荐|${title_head }中奖故事|${title_head }奖池 如意彩-网上买彩票-如意彩网</title>
+<title>${title_head }资讯|${title_head }加奖|${title_head }开奖查询|${title_head }推荐|${title_head }中奖故事|${title_head }奖池 博雅彩-网上买彩票-博雅彩网</title>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
@@ -23,7 +23,7 @@ function jumpPage(pageNo) {
  	<span id="common"></span>
    	<div id="main">
    		<div class="zixun_main">
-    		<div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a> &gt; <a href="<%=request.getContextPath() %>/news/category_xinwenzixun.jsp">热点资讯</a> &gt; ${newsChannelName}</div>
+    		<div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> &gt; <a href="<%=request.getContextPath() %>/news/category_xinwenzixun.jsp">热点资讯</a> &gt; ${cp}</div>
    			<div class="zixunleft">
 				<div class="zixun_nav">
 				 	<span class="ziXun_titleArrow">

@@ -79,7 +79,7 @@ div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}
 			<dl class="fontLinkDL">
 				<dt class="cBlue01">2、怎么样进行推广？</dt>
 				<dd style="padding-left: 20px;">复制"会员推广链接"给好友，然后好友通过链接地址注册后，就成为了"我的推广会员"，<br>
-					然后好友在如意彩彩票网的所有成功投注都可以算作"我的业绩"。</dd>
+					然后好友在博雅彩彩票网的所有成功投注都可以算作"我的业绩"。</dd>
 				<br>
 			</dl>
 			<dl class="fontLinkDL">

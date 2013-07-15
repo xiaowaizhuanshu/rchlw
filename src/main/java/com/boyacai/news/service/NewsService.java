@@ -40,15 +40,15 @@ public class NewsService {
 	 * @param pageindex 第几页
 	 * @param maxresult 每页记录数
 	 */
-	public static NewsPage getNewsPage(String newsType, String lotno, String pageNo, String pageSize) {
+	public static NewsPage getNewsPage(String newsType, String channel, String lotno, String pageNo, String pageSize) {
 		String pageindex = StringUtils.isBlank(pageNo) ? "1" : pageNo;
 		String maxresult = StringUtils.isBlank(pageSize) ? "20" : pageSize;
 
 		JSONObject param = new JSONObject();
 		param.put("command", "information");
 		param.put("newsType", AppConstant.getNewsType(newsType));
-		param.put("type", "1");
-		param.put("lotno", lotno);
+		param.put("type", StringUtils.isBlank(channel) ? "" : channel);
+		param.put("lotno", StringUtils.isBlank(lotno) ? "" : lotno);
 		param.put("pageindex", pageindex);
 		param.put("maxresult", maxresult);
 

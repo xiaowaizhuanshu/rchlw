@@ -3,9 +3,9 @@
 <%@ taglib prefix="tangs" uri="/WEB-INF/byc.tld"%> 
 <%@taglib prefix="s" uri="/struts-tags" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩 -如意彩逆市上涨</title>
+<title>博雅彩 -博雅彩逆市上涨</title>
 <meta name="keywords" content="彩票预测,中国足彩网,中国竞彩网,中国竞猜网,彩民新闻" />
-<meta name="description" content="彩票资讯是如意彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
+<meta name="description" content="彩票资讯是博雅彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/ChannelBuy.css" />
@@ -19,7 +19,7 @@
  	<span id="common"></span>
    	<div id="main">
    	<div class="zixuntop">
-   		您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a> &gt;<a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a> &gt; 正文
+   		您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> &gt;<a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a> &gt; 正文
    	</div>
    	<div class="zixun_main">
    	<div class="zixunleft" style="border:0px;">

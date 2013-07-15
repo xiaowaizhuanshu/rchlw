@@ -224,7 +224,7 @@ div.My_account h2 {
 					onclick='makescoreToM("socoreNum");' /></td>
 			</tr>
 			<tr>
-				<td colspan="5" height="30">注：500个积分可兑换1元购彩金（请输入500的倍数），存入您的如意彩账户。</td>
+				<td colspan="5" height="30">注：500个积分可兑换1元购彩金（请输入500的倍数），存入您的博雅彩账户。</td>
 			</tr>
 		</table>
 		<div class="space15">&nbsp;</div>

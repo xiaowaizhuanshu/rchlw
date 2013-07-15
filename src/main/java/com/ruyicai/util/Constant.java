@@ -163,11 +163,11 @@ public class Constant {
 	public final static String JC_TAB = rb.getString("jcTab");// 竞彩胜平负注码之间的分隔符"|"
 	/**
 	 * bankId -- 充值方式-民生(msy001)、支付宝(zfb001)、DNA(dna001)、易宝(y00003)、19pay(gyj001
-	 * )、如意彩点卡(ryc001) accesstype -- 渠道 -web(B)、wap(W)、客户端(C)
+	 * )、博雅彩点卡(ryc001) accesstype -- 渠道 -web(B)、wap(W)、客户端(C)
 	 * 
 	 * cardType -- 民生、易宝、支付宝银行卡(01)、支付宝(03)支付宝语音(04)、
 	 * 点卡充值(JUNNET-0201,SNDACARD-0202,ZHENGTU-
-	 * 0204,SZX-0203,UNICOM-0206,DXJFK-0221)、 如意彩点卡(0300)
+	 * 0204,SZX-0203,UNICOM-0206,DXJFK-0221)、 博雅彩点卡(0300)
 	 * 
 	 * dna充值的灰名单
 	 */
@@ -177,7 +177,7 @@ public class Constant {
 	public static final String DNA_BANKID = "dna001";// DNA
 	public static final String YB_BANKID = "y00003";// 易宝
 	public static final String PAY19_BANKID = "gyj001";// 翼支付
-	public static final String RYC_BANKID = "ryc001";// 如意彩点卡
+	public static final String RYC_BANKID = "ryc001";// 博雅彩点卡
 	public static final String SHYLZF_BANKID = "syl001"; //上海银联支付
 	public static final String YLZF_BANKID = "syl002"; //银联支付
 	public static final String UMPAY_BANKID = "ump001"; //联动优势
@@ -224,7 +224,7 @@ public class Constant {
 	public static final String POINT_UNICOM = "0206";
 	public static final String POINT_DXJFK = "0221";
 
-	public static final String RYC_POINT_CARDTYPE = "0300";// 如意彩点卡
+	public static final String RYC_POINT_CARDTYPE = "0300";// 博雅彩点卡
 	
 	public static final String WEB_AGENCYNO = "B";
 

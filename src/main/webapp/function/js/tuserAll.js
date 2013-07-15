@@ -919,15 +919,15 @@ function dna_Result(json){
 // dna充值结束
 
 
-// 如意彩点卡充值开始
+// 博雅彩点卡充值开始
 
-//如意彩点卡充值 
+//博雅彩点卡充值 
 function chargeCardNoCheck2(){
 	var cardNo = document.getElementById("cardNoRyc").value;
 	var cardNoPattern = /^[0-9]{16}$/;
 	var cno = document.getElementById("rycMessage");
 	if (cardNo == null || cardNo == "") {
-		cno.innerHTML = decodeURI(EncodeUtf8("请您输入如意彩充值卡卡号"));
+		cno.innerHTML = decodeURI(EncodeUtf8("请您输入博雅彩充值卡卡号"));
 		return false;
 	}
 	if (!cardNoPattern.test(cardNo)) {
@@ -976,7 +976,7 @@ function rycPoint_Result(json){ //回传函数实体，参数为XMLhttpRequest.r
 	 $("#rycMessage").html(json.message);
  }
 }
-// 如意彩点卡充值结束
+// 博雅彩点卡充值结束
 
 
 

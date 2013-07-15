@@ -2,7 +2,7 @@
     pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"/>
-<title>如意彩-投注结果</title>
+<title>博雅彩-投注结果</title>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 

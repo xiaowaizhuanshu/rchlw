@@ -352,7 +352,12 @@ public class SelectAllAction extends BaseAction {
 			//调用公共方法查询最近一期开奖公告内容
 			for (int i = 0; i < lotnoList.length; i++) {
 				logger.info("首页开奖号码查询开始/从配置文件中获取所有彩种：" + lotnoList[i]);
-				JSONObject arrObject = getDrawalotteryArray(lotnoList[i], "1").getJSONObject(0);
+				JSONArray twininfoList = getDrawalotteryArray(lotnoList[i], "1");
+				if (twininfoList.isEmpty()) {
+					continue;
+				}
+				
+				JSONObject arrObject = twininfoList.getJSONObject(0);
 				if ("F47104".equals(lotnoList[i]) || "F47103".equals(lotnoList[i]) || "F47102".equals(lotnoList[i])) {
 					arrWininfoF.add(arrObject);
 				} else if ("T01001".equals(lotnoList[i]) || "T01002".equals(lotnoList[i])

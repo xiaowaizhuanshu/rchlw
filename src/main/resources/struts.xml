@@ -6,4 +6,6 @@
 <struts>
  	<include file="com/ruyicai/web/action/struts-web.xml"></include>
  	<include file="com/boyacai/news/action/struts-news.xml"></include>
+ 	<include file="com/boyacai/helper/action/struts-helper.xml"></include>
+ 	<include file="com/boyacai/activity/action/struts-activity.xml"></include>
 </struts>

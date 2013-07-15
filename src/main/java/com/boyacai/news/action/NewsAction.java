@@ -17,9 +17,10 @@ public class NewsAction extends BaseAction {
 	/**
 	 * 查询条件
 	 */
-	private String nt;//新闻分类
-	private String ncc;//新闻频道代号
+	private String nt;//新闻分类(news category)
+	private String ncc;//新闻频道代号(news channel cn)
 	private String ln;//彩种
+	private String cp; //您所在的位置（current position）
 
 	/**
 	 * 分页查询新闻信息
@@ -28,12 +29,8 @@ public class NewsAction extends BaseAction {
 		if (page == null) {
 			page = new NewsPage(20);
 		}
-		page = NewsService.getNewsPage(nt, ln, pageNo, pageSize);
+		page = NewsService.getNewsPage(nt, ncc, ln, pageNo, pageSize);
 		return "list";
-	}
-
-	public String getNewsChannelName() {
-		return AppConstant.getNewsChannel(ncc);
 	}
 
 	public NewsPage getPage() {
@@ -74,6 +71,14 @@ public class NewsAction extends BaseAction {
 
 	public void setLn(String ln) {
 		this.ln = ln;
+	}
+
+	public String getCp() {
+		return AppConstant.getLotName(cp);
+	}
+
+	public void setCp(String cp) {
+		this.cp = cp;
 	}
 
 	public String getPageNo() {

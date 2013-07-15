@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <%@ page import="net.sf.json.JSONObject,com.jrt.invokeLot.util.JSONReslutUtil,com.ruyicai.util.NameUtil" %>
 <%
 	JSONObject user = JSONReslutUtil.getUserInfo(request);
@@ -70,7 +72,7 @@
 				</dl>
 				<!-- 登陆后 账户信息及账户操作end -->
 <%}else{%>
-			<dt><em>您好，欢迎来到如意彩！</em></dt>
+			<dt><em>您好，欢迎来到博雅彩！</em></dt>
 			<dt><a href="javaScript:loginRequrl();">请登录</a><a href="http://users.ruyicai.com/register/register_new.jsp">免费注册</a></dt>
 			<dd>
 				<div class="SelectLogin" onmouseover="HoverOver($(this))" onmouseout="HoverOut($(this))">
@@ -90,10 +92,11 @@
 			<input type="hidden" value="0"  name="rank_value" />
 <%} %>
 		<div class="QuickLink">
-			<a href="/rchlw/index.jsp">首页</a>|<a href="/rchlw/function/include/downLoadClient.jsp">手机购彩
-			</a>|<a href="http://www.ruyicai.com/cms/index.html" target="_blank">帮助中心</a>|
-			<a href="/rchlw/news/category_activityList.jsp?cpage=1&begin=0">活动专题</a>|
-			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>|<a href="http://bbs.ruyicai.com" >论坛</a>
+			<a href="/rchlw/index.jsp">首页</a>|<a href="/rchlw/function/include/downLoadClient.jsp">手机购彩</a>|
+			<a href="${ctx}/help/helper!list.action" target="_blank">帮助中心</a>|
+			<a href="${ctx}/activity/activity!list.action">活动专题</a>|
+			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>|
+			<a href="http://bbs.ruyicai.com" >论坛</a>
 		</div>
 		<!-- 右侧快速链接 end -->
 		</dl>

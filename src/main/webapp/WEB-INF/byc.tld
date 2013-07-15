@@ -33,10 +33,17 @@
 		<body-content>scriptless</body-content>
 		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
 		<attribute>
-			<name>newsType</name>
+			<name>category</name>
 			<required>true</required>
 			<rtexprvalue>false</rtexprvalue>
-			<description>类别[0：TOP新闻|1：新闻标题｜2：新闻内容｜3：活动标题｜4：活动内容|5：帮助中心标题|6：帮助中心内容]
+			<description>新闻类别[0：TOP新闻｜1：新闻｜2：活动｜3：帮助]
+			</description>
+		</attribute>
+		<attribute>
+			<name>channel</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>新闻类别[1：彩民趣闻｜2：专家推荐｜3：足彩天地｜4：站内公告|5：TOP新闻]
 			</description>
 		</attribute>
 		<attribute>

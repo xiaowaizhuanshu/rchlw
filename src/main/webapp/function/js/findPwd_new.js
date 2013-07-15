@@ -537,7 +537,7 @@ function openEmail(url){
 		 $("#tiao").html(color);
 		 }
  }
-//------------如意彩找回密码------------重置密码------------
+//------------博雅彩找回密码------------重置密码------------
 function tGPhoneCheckPwd(url) {
 
 	if(checkNewPass() && checkRealPass()){
@@ -611,7 +611,7 @@ function getSendEmail(){
 	
 }
 
-//----------如意彩----------找回密码------通过邮箱修改密码----------------
+//----------博雅彩----------找回密码------通过邮箱修改密码----------------
 function tGPhoneCheckPwdByEmail(url) {
 	if(checkNewPass() && checkRealPass()){
 		var params=$('#updatePasswordForm').serialize(); 

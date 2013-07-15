@@ -73,7 +73,7 @@ public class FindPwdAction extends BaseAction {
 	public static final String INTERFACE_TYPE_SMS = "001";
 
 	// 短信接口类型代码
-//-----------------------------------如意彩找回密码-------------------------------------------
+//-----------------------------------博雅彩找回密码-------------------------------------------
 	/***
 	 * @Title: ryc_FindPwdWays
 	 * @Description: 找回密码页
@@ -185,7 +185,7 @@ public class FindPwdAction extends BaseAction {
 
 	}
 	/***
-	 * 如意彩找回密码：发送手机短信
+	 * 博雅彩找回密码：发送手机短信
 	 * @throws IOException 
 	 */
 	public void ryc_sengmsgByphone() throws IOException{
@@ -411,7 +411,7 @@ public class FindPwdAction extends BaseAction {
 		}
 	
 	/***
-	 * 如意彩——找回密码——验证邮件链接有效性
+	 * 博雅彩——找回密码——验证邮件链接有效性
 	 * @throws IOException
 	 */
 	@SuppressWarnings("finally")
@@ -467,7 +467,7 @@ public class FindPwdAction extends BaseAction {
 		}
       }
 	/***
-	 * 如意彩找回密码-通过邮件修改密码
+	 * 博雅彩找回密码-通过邮件修改密码
 	 * @throws IOException
 	 */
 	public void ryc_resetPwdByEmail() throws IOException{

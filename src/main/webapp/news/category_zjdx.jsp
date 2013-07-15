@@ -2,9 +2,9 @@
     pageEncoding="UTF-8"%>
  <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>  
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩专家短信套餐订阅</title>
-<meta name="keywords" content="如意彩短信套餐，开奖短信，专家战绩，订阅排行">
-<meta name="description" content="如意彩专家短信套餐订阅-为您提供掌上快捷的彩票短信平台">
+<title>博雅彩专家短信套餐订阅</title>
+<meta name="keywords" content="博雅彩短信套餐，开奖短信，专家战绩，订阅排行">
+<meta name="description" content="博雅彩专家短信套餐订阅-为您提供掌上快捷的彩票短信平台">
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 

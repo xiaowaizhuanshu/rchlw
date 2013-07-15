@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩会员找回密码，可通过手机号或邮箱找回密码</title>
-<meta http-equiv="keywords" content="如意彩会员，找回密码，手机号找回密码，邮箱找回密码"/>
-<meta http-equiv="description" content="如意彩会员找回密码功能让您不再为丢失密码而烦恼！"/>
+<title>博雅彩会员找回密码，可通过手机号或邮箱找回密码</title>
+<meta http-equiv="keywords" content="博雅彩会员，找回密码，手机号找回密码，邮箱找回密码"/>
+<meta http-equiv="description" content="博雅彩会员找回密码功能让您不再为丢失密码而烦恼！"/>
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/ruserAll.css" />
 <link type="text/css" rel="stylesheet" href="<%=request.getContextPath() %>/function/css/validator.css"></link>

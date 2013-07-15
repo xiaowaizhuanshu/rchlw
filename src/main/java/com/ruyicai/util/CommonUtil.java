@@ -630,7 +630,7 @@ public class CommonUtil {
 	
 	/**
 	 * 
-	 * 验证如意彩点卡卡号和密码
+	 * 验证博雅彩点卡卡号和密码
 	 * @param card_no 点卡卡号
 	 * @param card_pwd 点卡密码
 	 * @return:   
@@ -1456,9 +1456,9 @@ public class CommonUtil {
 		banks.put("zfb001", "支付宝充值");
 		banks.put("dna001", "DNA充值");
 		banks.put("ryf001", "如意付充值");
-		banks.put("ryc001", "如意彩充值");
+		banks.put("ryc001", "博雅彩充值");
 		banks.put("msy001", "民生银行充值");
-		//banks.put("000100", "如意彩充值");
+		//banks.put("000100", "博雅彩充值");
 		//用户提现的时候显示用
 //	    banks.put("0101", "招商银行卡");
 //		banks.put("0102", "建设银行卡");

@@ -2,13 +2,13 @@
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 
-<meta name="keywords" content="如意彩，如意彩票，金软瑞彩" />
-<meta name="description" content="金软瑞彩-您身边的购彩专家" />
+<meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
+<meta name="description" content="华夏百信-您身边的购彩专家" />
 <link rel="shortcut icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href='csslogo.png'>
 <link rel="apple-touch-icon-precomposed" href='csslogo.png'>
-<title>金软瑞彩科技有限公司-合作伙伴</title>
+<title>华夏百信科技有限公司-合作伙伴</title>
 <link href="<%=request.getContextPath() %>/function/css/danyeNew.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
@@ -73,22 +73,22 @@
 	<div class="main_right">
 		<h1>商务合作</h1>
 		<div class="main_right_txt">
-		<p>金软瑞彩科技有限公司旗下的如意彩网站是国内一流的彩票代购服务平台，为广大彩民提供全国联销型彩票及地方特色彩票的代购合买、彩票资讯、彩票分析、互动社区等全方位、一体化的综合性彩票服务。如意彩欢迎各类形式的商务合作洽谈，包含并不限于广告合作、内容合作、资源互换等，实现共享和共赢！
+		<p>华夏百信科技有限公司旗下的博雅彩网站是国内一流的彩票代购服务平台，为广大彩民提供全国联销型彩票及地方特色彩票的代购合买、彩票资讯、彩票分析、互动社区等全方位、一体化的综合性彩票服务。博雅彩欢迎各类形式的商务合作洽谈，包含并不限于广告合作、内容合作、资源互换等，实现共享和共赢！
 		</p>
 		</div>
 		
 		<h2>一、友情链接</h2>
 		<div class="main_right_txt">
 		<p>申请链接互换QQ：1444895428<br />
-			如意彩欢迎金融类、财经类、彩票门户类、体育类等相关资讯或商业型网站与本站进行链接互换，要求PR值大于5或百度权重大于4，网站内容健康合法，不含有有违国家法规的内容等。 </p>
+			博雅彩欢迎金融类、财经类、彩票门户类、体育类等相关资讯或商业型网站与本站进行链接互换，要求PR值大于5或百度权重大于4，网站内容健康合法，不含有有违国家法规的内容等。 </p>
 		</div>
 		<h2>二、企业合作</h2>
 		<div class="main_right_txt">
-		<p>具有定期回馈用户并且需要赠送个性化小礼品的企业，如意彩可以根据企业具体需求开发彩票礼品，并帮助企业下发给用户，以此增强用户对企业的好感和粘性，为企业赢得更好的口碑。 </p>
+		<p>具有定期回馈用户并且需要赠送个性化小礼品的企业，博雅彩可以根据企业具体需求开发彩票礼品，并帮助企业下发给用户，以此增强用户对企业的好感和粘性，为企业赢得更好的口碑。 </p>
 		</div>
 		<h2>三、渠道合作</h2>
 		<div class="main_right_txt">
-		<p>针对网站类的合作伙伴，如果您想建立一个彩票栏目，如意彩可以为您全方位、多模式定制合作页面，让您的彩票栏目与您的网站融为一体，满足合作方针对自身用户的增值开发。 </p>
+		<p>针对网站类的合作伙伴，如果您想建立一个彩票栏目，博雅彩可以为您全方位、多模式定制合作页面，让您的彩票栏目与您的网站融为一体，满足合作方针对自身用户的增值开发。 </p>
 		</div>
 		<h2>四、数据内容合作</h2>
 		<div class="main_right_txt">

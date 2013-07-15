@@ -67,7 +67,7 @@ $(function() {
 
 <div class="My_account_title">
 	<strong>修改密码</strong>
-	<i>此功能只对如意彩注册用户有效，通过合作网站注册进入的用户尚不能使用。</i>
+	<i>此功能只对博雅彩注册用户有效，通过合作网站注册进入的用户尚不能使用。</i>
 </div>
 <div class="account_mailAddress" id="formId" <s:if test="#request.check ==1">style="display:none"</s:if>>
 <form name="form2" id="form2" action="#" method="post" >

@@ -9,7 +9,7 @@
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/ruserAll.js"></script>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
-<title>如意彩彩票网——邮箱绑定点击邮箱链接成功页面</title>
+<title>博雅彩彩票网——邮箱绑定点击邮箱链接成功页面</title>
 </head>
 <body>
 <div id="body">

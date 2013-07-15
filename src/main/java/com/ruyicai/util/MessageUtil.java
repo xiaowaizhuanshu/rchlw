@@ -113,7 +113,7 @@ public class MessageUtil {
 	public static final String CAWE_yeePayCardCharge_AllmoneyNotEmpty = "请您输入充值卡面值!";
 	public static final String CAWE_yeePayCardCharge_AllmoneyPatternError = "充值卡面值必须是大于1的整数!";
 
-	public static final String CAWE_rycCardCharge_fail = "请正确输入如意彩点卡卡号和密码!";
+	public static final String CAWE_rycCardCharge_fail = "请正确输入博雅彩点卡卡号和密码!";
 
 	/**
 	 * 提现
@@ -135,14 +135,14 @@ public class MessageUtil {
 	 */
 	public static final String ERROR_Message = "系统正在维护，请您联系客服400-665-1000或者稍后登录！";
 	/**
-	 * 如意彩发送邮件的信息
+	 * 博雅彩发送邮件的信息
 	 */
 	public static String RCY_EMAILSESSAGE=
 		"亲爱的"
 		+"{nickname}"
 		+ ":您好!"
 		+ "<br/>"
-		+ "请您点击下面链接找回如意彩登录密码，如果不做任何操作，您将无法正常使用如意彩相关服务。"
+		+ "请您点击下面链接找回博雅彩登录密码，如果不做任何操作，您将无法正常使用博雅彩相关服务。"
 		+ "<br/>"
 		+ "<a target='_blank' href="
 		+ "{url}"
@@ -156,23 +156,23 @@ public class MessageUtil {
 		+ "{url}"
 		+ "<br/>"
 		+ "此为系统邮件，请勿回复!"
-		+ "请保管好您的邮箱，避免如意彩账户被他人盗用。"
-		+ "如有任何疑问，可查看如意彩相关规则，如意彩网站访问http://www.ruyicai.com";
+		+ "请保管好您的邮箱，避免博雅彩账户被他人盗用。"
+		+ "如有任何疑问，可查看博雅彩相关规则，博雅彩网站访问http://www.ruyicai.com";
 	/*
 	 * 邮箱绑定向邮箱发送的内容
 	 */
-	public static final String EmailBand_Message = "<html><body>亲爱的{nickname}用户"+":"+"<br/>"+"　　您好！请点击下面的链接，完成如意彩邮箱绑定。"
+	public static final String EmailBand_Message = "<html><body>亲爱的{nickname}用户"+":"+"<br/>"+"　　您好！请点击下面的链接，完成博雅彩邮箱绑定。"
 	+"<br/>"+"绑定方式："+"　　立即点击此处"
 	+"<a target='_blank' href='{url}'>绑定您的邮箱</a>"+"<br/>"+"如果上述文字点击无效，请把下面网页地址复制到浏览器地址栏中。"+"<br/>"+"（{url}）"+"<br/>"
 	+"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"
-	+"如意彩"+"<br/>"+"客服电话:400-665-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
+	+"博雅彩"+"<br/>"+"客服电话:400-665-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
 	
 	
 	/*
 	 * 邮箱注册向邮箱发送的内容
 	 */
-	public static final String EmailRegister_Message = "<html><body>亲爱的{nickname}用户"+":"+"<br/>"+"　　您好！请点击下面的链接，完成如意彩注册。"
-	+"<br/>"+"（{url}）"+"<br/><br/>"+"如果上述链接无法点击，请把上面的地址复制到您的浏览器地址栏进入如意彩。"+"<br/>"
-	+"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　如意彩"
+	public static final String EmailRegister_Message = "<html><body>亲爱的{nickname}用户"+":"+"<br/>"+"　　您好！请点击下面的链接，完成博雅彩注册。"
+	+"<br/>"+"（{url}）"+"<br/><br/>"+"如果上述链接无法点击，请把上面的地址复制到您的浏览器地址栏进入博雅彩。"+"<br/>"
+	+"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　博雅彩"
 	+"<br/>"+"客服电话:400-665-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
 }

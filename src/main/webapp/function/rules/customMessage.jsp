@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <title>客户留言</title>
-<meta http-equiv="keywords" content="如意彩，客户留言"/>
-<meta http-equiv="description" content="如意彩为了更好的为您服务，提供客户留言，我们将为您及时解答。"/>
+<meta http-equiv="keywords" content="博雅彩，客户留言"/>
+<meta http-equiv="description" content="博雅彩为了更好的为您服务，提供客户留言，我们将为您及时解答。"/>
 <link rel="stylesheet" type="text/css" href="/rchlw/function/css/util.css" />
 <link rel="stylesheet" type="text/css" href="/rchlw/function/css/tuserAll.css" />
 <script type="text/javascript" src="/rchlw/function/js/jqueryJS/jquery-1.5.min.js"></script> 

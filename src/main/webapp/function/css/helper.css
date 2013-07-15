@@ -1,0 +1,64 @@
+/* 帮助中心左侧 */
+.bzzx_wrap {width: 950px; height:auto; margin:0px auto; padding:0px;}
+.bzzx_content {padding:0px; margin-top:6px; margin-bottom:10px;}
+.bzzx_left {width:158px; float:left; margin-bottom:10px;}
+.bzzx_leftmenu {border:solid 1px #e7e7e7;}
+.bzzxltitle {background:url(../images/helper/bzzxtitlebg.gif); background-repeat:repeat-x; padding-left:20px; padding-top:20px;}
+.bzzxlnav {margin-top:10px; padding-bottom:16px;}
+.cattree {margin-top:0px; margin-bottom:0px;}
+.cattree1 {border-bottom:solid 1px #e7e7e7; width:136px; margin-left:12px;line-height:30px; margin-top:10px; background-repeat:no-repeat; background-position:left;}
+.cattree1 a {color:#666; font-weight:bold; font-size:12px; text-decoration:none;padding-left:16px; display:block; outline:none}
+.cattree12 {border-bottom:solid 1px #e7e7e7; width:136px; margin-left:12px;line-height:30px; margin-top:10px; background-repeat:no-repeat; background-position:left;}
+.cattree12 a {color:#666;font-weight:bold; font-size:12px; text-decoration:none; padding-left:16px; display:block; outline:none}
+.cattree2 {border-bottom:solid 1px #e7e7e7; width:128px; padding-left:10px; margin-left:10px; line-height:30px; background:url(../images/helper/bzzxlnav_icon.gif); background-repeat:no-repeat; background-position:40px; margin-top:0px; margin-bottom:0px;}
+.cattree2 a {color:#333; font-size:12px; text-decoration:none; display:block; line-height:30px; margin-left:10px; outline:none}
+.cattree2 a:hover {color:#DE0201; font-size:12px;}
+.bzzxliuyan {border:solid 1px #e7e7e7; padding:8px 10px; margin-top:10px; font-size:12px; color:#666; line-height:22px; width:138px;}
+.bzzxlyk {border:solid 1px #cecece; margin-top:0px;}
+.bzzxtj {background:url(../images/helper/bzzxtijiao_btnbg.gif); width:42px; height:22px; border:0px; color:#FFF; padding-top:2px; margin-top:10px; margin-left:40px;}
+/* 帮助中心右侧 */
+.bzzxright {width:780px; float:right;}
+.bzzxrbox {border:solid 1px #dbdbdb; width:778px; margin-bottom:10px;}
+.bzzxrtitle {color:#DE0201; font-size:14px; font-weight:bold; padding-left:12px; background:url(../images/helper/bzzxrtitlebg.gif); background-repeat:repeat-x; line-height:29px;}
+.bzzxrnr {padding-left:12px; padding-top:10px;}
+.bzzxlc {padding:8px;}
+.rdwtleft {width:380px; float:left; padding:0px;margin:0px;}
+.rdwtright {width:380px; float:left; padding:0px;margin:0px;}
+.bzzixunlist {padding:0px; margin:0px;}
+.bzzixunlist li {font-size:14px; line-height:30px; background:url(../images/helper/bzzxlist_icon.gif); background-repeat:no-repeat; background-position:left; list-style-type:none; padding-left:6px;}
+.bzzixunlist a {text-decoration:none; color:#333;}
+.bzzixunlist a:hover {text-decoration:underline; color:#DE0201;}
+.bzzixunlist2 {padding:6px 0px; margin-bottom:10px; margin-top:0px; margin-left:0px; margin-right:0px;}
+#bzsytitle a {font-weight:bold; font-size:14px; color:#333; margin-bottom:6px;border-right:none;}
+#bzsytitle a:hover {text-decoration:underline; color:#DE0201;}
+.bzzixunlist2 a {BORDER-RIGHT: #333 1px solid; display:inline-block; PADDING-RIGHT: 12px; FONT-SIZE: 12px; COLOR: #333; LINE-HEIGHT: 14px; MARGIN-RIGHT: 8px; TEXT-DECORATION: none; margin-top:12px}
+.bzzixunlist2 a:hover {text-decoration:underline; color:#DE0201;}
+.bzzxlist {border-bottom:soild 1px #9c9c9c;}
+/* 帮助中心列表页 */
+.bzzixunlist3 {padding-right:10px; padding-left:0px; padding-bottom:10px; margin:0px;}
+.bzzixunlist3 li {font-size:14px;line-height:10px;padding-top:0px;padding-bottom:10px;background-repeat:repeat-x;background-image: url(../images/helper/bzzxxuxian.gif);background-position: bottom; list-style-type:none;}
+.bzzixunlist3 a {text-decoration:none; color:#333;}
+.bzzixunlist3 a:hover {text-decoration:underline; color:#DE0201;}
+.bzzixunlist3 li a b {font-size:14px; font-weight:normal;}
+.bzzixunlist3 li a b:hover {text-decoration:underline; color:#DE0201;}
+/* 帮助中心详细页 */
+.bzzxxqtitle {text-align:center; font-size:14px; border-bottom:solid 1px #e3e3e3; padding-bottom:10px; margin-top:10px;}
+.bzzxxqcon {font-size:14px; margin-top:20px; line-height:30px;}
+.bzzxxqcon p {text-indent:0em;font-size:14px; line-height:30px;}
+.bzzxviewxx {background-repeat:repeat-x;background-image: url(../images/helper/bzzxxuxian.gif); height:2px;}
+.bzzxviewxgti {font-size:14px; font-weight:bold; text-align:left; margin-top:16px;}
+.bzzxviewxgli ul {margin-top:10px; margin-left:0px; padding:0px;}
+.bzzxviewxgli ul li { font-size:12px; line-height:22px; list-style-type:none;}
+.bzzxviewxgli ul li a {color:#666; text-decoration:none;}
+.bzzxviewxgli ul li a:hover {color:#DE0201; text-decoration:underline;}
+/* 帮助中心分页 */
+.dede_pages {font-size:12px; color:#333; margin-top:10px; margin-bottom:10px; height:26px;text-align:center; }
+.pagelist {height:20px; margin:0px auto; padding:0px; text-align:center}
+.dede_pages li {margin:2 8px; display:inline; list-style-type:none;}
+.dede_pages li a {text-decoration:none; color:#1F376D; margin-right:4px;}
+.dede_pages li a:visited {text-decoration:none; color:#1F376D;}
+.dede_pages li a:hover {color:#DE0201; text-decoration:underline;}
+.dede_pages li a:active {text-decoration:none; color:#1F376D;}
+.thisclass {color:#333; font-size:12px;}
+.pageinfo {color:#333; font-size:12px;}
+.select {white-space:pre; color:#DE0201; cursor:default;}

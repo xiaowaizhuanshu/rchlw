@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 
 /**
  * 
- * 读取如意彩配置文件
+ * 读取博雅彩配置文件
  * 
 */
 public class ResourceBundleUtil {
@@ -44,10 +44,10 @@ public class ResourceBundleUtil {
 	//合买方案文件名称
 	public final static String HEIMAI_NAME = rbint.getString("heimai_name");
 
-	//如意彩注册手机发送短信内容
+	//博雅彩注册手机发送短信内容
 	public static final String RYCSENDMES = rbint.getString("ryc_sendMsg");
 
-	//如意彩注册手机发送短信内容
+	//博雅彩注册手机发送短信内容
 	public static final String RYC_PHONEBANDSENDMSG = rbint.getString("ryc_phonebandsendMsg");
 
 	//新的链接地址
@@ -70,16 +70,16 @@ public class ResourceBundleUtil {
 	//找回密码发送邮件地址
 	public static final String FINFPEDBYEMAIL = rbint.getString("ryc_findpwd");
 
-	//如意彩发送到邮箱的地址连接
+	//博雅彩发送到邮箱的地址连接
 	public static final String RYCEMAILURL = rbint.getString("rycemailUrl");
 
-	//如意彩邮箱注册发送到邮箱的地址连接
+	//博雅彩邮箱注册发送到邮箱的地址连接
 	public static final String RYCEMAILREGISTERURL = rbint.getString("rycemailRegisterUrl");
 
 	//设置开关短信地址
 	public static String LINKSMGURL = rbint.getString("linkSMGUrl");
 
-	//如意彩用户登录获取地址
+	//博雅彩用户登录获取地址
 	public static String USERSCENTERURL = rbint.getString("usersCenterUrl");
 	//赠彩相关查询地址
 	public static String LINKZCURL = rbint.getString("linkPRESENTUrl");

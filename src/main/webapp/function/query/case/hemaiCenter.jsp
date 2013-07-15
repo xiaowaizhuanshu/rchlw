@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%><%@taglib prefix="s" uri="/struts-tags"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"/>
-<meta name="keywords" content="合买中心,合买,跟单,如意彩,彩票网,购彩网,福彩,体彩,足彩,竞彩,高频彩,购彩,投注,在线购彩,在线投注 " />
-<title>合买中心 - 合买 – 彩票在线购买|福彩|体彩|足彩|竞彩|高频彩|如意彩</title>
-<meta name="description" content="合买中心是彩民进行福彩,体彩,竞彩足球等彩票合买跟单的频道,提供双色球,大乐透,时时彩,足球单场,胜负彩等热门彩种在如意彩网站上进行，一起跟单买彩票的服务" />
+<meta name="keywords" content="合买中心,合买,跟单,博雅彩,彩票网,购彩网,福彩,体彩,足彩,竞彩,高频彩,购彩,投注,在线购彩,在线投注 " />
+<title>合买中心 - 合买 – 彩票在线购买|福彩|体彩|足彩|竞彩|高频彩|博雅彩</title>
+<meta name="description" content="合买中心是彩民进行福彩,体彩,竞彩足球等彩票合买跟单的频道,提供双色球,大乐透,时时彩,足球单场,胜负彩等热门彩种在博雅彩网站上进行，一起跟单买彩票的服务" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/newsAll.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/ymPrompt.css" />
