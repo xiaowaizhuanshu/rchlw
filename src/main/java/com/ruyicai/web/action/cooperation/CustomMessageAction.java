@@ -17,7 +17,6 @@ import com.ruyicai.util.LotErrorCode;
 import com.ruyicai.util.MessageUtil;
 import com.ruyicai.util.ResourceBundleUtil;
 import com.ruyicai.util.URLEncoder;
-import com.ruyicai.web.action.TuserinfoAction;
 import com.ruyicai.web.pojo.Custom;
 import com.ruyicai.web.pojo.PhoneInfo;
 import com.ruyicai.web.service.CustomService;
@@ -159,7 +158,7 @@ public class CustomMessageAction extends BaseAction {
 				phoneInfo.setRules(1);
 				count = phoneInfoService.queryPhoneInfoCountByEmail(phoneInfo);
 				if (count < 3) {
-					TuserinfoAction.addUserScore(userno, null, 7, null, null, null);
+					//					TuserinfoAction.addUserScore(userno, null, 7, null, null, null);
 					phoneInfo.setEmail("Msg" + userno);
 					phoneInfo.setRules(1);
 					count = Integer.valueOf(phoneInfoService.add(phoneInfo));
