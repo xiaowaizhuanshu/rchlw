@@ -5,9 +5,9 @@ import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
+import com.boyacai.common.util.JsonBinder;
 import com.boyacai.helper.vo.Helper;
 import com.boyacai.helper.vo.HelperPage;
-import com.boyacai.util.JsonBinder;
 import com.ruyicai.util.HttpUtil;
 import com.ruyicai.util.ResourceBundleUtil;
 

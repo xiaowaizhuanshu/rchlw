@@ -2298,7 +2298,7 @@ function checkMoney(){
 						}else{
 							openAlert("留言出现错误，请稍后再试！");
 						}
-						window.location.reload();
+						getList("list","listCont");
 					}		
 				});
 

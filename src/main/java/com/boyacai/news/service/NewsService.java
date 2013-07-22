@@ -6,9 +6,9 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
 import com.boyacai.common.AppConstant;
+import com.boyacai.common.util.JsonBinder;
 import com.boyacai.news.vo.News;
 import com.boyacai.news.vo.NewsPage;
-import com.boyacai.util.JsonBinder;
 import com.ruyicai.util.HttpUtil;
 import com.ruyicai.util.ResourceBundleUtil;
 

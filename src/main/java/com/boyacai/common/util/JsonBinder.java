@@ -5,7 +5,7 @@
  * 
  * $Id: JsonBinder.java 1216 2010-09-12 13:52:48Z calvinxiu $
  */
-package com.boyacai.util;
+package com.boyacai.common.util;
 
 import java.io.IOException;
 import java.text.DateFormat;

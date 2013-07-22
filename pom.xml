@@ -134,7 +134,7 @@
 			<version>1.2</version>
 		</dependency>
 		
-		<!-- json -->
+		<!-- jackson -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
 			<artifactId>jackson-core-asl</artifactId>
@@ -180,10 +180,9 @@
 			<resource>
 				<directory>src/main/java</directory>
 				<includes>
-				<include>**/*.xml</include>
+					<include>**/*.xml</include>
 				</includes>
 			</resource>
-
 		</resources>
 		<plugins>
 			<plugin>
@@ -352,7 +351,7 @@
 				<usersCenterUrl>http://test.com/</usersCenterUrl>
 				
 				<!-- 应用地址 -->
-				<appAddress>http://test.com</appAddress>
+				<appAddr>{"rchlw":"http://test.com:8090","users":"http://test.com","wap":"http://test.com/wap"}</appAddr>
 			</properties>
 		</profile>
 		<profile>

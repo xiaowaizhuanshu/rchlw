@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 import com.boyacai.activity.vo.Activity;
 import com.boyacai.activity.vo.ActivityPage;
-import com.boyacai.util.JsonBinder;
+import com.boyacai.common.util.JsonBinder;
 import com.ruyicai.util.HttpUtil;
 import com.ruyicai.util.ResourceBundleUtil;
 

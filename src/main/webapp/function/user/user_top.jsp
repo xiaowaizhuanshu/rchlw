@@ -1,3 +1,4 @@
+<%@page import="com.boyacai.common.util.AppAddr"%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -81,9 +82,9 @@
 					</span>
 					<dl>
 						<dt>
-							<a href="http://users.ruyicai.com/function/unitedLogin!qqUnitedHandlyLogin"><img src="<%=request.getContextPath() %>/function/images/login_QQ.gif" />QQ</a>
+							<a href="<%=AppAddr.getUsersPath() %>/function/unitedLogin!qqUnitedHandlyLogin"><img src="<%=request.getContextPath() %>/function/images/login_QQ.gif" />QQ</a>
 						</dt>
-						<dd><a href="http://users.ruyicai.com/function/unitedLogin!alipayHandyLogin"><img src="<%=request.getContextPath() %>/function/images/login_zhiFuBao.gif" />支付宝</a>
+						<dd><a href="<%=AppAddr.getUsersPath() %>/function/unitedLogin!alipayHandyLogin"><img src="<%=request.getContextPath() %>/function/images/login_zhiFuBao.gif" />支付宝</a>
 						</dd>
 					</dl>
 				</div>

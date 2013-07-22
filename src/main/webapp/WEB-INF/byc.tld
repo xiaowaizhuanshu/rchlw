@@ -71,4 +71,17 @@
 			<description>值变量</description>
 		</attribute>
 	</tag>
+	<!-- 服务地址 -->
+	<tag>
+		<name>addr</name>
+		<tag-class>com.boyacai.common.tag.AppAddrTag</tag-class>
+		<body-content>empty</body-content>
+		<description>便捷获取各应用模块服务地址</description>
+		<attribute>
+			<name>module</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>各应用模块标识[users|rchlw|jclq|jczq|kuaikai]</description>
+		</attribute>
+	</tag>
 </taglib>  

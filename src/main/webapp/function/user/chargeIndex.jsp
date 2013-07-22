@@ -1,8 +1,7 @@
 <%@page import="com.ruyicai.bean.Tuserinfo"%>
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
- <style>div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}</style>
+<style>div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}</style>
 <%@ page import="net.sf.json.JSONObject,com.jrt.invokeLot.util.JSONReslutUtil" %>
 <%	
 	JSONObject tuserinfo = JSONReslutUtil.getUserInfo(request);
@@ -12,20 +11,19 @@
 <script>
 $(function(){
 	$.ajax({
-	        url:'/rchlw/user/tuserinfoAction!toCharge', 
-	        type:'post',
-	        dataType:'json',
-	        success:(function(json){ //回传函数实体，参数为XMLhttpRequest.responseText
-	        	if(json.objDNABind==null ||( json.objDNABind!="" && json.objDNABind.state=="0")){
-					//白名单
-					var addFont = '0';	
-    			}else{
-					//灰名单
-					var addFont = '1';
-					reHtml(65,'',false,'bankDiv',false);
-				}
-    		 })
-			 
+        url:'/rchlw/user/tuserinfoAction!toCharge', 
+        type:'post',
+        dataType:'json',
+        success:(function(json){ //回传函数实体，参数为XMLhttpRequest.responseText
+        	if(json.objDNABind==null ||( json.objDNABind!="" && json.objDNABind.state=="0")){
+				//白名单
+				var addFont = '0';	
+   			}else{
+				//灰名单
+				var addFont = '1';
+				reHtml(65,'',false,'bankDiv',false);
+			}
+		})
 	});
 });
 </script>
