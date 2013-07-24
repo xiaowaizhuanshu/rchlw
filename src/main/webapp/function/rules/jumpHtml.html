@@ -24,7 +24,7 @@
 <div class="JumpPage">
 	<p><a href="/rchlw/index.jsp"><img src="/rchlw/function/images/HomeLogo.gif" width="138" height="64" /></a></p>
 	<dl>
-		<dt>如意彩正在带您去<b id="name">中国银联</b>，请稍等</dt>
+		<dt>博雅彩正在带您去<b id="name">中国银联</b>，请稍等</dt>
 		<dd>如果您的浏览器没有自动跳转，请<a href="http://cn.unionpay.com/" title="点击这里" id="jump">点击这里</a></dd>
 		<dd><i>正在转入链接网站，请稍等…<i></dd>
 	</dl>
@@ -35,27 +35,27 @@ var view = GetQueryString("id");
 var url;
 if(view=="1"){//银联
 	url="http://cn.unionpay.com/";
-	document.title="如意彩正在带您去中国银联";
+	document.title="博雅彩正在带您去中国银联";
 	$("#name").html("中国银联");
 }else if(view=="2"){//牛仔网
 	url="http://s.9666.cn/";
-	document.title="如意彩正在带您去牛仔网";
+	document.title="博雅彩正在带您去牛仔网";
 	$("#name").html("牛仔网");
 }else if(view=="3"){//理想在线
 	url="http://www.55188.com/lottery.php";
-	document.title="如意彩正在带您去理想在线";
+	document.title="博雅彩正在带您去理想在线";
 	$("#name").html("理想在线");
 }else if(view=="4"){//腾讯
 	url="http://www.qq.com";
-	document.title="如意彩正在带您去腾讯";
+	document.title="博雅彩正在带您去腾讯";
 	$("#name").html("腾讯");
 }else if(view=="5"){//支付宝
 	url="https://www.alipay.com/";
-	document.title="如意彩正在带您去支付宝";
+	document.title="博雅彩正在带您去支付宝";
 	$("#name").html("支付宝");
 }else if(view=="6"){//百度
 	url="http://www.baidu.com/";
-	document.title="如意彩正在带您去baidu";
+	document.title="博雅彩正在带您去baidu";
 	$("#name").html("百度");
 }
 $("#jump").attr("href",url);

@@ -56,7 +56,7 @@
 		<form method="post" id="userLoginForm">
 			<!-- 登录前 账户密码输入框以及快速入口 start -->
 			<dt>
-				您好，欢迎来到如意彩！
+				您好，欢迎来到博雅彩！
 			</dt>
 			<dt>
 				<a href="http://users.ruyicai.com/login.jsp" target="ssq">登录</a>

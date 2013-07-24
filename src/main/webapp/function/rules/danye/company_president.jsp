@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<meta name="keywords" content="如意彩，如意彩票，金软瑞彩" />
-<meta name="description" content="金软瑞彩-您身边的购彩专家" />
+<meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
+<meta name="description" content="华夏百信-您身边的购彩专家" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href='csslogo.png'>
 <link rel="apple-touch-icon-precomposed" href='csslogo.png'>
-<title>金软瑞彩科技有限公司-公司简介</title>
+<title>华夏百信科技有限公司-公司简介</title>
 <link href="<%=request.getContextPath() %>/function/css/danyeNew.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
@@ -77,9 +77,9 @@
 		<div class="main_right_txt">
 			<p>新经济时代的中国面临着全球化的趋势，这样我们面临的将是全球化的竞争，同时随着市场经济的迅速发展，我们进入了一个以客户为导向的时代，在这个时代中，必须将客户的利益放在第一位！</p>
 			<p>&nbsp;</p>
-			<p>在市场经济环境中，竞争能力决定了企业的现状和前途。要提高企业的竞争力，就必须推进企业的管理创新，实现科学管理。只有真正优秀的企业才能在竞争中获胜。我们要在不断把成功因素继续重复放大的同时，还需要改变一切不适应市场发展趋势的经营观念与行为习惯，进一步激发团队的激情与组织的活力，充分发挥我们的创新能力，不断超越自我，创造一种蓬勃发展的动力之源，快速提升金软瑞彩科技有限公司的整体竞争能力。</p>
+			<p>在市场经济环境中，竞争能力决定了企业的现状和前途。要提高企业的竞争力，就必须推进企业的管理创新，实现科学管理。只有真正优秀的企业才能在竞争中获胜。我们要在不断把成功因素继续重复放大的同时，还需要改变一切不适应市场发展趋势的经营观念与行为习惯，进一步激发团队的激情与组织的活力，充分发挥我们的创新能力，不断超越自我，创造一种蓬勃发展的动力之源，快速提升华夏百信科技有限公司的整体竞争能力。</p>
 			<p>&nbsp;</p>
-			<p>金软瑞彩科技有限公司一直强调为用户提供贴身式服务，为用户提供最佳体验服务。如意彩的管理团队是一个充满激情、不断创新的智慧的结晶体，我们愿与企业一道把握机遇，不断超越自我，实现共同理想！</p>
+			<p>华夏百信科技有限公司一直强调为用户提供贴身式服务，为用户提供最佳体验服务。博雅彩的管理团队是一个充满激情、不断创新的智慧的结晶体，我们愿与企业一道把握机遇，不断超越自我，实现共同理想！</p>
 		</div>
 		
 	</div>

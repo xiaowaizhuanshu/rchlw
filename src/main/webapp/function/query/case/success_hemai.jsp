@@ -3,7 +3,7 @@
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>合买成功</title>
-<meta http-equiv="keywords" content="如意彩、彩票投注管理、账户管理、彩票赠送管理">
+<meta http-equiv="keywords" content="博雅彩、彩票投注管理、账户管理、彩票赠送管理">
 <meta http-equiv="description" content="彩票投注管理、账户管理、彩票赠送管理">
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css">
 <link href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet" type="text/css">

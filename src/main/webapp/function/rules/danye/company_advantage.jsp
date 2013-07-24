@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<meta name="keywords" content="如意彩，如意彩票，金软瑞彩" />
-<meta name="description" content="金软瑞彩-您身边的购彩专家" />
+<meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
+<meta name="description" content="华夏百信-您身边的购彩专家" />
 <link rel="shortcut icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href='csslogo.png'>
 <link rel="apple-touch-icon-precomposed" href='csslogo.png'>
-<title>金软瑞彩科技有限公司-公司简介</title>
+<title>华夏百信科技有限公司-公司简介</title>
 <link href="<%=request.getContextPath() %>/function/css/danyeNew.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
@@ -75,9 +75,9 @@
 		<h1>政策优势 ： </h1>
 		<div class="main_right_txt">
 			<ul>
-				<li>金软瑞彩拥有 全国十余家省级彩票中心的合法授权，无纸化彩票销售系统通过了国家有关监管部门检测   。 </li>
-				<li>金软瑞彩深度整合彩票发行和销售机构资源，与中国移动和 中国银 联 建立 了战略合作伙伴关系。 </li>
-				<li>金软瑞彩奉行合规经营的原则，获得彩票行业监管部门的认可及大力支持。 </li>
+				<li>华夏百信拥有 全国十余家省级彩票中心的合法授权，无纸化彩票销售系统通过了国家有关监管部门检测   。 </li>
+				<li>华夏百信深度整合彩票发行和销售机构资源，与中国移动和 中国银 联 建立 了战略合作伙伴关系。 </li>
+				<li>华夏百信奉行合规经营的原则，获得彩票行业监管部门的认可及大力支持。 </li>
 			</ul>
 			<p>&nbsp;</p>
 		</div>
@@ -101,8 +101,8 @@
 		<h1>专注 运营：</h1>
 		<div class="main_right_txt">
 			<ul>
-				<li>业务专注 ： 金软瑞彩 专注于做无纸化彩票运营，从未也从不涉足于其它领域 。 </li>
-				<li>立志钻研 ： 立足于互联网和移动互联网的发展规律，金软瑞彩在产品研发、用户体验方面潜心钻研、不断进步 。 </li>
+				<li>业务专注 ： 华夏百信 专注于做无纸化彩票运营，从未也从不涉足于其它领域 。 </li>
+				<li>立志钻研 ： 立足于互联网和移动互联网的发展规律，华夏百信在产品研发、用户体验方面潜心钻研、不断进步 。 </li>
 			</ul>
 		</div>
 	</div>

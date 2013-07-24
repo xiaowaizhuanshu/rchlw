@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩会员注册，您可以使用邮箱注册</title>
+<title>博雅彩会员注册，您可以使用邮箱注册</title>
 <meta name="keywords" content="会员注册，邮箱注册" />
-<meta name="description" content="如意彩会员会员注册，您可以使用邮箱注册，让您购彩更快乐！" />
+<meta name="description" content="博雅彩会员会员注册，您可以使用邮箱注册，让您购彩更快乐！" />
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" rel="stylesheet" href="<%=request.getContextPath() %>/function/css/validator.css"></link>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/ruserAll.css" rel="stylesheet"/>

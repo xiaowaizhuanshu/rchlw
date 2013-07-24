@@ -1,6 +1,5 @@
 <%@page import="com.ruyicai.bean.Tuserinfo"%>
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%response.setHeader("Pragma","No-cache");
 response.setHeader("Cache-Control","no-cache");
 response.setDateHeader("Expires", 0);
@@ -11,7 +10,7 @@ response.flushBuffer();%>
 	JSONObject tuserinfo = JSONReslutUtil.getUserInfo(request);
 	Tuserinfo tuser = Tuserinfo.setJson(tuserinfo.getJSONObject("value"));
 %>
-<script type="text/javascript">$(function(){balanceAdtil('deposit_amount_user','freeze_amout_user','username');getUserScore("scores");});  </script>
+<script type="text/javascript">$(function(){balanceAdtil('deposit_amount_user','freeze_amout_user','username');/*getUserScore("scores");*/});  </script>
 <h1>账户全览</h1>
 <div class="zhqlrbox">
     <div class="zhqlsctx">
@@ -28,8 +27,8 @@ response.flushBuffer();%>
       <div class="hyuser">欢迎，<span id=""><%=tuser.getNICKNAME() %>  </span></div>
     </div>
     <div class="zhqlzhxx">
-      当前积分：<a href="/rchlw/function/rules/user.jsp?key=69" title="查看积分详情"><font class="redword" id="scores"></font></a>分 
-      <span class="blueword"><a href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12" title="积分规则">积分规则>></a></span>
+      <!-- 当前积分：<a href="/rchlw/function/rules/user.jsp?key=69" title="查看积分详情"><font class="redword" id="scores"></font></a>分 --> 
+      <%-- <span class="blueword"><a href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12" title="积分规则">积分规则>></a></span> --%>
       <span class="zhqlcz"><a href="/rchlw/function/rules/user.jsp?key=4"><img src="<%=request.getContextPath() %>/function/images/zhqlczbtn.gif" width="42" height="22" border="0"/></a></span>
       <span class="zhqltk"><a href="/rchlw/function/rules/user.jsp?key=11"><img src="<%=request.getContextPath() %>/function/images/zhqltkbtn.gif" width="42" height="22" border="0"/></a></span>
       <br/>

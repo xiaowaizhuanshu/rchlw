@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* 公共样式  background:url(/rchlw/function/images/BodyBannerBG.gif) repeat-x top center;  */
+/* 公共样式  background:url(../images/BodyBannerBG.gif) repeat-x top center;  */
 body { font-family: "宋体",Arial, Helvetica, sans-serif;	font-size: 12px;line-height: 18px; background-position:0 27px; color: #333;}
 form,ol,ul,li,i,dl,dt,dd,table,tr,td,th,h1,h2,h3,h4,h5,p,b,i,font,em,strong{ margin:0px; padding:0px;font-size:12px; line-height:14px; list-style:none; color:#333; font-weight:normal; font-style:normal;}
 body,div,ul,ol,li,dl,dt,dd,table,th,td{ margin:0; padding:0;}
@@ -8,17 +8,17 @@ img {border:none;}
 a{color:#333333; text-decoration:none;}
 a.over{color:#DE0201; text-decoration:underline;}
 div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
-.HomePageBGBox{ background-image:url(/rchlw/function/images/AllHomePageIcon.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
-.ZouShiTuBiaoBGBox{ background-image:url(/rchlw/function/images/AllZouShiTuBiao.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
-.SiteInfoLegalBGBox{ background-image:url(/rchlw/function/images/AllSiteInfoLegal.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+.HomePageBGBox{ background-image:url(../images/AllHomePageIcon.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+.ZouShiTuBiaoBGBox{ background-image:url(../images/AllZouShiTuBiao.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
+.SiteInfoLegalBGBox{ background-image:url(../images/AllSiteInfoLegal.gif); background-repeat:no-repeat; display:block; overflow:hidden;}
 .hand{ cursor:pointer;}
 .none{ display:none;}
 
-.ListAddClass{display:inline-block; width:30px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/jiajiang.gif) no-repeat;}
-.ListHotClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/hot.gif) no-repeat;}
-.ListNewClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/new.gif) no-repeat;}
-.ListAwardClass{display:inline-block; width:32px; height:22px; line-height:22px; overflow:hidden; margin-left:2px; background: url(/rchlw/function/images/award.gif) no-repeat;}
-.ListFanJiangClass{display:inline-block; width:56px; height:23px; line-height:23px; overflow:hidden; margin- left:2px; background: url(/rchlw/function/images/sscjj.gif) no-repeat;}
+.ListAddClass{display:inline-block; width:30px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(../images/jiajiang.gif) no-repeat;}
+.ListHotClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(../images/hot.gif) no-repeat;}
+.ListNewClass{display:inline-block; width:21px; height:16px; line-height:16px; overflow:hidden; margin-left:2px; background: url(../images/new.gif) no-repeat;}
+.ListAwardClass{display:inline-block; width:32px; height:22px; line-height:22px; overflow:hidden; margin-left:2px; background: url(../images/award.gif) no-repeat;}
+.ListFanJiangClass{display:inline-block; width:56px; height:23px; line-height:23px; overflow:hidden; margin- left:2px; background: url(../images/sscjj.gif) no-repeat;}
 
 /* 各个彩种下拉菜单小图标*/
 .List_FuCai{width:25px; height:25px; background-position:0px -150px;}
@@ -33,7 +33,7 @@ div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
 
 #footer{ width:950px; height:auto; margin:0 auto;  margin-top:10px; padding:0;  } 
 .partner{width:948px; height:auto; border:1px solid #dcdcdc;}
-.parttitle{ width:935px; height:30px; background: url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x; line-height:30px; font-weight:bold; font-size:14px; padding-left:13px; color:#de0201; }
+.parttitle{ width:935px; height:30px; background: url(../images/ChannelBuyPannelHeader.png) repeat-x; line-height:30px; font-weight:bold; font-size:14px; padding-left:13px; color:#de0201; }
 .partcontent{ width:928px;padding:10px; *line-height:3px;}
 .partcontent a{ margin-left:3px; margin-right:4px;color:#333333; line-height:25px; }
 .partcontent a:hover{color:#DE0201; text-decoration:underline;}
@@ -62,7 +62,7 @@ div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
 .partner dl{ overflow:hidden;}
 .partner dd{ width:60px; height:26px; line-height:26px; float:left; margin:0 10px; cursor:pointer; color:#1F376D; margin-top:4px; text-align:center;}
 .partner dd.over{ width:60px; height:26px; line-height:26px; float:left; margin:0 10px; cursor:pointer; color:#1F376D; margin-top:4px; text-align:center;}
-.partner dd.selected{width:60px; height:26px; line-height:26px; float:left; margin:0 10px; cursor:pointer; color:#1F376D; margin-top:4px;  text-align:center; background: url(/rchlw/function/images/partner_linksBG.gif) no-repeat;}
+.partner dd.selected{width:60px; height:26px; line-height:26px; float:left; margin:0 10px; cursor:pointer; color:#1F376D; margin-top:4px;  text-align:center; background: url(../images/partner_linksBG.gif) no-repeat;}
 
 .account_rechargeContent{ width:950px; height:auto; overflow:hidden;}
 
@@ -74,7 +74,7 @@ div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
 .AlertWindow{ width:300px; font-family:Arial, Helvetica, sans-serif; color:#333;}
 .AlertWindow table,.AlertWindow th,.AlertWindow td,.AlertWindow dl,.AlertWindow dt,.AlertWindow dd,.AlertWindow ul,.AlertWindow ol,.AlertWindow li,.AlertWindow h1,.AlertWindow h2,.AlertWindow h3,.AlertWindow h4,.AlertWindow h5,.AlertWindow p{ margin:0px; padding:0px;}
 .AlertWindow table{ width:100%; border-collapse:collapse;}
-.AlertWindow th.ConnerLeft,.AlertWindow th.WindowTittle,.AlertWindow th.ConnerRight,.AlertWindow .BaseBtn,.AlertWindow .BaseBtn,.InsideBorder{ background-image:url(/rchlw/function/images/AlertWindowBG.gif); background-repeat:repeat-x;}
+.AlertWindow th.ConnerLeft,.AlertWindow th.WindowTittle,.AlertWindow th.ConnerRight,.AlertWindow .BaseBtn,.AlertWindow .BaseBtn,.InsideBorder{ background-image:url(../images/AlertWindowBG.gif); background-repeat:repeat-x;}
 .AlertWindow th.ConnerLeft   { background-position:0px 0px; width:5px; height:25px;}
 .AlertWindow th.WindowTittle{ background-position:0px -25px; height:25px; line-height:25px;}
 .AlertWindow th.ConnerRight  { background-position:-75px 0px; width:5px; height:25px;}
@@ -85,7 +85,7 @@ div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
 .OutsideBorder{ border:solid 1px #31699C; padding:0px 1px 1px 1px; background:#94d7ff; border-top:none; overflow:hidden;}
 .InsideBorder{ border:solid 1px #31699C; padding:1px; background-position:0px -190px; border-top:none; background-color:#FFFFFF; overflow:hidden;}
 .AlertWindow input{width:150px; border:solid 1px #999;}
-.AlertWindow input.BaseBtn{background:url(/rchlw/function/images/AlertWindowBG.gif); background-position:0px -70px; width:80px; height:21px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px;}
+.AlertWindow input.BaseBtn{background:url(../images/AlertWindowBG.gif); background-position:0px -70px; width:80px; height:21px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px;}
 .AlertWindow input.BtnOver{ background-position:0px -100px;}
 .AlertWindow input.BtnDown{ background-position:0px -130px;}
 .AlertWindow input.BtnDisable{ background-position:0px -160px;}
@@ -96,18 +96,18 @@ div.space10{line-height:10px; font-size:10px; height:10px; overflow:hidden;}
 .AlertWindow{ width:300px; font-family:Arial, Helvetica, sans-serif; color:#333;}
 .AlertWindow table,.AlertWindow th,.AlertWindow td,.AlertWindow dl,.AlertWindow dt,.AlertWindow dd,.AlertWindow ul,.AlertWindow ol,.AlertWindow li,.AlertWindow h1,.AlertWindow h2,.AlertWindow h3,.AlertWindow h4,.AlertWindow h5,.AlertWindow p{ margin:0px; padding:0px;}
 
-.WindowTittle{ background:url(/rchlw/function/images/Alert_bg.gif) repeat-x; height:33px;  border:1px solid #fcae58; border-bottom:1px solid #ffd6a9; overflow:hidden;}
+.WindowTittle{ background:url(../images/Alert_bg.gif) repeat-x; height:33px;  border:1px solid #fcae58; border-bottom:1px solid #ffd6a9; overflow:hidden;}
 .WindowTittle h3{ float:left; line-height:33px; padding-left:12px; font-size:13px;}
-.WindowTittle .Alertclose{ background:url(/rchlw/function/images/Alertclose.gif) no-repeat; width:15px; height:15px; float:right; margin:10px 10px 0px 0px; cursor:pointer;}
+.WindowTittle .Alertclose{ background:url(../images/Alertclose.gif) no-repeat; width:15px; height:15px; float:right; margin:10px 10px 0px 0px; cursor:pointer;}
 .InsideBorder{ border:solid 1px #fcae58; border-top:none;  background-color:#FFFFFF;}
 .AscertainBuy{ overflow:hidden;}
-.BtnDisable{ background:url(/rchlw/function/images/Alert_buy.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:none; float:left;  margin-left:250px;}
-.BtnDisableNew{ background:url(/rchlw/function/images/Alert_buy_new.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:none; float:left;  margin-left:250px;}
+.BtnDisable{ background:url(../images/Alert_buy.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:none; float:left;  margin-left:250px;}
+.BtnDisableNew{ background:url(../images/Alert_buy_new.gif) no-repeat; width:70px; height:22px; cursor:pointer; border:none; float:left;  margin-left:250px;}
 .AscertainBuy span a{ color:#1f376d;  text-decoration:none; cursor:pointer; margin-left:20px; margin-top:7px;float:left; }
 .AscertainBuy span a:hover{  text-decoration:underline; color:#DE0201;}
-.BaseBtn{background:url(/rchlw/function/images/login_inpuBtn.gif)no-repeat;width:80px; height:25px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px; display:inline-block; color:#FFFFFF; text-decoration:none;}
+.BaseBtn{background:url(../images/login_inpuBtn.gif)no-repeat;width:80px; height:25px; line-height:21px; cursor:pointer; margin-right:10px; border:none; font-size:12px; display:inline-block; color:#FFFFFF; text-decoration:none;}
 .InsideBorder .BaseBtn {
-    background: url(/rchlw/function/images/login_inpuBtn.gif) no-repeat;width:80px; height:25px; line-height:21px; cursor:pointer; margin-right:10px; border:0; font-size:12px; display:inline-block; color:#FFFFFF; text-decoration:none;}
+    background: url(../images/login_inpuBtn.gif) no-repeat;width:80px; height:25px; line-height:21px; cursor:pointer; margin-right:10px; border:0; font-size:12px; display:inline-block; color:#FFFFFF; text-decoration:none;}
 
 /* 余额不足 */
 div.BalanceWindow{ width:450px;}
@@ -125,21 +125,21 @@ table.SignInTable{ border-collapse:collapse; width:300px; margin:10px auto 0px a
 .SignInTable td{ height:30px; line-height:30px;}
 .user_table th, .user_table td{ font-weight:normal; height:35px; line-height:35px;}
 input.logininput{width:150px; border:solid 1px #999; height:22px; line-height:22px;}
-.ErrorTittle{ display:block; width:235px; padding:2px 5px 2px 25px; border:solid 1px #FF8080; line-height:16px; text-align:left; background:url(/rchlw/function/images/ErrorIcon.gif) no-repeat 4px 2px #FFFFFF; margin:auto;}
+.ErrorTittle{ display:block; width:235px; padding:2px 5px 2px 25px; border:solid 1px #FF8080; line-height:16px; text-align:left; background:url(../images/ErrorIcon.gif) no-repeat 4px 2px #FFFFFF; margin:auto;}
 .SignInWindow a{ color:#01529d; text-decoration:none;}
 .SignInWindow a:hover{ color:#DE0201; text-decoration:underline;}
 .SignInWindow .BaseBtn{ margin:20px auto 20px;}
 /* 首页提示弹窗 */
 div.KillNumberAlert{ width:450px;}
 div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
-.KillNumberAlertTable{ width:100%; background:url(/rchlw/function/images/ErrorIcon_i.gif) no-repeat 20px 0px;}
+.KillNumberAlertTable{ width:100%; background:url(../images/ErrorIcon_i.gif) no-repeat 20px 0px;}
 .KillNumberAlertTable th{ height:20px; line-height:20px;}
 .KillNumberAlertTable td{ height:20px; line-height:20px;}
 .KillNumberAlertTable td i{ color:#DE0201;}
 
 /*合买*/
 .index_togetherBuy{border:solid 1px #DBDBDB;}
-.index_buyPannelHead{ height:28px; line-height:28px; overflow:hidden; background: url(/rchlw/function/images/AllIndex.gif) 0px -300px repeat-x; display:block; border-bottom:solid 1px #DBDBDB;}
+.index_buyPannelHead{ height:28px; line-height:28px; overflow:hidden; background: url(../images/AllIndex.gif) 0px -300px repeat-x; display:block; border-bottom:solid 1px #DBDBDB;}
 .index_buyPannelHead span{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; color:#DE0201; float:left;}
 .index_buyPannelHead a{line-height:30px; height:30px; font-size:12px; padding:0px 10px;  float:right; text-decoration:none; color:#1F376D;}
 .index_buyPannelHead a:hover{ color:#1F376D; text-decoration:underline;}
@@ -166,11 +166,11 @@ div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
 }
 .index_buyListTable .orange th,.index_buyListTable .orange td{ background:#fffae3;    border-bottom: 1px solid #FFE5BB;}
 
-.AllTogetherBuyBox{background:url(/rchlw/function/images/AllTogetherBuy.gif); background-image: url(/rchlw/function/images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
+.AllTogetherBuyBox{background:url(../images/AllTogetherBuy.gif); background-image: url(../images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
 .CancelBtn input.BaseBtn{ width:42px; height:22px; line-height:22px; color:#CC6543; border:none; cursor:pointer; background-position:-150px -150px;}
 .CancelBtn input.BtnOver{ background-position:-150px -175px;}
 .CancelBtn input.BtnDown{  background-position:-150px -200px;}
-.AllTogetherBuyBox{background:url(/rchlw/function/images/AllTogetherBuy.gif); background-image: url(/rchlw/function/images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
+.AllTogetherBuyBox{background:url(../images/AllTogetherBuy.gif); background-image: url(../images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
 .LevelCrown{ width:16px; height:20px; float:left; cursor:pointer; background-position:0px -293px;}
 .LevelCrownGray{ width:16px; height:20px; float:left; cursor:pointer; background-position:0px -313px;}
 .LevelCup{ width:16px; height:20px; float:left; cursor:pointer; background-position:-20px -293px;}
@@ -195,15 +195,15 @@ div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
 .FilterBtn input.BtnOver{ background-position:0px -175px;}
 .FilterBtn input.BtnDown{  background-position:0px -200px;}
 
-.index_lucky{ width:268px; height:auto; border:1px solid #dbdbdb; background:url(/rchlw/function/images/luckyline.jpg) repeat-x; margin-top:10px; overflow:hidden; float:right;}
+.index_lucky{ width:268px; height:auto; border:1px solid #dbdbdb; background:url(../images/luckyline.jpg) repeat-x; margin-top:10px; overflow:hidden; float:right;}
 .index_phoneClient{ float:right; margin-top:10px;}
 
 /* 足彩投注记录查看超级玩家 */
  div.ViewDetailsWindow{ width:554px;}
 .ViewDetails{margin:7px; border:#dbdbdb 1px solid; overflow:hidden;}
        /* 一级Tab切换页 */
-.ViewDetails ul{height:28px; background: url(/rchlw/function/images/BettingWindow.gif) 0px -150px repeat-x ; border-bottom:#f2ab78 solid 1px; margin:0px auto; padding-left:31px; overflow:hidden;}
-.ViewDetails ul li{ width:68px; height:23px; text-align:center; margin:6px 8px 0px 0px; line-height:23px;float:left; list-style:none; background: url(/rchlw/function/images/BettingWindow.gif) no-repeat; background-position:0px 0px; cursor:pointer; color:#DE0201;}
+.ViewDetails ul{height:28px; background: url(../images/BettingWindow.gif) 0px -150px repeat-x ; border-bottom:#f2ab78 solid 1px; margin:0px auto; padding-left:31px; overflow:hidden;}
+.ViewDetails ul li{ width:68px; height:23px; text-align:center; margin:6px 8px 0px 0px; line-height:23px;float:left; list-style:none; background: url(../images/BettingWindow.gif) no-repeat; background-position:0px 0px; cursor:pointer; color:#DE0201;}
 .V_Slide li.over{ background-position:0px -25px; color:#FFFFFF;}
 .V_Slide li.selected{ background-position:0px -50px; color:#FFFFFF;}
 
@@ -211,7 +211,7 @@ div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
 		/* 二级Tab切换页 */
 .Erjinav{ overflow:hidden; width:100%;}
 .Erjinav dd{ float:left; height:13px; line-height:13px;list-style:none; padding-top:10px; padding-bottom:10px; padding-right:15px; cursor:pointer;}
-.FootballLottery span,.Competes span,.NorthSingle span,.FuCai span,.TiCai span,.HighFrequency span{ width:15px; height:13px; line-height:13px; background: url(/rchlw/function/images/ChannelBuyRadioButton.png) no-repeat; background-position:left top;display:block; font-size:12px; float:left; cursor:pointer; overflow:hidden;}
+.FootballLottery span,.Competes span,.NorthSingle span,.FuCai span,.TiCai span,.HighFrequency span{ width:15px; height:13px; line-height:13px; background: url(../images/ChannelBuyRadioButton.png) no-repeat; background-position:left top;display:block; font-size:12px; float:left; cursor:pointer; overflow:hidden;}
 .FootballLottery .over span,.Competes .over span,.NorthSingle .over span,.FuCai .over span,.TiCai .over span,.HighFrequency .over span{ background-position:0px -13px;}
 .FootballLottery .selected span,.Competes .selected span,.NorthSingle .selected span,.FuCai .selected span,.TiCai .selected span,.HighFrequency .selected span{ background-position:0px -26px;}
 
@@ -220,7 +220,7 @@ div.KillNumberAlert .InsideBorder{ padding:40px 0px 15px 0px;}
 .Erji_box td{ text-align:center; line-height:24px;}
 .Tdbg_grey{ background:#F6F6F6;}
 		/* 按钮*/
-.F_btn input.BaseBtn{ width:100px; height:22px; line-height:22px; background: url(/rchlw/function/images/BettingWindow.gif) no-repeat; background-position: 0px -75px; display:block; border:none; margin-right:10px; float:left; text-align:center; color:#cd6324; font-size:12px; cursor:pointer;}
+.F_btn input.BaseBtn{ width:100px; height:22px; line-height:22px; background: url(../images/BettingWindow.gif) no-repeat; background-position: 0px -75px; display:block; border:none; margin-right:10px; float:left; text-align:center; color:#cd6324; font-size:12px; cursor:pointer;}
 .F_btn input.BtnOver{background-position: 0px -100px; }
 .F_btn input.BtnDown{ background-position: 0px -125px; color:#FFFFFF;}
 
@@ -251,7 +251,7 @@ div.PlanBuyWindow{ width:600px;}
 .gainlottery span{ float:left;}
 .gainlotteryshow{  padding:10px 0px;}
 .gainlotteryshow input.BaseBtn {
-    background: url("/rchlw/function/images/BettingWindow.gif") no-repeat scroll 0 -75px transparent;
+    background: url("../images/BettingWindow.gif") no-repeat scroll 0 -75px transparent;
     border: medium none;
     color: #CD6324;
     cursor: pointer;
@@ -314,7 +314,7 @@ padding-top:3px;
 *padding-top:5px;
 padding-bottom:6px;
 margin-left:10px;
-background:url(/rchlw/function/images/fenye.gif) no-repeat 0px -46px;
+background:url(../images/fenye.gif) no-repeat 0px -46px;
 color:#01529d;
 cursor:pointer;
 }
@@ -325,7 +325,7 @@ padding-right:15px;
 padding-top:3px;
 padding-bottom:4px;
 margin:0px;
-background:url(/rchlw/function/images/fenye.gif) no-repeat -42px -23px;
+background:url(../images/fenye.gif) no-repeat -42px -23px;
 cursor:pointer;
 }
 .fenye4 {
@@ -335,7 +335,7 @@ padding-right:12px;
 padding-top:3px;
 padding-bottom:4px;
 margin-left:7px;
-background:url(/rchlw/function/images/fenye.gif) no-repeat -22px 0px;
+background:url(../images/fenye.gif) no-repeat -22px 0px;
 cursor:pointer;
 }
 .fenye5 {
@@ -345,7 +345,7 @@ padding-right:12px;
 padding-top:3px;
 padding-bottom:4px;
 margin-left:7px;
-background:url(/rchlw/function/images/fenye.gif) no-repeat -46px 0px;
+background:url(../images/fenye.gif) no-repeat -46px 0px;
 cursor:pointer;
 }
 .fenye_input{width:40px;height:18px; position:relative; top:1px;*top:3px; margin-left:10px; border: 1px solid #dcdcdc;}
@@ -364,33 +364,33 @@ table.PlanContentTable tfoot td{ padding:0px; padding:5px 6px; text-align:center
 
 /* 投注频道常用pannel的主要样式 */
 .Pannel{ border:solid 1px #DBDBDB;}
-.PannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x left top;}
+.PannelHead{ height:30px; line-height:30px; overflow:hidden; background:url(../images/ChannelBuyPannelHeader.png) repeat-x left top;}
 .PannelHead h3{ font-weight:bold; line-height:30px; height:30px; font-size:14px; padding:0px 10px; float:left;}
 .PannelBody{ overflow:hidden;}
 
 /* 常用tab功能的dl形式 适用于在pannel标题内靠右表现的n型tab ___|￣￣|__________ */
 .TabN{ width:auto; float:right; height:27px; line-height:27px; padding:3px 10px 0px 0px; overflow:hidden;}
 .TabN dt{ color:#1F376D; float:right; height:27px; line-height:27px; padding:0px 10px; cursor:pointer;}
-.TabN dt.over{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
-.TabN dt.selected{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
+.TabN dt.over{ background:url(../images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
+.TabN dt.selected{ background:url(../images/AllIndex.gif) repeat-x 0px -730px; border:solid 1px #DBDBDB; border-bottom:none;}
 
 /* 常用tab功能的table形式 适用于整个tab宽度100%而且tab彼此之间有竖线分割的tab |￣￣￣￣|￣￣￣￣| */
 .TabM{ border-collapse:collapse; width:100%; height:30px; line-height:30px;}
 .TabM th{ border-right:solid 1px #DBDBDB;}
 .TabM td{ border-left:solid 1px #DBDBDB;}
 .TabM th,.TabM td{ padding:0px 10px; text-align:center; cursor:pointer; line-height:20px;}
-.TabM th.over,.TabM td.over{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px;}
-.TabM th.selected,.TabM td.selected{ background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -730px;}
+.TabM th.over,.TabM td.over{ background:url(../images/AllIndex.gif) repeat-x 0px -730px;}
+.TabM th.selected,.TabM td.selected{ background:url(../images/AllIndex.gif) repeat-x 0px -730px;}
 
 /* 公共 */
 div.selected,ul.selected,li.selected,dl.selected,dt.selected,dd.selected{ display:block;}
 table.selected{ display:table;}
 .tal{ text-align:left;}
 .tar{ text-align:right;}
-.AllBalls{background:url(/rchlw/function/images/AllBalls.gif); background-image:url(/rchlw/function/images/AllBalls.gif); width:43px; height:43px; line-height:43px; float:left; border:none; text-align:center; color:#666; font-weight:bold; font-size:19px;}
+.AllBalls{background:url(../images/AllBalls.gif); background-image:url(../images/AllBalls.gif); width:43px; height:43px; line-height:43px; float:left; border:none; text-align:center; color:#666; font-weight:bold; font-size:19px;}
 
-.Button_L1_R{ background:url(/rchlw/function/images/Button_L1_R.gif) no-repeat center center; border:none; width:100px; height:30px; line-height:30px; color:#FFF; font-size:14px; font-weight:bold; cursor:pointer;}
-.Button_L3_W{ background:url(/rchlw/function/images/Button_L3_W.gif) no-repeat center center; border:none; width:42px; height:22px; line-height:22px; color:#1F376D; font-size:12px; cursor:pointer;}
+.Button_L1_R{ background:url(../images/Button_L1_R.gif) no-repeat center center; border:none; width:100px; height:30px; line-height:30px; color:#FFF; font-size:14px; font-weight:bold; cursor:pointer;}
+.Button_L3_W{ background:url(../images/Button_L3_W.gif) no-repeat center center; border:none; width:42px; height:22px; line-height:22px; color:#1F376D; font-size:12px; cursor:pointer;}
 /* 第一屏 以及其中的左中右布局 */
 .FirstScreen{ width:950px; height:auto; margin:auto; overflow:hidden;}
 .FirstScreenLeft{ width:210px; float:left; overflow:hidden;}
@@ -399,29 +399,29 @@ table.selected{ display:table;}
 
 /* 第一屏 左 选择采种 */
 .SelectLottery{ border:none; width:210px;}
-.SelectLottery .PannelHead{ border:none; background:url(/rchlw/function/images/AllIndex.gif) no-repeat top left;}
+.SelectLottery .PannelHead{ border:none; background:url(../images/AllIndex.gif) no-repeat top left;}
 .SelectLottery .PannelHead h3{ color:#FFF;}
 .SelectLottery .PannelBody{ position:relative; border:solid 1px #F0B080; border-top:none; background:#FFF9EB; color:#DE0201; height:349px; overflow:hidden;}
 .SelectLottery table{ border-collapse:collapse; width:100%; height:349px;}
 .SelectLottery th{ width:40px; padding:0px 0px 0px 14px; text-align:left;}
 .SelectLottery td{ text-align:left; font-weight:normal;}
-.SelectLottery td a{ color:#000000; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -240px -195px; display:block; height:14px; line-height:14px; padding:0px 0px 0px 8px;}
+.SelectLottery td a{ color:#000000; background:url(../images/AllIndex.gif) no-repeat -240px -195px; display:block; height:14px; line-height:14px; padding:0px 0px 0px 8px;}
 .SelectLottery td a:hover{ text-decoration:underline;}
 .SelectLottery td a.disabled{ color:#666; cursor:text;}
 .SelectLottery td a.disabled:hover{ text-decoration:none;}
 .SelectLottery .line{ border:none; background:none;}
 .SelectLottery .line td{ width:auto; height:10px; line-height:10px; overflow:hidden; background:none;}
-.SelectLottery .line th{ width:auto; height:15px; line-height:15px; overflow:hidden; background:url(/rchlw/function/images/hongbian.gif) no-repeat center center;}
+.SelectLottery .line th{ width:auto; height:15px; line-height:15px; overflow:hidden; background:url(../images/hongbian.gif) no-repeat center center;}
 
 /* 第一屏 中 图片轮换 快速投注 */
 #slidebox{position:relative; border:1px solid #ccc; margin:0px; height:158px; overflow:hidden;}
 #slidebox ul ,#slidebox ul li{height:158px; margin:0px; padding:0px; overflow:hidden;}
 #slidebox ul li{ position:relative; left:0; background:#eee; float:left;list-style: none; font-family:Verdana, Geneva, sans-serif; font-size:13px;}
 #slidebox .slideboxNext, #slidebox .slideboxPrev{position:absolute; z-index:2; display:block; width:21px; height:21px;top:65px;}
-#slidebox .slideboxNext{right:0; margin-right:10px; background:url(/rchlw/function/images/slidebox_next.png) no-repeat left top;}
-#slidebox .slideboxNext:hover{background:url(/rchlw/function/images/slidebox_next_hover.png) no-repeat left top;}
-#slidebox .slideboxPrev{margin-left:10px; background:url(/rchlw/function/images/slidebox_previous.png) no-repeat left top;}
-#slidebox .slideboxPrev:hover{background:url(/rchlw/function/images/slidebox_previous_hover.png) no-repeat left top;}
+#slidebox .slideboxNext{right:0; margin-right:10px; background:url(../images/slidebox_next.png) no-repeat left top;}
+#slidebox .slideboxNext:hover{background:url(../images/slidebox_next_hover.png) no-repeat left top;}
+#slidebox .slideboxPrev{margin-left:10px; background:url(../images/slidebox_previous.png) no-repeat left top;}
+#slidebox .slideboxPrev:hover{background:url(../images/slidebox_previous_hover.png) no-repeat left top;}
 #slidebox .thumbs{position:absolute; z-index:2; bottom:1px; right:1px;}
 #slidebox .thumbs a{display:block; width:23px; height:15px; line-height:15px; overflow:hidden; margin-left:1px; float:left; font-size:9px; text-decoration:none; padding:0px; cursor:pointer;}
 #slidebox a.b1 span{ background-position:   0px -115px;}
@@ -471,7 +471,7 @@ table.selected{ display:table;}
 .BulletinAndHelp .TabM th,.BulletinAndHelp .TabM td{ font-size:14px; font-weight:bold;}
 .BulletinAndHelp .TabM .selected{ color:#DE0201;}
 .BulletinAndHelp ul{ padding:5px 10px 5px 10px; height:140px; overflow:hidden; border-bottom:solid 1px #ECECEC;}
-.BulletinAndHelp ul li{ background:url(/rchlw/function/images/AllIndex.gif) no-repeat -235px -190px; height:23px; line-height:23px; overflow:hidden; padding:0px 5px 0px 15px;}
+.BulletinAndHelp ul li{ background:url(../images/AllIndex.gif) no-repeat -235px -190px; height:23px; line-height:23px; overflow:hidden; padding:0px 5px 0px 15px;}
 .BulletinAndHelp li a:hover{ color:#DE0201; text-decoration:underline;}
 .BulletinAndHelp .ProcessShow{ text-align:center; height:40px; padding:9px 0px 10px 0px; overflow:hidden;}
 .PhoneClient{ height:80px; cursor:pointer; overflow:hidden;}
@@ -573,14 +573,14 @@ table.selected{ display:table;}
 .FootballFightTable .TrGrey th,.FootballFightTable .TrGrey td{ background:#F5F5F5;}
 .FootballFightTable tbody a{ color:#1f376D;}
 .FootballFightTable tbody a:hover{ text-decoration:underline;}
-.FootballFightTable .WinTieLoss span{ display:inline-block; width:26px; height:26px; line-height:26px; overflow:hidden; color:#1f376D; font-weight:bold; font-size:13px; background:url(/rchlw/function/images/310.gif) no-repeat 0px 0px; margin:2px; cursor:pointer;}
-.FootballFightTable .WinTieLoss span.Switch{ background:url(/rchlw/function/images/310.gif) no-repeat 0px -26px; color:#FFF;}
+.FootballFightTable .WinTieLoss span{ display:inline-block; width:26px; height:26px; line-height:26px; overflow:hidden; color:#1f376D; font-weight:bold; font-size:13px; background:url(../images/310.gif) no-repeat 0px 0px; margin:2px; cursor:pointer;}
+.FootballFightTable .WinTieLoss span.Switch{ background:url(../images/310.gif) no-repeat 0px -26px; color:#FFF;}
 .FootballFightTable tfoot th{ color:#666; text-align:left; line-height:34px; padding:0px 10px; color:#333;}
 .FootballFightTable tfoot td{ color:#666; text-align:right; line-height:34px; padding:0px 10px; color:#333;}
 .FootballFightTable tfoot b{ font-weight:bold; color:#DE0201; margin:0px 2px 0px 1px;}
 .FootballFightTable tfoot span{ float:right; height:22px; line-height:22px; margin:6px 10px 6px 0px; color:#1F376D; cursor:pointer;}
 .FootballFightTable tfoot span.over{ text-decoration:underline;}
-.FootballFightTable tfoot .foot-input{ float:right; width:62px; height:22px; margin:6px 0px; cursor:pointer; text-align:center; border:none; color:#FFF; background:url(/rchlw/function/images/Button_L2_Y.gif) no-repeat;}
+.FootballFightTable tfoot .foot-input{ float:right; width:62px; height:22px; margin:6px 0px; cursor:pointer; text-align:center; border:none; color:#FFF; background:url(../images/Button_L2_Y.gif) no-repeat;}
 
 /* 第三屏 右 赛事前瞻 足球资料 专家短信 */
 .MatchAdvance{ height:238px; overflow:hidden;}
@@ -624,11 +624,11 @@ table.selected{ display:table;}
 .index_buyListTable .BuyText{ width:42px; height:16px; font-size:12px;}
 .index_buyListTable .TrbgGrey th,.index_buyListTable .TrbgGrey td{ background:#F8F8F8; border:none;}
 
-.AllTogetherBuyBox{background:url(/rchlw/function/images/AllTogetherBuy.gif); background-image: url(/rchlw/function/images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
+.AllTogetherBuyBox{background:url(../images/AllTogetherBuy.gif); background-image: url(../images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
 .CancelBtn input.BaseBtn{ width:42px; height:22px; line-height:22px; color:#CC6543; border:none; cursor:pointer; background-position:-150px -150px;}
 .CancelBtn input.BtnOver{ background-position:-150px -175px;}
 .CancelBtn input.BtnDown{  background-position:-150px -200px;}
-.AllTogetherBuyBox{background:url(/rchlw/function/images/AllTogetherBuy.gif); background-image: url(/rchlw/function/images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
+.AllTogetherBuyBox{background:url(../images/AllTogetherBuy.gif); background-image: url(../images/AllTogetherBuy.gif); background-repeat:no-repeat; display:inline-block; overflow:hidden;}
 .LevelCrown{ width:16px; height:16px; float:left; cursor:pointer; background-position:0px -300px;}
 .LevelCrownGray{ width:16px; height:16px; float:left; cursor:pointer; background-position:0px -320px;}
 .LevelCup{ width:16px; height:16px; float:left; cursor:pointer; background-position:-20px -300px;}
@@ -653,17 +653,17 @@ table.selected{ display:table;}
 .FilterBtn input.BtnOver{ background-position:0px -175px;}
 .FilterBtn input.BtnDown{  background-position:0px -200px;}
 
-.index_lucky{ width:268px; height:auto; border:1px solid #dbdbdb; background:url(/rchlw/function/images/luckyline.jpg) repeat-x; margin-top:10px; overflow:hidden; float:right;}
+.index_lucky{ width:268px; height:auto; border:1px solid #dbdbdb; background:url(../images/luckyline.jpg) repeat-x; margin-top:10px; overflow:hidden; float:right;}
 .index_phoneClient{ float:right; margin-top:10px;}
 
 
 /* 头部外框样式 */
 #common{ display:block; height:135px;}
 
-.Button_L3_Y{ background:url(/rchlw/function/images/Button_L3_Y.gif) no-repeat center center; border:none; width:40px; height:20px; line-height:20px; color:#1F376D; font-size:12px; cursor:pointer; color:#FFF;}
+.Button_L3_Y{ background:url(../images/Button_L3_Y.gif) no-repeat center center; border:none; width:40px; height:20px; line-height:20px; color:#1F376D; font-size:12px; cursor:pointer; color:#FFF;}
 
 /* 头部样式(登录前 登陆后 右侧快速链接) */
-.HeadTopLogin{ height:30px; line-height:30px; background:url(/rchlw/function/images/HeadTopLoginBG.gif);}
+.HeadTopLogin{ height:30px; line-height:30px; background:url(../images/HeadTopLoginBG.gif);}
 .HeadTopLogin .box{ width:950px; margin:auto; height:30px; line-height:30px;}
 .HeadTopLogin dl{ float:left; height:30px; line-height:30px;}
 .HeadTopLogin dt{ float:left; height:12px; padding:9px 0px; color:#999;}
@@ -680,10 +680,10 @@ table.selected{ display:table;}
 .HeadTopLogin a:hover{ text-decoration:underline;}
 .HeadTopLogin font{ line-height:normal; color:#000;}
 	/* 登录前 选择去向下拉菜单 */
-.HeadTopLogin .SelectAspect{ height:14px; line-height:14px; font-size:12px; padding:3px 10px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:80px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectAspect{ height:14px; line-height:14px; font-size:12px; padding:3px 10px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:80px; border:solid 1px #E7E7E7; background:url(../images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
 .HeadTopLogin .SelectedAddress{ font-size:12px; line-height:normal; color:#1F376D;}
 .HeadTopLogin .SelectedAddressInput{ margin:0px; padding:0px; overflow:hidden; display:none;}
-.HeadTopLogin .SelectAspect span.SelectTriangle{ position:absolute; top:7px; right:7px; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAspect span.SelectTriangle{ position:absolute; top:7px; right:7px; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(../images/SelectTriangle.gif);}
 .HeadTopLogin .SelectAspect span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
 .HeadTopLogin .SelectAspect dl{ float:none; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; width:80px; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
 .HeadTopLogin .SelectAspect dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
@@ -691,7 +691,7 @@ table.selected{ display:table;}
 .HeadTopLogin .SelectAspect a{ display:block; height:12px; line-height:normal; vertical-align:middle; margin:0px; padding:6px 10px; text-align:left; background:#F9F9F9; color:#1F376D;}
 .HeadTopLogin .SelectAspect a.over{ text-decoration:none; color:#DE0201;}
 	/* 登录前联合登录下拉菜单 */
-.HeadTopLogin .SelectLogin{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 8px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D;}
+.HeadTopLogin .SelectLogin{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 8px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(../images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D;}
 .HeadTopLogin .SelectLogin span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
 .HeadTopLogin .SelectLogin dl{ float:none; width:75px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
 .HeadTopLogin .SelectLogin dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
@@ -700,8 +700,8 @@ table.selected{ display:table;}
 .HeadTopLogin .SelectLogin a:hover{ color:#DE0201; text-decoration:underline;}
 .HeadTopLogin .SelectLogin img{ vertical-align:text-bottom; margin:0px 5px 0px 0px;}
 	/* 登录后 我的账户下拉菜单 */
-.HeadTopLogin .SelectAccount{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(/rchlw/function/images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
-.HeadTopLogin .SelectAccount span.SelectTriangle{ display:inline-block;  vertical-align:middle; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(/rchlw/function/images/SelectTriangle.gif);}
+.HeadTopLogin .SelectAccount{ height:14px; line-height:14px; font-size:12px; padding:3px 0px 1px 0px; margin:0px 3px 0px 3px; text-align:center; width:70px; border:solid 1px #E7E7E7; background:url(../images/SelectAspectBG.gif); position:relative; z-index:200; color:#1F376D; cursor:pointer;}
+.HeadTopLogin .SelectAccount span.SelectTriangle{ display:inline-block;  vertical-align:middle; width:7px; height:5px; line-height:5px; overflow:hidden; margin:0px 0px 0px 2px; background:url(../images/SelectTriangle.gif);}
 .HeadTopLogin .SelectAccount span.line{ display:none; position:absolute; bottom:-1px; left:0px; z-index:30; width:100%; height:1px; border:none; line-height:1px; overflow:hidden; background:#F9F9F9;}
 .HeadTopLogin .SelectAccount dl{ float:none; width:160px; height:auto; display:none; position:absolute; top:18px; left:-1px; z-index:20; padding:0px 5px; overflow:hidden; border:solid 1px #E7E7E7; background:#F9F9F9;}
 .HeadTopLogin .SelectAccount dt{ float:none; display:block; height:24px; padding:0px; overflow:hidden;}
@@ -712,24 +712,24 @@ table.selected{ display:table;}
 .HeadTopLogin .over dl{ display:block;}
 
 /* 头部中 logo和客服电话与QQ */
-.HeadMiddleLogo{ width:950px; margin:auto; overflow:hidden; background:url(/rchlw/function/images/HomeLogoBG.gif) no-repeat top left;}
+.HeadMiddleLogo{ width:950px; margin:auto; overflow:hidden; background:url(../images/HomeLogoBG.gif) no-repeat top left;}
 .HomeLogo{ float:left;}
 .HomeActivityBanner{ float:left;}
 .HomeServiceTel{ float:right; margin:23px 10px 0px 0px;}
 .HomeServiceQQ{ float:right; margin:20px 10px 0px 0px;}
 
 /* 头部下 menu */
-.HeadBottomMenu{ height:40px; line-height:40px; background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px 0px;}
+.HeadBottomMenu{ height:40px; line-height:40px; background:url(../images/HeadBottomMenuBG.gif) repeat-x 0px 0px;}
 .HeadBottomMenu .box{ width:950px; margin:auto; height:40px; line-height:40px;}
 .HeadBottomMenu .SelectLotteryBox{ float:left; width:210px;}
 
 /* 彩种选择菜单 */
-.HeadBottomMenu .SelectLotteryButton{ width:182px; height:29px; cursor:pointer; margin:6px 0px 0px 0px; background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px 0px; position:relative; z-index:100;}
+.HeadBottomMenu .SelectLotteryButton{ width:182px; height:29px; cursor:pointer; margin:6px 0px 0px 0px; background:url(../images/SelectLotteryButtonBG.gif) 0px 0px; position:relative; z-index:100;}
 .HeadBottomMenu .SelectLotteryButton .SelectLottery{ position:absolute; top:29px; z-index:1000;}
 .HeadBottomMenu .SelectLotteryButton .PannelBody{border:solid 1px #F0B080;}
 .HeadBottomMenu .SelectLotteryButton table{ width:210px;}
 .HeadBottomMenu .SelectLottery{ display:none;}
-.HeadBottomMenu .over{ background:url(/rchlw/function/images/SelectLotteryButtonBG.gif) 0px -29px;}
+.HeadBottomMenu .over{ background:url(../images/SelectLotteryButtonBG.gif) 0px -29px;}
 .HeadBottomMenu .over .SelectLottery{ display:block;}
 
 	/* 主menu */
@@ -737,8 +737,8 @@ table.selected{ display:table;}
 .HeadBottomMenu li{ width:100px; float:left; height:40px; line-height:40px; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
 .HeadBottomMenu .relative{ position:relative; z-index:100;}
 .HeadBottomMenu li a{ display:block; width:98px; height:40px; line-height:40px; border-left:solid 1px #E32A29; border-right:solid 1px #C81919; cursor:pointer; text-align:center; color:#FFF; font-size:14px; font-weight:bold;}
-.HeadBottomMenu li a:hover{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
-.HeadBottomMenu li.selected a{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -80px;}
+.HeadBottomMenu li a:hover{ background:url(../images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.selected a{ background:url(../images/HeadBottomMenuBG.gif) repeat-x 0px -80px;}
 
 	/* 足彩下拉菜单 */
 .HeadBottomMenu li dl{ width:100px; height:auto; display:none; position:absolute; top:40px; left:0px; padding:0px 5px; overflow:hidden; border:solid 1px #AD0000; border-top:none; background:#FAFAFA;}
@@ -746,13 +746,13 @@ table.selected{ display:table;}
 .HeadBottomMenu li dd{ height:12px; line-height:normal; padding:9px 0px; overflow:hidden; border-top:solid 1px #F2B080;}
 .HeadBottomMenu dl a{ display:block; height:12px; line-height:normal; background:none; border:none; font-size:12px; font-weight:normal; color:#993300;}
 .HeadBottomMenu dl img{ vertical-align:text-top;}
-.HeadBottomMenu li.over{ background:url(/rchlw/function/images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
+.HeadBottomMenu li.over{ background:url(../images/HeadBottomMenuBG.gif) repeat-x 0px -40px;}
 .HeadBottomMenu li.over a:hover{ background:none; text-decoration:underline;}
 .HeadBottomMenu .over dl{ display:block;}
 
 /* 临时 首页右下投注技巧的样式 以后会换成别的模块 */
 .indexjiqiao{ width:448px; height:221px; border:1px solid #dbdbdb; float:left; margin-left:10px; margin-top:10px; overflow:hidden;}
-.injq_top{width:448px; height:28px; background:url(/rchlw/function/images/AllIndex.gif) repeat-x 0px -300px;border-bottom:1px solid #dbdbdb; line-height:28px; }
+.injq_top{width:448px; height:28px; background:url(../images/AllIndex.gif) repeat-x 0px -300px;border-bottom:1px solid #dbdbdb; line-height:28px; }
 .injq_zi{width:100px; height:28px; padding-left:13px;font-weight:bold; float:left; font-size:14px; color:#de0201; line-height:28px;}
 .injq_con{ width:448px; margin-top:5px; margin-bottom:5px;_margin-bottom:0;}
 .injq_con ul{ display:block;}
@@ -760,16 +760,16 @@ table.selected{ display:table;}
 .injq_con a:hover{ color:#de0201; text-decoration:underline;}
 /* 首页技巧部分改中奖为排行榜 */
 .indexCharts{width:268px; height:299px; border:1px solid #dbdbdb; }
-.indexCharts_top{ height:30px; background:url(/rchlw/function/images/ChannelBuyPannelHeader.png) repeat-x;padding-left:13px; overflow:hidden;}
+.indexCharts_top{ height:30px; background:url(../images/ChannelBuyPannelHeader.png) repeat-x;padding-left:13px; overflow:hidden;}
 .indexCharts_top h1{ width:95px;font-weight:bold; float:left; font-size:14px; color:#de0201; line-height:30px;}
 .indexCharts_top p{float:left;}
 .indexCharts_top ul{ display:block; overflow:hidden;  padding-top:4px;}
 .indexCharts_top li{ width:52px; height:26px; float:left; line-height:26px; text-align:center; color:#1f376d; cursor:pointer;}
-.indexCharts_top .selected{background:url(/rchlw/function/images/charts.gif) no-repeat; }
+.indexCharts_top .selected{background:url(../images/charts.gif) no-repeat; }
 .indexCharts_con { display:none;}
 .indexCharts_con table thead td{ line-height:25px;padding-left:10px;border-bottom:1px solid #f2f2f2; text-align:left; color:#666;}
 .indexCharts_con table thead th{ line-height:25px; padding-right:10px;text-align:right;border-bottom:1px solid #f2f2f2;color:#666;}
 .indexCharts_con table tbody td{ line-height:24px;padding-left:10px; text-align:left;}
 .indexCharts_con table tbody th{  padding-right:10px;text-align:right; color:#de0201;}
-.charts_red{ background:url(/rchlw/function/images/charts_red.gif) no-repeat; width:15px; height:15px; display:block; text-align:center; line-height:15px; color:#fff;}
-.charts_hui{ background:url(/rchlw/function/images/charts_hui.gif) no-repeat; width:15px; height:15px;display:block; text-align:center; line-height:15px;}
+.charts_red{ background:url(../images/charts_red.gif) no-repeat; width:15px; height:15px; display:block; text-align:center; line-height:15px; color:#fff;}
+.charts_hui{ background:url(../images/charts_hui.gif) no-repeat; width:15px; height:15px;display:block; text-align:center; line-height:15px;}

@@ -2,9 +2,9 @@
     pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"/>
-<title>本期${title}中奖号码，本期${title}开奖结果-如意彩开奖公告</title>
+<title>本期${title}中奖号码，本期${title}开奖结果-博雅彩开奖公告</title>
 <meta name="keywords" content="本期${title}开奖结果，本期${title}中奖号码" />
-<meta name="description" content="如意彩开奖公告-为购彩用户提供本期${title}开奖结果，本期${title}中奖号码" />
+<meta name="description" content="博雅彩开奖公告-为购彩用户提供本期${title}开奖结果，本期${title}中奖号码" />
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/tuserAll.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>

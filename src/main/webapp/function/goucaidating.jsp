@@ -2,9 +2,9 @@
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"/>
-<meta name="keywords" content="购彩大厅,如意彩,彩票网,购彩网,福彩,体彩,足彩,竞彩,高频彩,购彩,投注,在线购彩,在线投注 " />
-<title>购彩大厅- 在线购彩- 投注|福彩|体彩|足彩|竞彩|高频彩|如意彩</title>
-<meta name="description" content="购彩大厅是为彩民提供福彩,体彩,时时彩,足球单场,胜负彩,将互联网电子彩票,在如意彩彩票网站上进行投注购买的窗口" />
+<meta name="keywords" content="购彩大厅,博雅彩,彩票网,购彩网,福彩,体彩,足彩,竞彩,高频彩,购彩,投注,在线购彩,在线投注 " />
+<title>购彩大厅- 在线购彩- 投注|福彩|体彩|足彩|竞彩|高频彩|博雅彩</title>
+<meta name="description" content="购彩大厅是为彩民提供福彩,体彩,时时彩,足球单场,胜负彩,将互联网电子彩票,在博雅彩彩票网站上进行投注购买的窗口" />
 <link rel="shortcut icon" href="<%=request.getContextPath() %>/function/images/biao-ico.ico" type="image/x-icon"
 />
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css">

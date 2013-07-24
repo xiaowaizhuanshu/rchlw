@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<meta name="keywords" content="如意彩，如意彩票，金软瑞彩" />
-<meta name="description" content="金软瑞彩-您身边的购彩专家" />
+<meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
+<meta name="description" content="华夏百信-您身边的购彩专家" />
 <link rel="shortcut icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href='csslogo.png'>
 <link rel="apple-touch-icon-precomposed" href='csslogo.png'>
-<title>金软瑞彩科技有限公司-资质报告</title>
+<title>华夏百信科技有限公司-资质报告</title>
 <link href="<%=request.getContextPath() %>/function/css/danyeNew.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
@@ -80,7 +80,7 @@
 			</dl>
 			<dl>
 				<dt><img src="<%=request.getContextPath() %>/function/images/danye/zhengshu_zhizhao3.jpg" width="210" height="153" /></dt>
-				<dd>金软瑞彩组织机构代码证</dd>
+				<dd>华夏百信组织机构代码证</dd>
 			</dl>
 		</div>
 		<h1><a href="#" class="click">资质证书</a></h1>

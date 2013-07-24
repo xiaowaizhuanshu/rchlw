@@ -1,10 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩4场进球投注、开奖公告、赛事前瞻、预测汇总</title>
+<title>博雅彩4场进球投注、开奖公告、赛事前瞻、预测汇总</title>
 <meta http-equiv="keywords" content="4场进球投注，开奖公告，赛事前瞻，预测汇总"/>
-<meta http-equiv="description" content="如意彩4场进球集投注、开奖公告、赛事前瞻、预测汇总为一体是4场进球一站式服务平台。"/>
+<meta http-equiv="description" content="博雅彩4场进球集投注、开奖公告、赛事前瞻、预测汇总为一体是4场进球一站式服务平台。"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" />
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>

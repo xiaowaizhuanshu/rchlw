@@ -1,8 +1,7 @@
 <%@page import="com.ruyicai.bean.Tuserinfo"%>
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
- <style>div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}</style>
+<style>div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}</style>
 <%@ page import="net.sf.json.JSONObject,com.jrt.invokeLot.util.JSONReslutUtil" %>
 <%	
 	JSONObject tuserinfo = JSONReslutUtil.getUserInfo(request);
@@ -12,20 +11,19 @@
 <script>
 $(function(){
 	$.ajax({
-	        url:'/rchlw/user/tuserinfoAction!toCharge', 
-	        type:'post',
-	        dataType:'json',
-	        success:(function(json){ //回传函数实体，参数为XMLhttpRequest.responseText
-	        	if(json.objDNABind==null ||( json.objDNABind!="" && json.objDNABind.state=="0")){
-					//白名单
-					var addFont = '0';	
-    			}else{
-					//灰名单
-					var addFont = '1';
-					reHtml(65,'',false,'bankDiv',false);
-				}
-    		 })
-			 
+        url:'/rchlw/user/tuserinfoAction!toCharge', 
+        type:'post',
+        dataType:'json',
+        success:(function(json){ //回传函数实体，参数为XMLhttpRequest.responseText
+        	if(json.objDNABind==null ||( json.objDNABind!="" && json.objDNABind.state=="0")){
+				//白名单
+				var addFont = '0';	
+   			}else{
+				//灰名单
+				var addFont = '1';
+				reHtml(65,'',false,'bankDiv',false);
+			}
+		})
 	});
 });
 </script>
@@ -63,7 +61,7 @@ $(function(){
 			<tr>
 				<td>支付宝在线充值</td>
 				<td>有支付宝账号且有余额的用户</td>
-				<td>可以把支付宝的余额充值到如意彩网账户</td>
+				<td>可以把支付宝的余额充值到博雅彩网账户</td>
 			</tr>
 			<tr>
 				<td>支付宝语音充值</td>
@@ -74,7 +72,7 @@ $(function(){
 			<tr>
 				<td>手机充值卡充值</td>
 				<td>有手机充值卡的用户</td>
-				<td>手机充值卡输入卡号密码，就可以为如意彩网帐户充值</td>
+				<td>手机充值卡输入卡号密码，就可以为博雅彩网帐户充值</td>
 			</tr>
 			<tr>
 				<td>银行卡电话充值</td>
@@ -84,7 +82,7 @@ $(function(){
 		</table>
 		<p class="recharge_title">网银充值说明</p>
 		<dl class="recharge_explain">
-			<dt>一、网银充值手续费由如意彩网支付，用户无须支付任何网银手续费。一般从支付完毕到资金进入如意彩网账户只需要5秒。</dt>
+			<dt>一、网银充值手续费由博雅彩网支付，用户无须支付任何网银手续费。一般从支付完毕到资金进入博雅彩网账户只需要5秒。</dt>
 			<dt>二、网银充值需要您已经开通对应银行卡的网上银行业务。</dt>
 			<dd>1、在银行柜台办理开通网上支付业务，需提供如下资料：申请人本人有效身份证件、所需注册的本地银行卡。</dd>
 			<dd>2、银行经办员审核上述资料无误后，将与客户签署《网上银行个人客户服务协议》，办理注册资料录入、设置网上银行密码等</dd>
@@ -193,7 +191,7 @@ $(function(){
 			<dt>如果您发现银行账户已扣款，但本站账户未到账的情况，请马上与我们的客服部电话联系；</dt>
 			<dt>服务热线：400-665-1000</dt>
 			<dt>首次使用该支付方式后，系统将默认绑定该银行卡作为您再次电话支付的唯一专用卡；</dt>
-			<dt>如要修改，请拨打如意彩客服电话400-665-1000</dt>
+			<dt>如要修改，请拨打博雅彩客服电话400-665-1000</dt>
 			
 		</dl>
 		<p class="recharge_title">小提醒：</p>
@@ -287,7 +285,7 @@ $(function(){
 	<%//--银行转账--%>
 	<div class="BankTransfer none">
 		<p class="Bank_p">通过银行柜台、ATM或者网上银行转帐到以下账户，转账后通知客服（电话：<b>400-665-1000</b>）办理资金入账</p>
-		<p class="Bank_title">账户名称：北京金软瑞彩科技有限公司</p>
+		<p class="Bank_title">账户名称：北京华夏百信科技有限公司</p>
 		<p class="Bank_title">开&nbsp;&nbsp;户&nbsp;&nbsp;行：工行四季青支行</p>
 		<p class="Bank_title">账　　号：<b>0200 2453 1920 1093 515</b></p>
 		<p class="recharge_title">温馨提示：</p>
@@ -298,7 +296,7 @@ $(function(){
 		</dl>
 		<p class="recharge_title">北京用户可带现金到公司入账</p>
 		<dl class="Bank_explain">
-			<dt>公司名称：北京金软瑞彩科技有限公司</dt>
+			<dt>公司名称：北京华夏百信科技有限公司</dt>
 			<dt>公司地址：北京市海淀区颐和园路福缘门甲1号汇缘阁</dt>
 		</dl>
 			<p class="space15">&#160;</p>
@@ -312,7 +310,7 @@ $(function(){
                    <a class="charge30" herf="#" onclick="chargeByMobileHuafei('30')" style="cursor: pointer; display:block; height:40px; line-height:30px; width:170px; text-align:center; font-weight:bold; margin:20px 0 5px 0;text-decoration:none;background:url(/rchlw/function/images/sjhf-btn.png) no-repeat; ">30元话费充值20元彩金</a><br />
                    <a class="charge3" herf="#" onclick="chargeByMobileHuafei('3')" style="cursor: pointer; display:block; height:40px; line-height:30px; width:170px; text-align:center; font-weight:bold;margin:5px 0 25px 0;text-decoration:none;background:url(/rchlw/function/images/sjhf-btn.png) no-repeat;">3元话费充值2元彩金</a>
                 </div>
-                <p style="line-height: 25px;"><span style="font-weight: bold;">提醒：</span>请用户充值时,认真查看.<br>1、仅支持移动手机用户；<br>2、充值有3元和30元两种：移动3元话费充值，得2元彩金， 移动30元话费充值，得20元彩金；<br> 3、额度：日限额50元，月限额100元；<br>4、扣除话费与充值彩金之间差额由运营商或充值服务商收取，如意彩不收取任何费用；<br>5、联动优势客服热线：400-612-5880；<br>6、充值中如有其他问题，可拨打如意彩客服热线400-665-1000进行咨询。
+                <p style="line-height: 25px;"><span style="font-weight: bold;">提醒：</span>请用户充值时,认真查看.<br>1、仅支持移动手机用户；<br>2、充值有3元和30元两种：移动3元话费充值，得2元彩金， 移动30元话费充值，得20元彩金；<br> 3、额度：日限额50元，月限额100元；<br>4、扣除话费与充值彩金之间差额由运营商或充值服务商收取，博雅彩不收取任何费用；<br>5、联动优势客服热线：400-612-5880；<br>6、充值中如有其他问题，可拨打博雅彩客服热线400-665-1000进行咨询。
 </p>
               <p class="space15">&nbsp;</p>
 	</div>

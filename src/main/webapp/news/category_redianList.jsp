@@ -4,9 +4,9 @@
  <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>  
  <%@ taglib prefix="page" uri="/WEB-INF/pageTang.tld"%> 
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩专家战绩</title>
+<title>博雅彩专家战绩</title>
 <meta name="keywords" content="专家战绩，战绩新闻" />
-<meta name="description" content="如意彩专家战绩展示专家们的以往战绩让您提供购彩更有信心" />
+<meta name="description" content="博雅彩专家战绩展示专家们的以往战绩让您提供购彩更有信心" />
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
@@ -18,7 +18,7 @@
  <span id="common"></span>
    <div id="main">
    <div class="zixun_main">
-   <div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a> > <a href="<%=request.getContextPath() %>/news/category_zjdx.jsp">专家短信</a> > 热点新闻</div>
+   <div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> > <a href="<%=request.getContextPath() %>/news/category_zjdx.jsp">专家短信</a> > 热点新闻</div>
    	<div class="zixunleft">
 		  <div class="zixunlist">
 			  <div class="zixunlist1">

@@ -25,8 +25,8 @@ public class ChargeBean {
 	private String card_no;// 点卡卡号
 	private String card_pwd;// 点卡密码
 	
-	private String ryc_cardNo;//如意彩点卡
-	private String ryc_cardPwd;//如意彩点卡密码
+	private String ryc_cardNo;//博雅彩点卡
+	private String ryc_cardPwd;//博雅彩点卡密码
 	
 	public String getbankName() {
 		return bankName;

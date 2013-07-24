@@ -3,11 +3,11 @@
 <!--#include virtual="/include/top_http.html"-->
 <html>
 <head>
-    <title>手机客户端下载下载_如意彩</title>
+    <title>手机客户端下载下载_博雅彩</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="如意彩、手机彩票客户端下载，诺基亚彩票客户端，三星彩票客户端，摩托罗拉彩票客户端，索爱彩票客户端">
+	<meta http-equiv="keywords" content="博雅彩、手机彩票客户端下载，诺基亚彩票客户端，三星彩票客户端，摩托罗拉彩票客户端，索爱彩票客户端">
 	<meta http-equiv="description" content="手机彩票客户端下载，诺基亚彩票客户端，三星彩票客户端，摩托罗拉彩票客户端，索爱彩票客户端">
 	<link rel="shortcut icon" href="../img/biao-ico.ico"  type="image/x-icon" />
 	<script type="text/javascript" src="../js/download/jquery.js"></script>

@@ -5,9 +5,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="keywords" content="如意彩,彩票购买,彩票投注,福彩投注,体彩购买,竞彩足球,高频彩,购买大厅,开奖公告,彩票走势图,彩票资讯" />
-<title>如意彩-【彩票购买】|【彩票投注】|【福彩投注】|【体彩购买】|网站！</title>
-<meta name="description" content="如意彩为彩民提供, 彩票投注,彩票购买, 福彩投注, 福彩投注,将互联网电子彩票进行投注购买,走势分析,专家预测,兑奖等一体化服务相结合的【彩民推荐的购买投注网站】！" />
+ <meta name="keywords" content="博雅彩,彩票购买,彩票投注,福彩投注,体彩购买,竞彩足球,高频彩,购买大厅,开奖公告,彩票走势图,彩票资讯" />
+<title>博雅彩-【彩票购买】|【彩票投注】|【福彩投注】|【体彩购买】|网站！</title>
+<meta name="description" content="博雅彩为彩民提供, 彩票投注,彩票购买, 福彩投注, 福彩投注,将互联网电子彩票进行投注购买,走势分析,专家预测,兑奖等一体化服务相结合的【彩民推荐的购买投注网站】！" />
 </head>
 <body>
 	<div style="margin:0 auto; width:950px;">

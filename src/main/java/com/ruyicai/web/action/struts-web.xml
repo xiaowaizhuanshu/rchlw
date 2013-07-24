@@ -3,7 +3,7 @@
     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
     "http://struts.apache.org/dtds/struts-2.0.dtd">
  <struts>  
- <package name="news" namespace="/news" extends="struts-default" >
+ <package name="newsold" namespace="/newsold" extends="struts-default" >
  	<action name="newsInfoList" class="com.ruyicai.web.action.NewsAction">
  		<result name="newsList">/news/ruyicai_channel_xwzx.jsp</result>
  		<result name="newsList_zjzj">/news/category_zjdxList.jsp</result>
@@ -135,15 +135,15 @@
 		<!-- 开奖跳转 -->
 		 <action name="selectAll" class="com.ruyicai.web.action.SelectAllAction">
 		 
-			 <!-- 1、如意彩首页左侧开奖-->
+			 <!-- 1、博雅彩首页左侧开奖-->
 			 <result name="drawalotteryIndex">/function/query/ruyicai_drawalotteryleft.jsp</result> 
 			 <!-- 2 、首页左侧时时开奖公告-->
 			 <result name="sslotteryIndex">/function/query/ruyicai_sslotteryleft.jsp</result> 
-			 <!-- 3、如意彩频道页右侧开奖详情 -->
+			 <!-- 3、博雅彩频道页右侧开奖详情 -->
 			 <result name="drawalotteryDetail">/function/query/betting_right_drawalottery.jsp</result>
-			 <!-- 4、如意彩足彩频道页左侧开奖详情 -->
+			 <!-- 4、博雅彩足彩频道页左侧开奖详情 -->
 			 <result name="drawalotteryDetail_zc">/function/query/betting_right_drawalottery.jsp</result>
-			 <!-- 5、如意彩首页中奖排行 -->
+			 <!-- 5、博雅彩首页中奖排行 -->
 			 <result name="rankList">/function/query/ruyicai_WinningRanking.jsp</result>
                           
 		 	<!-- 右侧开奖 -->
@@ -183,18 +183,18 @@
 		</action>
 
 		<action name="ryc_selectAll" class="com.ruyicai.web.action.SelectAllAction">
-			<!-- 3、如意彩频道页右侧开奖详情点击更多 -->
+			<!-- 3、博雅彩频道页右侧开奖详情点击更多 -->
 			<result name="drawalotteryIndex">/function/query/lotteryInfo.jsp</result>
-			<!-- 4、如意彩频道页江西11选5开奖公告 -->
+			<!-- 4、博雅彩频道页江西11选5开奖公告 -->
 			<result name="drawalotteryDetail">/function/query/ruyicai_drawalottery11X5.jsp</result>
-			<!-- 如意彩开奖公告左侧页面 -->
+			<!-- 博雅彩开奖公告左侧页面 -->
 			<result name="selectTime">/function/query/ruyicai_jinrikaijiangLeft.jsp</result>
 		</action>
 		
 		<action name="ryc_selectAll_recentdrawa" class="com.ruyicai.web.action.SelectAllAction">
-			<!-- 5、如意彩频道页高频彩最新开奖 -->
+			<!-- 5、博雅彩频道页高频彩最新开奖 -->
 			<result name="drawalotteryDetail">/function/query/ruyicai_recentlydrawalottery.jsp</result>
-			<!-- 6、如意彩频道页高频彩右侧遗漏信息-->
+			<!-- 6、博雅彩频道页高频彩右侧遗漏信息-->
 			<result name="gaopinomit">/function/query/gaopinomit.jsp</result>
 		</action>
 		

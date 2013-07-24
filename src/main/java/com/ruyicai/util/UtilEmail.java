@@ -30,7 +30,7 @@ public class UtilEmail {
    
     public static void main(String args[]) throws Exception {    
     	String[] sendTo = {"zhaokailong@ruyicai.com"}; 
-        utilSend(sendTo, "如意彩彩票提示您", "<html><body><a target='_blank' href='http://www.baidu.com'>go 百度</a></body></html>");    
+        utilSend(sendTo, "博雅彩彩票提示您", "<html><body><a target='_blank' href='http://www.baidu.com'>go 百度</a></body></html>");    
     }    
    
     /**
@@ -86,7 +86,7 @@ public class UtilEmail {
   	   }
         InternetAddress addressFrom = new InternetAddress(from);    
         try {
-			addressFrom.setPersonal("如意彩");
+			addressFrom.setPersonal("博雅彩");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}

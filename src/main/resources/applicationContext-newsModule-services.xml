@@ -35,9 +35,9 @@
 		<property name="newsChannelDAO" ref="newsChannelDAO"></property>
 		<property name="channel_TemplateService" ref="channel_TemplateService"></property>
 	</bean>
-	<bean id="newsInfoService" class="com.ruyicai.web.service.impl.NewsInfoServiceImpl" scope="prototype">
+	<!-- <bean id="newsInfoService" class="com.ruyicai.web.service.impl.NewsInfoServiceImpl" scope="prototype">
 		<property name="newsInfoDAO" ref="newsInfoDAO"></property>
-	</bean>
+	</bean> -->
 	<bean id="newsTemplateService" class="com.ruyicai.web.service.impl.NewsTemplateServiceImpl">
 		<property name="newsTemplateDAO" ref="newsTemplateDAO"></property>
 	</bean>

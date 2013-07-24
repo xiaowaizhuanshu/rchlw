@@ -2,7 +2,7 @@
     pageEncoding="utf-8"%>
 <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%> 
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩-专家短信</title>
+<title>博雅彩-专家短信</title>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
@@ -16,7 +16,7 @@
    <div class="zixun_main">
    	<div class="zixunleft">
    	<tangs:ryc_newslist  value="7"  begin="0" end="1" newsId="%{#parameters.newsId[0]}" >
-		<div class="zixuntop">您所在的位置：<a href="/index.html">如意彩</a> &gt; <a href="/zhuanjiaduanxin.html">专家短信</a>  &gt; <%= new String(request.getParameter("callUrl").getBytes("ISO-8859-1"),"UTF-8") %> &gt; 正文</div> 
+		<div class="zixuntop">您所在的位置：<a href="/index.html">博雅彩</a> &gt; <a href="/zhuanjiaduanxin.html">专家短信</a>  &gt; <%= new String(request.getParameter("callUrl").getBytes("ISO-8859-1"),"UTF-8") %> &gt; 正文</div> 
 	    <div class="zixunlist">
 			<div class="zixun_top">${title}</div>
 			<div class="zixun_title">${updatetime}   　　来源： ${author} 　　责编： ${compile}     　　点击： <font class="red2" id="clickCount"><script>update_clickCount(${id});getClickCount(${id});</script>	</font></div>

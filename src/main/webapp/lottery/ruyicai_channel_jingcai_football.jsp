@@ -2,9 +2,9 @@
 	pageEncoding="utf-8"%>
 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩竞彩足球投注</title>
+<title>博雅彩竞彩足球投注</title>
 <meta http-equiv="keywords" content="竞彩足球投注，过关方式"/>
-<meta http-equiv="description" content="如意彩竞彩足球投注返奖率高达69%是竞彩足球一站式服务平台。"/>
+<meta http-equiv="description" content="博雅彩竞彩足球投注返奖率高达69%是竞彩足球一站式服务平台。"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" />
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet" />
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/jzggmb.css" rel="stylesheet" />
@@ -26,7 +26,7 @@
 		<!--  ChannelBuyBanner start  -->
 		<div class="jzdqwz">
 			<p>
-				您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a>&nbsp;&gt;&nbsp;<a href="<%=request.getContextPath() %>/function/goucaidating.jsp">购彩大厅</a>&nbsp;&gt;&nbsp;<a href="<%=request.getContextPath() %>/lottery/ruyicai_channel_jingcai_football.jsp">竞彩足球</a>
+				您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a>&nbsp;&gt;&nbsp;<a href="<%=request.getContextPath() %>/function/goucaidating.jsp">购彩大厅</a>&nbsp;&gt;&nbsp;<a href="<%=request.getContextPath() %>/lottery/ruyicai_channel_jingcai_football.jsp">竞彩足球</a>
 			</p>
 		</div>
 		<div class="ChannelBuyBanner">

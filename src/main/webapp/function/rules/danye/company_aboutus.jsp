@@ -1,13 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<meta name="keywords" content="如意彩，如意彩票，金软瑞彩" />
-<meta name="description" content="金软瑞彩-您身边的购彩专家" />
+<meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
+<meta name="description" content="华夏百信-您身边的购彩专家" />
 <link rel="shortcut icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="<%=request.getContextPath() %>/function/favicon.ico" type="image/x-icon" />
 <link rel="apple-touch-icon" href='csslogo.png'>
 <link rel="apple-touch-icon-precomposed" href='csslogo.png'>
-<title>金软瑞彩科技有限公司-公司简介</title>
+<title>华夏百信科技有限公司-公司简介</title>
 <link href="<%=request.getContextPath() %>/function/css/danyeNew.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/util.js"></script>
@@ -75,7 +75,7 @@
 		<h1>关于我们</h1>
 		<div class="company_contain">
 		<img src="<%=request.getContextPath() %>/function/images/danye/company_img.jpg" />
-		<p>北京金软瑞彩科技有限公司是整合了深厚的彩票行业运营资源、无线增值行业资源、银行和电子支付领域资源的 国家级高新技术企业。公司成立于2009年，注册资本金5000万元人民币，拥有工信部颁发的 全网电信增值业务许可证。 公司研发的无纸化彩票投注系统通过了中国信息安全认证中心的检测，并拥有多项软件著作权证书。</p>
+		<p>北京华夏百信科技有限公司是整合了深厚的彩票行业运营资源、无线增值行业资源、银行和电子支付领域资源的 国家级高新技术企业。公司成立于2009年，注册资本金5000万元人民币，拥有工信部颁发的 全网电信增值业务许可证。 公司研发的无纸化彩票投注系统通过了中国信息安全认证中心的检测，并拥有多项软件著作权证书。</p>
 		<p>公司秉承&quot;客户为先、能力为本、技术领先、 合法经营 &quot;的理念， 为广大彩民提供全面的无纸化彩票服务。 </p>
 		<p>公司目前已经与全国十多个省市福利、体育彩票中心签署了电话投注合作协议，通过短信、语音（IVR）等方式为签约省份的彩票中心进行无纸化彩票代销。我们将严格按照彩票监管部门的要求，依法合规经营，确保广大彩民的利益。</p>
 		</div>

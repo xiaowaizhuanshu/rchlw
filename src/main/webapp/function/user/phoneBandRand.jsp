@@ -31,7 +31,7 @@
 <h2>手机服务</h2>
 <form name="form2" id="form2" action="#" method="post" onsubmit="return reHtml(52,$('#form2').serialize());">
 <dl class="phone_sendMessage">
-	<dt>如意彩已向您的手机<s:property value="#session.updateMobileInfo.substring(0,7)+'****'"/><!--<s:property value="#session.user.MOBILEID.substring(0,7)+'****'"/>-->发送免费的验证短信，请查看短信。</dt>
+	<dt>博雅彩已向您的手机<s:property value="#session.updateMobileInfo.substring(0,7)+'****'"/><!--<s:property value="#session.user.MOBILEID.substring(0,7)+'****'"/>-->发送免费的验证短信，请查看短信。</dt>
 	<dd ><font id="phoneBandMsg" color="red"></font></dd>
 	<dd>
 		<table cellspacing="0" cellpadding="0" class="phone_sendMessageTable">

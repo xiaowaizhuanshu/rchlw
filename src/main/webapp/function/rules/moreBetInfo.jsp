@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩-更多投注号码</title>
+<title>博雅彩-更多投注号码</title>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css"/>
 <link href="<%=request.getContextPath() %>/function/css/tuserAll.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script>

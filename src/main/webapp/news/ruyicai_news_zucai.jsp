@@ -3,9 +3,9 @@
 <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%> 
 <%@taglib prefix="s" uri="/struts-tags" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>足彩资讯 – 如意彩 – 彩票资讯|购彩资讯|彩民新闻|专家推荐|媒体预测</title>
+<title>足彩资讯 – 博雅彩 – 彩票资讯|购彩资讯|彩民新闻|专家推荐|媒体预测</title>
 <meta name="keywords" content="彩票预测,中国足彩网,中国竞彩网,中国竞猜网,彩民新闻" />
-<meta name="description" content="彩票资讯是如意彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
+<meta name="description" content="彩票资讯是博雅彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
@@ -16,7 +16,7 @@
   <script>$(function(){toplogo('common',"ButtonChannelBuy");});</script>
  <span id="common"></span>
    <div id="main">
-   <div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a> ><a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a>&gt; <%= new String(request.getParameter("callUrl").getBytes("ISO-8859-1"),"UTF-8") %> &gt; 正文</div>
+   <div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> ><a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a>&gt; <%= new String(request.getParameter("callUrl").getBytes("ISO-8859-1"),"UTF-8") %> &gt; 正文</div>
    <div class="zixun_main">
    	<div class="zixunleft" style="border:0px;">
    		<tangs:ryc_newslist  value="7"  begin="0" end="1" newsId="%{#parameters.newsId[0]}" >

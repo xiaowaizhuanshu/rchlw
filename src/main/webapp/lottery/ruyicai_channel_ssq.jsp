@@ -3,10 +3,10 @@
  <%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%>  
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>如意彩数字彩投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表</title>
+<title>博雅彩数字彩投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="keywords" content="数字彩投注，数字彩开奖公告，数字彩开奖点评，数字彩冷热号分析，数字彩奖金对照表，数字彩走势图表"/>
-<meta http-equiv="description" content="如意彩数字彩集投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表为一体是数字彩一站式服务平台。"/>
+<meta http-equiv="description" content="博雅彩数字彩集投注、开奖公告、开奖点评、冷热号分析、奖金对照表、走势图表为一体是数字彩一站式服务平台。"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet"/>
 <link type="text/css" href="<%=request.getContextPath() %>/function/css/touzhuAll.css" rel="stylesheet"/>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 

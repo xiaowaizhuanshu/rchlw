@@ -217,7 +217,7 @@ public class TuserinfoAction extends BaseAction {
 	
 	/**
 	 * 
-	 * 如意彩点卡充值
+	 * 博雅彩点卡充值
 	 * @return  json
 	 * 
 	 */
@@ -225,7 +225,7 @@ public class TuserinfoAction extends BaseAction {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");
 		try {
-			logger.info("=====如意彩点卡充值开始====="); 
+			logger.info("=====博雅彩点卡充值开始====="); 
 			
 			//从页面得到用户输入的卡号和密码
 			String cardid = (String) session.getAttribute("cardno");
@@ -234,7 +234,7 @@ public class TuserinfoAction extends BaseAction {
 			// 3.调用jrtLot接口执行查询
 			JSONObject paras = new JSONObject();
 			
-			//如意彩点卡充值需要的参数是：userno chargetype cardno cardpwd channel subchannel bankid paytype accesstype agencyno
+			//博雅彩点卡充值需要的参数是：userno chargetype cardno cardpwd channel subchannel bankid paytype accesstype agencyno
 			paras.put("userno", user.getUSERNO());
 			paras.put("cardno", cardid);
 			paras.put("chargetype", "2");
@@ -247,24 +247,24 @@ public class TuserinfoAction extends BaseAction {
 			paras.put("agencyno", "");
 			
 			
-			//调用新接口如意彩点卡充值接口
+			//调用新接口博雅彩点卡充值接口
 			
-			logger.info("如意彩点卡充值接口地址>>>"+ResourceBundleUtil.MSBANKURL+ "/ruyicaicardcharge!ruyicaiCardCharge?jsonString="+paras.toString());
+			logger.info("博雅彩点卡充值接口地址>>>"+ResourceBundleUtil.MSBANKURL+ "/ruyicaicardcharge!ruyicaiCardCharge?jsonString="+paras.toString());
 			
 			JSONObject obj = JSONObject.fromObject(JSONReslutUtil.getResultMessage(ResourceBundleUtil.MSBANKURL 
 					+ "/ruyicaicardcharge!ruyicaiCardCharge?","jsonString="+URLEncoder.encode(paras.toString()),"POST"));
 			
-			logger.info("如意彩点卡充值接口返回值>>>"+obj);
+			logger.info("博雅彩点卡充值接口返回值>>>"+obj);
 			
 			if (obj != null) {
-				 logger.info("如意彩点卡充值jrtLot返回(如意彩点卡 recharge jrtLot Back):"+obj.toString());
+				 logger.info("博雅彩点卡充值jrtLot返回(博雅彩点卡 recharge jrtLot Back):"+obj.toString());
 				 jsonRoot.put("flag", true);
 				 jsonRoot.put("jsonValue", obj);
 				 response.getWriter().print(jsonRoot.toString());
 			}
 			
 		} catch (Exception e) {
-			logger.error("如意彩点卡账户充值异常Exception(Account recharge exception):"+e.toString());
+			logger.error("博雅彩点卡账户充值异常Exception(Account recharge exception):"+e.toString());
 			e.printStackTrace();
 			return "error";
 		}
@@ -274,7 +274,7 @@ public class TuserinfoAction extends BaseAction {
 	
 	
 	/**
-	 * 注册时验证用户输入的点卡的渠道是否是如意彩点卡（channel为2）
+	 * 注册时验证用户输入的点卡的渠道是否是博雅彩点卡（channel为2）
 	 * @throws IOException 
 	 */
 	public void getChannel() throws IOException{
@@ -1187,7 +1187,7 @@ public void phoneBandSendMessage(){
 	
 	public String phoneBandCheck(){
 		try{
-			logger.info("====如意彩手机绑定验证开始====");
+			logger.info("====博雅彩手机绑定验证开始====");
 			// 1.得到用户信息
 			String userno = JSONReslutUtil.getUserNo(request).getString("value");
 			String usermobile=request.getParameter("usermobile").equals("undefined")?"":request.getParameter("usermobile");
@@ -1238,7 +1238,7 @@ public void phoneBandSendMessage(){
 	
 	public String phoneBand(){
 		try{
-			logger.info("====如意彩手机绑定验证开始====");
+			logger.info("====博雅彩手机绑定验证开始====");
 			// 1.得到用户信息
 			Tuserinfo user = new Tuserinfo();
 			JSONObject userinfojson = JSONReslutUtil.getUserInfo(request);
@@ -1410,8 +1410,8 @@ public void phoneBandSendMessage(){
 					
 					if(count < 3){
 						//得到手机发送信息接口的信息
-						logger.debug("如意彩彩票网已经向您的邮箱发送免费的验证短信，请及时查看邮箱！");
-						request.setAttribute("message", "如意彩彩票网已经向您的邮箱发送免费的验证短信，请及时查看邮箱！");
+						logger.debug("博雅彩彩票网已经向您的邮箱发送免费的验证短信，请及时查看邮箱！");
+						request.setAttribute("message", "博雅彩彩票网已经向您的邮箱发送免费的验证短信，请及时查看邮箱！");
 						//验证邮箱
 						session.setAttribute("emailUrl", UtilGetEmailUrl.getEmailUrl( tuserinfo.getEMAIL().split("@")[1]));
 						String mac=PaySign.EncoderByMd5(user.getMOBILEID()+"ruyicai");
@@ -1420,7 +1420,7 @@ public void phoneBandSendMessage(){
 						String emailMeg=MessageUtil.EmailBand_Message.replace("{nickname}", user.getNICKNAME()).replace("{url}", url);
 						String[] emailArr = {tuserinfo.getEMAIL()};
 						//调用邮件发送接口发送邮件
-						UtilEmail.utilSend(emailArr, "如意彩彩票网邮箱绑定", emailMeg);
+						UtilEmail.utilSend(emailArr, "博雅彩彩票网邮箱绑定", emailMeg);
 						//绑定邮箱 修改缓存中的email
 						return"emailBandCheck";
 					}else{
@@ -1448,7 +1448,7 @@ public void phoneBandSendMessage(){
 	
 	public String emailBandCheck(){
 		try{
-			logger.info("====如意彩邮箱绑定验证开始====");
+			logger.info("====博雅彩邮箱绑定验证开始====");
 			// 1.得到用户信息
 			JSONObject user = JSONReslutUtil.getUserInfo(request).getJSONObject("value");
 			String userid=request.getParameter("userid");
@@ -1630,7 +1630,7 @@ public void phoneBandSendMessage(){
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			logger.error("如意彩彩票网账户明细Exception="+e.toString());
+			logger.error("博雅彩彩票网账户明细Exception="+e.toString());
 			return "error";
 		}
 		
@@ -3094,7 +3094,7 @@ public void phoneBandSendMessage(){
 		String gotoValue = ""; // 用户登录后要跳转的地址，如果中间出现错误，则跳转到错误的地址。
 		// 得到用户信息
 		try {
-			logger.info("====如意彩邮箱找回密码开始====");
+			logger.info("====博雅彩邮箱找回密码开始====");
 			//获取用户的手机和邮箱
 			String phone = session.getAttribute("phone")==null?"":session.getAttribute("phone").toString();
 			String email = session.getAttribute("findPwd_param").toString();
@@ -3140,7 +3140,7 @@ public void phoneBandSendMessage(){
 						"{nickname}", nickname).replace("{url}", url);
 
 				String[] emails = { email };
-				UtilEmail.utilSend(emails, "如意彩找回密码", emailmessage);
+				UtilEmail.utilSend(emails, "博雅彩找回密码", emailmessage);
 				session.setAttribute("email", email);
 				gotoValue = "1email";
 			} else {
@@ -3232,7 +3232,7 @@ public void phoneBandSendMessage(){
 		return null;
 	}
 	
-	//如意彩修改昵称
+	//博雅彩修改昵称
 	//------------------切换追号的新接口---------------------
 	
 	/**

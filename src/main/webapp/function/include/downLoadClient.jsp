@@ -3,9 +3,9 @@
 <%@taglib prefix="s" uri="/struts-tags"%>
 <%@taglib uri="/WEB-INF/tangs.tld" prefix="tangs" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩手机客户端下载</title>
-<meta name="keywords" content="手机客户端下载，手机彩票客户端下载，如意彩手机客户端下载">
-<meta name="description" content="如意彩手机客户端下载-为购彩用户提供掌上快捷的购彩平台！">
+<title>博雅彩手机客户端下载</title>
+<meta name="keywords" content="手机客户端下载，手机彩票客户端下载，博雅彩手机客户端下载">
+<meta name="description" content="博雅彩手机客户端下载-为购彩用户提供掌上快捷的购彩平台！">
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/clientAll.css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/util.css"  />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
@@ -80,7 +80,7 @@
 			<a href="http://www.windowsphone.com/zh-cn/store/app/%E5%A6%82%E6%84%8F%E5%BD%A9/b0bda9c5-2887-47e2-a487-ac9f481e8632" target="_blank" style="color: red;">【微软商店快速安装入口】</a>
 			</div>
 			<p style="position:absolute; top:420px; left:0">
-			网页下载：通过微软应用商店下载安装登陆微软应用商店，搜索“如意彩”，
+			网页下载：通过微软应用商店下载安装登陆微软应用商店，搜索“博雅彩”，
 			点击应用图标，进入下载页面，点击“安装”下载到您的winphone手机中，安装后即可马上投注购彩。</p>
 		</div>
 	</div>
@@ -88,7 +88,7 @@
 <div class="download_ff2">
 	<h1>方法2：通过手机上网下载安装</h1>
 	<p> <strong>用手机登陆 wap.ruyicai.com 直接下载安装。</strong></p>
-	<p> 打开您的手机浏览器，输入wap.ruyicai.com进入如意彩WAP网站页面，点击&ldquo;手机客户端下载&rdquo;。进入下载页面，选择与您的手机对应的手机品牌和型号，点击&ldquo;立即下载&rdquo;下载到您的手机中，安装后即可马上投注购彩。&nbsp; </p>
+	<p> 打开您的手机浏览器，输入wap.ruyicai.com进入博雅彩WAP网站页面，点击&ldquo;手机客户端下载&rdquo;。进入下载页面，选择与您的手机对应的手机品牌和型号，点击&ldquo;立即下载&rdquo;下载到您的手机中，安装后即可马上投注购彩。&nbsp; </p>
 </div>
 <script>
 	var NowFrame = 1;

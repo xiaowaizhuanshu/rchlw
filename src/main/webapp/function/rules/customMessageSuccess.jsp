@@ -17,10 +17,10 @@
 	<div class="message_content">
 		<div class="m_thanks">
 			<div class="m_success">恭喜您，提交成功！</div>
-				<p>非常感谢您对如意彩的支持！<br />
+				<p>非常感谢您对博雅彩的支持！<br />
    				如果您还有其他问题，欢迎 <a href="<%=request.getContextPath() %>/function/rules/customMessage.jsp">点击此处</a> 继续留言。</p>
 				<p>我们会一直努力，以最优秀的服务回报用户！<br />
-				关注彩票动态，欢迎访问 <a href="/rchlw/index.jsp">如意彩</a> ！</p>
+				关注彩票动态，欢迎访问 <a href="/rchlw/index.jsp">博雅彩</a> ！</p>
 			<div><a class="m_fanhuibtn" href="<%=request.getContextPath() %>/function/rules/customMessage.jsp">&#160;</a></div>
 		</div>
 	</div>

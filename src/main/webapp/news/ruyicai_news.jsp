@@ -1,75 +1,63 @@
 <%@page import="com.ruyicai.util.URLEncoder"%>
-<%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
-<%@ taglib prefix="tangs" uri="/WEB-INF/tangs.tld"%> 
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="tangs" uri="/WEB-INF/byc.tld"%> 
 <%@taglib prefix="s" uri="/struts-tags" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>如意彩 -如意彩逆市上涨</title>
+<title>博雅彩 -博雅彩逆市上涨</title>
 <meta name="keywords" content="彩票预测,中国足彩网,中国竞彩网,中国竞猜网,彩民新闻" />
-<meta name="description" content="彩票资讯是如意彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
+<meta name="description" content="彩票资讯是博雅彩彩票资讯频道为您提供福彩、体彩、足彩、竞彩和高频彩等彩票的信息、推荐、分析、点评等免费彩票预测服务" />
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/function/css/ChannelBuy.css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js"></script> 
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/kuaiTouZhou.js" ></script>
-<%if(request.getParameter("channelId").equals("0")){request.setAttribute("channelCheck","0");}else{request.setAttribute("channelCheck","1");};%>
+<%if("0".equals(request.getParameter("channelId"))){request.setAttribute("channelCheck","0");}else{request.setAttribute("channelCheck","1");};%>
 </head>
 <body>
-   <div id="body">
-  <script>$(function(){toplogo('common',"");});</script>
- <span id="common"></span>
-   <div id="main">
-   <div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">如意彩</a> &gt;<a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a> 
- &gt; 正文</div>
-   <div class="zixun_main">
+<div id="body">
+	<script>$(function(){toplogo('common',"");});</script>
+ 	<span id="common"></span>
+   	<div id="main">
+   	<div class="zixuntop">
+   		您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> &gt;<a href="/rchlw/news/category_xinwenzixun.jsp">热点资讯</a> &gt; 正文
+   	</div>
+   	<div class="zixun_main">
    	<div class="zixunleft" style="border:0px;">
-   		<tangs:ryc_newslist  value="7"  begin="0" end="1" newsId="%{#parameters.newsId[0]}" >
+   		<tangs:news newsId="${param.newsId}" var="n">
 	    <div class="zixun_redList">
-			<div class="zixun_top">${title}</div>
-			<div class="zixun_title">
-			<tangs:ryc_newslist categoryId="%{#parameters.categoryId[0]}" value="9" id="cata">
-			<s:if test="#cata.nameca.indexOf('wangzhangonggao')>-1">
-			${updatetime}   　
-			</s:if>
-			<s:else>
-				${createtime}
-			</s:else>
-			</tangs:ryc_newslist>
-			　来源： ${author} 　　责编： ${compile}    　　点击： <font class="red2" id="clickCount"><script>
-				update_clickCount(${id});
-				getClickCount(${id});</script></font></div>
+			<div class="zixun_top">${n.title}</div>
+			<div class="zixun_title">${n.updateTime}</div>
 			<div class="zixun_con">
-			${content}
-			<div class="space10">&nbsp;</div>
-			<div class="space20">&nbsp;</div>
-		    <jsp:include page="/function/rules/bshare.jsp"></jsp:include>
-	    	<div class="space20"></div>
-			<div class="septal_line"></div>
-			<div class="space20"></div>
-			<div class="RelatingArticle" >
-				<h3>您也可能喜欢:</h3>
-				<tangs:ryc_newslist categoryId="%{#parameters.categoryId[0]}"  web_id="%{#parameters.website_Properties_id[0]}"  newsId="%{#parameters.newsId[0]}"  value="20" num="5" status="s">
-					<dl>
-						<dd>
-							<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
-		newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-		&channelId=${channelId}&categoryId=${categoryCode}&title=${title}">${title}</a>
-						</dd>
-					</dl>
-				</tangs:ryc_newslist>
-			</div>
+				${n.content}
+				<div class="space10">&nbsp;</div>
+				<div class="space20">&nbsp;</div>
+			    <jsp:include page="/function/rules/bshare.jsp"></jsp:include>
+		    	<div class="space20"></div>
+				<div class="septal_line"></div>
+				<div class="space20"></div>
+				<div class="RelatingArticle" >
+					<h3>您也可能喜欢:</h3>
+					<%-- <tangs:ryc_newslist categoryId="%{#parameters.categoryId[0]}"  web_id="%{#parameters.website_Properties_id[0]}"  newsId="%{#parameters.newsId[0]}"  value="20" num="5" status="s">
+						<dl>
+							<dd>
+								<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
+								newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
+								&channelId=${channelId}&categoryId=${categoryCode}&title=${title}">${title}</a>
+							</dd>
+						</dl>
+					</tangs:ryc_newslist> --%>
+				</div>
 			</div>
 		</div>	
-		</tangs:ryc_newslist>
+		</tangs:news>
 		<div class="space10">&nbsp;</div>
-
 	</div>
    	<div class="zixunright">
 	<div class="jinri_kj">
 				<div class="jinri_top1"><span class="jinri_zi">专家推荐</span>
 				</div>
 				<div class="webgg_con">
-				<ul><s:if test="#request.channelCheck!=0">
+				<ul><%-- <s:if test="#request.channelCheck!=0">
 					<tangs:ryc_newslist value="19" begin="0" end="6" num="6" categoryCn="'福彩推荐','体彩推荐'" channelId="%{#parameters.channelId[0]}" web_id="%{#parameters.website_Properties_id[0]}">
 		                 <li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
 		newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
@@ -82,7 +70,7 @@
 		&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" title="${title}" title="${title}"  target="_blank">${title}</a></li>
 				     </tangs:ryc_newslist>
 				     
-				     </s:else>
+				     </s:else> --%>
 		</ul>
 			</div>
 			</div>
@@ -90,9 +78,9 @@
 				<div class="jinri_top1"><span class="jinri_zi">最新中奖</span></div>
 				<div class="webgg_con" id="webgg_con">
 				<ul class="NewWinList">
-					<tangs:ryc_newslist value="3" begin="0"   categoryCn="最新中奖"  web_id="%{#parameters.website_Properties_id[0]}"  num="1" >
+					<%-- <tangs:ryc_newslist value="3" begin="0"   categoryCn="最新中奖"  web_id="%{#parameters.website_Properties_id[0]}"  num="1" >
 				    ${content}
-				     </tangs:ryc_newslist>
+				     </tangs:ryc_newslist> --%>
 		</ul>
 			</div>
 		</div>
@@ -109,8 +97,8 @@
 			<div class="jinri_kj">
 				<div class="jinri_top1"><span class="jinri_zi">投注技巧</span></div>
 				<div class="webgg_con">
-				<ul><s:if test="#request.channelCheck!=0">
-					<tangs:ryc_newslist value="19" begin="0" end="6"  num="6" categoryCn="'体彩技巧','福彩技巧'" channelId="%{#parameters.channelId[0]}" web_id="%{#parameters.website_Properties_id[0]}">
+				<ul><%--<s:if test="#request.channelCheck!=0">
+					 <tangs:ryc_newslist value="19" begin="0" end="6"  num="6" categoryCn="'体彩技巧','福彩技巧'" channelId="%{#parameters.channelId[0]}" web_id="%{#parameters.website_Properties_id[0]}">
 				     <li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
 		newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
 		&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" title="${title}"  target="_blank">${title}</a></li>
@@ -121,8 +109,8 @@
 				     <li><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?
 		newsId=${id}&website_Properties_id=${web_id}&callUrl=${callUrl}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
 		&channelId=${channelId}&categoryId=${categoryCode}&title=${title}" title="${title}" target="_blank">${title}</a></li>
-				     </tangs:ryc_newslist>
-				     </s:else>
+				     </tangs:ryc_newslist> 
+				     </s:else>--%>
 			</ul>
 			</div>
 			</div>

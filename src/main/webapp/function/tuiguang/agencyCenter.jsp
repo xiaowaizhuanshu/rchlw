@@ -12,7 +12,7 @@ div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}
 				<li id="li1" onclick="BaseTab($(this))" controltarget=".rechargeWizard" class="light">推广说明</li>
 				<li id="li2" onclick="BaseTab($(this))" controltarget=".netCharge" class="light selected">推广链接</li>
 			</ul>
-			<form action="images/如意彩账户中心.htm" id="chargeForm" name="chargeForm" method="post" target="_blank">
+			<form action="images/博雅彩账户中心.htm" id="chargeForm" name="chargeForm" method="post" target="_blank">
 				<input type="hidden" name="orderinfo" id="orderinfo" value="">
 			</form>
 		</div>
@@ -21,13 +21,13 @@ div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}
 				<p class="recharge_title">推广说明</p>
 				<dl class="recharge_explain">
 				    <dt>一，推广员注意事项</dt>
-					<dd>1、不能发展正在消费的如意彩老用户为自己下级会员；</dd>
+					<dd>1、不能发展正在消费的博雅彩老用户为自己下级会员；</dd>
 					<dd>2、禁止代理间互拉用户（下级用户必须完成手机验证、完善身份证号码和真实姓名，
 					没完善前为普通用户,</dd>
 					<dd>一旦完善资料即可显示在下级列表里面，并正式计算业绩）；</dd>
 					<dd>3、不能在方案宣传，论坛等网站任意页面留联系方式信息；</dd>
 					<dd>4、不能公开透露自己的推广比例给别人；</dd>
-					<dd>5、不能在QQ群里，论坛等地方公开如意彩的推广事项；</dd>
+					<dd>5、不能在QQ群里，论坛等地方公开博雅彩的推广事项；</dd>
 					<dt>二、推广的相关功能： </dt>
 					<dd>1.点击进入"我的账户"，左边导航最下方 "推广链接"即可复制文字链接，
 					    	在您的推广链接下注册，完善资料（身份证，真实姓名，手机验证），即可成为您的下级会员。</dd>
@@ -133,7 +133,7 @@ div.My_account{ width:778px; padding:0px;} div.My_account h2{ margin:0 14px;}
 						<dl class="fontLinkDL">
 							<dt class="cBlue01">2、怎么样进行推广？</dt>
 							<dd style="padding-left: 20px;">复制"会员推广链接"给好友，然后好友通过链接地址注册后，就成为了"我的推广会员"，<br>
-								然后好友在如意彩彩票网的所有成功投注都可以算作"我的业绩"。</dd>
+								然后好友在博雅彩彩票网的所有成功投注都可以算作"我的业绩"。</dd>
 							<br>
 						</dl>
 						<dl class="fontLinkDL">

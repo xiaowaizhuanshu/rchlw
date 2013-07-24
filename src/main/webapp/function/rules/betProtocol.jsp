@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 	 <%@taglib prefix="tangs" uri="/WEB-INF/tangs.tld" %>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
-<title>用户代购协议_如意彩</title>
+<title>用户代购协议_博雅彩</title>
 <link href="<%=request.getContextPath() %>/function/css/util.css" rel="stylesheet" type="text/css" />
 <link href="<%=request.getContextPath() %>/function/css/ruserAll.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js" ></script>

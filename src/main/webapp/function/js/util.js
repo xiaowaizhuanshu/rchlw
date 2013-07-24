@@ -31,9 +31,9 @@ urlArray[24]= basepath + "/function/selectAll!drawalottery";// 彩票开奖
 urlArray[25]= basepath + "/user/tuserinfoAction!changeTuserinfo";// 修改个人信息使用的ACTION地址
 urlArray[27]= basepath + "/user/tuserinfoAction!changePassword";// 修改密码使用的ACTION地址
 urlArray[29]= basepath + "/user/selectAll!betSelectCount";// 投注查询查询1-7条
-urlArray[26]= basepath + "/function/selectAll!drawalotteryIndex";// 如意彩首页左侧开奖信息
-urlArray[28]= basepath + "/function/ryc_selectAll!drawalotteryIndex";// 如意彩频道页右侧点击更多按钮开奖详情（开奖公告）
-urlArray[30]= basepath + "/function/ryc_selectAll!drawalotteryDetail";// 如意彩频道江西11选5开奖内容
+urlArray[26]= basepath + "/function/selectAll!drawalotteryIndex";// 博雅彩首页左侧开奖信息
+urlArray[28]= basepath + "/function/ryc_selectAll!drawalotteryIndex";// 博雅彩频道页右侧点击更多按钮开奖详情（开奖公告）
+urlArray[30]= basepath + "/function/ryc_selectAll!drawalotteryDetail";// 博雅彩频道江西11选5开奖内容
 urlArray[32]= basepath + "/function/ryc_select_newkj!drawalotteryIndex";// 开奖公告
 urlArray[33]= basepath + "/function/user/securityData_new.jsp";// 安全资料 《新版安全资料》
 urlArray[34]= basepath + "/function/user/certidBandSuccess.jsp";// 身份证成功绑定*
@@ -46,7 +46,7 @@ urlArray[40]= basepath + "/user/tuserinfoAction!updateEmailBand";// 修改邮箱
 urlArray[43]= basepath + "/user/selectAll!getBetSelect";// 投注记录五条详细信息
 urlArray[44]= basepath + "/user/tuserinfoAction!cashCert";// 提现页面的身份证绑定使用的ACTION地址
 
-urlArray[45]= basepath + "/function/selectAll!drawalotteryDetail";// 如意彩频道页开奖详情
+urlArray[45]= basepath + "/function/selectAll!drawalotteryDetail";// 博雅彩频道页开奖详情
 
 urlArray[46]= basepath + "/function/selectAll!recentLottery";// 购彩大厅中的显示购彩
 
@@ -64,8 +64,8 @@ urlArray[56]= basepath + "/function/selectAll!getOmission";// 查询当前期往
 
 urlArray[58]= basepath + "/function/selectAll!getCaselotsByWhereToSuccess";// 合买成功页的记录列表的查询
 urlArray[59]= basepath + "/function/selectAll!getMoreBetSelect";// 投注记录超过五条的详细信息（合买使用的）
-urlArray[60]= basepath + "/function/ryc_selectAll_recentdrawa!drawalotteryDetail";// 如意彩频道高频彩最新开奖
-urlArray[61]= basepath + "/function/ryc_selectAll_recentdrawa!getGaoPinRightOmission";// 如意彩频道高频彩右侧获取遗漏信息
+urlArray[60]= basepath + "/function/ryc_selectAll_recentdrawa!drawalotteryDetail";// 博雅彩频道高频彩最新开奖
+urlArray[61]= basepath + "/function/ryc_selectAll_recentdrawa!getGaoPinRightOmission";// 博雅彩频道高频彩右侧获取遗漏信息
 urlArray[62]= basepath + "/function/selectAll!getPageOmission";// 查询当前期往后的n期遗漏值（新接口）
 urlArray[63]= basepath + "/function/user/charge_bank_nextPage.jsp";
 urlArray[64]= basepath + "/function/user/cash_next.jsp"; //提现第二个页面
@@ -96,7 +96,7 @@ urlArray[84]= basepath + "/function/jc!getLeague";//
 urlArray[90]= basepath + "/user/tuserinfoAction!getOrderInfo";//查询一个提现订单的详细信息 
 urlArray[92]= basepath + "/function/user/charge_mobileHuafei_nextPage.jsp";//手机话费充值跳转页面
 
-function reHtml(key,parameters,loading,divId,bloean){
+function reHtml(key, parameters, loading, divId, bloean){
 	if(bloean==null||bloean==""){
 	  bloean =true;
 	}
@@ -1012,7 +1012,7 @@ function isLoginReHtmlInParameters(lotNo,startDate,stopDate,order,i,divId){
 		   if(divId==null){
 				divId = "right_text";
 			}
-			$("#"+divId).html("<div class='My_account_noLogin'><p>"+decodeURI(EncodeUtf8("您尚未登录，请您先"))+"<a href='javaScript:loginRequrl();' title='"+decodeURI(EncodeUtf8("登录"))+"'>"+decodeURI(EncodeUtf8("登录"))+"</a></p><p>"+decodeURI(EncodeUtf8("如还未注册，请您先"))+"<a href='http://users.ruyicai.com/register/register_new.jsp' title='"+decodeURI(EncodeUtf8("注册"))+"'>"+decodeURI(EncodeUtf8("注册"))+"</a></p></div>");
+			$("#"+divId).html("<div class='My_account_noLogin'><p>"+decodeURI(EncodeUtf8("您尚未登录，请您先"))+"<a href='javaScript:loginRequrl();' title='"+decodeURI(EncodeUtf8("登录"))+"'>"+decodeURI(EncodeUtf8("登录"))+"</a></p><p>"+decodeURI(EncodeUtf8("如还未注册，请您先"))+"<a href='"+users.boyacai.appAddress+"/register/register_new.jsp' title='"+decodeURI(EncodeUtf8("注册"))+"'>"+decodeURI(EncodeUtf8("注册"))+"</a></p></div>");
 		}
 }
 
@@ -1682,7 +1682,7 @@ function ajaxOutToLogin(){
 	    success: function(msg){
 			var reqUrl = window.location.href;
 			var url = encodeURIComponent(reqUrl);
-			window.location.href="http://users.ruyicai.com/login.jsp?reqUrl="+url;
+			window.location.href=users.boyacai.appAddress+"/login.jsp?reqUrl="+url;
 		}
 
 	});
@@ -3059,7 +3059,7 @@ function addWrongImages(valid,id,textid,character){
 //调用支付宝登录方法
 function zfbLogin(){
 	$.ajax({
-		url:'http://users.ruyicai.com/function/unitedLogin!alipayHandyLogin',
+		url:users.boyacai.appAddress+'/function/unitedLogin!alipayHandyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},
@@ -3075,7 +3075,7 @@ function zfbLogin(){
 //调用QQ登录方法
 function qqUnitedLogin(){
 	$.ajax({
-		url:'http://users.ruyicai.com/function/unitedLogin!qqUnitedHandlyLogin',
+		url:users.boyacai.appAddress+'/function/unitedLogin!qqUnitedHandlyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},
@@ -3259,7 +3259,7 @@ function allYearsTouzhu(){
 		$("#final_money").html(0);
 		//弹出层
 		loginShow();
-		var str ="<form action='http://users.ruyicai.com/login.jsp' id='topjump' method='post' target='_blank'></form>";
+		var str ="<form action='"+users.boyacai.appAddress+"/login.jsp' id='topjump' method='post' target='_blank'></form>";
 		$("body").append(str);
 		$("#topjump").submit();
 		$("body").remove(str);

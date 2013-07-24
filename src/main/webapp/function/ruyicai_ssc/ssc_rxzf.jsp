@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"pageEncoding="utf-8"%>
+<%@page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <div class="ChannelBuyTip">玩法提示：所选十位、个位与开奖号码全部一致即中奖，奖金100元。</div>
 <div class="touzhuqi">
             <div class="redselect_left_3dp" style="padding-left:25px;"><span class="redselect_left_zi">十　　位</span><span class="redselect_left_zi omitTitle">遗　　漏</span><span class="redselect_left_zi4">个　　位</span><span class="redselect_left_zi omitTitle">遗　　漏</span></div>

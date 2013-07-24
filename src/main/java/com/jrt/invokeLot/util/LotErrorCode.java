@@ -134,9 +134,9 @@ public class LotErrorCode {
 	public static final String RYFYC="000020";	// 发送如意付请求出现异常
 	
 	/*
-	 * 如意彩充值卡充值
+	 * 博雅彩充值卡充值
 	 */
-	public static final String RYCFail="000012";// 如意彩充值失败
+	public static final String RYCFail="000012";// 博雅彩充值失败
 	public static final String YHZTWTG="000001";// 用户状态验证未通过
 	
 	/*

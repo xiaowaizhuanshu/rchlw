@@ -1,9 +1,13 @@
+<%@page import="com.boyacai.common.util.AppAddr"%>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
 <%@ page import="net.sf.json.JSONObject,com.jrt.invokeLot.util.JSONReslutUtil,com.ruyicai.util.NameUtil" %>
 <%
 	JSONObject user = JSONReslutUtil.getUserInfo(request);
 %>
+<script type="text/javascript" src="/rchlw/function/js/byc.properties.js"></script>
 <script type="text/javascript">
 	//增加获取当前地址并登录成功后跳转到这个地址
 	$(function() {
@@ -15,13 +19,12 @@
 	function loginRequrl() {
 		if ($(".ButtonChannelBuy").hasClass("selected")) {
 			loginShow();
-			var str = "<form action='http://users.ruyicai.com/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
+			var str = "<form action='"+byc.address.users+"/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
 			$("body").append(str);
 			$("#topjump").submit();
 			$("body").remove(str);
 		} else {
-			window.location.href = "http://users.ruyicai.com/login.jsp?reqUrl="
-					+ $("#reqUrl").val();
+			window.location.href = byc.address.users+"/login.jsp?reqUrl=" + $("#reqUrl").val();
 		}
 	}
 </script>
@@ -70,7 +73,7 @@
 				</dl>
 				<!-- 登陆后 账户信息及账户操作end -->
 <%}else{%>
-			<dt><em>您好，欢迎来到如意彩！</em></dt>
+			<dt><em>您好，欢迎来到博雅彩！</em></dt>
 			<dt><a href="javaScript:loginRequrl();">请登录</a><a href="http://users.ruyicai.com/register/register_new.jsp">免费注册</a></dt>
 			<dd>
 				<div class="SelectLogin" onmouseover="HoverOver($(this))" onmouseout="HoverOut($(this))">
@@ -79,9 +82,9 @@
 					</span>
 					<dl>
 						<dt>
-							<a href="http://users.ruyicai.com/function/unitedLogin!qqUnitedHandlyLogin"><img src="<%=request.getContextPath() %>/function/images/login_QQ.gif" />QQ</a>
+							<a href="<%=AppAddr.getUsersPath() %>/function/unitedLogin!qqUnitedHandlyLogin"><img src="<%=request.getContextPath() %>/function/images/login_QQ.gif" />QQ</a>
 						</dt>
-						<dd><a href="http://users.ruyicai.com/function/unitedLogin!alipayHandyLogin"><img src="<%=request.getContextPath() %>/function/images/login_zhiFuBao.gif" />支付宝</a>
+						<dd><a href="<%=AppAddr.getUsersPath() %>/function/unitedLogin!alipayHandyLogin"><img src="<%=request.getContextPath() %>/function/images/login_zhiFuBao.gif" />支付宝</a>
 						</dd>
 					</dl>
 				</div>
@@ -90,10 +93,11 @@
 			<input type="hidden" value="0"  name="rank_value" />
 <%} %>
 		<div class="QuickLink">
-			<a href="/rchlw/index.jsp">首页</a>|<a href="/rchlw/function/include/downLoadClient.jsp">手机购彩
-			</a>|<a href="http://www.ruyicai.com/cms/index.html" target="_blank">帮助中心</a>|
-			<a href="/rchlw/news/category_activityList.jsp?cpage=1&begin=0">活动专题</a>|
-			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>|<a href="http://bbs.ruyicai.com" >论坛</a>
+			<a href="/rchlw/index.jsp">首页</a>|<a href="/rchlw/function/include/downLoadClient.jsp">手机购彩</a>|
+			<a href="${ctx}/help/helper!list.action" target="_blank">帮助中心</a>|
+			<a href="${ctx}/activity/activity!list.action">活动专题</a>|
+			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>|
+			<a href="http://bbs.ruyicai.com" >论坛</a>
 		</div>
 		<!-- 右侧快速链接 end -->
 		</dl>

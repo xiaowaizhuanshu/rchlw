@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_0.xsd"
+	version="2.0">
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>byc</short-name>
+	<uri>/byc</uri>
+	<display-name>"the TagLib by www.boyacai.com"</display-name>
+	<!-- 新闻 -->
+	<tag>
+		<name>news</name>
+		<tag-class>com.boyacai.news.tag.NewsTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<attribute>
+			<name>newsId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>新闻ID</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+	<!-- 新闻列表 -->
+	<tag>
+		<name>newsList</name>
+		<tag-class>com.boyacai.news.tag.NewsListTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<attribute>
+			<name>category</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>新闻类别[0：TOP新闻｜1：新闻｜2：活动｜3：帮助]
+			</description>
+		</attribute>
+		<attribute>
+			<name>channel</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>新闻类别[1：彩民趣闻｜2：专家推荐｜3：足彩天地｜4：站内公告|5：TOP新闻]
+			</description>
+		</attribute>
+		<attribute>
+			<name>lotNo</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>彩种</description>
+		</attribute>
+		<attribute>
+			<name>pageNo</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>页码</description>
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>每页记录数</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+	<!-- 服务地址 -->
+	<tag>
+		<name>addr</name>
+		<tag-class>com.boyacai.common.tag.AppAddrTag</tag-class>
+		<body-content>empty</body-content>
+		<description>便捷获取各应用模块服务地址</description>
+		<attribute>
+			<name>module</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>各应用模块标识[users|rchlw|jclq|jczq|kuaikai]</description>
+		</attribute>
+	</tag>
+</taglib>  

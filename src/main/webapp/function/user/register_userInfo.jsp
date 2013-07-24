@@ -11,7 +11,7 @@
 %>
 <div class="ZhuCe_success"><i id="username"><%=username %></i>，恭喜您注册成功！</div>
 
-<div class="ZhuCe_remind"><em>为了您的账户安全，请如实填写以下资料</em>：（该资料作为领奖和提款的重要凭证，如意彩绝对不会泄露你的个人信息）</div>
+<div class="ZhuCe_remind"><em>为了您的账户安全，请如实填写以下资料</em>：（该资料作为领奖和提款的重要凭证，博雅彩绝对不会泄露你的个人信息）</div>
 
 <table border="0" cellspacing="0" cellpadding="0" class="ZhuCe_table second_space">
 
