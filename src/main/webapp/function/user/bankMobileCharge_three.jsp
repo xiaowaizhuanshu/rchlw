@@ -281,7 +281,7 @@
 
 <%//--手机卡充值卡充值end--%>
 <div class="BankTransfer none">
-		<p class="Bank_p">通过银行柜台、ATM或者网上银行转帐到以下账户，转账后通知客服（电话：<b>400-665-1000</b>）办理资金入账</p>
+		<p class="Bank_p">通过银行柜台、ATM或者网上银行转帐到以下账户，转账后通知客服（电话：<b>400-856-1000</b>）办理资金入账</p>
 		<p class="Bank_title">账户名称：北京华夏百信科技有限公司</p>
 		<p class="Bank_title">开&nbsp;&nbsp;户&nbsp;&nbsp;行：工行四季青支行</p>
 		<p class="Bank_title">账　　号：<b>0200 2453 1920 1093 515</b></p>
@@ -290,12 +290,12 @@
 		<dl class="Bank_explain">
 			<dt>转账时请务必注明用户名，并请设置零头，比如137.01元，便于客服快速核对处理；</dt>
 			<dt>为了节省转帐手续费，请尽量选择同行转帐；</dt>
-			<dt>转帐后请及时通知客服办理资金入账，客服电话：400-665-1000；</dt> 
+			<dt>转帐后请及时通知客服办理资金入账，客服电话：400-856-1000；</dt> 
 		</dl>
 		<p class="recharge_title">北京用户可带现金到公司入账</p>
 		<dl class="Bank_explain">
 			<dt>公司名称：北京华夏百信科技有限公司</dt>
-			<dt>公司地址：北京市海淀区颐和园路福缘门甲1号汇缘阁</dt>
+			<dt>公司地址：北京市建国门内大街18号恒基中心</dt>
 		</dl>
 			<p class="space15">&#160;</p>
 	</div>
@@ -307,7 +307,7 @@
            <a class="charge30" herf="#" onclick="chargeByMobileHuafei('30')" style="cursor: pointer; display:block; height:40px; line-height:30px; width:170px; text-align:center; font-weight:bold; margin:20px 0 5px 0;text-decoration:none;background:url(/rchlw/function/images/sjhf-btn.png) no-repeat; ">30元话费充值20元彩金</a><br />
            <a class="charge3" herf="#" onclick="chargeByMobileHuafei('3')" style="cursor: pointer; display:block; height:40px; line-height:30px; width:170px; text-align:center; font-weight:bold;margin:5px 0 25px 0;text-decoration:none;background:url(/rchlw/function/images/sjhf-btn.png) no-repeat;">3元话费充值2元彩金</a>
         </div>
-        <p style="line-height: 25px;"><span style="font-weight: bold;">提醒：</span>请用户充值时,认真查看.<br>1、仅支持移动手机用户；<br>2、充值有3元和30元两种：移动3元话费充值，得2元彩金， 移动30元话费充值，得20元彩金；<br> 3、额度：日限额50元，月限额100元；<br>4、扣除话费与充值彩金之间差额由运营商或充值服务商收取，博雅彩不收取任何费用；<br>5、联动优势客服热线：400-612-5880；<br>6、充值中如有其他问题，可拨打博雅彩客服热线400-665-1000进行咨询。</p>
+        <p style="line-height: 25px;"><span style="font-weight: bold;">提醒：</span>请用户充值时,认真查看.<br>1、仅支持移动手机用户；<br>2、充值有3元和30元两种：移动3元话费充值，得2元彩金， 移动30元话费充值，得20元彩金；<br> 3、额度：日限额50元，月限额100元；<br>4、扣除话费与充值彩金之间差额由运营商或充值服务商收取，博雅彩不收取任何费用；<br>5、联动优势客服热线：400-612-5880；<br>6、充值中如有其他问题，可拨打博雅彩客服热线400-856-1000进行咨询。</p>
         <p class="space15">&nbsp;</p>
 	</div>
 <%//--话费充值   end  %>

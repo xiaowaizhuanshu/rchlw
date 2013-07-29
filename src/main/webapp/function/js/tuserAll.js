@@ -1894,7 +1894,7 @@ function checkMoney(){
 			},
 			success:function (data){
 				if(data=="cashsuccess"){
-					$("#account_content1").html("<p class='tikuan_suc'><span class='chzhsuc_img'><img src='/rchlw/function/images/duigou.gif'/></span><span class='chzhsuc_zi'>"+decodeURI(EncodeUtf8("恭喜"))+"<font class='red2'>"+tsname+"</font>"+decodeURI(EncodeUtf8('，您的提款申请已提交！'))+"</span></p><p class='tikuan_tishi'> "+decodeURI(EncodeUtf8("我们会尽快将"))+"<font class='red2'>"+money+decodeURI(EncodeUtf8("元"))+"</font>"+decodeURI(EncodeUtf8("转到您指定的银行账户。"))+"<br/>"+decodeURI(EncodeUtf8("如有任何疑问，请拨打客服热线咨询："))+"<font class='red2'>400-665-1000</font>"+decodeURI(EncodeUtf8("。 "))+"</p>");
+					$("#account_content1").html("<p class='tikuan_suc'><span class='chzhsuc_img'><img src='/rchlw/function/images/duigou.gif'/></span><span class='chzhsuc_zi'>"+decodeURI(EncodeUtf8("恭喜"))+"<font class='red2'>"+tsname+"</font>"+decodeURI(EncodeUtf8('，您的提款申请已提交！'))+"</span></p><p class='tikuan_tishi'> "+decodeURI(EncodeUtf8("我们会尽快将"))+"<font class='red2'>"+money+decodeURI(EncodeUtf8("元"))+"</font>"+decodeURI(EncodeUtf8("转到您指定的银行账户。"))+"<br/>"+decodeURI(EncodeUtf8("如有任何疑问，请拨打客服热线咨询："))+"<font class='red2'>400-856-1000</font>"+decodeURI(EncodeUtf8("。 "))+"</p>");
 				}else if(data=="casherror"){
 					openAlert("提现失败！");
 					repeat('tikuan_botton',"");

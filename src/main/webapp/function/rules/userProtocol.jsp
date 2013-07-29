@@ -181,9 +181,9 @@
 <dd>2.	为确保您的购买申请能及时成功提交，请您务必在当期购买申请前有足够款项在您的预付款账上。</dd>
 <dd>3.	请确认您的电子邮箱地址为长期使用之有效邮箱。并随时留意查收本站的邮件。</dd>
 <dd>4.	有任何疑问请及时与我们取得联系。<br />
-&nbsp;&nbsp;&nbsp;&nbsp;客服中心热线：400-665-1000<br />
-&nbsp;&nbsp;&nbsp;&nbsp;管理员信箱：<a href="mailto:service@ruyicai.com">service@ruyicai.com</a><br/>
-&nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京市海淀区颐和园路福缘门甲1号汇缘阁
+&nbsp;&nbsp;&nbsp;&nbsp;客服中心热线：400-856-1000<br />
+&nbsp;&nbsp;&nbsp;&nbsp;管理员信箱：<a href="mailto:service@boyacai.com">service@boyacai.com</a><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京市建国门内大街18号恒基中心
 </dd>
 </dl>
 <p style=" text-align:center"> &copy;2011&nbsp;www.ruyicai.com 使用前必读</p>

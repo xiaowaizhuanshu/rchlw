@@ -34,7 +34,7 @@ window.location.href="/rchlw/function/cooperation/coop_inputUserInfo.jsp ";
 <%} %>
 <script type="text/javascript">
   function loginRequrl(){
-    window.location.href = "http://users.ruyicai.com/login.jsp?reqUrl="+$("#reqUrl").val();
+    window.location.href = "http://test.boyacai.com/login.jsp?reqUrl="+$("#reqUrl").val();
   }
          function chanage(id1,id2,id3,id4,divType){
       		 $("#"+id1).toggle();

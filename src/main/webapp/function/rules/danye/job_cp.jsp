@@ -16,7 +16,7 @@
 <body>
 <div class="header_box">
 	<div class="header_logo"><a href="/"><img src="<%=request.getContextPath() %>/function/images/danye/companylogo.gif" width="340" height="45" /></a></div>
-	<div class="header_txt">客服电话：400-665-1000<a href="/" style="padding-left:20px">返回购彩首页&gt;&gt;</a></div>
+	<div class="header_txt">客服电话：400-856-1000<a href="/" style="padding-left:20px">返回购彩首页&gt;&gt;</a></div>
 </div>
 <div class="menu_contain">
 	<div class="menu">
@@ -63,12 +63,12 @@
 			<h2><font>客服中心</font></h2>
 			<p>+ 在线:<a href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes">点击交流(在线客服)</a></p>
 			<p>+ QQ:1427872305</p>
-			<p>+ 公司总机:010-62655160</p>
+			<p>+ 公司总机:010-65174061</p>
 			<p>+ 传真：010-62652810</p>
-			<p>+ 客服电话:400-665-1000</p>
-			<p>+ 邮政编码:100091</p>
-			<p>+ 邮箱:<a href="mailto:service@ruyicai.com">service@ruyicai.com</a></p>
-			<p>+ 地址:北京市海淀区颐和园路福缘门甲1号汇缘阁</p>
+			<p>+ 客服电话:400-856-1000</p>
+			<p>+ 邮政编码:100005</p>
+			<p>+ 邮箱:<a href="mailto:service@boyacai.com">service@boyacai.com</a></p>
+			<p>+ 地址:北京市建国门内大街18号恒基中心</p>
 		</div>
 	</div>
 	<div class="main_right">
