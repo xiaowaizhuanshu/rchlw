@@ -1,0 +1,6 @@
+1、users项目部署于独立tomcat，端口号必须使用80；其它项目任意
+2、修改pom.xml
+3、文件[C:\Windows\System32\drivers\etc\hosts]中添加：
+	127.0.0.1 devwww.boyacai.com
+	127.0.0.1 devuser.boyacai.com
+4、部署成功后，访问http://devwww.boyacai.com:port/rchlw
