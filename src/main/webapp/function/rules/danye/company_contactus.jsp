@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
 <meta name="description" content="华夏百信-您身边的购彩专家" />
@@ -67,23 +66,23 @@
 			<h2><font>客服中心</font></h2>
 			<p>+ 在线:<a href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes">点击交流(在线客服)</a></p>
 			<p>+ QQ:1427872305</p>
-			<p>+ 公司总机:010-62655160</p>
+			<p>+ 公司总机:010-65174061</p>
 			<p>+ 传真：010-62652810</p>
-			<p>+ 客服电话:400-665-1000</p>
-			<p>+ 邮政编码:100091</p>
-			<p>+ 邮箱:<a href="mailto:service@ruyicai.com">service@ruyicai.com</a></p>
-			<p>+ 地址:北京市海淀区颐和园路福缘门甲1号汇缘阁</p>
+			<p>+ 客服电话:400-856-1000</p>
+			<p>+ 邮政编码:100005</p>
+			<p>+ 邮箱:<a href="mailto:service@boyacai.com">service@boyacai.com</a></p>
+			<p>+ 地址:北京市建国门内大街18号恒基中心</p>
 		</div>
 	</div>
 	<div class="main_right">
 		<h1>联系我们</h1>
 		<div class="main_right_txt">
 			<p> 公司名称：北京华夏百信科技有限公司</p>
-			<p>+ 公司总机:010-62655160</p>
-			<p>+ 客服电话:400-665-1000</p>
-			<p>+ 邮政编码:100091</p>
-			<p>+ 电子邮箱:<a href="mailto:service@ruyicai.com">service@ruyicai.com</a></p>
-			<p>+ 公司地址:北京市海淀区颐和园路福缘门甲1号汇缘阁</p>
+			<p>+ 公司总机:010-65174061</p>
+			<p>+ 客服电话:400-856-1000</p>
+			<p>+ 邮政编码:100005</p>
+			<p>+ 电子邮箱:<a href="mailto:service@boyacai.com">service@boyacai.com</a></p>
+			<p>+ 公司地址:北京市建国门内大街18号恒基中心</p>
 		</div>
 		<h2>地图浏览：</h2>
 		<div class="main_right_txt">

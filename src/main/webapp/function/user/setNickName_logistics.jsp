@@ -25,7 +25,7 @@
 <div class="ZhuCe">
 	<div class="ZhuCe_header">
 		<div class="ZhuCe_logo"><a href="/rchlw/index.jsp" target="ssc"><img src="/rchlw/function/images/HomeLogo.gif" width="138" height="64" /></a></div>
-		<div class="ZhuCe_hotLine">客服热线：400-665-1000<a href="/rchlw/function/rules/customMessage.html" target="_blank" title="留言反馈">留言反馈</a>|<a href="/bangzhuzhongxin.html" target="_blank" title="帮助中心">帮助中心</a>|<a href="/index.html" title="返回首页">返回首页</a></div>
+		<div class="ZhuCe_hotLine">客服热线：400-856-1000<a href="/rchlw/function/rules/customMessage.html" target="_blank" title="留言反馈">留言反馈</a>|<a href="/bangzhuzhongxin.html" target="_blank" title="帮助中心">帮助中心</a>|<a href="/index.html" title="返回首页">返回首页</a></div>
 	</div>
 	<div class="ZhuCe_body" >
 		<div class="ZhuCe_titleBg">

@@ -195,7 +195,7 @@ public class TuserinfoAction extends BaseAction {
 					outStr ="1";
 				}
 				if(JSONObject.fromObject(CommonUtil.getBackValue("value", jsonObject)).getString("state").equals("2")){
-					request.setAttribute("message", "该账户处于待激活状态，请联系客服400-665-1000重新激活");
+					request.setAttribute("message", "该账户处于待激活状态，请联系客服400-856-1000重新激活");
 					logger.debug("用户手机号码已经存在，处于待激活状态！");
 					outStr ="1";
 				}

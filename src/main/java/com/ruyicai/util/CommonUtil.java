@@ -1301,7 +1301,7 @@ public class CommonUtil {
 			ttss = "sessionID错误";
 		}
 		if (error_code.equals("000012")) {
-			ttss = "该号码已被暂停使用，请联系客服 400-665-1000重新激活";
+			ttss = "该号码已被暂停使用，请联系客服 400-856-1000重新激活";
 		}
 		if (error_code.equals("070003")) {
 			ttss = "用户状态为待激活";

@@ -19,12 +19,12 @@
 	function loginRequrl() {
 		if ($(".ButtonChannelBuy").hasClass("selected")) {
 			loginShow();
-			var str = "<form action='"+byc.address.users+"/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
+			var str = "<form action='"+appAddr.users+"/login.jsp?reqUrl=/login.jsp' id='topjump' method='post' target='_blank'></form>";
 			$("body").append(str);
 			$("#topjump").submit();
 			$("body").remove(str);
 		} else {
-			window.location.href = byc.address.users+"/login.jsp?reqUrl=" + $("#reqUrl").val();
+			window.location.href = appAddr.users+"/login.jsp?reqUrl=" + $("#reqUrl").val();
 		}
 	}
 </script>
@@ -74,7 +74,7 @@
 				<!-- 登陆后 账户信息及账户操作end -->
 <%}else{%>
 			<dt><em>您好，欢迎来到博雅彩！</em></dt>
-			<dt><a href="javaScript:loginRequrl();">请登录</a><a href="http://users.ruyicai.com/register/register_new.jsp">免费注册</a></dt>
+			<dt><a href="javaScript:loginRequrl();">请登录</a><a href="<%=AppAddr.getUsersPath() %>/register/register_new.jsp">免费注册</a></dt>
 			<dd>
 				<div class="SelectLogin" onmouseover="HoverOver($(this))" onmouseout="HoverOut($(this))">
 					免注册登录
@@ -96,8 +96,7 @@
 			<a href="/rchlw/index.jsp">首页</a>|<a href="/rchlw/function/include/downLoadClient.jsp">手机购彩</a>|
 			<a href="${ctx}/help/helper!list.action" target="_blank">帮助中心</a>|
 			<a href="${ctx}/activity/activity!list.action">活动专题</a>|
-			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>|
-			<a href="http://bbs.ruyicai.com" >论坛</a>
+			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;">留言反馈</a>
 		</div>
 		<!-- 右侧快速链接 end -->
 		</dl>

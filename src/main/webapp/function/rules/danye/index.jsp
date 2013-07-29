@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
 <jsp:include page="/function/common/ruyicai_include_common_top_http.jsp"></jsp:include>
 <meta name="keywords" content="博雅彩，博雅彩票，华夏百信" />
 <meta name="description" content="华夏百信-您身边的购彩专家" />
@@ -34,7 +33,7 @@ function setTab(/*string*/name,/*int*/ itemCnt,/*int*/ curItem, /**/classHide, /
 <body>
 <div class="header_box">
 	<div class="header_logo"><a href="/rchlw/index.jsp"><img src="<%=request.getContextPath() %>/function/images/danye/companylogo.gif" width="340" height="45" /></a></div>
-	<div class="header_txt">客服电话：400-665-1000<a href="/rchlw/index.jsp" style="padding-left:20px">返回购彩首页&gt;&gt;</a></div>
+	<div class="header_txt">客服电话：400-856-1000<a href="/rchlw/index.jsp" style="padding-left:20px">返回购彩首页&gt;&gt;</a></div>
 </div>
 <div class="menu_contain">
 	<div class="menu">
@@ -124,9 +123,10 @@ function setTab(/*string*/name,/*int*/ itemCnt,/*int*/ curItem, /**/classHide, /
 <div class="clear"></div>
 <div class="main_contain">
 	<div class="gsjj_contain" style="font-size: 14px;width:698px;">
-		<p><font color="#cc3300">&nbsp;&nbsp;北京华夏百信科技有限公司</font>是整合了深厚的彩票行业运营资源、无线增值行业资源、银行和电子支付领域资源的 国家级高新技术企业 。公司成立于2009年，注册资本金5000万元人民币，拥有工信部颁发的 全网电信增值业务许可证。 公司研发的无纸化彩票投注系统通过了中国信息安全认证中心的检测，并拥有多项软件著作权证书。 </p>
-		<p>公司秉承&quot;客户为先、能力为本、技术领先、 合法经营 &quot;的理念， 为广大彩民提供 全面的 无纸化 彩票 服务。 </p>
-		<p>公司目前已经与全国十多个省市福利、体育彩票中心签署了电话投注合作协议，通过短信、语音（IVR）等方式为签约省份的彩票中心进行无纸化彩票代销。我们将严格按照彩票监管部门的要求，依法合规经营，确保广大彩民的利益。</p>
+		<p><font color="#cc3300">北京华夏百信科技有限公司</font>成立于2011年3月，注册资金1000万人民币，公司以移动互联网、电信、无线应用、银行和电子支付应用技术为依托，将创新的技术与传统的彩票产业相结合，面向国内公益彩票服务市场，为广大彩民提供专业、高效、便捷的一站式无纸化购彩服务。</p>
+		<p>我们拥有一流的技术研发创新实力以及多年的彩票行业运营管理经验，员工均具有丰富的行业从业经验，是一支年轻、充满激情和活力的团队，致力于为用户提供简单、便捷、安全的交易环境。 </p>
+		<p>公司目前已经与腾讯、新浪、支付宝、中国银联、广州易联等众多知名企业建立了良好的合作关系，和国内多个省市的福利、体育彩票中心签署了合作协议，实施开展无纸化彩票代销业务。</p>
+		<p>旗下的博雅彩购彩平台24小时持续运营，为用户提供不间断专业化服务，我们用最热情贴心的服务赢得了众多彩民的信任和好评，公司奉行专业、诚信、用户至上、用心经营的理念，在业界拥有良好的口碑和企业形象。</p>
 	</div>
 	
 	<div class="right_contain">

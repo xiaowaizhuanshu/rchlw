@@ -68,7 +68,7 @@ public class TuiGuangAction extends BaseAction {
 			}
 			}else{
 				//查询到这个用户不是推广用户，不生成推官链接并提示用户申请。
-				request.setAttribute("message", "您暂不具备推广员资格，请致电:400-665-1000申请");
+				request.setAttribute("message", "您暂不具备推广员资格，请致电:400-856-1000申请");
 			}
 		return "toagencylink";
 	} 

@@ -29,7 +29,7 @@ public class MessageUtil {
 	public static final String TIAW_login_ExceptionMsg = "登录失败";
 	public static final String TIAW_login_RandCodeError = "验证码错误";
 	public static final String TIAW_login_ClosedUser = "您的账户已关闭，请重新注册！";
-	public static final String TIAW_login_WaitActivationUser="您的账户处于待激活状态，请联系客服400-665-1000重新激活";
+	public static final String TIAW_login_WaitActivationUser="您的账户处于待激活状态，请联系客服400-856-1000重新激活";
 
 	public static final String TIAW_changeUserinfo_LoginMsg = "请您登录";
 	public static final String TIAW_changeUserinfo_NameNotEmpty = "用户名不能为空!";
@@ -133,7 +133,7 @@ public class MessageUtil {
 	/**
 	 * 异常提示
 	 */
-	public static final String ERROR_Message = "系统正在维护，请您联系客服400-665-1000或者稍后登录！";
+	public static final String ERROR_Message = "系统正在维护，请您联系客服400-856-1000或者稍后登录！";
 	/**
 	 * 博雅彩发送邮件的信息
 	 */
@@ -165,7 +165,7 @@ public class MessageUtil {
 	+"<br/>"+"绑定方式："+"　　立即点击此处"
 	+"<a target='_blank' href='{url}'>绑定您的邮箱</a>"+"<br/>"+"如果上述文字点击无效，请把下面网页地址复制到浏览器地址栏中。"+"<br/>"+"（{url}）"+"<br/>"
 	+"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　"
-	+"博雅彩"+"<br/>"+"客服电话:400-665-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
+	+"博雅彩"+"<br/>"+"客服电话:400-856-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
 	
 	
 	/*
@@ -174,5 +174,5 @@ public class MessageUtil {
 	public static final String EmailRegister_Message = "<html><body>亲爱的{nickname}用户"+":"+"<br/>"+"　　您好！请点击下面的链接，完成博雅彩注册。"
 	+"<br/>"+"（{url}）"+"<br/><br/>"+"如果上述链接无法点击，请把上面的地址复制到您的浏览器地址栏进入博雅彩。"+"<br/>"
 	+"　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　博雅彩"
-	+"<br/>"+"客服电话:400-665-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
+	+"<br/>"+"客服电话:400-856-1000（工作时间8:00-23:00）"+"<br/>"+"(这是一封自动产生的email，请勿回复。)</body></html>";
 }
