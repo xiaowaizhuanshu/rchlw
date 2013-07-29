@@ -28,19 +28,19 @@
 	</pluginRepositories>
 	<dependencies>
 		<dependency>
-		    <groupId>org.apache.struts</groupId>
-		    <artifactId>struts2-spring-plugin</artifactId>
-		    <version>2.3.1.2</version>
+			<groupId>org.apache.struts</groupId>
+			<artifactId>struts2-spring-plugin</artifactId>
+			<version>2.3.1.2</version>
 		</dependency>
 		<dependency>
-		    <groupId>mysql</groupId>
-		    <artifactId>mysql-connector-java</artifactId>
-		    <version>5.1.19</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.19</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.milyn</groupId>
-		    <artifactId>milyn-scribe-ibatis</artifactId>
-		    <version>1.5.1</version>
+			<groupId>org.milyn</groupId>
+			<artifactId>milyn-scribe-ibatis</artifactId>
+			<version>1.5.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -73,11 +73,11 @@
 			<version>${org.springframework-version}</version>
 		</dependency>
 		<dependency>
-		  <groupId>opensymphony</groupId>
-		  <artifactId>quartz</artifactId>
-		  <version>1.6.3</version>
+			<groupId>opensymphony</groupId>
+			<artifactId>quartz</artifactId>
+			<version>1.6.3</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -88,11 +88,11 @@
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-			<dependency>
-			  <groupId>c3p0</groupId>
-			  <artifactId>c3p0</artifactId>
-			  <version>0.9.1.1</version>
-			</dependency>
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.1</version>
+		</dependency>
 		<dependency>
 			<groupId>net.sf.json-lib</groupId>
 			<artifactId>json-lib</artifactId>
@@ -100,11 +100,11 @@
 			<classifier>jdk15</classifier>
 		</dependency>
 		<dependency>
-		   <groupId>net.sf.ezmorph</groupId>
-  		   <artifactId>ezmorph</artifactId>
-   		   <version>1.0.6</version>
+			<groupId>net.sf.ezmorph</groupId>
+			<artifactId>ezmorph</artifactId>
+			<version>1.0.6</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.apache.struts</groupId>
 			<artifactId>struts2-core</artifactId>
@@ -133,7 +133,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 		<!-- jackson -->
 		<dependency>
 			<groupId>org.codehaus.jackson</groupId>
@@ -150,7 +150,7 @@
 			<artifactId>jackson-jaxrs</artifactId>
 			<version>1.6.0</version>
 		</dependency>
-		
+
 
 		<!-- Test -->
 		<dependency>
@@ -159,18 +159,18 @@
 			<version>4.7</version>
 			<scope>test</scope>
 		</dependency>
-	<dependency>
-		<groupId>dom4j</groupId>
-		<artifactId>dom4j</artifactId>
-		<version>1.6.1</version>
-	</dependency>
-	<dependency>
-		<groupId>javax.mail</groupId>
-		<artifactId>mail</artifactId>
-		<version>1.4</version>
-	</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4</version>
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<resources>
 			<resource>
@@ -199,15 +199,15 @@
 				<configuration>
 					<warName>rchlw</warName>
 					<webResources>
-				     <resource>
-				       <filtering>true</filtering>
-				       <directory>src/main/webapp</directory>
-				       <includes>
-				         <include>**/*.js</include>
-				         <!-- include any other file types you want to filter -->
-				       </includes>
-				     </resource>
-				   </webResources>
+						<resource>
+							<filtering>true</filtering>
+							<directory>src/main/webapp</directory>
+							<includes>
+								<include>**/*.js</include>
+								<!-- include any other file types you want to filter -->
+							</includes>
+						</resource>
+					</webResources>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -242,17 +242,17 @@
 					<wtpversion>2.0</wtpversion>
 				</configuration>
 			</plugin>
-			<plugin>  
-			    <groupId>org.codehaus.mojo</groupId>  
-			    <artifactId>tomcat-maven-plugin</artifactId>  
-			    <version>1.1</version>  
-			    <configuration>  
-			        <url>http://192.168.15.16:8080/manager</url>  
-	                <username>tomcat</username>  
-	                <password>s3cret</password>
-	                <path>/rchlw</path>
-	                <warFile>target/rchlw.war</warFile>
-			    </configuration>  
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.1</version>
+				<configuration>
+					<url>http://192.168.15.16:8080/manager</url>
+					<username>tomcat</username>
+					<password>s3cret</password>
+					<path>/rchlw</path>
+					<warFile>target/rchlw.war</warFile>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
@@ -263,19 +263,19 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<properties>
-			    <deploy.host>127.0.0.1</deploy.host>
-			    <!-- 数据源配置信息 -->
+				<deploy.host>127.0.0.1</deploy.host>
+				<!-- 数据源配置信息 -->
 				<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
-				<mysql.url>jdbc:mysql://localhost:3306/webCMS?characterEncoding=utf-8</mysql.url>
-				<mysql.username>root</mysql.username>
-				<mysql.password>root</mysql.password>
+				<mysql.url>jdbc:mysql://192.168.15.10:3306/webCMS?characterEncoding=utf-8</mysql.url>
+				<mysql.username>jrtConsole</mysql.username>
+				<mysql.password>jrtConsole</mysql.password>
 				<!-- 绑定手机号成功赠送彩金金额 分 -->
 				<presentationMoney>300</presentationMoney>
 				<!-- memcache 服务器地址 -->
 				<memCacheServerUrl>192.168.15.15:12000</memCacheServerUrl>
 				<!-- 新接口的链接地址 -->
 				<linkURL>http://192.168.15.15:8888/lottery</linkURL>
-				<!-- 代理用户 -->				
+				<!-- 代理用户 -->
 				<agencyUrl>http://192.168.15.15:9988/agencycenter</agencyUrl>
 				<!-- 短信设置地址 -->
 				<linkSMGUrl>http://192.168.15.15:7777/msgcenter/</linkSMGUrl>
@@ -291,22 +291,19 @@
 				<actioncenterURL>http://192.168.15.15:9999/actioncenter</actioncenterURL>
 				<lotServer>http://192.168.15.15:9999/lotserver</lotServer>
 				<!-- 新投注比例链接地址（测试地址） -->
-				<analyzeURL>http://127.0.0.1/analyze</analyzeURL>
-				
-				<!-- 后台链接的地址 
-				<baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl>-->
-				<!-- 赠彩接口地址 
-				<linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl>-->
-				<!-- 积分地址 
-				<linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl>-->
-				
+				<analyzeURL>http://127.0.0.1:8080/analyze</analyzeURL>
+
+				<!-- 后台链接的地址 <baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl> -->
+				<!-- 赠彩接口地址 <linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl> -->
+				<!-- 积分地址 <linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl> -->
+
 				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
 				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
 				<lotnos>F47104,F47107,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
 				<!-- 身份证初始号码 -->
 				<cardId>111111111111111111</cardId>
 				<!-- 返回页面 -->
-				<login>http://devuser.boyacai.com:8081/login.jsp</login>
+				<login>http://devuser.boyacai.com/login.jsp</login>
 				<!-- 找回密码链接 -->
 				<ryc_findpwd><![CDATA[http\://devwww.boyacai.com:8080/rchlw/function/findtuser2\!rcy_checkEmailLink?mac\={mac}&userid\={phone}&email\={email}&check\={check}]]></ryc_findpwd>
 				<!-- ########合买(hemai)############## -->
@@ -321,7 +318,7 @@
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
 				<!-- 博雅彩 邮箱绑定发送到邮箱的地址连接 -->
 				<rycemailUrl><![CDATA[http://devwww.boyacai.com:8080/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
-				<!-- 博雅彩  邮箱注册发送到邮箱的地址连接 -->
+				<!-- 博雅彩 邮箱注册发送到邮箱的地址连接 -->
 				<rycemailRegisterUrl><![CDATA[http://devwww.boyacai.com:8080/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
 				<retUrlCharge>devwww.boyacai.com:8080/rchlw/-http://devwww.boyacai.com:8080/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
@@ -343,9 +340,7 @@
 				<alipay_subchannel>00000069</alipay_subchannel>
 				<!-- 投注、追号默认的subchannel -->
 				<defalut_subchannel>00092493</defalut_subchannel>
-				<!--
-				##前台单式上传多个文件之间的分隔符###
-				-->
+				<!-- ##前台单式上传多个文件之间的分隔符### -->
 				<uploadSign>#</uploadSign>
 				<uploadCodes>flag</uploadCodes>
 				<!-- 图片上传的地址 -->
@@ -354,8 +349,8 @@
 				<file_upload>E\://boyacai//</file_upload>
 				<!-- 民生银行充值地址 -->
 				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
-				
-				<!-- ********** QQ登录配置 开始  ********** -->
+
+				<!-- ********** QQ登录配置 开始 ********** -->
 				<qq_app_id>www.boyacai.com-100224583,jcbao.boyacai.com-100231303</qq_app_id>
 				<qq_app_key>www.boyacai.com-ce6616a8b117a588075f78e0550145f5,jcbao.boyacai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
 				<qq_channel>645</qq_channel>
@@ -371,19 +366,19 @@
 				<!-- QQ 登录返回地址 -->
 				<qqLoginUrl>www.boyacai.com-http://devuser.boyacai.com:8080/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.boyacai.com-http://devuser.boyacai.com:8081/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
 				<!-- 博雅彩用户登录获取地址 -->
-				<usersCenterUrl>http://devuser.boyacai.com:8081/</usersCenterUrl>
-				<!-- ********** QQ登录配置 结束  ********** -->
-				
+				<usersCenterUrl>http://devuser.boyacai.com/</usersCenterUrl>
+				<!-- ********** QQ登录配置 结束 ********** -->
+
 				<!-- 各应用模块访问地址 -->
-				<appAddr>{"rchlw":"http://devwww.boyacai.com:8080/rchlw","users":"http://devuser.boyacai.com:8081"}</appAddr>
+				<appAddr>{"rchlw":"http://devwww.boyacai.com:8080/rchlw","users":"http://devuser.boyacai.com"}</appAddr>
 			</properties>
 		</profile>
-		
+
 		<profile>
 			<id>test</id>
 			<properties>
-			    <deploy.host>127.0.0.1</deploy.host>
-			    <!-- 数据源配置信息 -->
+				<deploy.host>127.0.0.1</deploy.host>
+				<!-- 数据源配置信息 -->
 				<mysql.driver>com.mysql.jdbc.Driver</mysql.driver>
 				<mysql.url>jdbc:mysql://192.168.15.10:3306/webCMS?characterEncoding=utf-8</mysql.url>
 				<mysql.username>jrtConsole</mysql.username>
@@ -394,7 +389,7 @@
 				<memCacheServerUrl>192.168.15.15:12000</memCacheServerUrl>
 				<!-- 新接口的链接地址 -->
 				<linkURL>http://192.168.15.15:8888/lottery</linkURL>
-				<!-- 代理用户 -->				
+				<!-- 代理用户 -->
 				<agencyUrl>http://192.168.15.15:9988/agencycenter</agencyUrl>
 				<!-- 短信设置地址 -->
 				<linkSMGUrl>http://192.168.15.15:7777/msgcenter/</linkSMGUrl>
@@ -411,14 +406,11 @@
 				<lotServer>http://192.168.15.15:9999/lotserver</lotServer>
 				<!-- 新投注比例链接地址（测试地址） -->
 				<analyzeURL>http://127.0.0.1/analyze</analyzeURL>
-				
-				<!-- 后台链接的地址
-				<baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl> -->
-				<!-- 赠彩接口地址
-				<linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl> -->
-				<!-- 积分地址
-				<linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl> -->
-				
+
+				<!-- 后台链接的地址 <baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl> -->
+				<!-- 赠彩接口地址 <linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl> -->
+				<!-- 积分地址 <linkSCOREUrl>http://192.168.0.118:8000/scorecenter</linkSCOREUrl> -->
+
 				<!-- 彩种名称(双色球、3d、七乐彩、大乐透、排列三、排列五、七星彩、重庆时时彩、江西11选5、十一运夺金)（new） -->
 				<lotno>F47104,F47103,F47102,T01001,T01002,T01011,T01009</lotno>
 				<lotnos>F47104,F47107,F47103,F47102,T01001,T01002,T01011,T01009,T01012,T01007,T01010,T01013,T01003,T01004,T01005,T01006</lotnos>
@@ -440,7 +432,7 @@
 				<ryc_phonebandsendMsg>尊敬的用户，您本次绑定手机所使用的验证码是{mes}（验证码30分钟后失效）。祝您幸运赢大奖！本条信息免费</ryc_phonebandsendMsg>
 				<!-- 博雅彩 邮箱绑定发送到邮箱的地址连接 -->
 				<rycemailUrl><![CDATA[http://testwww.boyacai.com/rchlw/user/tuserinfoAction!emailBandCheck;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailUrl>
-				<!-- 博雅彩  邮箱注册发送到邮箱的地址连接 -->
+				<!-- 博雅彩 邮箱注册发送到邮箱的地址连接 -->
 				<rycemailRegisterUrl><![CDATA[http://testwww.boyacai.com/rchlw/function/tuserinfoAction!emailRegister;jsessionid={sessionid}?userid={userid}&mac={mac}&email={email}]]></rycemailRegisterUrl>
 				<!-- #################充值返回地址####################### -->
 				<retUrlCharge>testwww.boyacai.com/rchlw/-http://testwww.boyacai.com/rchlw/function/rules/chargeSuccess.jsp</retUrlCharge>
@@ -462,9 +454,7 @@
 				<alipay_subchannel>00000069</alipay_subchannel>
 				<!-- 投注、追号默认的subchannel -->
 				<defalut_subchannel>00092493</defalut_subchannel>
-				<!--
-				##前台单式上传多个文件之间的分隔符###
-				-->
+				<!-- ##前台单式上传多个文件之间的分隔符### -->
 				<uploadSign>#</uploadSign>
 				<uploadCodes>flag</uploadCodes>
 				<!-- 图片上传的地址 -->
@@ -473,8 +463,8 @@
 				<file_upload>E\://boyacai//</file_upload>
 				<!-- 民生银行充值地址 -->
 				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
-				
-				<!-- ********** QQ登录配置 开始  ********** -->
+
+				<!-- ********** QQ登录配置 开始 ********** -->
 				<qq_app_id>www.boyacai.com-100224583,jcbao.boyacai.com-100231303</qq_app_id>
 				<qq_app_key>www.boyacai.com-ce6616a8b117a588075f78e0550145f5,jcbao.boyacai.com-883b9e63fd9e992c521df51aabfc32f7</qq_app_key>
 				<qq_channel>645</qq_channel>
@@ -491,8 +481,8 @@
 				<qqLoginUrl>www.boyacai.com-http://test.com:99999/rchlw/function/unitedLogin!qqUnitedLogin,jcbao.boyacai.com-http://test.com/chlw/function/unitedLogin!qqUnitedLogin</qqLoginUrl>
 				<!-- 博雅彩用户登录获取地址 -->
 				<usersCenterUrl>http://192.168.15.16:8081/</usersCenterUrl>
-				<!-- ********** QQ登录配置 结束  ********** -->
-				
+				<!-- ********** QQ登录配置 结束 ********** -->
+
 				<!-- 各应用模块访问地址 -->
 				<appAddr>{"rchlw":"http://testwww.boyacai.com/rchlw","users":"http://testuser.boyacai.com"}</appAddr>
 			</properties>
