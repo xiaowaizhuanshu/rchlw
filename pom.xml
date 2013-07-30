@@ -347,8 +347,9 @@
 				<picture_upload>E\://boyacai//imageupload//</picture_upload>
 				<!-- 文件传输地址 -->
 				<file_upload>E\://boyacai//</file_upload>
-				<!-- 民生银行充值地址 -->
-				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
+				<!-- 博雅彩点卡充值 
+				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>-->
+				<msbankUrl>http://127.0.0.1:9999/ChargeCenter</msbankUrl>
 
 				<!-- ********** QQ登录配置 开始 ********** -->
 				<qq_app_id>www.boyacai.com-100224583,jcbao.boyacai.com-100231303</qq_app_id>
@@ -405,7 +406,7 @@
 				<actioncenterURL>http://192.168.15.15:9999/actioncenter</actioncenterURL>
 				<lotServer>http://192.168.15.15:9999/lotserver</lotServer>
 				<!-- 新投注比例链接地址（测试地址） -->
-				<analyzeURL>http://127.0.0.1/analyze</analyzeURL>
+				<analyzeURL>http://192.168.15.16:8080/analyze</analyzeURL>
 
 				<!-- 后台链接的地址 <baseUrl>http://192.168.0.42:80/jrtLot/</baseUrl> -->
 				<!-- 赠彩接口地址 <linkPRESENTUrl>http://192.168.0.118:8000/presentcenter</linkPRESENTUrl> -->
@@ -461,7 +462,7 @@
 				<picture_upload>E\://boyacai//imageupload//</picture_upload>
 				<!-- 文件传输地址 -->
 				<file_upload>E\://boyacai//</file_upload>
-				<!-- 民生银行充值地址 -->
+				<!-- 博雅彩点卡充值  -->
 				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
 
 				<!-- ********** QQ登录配置 开始 ********** -->

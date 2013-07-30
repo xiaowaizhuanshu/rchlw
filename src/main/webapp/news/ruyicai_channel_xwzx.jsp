@@ -23,7 +23,7 @@ function jumpPage(pageNo) {
  	<span id="common"></span>
    	<div id="main">
    		<div class="zixun_main">
-    		<div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> &gt; <a href="<%=request.getContextPath() %>/news/category_xinwenzixun.jsp">热点资讯</a> &gt; ${cp}</div>
+    		<div class="zixuntop">您所在的位置：<a href="<%=request.getContextPath() %>/index.jsp">博雅彩</a> &gt; <a href="<%=request.getContextPath() %>/news/category_xinwenzixun.jsp">热点资讯</a> &gt; ${currentPosition}</div>
    			<div class="zixunleft">
 				<div class="zixun_nav">
 				 	<span class="ziXun_titleArrow">
@@ -103,9 +103,13 @@ function jumpPage(pageNo) {
 				    </div>
 				</div>
 		      	<div id="fenye">
-		      		<form id="pageForm" action="${ctx}/news/news!list.action?ncc=${ncc}&nt=${nt}&page.pageNo=3" method="post">
-		      			<input type="hidden" id="pageNo" name="pageNo" value="${pageNo}" />
-		      			<input type="hidden" id="pageNo" name="pageSize" value="${pageSize}" />
+		      		<form id="pageForm" action="${ctx}/news/news!list.action" method="post">
+		      			<input type="hidden" name="nt" value="${nt}">
+		      			<input type="hidden" name="ncc" value="${ncc}">
+		      			<input type="hidden" name="ln" value="${ln}">
+		      			<input type="hidden" name="cp" value="${cp}">
+		      			<input type="hidden" id="pageNo" name="page.pageNo" value="${page.pageNo}" />
+		      			<input type="hidden" id="pageNo" name="page.pageSize" value="${page.pageSize}" />
 						<a href="javascript:jumpPage(1)">首页</a>
 						<s:if test="page.hasPre"><a href="javascript:jumpPage(${page.prePage})">上一页</a></s:if>
 						<s:if test="page.hasNext"><a href="javascript:jumpPage(${page.nextPage})">下一页</a></s:if>

@@ -23,10 +23,10 @@
 		<property name="newsService" ref="newsService"></property>
 		<property name="phoneInfoService" ref="phoneInfoService"></property>
 	</bean>
-	<bean name="news" class="com.ruyicai.web.action.NewsAction" scope="prototype">
+	<!-- <bean name="news" class="com.ruyicai.web.action.NewsAction" scope="prototype">
 		<property name="newsChannelService" ref="newsChannelService"></property>
 		<property name="newsService" ref="newsService"></property>
-		<!-- <property name="newsTemplateService" ref="newsTemplateService"></property> -->
-	</bean>
+		<property name="newsTemplateService" ref="newsTemplateService"></property>
+	</bean> -->
 
 </beans>
