@@ -1,7 +1,5 @@
 package com.boyacai.activity.action;
 
-import org.apache.log4j.Logger;
-
 import com.boyacai.activity.service.ActivityService;
 import com.boyacai.activity.vo.Activity;
 import com.boyacai.activity.vo.ActivityPage;
@@ -12,8 +10,6 @@ public class ActivityAction extends BaseAction {
 	 * serialVersionUID
 	 */
 	private static final long serialVersionUID = -7615707848098342457L;
-
-	private static Logger logger = Logger.getLogger(ActivityAction.class);
 
 	private String id;
 	private Activity entity;

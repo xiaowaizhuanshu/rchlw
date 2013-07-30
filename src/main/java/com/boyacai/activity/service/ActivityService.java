@@ -2,8 +2,6 @@ package com.boyacai.activity.service;
 
 import net.sf.json.JSONObject;
 
-import org.apache.log4j.Logger;
-
 import com.boyacai.activity.vo.Activity;
 import com.boyacai.activity.vo.ActivityPage;
 import com.boyacai.common.util.JsonBinder;
@@ -11,7 +9,6 @@ import com.ruyicai.util.HttpUtil;
 import com.ruyicai.util.ResourceBundleUtil;
 
 public class ActivityService {
-	private static Logger logger = Logger.getLogger(ActivityService.class);
 
 	//Jackson工具类
 	private static JsonBinder binder = JsonBinder.buildNormalBinder();

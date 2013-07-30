@@ -43,6 +43,10 @@ public class NewsPage {
 		return pageNo;
 	}
 
+	public String getPageNoStr() {
+		return String.valueOf(pageNo);
+	}
+
 	/**
 	 * 设置当前页的页号,序号从1开始,低于1时自动调整为1.
 	 */
@@ -67,6 +71,10 @@ public class NewsPage {
 	 */
 	public int getPageSize() {
 		return pageSize;
+	}
+
+	public String getPageSizeStr() {
+		return String.valueOf(pageSize);
 	}
 
 	/**

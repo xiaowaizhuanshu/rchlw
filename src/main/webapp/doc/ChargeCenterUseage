@@ -1,0 +1,176 @@
+一、支付宝在线充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/charge!zfbWebCharge?
+		PARAM 	>> jsonString={
+						"bankid":"zfb001",
+						"accesstype":"B",
+						"paytype":"03",
+						"amt":500,	//充值金额（单位：分）
+						"userno":"00000288", 
+						"sessionId":"5C3663F46350A4785FCF8A69AA30140B",
+						"defaultbank":"03",
+						"paymethod":"directPay",
+						"channel":"2",
+						"subchannel":"00092493",	//获取默认的渠道号
+						"ladderpresentflag":"0",							
+						"token", token	//支付宝联合登录时用，如果有的话半小时无需再支付宝登录
+						"mobileid", mobileid	//接听使用的电话号码
+					}
+	b.返回数据
+		{
+			"transation_id":"TE201307290000000000000000014208",
+	 		"error_code":"0",
+	 		"requrl":"https://www.alipay.com/cooperate/gateway.do?body=RUYICAI&extend_param=security_wbInfo%5E%7B%22regName%22%3A%2200000288%22%2C%22depAccount%22%3A%2200000288%22%2C%22regDate%22%3A%222013-07-03%22%7D&subject=%E5%8D%9A%E9%9B%85%E5%BD%A9%E9%87%91&notify_url=http%3A%2F%2Ftest.boyacai.com%2FChargeCenter%2Fnotify%21zfbWebChargeServlet&out_trade_no=TE201307290000000000000000014208&return_url=%3FsessionId%3D5C3663F46350A4785FCF8A69AA30140B&_input_charset=UTF-8&total_fee=5.00&service=create_direct_pay_by_user&paymethod=directPay&partner=2088901182127834&seller_email=chongzhi%40boyacai.com&payment_type=1&show_url=http%3A%2F%2Fwww.boyacai.com&sign=366924877152951a06f682ef300029a0&sign_type=MD5"
+	 	}
+	c.再次提交返回
+		错误代码 ILLEGAL_PARTNER_EXTERFACE
+
+二、联动优势
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/umpayCharge!chargeSplit?
+		PARAM 	>> jsonString={
+						"userno":"00000288",
+						"bankid":"ump001",
+						"paytype":"",
+						"bankaccount":"0",
+						"accesstype":"B",
+						"amt":600,
+						"subchannel":"00092493",
+						"ladderpresentflag":"0",
+						"mediatype":"MOBILE",
+						"method":"get"
+					}
+	b.返回数据			
+		{
+			"error_code":"0",
+			"pay_url":"http://pay.soopay.net/spay/pay/payservice.do?amount=600&amt_type=RMB&charset=UTF-8&expire_time=1440&goods_inf=%E5%8D%9A%E9%9B%85%E5%BD%A9%E9%87%91&mer_date=20130729&mer_id=6347&mer_priv=bycunify&notify_url=http%3A%2F%2Ftest.boyacai.com%2FChargeCenter%2Fumpaynotify%21bgRetSplit&order_id=TE201307290000000000000000014222&ret_url=http%3A%2F%2Fcp.boyacai.com&service=pay_req_split_front&sign_type=RSA&split_type=11&version=4.0&sign=NN6YR6Y2YGBU6Or%2BB7WMs1sPBPEfcCdP%2FXIDbxHSgr9Ws9HUhrTHcYcXvw7XpLxoxXXJs2msQV32rR0P18OWZon0VHZ3kC54zZyY94yvB6X%2FbCwVe2QPnQKnQqec6g6b%2F4zWNxXCBfxrZR3%2FUEGNk1MJ5YAcxSqtaSE2G%2BCRuxU%3D"
+		}
+	c.再次提交返回	
+		[00060869]未找到商户产品
+			
+三、银行直连
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/charge!zfbWebCharge?
+		PARAM 	>> jsonString={
+						"bankid":"zfb001",
+						"accesstype":"B",
+						"paytype":"01",
+						"amt":6600,
+						"userno":"00000288",
+						"sessionId":"5C3663F46350A4785FCF8A69AA30140B",
+						"defaultbank":"CCB",
+						"paymethod":"bankPay",
+						"channel":"2",
+						"subchannel":"00092493",
+						"ladderpresentflag":"0"
+					}
+	b.返回数据	
+		{
+			"transation_id":"TE201307290000000000000000014225",
+			"error_code":"0",
+			"requrl":"https://www.alipay.com/cooperate/gateway.do?body=RUYICAI&extend_param=security_wbInfo%5E%7B%22regName%22%3A%2200000288%22%2C%22depAccount%22%3A%2200000288%22%2C%22regDate%22%3A%222013-07-03%22%7D&subject=%E5%8D%9A%E9%9B%85%E5%BD%A9%E9%87%91&notify_url=http%3A%2F%2Ftest.boyacai.com%2FChargeCenter%2Fnotify%21zfbWebChargeServlet&defaultbank=CCB&out_trade_no=TE201307290000000000000000014225&return_url=%3FsessionId%3D5C3663F46350A4785FCF8A69AA30140B&_input_charset=UTF-8&total_fee=66.00&service=create_direct_pay_by_user&paymethod=bankPay&partner=2088901182127834&seller_email=chongzhi%40boyacai.com&payment_type=1&show_url=http%3A%2F%2Fwww.boyacai.com&sign=197a28335946ab161779081a7a3f8d90&sign_type=MD5"
+		}
+	c.再次提交返回
+		错误代码 ILLEGAL_PARTNER_EXTERFACE
+			
+四、银联支付充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/chinapaycharge!charge2?
+		PARAM 	>> jsonString={
+						"userno":"00000288",
+						"accesstype":"B",
+						"amt":1200,
+						"bankaccount":"0",
+						"subchannel":"00092493",
+						"paytype":"0602",
+						"bankid":"syl002",
+						"gateid":"8607",
+						"ladderpresentflag":"0"
+					}
+	b.返回数据
+		{"error_code":"800007"}
+		
+五、上海银联支付充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/chinapaycharge!charge?
+		PARAM 	>> jsonString={
+						"userno":"00000288",
+						"accesstype":"B",
+						"amt":1200,
+						"bankaccount":"0",
+						"subchannel":"00092493",
+						"paytype":"0600",
+						"bankid":"syl001",
+						"ladderpresentflag":"0"
+					}
+	b.返回数据		
+		{"error_code":"800007"}
+
+六、点卡充值｜手机卡充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/charge!nineteenpayCharge?
+		PARAM 	>> jsonString={
+						"userno":"00000288",
+						"bankid":"gyj001",
+						"accesstype":"B",
+						"totalAmount":1000,
+						"amt":1000,
+						"card_no":"12121212121212121",
+						"card_pwd":"1212121212121",
+						"subchannel":"00092493",
+						"paytype":"0203"
+					}
+	b.返回数据		
+		{"error_code":"104"}
+		
+七、话费充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/umpayCharge!chargeUnify2?
+		PARAM 	>> jsonString={
+						"userno":"00000288",
+						"bankid":"ump002",
+						"paytype":"",
+						"bankaccount":"0",
+						"accesstype":"B",
+						"amt":3000,
+						"channel":"2",
+						"subchannel":"00092493",
+						"ladderpresentflag":"0",
+						"continuebettype":"",
+						"orderid":"",
+						"mobileid":"",
+						"plat":"web",
+						"method":"post",
+						"goodsid":"300",
+						"returl":"http://www.ruyicai.com"
+					}
+	b.返回数据		
+		{"error_code":"500"}
+		
+八、话费充值
+	a.填写充值金额，提交请求
+		method	>> POST
+		URL		>> http://192.168.15.15:9999/ChargeCenter/dnacharge!dnaBankCharge?
+		PARAM 	>> jsonString={
+						"ladderpresentflag":"0",
+						"expand":"董晓哲,130182198403232910,北京市东城区,asdfasdf,18612464056,false,中国工商银行",
+						"userno":"00000288",
+						"accesstype":"B",
+						"bankid":"dna001",
+						"cardtype":"01",
+						"cardno":"1111111111111111111111",
+						"amt":2000,
+						"subchannel":"00092493"
+					}
+	b.返回数据		
+		{
+			"remark":"第三方：身份验证通过，等待异步交易结果",
+			"error_code":"00A3"
+		}	
