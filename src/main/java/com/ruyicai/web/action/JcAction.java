@@ -86,6 +86,65 @@ public class JcAction extends BaseAction {
     	return str;
     }
     
+    /**
+     * 首页足球精彩对阵  竞彩足球胜平负
+     * @return
+     */
+    public String getShouyeJingcaiduizhen(){
+		String type = request.getParameter("type") == null ? "":request.getParameter("type");//获取类别
+		String valueType = request.getParameter("valueType") == null ? "":request.getParameter("valueType");//0单关 /1多关赔率 多关赔率
+		String lotNo=request.getParameter("lotNo");
+		try {
+			JSONArray jsArr = JSONObject.fromObject(
+					JSONReslutUtil.getResultMessage(lottery +"/select/getjingcaiduizhen?type="+type+"&valueType="+valueType)).getJSONArray("value");
+			JSONObject json = new JSONObject();
+			//调用赔率接口
+			String  peilvs =JSONObject.fromObject(JSONReslutUtil.getResultMessage(ResourceBundleUtil.LINKURL +"/select/findjincaipeilu?","type="+type+"&valueType="+valueType,"POST")).getString("value");
+			JSONObject peilvjs = new JSONObject();
+			if(!"null".equals(peilvs)&&peilvs != null){
+				peilvjs = peilvDOM(peilvs).getJSONObject("body").getJSONObject("matchList");
+			}
+			SimpleDateFormat timeformat = new SimpleDateFormat("HH:mm");
+			//按着日期 把对阵信息分别储存在map中
+			for (int i = 0; i < jsArr.size(); i++) {
+			    json = (JSONObject) jsArr.get(i);
+			    String strArr []= json.getString("team").split("\\:");
+			    json.put("team1", strArr[0]);
+			    json.put("team2", strArr[1]);
+			    if(json.getString("team1").length()<=4){
+			    	json.put("hteam",json.getString("team1"));
+			    }else{
+			    	json.put("hteam",json.getString("team1").substring(0,4));
+			    }
+			    if(json.getString("team2").length()<=4){  
+			    	json.put("kteam", json.getString("team2"));}
+			    else{
+				    json.put("kteam", json.getString("team2").substring(0,4));
+			    }
+			    String shortname=json.getString("shortname");
+			    if(shortname!=null && !"".equals(shortname) && !"null".equals(shortname)){
+			    	json.put("league",shortname);
+			    }
+			    json.put("gameTime", df.format(new Long(json.getString("time"))));
+			    json.put("newday", df.format( formatter.parse(json.getString("day"))));
+			    json.put("newweek", SimpleDateUtil.getWeekStr(json.getString("weekid")));
+			    json.put("weekDay", SimpleDateUtil.getWeekDayStr(json.getString("weekid")));
+			    json.put("starttime",timeformat.format(new Long(json.getString("time"))));
+				String	peilvKey= json.getString("day")+"_"+json.getString("weekid")+"_"+json.getString("teamid");
+				//获取联赛name 用简短语替换
+				json.put("peilv", peilvjs.getJSONObject(peilvKey));
+				
+			}
+			//调用根据时间提取相对应的当天的对阵信息返回list 页面遍历
+			List<List<JSONObject> > duizhenList = getDuizhenByEveryDay(jsArr,lotNo,valueType);
+		    //解析字符串
+			request.setAttribute("duizhenInfos", duizhenList);
+		} catch (Exception e) {
+			logger.debug("获取竞彩对阵信息异常！");
+		}
+		return "indexJcDz";
+	}
+    
 	/**
 	 * 获取竞彩 胜平负的对阵信息
 	 * @param type 查询类别 (0 篮彩 1足彩 )

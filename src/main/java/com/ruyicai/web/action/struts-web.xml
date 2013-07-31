@@ -225,6 +225,7 @@
 		<!-- 竞彩信息 -->
 		<action name="jc" class="com.ruyicai.web.action.JcAction">
 			<result name="jcrspfduizhen">/function/ruyicai_jc/jingcai_rangqiu_spf_duizhen.jsp</result>
+			<result name="indexJcDz">/function/ruyicai_jc/jingcai_rangqiu_spf_duizhen_index.jsp</result>
 			<result name="jc-rangqiu-wenjian-duizhen">/function/ruyicai_jc/jc_rangqiu_wenjian_duizhen.jsp</result>
 			<result name="jc-spf-wenjian-duizhen">/function/ruyicai_jc/jc_spf_wenjian_duizhen.jsp</result>
 			<result name="jc-zjq-wenjian-duizhen">/function/ruyicai_jc/jc_zjq_wenjian_duizhen.jsp</result>

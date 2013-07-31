@@ -201,6 +201,7 @@ function checkButton_touzhu_bqc(object, day, type, stat, week){
 //注码校验和计算注数
 //计算注数的方法
 function checkZhuma() {
+	alert("zhuma");
 	var jcType = $("#jcType").val();
 	$("option", $("#list_LotteryNumber")).remove();
 	$("#codes li").remove();
@@ -676,7 +677,7 @@ function addMatchForRight(object, day, a, b,week) {
 		}
 
 	} else {
-		if ($("#choose_" + day + "_" + a).length < 1) {
+		if ($("#choose_" + day + "_" + a).length < 1) {//看是否已经有选中的记录
 									
 			if($("#erjiwanfa").val()=="单关投注"){
 				$("#choose_list").append("<tr id='choose_" + day + "_" + a + "'><td><dl class='CheckBox light Switch' onclick='CheckBox($(this));removeThisResult($(this)," + day + "," + a + ",3,1);'><dt></dt><dd id='no-" + day + "-" + a + "'></dd></dl></td><td id='homeTeam-" + day + "-" + a + "'></td><td><span id='CheckWin-" + day + "-" + a + "' class='CheckWin' onclick='removeThisResult($(this)," + day + "," + a + ",3,0);'>胜</span><span id='CheckTie-" + day + "-" + a + "' class='CheckTie' onclick='removeThisResult($(this)," + day + "," + a + ",1,0)'>平</span><span id='CheckLoss-" + day + "-" + a + "' class='CheckLoss' onclick='removeThisResult($(this)," + day + "," + a + ",0,0)'>负</span></td><td><input class='dingdan_checkbox' disabled='disabled' id='dingdan_" + day + "_" + a + "' type='checkbox' name='checkbox' value='checkbox' onclick='dingDanChoose($(this)," + day + "," + a + ")'></td></tr>");
