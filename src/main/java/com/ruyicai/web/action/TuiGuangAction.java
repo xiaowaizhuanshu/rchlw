@@ -48,7 +48,7 @@ public class TuiGuangAction extends BaseAction {
 	private Tuserinfo user = Tuserinfo.setJson(JSONReslutUtil.getUserInfo(request).getJSONObject("value"));
 	public String ProducedLink() throws Exception{
 		String shouyepath = "http://www.ruyicai.com/index.jsp";//首页地址
-		String registerpath = "http://users.ruyicai.com/register/register_new.jsp";//注册地址
+		String registerpath = "http://testuser.boyacai.com/register/register_new.jsp";//注册地址
 		String userno = user.getUSERNO();
 		logger.info(agencyUrl+"/getWinfolist?userno="+userno);
 		//userno存在  ， 判断是否是推广专员

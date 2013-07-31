@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib prefix="s" uri="/struts-tags"%>
 <script type="text/javascript">balanceAdtil("deposit_amount_user","freeze_amout_user","username");</script>
 <div class="AlertWindow scwindowbox WindowCenter" id="UploadImgAlert" style="display:none">
@@ -12,7 +11,7 @@
     <div class="liulan"> 
       <input  type="file" class="sctc" name="upload" id="upload" />
       <span class="liulanbtn"><img src="/rchlw/function/images/liulanbtn.gif" height="22"  width="70" border="0" 
-       onclick='Upload();'/></span></div>
+       onclick='ajaxFileUpload()'/></span></div>
     <div class="mswz" id="first">支持JPG、JPEG、GIF、PNG等格式，图片大小不超过2MB</div>
     </form>
     <div id="Headimg" style="display:none">
@@ -24,39 +23,47 @@
     </div>
 
   </div>
-  <script>
-  function Upload(){
-	  $.ajaxFileUpload
-      ({      
-              url:'/rchlw/user/tuserinfoAction!uploadimg', 
-              secureuri:false,
-              fileElementId:'upload',
-              dataType: 'json',
-              success: function (data)
-              { 
-            	  $("#showImg").removeAttr("src");
-            	  $("#showImg").attr("src",data+"?rang="+ Math.random());
-  				  $("#Headimg").show();
-  				  $("#hiddenImg").val(data);
-              },
-              error: function (data)
-              {
-            	  openAlert("文件上传出错，请重新选择!");
-              }
-          });
-  }
-  function ModifyUser(){
-	  var path=$("#hiddenImg").val();
-	  $.ajax({
+<script>
+	function ajaxFileUpload(){
+		$.ajaxFileUpload({
+			url:'/rchlw/user/tuserinfoAction!uploadimg',
+			secureuri:false,
+			fileElementId:'upload',
+			dataType: 'json',
+			/*beforeSend:function(){
+				$("#loading").show();
+			},
+			complete:function(){
+				$("#loading").hide();
+			},		*/		
+			success: function (data, status){
+				if(data.status != 'success'){
+					alert(data.error);
+				}else{
+					$("#showImg").removeAttr("src");
+	            	$("#showImg").attr("src","/rchlw"+data.src+"?rang="+ Math.random());
+	  				$("#Headimg").show();
+	  				$("#hiddenImg").val(data.src);
+				}
+			},
+			error: function (data, status, e){
+				openAlert("文件上传出错，请重新选择!");
+			}
+		})
+		return false;
+	}
+  	function ModifyUser(){
+	  	var path=$("#hiddenImg").val();
+	  	$.ajax({
 			type: "POST",
 			url: "/rchlw/function/tuserinfoAction!modifyHeadPath",
-			data: "headPath="+path ,
+			data: "headPath=/rchlw"+path ,
 			dataType: 'text',
 			//接受数据格式
 			success: function(msg) {
 				if(msg=="success"){
 				loginShow("UploadImgAlert");
-				 $("#headpath").removeAttr("src");
+				$("#headpath").removeAttr("src");
 				$("#headpath").attr("src",path+"?rang="+ Math.random());
 				$("#Headimg").hide();
 				openAlert("上传头像成功！");
@@ -65,6 +72,5 @@
 				}
 			}
 		});
-	  
-  }
-  </script>
+  	}
+</script>

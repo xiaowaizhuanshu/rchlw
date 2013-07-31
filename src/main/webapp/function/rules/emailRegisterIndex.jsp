@@ -149,7 +149,7 @@ $(function(){
 			<form name="userEmailRegisterForm" id="userEmailRegisterForm" action="#" method="post">
 			<table class="RegistePannelTable RuyikaRegisterBox">
 				<tr><th>电子邮箱：</th><th colspan="2"><input name="tuserinfo.USERNAME" id="email"  type="text" onfocus="registerFocus(1);" class="registerinput" /></th><td><span id="emailTip"></span></td></tr>
-				<tr><th style="line-height:15px;">&nbsp;</th><td colspan="3" style="line-height:15px;">如果您没有邮箱可以<a style='color:#01529D;' onmouseover='HoverOver($(this))' onmouseout='HoverOut($(this))' href='http://users.ruyicai.com/register/register_new.jsp'>使用手机号注册</a>！<br />&nbsp;</td></tr>
+				<tr><th style="line-height:15px;">&nbsp;</th><td colspan="3" style="line-height:15px;">如果您没有邮箱可以<a style='color:#01529D;' onmouseover='HoverOver($(this))' onmouseout='HoverOut($(this))' href='http://testuser.boyacai.com/register/register_new.jsp'>使用手机号注册</a>！<br />&nbsp;</td></tr>
 				
 				<tr><th>昵　　称：</th><th colspan="2"><input name="tuserinfo.NICKNAME" id="nickname" type="text" onfocus="registerFocus(2);" class="registerinput" /></th><td><span id="nicknameTip" class="nichengtsh"></span></td></tr>
 				<tr><th>登录密码：</th><th colspan="2"><input name="tuserinfo.PASSWORD" id="passLogin" type="password"  onfocus="registerFocus(3);" class="registerinput" /></th><td><span id="passLoginTip"></span></td></tr>

@@ -1,7 +1,7 @@
 var basepath = "/rchlw";//项目地址
 var pageArrayNum = 0; 
 var regArray=new Array();
-regArray[0]= "http://users.ruyicai.com/register/register_new.jsp";//手机注册第一个页面***
+regArray[0]= "http://testuser.boyacai.com/register/register_new.jsp";//手机注册第一个页面***
 regArray[1]= "/rchlw/function/rules/emailRegisterIndex.html";//邮箱注册第一个页面***
 regArray[2]= basepath + "/function/user/phoneRegisterNext.jsp";//手机注册第二个页面
 regArray[3]= basepath + "/function/user/emailRegisterNext.jsp";//邮箱注册第二个页面
