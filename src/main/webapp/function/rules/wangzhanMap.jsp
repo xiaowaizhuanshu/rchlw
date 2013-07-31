@@ -27,7 +27,7 @@
 		<div class="mapcon">
 		<h1><a href="/rchlw/index.jsp" title="首页">[首页]</a></h1>
 		<p><a href="javaScript:loginRequrl();" title="用户登录">用户登录</a>
-		<a href="http://users.ruyicai.com/register/register_new.jsp" title="免费注册">免费注册</a>
+		<a href="http://testuser.boyacai.com/register/register_new.jsp" title="免费注册">免费注册</a>
 		<a href="/rchlw/function/rules/user.jsp?key=23" title="我的账户">我的账户</a>
 		<a href="/rchlw/function/rules/customMessage.jsp" title="在线留言">在线留言</a>
 		<a href="/rchlw/function/rules/customMessage.jsp" title="客服中心">客服中心</a>

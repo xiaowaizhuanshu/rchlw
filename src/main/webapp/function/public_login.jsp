@@ -9,7 +9,7 @@
 	<div class="pop_content">
 		<div class="pop_con">
 			<ul>
-				<li>手机号码：<input class="pop_input" name="tuserinfo.MOBILEID" type="text" id="mobilePOP" onfocus="change('magPOP');"/><a href="http://users.ruyicai.com/register/register_new.jsp" title="免费注册"><span class="blue">免费注册</span></a></li>
+				<li>手机号码：<input class="pop_input" name="tuserinfo.MOBILEID" type="text" id="mobilePOP" onfocus="change('magPOP');"/><a href="http://testuser.boyacai.com/register/register_new.jsp" title="免费注册"><span class="blue">免费注册</span></a></li>
 				<li>密　　码：<input class="pop_input1" name="tuserinfo.PASSWORD" type="password" id="passwordPOP" /><a href="/rchlw/function/rules/findPwd_new.jsp" title="忘记密码"><span class="blue">忘记密码</span></a></li>
 			  	<li>验  证   码：<input class="pop_input2" id="validatePOP" name="password1" type="text" onKeyDown="if (event.keyCode==13)tgTouZhuLogin();"/>
 			  	  <img src="/rchlw/function/common/image.jsp" id="magPOP"/>

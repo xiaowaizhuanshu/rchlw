@@ -14,6 +14,6 @@
 <%}else{ %>
 <div class="LoginAndRegister">
 	<img class="IndexLogin" src="<%=request.getContextPath() %>/function/images/indexlogin.gif" onclick="javascript:loginRequrl();"  title="用户登录"/>
-	<img class="IndexRegister" src="<%=request.getContextPath() %>/function/images/indexzhce.gif" onclick="javaScript:window.location.href='http://users.ruyicai.com/register/register_new.jsp'" title="免费注册">
+	<img class="IndexRegister" src="<%=request.getContextPath() %>/function/images/indexzhce.gif" onclick="javaScript:window.location.href='http://testuser.boyacai.com/register/register_new.jsp'" title="免费注册">
 </div>
 <%}%>
