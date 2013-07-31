@@ -414,7 +414,7 @@
 			<div class="CustomerService">
 				<img src="<%=request.getContextPath() %>/function/images/CustomerService.gif" usemap="#CustomerService" />
 				<map name="CustomerService" id="CustomerService">
-					<area shape="rect" coords="60,40,150,60" href ="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes" alt="在线客服" /target="_blank">
+					<area shape="rect" coords="60,40,150,60" href ="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" alt="在线客服" /target="_blank">
 					<area shape="rect" coords="170,40,260,60" href ="/rchlw/function/rules/customMessage.jsp" alt="留言咨询" target="_blank"/>
 				</map>
 			</div>

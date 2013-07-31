@@ -118,7 +118,7 @@ table.FindUserName tfoot img{ border:none;}
 	  </tbody>
 	  <tfoot>
 	  <tr>
-		<td><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=1427872305&amp;site=qq&amp;menu=yes" title="在线客服" target="_blank"><img src="/rchlw/function/images/QQline.jpg" alt="在线客服" /></a></td>
+		<td><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2522309140&amp;site=qq&amp;menu=yes" title="在线客服" target="_blank"><img src="/rchlw/function/images/QQline.jpg" alt="在线客服" /></a></td>
 		<td><a href="#" title="热线电话"><img src="/rchlw/function/images/telephone.gif" alt="热线电话" /></a></td>
 		<td><a href="mailto:service@boyacai.com" title="邮箱服务"  target="_blank"><img src="/rchlw/function/images/email.gif" alt="邮箱服务" /></a></td>
 	  </tr>

@@ -21,7 +21,7 @@ function HoverOut(n) {n.removeClass("over");}
 		<img src="<%=request.getContextPath() %>/function/images/HomeLogo.gif" width="138" height="64"  />
 	</a>
 	<a class="HomeActivityBanner" target="_blank" href="/rchlw/index.jsp"><img src="<%=request.getContextPath() %>/function/images/HomeActivityBanner.jpg" /></a>
-	<a class="HomeServiceQQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes"><img src="<%=request.getContextPath() %>/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
+	<a class="HomeServiceQQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes"><img src="<%=request.getContextPath() %>/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
 	<a class="HomeServiceTel" target="_blank" href="javascript:;"><img src="<%=request.getContextPath() %>/function/images/HomeServiceTel.gif" width="169" height="19" /></a>
 </div>
 <!-- 头部中 网站logo和客服链接 end -->

@@ -347,9 +347,9 @@
 				<picture_upload>E\://boyacai//imageupload//</picture_upload>
 				<!-- 文件传输地址 -->
 				<file_upload>D\://DONGXZ//WorkBench//server//apache-tomcat-6.0.37_rchlw//wtpwebapps//rchlw//</file_upload>
-				<!-- 博雅彩点卡充值 
-				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>-->
-				<msbankUrl>http://127.0.0.1:9999/ChargeCenter</msbankUrl>
+				<!-- 博雅彩点卡充值 -->
+				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
+				<!-- <msbankUrl>http://127.0.0.1:9999/ChargeCenter</msbankUrl> -->
 
 				<!-- ********** QQ登录配置 开始 ********** -->
 				<qq_app_id>www.boyacai.com-100224583,jcbao.boyacai.com-100231303</qq_app_id>
@@ -461,7 +461,7 @@
 				<!-- 图片上传的地址 -->
 				<picture_upload>E\://boyacai//imageupload//</picture_upload>
 				<!-- 文件传输地址 -->
-				<file_upload>E\://boyacai//</file_upload>
+				<file_upload>//root//www_tomcat_rchlw//webapps//rchlw//</file_upload>
 				<!-- 博雅彩点卡充值  -->
 				<msbankUrl>http://192.168.15.15:9999/ChargeCenter</msbankUrl>
 

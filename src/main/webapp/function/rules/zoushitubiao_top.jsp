@@ -35,7 +35,7 @@
 <div class="HeadMiddleLogo">
 	<a class="HomeLogo" href="http://www.ruyicai.com/rchlw/index.jsp"target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeLogo.gif" width="138" height="64"  /></a>
 	<a class="HomeActivityBanner" href="http://www.ruyicai.com" target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeActivityBanner.jpg" /></a>
-	<a class="HomeServiceQQ" href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes" target="ssq"><img src="http://www.ruyicai.com/rchlw/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
+	<a class="HomeServiceQQ" href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" target="ssq"><img src="http://www.ruyicai.com/rchlw/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
 	<a class="HomeServiceTel" href="javascript:;" target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeServiceTel.gif" width="169" height="19" /></a>
 </div>
 <!-- 头部中 网站logo和客服链接 end -->

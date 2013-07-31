@@ -60,8 +60,8 @@
 		</ul>
 		<div class="left_kefu">
 			<h2><font>客服中心</font></h2>
-			<p>+ 在线:<a href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes">点击交流(在线客服)</a></p>
-			<p>+ QQ:1427872305</p>
+			<p>+ 在线:<a href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes">点击交流(在线客服)</a></p>
+			<p>+ QQ:2522309140</p>
 			<p>+ 公司总机:010-65174061</p>
 			<p>+ 传真：010-62652810</p>
 			<p>+ 客服电话:400-856-1000</p>
