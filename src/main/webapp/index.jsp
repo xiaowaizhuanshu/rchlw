@@ -201,6 +201,7 @@
 	<div class="SecondScreen">
 		<div class="SecondScreenLeft">
 			<div class="Pannel NumberShow" id="result">
+				<!-- //这里条用的是util.js里面的方法 -->
 			 	<script>
 			 		$(function(){reHtml(26, true, '', 'result');});
 			 	</script>

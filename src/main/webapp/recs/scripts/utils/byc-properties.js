@@ -1,0 +1,1 @@
+var appAddr = ${appAddr};
