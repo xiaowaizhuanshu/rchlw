@@ -156,6 +156,7 @@ ul.loading li a:hover{ text-decoration:underline; color:#00F;}
 .TopQQNumber{width:84px; height:25px; float:right; margin:0px; background-position:-100px -250px;}
 .TopPhoneNumber{width:93px; height:19px; float:right; margin:2px 0px 0px 10px; background-position:0px -250px;}
 .tnav{ width:950px; height:70px; margin:auto; z-index:50; position:relative;} 
+/**
 .nav{ width:510px; height:29px; position:absolute; z-index:60; left:280px; bottom:0px;}
 .navred a{ width:84px; height:28px; margin-right:3px; float:left; background:url(/rchlw/function/images/navbjred.gif) no-repeat; text-align:center;line-height:29px;  font-size:14px; color:#fff; font-weight:bold; }
 .navbjleft{ width:3px; height:29px; background:url(/rchlw/function/images/navbjleft.gif) no-repeat; float:left;}
@@ -164,6 +165,7 @@ ul.loading li a:hover{ text-decoration:underline; color:#00F;}
 .navbjcenter a { color:#993300; display:block;}
 .navbjhover{ width:84px; height:29px; color:#fff; background:url(/rchlw/function/images/Allnewsbtn.gif)  no-repeat  0px -250px;}
 .navbjcenter a:hover{ color:#c40001; }
+**/
 .line{  background:#fbfaff; border-top:1px solid #ead8aa; background:url(/rchlw/function/images/AllIndex.gif) no-repeat -100px -200px; }
 .noline{ background:url(/rchlw/function/images/onlinebg.gif) no-repeat; }
 .noline1{ background:url(/rchlw/function/images/AllIndex.gif) no-repeat -100px -100px; height:30px;}

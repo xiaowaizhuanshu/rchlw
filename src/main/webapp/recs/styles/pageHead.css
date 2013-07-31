@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+/*页面公用css*/
+/*header start*/
+body{
+	font-family:"宋体";
+}
+.header{
+	display:block;
+	height:161px;
+	width:100%;
+}
+.top_welcome{
+	display:block;
+	width:100%;
+	height:21px;
+	padding:4px 0;
+	background:#f2f2f2;
+	line-height:21px;
+	color:#787878;
+}
+.wel_center,.logo_center,.nav_center{
+	width:965px;
+	margin:0 auto;
+}
+.top_wel_left{
+	float:left;
+	display:inline;
+}
+.top_loginBtn{
+	display:inline;
+	padding:0 5px 0 10px;
+	color:#c80000;
+}
+.top_registBtn{
+	display:inline;
+	padding:0 5px;
+	color:#06c;
+}
+.top_wel_right{
+	float:right;
+}
+.top_wel_right a{
+	display:inline;
+	padding:0 8px 0 4px;
+	color:#787878;
+}
+
+/*LOGO and Hotline*/
+.logo_hotline{
+	display:block;
+	margin:10px 0 0 0;
+	height:77px;
+}
+.logo_icon{
+	float:left;
+	display:block;
+	width:188px;
+	height:66px;
+	margin:0 0 0 15px;
+	background:url(../images/public/logo.png) no-repeat 0 0;
+}
+.new_centent{
+	float:left;
+	display:block;
+	width:210px;
+	height:68px;
+	margin:9px 0 0 25px;
+	background:url(../images/public/rebate.png) no-repeat 0 0;
+}
+.online{
+	display:block;
+	float:right;
+	width:99px;
+	height:30px;
+	margin:41px 13px 0 0;
+	background:url(../images/public/online.jpg) no-repeat 0 0;
+}
+.hotline{
+	float:right;
+	display:block;
+	width:184px;
+	height:17px;
+	margin:49px 27px 0 0;
+	background:url(../images/public/hotline.png) no-repeat 0 0;
+}
+.nav{
+	display:block;
+	height:45px;
+	background:url(../images/public/nav_bg.png) repeat-x;
+}
+.nav_slider{
+	position:relative;
+	display:block;
+	float:left;
+	width:216px;
+}
+.slider_select{
+	float:left;
+	width:214px;
+	height:43px;
+	background:url(../images/public/slider_bg.jpg) repeat-x;
+	border:1px solid #8d0000;
+	cursor:pointer;
+}
+.slider_select span{
+	display:block;
+	height:43px;
+	margin:0 11px;
+	background:url(../images/public/down_slider.jpg) no-repeat right center;
+	line-height:43px;
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+}
+.slider_down{
+	position:absolute;
+	display:block;
+	left:0px;
+	top:45px;
+	width:214px;
+	padding:0 0 20px;
+	background:#fff;
+	border:1px solid #dcdcdc;
+	border-top:none;
+}
+/*nav_list*/
+.nav_list{
+	float:left;
+	height:45px;
+	margin:0 0 0 30px;
+}
+.nav_list li{
+	float:left;
+	display:block;
+	height:45px;
+	background:url(../images/public/navli_bg.png) no-repeat right center;
+	line-height:45px;
+	font-weight:bold;
+	font-size:14px;
+}
+.nav_list li a{
+	display:block;
+	padding:0 24px 0 22px;
+	color:#fff;
+}
+.nav_list li a:hover{
+	color:#ff0;
+}
+.nav_list li.indexHome a{
+	padding:0 24px 0 25px;
+	background:url(../images/public/home_bg.jpg) no-repeat 0 0;
+}
+.nav_list li.indexHome a:hover{
+	background-position:0 -45px;
+}
+.nav_list li.indexHome.on a{
+	background-position:0 -45px;
+	color:#ff0;
+}
+
+/*下拉滑块*/
+.fucai,.ticai,.gaopin,.jingji{
+	display:block;
+}
+.select_top{
+	display:block;
+	height:28px;
+	background:#f0f0f0;
+	line-height:28px;
+	border-bottom:1px solid #d9d9d9;
+}
+.select_top span{
+	display:inline;
+	margin:0 0 0 10px;
+	padding:0 0 0 22px;
+	color:#333;
+}
+.fucai .select_top span{
+	background:url(../images/public/fucai_bg.jpg) no-repeat left center;
+}
+.ticai .select_top span{
+	background:url(../images/public/ticai_bg.jpg) no-repeat left center;
+}
+.gaopin .select_top span{
+	background:url(../images/public/gaopin_bg.jpg) no-repeat left center;
+}
+.jingji .select_top span{
+	background:url(../images/public/jingji_bg.jpg) no-repeat left center;
+}
+.select_top label{
+	color:#999;
+	display:inline;
+	margin:0 0 0 18px;
+}
+.select_list{
+	display:block;
+	padding:0 0 6px;
+	overflow:hidden;
+}
+.select_list b{
+	float:left;
+	width:70px;
+	height:17px;
+	padding:10px 0 6px 1px;
+	line-height:17px;
+	font-weight:normal;
+	color:#3c3c3c;
+}
+.select_list b span{
+	display:none;
+	width:19px;
+	height:14px;
+	background:url(../images/public/jiang.jpg) no-repeat 0 0;
+}
+.select_list b.on span{
+	display:inline-block;
+}
+/*header end*/
+
+
+/*footer*/
+.footer{
+	display:block;
+	width:100%;
+	height:130px;
+}
+.foot_center{
+	display:block;
+	height:130px;
+	width:965px;
+	margin:0 auto;
+}
+.foot_link{
+	display:block;
+	height:31px;
+	line-height:31px;
+	color:#666;
+	border-bottom:1px solid #dcdcdc;
+}
+.foot_link a{
+	display:inline-block;
+	padding:0 10px;
+	color:#666;
+}
+.op_link{
+	display:block;
+	height:31px;
+	line-height:31px;
+	color:#666;
+}
+.op_link a{
+	display:inline-block;
+	padding:0 10px;
+	color:#666;
+}
+.foot_text{
+	height:30px;
+	line-height:30px;
+	text-indent:10px;
+	color:#969696;
+}
+.foot_text a{
+	color:#969696;
+}
+/*footer end*/

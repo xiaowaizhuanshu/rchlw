@@ -2,6 +2,113 @@
     pageEncoding="utf-8"%>
  <%@taglib prefix="s" uri="/struts-tags"%>
  <!-- 合买中奖排行 start -->
+ 
+ <div class="recomened_rank">
+                	<div class="rank_top">
+                    	<span>中奖排行榜</span>
+                        <ul class="BaseTab">
+						<s:if test="#request.allList.size()>0">
+							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentOne" class="on">总</li>
+						</s:if>
+						<s:if test="#request.yearList.size()>0">
+							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentThree">年</li>
+						</s:if>
+						<s:if test="#request.monthList.size()>0">
+							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentTwo">月</li>
+						</s:if>
+						</ul>
+                    </div>
+                    <s:if test="#request.allList.size()>0">
+						<div class="indexCharts_con ContentOne selected">
+							<table class="rank_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+							  <thead>
+							  <tr>
+								<td class="ran_paihang">排行</td>
+								<td class="ran_username">用户名</td>
+								<th class="ran_zjvalue">中奖金额</th>
+							  </tr>
+							  </thead>
+							  <tbody>
+							  <s:iterator value="#request.allList" status="all">
+							 	 
+								
+							  <tr
+							  	<s:if test="(#all.index+1)<4">
+									class="on"
+								</s:if>
+							  >
+								<td class="ran_paihang"><span>${all.index+1}</span></td>
+								<td class="ran_username">${name }</td>
+								<td class="ran_zjvalue">${prizeAmt }元</td>
+							  </tr>
+							  </s:iterator>
+							  </tbody>
+							</table>
+						</div>
+						</s:if>
+						
+						
+						<s:if test="#request.monthList.size()>0">
+						<div class="indexCharts_con ContentTwo ">
+							<table class="rank_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+							  <thead>
+							  <tr>
+								<td class="ran_paihang">排行</td>
+								<td class="ran_username">用户名</td>
+								<th class="ran_zjvalue">中奖金额</th>
+							  </tr>
+							  </thead>
+							  <tbody>
+							  <s:iterator value="#request.monthList" status="month">
+							  <tr
+							  		<s:if test="(#month.index+1)<4">
+										class="on"
+									</s:if>
+							  >
+								<td class="ran_paihang"><span>${month.index+1}</span></td>
+								<td class="ran_username">${name }</td>
+								<td class="ran_zjvalue">${prizeAmt }元</td>
+							  </tr>
+							  </s:iterator>
+							  </tbody>
+							</table>
+						</div>
+						</s:if>
+						
+						<s:if test="#request.allList.size()>0">
+						<div class="indexCharts_con ContentThree ">
+							<table class="rank_table" width="100%" border="0" cellspacing="0" cellpadding="0">
+							  <thead>
+							  <tr>
+								<td class="ran_paihang">排行</td>
+								<td class="ran_username">用户名</td>
+								<th class="ran_zjvalue">中奖金额</th>
+							  </tr>
+							  </thead>
+							  <tbody>
+							  <s:iterator value="#request.yearList" status="year">
+							  <tr
+							  		<s:if test="(#year.index+1)<4">
+										class="on"
+									</s:if>
+							  >
+								<td class="ran_paihang"><span>${year.index+1}</span></td>
+								<td class="ran_username">${name }</td>
+								<td class="ran_zjvalue">${prizeAmt }元</td>
+							  </tr>
+							  </s:iterator>
+							  </tbody>
+							</table>
+						</div>
+						</s:if>
+                </div>
+ 
+ 
+ 
+ 
+ 
+ <!--  
+ 
 		<div class="indexCharts">
 			<div class="indexCharts_top" >
 			<h1>中奖排行榜</h1>
@@ -100,5 +207,5 @@
 				</table>
 			</div>
 			</s:if>
-		</div>
+		</div> -->
 		<!-- 合买中奖排行 end -->

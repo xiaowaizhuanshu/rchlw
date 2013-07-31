@@ -11,15 +11,17 @@
 <link href="<%=request.getContextPath() %>/function/css/newsAll.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jquery-1.5.min.js">
 </script>
-<script type="text/javascript" src="<%=request.getContextPath() %>/function/js/kuaiTouZhou.js">
+<script type="text/javascript" src="<%=request.getContextPath() %>/recs/scripts/kuaitouzhu.js">
 </script>
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/jqueryJS/jinrijiezhi_timeEnd.js">
 </script>
 </head>
 <body>
+<script>$(function(){toplogo('header',"goucaidating");});</script>
+
 <div id="body">
-<script>$(function(){toplogo('common',"ButtonChannelBuy");});</script>
- <span id="common"></span>
+<div id="header" class="header">
+</div>
 <div id="main">
 	<div id="zhanghu">
 		<div class="main_left">
