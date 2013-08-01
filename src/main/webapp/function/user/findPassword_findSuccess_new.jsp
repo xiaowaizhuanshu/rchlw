@@ -6,4 +6,4 @@
 	<div class="find_PasswordOverImg"><img src="<%=request.getContextPath() %>/function/images/BigGreenTrue.gif" width="44" height="44" /></div>
 	<div class="find_PasswordOverText">恭喜您，新登录密码已设置成功！<br />请牢记您的登录密码！</div>
 </div>
-<div class="find_PasswordOverCoat"><a href="http://users.ruyicai.com/login.jsp" class="find_PasswordOverBtn" title="重新登录">重新登录</a><a href="/rchlw/index.jsp" title="返回首页">返回首页</a></div>
+<div class="find_PasswordOverCoat"><a href="<%=com.boyacai.common.util.AppAddr.getUsersPath() %>/login.jsp" class="find_PasswordOverBtn" title="重新登录">重新登录</a><a href="/rchlw/index.jsp" title="返回首页">返回首页</a></div>

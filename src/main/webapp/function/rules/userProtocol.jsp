@@ -18,7 +18,7 @@
 <div class="xieyi2">
 <p class="dd">用户注册协议</p>
 <br />
-<p align="left">博雅彩彩票网站（www.ruyicai.com，下称“博雅彩”）隶属于北京金软通科技发展有限公司，协议开展网上代购彩票业务。本协议为用户在博雅彩上进行彩票代购、合买的事宜而订立，具体条款如下： </p>
+<p align="left">博雅彩彩票网站（www.boyacai.com，下称“博雅彩”）隶属于北京金软通科技发展有限公司，协议开展网上代购彩票业务。本协议为用户在博雅彩上进行彩票代购、合买的事宜而订立，具体条款如下： </p>
 <dl>
 <dt>一、相关定义</dt>
 	<dd>
@@ -186,7 +186,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;公司地址：北京市建国门内大街18号恒基中心
 </dd>
 </dl>
-<p style=" text-align:center"> &copy;2011&nbsp;www.ruyicai.com 使用前必读</p>
+<p style=" text-align:center"> &copy;2011&nbsp;www.boyacai.com 使用前必读</p>
 </div></div>
 <jsp:include page="/function/common/ruyicai_include_common_footer_noindex.jsp"></jsp:include>
 </div>

@@ -13,8 +13,8 @@
 	<div style="margin:0 auto; width:950px;">
     <img src="<%=request.getContextPath() %>/function/images/404.jpg" width="950" height="557" border="0" usemap="#Map" />
     <map name="Map" id="Map">
-      <area shape="rect" coords="271,448,422,479" href="http://www.ruyicai.com/" />
-      <area shape="rect" coords="452,453,617,487" href="http://www.ruyicai.com/rchlw/function/goucaidating.jsp" />
+      <area shape="rect" coords="271,448,422,479" href="/rchlw" />
+      <area shape="rect" coords="452,453,617,487" href="/rchlw/function/goucaidating.jsp" />
     </map>
     </div>
 

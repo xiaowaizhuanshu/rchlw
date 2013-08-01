@@ -1,5 +1,7 @@
 package com.ruyicai.util;
 
+import com.boyacai.common.util.AppAddr;
+
 /**
  * 
  * @classname: MessageUtil
@@ -157,7 +159,7 @@ public class MessageUtil {
 		+ "<br/>"
 		+ "此为系统邮件，请勿回复!"
 		+ "请保管好您的邮箱，避免博雅彩账户被他人盗用。"
-		+ "如有任何疑问，可查看博雅彩相关规则，博雅彩网站访问http://www.ruyicai.com";
+		+ "如有任何疑问，可查看博雅彩相关规则，博雅彩网站访问"+AppAddr.getRchlwPath();
 	/*
 	 * 邮箱绑定向邮箱发送的内容
 	 */

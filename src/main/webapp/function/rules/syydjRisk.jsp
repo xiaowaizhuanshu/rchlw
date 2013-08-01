@@ -39,7 +39,7 @@
 <p>举例说明上述算法：</p>
 <p>“任选三”投注方式初始限制销售注数为7894注，假设当前“任选三”投注方式已经销售了10万元，按59%派奖计算，则预计应该派发奖金为5.9万元，“任选三”投注方式单注奖金为19元，中奖组合数为10，那么动态实时限制为(5900000÷19÷10)=31000注(取整数)，那么，当前的投注动态限制为初始限制的注数与动态实时限制的注数之和，即(7894+310)=8204注;如果“任选三”投注方式的投注号码已经销售了1500注，则此时系统还可接受销售6704注的申请。</p>
 <p>其它投注方式的动态限号以此类推。</p>
-<p style=" text-align:center"> ©2011&nbsp;www.ruyicai.com 使用前必读</p>
+<p style=" text-align:center"> ©2011&nbsp;www.boyacai.com 使用前必读</p>
 </div></div>
 <jsp:include page="/function/common/ruyicai_include_common_footer_litter.jsp"></jsp:include>
 </div>

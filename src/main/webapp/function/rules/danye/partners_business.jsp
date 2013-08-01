@@ -101,7 +101,7 @@
 		<p>商务合作联系人：罗女士</p>
 		<p>TEL：（010）88869779</p>
 		<p>QQ：928590769</p>
-		<p>邮箱：<a href="mailto:luoman@ruyicai.com">luoman@ruyicai.com </a></p>
+		<p>邮箱：<a href="mailto:luoman@boyacai.com">luoman@boyacai.com </a></p>
 		<p>传真：010-88860312 </p>
 		</div>
 	</div>

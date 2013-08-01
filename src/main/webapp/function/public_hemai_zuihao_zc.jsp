@@ -6,8 +6,8 @@
 				<dd>购买方式</dd>
 				<dt class="light selected"  ControlTarget="FollowNubTab1" id="daiGou" onclick="setGoumaifangshi('代购');tabHemaiAndDaigou('daigou');"><span>&nbsp;</span>代购</dt>
 				<dt class="light"  id="controlHemai" ControlTarget="FollowNubTab2"  onclick="setGoumaifangshi('合买');tabHemaiAndDaigou('hemai');"><span>&nbsp;</span>合买</dt>
-				<dd class="TabEm" id="SASA"><a  target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
-				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
+				<dd class="TabEm" id="SASA"><a  target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
+				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
 			</dl>
 			<div class="FollowNubTabContent">
 				<div class="FollowNubTab1"></div>

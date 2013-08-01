@@ -12,6 +12,7 @@ import net.sf.json.JSONObject;
 
 import org.apache.log4j.Logger;
 
+import com.boyacai.common.util.AppAddr;
 import com.jrt.invokeLot.util.JSONReslutUtil;
 import com.ruyicai.bean.Tuserinfo;
 import com.ruyicai.util.BaseAction;
@@ -41,13 +42,12 @@ public class TuiGuangAction extends BaseAction {
 	/**
 	 * 生成代理链接
 	 * 
-	 * http://www.ruyicai.com
 	 * @return
 	 * @throws Exception 
 	 */
 	private Tuserinfo user = Tuserinfo.setJson(JSONReslutUtil.getUserInfo(request).getJSONObject("value"));
 	public String ProducedLink() throws Exception{
-		String shouyepath = "http://www.ruyicai.com/index.jsp";//首页地址
+		String shouyepath = AppAddr.getRchlwPath()+"/index.jsp";//首页地址
 		String registerpath = "http://testuser.boyacai.com/register/register_new.jsp";//注册地址
 		String userno = user.getUSERNO();
 		logger.info(agencyUrl+"/getWinfolist?userno="+userno);

@@ -36,7 +36,7 @@
 <p>由于受到限制，申请购买的号码没有买到，但是如其它的三星投注方式投注号码的销售此时已经动态增加了，使得总的销售达到20万元。则当前的投注动态限制提高到600注，该三星投注方式的投注号码可以购买的注数也相应提高到200注。</p>
 <p>重庆市福利彩票发行中心</p>
 <p>二OO五年八月</p>
-<p style=" text-align:center"> ©2011&nbsp;www.ruyicai.com 使用前必读</p>
+<p style=" text-align:center"> ©2011&nbsp;www.boyacai.com 使用前必读</p>
 </div></div>
 <jsp:include page="/function/common/ruyicai_include_common_footer_litter.jsp"></jsp:include>
 </div>

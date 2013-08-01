@@ -15,7 +15,7 @@
 
 <div class="index_lore">
     <a href="javascript:void(0)" onclick="javascript:loginRequrl();" class="login_btn_phone">用户登录</a>
-    <a href="javascript:void(0)" onclick="javaScript:window.location.href='http://users.ruyicai.com/register/register_new.jsp'" class="regist_btn_phone">用户注册</a>
+    <a href="javascript:void(0)" onclick="javaScript:window.location.href='<%=com.boyacai.common.util.AppAddr.getUsersPath() %>/register/register_new.jsp'" class="regist_btn_phone">用户注册</a>
 
 </div>
 <%}%>

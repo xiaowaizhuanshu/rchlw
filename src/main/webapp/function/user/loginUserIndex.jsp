@@ -28,7 +28,7 @@ response.flushBuffer();%>
     </div>
     <div class="zhqlzhxx">
       <!-- 当前积分：<a href="/rchlw/function/rules/user.jsp?key=69" title="查看积分详情"><font class="redword" id="scores"></font></a>分 --> 
-      <%-- <span class="blueword"><a href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12" title="积分规则">积分规则>></a></span> --%>
+      <%-- <span class="blueword"><a href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12" title="积分规则">积分规则>></a></span> --%>
       <span class="zhqlcz"><a href="/rchlw/function/rules/user.jsp?key=4"><img src="<%=request.getContextPath() %>/function/images/zhqlczbtn.gif" width="42" height="22" border="0"/></a></span>
       <span class="zhqltk"><a href="/rchlw/function/rules/user.jsp?key=11"><img src="<%=request.getContextPath() %>/function/images/zhqltkbtn.gif" width="42" height="22" border="0"/></a></span>
       <br/>

@@ -48,8 +48,8 @@
 					<dt class="light" id="checkzengcai" onclick="addStatus();">赠送彩票</dt>
 					<dt class="light" onclick="window.location.href='/rchlw/function/rules/user.jsp?key=0&view=ChildMenu2&style=menu2'">我的方案</dt>
 				    <dd>
-				    	<a onmouseover="PopupOn($(this));" onmouseout="PopupOff($(this));" Offset="br,0,0" BoxStyle="width:200px;line-height:20px;" Content="<tangs:ryc_newslist categoryCn="玩法简介" channelCn="双色球" value="3" web_id="%{#parameters.website_Properties_id[0]}" num="1"> <h3 style='line-height:26px;'>${title}</h3>${content}</tangs:ryc_newslist>" target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/wanfajieshao/2012/0327/8.html?fid=36&id=8'>玩法介绍</a>
-						<a href="http://tbzs.ruyicai.com/cjwssq/index.php" target="_blank">走势图表</a>
+				    	<a onmouseover="PopupOn($(this));" onmouseout="PopupOff($(this));" Offset="br,0,0" BoxStyle="width:200px;line-height:20px;" Content="<tangs:ryc_newslist categoryCn="玩法简介" channelCn="双色球" value="3" web_id="%{#parameters.website_Properties_id[0]}" num="1"> <h3 style='line-height:26px;'>${title}</h3>${content}</tangs:ryc_newslist>" target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wanfajieshao/2012/0327/8.html?fid=36&id=8'>玩法介绍</a>
+						<a href="http://zst.boyacai.com/cjwssq/index.php" target="_blank">走势图表</a>
 						<a style="border:0px;" href="<%=request.getContextPath() %>/news/newsInfoList!queryNewsInfoList?categoryCode=165&channel_name_cn=ssq" target="_blank" >专家推荐</a>
 				    </dd>
 				</dl>
@@ -184,7 +184,7 @@
 		<div class="space10">&nbsp;</div>
 		<!--  双色球走势图表 start  -->
 		<div class="ChannelBuyPannel ChannelBuyCurrent">
-			<div class="ChannelBuyPannelHead"><h3>双色球图表走势</h3><a href="http://tbzs.ruyicai.com/cjwssq/index.php" title="更多"  target="_blank">更多&gt;&gt;</a></div>
+			<div class="ChannelBuyPannelHead"><h3>双色球图表走势</h3><a href="http://zst.boyacai.com/cjwssq/index.php" title="更多"  target="_blank">更多&gt;&gt;</a></div>
 			<div class="ChannelBuyPannelBody">
 			<ul>
 					<tangs:ryc_newslist value="3" categoryCn="频道走势图"  channelCn="双色球" web_id="%{#parameters.website_Properties_id[0]}" >

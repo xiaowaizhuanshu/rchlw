@@ -375,7 +375,7 @@ function change(mag){
 //调用支付宝登录方法
 function zfbLogin(){
 	$.ajax({
-		url:'http://users.ruyicai.com/function/unitedLogin!alipayHandyLogin',
+		url:appAddr.users+'/function/unitedLogin!alipayHandyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},
@@ -389,7 +389,7 @@ function zfbLogin(){
 //调用QQ登录方法
 function qqUnitedLogin(){
 	$.ajax({
-		url:'http://users.ruyicai.com/function/unitedLogin!qqUnitedHandlyLogin',
+		url:appAddr.users+'/function/unitedLogin!qqUnitedHandlyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},

@@ -149,7 +149,7 @@
 						"plat":"web",
 						"method":"post",
 						"goodsid":"300",
-						"returl":"http://www.ruyicai.com"
+						"returl":"http://www.boyacai.com"
 					}
 	b.返回数据		
 		{"error_code":"500"}

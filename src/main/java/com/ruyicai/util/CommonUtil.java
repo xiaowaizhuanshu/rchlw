@@ -106,7 +106,7 @@ public class CommonUtil {
 	 */
 	/**
 	 *  用户通注册时，使用userno 进行USERCENTER的登记注册
-	 *  POST 方式提交请求 http://users.ruyicai.com/user/center!loginForUserno   参数为userno
+	 *  POST 方式提交请求 http://user.boyacai.com/user/center!loginForUserno   参数为userno
 	 *  @return JsonObj
 	 */
 	public static JSONObject loginForUserno(String userno , HttpServletRequest request,HttpServletResponse response){
@@ -2311,8 +2311,8 @@ public class CommonUtil {
 	
 	/**
 	 * 通过http请求可以修改当前用户的信息
-	 * 例子：http://users.ruyicai.com/user/center!editUserInfo;jsessionid=｛cookie中存储的值｝?a=随机数
-	 * http://users.ruyicai.com/user/center!getUserCookie;jsessionid=D051904206F696879C5C507444217FFD?a=3493537239827349
+	 * 例子：http://user.boyacai.com/user/center!editUserInfo;jsessionid=｛cookie中存储的值｝?a=随机数
+	 * http://user.boyacai.com/user/center!getUserCookie;jsessionid=D051904206F696879C5C507444217FFD?a=3493537239827349
 	 * @param 返回值为JSONObject对象{errorCode:"0",value:{用户对象}} 如果失败则返回100002 或者500
 	 */
 	public static JSONObject editUserInfo(HttpServletRequest request,JSONObject user){

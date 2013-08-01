@@ -133,7 +133,7 @@
 			<div class="goucai_zsh">
 				<div class="goucai_ggtop">
 					<span class="newswin_title">图表走势</span>
-					<a href="http://tbzs.ruyicai.com" title="更多" target="_blank" class="web_more">更多>></a>
+					<a href="http://zst.boyacai.com" title="更多" target="_blank" class="web_more">更多>></a>
 				</div>
 				<div class="goucai_zshcon ChannelBuyCurrent">
 					<ul>
@@ -147,7 +147,7 @@
 			<div class="goucai_gg">
 				<div class="goucai_ggtop">
 					<span class="goucai_title">帮助中心</span>
-					<a href="http://www.ruyicai.com/cms/index.html" class="web_more" target="_blank">更多&gt;&gt;</a>
+					<a href="/rchlw/help/helper!list.action" class="web_more" target="_blank">更多&gt;&gt;</a>
 				</div>
 				<div class="webgg_congc">
 					<ul>

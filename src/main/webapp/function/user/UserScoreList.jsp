@@ -22,7 +22,7 @@ div.My_account h2 {
 			onclick="BaseTab($(this));">积分兑换</li>
 	</ul>
 	<span class=""><a
-		href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12"
+		href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/41.html?fid=5&id=12"
 		target="_blank">如何获得更多积分？</a></span>
 </div>
 <div class="account_rechargeContent">

@@ -37,7 +37,7 @@
 					</td>
 					<td>二 四 日</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=F47104"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwssq/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwssq/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_ssq.jsp" title="代购">代购</a></td>
 				</tr>
 				</s:if>
@@ -54,7 +54,7 @@
 					</td>
 					<td>每天</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=F47103"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw3d/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw3d/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_3D.jsp" title="代购">代购</a></td>
 					<!-- <td><a href="/hemai/fucai3dhemai.html" title="合买">合买</a></td> -->
 				</tr>
@@ -77,7 +77,7 @@
 					</td>
 					<td>一 三 五</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=F47102"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwqlc/index.php""><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwqlc/index.php""><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_qlc.jsp" title="代购">代购</a></td>
 					<!-- <td><a href="/hemai/qilecaihemai.html" title="合买">合买</a></td> -->
 				</tr>
@@ -104,7 +104,7 @@
 					</td>
 					<td>一 三 六</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01001"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwdlt/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwdlt/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_dlt.jsp" title="代购">代购</a></td>
 <!-- 					<td><a href="/rchlw/function/selectAll!getCaselotsByWhere?lotno=T01001" title="合买">合买</a></td>
  -->				</tr>
@@ -122,7 +122,7 @@
 					</td>
 					<td>每天</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01002"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwpl3/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwpl3/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_pls.jsp" title="代购">代购</a></td>
 <!-- 					<td><a href="/hemai/pailie3hemai.html" title="合买">合买</a></td>
  -->				</tr>
@@ -142,7 +142,7 @@
 					</td>
 					<td>每天</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01011"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwpl5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwpl5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_plw.jsp" title="代购">代购</a></td>
 <!-- 					<td><a href="/hemai/pailie5hemai.html" title="合买">合买</a></td>
  -->				</tr>
@@ -164,7 +164,7 @@
 					</td>
 					<td>二 五 日</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01009"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw7xc/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw7xc/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_qxc.jsp" title="代购">代购</a></td>
 <!-- 					<td><a href="/hemai/qixingcaihemai.html" title="合买">合买</a></td>
  -->				</tr>
@@ -184,7 +184,7 @@
 					</td>
 					<td>每天</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01013"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw22x5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw22x5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_22xuan5.jsp" title="代购">代购</a></td>
 <!-- 					<td><a href="/hemai/22xuan5hemai.html" title="合买">合买</a></td>
  -->				</tr>
@@ -208,7 +208,7 @@
 					</td>
 					<td>每10/5分钟</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01007"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjwssc/index.php?lotteryType=ssc"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjwssc/index.php?lotteryType=ssc"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_ssc.jsp" title="代购">代购</a></td>
 					<td>&nbsp;</td>
 				</tr>
@@ -227,7 +227,7 @@
 					</td>
 					<td>每12分钟</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01010"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw11x5/index.php?lotteryType=11x5"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw11x5/index.php?lotteryType=11x5"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_11xuan5.jsp" title="代购">代购</a></td>
 					<td>&nbsp;</td>
 				</tr>
@@ -246,7 +246,7 @@
 					</td>
 					<td>每10分钟</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01012"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw11x5/index.php?lotteryType=11x5"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw11x5/index.php?lotteryType=11x5"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_syydj.jsp" title="代购">代购</a></td>
 					<td>&nbsp;</td>
 				</tr>
@@ -282,7 +282,7 @@
 					</td>
 					<td>每10分钟</td>
 					<td><a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01013"><img src="<%=request.getContextPath() %>/function/images/magnifier.gif" width="16" height="16" /></a></td>
-					<td><a href="http://tbzs.ruyicai.com/cjw22x5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
+					<td><a href="http://zst.boyacai.com/cjw22x5/index.php"><img src="<%=request.getContextPath() %>/function/images/column.gif" width="16" height="15" /></a></td>
 					<td><a href="/rchlw/lottery/ruyicai_channel_22xuan5.jsp" title="代购">代购</a></td>
 					<td>&nbsp;</td>
 				</tr>

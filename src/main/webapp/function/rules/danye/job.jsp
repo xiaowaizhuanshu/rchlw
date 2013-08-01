@@ -74,7 +74,7 @@
 	<div class="main_right">
 		<h1>技术研发类</h1>
 		<div class="job_contain">
-			<p><span><a href="mailto:zhangxiaofeng@ruyicai.com">立即申请</a></span><strong>系统测试工程经理&nbsp;&nbsp;招聘人数：1人</strong></p>
+			<p><span><a href="mailto:zhangxiaofeng@boyacai.com">立即申请</a></span><strong>系统测试工程经理&nbsp;&nbsp;招聘人数：1人</strong></p>
 			<div>岗位职责：</div>
 			<ul>
 				<li>
@@ -105,7 +105,7 @@
 			<p>（年薪15w以上）</p>
 		</div>
 		<div class="job_contain">
-			<p><span><a href="mailto:zhangxiaofeng@ruyicai.com">立即申请</a></span><strong>高级JAVA 工程师&nbsp;&nbsp;招聘人数：2人</strong></p>
+			<p><span><a href="mailto:zhangxiaofeng@boyacai.com">立即申请</a></span><strong>高级JAVA 工程师&nbsp;&nbsp;招聘人数：2人</strong></p>
 			<div>岗位职责/要求：</div>
 			<ul>
 				<li>
@@ -126,7 +126,7 @@
 			
 		</div>
 		<div class="job_contain">
-			<p><span><a href="mailto:weishanshan@ruyicai.com">立即申请</a></span><strong>网页美工&nbsp;&nbsp;招聘人数：若干</strong></p>
+			<p><span><a href="mailto:weishanshan@boyacai.com">立即申请</a></span><strong>网页美工&nbsp;&nbsp;招聘人数：若干</strong></p>
 			<div>岗位职责/要求：</div>
 			<ul>
 				<li>1．善于沟通、有团队精神并有团队开发经验；学习能力强；</li>

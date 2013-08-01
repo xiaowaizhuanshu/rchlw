@@ -87,8 +87,8 @@
 </div>
 <div class="download_ff2">
 	<h1>方法2：通过手机上网下载安装</h1>
-	<p> <strong>用手机登陆 wap.ruyicai.com 直接下载安装。</strong></p>
-	<p> 打开您的手机浏览器，输入wap.ruyicai.com进入博雅彩WAP网站页面，点击&ldquo;手机客户端下载&rdquo;。进入下载页面，选择与您的手机对应的手机品牌和型号，点击&ldquo;立即下载&rdquo;下载到您的手机中，安装后即可马上投注购彩。&nbsp; </p>
+	<p> <strong>用手机登陆 wap.boyacai.com 直接下载安装。</strong></p>
+	<p> 打开您的手机浏览器，输入wap.boyacai.com进入博雅彩WAP网站页面，点击&ldquo;手机客户端下载&rdquo;。进入下载页面，选择与您的手机对应的手机品牌和型号，点击&ldquo;立即下载&rdquo;下载到您的手机中，安装后即可马上投注购彩。&nbsp; </p>
 </div>
 <script>
 	var NowFrame = 1;

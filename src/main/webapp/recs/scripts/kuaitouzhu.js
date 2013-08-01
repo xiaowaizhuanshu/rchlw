@@ -768,7 +768,7 @@ function touzhuPublic() {
 		$("#final_money").html(0);
 		//弹出层
 		loginShow();
-		var str ="<form action='http://users.ruyicai.com/login.jsp' id='topjump' method='post' target='_blank'></form>";
+		var str ="<form action='"+appAddr.users+"/login.jsp' id='topjump' method='post' target='_blank'></form>";
 		$("body").append(str);
 		$("#topjump").submit();
 		$("body").remove(str);
@@ -1827,7 +1827,7 @@ function RadioButton(n) {
 //调用支付宝登录方法
 function zfbLogin() {
 	$.ajax({
-		url: 'http://users.ruyicai.com/function/unitedLogin!alipayHandyLogin',
+		url: appAddr.users+'/function/unitedLogin!alipayHandyLogin',
 		type: "POST",
 		//数据发送方式
 		dataType: 'html',
@@ -1846,7 +1846,7 @@ function zfbLogin() {
 //调用QQ登录方法
 function qqUnitedLogin() {
 	$.ajax({
-		url: 'http://users.ruyicai.com/function/unitedLogin!qqUnitedHandlyLogin',
+		url: appAddr.users+'/function/unitedLogin!qqUnitedHandlyLogin',
 		type: "POST",
 		//数据发送方式
 		dataType: 'html',

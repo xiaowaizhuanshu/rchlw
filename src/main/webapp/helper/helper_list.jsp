@@ -52,7 +52,7 @@
         		</div>
       		</div>
     		<div class="bzzxlyfkpic" style="margin-top:10px; margin-bottom:10px;">
-        		<a href="http://www.ruyicai.com/rchlw/function/rules/customMessage.jsp"><img src="${ctx}/function/images/helper/bzzxlyfk.gif" width="160" height="60" border="0" /></a>
+        		<a href="/rchlw/function/rules/customMessage.jsp"><img src="${ctx}/function/images/helper/bzzxlyfk.gif" width="160" height="60" border="0" /></a>
       		</div>
      	</div>
       	<!--左侧结束-->

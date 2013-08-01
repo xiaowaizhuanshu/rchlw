@@ -61,11 +61,11 @@
 				<%-- <tangs:ryc_newslist web_id="%{#parameters.website_Properties_id[0]}" value="3" istopNews="1" categoryCn="轮换广告" num="5" >
 		    	<li><a href="${content}" target="_blank"><img src="${picName}" width="450px" height="159px" /></a></li>
 				</tangs:ryc_newslist> --%>
-				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
-				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
-				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
-				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
-				<li><a href="http://www.ruyicai.com/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
+				<li><a href="/rchlw/function/activity/activity20130701.html" target="_blank"><img src="/rchlw/upload/20130715/1372576002485.jpg" width="450px" height="159px"></a></li>
 			</ul>
 			<div class="thumbs">
 				<a class="1 b1 thumbActive"><span class="HomePageBGBox s1">&nbsp;</span></a> 
@@ -178,7 +178,7 @@
 			            <img src="<%=request.getContextPath() %>/function/images/indexandroid_normal.gif" width="118" height="29" /></a>
 			            </p><p style="margin-top:6px"><a href="/downLoad/ruyicai_iPhone_3.8.1_793_web_ruyicai.ipa"><img src="<%=request.getContextPath() %>/function/images/indexios_normal.gif" width="118" height="29" /></a></p>
 					    <p style="margin-top:6px"><a href="/downLoad/ruyicai_wp8_1.0_969.xap"><img src="<%=request.getContextPath() %>/function/images/windows-img.jpg" width="118" height="35"></a></p>
-						<p style="line-height:40px">您还可以点击：<a href="http://wap.ruyicai.com" style="color:#0066cc; text-decoration:underline">wap.ruyicai.com</a>进行购彩
+						<p style="line-height:40px">您还可以点击：<a href="http://wap.boyacai.com" style="color:#0066cc; text-decoration:underline">wap.boyacai.com</a>进行购彩
 						</p>    
                 	</div>
                 </div>
@@ -186,10 +186,10 @@
 			<div class="PannelBody ProcessShow">
 				<img src="<%=request.getContextPath() %>/function/images/ProcessShow.gif" usemap="#ProcessShow" />
 				<map name="ProcessShow" id="ProcessShow">
-					<area shape="rect" coords="0,0,40,40" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/zhucedenglu/denglu/2012/0328/13.html?id=8" title="快速注册"  target="_blank" />
-				<area shape="rect" coords="70,0,110,40" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/chongzhi/?fid=5&id=6" title="安全充值" target="_blank" />
-					<area shape="rect" coords="140,0,180,40" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/66.html?id=17" title="便捷投注"  target="_blank" />
-					<area shape="rect" coords="210,0,250,40" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/chongzhi/2012/0331/110.html?id=6" title="安全提款"  target="_blank" />
+					<area shape="rect" coords="0,0,40,40" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/zhucedenglu/denglu/2012/0328/13.html?id=8" title="快速注册"  target="_blank" />
+				<area shape="rect" coords="70,0,110,40" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/chongzhi/?fid=5&id=6" title="安全充值" target="_blank" />
+					<area shape="rect" coords="140,0,180,40" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/66.html?id=17" title="便捷投注"  target="_blank" />
+					<area shape="rect" coords="210,0,250,40" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/chongzhi/2012/0331/110.html?id=6" title="安全提款"  target="_blank" />
 				</map>
 			</div>
 		</div>

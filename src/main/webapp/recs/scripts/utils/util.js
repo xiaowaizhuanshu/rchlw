@@ -1013,7 +1013,7 @@ function isLoginReHtmlInParameters(lotNo,startDate,stopDate,order,i,divId){
 		   if(divId==null){
 				divId = "right_text";
 			}
-			$("#"+divId).html("<div class='My_account_noLogin'><p>"+decodeURI(EncodeUtf8("您尚未登录，请您先"))+"<a href='javaScript:loginRequrl();' title='"+decodeURI(EncodeUtf8("登录"))+"'>"+decodeURI(EncodeUtf8("登录"))+"</a></p><p>"+decodeURI(EncodeUtf8("如还未注册，请您先"))+"<a href='"+users.boyacai.appAddress+"/register/register_new.jsp' title='"+decodeURI(EncodeUtf8("注册"))+"'>"+decodeURI(EncodeUtf8("注册"))+"</a></p></div>");
+			$("#"+divId).html("<div class='My_account_noLogin'><p>"+decodeURI(EncodeUtf8("您尚未登录，请您先"))+"<a href='javaScript:loginRequrl();' title='"+decodeURI(EncodeUtf8("登录"))+"'>"+decodeURI(EncodeUtf8("登录"))+"</a></p><p>"+decodeURI(EncodeUtf8("如还未注册，请您先"))+"<a href='"+appAddr.users+"/register/register_new.jsp' title='"+decodeURI(EncodeUtf8("注册"))+"'>"+decodeURI(EncodeUtf8("注册"))+"</a></p></div>");
 		}
 }
 
@@ -1347,7 +1347,7 @@ function addCookie(){
 function setHomepage(){
 	if (document.all){
 		document.body.style.behavior='url(#default#homepage)';
-		document.body.setHomePage('http://www.ruyicai.com');
+		document.body.setHomePage(appAddr.rchlw);
 		}
 	else if (window.sidebar){
 		if(window.netscape){
@@ -1358,8 +1358,8 @@ function setHomepage(){
 			 }
 		   } 
 		    var prefs = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefBranch);
-			if(confirm(decodeURI(EncodeUtf8("是否要将"))+"'http://www.ruyicai.com'"+decodeURI(EncodeUtf8("设置为首页")))){
-		    prefs.setCharPref('browser.startup.homepage','http://www.ruyicai.com');
+			if(confirm(decodeURI(EncodeUtf8("是否要将"))+"'"+appAddr.rchlw+"'"+decodeURI(EncodeUtf8("设置为首页")))){
+		    prefs.setCharPref('browser.startup.homepage',appAddr.rchlw);
 			}
 		 }
 	}
@@ -1683,7 +1683,7 @@ function ajaxOutToLogin(){
 	    success: function(msg){
 			var reqUrl = window.location.href;
 			var url = encodeURIComponent(reqUrl);
-			window.location.href=users.boyacai.appAddress+"/login.jsp?reqUrl="+url;
+			window.location.href=appAddr.users+"/login.jsp?reqUrl="+url;
 		}
 
 	});
@@ -3060,7 +3060,7 @@ function addWrongImages(valid,id,textid,character){
 //调用支付宝登录方法
 function zfbLogin(){
 	$.ajax({
-		url:users.boyacai.appAddress+'/function/unitedLogin!alipayHandyLogin',
+		url:appAddr.users+'/function/unitedLogin!alipayHandyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},
@@ -3076,7 +3076,7 @@ function zfbLogin(){
 //调用QQ登录方法
 function qqUnitedLogin(){
 	$.ajax({
-		url:users.boyacai.appAddress+'/function/unitedLogin!qqUnitedHandlyLogin',
+		url:appAddr.users+'/function/unitedLogin!qqUnitedHandlyLogin',
 		type:"POST",//数据发送方式
 		dataType:'html',
 		error:function(){alert("error");},
@@ -3260,7 +3260,7 @@ function allYearsTouzhu(){
 		$("#final_money").html(0);
 		//弹出层
 		loginShow();
-		var str ="<form action='"+users.boyacai.appAddress+"/login.jsp' id='topjump' method='post' target='_blank'></form>";
+		var str ="<form action='"+appAddr.users+"/login.jsp' id='topjump' method='post' target='_blank'></form>";
 		$("body").append(str);
 		$("#topjump").submit();
 		$("body").remove(str);

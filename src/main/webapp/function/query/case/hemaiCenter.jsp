@@ -52,9 +52,9 @@
 </div>
 <div class="TogetherBuyPannel TogetherCeleb">
 	<div class="TogetherBuyPannelHead"><h3>合买推荐</h3><font>
-	<a target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/56.html?id=17">战绩规则</a>
-	<a href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/59.html?id=17" target="_blank">
-	合买方案进度满90%以上网站保底</a><a href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/60.html?fid=5&id=17" target="_blank">置顶规则</a></font></div>
+	<a target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/56.html?id=17">战绩规则</a>
+	<a href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/59.html?id=17" target="_blank">
+	合买方案进度满90%以上网站保底</a><a href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/60.html?fid=5&id=17" target="_blank">置顶规则</a></font></div>
 	<div class="TogetherBuyPannelBody">
 	<input class="SearchText" id="search" name="search" type="hidden" value="" /> 
 	<input id="displayState" name="displayState" type="hidden" value="1" />

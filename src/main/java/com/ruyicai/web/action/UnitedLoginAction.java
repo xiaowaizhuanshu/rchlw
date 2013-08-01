@@ -50,7 +50,7 @@ public class UnitedLoginAction extends BaseAction {
 		String cookieName = "userInfoId";
 		Cookie userCookie = new Cookie(cookieName, sessionId);
 		userCookie.setPath("/");
-		userCookie.setDomain(".ruyicai.com");
+		userCookie.setDomain(".boyacai.com");
 		userCookie.setMaxAge(365*24*60*60);
 		response.addCookie(userCookie);
 	}

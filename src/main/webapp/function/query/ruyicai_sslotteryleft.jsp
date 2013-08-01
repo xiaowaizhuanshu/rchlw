@@ -65,7 +65,7 @@ span.SmallBlueBall{ background:url(<%=request.getContextPath() %>/function/image
 				</tr>
 				<tr>
 					<td colspan="2">
-					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110614180531_518.html?id=518&code1=135&code="   target="_blank" title="玩法">玩法>></a><a href="http://tbzs.ruyicai.com/cjwssq/index.php"  target="_blank" title="图表">图表>></a>
+					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110614180531_518.html?id=518&code1=135&code="   target="_blank" title="玩法">玩法>></a><a href="http://zst.boyacai.com/cjwssq/index.php"  target="_blank" title="图表">图表>></a>
 					<a href="/fucaituijian/fucaituijian_shuangseqiu_1.html"  target="_blank" title="推荐">推荐>></a><a href="/<%=request.getContextPath() %>/lottery/ruyicai_channel_ssq.jsp"  target="_blank" title="立即投注">立即投注>></a>
 					</td>
 				</tr>
@@ -85,7 +85,7 @@ span.SmallBlueBall{ background:url(<%=request.getContextPath() %>/function/image
 				</tr>
 				<tr>
 					<td colspan="2">
-					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133107_597.html?id=597&code1=135&code=" target="_blank" title="玩法">玩法>></a><a href="http://tbzs.ruyicai.com/cjw3d/index.php" target="_blank" title="图表">图表>></a>
+					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133107_597.html?id=597&code1=135&code=" target="_blank" title="玩法">玩法>></a><a href="http://zst.boyacai.com/cjw3d/index.php" target="_blank" title="图表">图表>></a>
 					<a href="/fucaituijian/fucaituijian_fucai3D_1.html" target="_blank" title="推荐">推荐>></a><a href="<%=request.getContextPath() %>/lottery/ruyicai_channel_3D.jsp" target="_blank" title="立即投注">立即投注>></a>
 					</td>
 				</tr>
@@ -108,7 +108,7 @@ span.SmallBlueBall{ background:url(<%=request.getContextPath() %>/function/image
 				</tr>
 				<tr>
 					<td colspan="2">
-					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133010_596.html?id=596&code1=135&code=" target="_blank" title="玩法">玩法>></a><a href="http://tbzs.ruyicai.com/cjwdlt/index.php" target="_blank" title="图表">图表>></a>
+					<a href="/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133010_596.html?id=596&code1=135&code=" target="_blank" title="玩法">玩法>></a><a href="http://zst.boyacai.com/cjwdlt/index.php" target="_blank" title="图表">图表>></a>
 					<a href="/ticaituijian/ticaituijian_daletou_1.html" target="_blank" title="推荐">推荐>></a><a href="<%=request.getContextPath() %>/lottery/ruyicai_channel_dlt.jsp" target="_blank" title="立即投注">立即投注>></a>
 					</td>
 				</tr>

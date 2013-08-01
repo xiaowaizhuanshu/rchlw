@@ -145,15 +145,15 @@ function jumpPage(pageNo) {
 					</div>
 				</div>
 				<div class="jinri_kj1 ChannelBuyCurrent">
-					<div class="jinri_top1"><span class="jinri_zi">图表走势</span><span class="web_more"><a href="http://tbzs.ruyicai.com">更多&gt;&gt;</a></span></div>
+					<div class="jinri_top1"><span class="jinri_zi">图表走势</span><span class="web_more"><a href="http://zst.boyacai.com">更多&gt;&gt;</a></span></div>
 					<div class="jinri_con">
 						<ul style="overflow:hidden; padding:0 0 0 10px;">
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/ssqzonghe.php">基本走势图</a></li>
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/hong_zonghe.php">红球指标图</a></li>
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/ssqzhonghedaxiaozhiou.php">大小奇偶质合</a></li>
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/ssqlanqiuzonghe.php">蓝球指标图</a></li>
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/ssqweishudingwei.php">红球尾数定位</a></li>
-							<li><a target="_blank" href="http://tbzs.ruyicai.com/cjwssq/view/ssqhezhi.php?">红球和值图</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/ssqzonghe.php">基本走势图</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/hong_zonghe.php">红球指标图</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/ssqzhonghedaxiaozhiou.php">大小奇偶质合</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/ssqlanqiuzonghe.php">蓝球指标图</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/ssqweishudingwei.php">红球尾数定位</a></li>
+							<li><a target="_blank" href="http://zst.boyacai.com/cjwssq/view/ssqhezhi.php?">红球和值图</a></li>
 						</ul>
 					</div>
 				</div>

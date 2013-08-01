@@ -211,15 +211,15 @@
 			</div>
 		</div>
 		<div class="zixun_gonggong1">
-			<div class="zixun_ggtop"><span class="zixun_zi">帮助中心</span><span class="zixun_kuozhan"><a href="http://www.ruyicai.com/cms/index.html" title="更多" target="_blank">更多&gt;&gt;</a></span></div>
+			<div class="zixun_ggtop"><span class="zixun_zi">帮助中心</span><span class="zixun_kuozhan"><a href="/rchlw/help/helper!list.action" title="更多" target="_blank">更多&gt;&gt;</a></span></div>
 			<div class="zixun_list2">
 			<ul>
-                 <li> <span class="index_landian"></span><a target="_blank" title="合买大厅排序、置顶规则" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/60.html?fid=5&id=17">合买大厅排序、置顶规则？</a></li>
-                 <li> <span class="index_landian"></span><a target="_blank" title="发起合买和保底规则" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/59.html?fid=5&id=17">发起合买和保底规则？</a></li>
-                 <li> <span class="index_landian"></span><a target="_blank" title="如何修改已经绑定的邮箱" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/53.html?fid=5&id=12">如何修改已经绑定的邮箱？</a></li>
-                 <li> <span class="index_landian"></span><a target="_blank" title="充值未及时到帐怎么办" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/chongzhi/2012/0329/20.html?id=6">充值未及时到帐怎么办?</a></li>
-                 <li> <span class="index_landian"></span><a target="_blank" title="博雅彩网站支持哪些充值方式" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/chongzhi/2012/0329/19.html?id=6">博雅彩网站支持哪些充值方式?</a></li>
-                 <li> <span class="index_landian"></span><a target="_blank" title="登陆看不到验证码的图片" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/zhucedenglu/denglu/2012/0329/17.html?id=8">登陆看不到验证码的图片？</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="合买大厅排序、置顶规则" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/60.html?fid=5&id=17">合买大厅排序、置顶规则？</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="发起合买和保底规则" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/59.html?fid=5&id=17">发起合买和保底规则？</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="如何修改已经绑定的邮箱" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wodezhanghu/2012/0330/53.html?fid=5&id=12">如何修改已经绑定的邮箱？</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="充值未及时到帐怎么办" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/chongzhi/2012/0329/20.html?id=6">充值未及时到帐怎么办?</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="博雅彩网站支持哪些充值方式" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/chongzhi/2012/0329/19.html?id=6">博雅彩网站支持哪些充值方式?</a></li>
+                 <li> <span class="index_landian"></span><a target="_blank" title="登陆看不到验证码的图片" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/zhucedenglu/denglu/2012/0329/17.html?id=8">登陆看不到验证码的图片？</a></li>
 			</ul>
 			</div>
 		</div>
@@ -253,32 +253,32 @@
 		<!--  test  end  -->
 		<div class="zixun_zoushi">
 			<div class="zixun_zoushitop">
-			<span class="zixun_zoushuzi">走势图</span><span class="zixun_zoushugd"><a href="http://tbzs.ruyicai.com/" title="更多">更多&gt;&gt;</a></span>
+			<span class="zixun_zoushuzi">走势图</span><span class="zixun_zoushugd"><a href="http://zst.boyacai.com/" title="更多">更多&gt;&gt;</a></span>
 			</div>
 			<div class="zixun_zoushicon">
 				<ul class="zixun_czzs">
-					<li><a class="z_ssqlogo"  href="http://tbzs.ruyicai.com/cjwssq/view/ssqzonghe.php" target="_blank"></a></li>
-					<li><a class="z_3Dlogo"  href="http://tbzs.ruyicai.com/cjw3d/view/3d_danxuan.php" target="_blank" ></a></li>
-					<li><a class="z_dltlogo"  href="http://tbzs.ruyicai.com/cjwdlt/view/dltyqsfq.php" target="_blank"></a></li>
-					<li><a class="z_plslogo"  href="http://tbzs.ruyicai.com/cjwpl3/view/pl3_zxylzzhw.php?typeId=zuxuan" target="_blank"></a></li>
+					<li><a class="z_ssqlogo"  href="http://zst.boyacai.com/cjwssq/view/ssqzonghe.php" target="_blank"></a></li>
+					<li><a class="z_3Dlogo"  href="http://zst.boyacai.com/cjw3d/view/3d_danxuan.php" target="_blank" ></a></li>
+					<li><a class="z_dltlogo"  href="http://zst.boyacai.com/cjwdlt/view/dltyqsfq.php" target="_blank"></a></li>
+					<li><a class="z_plslogo"  href="http://zst.boyacai.com/cjwpl3/view/pl3_zxylzzhw.php?typeId=zuxuan" target="_blank"></a></li>
 				</ul>
 				<ul class="zixun_czzs_zi">
-					<li><a href="http://tbzs.ruyicai.com/cjwssq/view/ssqzonghe.php" title="双色球" target="_blank">双色球</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjw3d/view/3d_danxuan.php" title="福彩3D" target="_blank">福彩3D</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjwdlt/view/dltyqsfq.php" title="大乐透" target="_blank">大乐透</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjwpl3/view/pl3_zxylzzhw.php?typeId=zuxuan" title="排列三" target="_blank">排列三</a></li>
+					<li><a href="http://zst.boyacai.com/cjwssq/view/ssqzonghe.php" title="双色球" target="_blank">双色球</a></li>
+					<li><a href="http://zst.boyacai.com/cjw3d/view/3d_danxuan.php" title="福彩3D" target="_blank">福彩3D</a></li>
+					<li><a href="http://zst.boyacai.com/cjwdlt/view/dltyqsfq.php" title="大乐透" target="_blank">大乐透</a></li>
+					<li><a href="http://zst.boyacai.com/cjwpl3/view/pl3_zxylzzhw.php?typeId=zuxuan" title="排列三" target="_blank">排列三</a></li>
 				</ul>
 				<ul class="zixun_czzs1">
-					<li><a class="z_plwlogo" href="http://tbzs.ruyicai.com/cjwpl5/view/pl5_zst.php" target="_blank"></a></li>
-					<li><a class="z_qlclogo" href="http://tbzs.ruyicai.com/cjwqlc/view/qlcsfq.php" target="_blank"></a></li>
-					<li><a class="z_qxclogo" href="http://tbzs.ruyicai.com/cjw7xc/view/7xc_haoma.php" target="_blank"></a></li>
-					<li><a class="z_syxwlogo" href="http://tbzs.ruyicai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" target="_blank"></a></li>
+					<li><a class="z_plwlogo" href="http://zst.boyacai.com/cjwpl5/view/pl5_zst.php" target="_blank"></a></li>
+					<li><a class="z_qlclogo" href="http://zst.boyacai.com/cjwqlc/view/qlcsfq.php" target="_blank"></a></li>
+					<li><a class="z_qxclogo" href="http://zst.boyacai.com/cjw7xc/view/7xc_haoma.php" target="_blank"></a></li>
+					<li><a class="z_syxwlogo" href="http://zst.boyacai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" target="_blank"></a></li>
 				</ul>
 				<ul class="zixun_czzs_zi">
-					<li><a href="http://tbzs.ruyicai.com/cjwpl5/view/pl5_zst.php" title="排列五" target="_blank">排列五</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjwqlc/view/qlcsfq.php" title="七乐彩" target="_blank">七乐彩</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjw7xc/view/7xc_haoma.php" title="七星彩" target="_blank">七星彩</a></li>
-					<li><a href="http://tbzs.ruyicai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" title="江西11选5" target="_blank">江西11选5</a></li>
+					<li><a href="http://zst.boyacai.com/cjwpl5/view/pl5_zst.php" title="排列五" target="_blank">排列五</a></li>
+					<li><a href="http://zst.boyacai.com/cjwqlc/view/qlcsfq.php" title="七乐彩" target="_blank">七乐彩</a></li>
+					<li><a href="http://zst.boyacai.com/cjw7xc/view/7xc_haoma.php" title="七星彩" target="_blank">七星彩</a></li>
+					<li><a href="http://zst.boyacai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" title="江西11选5" target="_blank">江西11选5</a></li>
 				</ul>
 		  </div>
 		</div>

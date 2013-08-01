@@ -90,8 +90,8 @@ function checkMusic(){
 					<dt class="light selected" ControlTarget="BuyChoice">选号投注</dt>
 					<dt class="light"><a href="/rchlw/function/rules/user.jsp?key=0&view=ChildMenu2&style=menu2">我的方案</a></dt>
 					<dd>
-						<a onmouseover="PopupOn($(this));" onmouseout="PopupOff($(this));" Offset="br,0,0" BoxStyle="width:200px;line-height:20px;" Content="<tangs:ryc_newslist categoryCn="玩法简介" channelCn="江西11选5" value="3" web_id="%{#parameters.website_Properties_id[0]}" num="1"><h3 style='line-height:26px;'>${title }</h3>${content }</tangs:ryc_newslist>" target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/wanfajieshao/2012/0329/34.html?fid=36&id=34' >玩法介绍</a>
-						<a style="border:0px;" href="http://tbzs.ruyicai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" target="_blank">走势图表</a>
+						<a onmouseover="PopupOn($(this));" onmouseout="PopupOff($(this));" Offset="br,0,0" BoxStyle="width:200px;line-height:20px;" Content="<tangs:ryc_newslist categoryCn="玩法简介" channelCn="江西11选5" value="3" web_id="%{#parameters.website_Properties_id[0]}" num="1"><h3 style='line-height:26px;'>${title }</h3>${content }</tangs:ryc_newslist>" target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wanfajieshao/2012/0329/34.html?fid=36&id=34' >玩法介绍</a>
+						<a style="border:0px;" href="http://zst.boyacai.com/cjw11x5_qs/view/11x5_danxuan.php?lotteryType=11x5" target="_blank">走势图表</a>
 					</dd>
 				</dl>
 			</div>

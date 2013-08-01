@@ -21,7 +21,7 @@
 <br />
 <ul><li>由于3D玩法采用固定赔率设奖，3D彩票销售中，若大多数彩民都集中选同一注号码，国家彩票发行机构和彩民就会面临巨大风险。</li><li>为了把这种风险控制在一定范围内，3D游戏规则规定3D实行限量销售。遇部分号码销售注数超过安全线时，彩票销售系统就会禁止销售该号码，这就是限号。</li></ul>
 <br /><br />
-<p style=" text-align:center"> &copy;2011&nbsp;www.ruyicai.com 使用前必读</p>
+<p style=" text-align:center"> &copy;2011&nbsp;www.boyacai.com 使用前必读</p>
 </div></div>
 <jsp:include page="/function/common/ruyicai_include_common_footer_litter.jsp"></jsp:include>
 </div>

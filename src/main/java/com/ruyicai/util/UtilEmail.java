@@ -29,7 +29,7 @@ public class UtilEmail {
 	private static final String SSL_FACTORY = "javax.net.ssl.SSLSocketFactory";
 
 	public static void main(String args[]) throws Exception {
-		String[] sendTo = { "zhaokailong@ruyicai.com" };
+		String[] sendTo = { "zhaokailong@boyacai.com" };
 		utilSend(sendTo, "博雅彩彩票提示您",
 				"<html><body><a target='_blank' href='http://www.baidu.com'>go 百度</a></body></html>");
 	}

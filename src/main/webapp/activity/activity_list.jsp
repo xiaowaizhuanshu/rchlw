@@ -41,7 +41,7 @@
 						</tr>
 						<tr>
 							<td><i>活动时间：${activityTime}</i></td>
-							<td class="specialActivities_position" width="18%">&nbsp;<!-- <a target="_blank" href="http://www.ruyicai.com/rchlw/function/activity/activity20130401.html"> <input class="light specialActivities_btn" value="立即参与" type="button"></a> --></td>
+							<td class="specialActivities_position" width="18%">&nbsp;<!-- <a target="_blank" href="/rchlw/function/activity/activity20130401.html"> <input class="light specialActivities_btn" value="立即参与" type="button"></a> --></td>
 						</tr>
 						<tr>
 							<td colspan="3">&nbsp;</td>

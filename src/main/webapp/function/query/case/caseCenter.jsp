@@ -69,7 +69,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110614180531_518.html?id=518&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjwssq/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjwssq/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/fucaituijian/fucaituijian_shuangseqiu_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -114,7 +114,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133107_597.html?id=597&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjw3d/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjw3d/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/fucaituijian/fucaituijian_fucai3D_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -159,7 +159,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133657_601.html?id=601&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjwqlc/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjwqlc/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/fucaituijian/fucaituijian_qilecai_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -204,7 +204,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133657_601.html?id=601&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjeexwc/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjeexwc/index.php" target="_blank">走势图表</a>
 							<!-- <a style="border:0px;" href="/fucaituijian/fucaituijian_qilecai_1.html" target="_blank" >专家推荐</a> -->
 						</dd>
 					</dl>
@@ -249,7 +249,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133010_596.html?id=596&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjwdlt/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjwdlt/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/ticaituijian/ticaituijian_daletou_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -294,7 +294,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133206_598.html?id=598&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjwpl3/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjwpl3/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/ticaituijian/ticaituijian_pailie3_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -339,7 +339,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133309_599.html?id=599&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjwpl5/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjwpl5/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/ticaituijian/ticaituijian_pailie5_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -384,7 +384,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a target="_blank" href='/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110615133351_600.html?id=600&code1=135&code='>玩法介绍</a>
-							<a href="http://tbzs.ruyicai.com/cjw7xc/index.php" target="_blank">走势图表</a>
+							<a href="http://zst.boyacai.com/cjw7xc/index.php" target="_blank">走势图表</a>
 							<a style="border:0px;" href="/ticaituijian/ticaituijian_qixingcai_1.html" target="_blank" >专家推荐</a>
 						</dd>
 					</dl>
@@ -517,7 +517,7 @@
 				<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 				<dd>
 					<a style="border:none;" target="_blank" 
-					href="http://test.ruyicai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627104001_723.html?id=723&code1=135&code=">
+					href="http://test.boyacai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627104001_723.html?id=723&code1=135&code=">
 					玩法介绍</a>
 				</dd>
 			</dl>
@@ -578,7 +578,7 @@
 				<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 				<dd>
 					<a style="border:none;" target="_blank" 
-					href="http://test.ruyicai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627100023_721.html?id=721&code1=135&code=">
+					href="http://test.boyacai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627100023_721.html?id=721&code1=135&code=">
 					玩法介绍</a>
 				</dd>
 			</dl>
@@ -638,7 +638,7 @@
 						<dt class="LaunchCase" onclick="faqiHemaiTiaozhuan('${lotno_p}')"><a class="light">发起合买&gt;&gt;</a></dt>
 						<dd>
 							<a style="border:none;" target="_blank" 
-							href="http://test.ruyicai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627104718_724.html?id=724&code1=135&code=">
+							href="http://test.boyacai.com/bangzhuzhongxin/wanfajieshao/guanfangwanfajieshao/20110627104718_724.html?id=724&code1=135&code=">
 							玩法介绍</a>
 						</dd>
 					</dl>

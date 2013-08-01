@@ -76,17 +76,17 @@
 		<a href="/rchlw/function/ryc_select_newkj!drawalotteryInfo?lotno=T01009" title="七星彩开奖">七星彩开奖</a>
 		</span>
 		
-		<h1><a href="http://tbzs.ruyicai.com/" title="数据图表">[数据图表]</a></h1>
-		<span><a href="http://tbzs.ruyicai.com/cjwssq/index.php" title="双色球走势图">双色球走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjw3d/index.php" title="福彩3D走势图">福彩3D走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjwqlc/index.php" title="七乐彩走势图">七乐彩走势图</a></span>
-		<span><a href="http://tbzs.ruyicai.com/cjwdlt/index.php" title="大乐透走势图">大乐透走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjwpl3/index.php" title="排列三走势图">排列三走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjwpl5/index.php" title="排列五走势图">排列五走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjw7xc/index.php" title="七星彩走势图">七星彩走势图</a></span>
-		<span><a href="http://tbzs.ruyicai.com/cjwssc/index.php?lotteryType=ssc" title="时时彩走势图">时时彩走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjw11x5/index.php?lotteryType=11x5" title="江西11选5走势图">江西11选5走势图</a>
-		<a href="http://tbzs.ruyicai.com/cjw11x5/index.php?lotteryType=11ydj" title="十一运夺金走势图">十一运夺金走势图</a></span>
+		<h1><a href="http://zst.boyacai.com/" title="数据图表">[数据图表]</a></h1>
+		<span><a href="http://zst.boyacai.com/cjwssq/index.php" title="双色球走势图">双色球走势图</a>
+		<a href="http://zst.boyacai.com/cjw3d/index.php" title="福彩3D走势图">福彩3D走势图</a>
+		<a href="http://zst.boyacai.com/cjwqlc/index.php" title="七乐彩走势图">七乐彩走势图</a></span>
+		<span><a href="http://zst.boyacai.com/cjwdlt/index.php" title="大乐透走势图">大乐透走势图</a>
+		<a href="http://zst.boyacai.com/cjwpl3/index.php" title="排列三走势图">排列三走势图</a>
+		<a href="http://zst.boyacai.com/cjwpl5/index.php" title="排列五走势图">排列五走势图</a>
+		<a href="http://zst.boyacai.com/cjw7xc/index.php" title="七星彩走势图">七星彩走势图</a></span>
+		<span><a href="http://zst.boyacai.com/cjwssc/index.php?lotteryType=ssc" title="时时彩走势图">时时彩走势图</a>
+		<a href="http://zst.boyacai.com/cjw11x5/index.php?lotteryType=11x5" title="江西11选5走势图">江西11选5走势图</a>
+		<a href="http://zst.boyacai.com/cjw11x5/index.php?lotteryType=11ydj" title="十一运夺金走势图">十一运夺金走势图</a></span>
 		
 		<h1><a href="/rchlw/news/category_xinwenzixun.jsp" title="热点资讯">[热点资讯]</a></h1>
 		<span><a href="/fucaituijian/fucaituijian_shuangseqiu_1.html" title="双色球资讯">双色球资讯</a>

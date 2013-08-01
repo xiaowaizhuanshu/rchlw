@@ -18,7 +18,7 @@
 	
 		<div class="top2_public2" style="margin-left:5px;">
 			<span>
-				<a href="http://www.ruyicai.com/cms/index.html" title="帮助中心" style="border:none;padding-right:0px;"
+				<a href="/rchlw/help/helper!list.action" title="帮助中心" style="border:none;padding-right:0px;"
 				target="_blank">
 					帮助中心
 				</a>

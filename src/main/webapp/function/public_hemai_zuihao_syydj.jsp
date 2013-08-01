@@ -10,8 +10,8 @@
 				<dt class="light selected"  ControlTarget="FollowNubTab1" id="daiGou" onclick="setGoumaifangshi('代购');setdaigouOrzhuihao('daigou');"><span>&nbsp;</span>代购</dt>
 				<dt class="light" ControlTarget="FollowNubTab3" id="zuiHao" onclick="setGoumaifangshi('追号');setdaigouOrzhuihaoByGaopin('zhuihao');" ><span>&nbsp;</span>收益率追号</dt>
 				<dt class="light" ControlTarget="FollowNubTab4" id="ziyouZhuihao" onclick="setGoumaifangshi('自由追号');setdaigouOrzhuihao('ziyouZhuihao');" ><span>&nbsp;</span>自由追号</dt>
-				<dd class="TabEm" id="SASA"><a  target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
-				<dd class="TabEm" id="ZYZH" style="display: none"><a  target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/61.html?id=17">连续多期购买同一个（组）号码</a></dd>
+				<dd class="TabEm" id="SASA"><a  target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
+				<dd class="TabEm" id="ZYZH" style="display: none"><a  target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/61.html?id=17">连续多期购买同一个（组）号码</a></dd>
 			</dl>
 			
 			<div class="FollowNubTabContent">

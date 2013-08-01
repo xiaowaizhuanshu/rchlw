@@ -90,9 +90,9 @@ function checkMusic(){
 		BoxStyle="width:200px;line-height:20px;"
 		Content="<tangs:ryc_newslist categoryCn="玩法简介" channelCn="十一运夺金" value="3" web_id="%{#parameters.website_Properties_id[0]}" num="1"><h3 style='line-height:26px;'>${title }</h3>${content }</tangs:ryc_newslist>"
 		target="_blank"
-		href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/wanfajieshao/2012/0329/33.html?fid=36&id=33'>玩法介绍</a>
+		href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/wanfajieshao/2012/0329/33.html?fid=36&id=33'>玩法介绍</a>
 	<a style="border: 0px;"
-		href="http://tbzs.ruyicai.com/cjw11x5/index.php?lotteryType=11ydj"
+		href="http://zst.boyacai.com/cjw11x5/index.php?lotteryType=11ydj"
 		target="_blank">走势图表</a></dd>
 </dl>
 </div>

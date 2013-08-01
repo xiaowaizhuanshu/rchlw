@@ -41,7 +41,7 @@ function HoverOut(n) {n.removeClass("over");}
 			<li class="ButtonCaseCenter relative"><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">合买中心</a>
 			<!-- <span class="HomePageBGBox" style="position:absolute; top:3px; left:80px; z-index:110;">合买中心 返奖 </span>--></li>
 			<li class="ButtonNumberShow"><a href="/rchlw/function/ryc_select_newkj!drawalottery">彩票开奖</a></li>
-			<li class="ButtonDataChart" ><a href="http://tbzs.ruyicai.com">彩票走势图</a></li>
+			<li class="ButtonDataChart" ><a href="http://zst.boyacai.com">彩票走势图</a></li>
 			<li class="ButtonHotInfo"   ><a href="/rchlw/news/category_xinwenzixun.jsp">彩票资讯</a></li>
 			<li class="Buttonmessage"><a href="/rchlw/news/category_zjdx.jsp">专家短信</a></li>
 		</ul>

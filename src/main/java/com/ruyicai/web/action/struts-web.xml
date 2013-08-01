@@ -96,7 +96,7 @@
 	<package name="function" namespace="/function" extends="struts-default">
   <!-- struts2.0的全局跳转    -->
 		<global-results>
-			<result name="login_error" type="redirect">http://users.ruyicai.com/login.jsp</result>
+			<result name="login_error" type="redirect">http://user.boyacai.com/login.jsp</result>
 			<result name="error">/backResult/error.jsp</result> 
 			<result name="formError">/backResult/formError.jsp</result> 
 		</global-results>

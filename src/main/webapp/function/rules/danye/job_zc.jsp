@@ -74,7 +74,7 @@
 	<div class="main_right">
 		<h1>内容编辑类</h1>
 		<div class="job_contain">
-			<p><span><a href="mailto:shangfei@ruyicai.com">立即申请</a></span><strong>网站编辑&nbsp;&nbsp;招聘人数：2人</strong></p>
+			<p><span><a href="mailto:shangfei@boyacai.com">立即申请</a></span><strong>网站编辑&nbsp;&nbsp;招聘人数：2人</strong></p>
 			<div>岗位职责：</div>
 			<ul>
 				<li>					1、负责网站日常资讯的筛选、加工、完善、发布工作；&nbsp;<br />

@@ -6,9 +6,9 @@
 				<dt class="light selected"  ControlTarget="FollowNubTab1" id="daiGou" onclick="setGoumaifangshi('代购');tabHemaiAndDaigou('daigou');"><span>&nbsp;</span>代购</dt>
 				<dt class="light"  id="controlHemai" ControlTarget="FollowNubTab2"  onclick="setGoumaifangshi('合买');tabHemaiAndDaigou('hemai');"><span>&nbsp;</span>合买</dt>
 				<dt class="light" ControlTarget="FollowNubTab3" id="zuiHao" onclick="setGoumaifangshi('追号');tabHemaiAndDaigou('zhuihao');" ><span>&nbsp;</span>追号</dt>
-				<dd class="TabEm" id="SASA"><a  target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
-				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
-				<dd class="TabEm" id="ZhuiHao" style="display: none"><a  target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/61.html?id=17'>连续多期购买同一个（组）号码</a></dd>
+				<dd class="TabEm" id="SASA"><a  target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
+				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
+				<dd class="TabEm" id="ZhuiHao" style="display: none"><a  target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2012/0331/61.html?id=17'>连续多期购买同一个（组）号码</a></dd>
 			</dl>
 			<div class="FollowNubTabContent">
 				<div class="FollowNubTab1 none"></div>

@@ -20,7 +20,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-42028416-1', 'ruyicai.com');
+  ga('create', 'UA-42028416-1', 'boyacai.com');
   ga('send', 'pageview');
 
 </script>

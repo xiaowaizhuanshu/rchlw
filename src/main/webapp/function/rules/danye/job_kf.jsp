@@ -73,7 +73,7 @@
 	<div class="main_right">
 		<h1>客户服务类</h1>
 		<div class="job_contain">
-			<p><span><a href="mailto:liruobing@ruyicai.com">立即申请</a></span><strong>客服&nbsp;&nbsp;招聘人数：若干</strong></p>
+			<p><span><a href="mailto:liruobing@boyacai.com">立即申请</a></span><strong>客服&nbsp;&nbsp;招聘人数：若干</strong></p>
 			<div>岗位职责：</div>
 			<ul>
 				<li>

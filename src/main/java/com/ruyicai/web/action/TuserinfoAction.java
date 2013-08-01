@@ -20,6 +20,7 @@ import net.sf.json.JSONObject;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 
+import com.boyacai.common.util.AppAddr;
 import com.jrt.betcodeResolve.util.CodeUtil;
 import com.jrt.betcodeResolve.util.Constant;
 import com.jrt.betcodeResolve.util.SSCConstant;
@@ -1739,7 +1740,7 @@ public class TuserinfoAction extends BaseAction {
 			paras.put("plat", "web");
 			paras.put("method", "post");
 			paras.put("goodsid", goodsid);
-			paras.put("returl", "http://www.ruyicai.com");
+			paras.put("returl", AppAddr.getRchlwPath());
 
 			//调用后台ChargeCenter项目执行的充值umpayCharge!chargeSplit?jsonString={
 			logger.info("联动优势url:" + ResourceBundleUtil.MSBANKURL + "/umpayCharge!chargeUnify2?jsonString=" + paras);

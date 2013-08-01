@@ -59,7 +59,7 @@
 				您好，欢迎来到博雅彩！
 			</dt>
 			<dt>
-				<a href="http://users.ruyicai.com/login.jsp" target="ssq">登录</a>
+				<a href="<%=com.boyacai.common.util.AppAddr.getUsersPath() %>/login.jsp" target="ssq">登录</a>
 				|<a href="http://testuser.boyacai.com/register/register_new.jsp" target="ssq">免费注册</a>
 			</dt>
 			<!-- 登录前 账户密码输入框以及快速入口 end -->

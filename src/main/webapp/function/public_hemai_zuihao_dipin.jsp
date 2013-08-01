@@ -7,9 +7,9 @@
 				<dt class="light"  id="controlHemai" ControlTarget="FollowNubTab2"  onclick="setGoumaifangshi('合买');tabHemaiAndDaigou('hemai');checkzengcaiInit('1');"><span>&nbsp;</span>合买</dt>
 				<dt class="light" ControlTarget="FollowNubTab3" id="zuiHao" onclick="setGoumaifangshi('追号');tabHemaiAndDaigou('zhuihao');checkzengcaiInit('1');" ><span>&nbsp;</span>追号</dt>
 				<dt class="light" ControlTarget="FollowNubTab4" id="zengSong" onclick="setGoumaifangshi('赠送');tabHemaiAndDaigou('zengcai');checkzengcaiInit('2');" ><span>&nbsp;</span>赠送</dt>
-				<dd class="TabEm" id="SASA"><a  target="_blank" href="http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
-				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
-				<dd class="TabEm" id="ZengSong" style="display: none"><a  target="_blank" href='http://www.ruyicai.com/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/197.html'>由购买人赠送好友彩票</a></dd>
+				<dd class="TabEm" id="SASA"><a  target="_blank" href="<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/196.html">由购买人自行全额购买彩票</a></dd>
+				<dd class="TabEm" id="HeMaiTiShi" style="display: none"><a  target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/195.html'>由多人共同出资购买彩票</a></dd>
+				<dd class="TabEm" id="ZengSong" style="display: none"><a  target="_blank" href='<%=com.boyacai.common.util.AppAddr.getRchlwPath() %>/cms/a/bangzhuzhongxin/goumaicaipiao/2013/0313/197.html'>由购买人赠送好友彩票</a></dd>
 			</dl>
 			<div class="FollowNubTabContent">
 				<div class="FollowNubTab1 none"></div>

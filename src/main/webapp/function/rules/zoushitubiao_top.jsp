@@ -23,33 +23,33 @@
 		
 		<!-- 右侧快速链接 start -->
 		<div class="QuickLink">
-			<a href="http://www.ruyicai.com/rchlw/index.jsp" target="_blank">首页</a> |
-			<a href="http://www.ruyicai.com/rchlw/function/include/downLoadClient.jsp" target="_blank">手机购彩</a> |
-			<a href="http://www.ruyicai.com/rchlw/news/category_activityList.jsp?cpage=1&begin=0" target="_blank">活动专题</a> | 
-			<a href="http://www.ruyicai.com/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;" target="_blank">留言反馈</a>
+			<a href="/rchlw/index.jsp" target="_blank">首页</a> |
+			<a href="/rchlw/function/include/downLoadClient.jsp" target="_blank">手机购彩</a> |
+			<a href="/rchlw/news/category_activityList.jsp?cpage=1&begin=0" target="_blank">活动专题</a> | 
+			<a href="/rchlw/function/rules/customMessage.jsp" style="padding-right:0px;" target="_blank">留言反馈</a>
 		</div>
 		<!-- 右侧快速链接 end -->
 	</div>
 </div>
 <!-- 头部中 网站logo和客服链接 start -->
 <div class="HeadMiddleLogo">
-	<a class="HomeLogo" href="http://www.ruyicai.com/rchlw/index.jsp"target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeLogo.gif" width="138" height="64"  /></a>
-	<a class="HomeActivityBanner" href="http://www.ruyicai.com" target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeActivityBanner.jpg" /></a>
-	<a class="HomeServiceQQ" href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" target="ssq"><img src="http://www.ruyicai.com/rchlw/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
-	<a class="HomeServiceTel" href="javascript:;" target="_blank"><img src="http://www.ruyicai.com/rchlw/function/images/HomeServiceTel.gif" width="169" height="19" /></a>
+	<a class="HomeLogo" href="/rchlw/index.jsp"target="_blank"><img src="/rchlw/function/images/HomeLogo.gif" width="138" height="64"  /></a>
+	<a class="HomeActivityBanner" href="/rhclw" target="_blank"><img src="/rchlw/function/images/HomeActivityBanner.jpg" /></a>
+	<a class="HomeServiceQQ" href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" target="ssq"><img src="/rchlw/function/images/HomeServiceQQ.gif" width="83" height="25" /></a>
+	<a class="HomeServiceTel" href="javascript:;" target="_blank"><img src="/rchlw/function/images/HomeServiceTel.gif" width="169" height="19" /></a>
 </div>
 <!-- 头部中 网站logo和客服链接 end -->
 <!-- 头部下 采种选择与导航 start -->
 <div class="HeadBottomMenu">
 	<div class="box">
 		<ul>
-			<li class="ButtonHomePage"  ><a href="http://www.ruyicai.com/rchlw/index.jsp" target="_blank">首页</a></li>
-			<li class="ButtonChannelBuy"><a href="http://www.ruyicai.com/rchlw/function/goucaidating.jsp" target="_blank">购彩大厅</a></li>
-			<li class="ButtonCaseCenter relative"><a href="http://www.ruyicai.com/rchlw/function/hemaiCenter!getCaseHemaiCenter" target="_blank">合买中心</a><span class="HomePageBGBox" style="position:absolute; top:3px; left:80px; z-index:110;"><!-- 合买中心 返奖 --></span></li>
-			<li class="ButtonNumberShow"><a href="http://www.ruyicai.com/rchlw/function/ryc_select_newkj!drawalottery" target="_blank">彩票开奖</a></li>
-			<li class="ButtonDataChart selected" ><a href="http://tbzs.ruyicai.com" target="_blank">彩票走势图</a></li>
-			<li class="ButtonHotInfo"><a href="http://www.ruyicai.com/rchlw/news/category_xinwenzixun.jsp" target="_blank">彩票资讯</a></li>
-			<li class="Buttongoucai" ><a href="http://www.ruyicai.com/rchlw/function/include/downLoadClient.jsp" target="_blank">手机购彩</a></li>
+			<li class="ButtonHomePage"  ><a href="/rchlw/index.jsp" target="_blank">首页</a></li>
+			<li class="ButtonChannelBuy"><a href="/rchlw/function/goucaidating.jsp" target="_blank">购彩大厅</a></li>
+			<li class="ButtonCaseCenter relative"><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter" target="_blank">合买中心</a><span class="HomePageBGBox" style="position:absolute; top:3px; left:80px; z-index:110;"><!-- 合买中心 返奖 --></span></li>
+			<li class="ButtonNumberShow"><a href="/rchlw/function/ryc_select_newkj!drawalottery" target="_blank">彩票开奖</a></li>
+			<li class="ButtonDataChart selected" ><a href="http://zst.boyacai.com" target="_blank">彩票走势图</a></li>
+			<li class="ButtonHotInfo"><a href="/rchlw/news/category_xinwenzixun.jsp" target="_blank">彩票资讯</a></li>
+			<li class="Buttongoucai" ><a href="/rchlw/function/include/downLoadClient.jsp" target="_blank">手机购彩</a></li>
 		</ul>
 	</div>
 </div>
