@@ -119,10 +119,10 @@
 						"userno":"00000288",
 						"bankid":"gyj001",
 						"accesstype":"B",
-						"totalAmount":1000,
-						"amt":1000,
-						"card_no":"12121212121212121",
-						"card_pwd":"1212121212121",
+						"totalAmount":3000,
+						"amt":3000,
+						"card_no":"12455014284341343",
+						"card_pwd":"013631677261246115",
 						"subchannel":"00092493",
 						"paytype":"0203"
 					}
@@ -154,7 +154,7 @@
 	b.返回数据		
 		{"error_code":"500"}
 		
-八、话费充值
+八、银行卡电话充值
 	a.填写充值金额，提交请求
 		method	>> POST
 		URL		>> http://192.168.15.15:9999/ChargeCenter/dnacharge!dnaBankCharge?
@@ -174,3 +174,8 @@
 			"remark":"第三方：身份验证通过，等待异步交易结果",
 			"error_code":"00A3"
 		}	
+		
+		
+		
+		
+		
