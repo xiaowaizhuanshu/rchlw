@@ -1805,7 +1805,8 @@ function checkMoney(){
 		$.ajax({
 			url:'/rchlw/user/tuserinfoAction!testUserName?'+params,  //后台处理程序
 			type:'post',   
-			dataType:'json',   
+			dataType:'json',
+			async:false,
 			success:function(data){
 				if(data==true){
 					addRightImages("realnameImage");
