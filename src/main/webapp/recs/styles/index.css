@@ -676,6 +676,9 @@ a.jixuan{
 	padding-right:17px;
 	cursor:pointer;
 }
+.reco_epople label.on{
+	color:#f00;
+}
 .tab_list {
 	display:block;
 	border:1px solid #eaeaea;
@@ -1198,9 +1201,6 @@ td.bat_rangqiu.ling{
 .china_zhifubao{
 	background:url(../images/hezuo5.jpg) no-repeat 0 0;
 }
-
-
-
 
 
 

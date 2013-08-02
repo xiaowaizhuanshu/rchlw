@@ -9,23 +9,6 @@ function changeColorCheckbox(obj,day, stat, week) {
 	}else{
 		$(obj).attr("class","bat_dan");
 	}
-//	if ($("#checkbox_" + day + "_" + stat).text()=="包") {
-//		$("#checkbox_" + day + "_" + stat).text("清");	
-//		$("#ball3_" + day + "_" + stat).removeClass("result_3");
-//		$("#ball0_" + day + "_" + stat).removeClass("result_3");
-//		$("#ball1_" + day + "_" + stat).removeClass("result_3");
-//		$("#ball3_" + day + "_" + stat).addClass("result_1");
-//		$("#ball0_" + day + "_" + stat).addClass("result_1");
-//		$("#ball1_" + day + "_" + stat).addClass("result_1");
-//	} else {
-//		$("#checkbox_" + day + "_" + stat).text("包");
-//		$("#ball3_" + day + "_" + stat).removeClass("result_1");
-//		$("#ball0_" + day + "_" + stat).removeClass("result_1");
-//		$("#ball1_" + day + "_" + stat).removeClass("result_1");
-//		$("#ball3_" + day + "_" + stat).addClass("result_3");
-//		$("#ball0_" + day + "_" + stat).addClass("result_3");
-//		$("#ball1_" + day + "_" + stat).addClass("result_3");
-//	}
 //	checkZhuma();
 //	addMatchForRight($("#ball3_" + day + "_" + stat), day, stat, 3, week);
 //	addMatchForRight($("#ball1_" + day + "_" + stat), day, stat, 1, week);
@@ -212,7 +195,7 @@ function checkZhuma() {
 //	$("input[name='day']").each(function(i) {
 //		daArr[i] = $(this).val();
 //	});
-	var day = $("#day").val();
+	var day = $($(".day")[0]).val();//得到球赛时间
 
 	//循环遍历取得总的赛事的值
 	var count = 10;//首页精彩足球默认10条记录
@@ -523,9 +506,9 @@ function addMatchForRight(object, day, a, b,week) {
 		if ($("#choose_" + day + "_" + a).length < 1) {//如果选择记录之前，没有选择的记录
 									
 			if($("#erjiwanfa").val()=="单关投注"){
-				$("#choose_list").append("<tr id='choose_" + day + "_" + a + "'><td><dl class='CheckBox light Switch' onclick='CheckBox($(this));removeThisResult($(this)," + day + "," + a + ",3,1);'><dt></dt><dd id='no-" + day + "-" + a + "'></dd></dl></td><td id='homeTeam-" + day + "-" + a + "'></td><td><span id='CheckWin-" + day + "-" + a + "' class='CheckWin' onclick='removeThisResult($(this)," + day + "," + a + ",3,0);'>胜</span><span id='CheckTie-" + day + "-" + a + "' class='CheckTie' onclick='removeThisResult($(this)," + day + "," + a + ",1,0)'>平</span><span id='CheckLoss-" + day + "-" + a + "' class='CheckLoss' onclick='removeThisResult($(this)," + day + "," + a + ",0,0)'>负</span></td><td><input class='dingdan_checkbox' disabled='disabled' id='dingdan_" + day + "_" + a + "' type='checkbox' name='checkbox' value='checkbox' onclick='dingDanChoose($(this)," + day + "," + a + ")'></td></tr>");
+				$("#choose_list").append("<tr id='choose_" + day + "_" + a + "'><td><dl class='CheckBox light Switch' ><dt></dt><dd id='no-" + day + "-" + a + "'></dd></dl></td><td id='homeTeam-" + day + "-" + a + "'></td><td><span id='CheckWin-" + day + "-" + a + "' class='CheckWin' >胜</span><span id='CheckTie-" + day + "-" + a + "' class='CheckTie' >平</span><span id='CheckLoss-" + day + "-" + a + "' class='CheckLoss' >负</span></td><td><input class='dingdan_checkbox' disabled='disabled' id='dingdan_" + day + "_" + a + "' type='checkbox' name='checkbox' value='checkbox' onclick='dingDanChoose($(this)," + day + "," + a + ")'></td></tr>");
 			}else if($("#erjiwanfa").val()=="过关投注"){
-				$("#choose_list").append("<tr id='choose_" + day + "_" + a + "'><td><dl class='CheckBox light Switch' onclick='CheckBox($(this));removeThisResult($(this)," + day + "," + a + ",3,1);'><dt></dt><dd id='no-" + day + "-" + a + "'></dd></dl></td><td id='homeTeam-" + day + "-" + a + "'></td><td><span id='CheckWin-" + day + "-" + a + "' class='CheckWin' onclick='removeThisResult($(this)," + day + "," + a + ",3,0);'>胜</span><span id='CheckTie-" + day + "-" + a + "' class='CheckTie' onclick='removeThisResult($(this)," + day + "," + a + ",1,0)'>平</span><span id='CheckLoss-" + day + "-" + a + "' class='CheckLoss' onclick='removeThisResult($(this)," + day + "," + a + ",0,0)'>负</span></td><td><input class='dingdan_checkbox' id='dingdan_" + day + "_" + a + "' type='checkbox' name='checkbox' value='checkbox' onclick='dingDanChoose($(this)," + day + "," + a +")'></td></tr>");
+				$("#choose_list").append("<tr id='choose_" + day + "_" + a + "'><td><dl class='CheckBox light Switch' ><dt></dt><dd id='no-" + day + "-" + a + "'></dd></dl></td><td id='homeTeam-" + day + "-" + a + "'></td><td><span id='CheckWin-" + day + "-" + a + "' class='CheckWin' >胜</span><span id='CheckTie-" + day + "-" + a + "' class='CheckTie' >平</span><span id='CheckLoss-" + day + "-" + a + "' class='CheckLoss' >负</span></td><td><input class='dingdan_checkbox' id='dingdan_" + day + "_" + a + "' type='checkbox' name='checkbox' value='checkbox' onclick='dingDanChoose($(this)," + day + "," + a +")'></td></tr>");
 			}
 			
 			if (b == 3) {
@@ -1124,16 +1107,6 @@ function guoGuanWays(wanfa, key) {
 	var wfType = "r";
 	var type = $("#jcType").val();
 	var multiple_standrad = "tb_Multiple_standrad";
-	if(type != null && type == "zjq"){
-		wfType = "zjq_r";
-		multiple_standrad = "tb_Multiple_standrad_zjq";
-	}else if(type != null && type == "bf"){
-		wfType = "bf_r";
-		multiple_standrad = "tb_Multiple_standrad_bf";
-	}else if(type != null && type == "bqc"){
-		wfType = "bqc_r";
-		multiple_standrad = "tb_Multiple_standrad_bqc";
-	}
 	//自由过关的变量
 	var zhushu1_1 = 0;
 	var zhushu2_1 = 0,zhushu3_1 = 0,zhushu4_1 = 0,zhushu5_1 = 0,zhushu6_1 = 0,zhushu7_1 = 0,zhushu8_1 = 0;//多串过关的变量
@@ -1143,11 +1116,6 @@ function guoGuanWays(wanfa, key) {
 	
 	//注数
 	var zhushu =0;
-	if(type != null && type == "bf"){
-		danguanCount();
-		zhushu1_1 = Number($("#lab_Num_standrad_bf").html());
-		zhushu = zhushu + zhushu1_1;
-	}
 	//设置三级玩法,key为0时不设置，为1时设置
 	if (key == 0 && wanfa != "|1串1") {
 		zhushu = 0;

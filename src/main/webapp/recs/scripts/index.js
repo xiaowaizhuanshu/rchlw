@@ -1,13 +1,13 @@
 // JavaScript Document
 $(function(){
-	//½¹µãÍ¼
+	//ç„¦ç‚¹å›¾
 	var Focus_lunbo=jQuery(".leftLoop").slide({ mainCell:".bd ul",effect:"leftLoop",vis:1,scroll:1,autoPlay:true});
 	Focus_lunbo;
-	//ÂÖ²¥Í¼Ð¡Í¼Æ¬Êý×Ö
+	//è½®æ’­å›¾å°å›¾ç‰‡æ•°å­—
 	
 	
-	//¿ª½±¹«¸æ-×ßÊÆÍ¼tabÇÐ»»
-	$('.each_list').eq(0).show();//³õÊ¼»¯
+	//å¼€å¥–å…¬å‘Š-èµ°åŠ¿å›¾tabåˆ‡æ¢
+	$('.each_list').eq(0).show();//åˆå§‹åŒ–
 	$('.an_left_tab span').live('click',function(){
 		$('.an_left_tab span').removeClass('on');
 		$(this).addClass('on');
@@ -15,17 +15,17 @@ $(function(){
 		$(this).parent('.an_left_tab').siblings('.an_left_each').children('.each_list').eq($(this).index()).show();
 	});
 	
-	//rank_table ºìÉ«;
+	//rank_table çº¢è‰²;
 	$('.rank_table tr').each(function(i){
 		if(i>0&&i<=3){
 			$('.rank_table tr').eq(i).addClass('on');
 		}
 	});
-	//ÅÅÐÐÃû´Î×Ô¶¯ÌîÐ´
+	//æŽ’è¡Œåæ¬¡è‡ªåŠ¨å¡«å†™
 	$('td.ran_paihang span').each(function(i){
 		$(this).text($(this).parents('tr').index());
 	});
-	//ÈÃÇòÑÕÉ«ÉèÖÃ
+	//è®©çƒé¢œè‰²è®¾ç½®
 	$('td.bat_rangqiu').each(function(){
 		var i=parseInt($(this).text());
 		if(i>0){
@@ -37,7 +37,7 @@ $(function(){
 		}
 	});
 });
-//ÈÃÇò×ÖÌåÑÕÉ«
+//è®©çƒå­—ä½“é¢œè‰²
 function RangqiuClorSet(){
 	var i=parseInt($('td.bat_rangqiu').text());
 	if(i>0){

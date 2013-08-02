@@ -1,0 +1,328 @@
+@charset "utf-8";
+/* CSS Document */
+
+.main{
+	display:block;
+	overflow:hidden;
+	width:100%;
+	color:#333;
+}
+.center{
+	display:block;
+	overflow:hidden;
+	width:965px;
+	margin:0 auto;
+}
+.ball{
+	display:block;
+	margin:15px 0 0;
+}
+.ball_top{
+	display:block;
+	height:32px;
+	padding:0 0 0 15px;
+}
+.ball_top span{
+	display:inline-block;
+	color:#333;
+	line-height:32px;
+	font-size:14px;
+	font-weight:bold;
+}
+.ball_top label{
+	display:inline-block;
+	padding:0 0 0 15px;
+	color:#f00;
+	line-height:32px;
+	font-size:12px;
+}
+.ball_list{
+	display:block;
+	overflow:hidden;
+	padding:10px 0 0 11px;
+}
+.ball_list.on{
+	padding:10px 0 10px 11px;
+	background:#ffeded;
+}
+.ball_single{
+	position:relative;
+	display:inline-block;
+	width:303px;
+	height:133px;
+	margin:0 9px 0 0;
+	border:1px solid #dcdcdc;
+}
+.today{
+	position:absolute;
+	display:none;
+	left:-6px;
+	top:-6px;
+	width:72px;
+	height:75px;
+	background:url(/rchlw/recs/images/buy_hall/lottery.png) no-repeat 0 0;
+	z-index:2;
+}
+.ball_single.on .today{
+	display:block;
+}
+.ball_box{
+	display:block;
+	height:133px;
+	overflow:hidden;
+}
+.box_top{
+	display:block;
+	height:133px;
+}
+.box_top{
+	background:#fff;
+}
+.box_top img{
+	float:left;
+	width:88px;
+	height:88px;
+	margin:18px 15px 0 27px;
+}
+.box_top b{
+	display:block;
+	height:30px;
+	padding:15px 0 0 0;
+	line-height:30px;
+	font-size:14px;
+}
+.box_top label{
+	display:block;
+	height:30px;
+	line-height:30px;
+}
+.box_top a{
+	display:block;
+	float:right;
+	margin:5px 12px 0 0;
+	width:100px;
+	height:35px;
+	background:url(/rchlw/recs/images/touzhu.jpg) no-repeat 0 0;
+}
+.box{
+	display:block;
+	height:110px;
+	overflow:hidden;
+}
+.time_full{
+	position:relative;
+	float:left;
+	display:block;
+	overflow:hidden;
+	width:120px;
+	height:22px;
+	background:#fff;
+	border:1px solid #dcdcdc;
+}
+.time_full strong{
+	position:absolute;
+	right:0;
+	top:0;
+	display:block;
+	height:22px;
+	background:#acf6ff;
+	z-index:2;
+}
+.time_full span{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:22px;
+	background:none;
+	line-height:22px;
+	text-align:center;
+	z-index:5;
+}
+.box_bottom a{
+	position:absolute;
+	top:0;
+	right:0;
+	display:none;
+	width:32px;
+	height:110px;
+	background:url(/rchlw/recs/images/buy_hall/immed.png) no-repeat 0 0;
+}
+
+.box_list{
+	position:relative;
+	float:left;
+	display:inline-block;
+	width:303px;
+	height:110px;
+	margin:0 13px 20px 0;
+	border:1px solid #dcdcdc;
+}
+.box_list.on .today{
+	display:block;
+}
+.box_hidden{
+	height:220px;
+}
+.box_write,.box_bottom{
+	display:block;
+	height:113px;
+}
+.box_write{
+	background:#fff;
+	cursor:pointer;
+}
+.box_write span{
+	display:block;
+	margin:0 0 0 130px;
+	height:25px;
+	line-height:25px;
+	color:#969696;
+}
+.box_bottom{
+	position:relative;
+	background:#fff4e1;
+}
+.box_write img,.box_bottom img{
+	float:left;
+	width:88px;
+	height:88px;
+	margin:12px 15px 0 27px;
+}
+.box_write b,.box_bottom b{
+	display:block;
+	height:30px;
+	padding:15px 0 0 0;
+	line-height:30px;
+	font-size:14px;
+}
+.box_write label,.box_bottom label{
+	display:block;
+	height:25px;
+	line-height:25px;
+}
+.box_top label font,.box_write label font,.box_bottom label font {
+	font-size:12px;
+	color:#c00;
+}
+.box_write label,.box_bottom label,.box_write b,.box_bottom b{
+	margin:0 0 0 130px;
+}
+
+/*hall_foot*/
+.hall_foot{
+	display:block;
+	width:100%;
+	height:167px;
+	background:#f0f0f0;
+}
+.h_f_center{
+	display:block;
+	width:965px;
+	height:167px;
+	margin:0 auto;
+}
+.hall_foot_logo{
+	float:left;
+	margin:0 0 0 10px;
+	width:233px;
+	height:150px;
+	padding:17px 0 0;
+	background:url(/rchlw/recs/images/buy_hall/border.jpg) no-repeat right center;
+}
+.hall_foot_logo a{
+	float:left;
+	display:block;
+	width:106px;
+	height:133px;
+}
+.hall_foot_text{
+	display:block;
+	padding:15px 0 0;
+}
+.hall_foot_logo span{
+	display:block;
+	margin:0 0 0 120px;
+	line-height:30px;
+	font-size:16px;
+	font-family:"黑体";
+	color:#d23030;
+}
+.h_f_center dl{
+	float:left;
+	width:125px;
+	height:152px;
+	padding:15px 0 0 33px;
+	background:url(/rchlw/recs/images/buy_hall/border.jpg) no-repeat right center;
+}
+.h_f_center dl dt,.h_f_center dl dd{
+	display:block;
+	color:#333;
+}
+.h_f_center dl dt{
+	font-size:16px;
+	font-weight:bold;
+	line-height:35px;
+}
+.h_f_center dl dd{
+	font-size:12px;
+	line-height:25px;
+}
+.h_f_center dl dd a{
+	color:#333;
+}
+.h_f_center dl dd a:hover{
+	text-decoration:underline;
+}
+.hall_service{
+	float:left;
+	margin:0 0 0 32px;
+	height:167px;
+	width:210px;
+}
+.ser_phone{
+	display:block;
+	padding:20px 0 0;
+}
+.ser_phone span,.ser_phone label{
+	display:block;
+	padding:0 0 0 18px;
+	height:20px;
+	line-height:20px;
+	color:#666;
+}
+.ser_phone span.phone{
+	background:url(/rchlw/recs/images/buy_hall/hotline_ic.jpg) no-repeat left center;
+}
+.ser_phone span.qq{
+	background:url(/rchlw/recs/images/buy_hall/QQ.jpg) no-repeat left center;
+}
+.ser_phone label{
+	font-size:14px;
+	font-weight:bold;
+}
+.ser_phone label a{
+	color:#666;
+}
+.ser_phone label a:hover{
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

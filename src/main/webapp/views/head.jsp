@@ -92,7 +92,7 @@
                 <!--滑块 end-->
                 <ul class="nav_list">
                 	<li class="indexHome"><a href="/rchlw/views/index.jsp">首页</a></li>
-                	<li class="goucaidating"><a href="/rchlw/function/goucaidating.jsp">购彩大厅</a></li>
+                	<li class="goucaidating"><a href="/rchlw/views/goucaidating/goucaidating.jsp">购彩大厅</a></li>
                 	<li><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">合买中心</a></li>
                 	<li><a href="/rchlw/function/ryc_select_newkj!drawalottery">彩票开奖</a></li>
                 	<li><a href="http://tbzs.ruyicai.com">彩票走势图</a></li>
