@@ -18,12 +18,13 @@
 	<s:if test="#request.duizhenInfos!=null">
 	<s:set></s:set>
 	<s:iterator value="#request.duizhenInfos"  status="l" id="duizhen">
-	<input type="hidden" id="day" name="day" value="<s:property value="day"/>" />
+	
 	<s:if test="#duizhen.size()>0 && #l.index <1">
+		
 		<s:iterator value="#duizhen" status="stat" id="duizhenChidren">
 			<s:if test="#stat.index <10 && peilv.letVs.letPoint!=''&&peilv.letVs.v3!=''&&peilv.letVs.v1!=''&&peilv.letVs.v0!=''">
 				<s:if test="#stat.last"><input class="count" type="hidden" id="count" name="count" value="<s:property value="#stat.count"/>"/></s:if>
-				
+				<input type="hidden" class="day" name="day" value="<s:property value="day"/>" />
 				<s:if test="#stat.last">
 				<tr id="tr_<s:property value="day"/>_<s:property value="#stat.count"/>" class="<s:if test="#stat.even">zucai_tr1</s:if> zucaitable_borderBottom td" style="background:${o1.odd?#FFFFFF:#F9F9F9 };">
 				</s:if>
@@ -45,20 +46,14 @@
 	             	<a href="http://info.sporttery.com/football/info/fb_match_info.php" target="_blank" content="<s:property value="team2"/>"  offset="br,0,0" 
 						onmouseout="PopupOff($(this));" onmouseover="PopupOn($(this));"><s:property value="kteam"/></a>
 	              </td>
-                   	<td class="bat_sheng" onclick="checkColorButton($(this),<s:property value="day"/>,3,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
-                   		<span id="ball3_<s:property value="day"/>_<s:property value="#stat.count"/>"   >
+                   	<td id="ball3_<s:property value="day"/>_<s:property value="#stat.count"/>"  class="bat_sheng" onclick="checkColorButton($(this),<s:property value="day"/>,3,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
 							<s:property value="peilv.letVs.v3"/>                                                                                              
-						</span>  
                    	</td>
-			      	<td class="bat_ping"  onclick="checkColorButton($(this),<s:property value="day"/>,1,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
-			      		 <span id="ball1_<s:property value="day"/>_<s:property value="#stat.count"/>"  >
+			      	<td id="ball1_<s:property value="day"/>_<s:property value="#stat.count"/>" class="bat_sheng"  onclick="checkColorButton($(this),<s:property value="day"/>,1,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
 							<s:property value="peilv.letVs.v1"/>                                                                                       
-						</span> 
 			      	</td>
-			      	<td class="bat_sheng"  onclick="checkColorButton($(this),<s:property value="day"/>,0,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
-						<span id="ball0_<s:property value="day"/>_<s:property value="#stat.count"/>" >
+			      	<td id="ball0_<s:property value="day"/>_<s:property value="#stat.count"/>" class="bat_sheng"  onclick="checkColorButton($(this),<s:property value="day"/>,0,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
 							<s:property value="peilv.letVs.v0"/> 
-						</span>
 					</td>
 				   <td  class="bat_dan" width="25"  onclick="changeColorCheckbox(this,<s:property value="day"/>,<s:property value="#stat.count"/>,'<s:property value="newweek"/>');">
 				  		<a href="javascript:void(0)" id="checkbox_<s:property value="day"/>_<s:property value="#stat.count"/>" >胆</a>
@@ -71,6 +66,20 @@
 	</s:iterator>
 </s:if>
 </table>
+<!-- 投注信息 -->
+<div style="display:none">
+	<span id="alert_zhuma"></span>
+<input type="hidden" id="allWanfa" value="" name="allWanfa">
+	<form action="">
+		<select name="list_LotteryNumber" id="list_LotteryNumber" size="10"></select>
+		<table id="choose_list">
+			<tbody>
+				<tr><th>序号</th><th>主队</th><th>投注</th><th>胆</th></tr>
+			</tbody>
+		</table>
+	</form>
+</div>
+<!-- 投注信息结束 -->
 <div class="clearance">
  	<div class="cle_right">
      	<span>投注金额&nbsp;<strong>2</strong>&nbsp;元</span>

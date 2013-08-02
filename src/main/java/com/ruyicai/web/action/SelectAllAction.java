@@ -850,6 +850,43 @@ public class SelectAllAction extends BaseAction {
 		}
 
 	}
+	
+	/**
+	 * 根据彩种获取彩种的截止日期
+	 */
+	public void queryEndtimeByLotno(){
+		try {
+			JSONArray ja = new JSONArray();
+			response.setCharacterEncoding("utf-8");
+			response.setContentType("text/html;charset=utf-8");
+			String lotNo = request.getParameter("lotNo");
+			String[] lotNoStr = lotNo.split("-");
+			if (lotNoStr.length > 0) {
+				for (int i = 0; i < lotNoStr.length; i++) {
+					JSONObject js = InvokeLotteryUtil.getIssueObject(lotNoStr[i]);
+					ja.add(js);
+//					String endtime = js.getString("end_time");
+//					
+//					request.setAttribute("retValue" + i, js);
+					
+//					SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+//					String nowdate = sdf.format(new Date());
+//					if (endtime.indexOf(nowdate) > -1) {
+//						request.setAttribute("endTime" + (i + 1) + "ck", 1);
+//					} else {
+//						request.setAttribute("endTime" + (i + 1) + "ck", 0);
+//					}
+//					request.setAttribute("endTime" + (i + 1), endtime);
+				}
+			}
+			logger.info("entime信息："+ja.toString());
+			response.getWriter().write(ja.toString());
+		} catch (Exception e) {
+			logger.error("根据彩种获取彩种的截止日期失败："+e.toString());
+			e.printStackTrace();
+		}
+		
+	}
 
 	/**购彩大厅中今日截止数据
 	 * 

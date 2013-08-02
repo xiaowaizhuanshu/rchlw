@@ -88,10 +88,11 @@ urlArray[78]= basepath + "/function/ryc_select_newkj!drawalotteryJc";//竞彩足
 urlArray[79]= basepath + "/function/jc!getJingcaiduizhen";//竞彩足球对阵
 urlArray[80]= basepath + "/function/selectAll!batchCodeSelectTime";//今日开奖
 urlArray[81]= basepath + "/function/zucai!getFlData";//足彩数据
-//urlArray[82]= basepath + "/function/hemaiCenter!getCaselotsByWhere";//首页合买数据
-urlArray[82]= basepath + "/function/hemaiCenter!getCaselotsByMemIndex";//首页合买数据
+urlArray[82]= basepath + "/function/hemaiCenter!getCaselotsByWhere";//首页合买数据
+//urlArray[82]= basepath + "/function/hemaiCenter!getCaselotsByMemIndex";//首页合买数据
 urlArray[83]= basepath + "/function/selectAll!getRank";//首页中奖排行数据
 urlArray[84]= basepath + "/function/jc!getLeague";//
+urlArray[85]= basepath + "/function/jc!getShouyeJingcaiduizhen";//首页精彩足球胜平负
 
 urlArray[90]= basepath + "/user/tuserinfoAction!getOrderInfo";//查询一个提现订单的详细信息 
 urlArray[92]= basepath + "/function/user/charge_mobileHuafei_nextPage.jsp";//手机话费充值跳转页面
@@ -1494,12 +1495,12 @@ function topActivity(){
 function toplogo(div,id){
 	$.ajax({
 		type: "get",
-		url: "/rchlw/function/cooperation/coop_top.jsp?"+Math.random(),
+		url: "/rchlw/views/head.jsp?"+Math.random(),
 		dataType: "html",
 		success: function(msg){
 			$('#'+div).html(msg);
-			if(!(id=="")){
-				$("."+id).addClass("selected");
+			if(id){
+				$("."+id).addClass("on");
 			}
 		}
 	});
@@ -1507,14 +1508,14 @@ function toplogo(div,id){
 function index_toplogo(div,id){
 	$.ajax({
 	    type: "get",
-	    url: "/rchlw/function/cooperation/index_coop_top.jsp?"+Math.random(),
+	    url: "/rchlw/views/head.jsp?"+Math.random(),
 	    dataType: "html",
 	    success: function(msg){
 	    	$('#'+div).html(msg);
-			if(!(id=="")){
-				$("."+id).addClass("selected");
+			if(id){
+				$("."+id).addClass("on");//设置选中状态
 			}
-	}
+	    }
 	});
 }
 
@@ -1583,8 +1584,8 @@ function indexRight(){
 	    url: "/rchlw/function/user/index_right_div.jsp?"+Math.random(),
 	    dataType: "html",
 	    success: function(msg){
-			if($("#top_right").length>0){
-				$('#top_right').html(msg);
+			if($("#right_login").length>0){
+				$("#right_login").html(msg);
 			}
 		}
 	});
@@ -2585,7 +2586,7 @@ $(function() {
 });
 function BaseTab(t) {
 		var ControlTarget = t.attr("ControlTarget");
-		t.siblings().removeClass("selected").end().addClass("selected");
+		t.siblings().removeClass("on").end().addClass("on");
 		$(ControlTarget).siblings().removeClass("selected").end().addClass("selected");
 };
 

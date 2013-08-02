@@ -11,7 +11,7 @@
 							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentOne" class="on">总</li>
 						</s:if>
 						<s:if test="#request.yearList.size()>0">
-							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentThree">年</li>
+							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentThree" >年</li>
 						</s:if>
 						<s:if test="#request.monthList.size()>0">
 							<li onmouseover="BaseTab($(this))" ControlTarget=".ContentTwo">月</li>
