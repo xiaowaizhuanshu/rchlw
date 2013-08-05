@@ -24,7 +24,7 @@
         	<div class="logo_center">
             	<a href="/rchlw/views/index.jsp" class="logo_icon"></a>
             	<a href="javascript:void(0)" class="new_centent"></a>
-            	<a href="http://wpa.qq.com/msgrd?v=3&uin=1427872305&site=qq&menu=yes" target="_blank" class="online"></a>
+            	<a href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" target="_blank" class="online"></a>
             	<a href="javascript:void(0)" class="hotline"></a>
             </div>
         </div>
