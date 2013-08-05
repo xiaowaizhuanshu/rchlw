@@ -24,8 +24,8 @@ public class HelperAction extends BaseAction {
 	/**
 	 * 查询条件
 	 */
-	private String cc="1"; //频道代号(news channel cn)
-	private String cp="1"; //您所在的位置（current position）
+	private String cc = "1"; //频道代号(news channel cn)
+	private String cp = "1"; //您所在的位置（current position）
 	private static final Map<String, String> cps = new HashMap<String, String>();
 	static {
 		cps.put("1", "功能指引");

@@ -1,4 +1,4 @@
-package com.boyacai.news.tag;
+package com.boyacai.activity.tag;
 
 /** 
  * @classname:
@@ -17,37 +17,19 @@ import java.util.Iterator;
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
-import com.boyacai.news.service.NewsService;
-import com.boyacai.news.vo.NewsPage;
+import com.boyacai.activity.service.ActivityService;
+import com.boyacai.activity.vo.ActivityPage;
 
-public class NewsListTag extends SimpleTagSupport {
+public class ActivityListTag extends SimpleTagSupport {
 
 	private String var;
 
-	private String category;
-	private String channel;
 	private String lotNo;
 	private String pageNo;
 	private String pageSize;
 
-	public NewsListTag() {
+	public ActivityListTag() {
 		super();
-	}
-
-	public String getCategory() {
-		return category;
-	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
-
-	public String getChannel() {
-		return channel;
-	}
-
-	public void setChannel(String channel) {
-		this.channel = channel;
 	}
 
 	public String getLotNo() {
@@ -85,8 +67,8 @@ public class NewsListTag extends SimpleTagSupport {
 	@Override
 	public void doTag() throws JspException, IOException {
 
-		NewsPage pager = NewsService.getNewsPage(category, channel, lotNo, pageNo, pageSize);
-		Iterator ite = pager.getNews().iterator();
+		ActivityPage pager = ActivityService.getActivityPage(pageNo, pageSize);
+		Iterator ite = pager.getResult().iterator();
 
 		// 进行迭代
 		while (ite.hasNext()) {

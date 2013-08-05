@@ -7,12 +7,27 @@
 	<short-name>byc</short-name>
 	<uri>/byc</uri>
 	<display-name>"the TagLib by www.boyacai.com"</display-name>
+
+	<!-- 服务地址 -->
+	<tag>
+		<name>addr</name>
+		<tag-class>com.boyacai.common.tag.AppAddrTag</tag-class>
+		<body-content>empty</body-content>
+		<description>便捷获取各应用模块服务地址</description>
+		<attribute>
+			<name>module</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>各应用模块标识[users|rchlw|jclq|jczq|kuaikai]</description>
+		</attribute>
+	</tag>
+
 	<!-- 新闻 -->
 	<tag>
 		<name>news</name>
 		<tag-class>com.boyacai.news.tag.NewsTag</tag-class>
 		<body-content>scriptless</body-content>
-		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<description>新闻</description>
 		<attribute>
 			<name>newsId</name>
 			<required>true</required>
@@ -31,7 +46,7 @@
 		<name>newsList</name>
 		<tag-class>com.boyacai.news.tag.NewsListTag</tag-class>
 		<body-content>scriptless</body-content>
-		<description>列表的迭代;适用范围：新闻频道列表、新闻列表、分类列表;</description>
+		<description>列表的迭代，适用范围：新闻频道列表、新闻列表、分类列表;</description>
 		<attribute>
 			<name>category</name>
 			<required>true</required>
@@ -71,17 +86,102 @@
 			<description>值变量</description>
 		</attribute>
 	</tag>
-	<!-- 服务地址 -->
+
+	<!-- 帮助 -->
 	<tag>
-		<name>addr</name>
-		<tag-class>com.boyacai.common.tag.AppAddrTag</tag-class>
-		<body-content>empty</body-content>
-		<description>便捷获取各应用模块服务地址</description>
+		<name>helper</name>
+		<tag-class>com.boyacai.helper.tag.HelperTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>帮助</description>
 		<attribute>
-			<name>module</name>
+			<name>helperId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>帮助ID</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
 			<required>true</required>
 			<rtexprvalue>false</rtexprvalue>
-			<description>各应用模块标识[users|rchlw|jclq|jczq|kuaikai]</description>
+			<description>值变量</description>
 		</attribute>
 	</tag>
+	<!-- 新闻列表 -->
+	<tag>
+		<name>helperList</name>
+		<tag-class>com.boyacai.helper.tag.HelperListTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>帮助列表的迭代</description>
+		<attribute>
+			<name>channel</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>帮助类别[1:功能指引|2:特色功能|3:彩票玩法|4:常见问题|5:彩票术语]
+			</description>
+		</attribute>
+		<attribute>
+			<name>pageNo</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>页码</description>
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>每页记录数</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+
+	<!-- 活动 -->
+	<tag>
+		<name>activity</name>
+		<tag-class>com.boyacai.activity.tag.ActivityTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>活动</description>
+		<attribute>
+			<name>activityId</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+			<description>活动ID</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+	<!-- 活动列表 -->
+	<tag>
+		<name>activityList</name>
+		<tag-class>com.boyacai.activity.tag.ActivityListTag</tag-class>
+		<body-content>scriptless</body-content>
+		<description>活动列表的迭代</description>
+		<attribute>
+			<name>pageNo</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>页码</description>
+		</attribute>
+		<attribute>
+			<name>pageSize</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>每页记录数</description>
+		</attribute>
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>值变量</description>
+		</attribute>
+	</tag>
+
 </taglib>  

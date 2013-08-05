@@ -903,13 +903,14 @@ function indexRight() {
 function toplogo(div, id) {
 	$.ajax({
 		type: "get",
-		url: "/rchlw/function/cooperation/coop_top.jsp?" + Math.random(),
+		url: "/rchlw/views/head.jsp?"+Math.random(),
 		dataType: "html",
 		success: function(msg) {
-			$('#' + div).html(msg);
-			if(!(id=="")){
-			     $("."+id).addClass("selected");
-				 }
+			$("#" + div).html(msg);
+			alert($("."+id).size());
+			if(id){
+			     $("."+id).addClass("on");
+			}
 		}
 	});
 }

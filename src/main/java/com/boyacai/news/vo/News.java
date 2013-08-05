@@ -37,6 +37,10 @@ public class News implements Serializable {
 		return title;
 	}
 
+	public String getTitle15() {
+		return title.length() > 15 ? title.substring(0, 15) + "..." : title;
+	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}

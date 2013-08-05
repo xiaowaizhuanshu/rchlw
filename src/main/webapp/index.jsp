@@ -18,9 +18,8 @@
 <script src="/rchlw/recs/scripts/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
 <script src="/rchlw/recs/scripts/index.js" type="text/javascript" language="javascript"></script>
 <script src="/rchlw/recs/scripts/scroll.js" type="text/javascript" language="javascript"></script>
-<script src="/rchlw/recs/scripts/kuaitouzhu.js" type="text/javascript" language="javascript"></script>
+<script src="/rchlw/function/js/kuaiTouZhou.js" type="text/javascript" language="javascript"></script>
 <script src="/rchlw/function/js/util.js" type="text/javascript" language="javascript"></script>
-<script src="/rchlw/recs/scripts/index_jczq/zuqiu.js" type="text/javascript" language="javascript"></script>
 </head>
 
 <body>
@@ -45,8 +44,8 @@
                                 <label>手机购彩</label>
                             </div>
                             <div class="phone_dowmload">
-                                <a href="javascript:void(0)" class="android_link"></a>
-                                <a href="javascript:void(0)" class="IOS_link"></a>
+                                <a href="/rchlw/function/include/downLoadClient.jsp" class="android_link"></a>
+                                <a href="/rchlw/function/include/downLoadClient.jsp" class="IOS_link"></a>
                                 <span>博雅彩手机客户端</span>
                                 <div class="phone_text">
                                     <label>购彩安全</label>
@@ -91,7 +90,6 @@
                             <b>购彩推荐：</b>
                             <span class="on">双色球</span>
                             <span>大乐透</span>
-                            <span>福彩3D</span>
                         </div>
                     </div>
                     <div class="fast_each">
@@ -116,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fast_each_list"></div>
+                        <div class="fast_each_list">dddddddddddd</div>
                         <div class="fast_each_list"></div>
                     </div>
                 </div>
@@ -141,50 +139,46 @@
                     </div>
                     <div class="c_tab_info">
                     	<div class="c_tab_infolist">
-                    			<tangs:ryc_newslist categoryCn="热点新闻" istopNews="1" web_id="%{#parameters.website_Properties_id[0]}" status="s1" num="1" value="3">
-									<strong><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-										&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-										&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a></strong>
-								</tangs:ryc_newslist>
-								<byc:newsList category="1" channel="5" pageNo="1" pageSize="3" var="n">
-										<span><a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" >${n.title}</a></span>
-								</byc:newsList>
+                    		<byc:newsList category="1" channel="5" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><strong>${n.title}</strong></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="1" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><span>${n.title}</span></a>
+							</byc:newsList>
                         </div>
                         <div class="c_tab_infolist">
-                            <b>[福彩]</b>
-                            <tangs:ryc_newslist categoryCn="福彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="1" value="13">
-								<b><a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-									&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-									&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a> </b>
-								</tangs:ryc_newslist>
-								
-                            <tangs:ryc_newslist categoryCn="福彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="6" value="13" begin="1" end="5">
-							 	<p><label>[${createtimeFm}]</label>[${title_as}] 
-										<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-									&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-									&categoryId=${categoryCode}&title=${title}" style="color:${title_color}" target="_blank">${title}</a>
-								 </p>
-							</tangs:ryc_newslist>
-							<!--                          
-                            <p><label>[2013-07-14]</label>[推荐] 专家组双色球第081期：重号防 23 28 </p>
-                            <p><label>[2013-07-14]</label>[推荐] 专家组双色球第081期：重号防 23 28 </p>
-                            <p><label>[2013-07-14]</label>[推荐] 专家组双色球第081期：重号防 23 28 </p> -->
+                          	<byc:newsList category="1" channel="1" lotNo="F47104" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><b>${n.title}</b></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="1" lotNo="F47103" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="F47104" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="F47103" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="F47102" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
                         </div>
                         <div class="c_tab_infolist">
-                            <b>[体彩]</b>
-                            <tangs:ryc_newslist categoryCn="体彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="1" value="13">
-								<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-										&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-										&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a>
-								</tangs:ryc_newslist>
-							
-                            <tangs:ryc_newslist categoryCn="体彩资讯" web_id="%{#parameters.website_Properties_id[0]}" num="6" value="13" begin="1" end="5">
-								<p><label>[${createtimeFm}]</label>[${title_as}] 
-									<a href="<%=request.getContextPath() %>/news/ruyicai_news.jsp?newsId=${id}
-										&website_Properties_id=${websiteId}&callUrl=${callUrl}&channelId=${channelId}&channelCn=${channelCn}&categoryNameCn=${categoryCn }
-										&categoryId=${categoryCode}&title=${title}" target="_blank" style="color:${title_color}">${title}</a>
-								 </p>
-							</tangs:ryc_newslist>
+                            <byc:newsList category="1" channel="1" lotNo="T01001" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><b>${n.title}</b></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="T01001" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="T01002" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="T01011" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="2" lotNo="T01009" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title}</p></a>
+							</byc:newsList>
                         </div>
                     </div>
                 </div><!--announ_center end-->
@@ -203,23 +197,24 @@
                     </div>
                 	<div class="annun_right_list on">
                     	<div class="an_right_tab">
-                            <span>大奖播报</span>
+                            <span>最新活动</span>
                         </div>
                         <div class="an_list_bottom">
-                        	<h3>双色球第2013081期今日加奖，奖池1.26亿</h3>
-                        	<span>大乐透头奖18期连出纪录终止 500...</span>
-                            <span>大乐透头奖18期连出纪录终止 500...</span>
-                            <span>大乐透头奖18期连出纪录终止 500...</span>
+                            <byc:activityList pageNo="1" pageSize="5" var="n">
+								<a target="_blank" href="${ctx}/activity/activity!view.action?id=${n.activityId}" title="${n.title}">
+									<span>${n.title}</span>
+								</a>
+							</byc:activityList>
                         </div>
                     </div>
                 </div>
             </div>
             <!--广告位-->
             <div class="guanggaowei">广告位</div>
-             <div class="recommened">
-             		<script type="text/javascript">
-						$(function(){reHtml(82,'isAjax=shouye&pageCount=10','','shouyehemai');});
-					</script>
+            <div class="recommened">
+            	<script type="text/javascript">
+					$(function(){reHtml(82,'isAjax=shouye&pageCount=6','','shouyehemai');});
+				</script>
             	<div id="shouyehemai">
             	</div>
             	
@@ -229,40 +224,76 @@
 			 	});
 				</script>
             	<div id="paihang">
-            		
             	</div>
-            	
             </div>
             <div class="hotBettle">
             	<div class="Battle">
                 	<div class="rec_tab">
-                    	<a href="javascript:void(0)">更多>></a>
-                    	<b>竞彩热投</b>
+                    	<b>足彩对阵</b>
+                    	<script>$(function(){getZCBatchCode('T01003');});</script>
+                    	<a href="javascript:void(0)">当前期<i id="qihao3"></i>期</a>
                     </div>
                     <div id="jcsj">
-                    	<!-- 加载竞彩热投数据  精彩足球胜平负 -->
-                    	<script type="text/javascript">
-                    		$(function(){
-                    			reHtml(85, 'type=1&lotNo=J00001&valueType=1', false, 'jcsj','true');                    			
-                    		});
-                    	</script>
-	                    	
+						<form name="BettingForm" id="BettingForm" action="/rchlw/user/bet!bettingByDipin" method="post">
+						<table class="FootballFightTable TheOnLineMatch selected" id="zucaiduizhen">
+						<script type="text/javascript">
+						     $(function(){reHtml(81,'lotno=T01003&shouye=1','','zucaiduizhen');});
+						</script>
+						</table>
+						<table class="FootballFightTable TheFirstAdvance none"><tr><td>预售期1的表格 这个和上一个一样</td></tr></table>
+						<table class="FootballFightTable TheSecondAdvance none"><tr><td>预售期2的表格 这个和上一个也一样</td></tr></table>
+						<span id="qihao" class="none"></span>
+						<span id="investField" class="none"></span>
+						<span id="two" class="none"></span>
+						<span id="all" class="none"></span>
+						<input type="hidden" id="lotNo" value="T01003" name="lotNo" />
+						<input type="hidden" id="tb_Multiple" value="1"  />
+						<input type="hidden" id="jsonString" name="jsonString" value="" /> 
+						<input type="hidden" id="caiZhong" value="shengfucai" /> 
+						<input type="hidden" id="path" name="path" value=""/> 
+					   	<input type="hidden" id="errorCode" name="errorCode" value=""/>
+						<input type="hidden" id="dangqianwanfa" value="胜负彩"  />
+						<input type="hidden" id="erjiwanfa" value="普通投注"  />
+						<input type="hidden" id="goumaifangshi" value="代购"  />
+						<input type="hidden" id="daiGouHemai" name="daiGou" value="daigou"  />
+						<input type="hidden" id="jsonStringCLR" name="jsonStringCLR" value="" />
+						<div class="add_cont" style="display: none;"> 
+							<select name="list_LotteryNumber" id="list_LotteryNumber" size="10" ></select> 
+						</div> 
+						<div class="numberbox" style="display: none;">
+							<ul id="codes"></ul>
+						</div>
+						</form>
                     </div>
                 </div>
                 <!--竞彩新闻-->
                 <div class="bettle_news">
                 	<div class="new_hotbet">
                     	<div class="rec_tab">
-                            <a href="javascript:void(0)">更多>></a>
+                            <a href="<%=request.getContextPath() %>/news/news!list.action?nt=1&ncc=3">更多>></a>
                             <b>竞彩新闻</b>
                         </div>
                         <div class="be_news_list">
-                        	<b>尤文那不勒斯酿双赢交易 祖尼加+200万换马特里?</b>
-                            <strong>一周赛事展望:金杯赛入佳境欧冠开打 国足战日本</strong>
-                            <p>竞彩:赫尔辛堡战升班马</p>
-                            <p>胜负彩13087期冷门排序：埃尔夫平哈尔姆爆头冷</p>
-                            <p>北单:法国女足让2球 7月竞猜</p>
-                            <p>竞彩:赫尔辛堡战升班马</p>
+                            <%-- <byc:newsList category="1" channel="3" pageNo="1" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><b>${n.title}</b></a>
+							</byc:newsList>
+							<byc:newsList category="1" channel="3" pageNo="2" pageSize="1" var="n">
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><strong>${n.title}</strong></a>
+							</byc:newsList> --%>
+							<s:set var="idx" value="0"></s:set>
+							<byc:newsList category="1" channel="3" pageNo="1" pageSize="8" var="n">
+								<s:if test="#idx == 0">
+								<s:set var="idx" value="1"></s:set>
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><b>${n.title}</b></a>
+								</s:if>
+								<s:elseif test="#idx == 1">
+								<s:set var="idx" value="2"></s:set>
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><strong>${n.title}</strong></a>
+								</s:elseif>
+								<s:else>
+								<a href="${ctx}/news/ruyicai_news.jsp?newsId=${n.newsId}" title="${n.title}" target="_blank" ><p>${n.title15}</p></a>
+								</s:else>
+							</byc:newsList>
                         </div>
                     </div>
                     <div class="bettle_football">
