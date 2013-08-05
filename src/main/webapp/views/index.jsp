@@ -13,7 +13,6 @@
 <meta name="description" content="博雅彩为彩民提供, 彩票投注,彩票购买, 福彩投注, 体彩投注,将互联网电子彩票进行投注购买,走势,预测,兑奖等一体化服务相结合【彩民推荐的购买投注网站】!"/>
 <meta name="baidu-site-verification" content="wWYQuoP5DG2qzXxk" />
 
-<link href="/rchlw/recs/styles/reset.css" rel="stylesheet" type="text/css" />
 <link href="/rchlw/recs/styles/index.css" rel="stylesheet" type="text/css" />
 <script src="/rchlw/recs/scripts/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
 <script src="/rchlw/recs/scripts/index.js" type="text/javascript" language="javascript"></script>

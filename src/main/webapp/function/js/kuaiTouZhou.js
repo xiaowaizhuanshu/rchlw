@@ -9,7 +9,6 @@ urlArray[59] = basepath + "/function/selectAll!getMoreBetSelect"; //投注记录
 urlArray[47] = basepath + "/user/selectAll!getMoreBetSelect"; //投注记录超过五条的详细信息
 urlArray[46] = basepath + "/function/selectAll!recentLottery"; // 购彩大厅中的显示购彩
 function reHtml(key,parameters,loading,divId,bloean){
-	alert(123);
 	$.ajax({
 			url:urlArray[key],//后台处理程序
 			type:"GET",//数据发送方式

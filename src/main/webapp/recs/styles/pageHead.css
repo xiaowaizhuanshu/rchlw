@@ -94,6 +94,7 @@ body{
 	display:block;
 	float:left;
 	width:216px;
+	z-index:10;
 }
 .slider_select{
 	float:left;
@@ -123,6 +124,7 @@ body{
 	background:#fff;
 	border:1px solid #dcdcdc;
 	border-top:none;
+	z-index:10;
 }
 /*nav_list*/
 .nav_list{
@@ -147,6 +149,10 @@ body{
 .nav_list li a:hover{
 	color:#ff0;
 }
+
+.nav_list li.on a{
+	color:#ff0;
+}
 .nav_list li.indexHome a{
 	padding:0 24px 0 25px;
 	background:url(../images/public/home_bg.jpg) no-repeat 0 0;
@@ -158,6 +164,12 @@ body{
 	background-position:0 -45px;
 	color:#ff0;
 }
+
+
+
+
+
+
 
 /*下拉滑块*/
 .fucai,.ticai,.gaopin,.jingji{

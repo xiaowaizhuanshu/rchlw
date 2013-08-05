@@ -4,7 +4,6 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>购彩大厅</title>
-<link href="/rchlw/recs/styles/reset.css" rel="stylesheet" type="text/css" />
 <link href="/rchlw/recs/styles/goucaidating/buy_ball.css" rel="stylesheet" type="text/css" />
 <script src="/rchlw/recs/scripts/jquery-1.7.2.min.js" type="text/javascript" language="javascript"></script>
 <script src="/rchlw/recs/scripts/goucaidating/buy_ball.js" type="text/javascript" language="javascript"></script>
@@ -26,7 +25,7 @@
 <input type="hidden"   id="T01012" />
 <input type="hidden"   id="T01004" />
 <input type="hidden"   id="J00001" />
-<script>$(function(){index_toplogo('header',"indexHome");});</script>
+<script>$(function(){index_toplogo('header',"goucaidating");});</script>
 	<!--头部 header-->
 	<div id="header" class="header">
     
