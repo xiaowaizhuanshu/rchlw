@@ -2314,7 +2314,7 @@ public class SelectAllAction extends BaseAction {
 
 			request.setAttribute("hemaiList", obj);
 
-			String pageHtml = CommonUtil.getPageToJsp(pageIndex, Integer.parseInt(obj.getString("totalResult")),
+			String pageHtml = CommonUtil.getPageToJsp_New(pageIndex, Integer.parseInt(obj.getString("totalResult")),
 					pageNum, 4, "CaseSelectForm");
 			request.setAttribute("pageHtml", pageHtml);
 			request.setAttribute("lotno", lotno);
@@ -3788,7 +3788,7 @@ public class SelectAllAction extends BaseAction {
 			}
 
 			request.setAttribute("hemaiList", obj);
-			String pageHtml = CommonUtil.getPageToJsp(pageIndex, Integer.parseInt(obj.getString("totalResult")),
+			String pageHtml = CommonUtil.getPageToJsp_New(pageIndex, Integer.parseInt(obj.getString("totalResult")),
 					pageNum, 4, "CaseSelectForm");
 			request.setAttribute("pageHtml", pageHtml);
 			request.setAttribute("title", CommonUtil.getTitle(lotno));

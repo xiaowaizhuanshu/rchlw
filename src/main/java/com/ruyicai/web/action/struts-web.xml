@@ -173,7 +173,8 @@
 		<!-- =====合买中心====== -->
 		<action name="hemaiCenter" class="com.ruyicai.web.action.SelectAllAction">
 			<!-- 合买中心 -->
-			<result name="caseCenterAll">/function/query/case/hemaiCenter.jsp</result>
+			<!-- /function/query/case/hemaiCenter.jsp  -->
+			<result name="caseCenterAll">/views/hemaicenter/hemaicenter.jsp</result>
 			<!-- 合买中心 ajax -->
 			<result name="ajaxCaseCenter">/function/query/case/ajaxHemaiCenter.jsp</result>
 			<!-- 合买名人列表 ajax -->

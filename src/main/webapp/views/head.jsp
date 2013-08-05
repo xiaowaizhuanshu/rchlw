@@ -1,22 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
-<link href="/rchlw/recs/styles/pageHead.css" rel="stylesheet" type="text/css" />
+
 <!-- 引用原来的css -->
 <link type="text/css" href="/rchlw/function/css/Css_HomeOnly.css" rel="stylesheet"/>
+
+<link href="/rchlw/recs/styles/reset.css" rel="stylesheet" type="text/css" />
+<link href="/rchlw/recs/styles/pageHead.css" rel="stylesheet" type="text/css" />
 <script src="/rchlw/recs/scripts/head.js" type="text/javascript" ></script>
-	<!--顶部-
-    	<div class="top_welcome">
-        	<div class="wel_center">
-                <div class="top_wel_left">
-                欢迎来到博雅彩!<a href="javascript:void(0)" class="top_loginBtn">登录</a>|<a href="javascript:void(0)" class="top_registBtn">免费注册</a></div>
-                <div class="top_wel_right">
-                    <a href="javascript:void(0)">首页</a>|
-                    <a href="javascript:void(0)">手机购彩</a>|
-                    <a href="javascript:void(0)">帮助中心</a>|
-                    <a href="javascript:void(0)">活动专题</a>|
-                    <a href="javascript:void(0)">留言反馈</a>
-                </div>
-            </div>
-        </div>-->
         <jsp:include page="/function/user/user_top.jsp"/>
         <!--顶部 end-->
         <!--LOGO and HotLine-->
@@ -93,11 +82,11 @@
                 <ul class="nav_list">
                 	<li class="indexHome"><a href="/rchlw/views/index.jsp">首页</a></li>
                 	<li class="goucaidating"><a href="/rchlw/views/goucaidating/goucaidating.jsp">购彩大厅</a></li>
-                	<li><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">合买中心</a></li>
-                	<li><a href="/rchlw/function/ryc_select_newkj!drawalottery">彩票开奖</a></li>
-                	<li><a href="http://tbzs.ruyicai.com">彩票走势图</a></li>
-                	<li><a href="/rchlw/news/category_xinwenzixun.jsp">彩票资讯</a></li>
-                	<li><a href="/rchlw/function/include/downLoadClient.jsp">手机购彩</a></li>
+                	<li class="hemaicenter"><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">合买中心</a></li>
+                	<li class="cpkj"><a href="/rchlw/function/ryc_select_newkj!drawalottery">彩票开奖</a></li>
+                	<li class="cpzst"><a href="http://tbzs.ruyicai.com">彩票走势图</a></li>
+                	<li class="cpzx"><a href="/rchlw/news/category_xinwenzixun.jsp">彩票资讯</a></li>
+                	<li class="sjgc"><a href="/rchlw/function/include/downLoadClient.jsp">手机购彩</a></li>
                 </ul>
             </div>
         </div>

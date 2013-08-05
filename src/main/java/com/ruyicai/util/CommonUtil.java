@@ -1693,6 +1693,73 @@ public class CommonUtil {
 		html +="<input type=\"hidden\" id=\"pageInput\" name=\"pageIndex\" value=\"1\" />";
 		return html;
 	}
+	
+	
+	/**JSP页面使用的分页 改版后新增 应用于合买中心
+	 * 返回对应的页数
+	 * @param page 当前选择页数
+	 * @param maxLine 当前条件下的记录的总条件
+	 * @param limitCount 每页显示记录数
+	 * @param omission 设置前后间隔几页进行省略
+	 * @param formId 要提交的表单的ID
+	 * @return
+	 * <ul>
+                    	<li><a href="javascript:void(0)">上一页</a></li>
+                    	<li><a href="javascript:void(0)">1</a></li>
+                    	<li><a href="javascript:void(0)">2</a></li>
+                    	<li><a href="javascript:void(0)">3</a></li>
+                    	<li>...</li>
+                    	<li><a href="javascript:void(0)">88</a></li>
+                    	<li><a href="javascript:void(0)">89</a></li>
+                    	<li><a href="javascript:void(0)">下一页</a></li>
+                    </ul>
+                    <div class="pagin_select">
+                    	<span>到&nbsp;<input type="text" value="2" />&nbsp;页</span>
+                        <input type="submit" value="确定" class="pagin_sel_ok" />
+                    </div>
+	 */
+	public static String getPageToJsp_New(Integer page ,Integer maxLine , Integer limitCount,Integer omission,String formId){
+		String html = "<ul>";
+		Integer maxPage = (maxLine+limitCount-1)/limitCount;
+		String fromIdSubmit ="$(\"#"+formId+"\").submit();";
+		
+		if(page!=null && page > 1){
+			html +="<li><a href='javascript:;' onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(page-1)+"\");"+fromIdSubmit+";'>上一页</a></li>";
+//			html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\"1\");"+fromIdSubmit+"' class=\"fenye1\">首页</span>";
+//			html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(page-1)+"\");"+fromIdSubmit+"' class=\"fenye5\">&nbsp;</span>";
+		}
+		for(int i = 0 ; i < maxPage ; i ++ ){
+			if((i+1)==page){
+//				html +="<span class=\"fenye2_hover\">"+(i+1)+"</span>";
+				html +="<li>"+(i+1)+"</li>";
+			}else if((i+omission+1)==page||(i-omission+1)==page){
+				html +="<li><a href='javascript:;' onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(i+1)+"\");"+fromIdSubmit+";'>...</a></li>";
+//				html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(i+1)+"\");"+fromIdSubmit+"' class=\"fenye2\">...</span>";
+			}else if(page!=null&&(page-omission-1)<i&&(page+omission-1)>i){
+				html +="<li><a href='javascript:;' onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(i+1)+"\");"+fromIdSubmit+";'>"+(i+1)+"</a></li>";
+				//html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(i+1)+"\");"+fromIdSubmit+"' class=\"fenye2\">"+(i+1)+"</span>";
+			}
+		}
+		if(page==null || page < maxPage){
+			html +="<li><a href='javascript:;' onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(page+1)+"\");"+fromIdSubmit+";'>下一页</a></li>";
+//			html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+(page+1)+"\");"+fromIdSubmit+"' class=\"fenye4\">&nbsp;</span>";
+//			html += "<span onclick='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val(\""+maxPage+"\");"+fromIdSubmit+"' class=\"fenye1\">尾页</span>";
+		}
+		html +="</ul>";
+		if(maxPage > 1){
+			html +="<div class='pagin_select'>";
+			html +="<span>到&nbsp;<input id=\"pageid\" onblur='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val($(\"#pageid\").val());' type='text' value='' />&nbsp;页</span>";
+			html +="<input type='button' onclick='"+fromIdSubmit+"' value='确定' class='pagin_sel_ok' />";
+	    	html +=" </div>";
+	        
+	   
+//			html += "<input type=\"text\" class=\"fenye_input\" id=\"pageid\"  onblur='$(\"#"+formId+"\").find(\"input[name=pageIndex]\").val($(\"#pageid\").val());' />&nbsp;页<span  onclick='"+fromIdSubmit+"'  class=\"fenye1\">GO</span>";
+		}
+		//html +="　共"+maxPage+"页　"+maxLine+"条";
+		html +="<input type=\"hidden\" id=\"pageInput\" name=\"pageIndex\" value=\"1\" />";
+		return html;
+	}
+	
 	/**
 	 * 战绩详细分页
 	 * @param page

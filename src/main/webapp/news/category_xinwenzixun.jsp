@@ -17,9 +17,11 @@
 <script type="text/javascript" src="<%=request.getContextPath() %>/function/js/luck/luck_stake_main.js"></script>
 </head>
 <body>
+<script>$(function(){toplogo('header',"cpzx");});</script>
+ 	<div id="header" class="header">
+    
+    </div>
 <div id="body">
-	<script>$(function(){toplogo('common',"ButtonHotInfo");});</script>
- 	<span id="common"></span>
    	<div id="main">
    	<div class="zixun_left">
 		<!--  ImageSlide  start  -->
@@ -303,28 +305,28 @@
 </div>
 <script type="text/javascript">
 		
-		$(function() {
-			$("#slidebox").jCarouselLite({
-				vertical: false,
-				hoverPause:true,
-				visible: 1,
-				start: 0,
-				scroll: 1,
-				circular: true,
-				auto:3000,
-				speed:500,				
-				btnGo:
-				    [".1", ".2",
-				    ".3", ".4",".5"],
+// 		$(function() {
+// 			$("#slidebox").jCarouselLite({
+// 				vertical: false,
+// 				hoverPause:true,
+// 				visible: 1,
+// 				start: 0,
+// 				scroll: 1,
+// 				circular: true,
+// 				auto:3000,
+// 				speed:500,				
+// 				btnGo:
+// 				    [".1", ".2",
+// 				    ".3", ".4",".5"],
 				
-				afterEnd: function(a, to, btnGo) {
-						if(btnGo.length <= to){
-							to = 0;
-						}
-						$(".thumbActive").removeClass("thumbActive");
-						$(btnGo[to]).addClass("thumbActive");
-				    }
-			});
-		});
+// 				afterEnd: function(a, to, btnGo) {
+// 						if(btnGo.length <= to){
+// 							to = 0;
+// 						}
+// 						$(".thumbActive").removeClass("thumbActive");
+// 						$(btnGo[to]).addClass("thumbActive");
+// 				    }
+// 			});
+// 		});
 		</script>
 <jsp:include page="/function/rules/setBody.jsp"></jsp:include>

@@ -1512,6 +1512,7 @@ function index_toplogo(div,id){
 	    dataType: "html",
 	    success: function(msg){
 	    	$('#'+div).html(msg);
+	    	if(id=='indexHome'){$('.slider_down').show();}
 			if(id){
 				$("."+id).addClass("on");//设置选中状态
 			}
