@@ -11,7 +11,7 @@
         <!--LOGO and HotLine-->
         <div class="logo_hotline">
         	<div class="logo_center">
-            	<a href="/rchlw/views/index.jsp" class="logo_icon"></a>
+            	<a href="/rchlw" class="logo_icon"></a>
             	<a href="javascript:void(0)" class="new_centent"></a>
             	<a href="http://wpa.qq.com/msgrd?v=3&uin=2522309140&site=qq&menu=yes" target="_blank" class="online"></a>
             	<a href="javascript:void(0)" class="hotline"></a>
@@ -80,7 +80,7 @@
                 </div>
                 <!--滑块 end-->
                 <ul class="nav_list">
-                	<li class="indexHome"><a href="/rchlw/views/index.jsp">首页</a></li>
+                	<li class="indexHome"><a href="/rchlw">首页</a></li>
                 	<li class="goucaidating"><a href="/rchlw/views/goucaidating/goucaidating.jsp">购彩大厅</a></li>
                 	<li class="hemaicenter"><a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">合买中心</a></li>
                 	<li class="cpkj"><a href="/rchlw/function/ryc_select_newkj!drawalottery">彩票开奖</a></li>

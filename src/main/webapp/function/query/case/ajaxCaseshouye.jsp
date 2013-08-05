@@ -1,15 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%><%@taglib prefix="s" uri="/struts-tags"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@taglib prefix="s" uri="/struts-tags"%>
 	
 <!-- 合买推荐-->
 <div class="recomened_tab">
                 	<div id="shouyehemai_tab" class="rec_tab">
-                    	<a href="javascript:void(0)">更多>></a>
+                    	<a href="/rchlw/function/hemaiCenter!getCaseHemaiCenter">更多>></a>
                     	<span id="hm" opt="">合买推荐</span>
                     	<span id="F47104" opt="F47104">双色球</span>
                     	<span id="T01001" opt="T01001">大乐透</span>
                     	<span id="B00001" opt="B00001">足球单场</span>
-                    	<span id="J00001"opt="J00001">竞彩足球</span>
+                    	<span id="J00001" opt="J00001">竞彩足球</span>
                     	<span id="J00005" opt="J00005">竞彩篮球</span>
                     </div>
                     <div class="rec_table_list">
@@ -190,7 +190,7 @@
 			 			$("#shouyehemai").data("hmtag",lotno);
 			 			//清空原有数据
 			 			$(".tab_list tr").eq(0).nextAll().remove();
-			 			reHtml(82,'isAjax=shouye&pageCount=10&lotno='+lotno+'&search='+uname+'&starteUserno='+starteUserno,'','shouyehemai',false);
+			 			reHtml(82,'isAjax=shouye&pageCount=6&lotno='+lotno+'&search='+uname+'&starteUserno='+starteUserno,'','shouyehemai',false);
 			 			
 			 		});
 					//点击合买红人触发事件
@@ -206,7 +206,7 @@
 						}
 						$(".tab_list tr").eq(0).nextAll().remove();
 						$("#shouyehemai").data("uname",uname);
-						reHtml(82,'isAjax=shouye&pageCount=10&lotno='+tag+'&search='+uname+'&starteUserno='+starteUserno,'','shouyehemai',false);
+						reHtml(82,'isAjax=shouye&pageCount=6&lotno='+tag+'&search='+uname+'&starteUserno='+starteUserno,'','shouyehemai',false);
 					});
 				});
 			</script>

@@ -182,6 +182,7 @@ a.jixuan{
 	line-height:34px;
 	text-align:center;
 	font-size:16px;
+	font-weight:bold;
 	color:#fff;
 	border:none;
 	cursor:pointer;
@@ -400,6 +401,25 @@ a.jixuan{
 	display:inline-block;
 	padding:0 8px;
 }
+.centent{
+	position:absolute;
+	display:block;
+	padding-bottom:26px;
+	top:0px;
+}
+.fucai_3d_text{
+	float:right;
+	height:20px;
+	margin:4px 5px 0 0
+}
+.fucai_3d_text label{
+	line-height:20px;
+	color:#0d65bc;
+}
+.fucai_3d_text label b{
+	padding:0 5px 0 0;
+	font-weight:normal;
+}
 .caip_bottom_fy{
 	position:absolute;
 	display:block;
@@ -413,22 +433,23 @@ a.jixuan{
 .fy{
 	float:right;
 	height:20px;
-	margin:3px 8px 0 0;
+	margin:0;
 }
 .fy span{
 	display:block;
-	float:left;
-	width:26px;
-	height:20px;
-	margin:0 12px 0;
+	width:107px;
+	height:26px;
+	margin:0;
 	background:url(../images/prev_next.jpg) no-repeat;
 	cursor:pointer;
 }
 .fy span.prev{
+	float:left;
 	background-position:0 0;
 }
 .fy span.next{
-	background-position:0 -20px;
+	float:right;
+	background-position:0 -26px;
 }
 .fy ul{
 	float:left;
@@ -676,9 +697,6 @@ a.jixuan{
 	padding-right:17px;
 	cursor:pointer;
 }
-.reco_epople label.on{
-	color:#f00;
-}
 .tab_list {
 	display:block;
 	border:1px solid #eaeaea;
@@ -830,6 +848,7 @@ tr.on .ran_zjvalue{
 }
 .battle_table{
 	display:block;
+	height:341px;
 	margin:20px 0 0 30px;
 }
 .battle_table tr{
@@ -888,32 +907,22 @@ tr.on .ran_zjvalue{
 .bat_kedui{
 	width:60px;
 }
-.bat_sheng,.bat_ping{
+.bat_sheng,.bat_ping,.bat_fu{
 	width:75px;
 	text-align:center;
-	cursor:pointer;
 }
 .bat_dan{
 	width:33px;
 	text-align:center;
 }
-.bat_dan_on{
-	background:url(../images/red_bg.jpg) repeat-x;
-	width:33px;
-	text-align:center;
-	border:1px solid #ec0200;
-	color:#fff;
-}
-td.bat_sheng,td.bat_dan{
+td.bat_sheng,td.bat_fu,td.bat_dan{
 	background:url(../images/eee_bg.jpg) repeat-x;
 	border:1px solid #e5e5e5;
-	cursor:pointer;
 }
 td.bat_ping{
 	background:url(../images/red_bg.jpg) repeat-x;
 	border:1px solid #ec0200;
 	color:#fff;
-	cursor:pointer;
 }
 td.bat_rangqiu{
 	font-weight:bold;
@@ -921,7 +930,9 @@ td.bat_rangqiu{
 td.bat_rangqiu.zheng{
 	color:#f00;
 }
-
+td.bat_rangqiu.fu{
+	color:#090;
+}
 td.bat_rangqiu.ling{
 	color:#333;
 }
@@ -1200,22 +1211,3 @@ td.bat_rangqiu.ling{
 }
 .china_zhifubao{
 	background:url(../images/hezuo5.jpg) no-repeat 0 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

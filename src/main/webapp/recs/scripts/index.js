@@ -36,6 +36,24 @@ $(function(){
 			$(this).addClass('fu');
 		}
 	});
+	//开奖公告动画效果
+	$('.fy .prev').live('click',function(){
+		var i=parseInt($('.centent').css('top'));
+		if($('.centent').height()+i>=$('.centent').height()){
+			$('.centent').css('top',0);
+			return false;
+		}else{
+			$('.centent').stop().animate({'top':i+100},300);
+		}
+	});
+	$('.fy .next').live('click',function(){
+		var i=parseInt($('.centent').css('top'));
+		if($('.centent').height()+i<=304){
+			return false;
+		}else{
+			$('.centent').stop().animate({'top':i-100},300);
+		}
+	});
 });
 //让球字体颜色
 function RangqiuClorSet(){
