@@ -54,6 +54,15 @@ $(function(){
 			$('.centent').stop().animate({'top':i-100},300);
 		}
 	});
+	
+	//快速购彩tab切换
+	$('.tab_click span').live('click',function(){
+		var ThisIndex=$(this).index();
+		$('.tab_click span').removeClass('on');
+		$(this).addClass('on');
+		$('.fast_each').children('.fast_each_list').hide();
+		$('.fast_each').children('.fast_each_list').eq(ThisIndex-1).show();
+	})
 });
 //让球字体颜色
 function RangqiuClorSet(){

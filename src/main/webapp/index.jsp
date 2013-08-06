@@ -84,39 +84,72 @@
                 </div>
                 <!--快速购彩-->
                 <div class="fast">
+                <form action="/rchlw/user/bet!bettingByDipin" method="post" id="BettingForm">
                     <div class="fast_tab">
                         <label>快速购彩</label>
                         <div class="tab_click">
                             <b>购彩推荐：</b>
-                            <span class="on">双色球</span>
-                            <span>大乐透</span>
+                            <span class="on" onclick="BaseTab($(this));ssq_dingshi();getBatchCodesBY('F47104');getJiangChi('F47104','dltJC')">双色球</span>
+                            <span onclick="BaseTab($(this));dlt_dingshi();getBatchCodesBY('T01001');getJiangChi('T01001','dltJC')">大乐透</span>
                         </div>
                     </div>
                     <div class="fast_each">
-                        <div class="fast_each_list">
+                    	<div class="fast_each_list" style="display:block;">
                             <div class="shuangsq">
                                 <span>双色球</span>
                             </div>
                             <div class="shuangsq_info">
-                                <b>第2013081期</b>
-                                <span>每注2元，最高可中1000万</span>
+                            	<script type="text/javascript">$(function(){getBatchCodesBY('F47104');ssq_dingshi();});</script>
+                                <b>第<font id="ssqqihao"></font>期</b>
+                                <span>投注截止时间：<font id="ssqendTime"></font></span>
                                 <a href="javascript:ssq_dingshi();" class="jixuan">机选</a>
-                                <label>奖池：126，651， 295元</label>
+                                <script type="text/javascript">$(function(){getJiangChi('F47104','ssqJC');});</script>
+                              	<label>奖池：<font id="ssqJC"></font>元</label>
                                 <div class="touzhu_select">
-                                    <input type="text"  id="ssq0"  value="02"/>
-                                    <input type="text"   id="ssq1"     value="09"/>
-                                    <input type="text"   id="ssq2"   value="16"/>
-                                    <input type="text"  id="ssq3"  value="17"/>
-                                    <input type="text"   id="ssq4"   value="23"/>
-                                    <input type="text"  id="ssq5"   value="26"/>
-                                    <input type="text"  id="ssq6"   value="05" class="on"/>
-                                    <a href="jvascript:void(0)"></a>
+                                    <input type="text" id="ssq0" value="02"/>
+                                    <input type="text" id="ssq1" value="09"/>
+                                    <input type="text" id="ssq2" value="16"/>
+                                    <input type="text" id="ssq3" value="17"/>
+                                    <input type="text" id="ssq4" value="23"/>
+                                    <input type="text" id="ssq5" value="26"/>
+                                    <input type="text" id="ssq6" value="05" class="on"/>
+                                    <a href="jvascript:void(0)" onclick="kuaiTouZhu('ssq')"></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="fast_each_list">dddddddddddd</div>
-                        <div class="fast_each_list"></div>
+                        <div class="fast_each_list">
+                        	<div class="dalet">
+                                <span>大乐透</span>
+                            </div>
+                            <div class="shuangsq_info">
+                                <b>第<font id="dltqihao"></font>期</b>
+                                <span>投注截止时间：<font id="dltendTime"></font></span>
+                                <a href="javascript:void(0)" class="jixuan" onclick="dlt_dingshi()">机选</a>
+                                <label>奖池：<font id="dltJC"></font>元</label>
+                                <div class="touzhu_select">
+                                    <input type="text" value="01" id="dlt0" onchange="checkZhuMa('dlt','7','0')" maxlength="2"/>
+                                    <input type="text" value="09" id="dlt1" onchange="checkZhuMa('dlt','7','1')" maxlength="2"/>
+                                    <input type="text" value="10" id="dlt2" onchange="checkZhuMa('dlt','7','2')" maxlength="2"/>
+                                    <input type="text" value="18" id="dlt3" onchange="checkZhuMa('dlt','7','3')" maxlength="2"/>
+                                    <input type="text" value="27" id="dlt4" onchange="checkZhuMa('dlt','7','4')" maxlength="2"/>
+                                    <input type="text" value="30" id="dlt5" onchange="checkZhuMa('dlt','7','5')" maxlength="2" class="on"/>
+                                    <input type="text" value="11" id="dlt6" onchange="checkZhuMa('dlt','7','6')" maxlength="2" class="on"/>
+                                    <a href="jvascript:void(0)" onclick="kuaiTouZhu('dlt')"></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <input type="hidden" name="lotteryId" value="" />
+					<input type="hidden" name="stakesBalls" value="" />
+					<input type="hidden" name="toatalMoney" value="2" />
+					<input type="hidden" name="multiple" value="1" />
+					<input type="hidden" name="stakesNum" value="1" />
+					<input type="hidden" name="tradeArea" value="tj" />
+					<input type="hidden" name="playType" value="" />
+					<input type="hidden" name="stakeType" value="1" />
+					<input type="hidden" id="jsonString" name="jsonString"  value="" />
+					<input type="hidden" id="root" value="" />
+              	</form>
                 </div>
             </div>
             <!--开奖公告-彩票走势图-->
@@ -234,7 +267,7 @@
                     	<a href="javascript:void(0)">当前期<i id="qihao3"></i>期</a>
                     </div>
                     <div id="jcsj">
-						<form name="BettingForm" id="BettingForm" action="/rchlw/user/bet!bettingByDipin" method="post">
+						<form name="BettingForm22" id="BettingForm22" action="/rchlw/user/bet!bettingByDipin" method="post">
 						<table class="FootballFightTable TheOnLineMatch selected" id="zucaiduizhen">
 						<script type="text/javascript">
 						     $(function(){reHtml(81,'lotno=T01003&shouye=1','','zucaiduizhen');});

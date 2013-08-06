@@ -121,17 +121,22 @@
 .fast_each{
 	display:block;
 }
-.fast_each_list{;
-	display:block;
+.fast_each_list{
+	display:none;
+	height:116px;
 }
 .shuangsq{
+	background:url(../images/shuangse.jpg) no-repeat left bottom;
+}
+.dalet{
+}
+.shuangsq,.dalet,.ficai3d_qu{
 	float:left;
 	width:63px;
 	height:100px;
 	margin:0 0 0 9px;
-	background:url(../images/shuangse.jpg) no-repeat left bottom;
 }
-.shuangsq span{
+.shuangsq span,.dalet span,.ficai3d_qu span{
 	display:block;
 	height:38px;
 	color:#333;
@@ -177,7 +182,7 @@ a.jixuan{
 	float:left;
 	width:34px;
 	height:34px;
-	margin:10px 9px 0 0;
+	margin:10px 3px 0 0;
 	background:url(../images/select_bg.jpg) no-repeat 0 0;
 	line-height:34px;
 	text-align:center;
@@ -1211,3 +1216,24 @@ td.bat_rangqiu.ling{
 }
 .china_zhifubao{
 	background:url(../images/hezuo5.jpg) no-repeat 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
